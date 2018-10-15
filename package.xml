@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package>
+    <name>robots</name>
+    <version>0.0.0</version>
+    <description>cardsflow robot</description>
+    <maintainer email="st@gi.ai">Simon Trendel</maintainer>
+    <license>BSD</license>
+    <buildtool_depend>catkin</buildtool_depend>
+    <export>
+    </export>
+</package>
