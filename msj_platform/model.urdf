@@ -9,13 +9,13 @@
   </joint>
   <joint name="sphere_axis1" type="revolute">
     <parent link="sphere_link1"/>
-    <child link="shere_link2"/>
+    <child link="sphere_link2"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 1 0"/>
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
   </joint>
   <joint name="sphere_axis2" type="revolute">
-    <parent link="shere_link2"/>
+    <parent link="sphere_link2"/>
     <child link="top"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1"/>
@@ -59,22 +59,22 @@
       </geometry>
     </visual>
   </link>
-  <link name="shere_link2">
+  <link name="sphere_link2">
     <inertial>
       <mass value="0.03134065921190476"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0.0014786308552238907" ixy="-5.7181282982660423e-08" ixz="1.3952907450389757e-05" iyy="0.0014785237238722623" iyz="6.048069549189583e-06" izz="2.8553395667239724e-06"/>
     </inertial>
-    <collision name="shere_link2_collision">
+    <collision name="sphere_link2_collision">
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://roboy_models/msj_platform/meshes/CAD/shere_link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://roboy_models/msj_platform/meshes/CAD/sphere_link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
-    <visual name="shere_link2_visual">
+    <visual name="sphere_link2_visual">
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://roboy_models/msj_platform/meshes/CAD/shere_link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://roboy_models/msj_platform/meshes/CAD/sphere_link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>

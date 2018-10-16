@@ -1,0 +1,9 @@
+sphere_axis0:
+  joint_name: sphere_axis0
+  type: cardsflow/kindyn/CableLengthController
+sphere_axis1:
+  joint_name: sphere_axis1
+  type: cardsflow/kindyn/CableLengthController
+sphere_axis2:
+  joint_name: sphere_axis2
+  type: cardsflow/kindyn/CableLengthController
