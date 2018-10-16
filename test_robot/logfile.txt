@@ -1,0 +1,53 @@
+mass[kg] 	 COM[cm] 			 component name
+Body: link2
+link2not found, copying bodies to new component
+exporting stl of link2
+mass[kg] 	 COM[cm] 			 component name
+Body: link5
+link5not found, copying bodies to new component
+exporting stl of link5
+mass[kg] 	 COM[cm] 			 component name
+Body: base
+basenot found, copying bodies to new component
+using dummy COM for base
+exporting stl of base
+mass[kg] 	 COM[cm] 			 component name
+Body: link0
+link0not found, copying bodies to new component
+exporting stl of link0
+mass[kg] 	 COM[cm] 			 component name
+Body: link1
+link1not found, copying bodies to new component
+exporting stl of link1
+mass[kg] 	 COM[cm] 			 component name
+Body: link3
+link3not found, copying bodies to new component
+exporting stl of link3
+mass[kg] 	 COM[cm] 			 component name
+Body: link4
+link4not found, copying bodies to new component
+exporting stl of link4
+Joint: EXPORT_joint0
+	parent: base
+	child: link0
+	pos: 8.214312584259862e-13	0.0	-0.5062439533909746
+Joint: EXPORT_joint1
+	parent: link0
+	child: link1
+	pos: 3.1990230268275064e-13	-3.255748829645824e-13	0.49375604660902517
+Joint: EXPORT_joint2
+	parent: link1
+	child: link2
+	pos: 0.4999997548890181	6.631505516606932e-05	-25.983401061456565
+Joint: EXPORT_sphere_axis0
+	parent: link2
+	child: link3
+	pos: -4.440892098500626e-16	1.948081707193246e-15	1.4210854715202004e-14
+Joint: EXPORT_sphere_axis2
+	parent: link4
+	child: link5
+	pos: -0.010653473164249971	-0.0106534534088513	-9.30850414206757
+Joint: EXPORT_sphere_axis1
+	parent: link3
+	child: link4
+	pos: -6.661338147750939e-16	5.467301753834427e-09	7.945800462039188e-09
