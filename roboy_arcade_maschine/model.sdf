@@ -1,0 +1,172 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+	<model name="roboy_arcade_maschine">
+		<link name="base">
+			<self_collide>false</self_collide>
+			<pose frame="">0.1525000029802322 0.20678603062063886 0.0011737747325314249 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>151.77711515782906</mass>
+				<inertia>
+					<ixx>190.96058225933902</ixx>
+					<ixy>-4.977169987468404</ixy>
+					<ixz>-28.60027380178257</ixz>
+					<iyy>188.2339461446155</iyy>
+					<iyz>-21.302560456800382</iyz>
+					<izz>20.711764873664425</izz>
+				</inertia>
+			</inertial>
+			<collision name="base_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_arcade_maschine/meshes/CAD/base.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="base_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_arcade_maschine/meshes/CAD/base.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="head">
+			<self_collide>false</self_collide>
+			<pose frame="">0.15261995464777886 0.23623748028330993 1.6718352355907273 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>4.589897050637304</mass>
+				<inertia>
+					<ixx>13.095311389186126</ixx>
+					<ixy>-0.16548629525777242</ixy>
+					<ixz>-1.8121347109316952</ixz>
+					<iyy>12.948631781783467</iyy>
+					<iyz>-1.1711363659947223</iyz>
+					<izz>0.370055306412621</izz>
+				</inertia>
+			</inertial>
+			<collision name="head_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_arcade_maschine/meshes/CAD/head.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="head_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_arcade_maschine/meshes/CAD/head.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="sphere_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.15249999999999983 0.19751755112547265 1.5796448796709621 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.0035398559741585114</mass>
+				<inertia>
+					<ixx>0.008971106541110758</ixx>
+					<ixy>-0.0001066255117112812</ixy>
+					<ixz>-0.0011044619253575195</ixz>
+					<iyy>0.008915329267686532</iyy>
+					<iyz>-0.0008527365930637039</iyz>
+					<izz>0.0002205057727334384</izz>
+				</inertia>
+			</inertial>
+			<collision name="sphere_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_arcade_maschine/meshes/CAD/sphere_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="sphere_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_arcade_maschine/meshes/CAD/sphere_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="sphere_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.15250000000000008 0.19751755109172833 1.5796448796331028 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.0023728702041057787</mass>
+				<inertia>
+					<ixx>0.006013580474758548</ixx>
+					<ixy>-7.14742355454568e-05</ixy>
+					<ixz>-0.0007403535095412405</ixz>
+					<iyy>0.00597619131796037</iyy>
+					<iyz>-0.000571614570862302</iyz>
+					<izz>0.0001477938490083072</izz>
+				</inertia>
+			</inertial>
+			<collision name="sphere_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_arcade_maschine/meshes/CAD/sphere_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="sphere_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_arcade_maschine/meshes/CAD/sphere_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<joint name="sphere_axis0" type="revolute">
+			<parent>base</parent>
+			<child>sphere_link1</child>
+			<pose frame="">1.7763568394002506e-16 -1.1935519239614224e-11 0.0 0 0 0</pose>
+			<axis>
+				<xyz>1.0 7.393618392593449e-17 1.2273733753721339e-17</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="sphere_axis2" type="revolute">
+			<parent>sphere_link2</parent>
+			<child>head</child>
+			<pose frame="">-0.00011995464777875498 -0.03871992916977281 -0.09219035591976535 0 0 0</pose>
+			<axis>
+				<xyz>-2.4926151761457927e-17 0.1736481776669304 0.9848077530122081</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="sphere_axis1" type="revolute">
+			<parent>sphere_link1</parent>
+			<child>sphere_link2</child>
+			<pose frame="">-7.105427357601002e-17 2.1808723715821545e-11 3.785885382967535e-11 0 0 0</pose>
+			<axis>
+				<xyz>7.068161565889416e-17 -0.9848077530122081 0.1736481776669304</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+	</model>
+</sdf>

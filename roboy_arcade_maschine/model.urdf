@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<robot name="roboy_arcade_maschine">
+  <joint name="sphere_axis0" type="revolute">
+    <parent link="base"/>
+    <child link="sphere_link1"/>
+    <origin rpy="0 0 0" xyz="0.1525  0.19751 1.57964"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="sphere_axis1" type="revolute">
+    <parent link="sphere_link1"/>
+    <child link="sphere_link2"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0      -0.9848   0.17364"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="sphere_axis2" type="revolute">
+    <parent link="sphere_link2"/>
+    <child link="head"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0      0.17364 0.9848"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <link name="base">
+    <inertial>
+      <mass value="151.77711515782906"/>
+      <origin rpy="0 0 0" xyz="0.1525  0.20678 0.00117"/>
+      <inertia ixx="190.96058225933902" ixy="-4.977169987468404" ixz="-28.60027380178257" iyy="188.2339461446155" iyz="-21.302560456800382" izz="20.711764873664425"/>
+    </inertial>
+    <collision name="base_collision">
+      <origin rpy="0 0 0" xyz="0.1525  0.20678 0.00117"/>
+      <geometry>
+        <mesh filename="package://robots/roboy_arcade_maschine/meshes/CAD/base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="base_visual">
+      <origin rpy="0 0 0" xyz="0.1525  0.20678 0.00117"/>
+      <geometry>
+        <mesh filename="package://robots/roboy_arcade_maschine/meshes/CAD/base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link1">
+    <inertial>
+      <mass value="0.0035398559741585114"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.008971106541110758" ixy="-0.0001066255117112812" ixz="-0.0011044619253575195" iyy="0.008915329267686532" iyz="-0.0008527365930637039" izz="0.0002205057727334384"/>
+    </inertial>
+    <collision name="sphere_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/roboy_arcade_maschine/meshes/CAD/sphere_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="sphere_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/roboy_arcade_maschine/meshes/CAD/sphere_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link2">
+    <inertial>
+      <mass value="0.0023728702041057787"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.006013580474758548" ixy="-7.14742355454568e-05" ixz="-0.0007403535095412405" iyy="0.00597619131796037" iyz="-0.000571614570862302" izz="0.0001477938490083072"/>
+    </inertial>
+    <collision name="sphere_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/roboy_arcade_maschine/meshes/CAD/sphere_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="sphere_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/roboy_arcade_maschine/meshes/CAD/sphere_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="head">
+    <inertial>
+      <mass value="4.589897050637304"/>
+      <origin rpy="0 0 0" xyz="0.00012 0.03871 0.09219"/>
+      <inertia ixx="13.095311389186126" ixy="-0.16548629525777242" ixz="-1.8121347109316952" iyy="12.948631781783467" iyz="-1.1711363659947223" izz="0.370055306412621"/>
+    </inertial>
+    <collision name="head_collision">
+      <origin rpy="0 0 0" xyz="0.00012 0.03871 0.09219"/>
+      <geometry>
+        <mesh filename="package://robots/roboy_arcade_maschine/meshes/CAD/head.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="head_visual">
+      <origin rpy="0 0 0" xyz="0.00012 0.03871 0.09219"/>
+      <geometry>
+        <mesh filename="package://robots/roboy_arcade_maschine/meshes/CAD/head.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
