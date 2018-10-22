@@ -1,0 +1,4 @@
+endeffectors: ['head']
+head:
+  base_link: 'base'
+  joints: ['sphere_head_axis0', 'sphere_head_axis1', 'sphere_head_axis2']
