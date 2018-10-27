@@ -1,3 +1,4 @@
+joint_names: ['sphere_axis0', 'sphere_axis1', 'sphere_axis2']
 endeffectors: ['head']
 head:
   base_link: 'base'
