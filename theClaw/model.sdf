@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+	<model name="theClaw">
+		<link name="base">
+			<self_collide>false</self_collide>
+			<pose frame="">1.2271690794387753 0.87 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>88.7814083904447</mass>
+				<inertia>
+					<ixx>412.4665858614631</ixx>
+					<ixy>-132.78881698011557</ixy>
+					<ixz>-115.85973794953199</ixz>
+					<iyy>568.0983779073732</iyy>
+					<iyz>-163.42469880811436</iyz>
+					<izz>447.8765134261684</izz>
+				</inertia>
+			</inertial>
+			<collision name="base_collision">
+				<geometry>
+					<mesh>
+						<uri>model://theClaw/meshes/CAD/base.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="base_visual">
+				<geometry>
+					<mesh>
+						<uri>model://theClaw/meshes/CAD/base.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="theClaw">
+			<self_collide>false</self_collide>
+			<pose frame="">1.0244006703880129 0.7597429073064836 0.9056644233091621 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>3.1942968488768577</mass>
+				<inertia>
+					<ixx>4.470882983896704</ixx>
+					<ixy>-2.4863572928306854</ixy>
+					<ixz>-2.197918339509588</ixz>
+					<iyy>5.981922206959081</iyy>
+					<iyz>-2.963610222780401</iyz>
+					<izz>5.211588074912003</izz>
+				</inertia>
+			</inertial>
+			<collision name="theClaw_collision">
+				<geometry>
+					<mesh>
+						<uri>model://theClaw/meshes/CAD/theClaw.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="theClaw_visual">
+				<geometry>
+					<mesh>
+						<uri>model://theClaw/meshes/CAD/theClaw.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<plugin filename="libmusc_plugin.so" name="musc_plugin">
+			<myoMuscle name="motor0">
+				<link name="theClaw">
+					<viaPoint type="FIXPOINT">-0.09239002054300016 -0.0009441100493623367 0.002783440640050543</viaPoint>
+				</link>
+				<link name="base">
+					<viaPoint type="FIXPOINT">-1.9456618411224498 -0.4399999999999999 2.7</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor1">
+				<link name="theClaw">
+					<viaPoint type="FIXPOINT">0.09358867976697809 0.05145829543639664 0.0027834406400508273</viaPoint>
+				</link>
+				<link name="base">
+					<viaPoint type="FIXPOINT">0.9728309205612249 1.31 2.7</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor2">
+				<link name="theClaw">
+					<viaPoint type="FIXPOINT">0.0935869749559319 -0.05368386419286253 0.002692112113401208</viaPoint>
+				</link>
+				<link name="base">
+					<viaPoint type="FIXPOINT">0.9728309205612249 -0.87 2.7</viaPoint>
+				</link>
+			</myoMuscle>
+		</plugin>
+	</model>
+</sdf>

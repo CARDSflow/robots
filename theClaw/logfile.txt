@@ -1,0 +1,8 @@
+Body: base
+base not found, copying bodies to new component
+base mass[kg] 88.78140839044467 	 COM[cm] 122.71690794387752 87.0 0.0
+exporting stl of base
+Body: theClaw
+theClaw not found, copying bodies to new component
+theClaw mass[kg] 3.194296848877041 	 COM[cm] 102.44006703880127 75.97429073064836 90.5664423309162
+exporting stl of theClaw
