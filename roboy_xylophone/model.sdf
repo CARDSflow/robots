@@ -289,70 +289,6 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="left_ring_limb0">
-			<self_collide>false</self_collide>
-			<pose frame="">0.2803577238006067 0.012332314369452533 -0.14556469260486563 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.00042699873719355484</mass>
-				<inertia>
-					<ixx>9.120242551499906e-06</ixx>
-					<ixy>-1.4761134565218337e-06</ixy>
-					<ixz>7.659111214427992e-07</ixz>
-					<iyy>4.261536011971524e-05</iyy>
-					<iyz>1.7425521328413886e-05</iyz>
-					<izz>3.363486114605222e-05</izz>
-				</inertia>
-			</inertial>
-			<collision name="left_ring_limb0_collision">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_xylophone/meshes/CAD/left_ring_limb0.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="left_ring_limb0_visual">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_xylophone/meshes/CAD/left_ring_limb0.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="left_little_limb0">
-			<self_collide>false</self_collide>
-			<pose frame="">0.27994336876615206 0.027296783159214015 -0.1312906744461279 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.000427003127688874</mass>
-				<inertia>
-					<ixx>7.686181650061806e-06</ixx>
-					<ixy>-3.2626844917209604e-06</ixy>
-					<ixz>1.5292278115436921e-06</ixz>
-					<iyy>4.082965360232849e-05</iyy>
-					<iyz>1.5693721506371443e-05</iyz>
-					<izz>3.3788793366054075e-05</izz>
-				</inertia>
-			</inertial>
-			<collision name="left_little_limb0_collision">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_xylophone/meshes/CAD/left_little_limb0.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="left_little_limb0_visual">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_xylophone/meshes/CAD/left_little_limb0.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
 		<link name="wrist_left_1">
 			<self_collide>false</self_collide>
 			<pose frame="">0.2838291081215929 -0.004517829187734139 -0.04602714308301151 0.0 -0.0 0.0</pose>
@@ -673,7 +609,7 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="shere_head_link2">
+		<link name="sphere_head_link2">
 			<self_collide>false</self_collide>
 			<pose frame="">-2.0576940733084e-14 0.0015217810850766884 0.7110982300983255 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -688,18 +624,18 @@
 					<izz>9.214497104106378e-07</izz>
 				</inertia>
 			</inertial>
-			<collision name="shere_head_link2_collision">
+			<collision name="sphere_head_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_xylophone/meshes/CAD/shere_head_link2.stl</uri>
+						<uri>model://roboy_xylophone/meshes/CAD/sphere_head_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shere_head_link2_visual">
+			<visual name="sphere_head_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_xylophone/meshes/CAD/shere_head_link2.stl</uri>
+						<uri>model://roboy_xylophone/meshes/CAD/sphere_head_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -948,7 +884,7 @@
 			</axis>
 		</joint>
 		<joint name="sphere_head_axis2" type="revolute">
-			<parent>shere_head_link2</parent>
+			<parent>sphere_head_link2</parent>
 			<child>head</child>
 			<pose frame="">-0.0006492376358890309 -0.013524329736304486 -0.15538726846868797 0 0 0</pose>
 			<axis>
@@ -962,7 +898,7 @@
 		</joint>
 		<joint name="sphere_head_axis1" type="revolute">
 			<parent>sphere_head_link1</parent>
-			<child>shere_head_link2</child>
+			<child>sphere_head_link2</child>
 			<pose frame="">-1.7287226757593036e-17 -1.1657341758564143e-17 5.684341886080802e-16 0 0 0</pose>
 			<axis>
 				<xyz>-1.0000000000000004 -2.4980018054086044e-16 -2.413188795544875e-14</xyz>

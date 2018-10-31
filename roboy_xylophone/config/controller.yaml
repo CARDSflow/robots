@@ -2,9 +2,6 @@
 #  type: cardsflow/kindyn/TorquePositionController
 #  type: cardsflow/kindyn/CableLengthController
 #  type: cardsflow/kindyn/ForcePositionController
-hip_joint:
-  joint: hip_joint
-  type: cardsflow/kindyn/CableLengthController
 elbow_left_rot1:
   joint: elbow_left_rot1
   type: cardsflow/kindyn/CableLengthController
