@@ -1,6 +1,7 @@
 #  These controllers are loaded by the robot.launch script, the following types are available
 #  type: cardsflow/kindyn/TorquePositionController
 #  type: cardsflow/kindyn/CableLengthController
+#  type: cardsflow/kindyn/ForcePositionController
 hip_joint:
   joint: hip_joint
   type: cardsflow/kindyn/CableLengthController
