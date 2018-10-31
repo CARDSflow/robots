@@ -1,0 +1,174 @@
+Body: torso
+torso not found, copying bodies to new component
+torso mass[kg] 13.72368407897035 	 COM[cm] 0.0 0.0 0.0
+exporting stl of torso
+Body: right_hand
+right_hand not found, copying bodies to new component
+right_hand mass[kg] 0.21252404216914755 	 COM[cm] -27.26006967706916 -10.024518398036296 -15.211778521664105
+exporting stl of right_hand
+Body: left_hand
+left_hand not found, copying bodies to new component
+left_hand mass[kg] 0.21252725801978406 	 COM[cm] 26.93698565379346 -10.014645572149362 -15.045851695284457
+exporting stl of left_hand
+Body: elbow_left
+elbow_left not found, copying bodies to new component
+elbow_left mass[kg] 0.15681537170225673 	 COM[cm] 29.24609988893645 0.2674297812459018 24.36844362458517
+exporting stl of elbow_left
+Body: elbow_right
+elbow_right not found, copying bodies to new component
+elbow_right mass[kg] 0.17375098954968418 	 COM[cm] -29.205436561441207 0.2562136866504752 24.074421405226445
+exporting stl of elbow_right
+Body: sphere_right_link1
+sphere_right_link1 not found, copying bodies to new component
+sphere_right_link1 mass[kg] 0.046755960893623216 	 COM[cm] -29.217996662761678 0.9210203783611712 54.86144805461556
+exporting stl of sphere_right_link1
+Body: sphere_right_link2
+sphere_right_link2 not found, copying bodies to new component
+sphere_right_link2 mass[kg] 0.031339415773582534 	 COM[cm] -29.21801724945091 0.9209908408672481 54.86144779185736
+exporting stl of sphere_right_link2
+Body: sphere_left_link1
+sphere_left_link1 not found, copying bodies to new component
+sphere_left_link1 mass[kg] 0.046755519327953576 	 COM[cm] 29.218005222734156 0.9210203825021905 54.86145052206429
+exporting stl of sphere_left_link1
+Body: sphere_left_link2
+sphere_left_link2 not found, copying bodies to new component
+sphere_left_link2 mass[kg] 0.031340208481721185 	 COM[cm] 29.218006602859283 0.9209897632250945 54.86144934728855
+exporting stl of sphere_left_link2
+Body: left_ring_limb0
+left_ring_limb0 not found, copying bodies to new component
+left_ring_limb0 mass[kg] 0.0004269987371935552 	 COM[cm] 28.03577238006067 1.2332314369452533 -14.556469260486562
+exporting stl of left_ring_limb0
+Body: left_little_limb0
+left_little_limb0 not found, copying bodies to new component
+left_little_limb0 mass[kg] 0.00042700312768887316 	 COM[cm] 27.994336876615208 2.7296783159214013 -13.129067444612792
+exporting stl of left_little_limb0
+Body: wrist_left_1
+wrist_left_1 not found, copying bodies to new component
+wrist_left_1 mass[kg] 0.012764273069100255 	 COM[cm] 28.38291081215929 -0.4517829187734139 -4.602714308301151
+exporting stl of wrist_left_1
+Body: wrist_right_1
+wrist_right_1 not found, copying bodies to new component
+wrist_right_1 mass[kg] 0.012762562533547319 	 COM[cm] -28.668674295414643 -0.44395108799209193 -4.906064202224147
+exporting stl of wrist_right_1
+Body: upper_arm_left
+upper_arm_left not found, copying bodies to new component
+upper_arm_left mass[kg] 1.180906329908994 	 COM[cm] 30.316149801185627 0.6609366620460144 39.707465216796216
+exporting stl of upper_arm_left
+Body: lower_arm_left
+lower_arm_left not found, copying bodies to new component
+lower_arm_left mass[kg] 1.4159186820881697 	 COM[cm] 28.67576752988604 -0.12029774645435487 9.482838871490118
+exporting stl of lower_arm_left
+Body: lower_arm_right
+lower_arm_right not found, copying bodies to new component
+lower_arm_right mass[kg] 1.3992272098398937 	 COM[cm] -28.69031619781163 -0.12971012985662847 9.028138839558517
+exporting stl of lower_arm_right
+Body: upper_arm_right
+upper_arm_right not found, copying bodies to new component
+upper_arm_right mass[kg] 1.0958327493577882 	 COM[cm] -30.254473053274353 0.42424198844868094 39.76322090370991
+exporting stl of upper_arm_right
+Body: zed_camera_left_lense
+zed_camera_left_lense not found, copying bodies to new component
+zed_camera_left_lense mass[kg] 0.005755421815687985 	 COM[cm] 5.999964724565572 -8.173913560527492 95.28625747224352
+exporting stl of zed_camera_left_lense
+Body: zed_camera_right_lense
+zed_camera_right_lense not found, copying bodies to new component
+zed_camera_right_lense mass[kg] 0.005755421815688021 	 COM[cm] -6.000035275434433 -8.173913560527538 95.28625747224348
+exporting stl of zed_camera_right_lense
+Body: zed_camera
+zed_camera not found, copying bodies to new component
+zed_camera mass[kg] 0.009633908092012327 	 COM[cm] -3.51796944748628e-05 -5.6307298059096125 94.74568704182059
+exporting stl of zed_camera
+Body: sphere_head_link1
+sphere_head_link1 not found, copying bodies to new component
+sphere_head_link1 mass[kg] 0.02393810080236965 	 COM[cm] -2.0585079955112284e-12 0.15217810850766808 71.10982300983261
+exporting stl of sphere_head_link1
+Body: shere_head_link2
+shere_head_link2 not found, copying bodies to new component
+shere_head_link2 mass[kg] 0.0160464175164957 	 COM[cm] -2.0576940733084e-12 0.15217810850766883 71.10982300983255
+exporting stl of shere_head_link2
+Body: head
+head not found, copying bodies to new component
+head mass[kg] 2.0664381552877775 	 COM[cm] 0.0649237635868437 1.5046110821381156 86.64854985670138
+exporting stl of head
+Joint: EXPORT_left_wrist_0
+	parent: lower_arm_left
+	child: wrist_left_1
+	pos: -0.9900625387205082	-0.06389576348571357	-0.10673226779252953
+Joint: EXPORT_left_wrist_1
+	parent: wrist_left_1
+	child: left_hand
+	pos: 1.6116326190712265	7.816945585980226	10.336124335231345
+Joint: EXPORT_sphere_left_axis0
+	parent: torso
+	child: sphere_left_link1
+	pos: 3.9283445474325163e-07	-1.6697847608382332e-05	-3.7661544922684698e-06
+Joint: EXPORT_sphere_left_axis1
+	parent: sphere_left_link1
+	child: sphere_left_link2
+	pos: -9.872906794328173e-07	1.392142948819508e-05	-2.5913787453646364e-06
+Joint: EXPORT_sphere_left_axis2
+	parent: sphere_left_link2
+	child: upper_arm_left
+	pos: -1.0981441799161615	0.26006691102320767	15.153981541606967
+Joint: EXPORT_elbow_left_rot1
+	parent: elbow_left
+	child: lower_arm_left
+	pos: 0.15883800233880407	0.276197583512779	12.014580167753087
+Joint: EXPORT_elbow_left_rot0
+	parent: upper_arm_left
+	child: elbow_left
+	pos: 1.465705304984759	-0.36865574488177866	3.741012374078707
+Joint: EXPORT_elbow_right_rot1
+	parent: elbow_right
+	child: lower_arm_right
+	pos: -0.14317049176434793	0.2833190416926906	12.369312705704283
+Joint: EXPORT_hip_joint
+	ERROR writing joint EXPORT_hip_joint, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+Joint: EXPORT_sphere_right_axis0
+	parent: torso
+	child: sphere_right_link1
+	pos: -8.958507574874375e-06	-1.680529193437419e-05	-1.2962124245063933e-06
+Joint: EXPORT_sphere_right_axis2
+	parent: sphere_right_link2
+	child: upper_arm_right
+	pos: 1.0364674320051073	0.49676158462055536	15.098225854693233
+Joint: EXPORT_sphere_right_axis1
+	parent: sphere_right_link1
+	child: sphere_right_link2
+	pos: 1.1628181656675451e-05	1.2732201987719627e-05	-1.0334542182022233e-06
+Joint: EXPORT_elbow_right_rot0
+	parent: upper_arm_right
+	child: elbow_right
+	pos: -1.505249789831094	-0.3597305755087185	3.9350670994569725
+Joint: EXPORT_right_wrist_0
+	parent: lower_arm_right
+	child: wrist_right_1
+	pos: 1.1094392792996501	-0.048043688755387004	-0.15766831427710581
+Joint: EXPORT_right_wrist_1
+	parent: wrist_right_1
+	child: right_hand
+	pos: -1.2781650531728026	11.323020333167017	10.121948409630965
+Joint: EXPORT_zed_camera_mount
+	parent: head
+	child: zed_camera
+	pos: 2.149999999998915	-4.477388309942955	-2.8804128333927537
+Joint: EXPORT_zed_camera_right
+	parent: zed_camera
+	child: zed_camera_right_lense
+	pos: -1.1119993814645568e-12	-1.9342045553250422	-4.220983215547747
+Joint: EXPORT_zed_camera_left
+	parent: zed_camera
+	child: zed_camera_left_lense
+	pos: -0.0017810504181934306	-1.9342045553251008	-4.220983228922165
+Joint: EXPORT_sphere_head_axis0
+	parent: torso
+	child: sphere_head_link1
+	pos: -9.14800472930607e-16	-3.3306690738754696e-16	0.0
+Joint: EXPORT_sphere_head_axis2
+	parent: shere_head_link2
+	child: head
+	pos: -0.06492376358890309	-1.3524329736304486	-15.538726846868798
+Joint: EXPORT_sphere_head_axis1
+	parent: sphere_head_link1
+	child: shere_head_link2
+	pos: -1.7287226757593036e-15	-1.1657341758564144e-15	5.684341886080802e-14

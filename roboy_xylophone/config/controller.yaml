@@ -1,0 +1,46 @@
+#  These controllers are loaded by the robot.launch script, the following types are available
+#  type: cardsflow/kindyn/TorquePositionController
+#  type: cardsflow/kindyn/CableLengthController
+#  type: cardsflow/kindyn/ForcePositionController
+hip_joint:
+  joint: hip_joint
+  type: cardsflow/kindyn/CableLengthController
+elbow_left_rot1:
+  joint: elbow_left_rot1
+  type: cardsflow/kindyn/CableLengthController
+elbow_right_rot1:
+  joint: elbow_right_rot1
+  type: cardsflow/kindyn/CableLengthController
+elbow_left_rot0:
+  joint: elbow_left_rot0
+  type: cardsflow/kindyn/CableLengthController
+elbow_right_rot0:
+  joint: elbow_right_rot0
+  type: cardsflow/kindyn/CableLengthController
+sphere_left_axis0:
+  joint: sphere_left_axis0
+  type: cardsflow/kindyn/CableLengthController
+sphere_left_axis1:
+  joint: sphere_left_axis1
+  type: cardsflow/kindyn/CableLengthController
+sphere_left_axis2:
+  joint: sphere_left_axis2
+  type: cardsflow/kindyn/CableLengthController
+sphere_right_axis0:
+  joint: sphere_right_axis0
+  type: cardsflow/kindyn/CableLengthController
+sphere_right_axis1:
+  joint: sphere_right_axis1
+  type: cardsflow/kindyn/CableLengthController
+sphere_right_axis2:
+  joint: sphere_right_axis2
+  type: cardsflow/kindyn/CableLengthController
+sphere_head_axis0:
+  joint: sphere_head_axis0
+  type: cardsflow/kindyn/CableLengthController
+sphere_head_axis1:
+  joint: sphere_head_axis1
+  type: cardsflow/kindyn/CableLengthController
+sphere_head_axis2:
+  joint: sphere_head_axis2
+  type: cardsflow/kindyn/CableLengthController
