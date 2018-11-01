@@ -1,0 +1,178 @@
+<?xml version="1.0" ?>
+<robot name="theClaw">
+  <joint name="joint0" type="prismatic">
+    <parent link="base"/>
+    <child link="link0"/>
+    <origin rpy="0 0 0" xyz="1   0.75 0.01"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="0.0" lower="-1.7" upper="1.2" velocity="0.0"/>
+  </joint>
+  <joint name="joint1" type="prismatic">
+    <parent link="link0"/>
+    <child link="link1"/>
+    <origin rpy="0 0 0" xyz="0   0   0.01"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-1.05" upper="0.7" velocity="0.0"/>
+  </joint>
+  <joint name="joint2" type="prismatic">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0.0" lower="0.9" upper="2.7" velocity="0.0"/>
+  </joint>
+  <joint name="sphere_axis0" type="revolute">
+    <parent link="link2"/>
+    <child link="sphere_link1"/>
+    <origin rpy="0 0 0" xyz="-0.005  0     0.853"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="sphere_axis2" type="revolute">
+    <parent link="sphere_link2"/>
+    <child link="theClaw"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="sphere_axis1" type="revolute">
+    <parent link="sphere_link1"/>
+    <child link="sphere_link2"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <link name="theClaw">
+    <inertial>
+      <mass value="2.1850906238956522"/>
+      <origin rpy="0 0 0" xyz="0.00113 -0.00348  0.04158"/>
+      <inertia ixx="3.0499605924633575" ixy="-1.6249506698617342" ixz="-1.4915860235354594" iyy="4.00041051149521" iyz="-1.9908220858218477" izz="3.3913989680828767"/>
+    </inertial>
+    <collision name="theClaw_collision">
+      <origin rpy="0 0 0" xyz="0.00113 -0.00348  0.04158"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/theClaw.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="theClaw_visual">
+      <origin rpy="0 0 0" xyz="0.00113 -0.00348  0.04158"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/theClaw.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="base">
+    <inertial>
+      <mass value="150.43516421714438"/>
+      <origin rpy="0 0 0" xyz="1.22716 0.87    0"/>
+      <inertia ixx="451.0022383783446" ixy="-179.0291338501403" ixz="-116.09093953388212" iyy="633.607548598436" iyz="-163.73296758724786" izz="551.9172263837241"/>
+    </inertial>
+    <collision name="base_collision">
+      <origin rpy="0 0 0" xyz="1.22716 0.87    0"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="base_visual">
+      <origin rpy="0 0 0" xyz="1.22716 0.87    0"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link2">
+    <inertial>
+      <mass value="0.3322371208930956"/>
+      <origin rpy="0 0 0" xyz="-0.005    0       0.86046"/>
+      <inertia ixx="0.4528859132012393" ixy="-0.24793061240442454" ixz="-0.21939005021271807" iyy="0.594874622399814" iyz="-0.2910590052691696" izz="0.5158734638345004"/>
+    </inertial>
+    <collision name="link2_collision">
+      <origin rpy="0 0 0" xyz="-0.005    0       0.86046"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="link2_visual">
+      <origin rpy="0 0 0" xyz="-0.005    0       0.86046"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link0">
+    <inertial>
+      <mass value="0.26666504410640257"/>
+      <origin rpy="0 0 0" xyz="0      0      0.00506"/>
+      <inertia ixx="0.15011719391097655" ixy="-0.19999878307980032" ixz="-0.003012469576995049" iyy="0.27234468224805297" iyz="-0.004016626102660019" izz="0.4223361004364948"/>
+    </inertial>
+    <collision name="link0_collision">
+      <origin rpy="0 0 0" xyz="0      0      0.00506"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="link0_visual">
+      <origin rpy="0 0 0" xyz="0      0      0.00506"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link1">
+    <inertial>
+      <mass value="0.2666650441064026"/>
+      <origin rpy="0 0 0" xyz="0       0      -0.00493"/>
+      <inertia ixx="0.15567872545150593" ixy="-0.19999878307980196" ixz="-0.003012469576995067" iyy="0.26678315070752745" iyz="-0.004016626102660045" izz="0.42233610043649855"/>
+    </inertial>
+    <collision name="link1_collision">
+      <origin rpy="0 0 0" xyz="0       0      -0.00493"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="link1_visual">
+      <origin rpy="0 0 0" xyz="0       0      -0.00493"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link1">
+    <inertial>
+      <mass value="0.04675410312962819"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.061937814867289574" ixy="-0.03489024946048508" ixz="-0.03061224902412415" iyy="0.08192636280778379" iyz="-0.040612250372004666" izz="0.07259288795411918"/>
+    </inertial>
+    <collision name="sphere_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/sphere_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="sphere_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/sphere_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link2">
+    <inertial>
+      <mass value="0.03134065871089992"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.04151744403686321" ixy="-0.023387966561304308" ixz="-0.020520296287579034" iyy="0.05491635915484632" iyz="-0.027223593076864904" izz="0.048659854798805274"/>
+    </inertial>
+    <collision name="sphere_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/sphere_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="sphere_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/theClaw/meshes/CAD/sphere_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

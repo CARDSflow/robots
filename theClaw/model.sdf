@@ -303,31 +303,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libmusc_plugin.so" name="musc_plugin">
-			<myoMuscle name="motor0">
-				<link name="theClaw">
-					<viaPoint type="FIXPOINT">-0.07612587194238003 0.0021690139094644677 0.008214696457827558</viaPoint>
-				</link>
-				<link name="base">
-					<viaPoint type="FIXPOINT">-1.9456618411224498 -0.4399999999999999 2.7</viaPoint>
-				</link>
-			</myoMuscle>
-			<myoMuscle name="motor1">
-				<link name="theClaw">
-					<viaPoint type="FIXPOINT">0.0374822645133321 0.06777873331743578 0.008214696457827415</viaPoint>
-				</link>
-				<link name="base">
-					<viaPoint type="FIXPOINT">0.9728309205612249 1.31 2.7</viaPoint>
-				</link>
-			</myoMuscle>
-			<myoMuscle name="motor2">
-				<link name="theClaw">
-					<viaPoint type="FIXPOINT">0.03749756856851036 -0.06079695917495826 0.006214696457827387</viaPoint>
-				</link>
-				<link name="base">
-					<viaPoint type="FIXPOINT">0.9728309205612249 -0.87 2.7</viaPoint>
-				</link>
-			</myoMuscle>
-		</plugin>
+		<plugin filename="libmusc_plugin.so" name="musc_plugin"/>
 	</model>
 </sdf>
