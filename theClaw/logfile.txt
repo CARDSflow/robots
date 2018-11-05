@@ -1,60 +1,52 @@
 Body: theClaw
 theClaw not found, copying bodies to new component
-theClaw mass[kg] 9.53551085636046 	 COM[cm] 97.74624737984382 92.08679953184573 97.07229499270258
+theClaw mass[kg] 2.1850906578274305 	 COM[cm] 99.61374409318945 74.65137106501408 91.45853035421722
 exporting stl of theClaw
 Body: base
 base not found, copying bodies to new component
-base mass[kg] 88.78140839044468 	 COM[cm] 122.71690794387752 87.0 0.0
+base mass[kg] 150.43516421714438 	 COM[cm] 122.71690794387752 87.0 0.0
 exporting stl of base
-Body: link5
-link5 not found, copying bodies to new component
-link5 mass[kg] 6.341214007483421 	 COM[cm] 95.38180212880661 100.20324790126355 100.34952623458743
-exporting stl of link5
-Body: link0
-link0 not found, copying bodies to new component
-link0 mass[kg] 0.0 	 COM[cm] 0.0 0.0 0.0
-exporting stl of link0
-Body: base
-base not found, copying bodies to new component
-base mass[kg] 88.78140839044468 	 COM[cm] 122.71690794387752 87.0 0.0
-exporting stl of base
-Body: link1
-link1 not found, copying bodies to new component
-link1 mass[kg] 0.0 	 COM[cm] 0.0 0.0 0.0
-exporting stl of link1
 Body: link2
 link2 not found, copying bodies to new component
-link2 mass[kg] 0.0 	 COM[cm] 0.0 0.0 0.0
+link2 mass[kg] 0.3322371208930949 	 COM[cm] 99.50000150139188 74.99959379681212 88.04603417730598
 exporting stl of link2
-Body: link3
-link3 not found, copying bodies to new component
-link3 mass[kg] 0.0 	 COM[cm] 0.0 0.0 0.0
-exporting stl of link3
-Body: link4
-link4 not found, copying bodies to new component
-link4 mass[kg] 0.0 	 COM[cm] 0.0 0.0 0.0
-exporting stl of link4
+Body: link0
+link0 not found, copying bodies to new component
+link0 mass[kg] 0.26666504410640257 	 COM[cm] 99.99999999999919 75.00000000000001 1.5062439533909748
+exporting stl of link0
+Body: link1
+link1 not found, copying bodies to new component
+link1 mass[kg] 0.2666650441064026 	 COM[cm] 99.99999999999962 75.00000000000033 1.5062439533909746
+exporting stl of link1
+Body: sphere_link1
+sphere_link1 not found, copying bodies to new component
+sphere_link1 mass[kg] 0.04675410312962822 	 COM[cm] 99.49999999999997 75.00000000000009 87.30000000000014
+exporting stl of sphere_link1
+Body: sphere_link2
+sphere_link2 not found, copying bodies to new component
+sphere_link2 mass[kg] 0.03134065871090014 	 COM[cm] 99.49999999999989 74.99999999453276 87.29999999205423
+exporting stl of sphere_link2
 Joint: EXPORT_joint0
 	parent: base
 	child: link0
-	pos: 30.000000000000853	169.99999999999915	42.30338125000151
+	pos: 8.100187187665142e-13	-1.4210854715202004e-14	-0.5062439533909748
 Joint: EXPORT_joint1
 	parent: link0
 	child: link1
-	pos: 30.215337836955378	185.58396856183165	123.79305250000252
+	pos: 3.836930773104541e-13	-3.268496584496461e-13	0.4937560466090254
 Joint: EXPORT_joint2
 	parent: link1
 	child: link2
-	pos: 109.38469568716867	200.07695777392956	116.88481139244946
-Joint: EXPORT_joint3
+	pos: 0.49999849860805057	0.000406203187878873	-86.04603417730598
+Joint: EXPORT_sphere_axis0
 	parent: link2
-	child: link3
-	pos: 186.98048334545862	199.00474635332247	94.45042140123644
-Joint: EXPORT_joint4
-	parent: link3
-	child: link4
-	pos: 107.05629736436222	200.1091313667256	90.26855616338928
-Joint: EXPORT_joint5
-	parent: link4
-	child: link5
-	pos: 0.06903478351291881	16.66068556516055	-1.8421317419200847
+	child: sphere_link1
+	pos: -7.105427357601002e-14	-1.4210854715202004e-14	-9.947598300641403e-14
+Joint: EXPORT_sphere_axis2
+	parent: sphere_link2
+	child: theClaw
+	pos: -0.11374409318953838	0.3486289349859817	-4.158530354217206
+Joint: EXPORT_sphere_axis1
+	parent: sphere_link1
+	child: sphere_link2
+	pos: 8.526512829121202e-14	5.4673137128702365e-09	7.945899938022194e-09

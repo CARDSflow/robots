@@ -1,25 +1,25 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
-	<model name="TestCube">
+	<model name="theClaw">
 		<link name="theClaw">
 			<self_collide>false</self_collide>
-			<pose frame="">0.9774624737984382 0.9208679953184573 0.9707229499270258 0.0 -0.0 0.0</pose>
+			<pose frame="">0.9961374409318946 0.7465137106501407 0.9145853035421722 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>9.535510856360158</mass>
+				<mass>2.1850906238956522</mass>
 				<inertia>
-					<ixx>17.39798154469973</ixx>
-					<ixy>-8.546907506866162</ixy>
-					<ixz>-8.58062812071354</ixz>
-					<iyy>18.35936920388003</iyy>
-					<iyz>-9.033792736586518</iyz>
-					<izz>17.515428380234198</izz>
+					<ixx>3.0499605924633575</ixx>
+					<ixy>-1.6249506698617342</ixy>
+					<ixz>-1.4915860235354594</ixz>
+					<iyy>4.00041051149521</iyy>
+					<iyz>-1.9908220858218477</iyz>
+					<izz>3.3913989680828767</izz>
 				</inertia>
 			</inertial>
 			<collision name="theClaw_collision">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/theClaw.stl</uri>
+						<uri>model://theClaw/meshes/CAD/theClaw.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -27,7 +27,7 @@
 			<visual name="theClaw_visual">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/theClaw.stl</uri>
+						<uri>model://theClaw/meshes/CAD/theClaw.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -38,20 +38,20 @@
 			<pose frame="">1.2271690794387753 0.87 0.0 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>88.78140839044471</mass>
+				<mass>150.43516421714438</mass>
 				<inertia>
-					<ixx>412.4665858614631</ixx>
-					<ixy>-132.78881698011557</ixy>
-					<ixz>-115.85973794953198</ixz>
-					<iyy>568.0983779073733</iyy>
-					<iyz>-163.42469880811436</iyz>
-					<izz>447.8765134261683</izz>
+					<ixx>451.0022383783446</ixx>
+					<ixy>-179.0291338501403</ixy>
+					<ixz>-116.09093953388212</ixz>
+					<iyy>633.607548598436</iyy>
+					<iyz>-163.73296758724786</iyz>
+					<izz>551.9172263837241</izz>
 				</inertia>
 			</inertial>
 			<collision name="base_collision">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/base.stl</uri>
+						<uri>model://theClaw/meshes/CAD/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -59,135 +59,7 @@
 			<visual name="base_visual">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/base.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="link5">
-			<self_collide>false</self_collide>
-			<pose frame="">0.9538180212880661 1.0020324790126356 1.0034952623458744 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>6.341214007483405</mass>
-				<inertia>
-					<ixx>12.927098560803122</ixx>
-					<ixy>-6.060550214035525</ixy>
-					<ixz>-6.3827097812039915</ixz>
-					<iyy>12.377446996921066</iyy>
-					<iyz>-6.070182513806174</iyz>
-					<izz>12.303840305322279</izz>
-				</inertia>
-			</inertial>
-			<collision name="link5_collision">
-				<geometry>
-					<mesh>
-						<uri>model://TestCube/meshes/CAD/link5.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="link5_visual">
-				<geometry>
-					<mesh>
-						<uri>model://TestCube/meshes/CAD/link5.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="link0">
-			<self_collide>false</self_collide>
-			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.0</mass>
-				<inertia>
-					<ixx>0.0</ixx>
-					<ixy>0.0</ixy>
-					<ixz>0.0</ixz>
-					<iyy>0.0</iyy>
-					<iyz>0.0</iyz>
-					<izz>0.0</izz>
-				</inertia>
-			</inertial>
-			<collision name="link0_collision">
-				<geometry>
-					<mesh>
-						<uri>model://TestCube/meshes/CAD/link0.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="link0_visual">
-				<geometry>
-					<mesh>
-						<uri>model://TestCube/meshes/CAD/link0.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="base">
-			<self_collide>false</self_collide>
-			<pose frame="">1.2271690794387753 0.87 0.0 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>88.78140839044471</mass>
-				<inertia>
-					<ixx>412.4665858614631</ixx>
-					<ixy>-132.78881698011557</ixy>
-					<ixz>-115.85973794953198</ixz>
-					<iyy>568.0983779073733</iyy>
-					<iyz>-163.42469880811436</iyz>
-					<izz>447.8765134261683</izz>
-				</inertia>
-			</inertial>
-			<collision name="base_collision">
-				<geometry>
-					<mesh>
-						<uri>model://TestCube/meshes/CAD/base.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="base_visual">
-				<geometry>
-					<mesh>
-						<uri>model://TestCube/meshes/CAD/base.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="link1">
-			<self_collide>false</self_collide>
-			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.0</mass>
-				<inertia>
-					<ixx>0.0</ixx>
-					<ixy>0.0</ixy>
-					<ixz>0.0</ixz>
-					<iyy>0.0</iyy>
-					<iyz>0.0</iyz>
-					<izz>0.0</izz>
-				</inertia>
-			</inertial>
-			<collision name="link1_collision">
-				<geometry>
-					<mesh>
-						<uri>model://TestCube/meshes/CAD/link1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="link1_visual">
-				<geometry>
-					<mesh>
-						<uri>model://TestCube/meshes/CAD/link1.stl</uri>
+						<uri>model://theClaw/meshes/CAD/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -195,23 +67,23 @@
 		</link>
 		<link name="link2">
 			<self_collide>false</self_collide>
-			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<pose frame="">0.9950000150139188 0.7499959379681213 0.8804603417730599 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.0</mass>
+				<mass>0.3322371208930956</mass>
 				<inertia>
-					<ixx>0.0</ixx>
-					<ixy>0.0</ixy>
-					<ixz>0.0</ixz>
-					<iyy>0.0</iyy>
-					<iyz>0.0</iyz>
-					<izz>0.0</izz>
+					<ixx>0.4528859132012393</ixx>
+					<ixy>-0.24793061240442454</ixy>
+					<ixz>-0.21939005021271807</ixz>
+					<iyy>0.594874622399814</iyy>
+					<iyz>-0.2910590052691696</iyz>
+					<izz>0.5158734638345004</izz>
 				</inertia>
 			</inertial>
 			<collision name="link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/link2.stl</uri>
+						<uri>model://theClaw/meshes/CAD/link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -219,179 +91,218 @@
 			<visual name="link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/link2.stl</uri>
+						<uri>model://theClaw/meshes/CAD/link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="link3">
+		<link name="link0">
 			<self_collide>false</self_collide>
-			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<pose frame="">0.9999999999999919 0.7500000000000001 0.015062439533909748 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.0</mass>
+				<mass>0.26666504410640257</mass>
 				<inertia>
-					<ixx>0.0</ixx>
-					<ixy>0.0</ixy>
-					<ixz>0.0</ixz>
-					<iyy>0.0</iyy>
-					<iyz>0.0</iyz>
-					<izz>0.0</izz>
+					<ixx>0.15011719391097655</ixx>
+					<ixy>-0.19999878307980032</ixy>
+					<ixz>-0.003012469576995049</ixz>
+					<iyy>0.27234468224805297</iyy>
+					<iyz>-0.004016626102660019</iyz>
+					<izz>0.4223361004364948</izz>
 				</inertia>
 			</inertial>
-			<collision name="link3_collision">
+			<collision name="link0_collision">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/link3.stl</uri>
+						<uri>model://theClaw/meshes/CAD/link0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="link3_visual">
+			<visual name="link0_visual">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/link3.stl</uri>
+						<uri>model://theClaw/meshes/CAD/link0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="link4">
+		<link name="link1">
 			<self_collide>false</self_collide>
-			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<pose frame="">0.9999999999999962 0.7500000000000033 0.015062439533909747 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.0</mass>
+				<mass>0.2666650441064026</mass>
 				<inertia>
-					<ixx>0.0</ixx>
-					<ixy>0.0</ixy>
-					<ixz>0.0</ixz>
-					<iyy>0.0</iyy>
-					<iyz>0.0</iyz>
-					<izz>0.0</izz>
+					<ixx>0.15567872545150593</ixx>
+					<ixy>-0.19999878307980196</ixy>
+					<ixz>-0.003012469576995067</ixz>
+					<iyy>0.26678315070752745</iyy>
+					<iyz>-0.004016626102660045</iyz>
+					<izz>0.42233610043649855</izz>
 				</inertia>
 			</inertial>
-			<collision name="link4_collision">
+			<collision name="link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/link4.stl</uri>
+						<uri>model://theClaw/meshes/CAD/link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="link4_visual">
+			<visual name="link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://TestCube/meshes/CAD/link4.stl</uri>
+						<uri>model://theClaw/meshes/CAD/link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<joint name="joint0" type="revolute">
+		<link name="sphere_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.9949999999999998 0.7500000000000009 0.8730000000000014 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.04675410312962819</mass>
+				<inertia>
+					<ixx>0.061937814867289574</ixx>
+					<ixy>-0.03489024946048508</ixy>
+					<ixz>-0.03061224902412415</ixz>
+					<iyy>0.08192636280778379</iyy>
+					<iyz>-0.040612250372004666</iyz>
+					<izz>0.07259288795411918</izz>
+				</inertia>
+			</inertial>
+			<collision name="sphere_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://theClaw/meshes/CAD/sphere_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="sphere_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://theClaw/meshes/CAD/sphere_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="sphere_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.9949999999999989 0.7499999999453276 0.8729999999205422 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.03134065871089992</mass>
+				<inertia>
+					<ixx>0.04151744403686321</ixx>
+					<ixy>-0.023387966561304308</ixy>
+					<ixz>-0.020520296287579034</ixz>
+					<iyy>0.05491635915484632</iyy>
+					<iyz>-0.027223593076864904</iyz>
+					<izz>0.048659854798805274</izz>
+				</inertia>
+			</inertial>
+			<collision name="sphere_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://theClaw/meshes/CAD/sphere_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="sphere_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://theClaw/meshes/CAD/sphere_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<joint name="joint0" type="prismatic">
 			<parent>base</parent>
 			<child>link0</child>
-			<pose frame="">0.30000000000000854 1.6999999999999915 0.4230338125000151 0 0 0</pose>
+			<pose frame="">8.100187187665143e-15 -1.4210854715202004e-16 -0.005062439533909748 0 0 0</pose>
 			<axis>
-				<xyz>7.217810417059705e-15 2.5191782032935096e-14 -0.9999999999999998</xyz>
+				<xyz>1.0 0.0 0.0</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>-1.7</lower>
+					<upper>1.2</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint1" type="revolute">
+		<joint name="joint1" type="prismatic">
 			<parent>link0</parent>
 			<child>link1</child>
-			<pose frame="">0.3021533783695538 1.8558396856183166 1.2379305250000252 0 0 0</pose>
+			<pose frame="">3.836930773104541e-15 -3.268496584496461e-15 0.004937560466090254 0 0 0</pose>
 			<axis>
-				<xyz>0.013816588587174577 0.9999045463842088 1.3022504381596292e-13</xyz>
+				<xyz>0.0 -1.0 0.0</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>-1.05</lower>
+					<upper>0.7</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint2" type="revolute">
+		<joint name="joint2" type="prismatic">
 			<parent>link1</parent>
 			<child>link2</child>
-			<pose frame="">1.0938469568716866 2.0007695777392955 1.1688481139244946 0 0 0</pose>
+			<pose frame="">0.004999984986080506 4.06203187878873e-06 -0.8604603417730599 0 0 0</pose>
 			<axis>
-				<xyz>-0.9960996077057815 0.013764012296245725 0.08715574274769859</xyz>
+				<xyz>1.7516230804060208e-46 6.123233995736767e-17 1.0</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>0.9</lower>
+					<upper>2.7</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint3" type="revolute">
+		<joint name="sphere_axis0" type="revolute">
 			<parent>link2</parent>
-			<child>link3</child>
-			<pose frame="">1.8698048334545863 1.9900474635332248 0.9445042140123644 0 0 0</pose>
+			<child>sphere_link1</child>
+			<pose frame="">-7.105427357601002e-16 -1.4210854715202004e-16 -9.947598300641404e-16 0 0 0</pose>
 			<axis>
-				<xyz>-0.08714742341716242 0.001204195040688383 -0.9961946980917187</xyz>
+				<xyz>0.9999999999999991 -6.716849298982185e-15 2.105926602316762e-30</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint4" type="revolute">
-			<parent>link3</parent>
-			<child>link4</child>
-			<pose frame="">1.0705629736436222 2.001091313667256 0.9026855616338928 0 0 0</pose>
+		<joint name="sphere_axis2" type="revolute">
+			<parent>sphere_link2</parent>
+			<child>theClaw</child>
+			<pose frame="">-0.0011374409318953838 0.003486289349859817 -0.041585303542172054 0 0 0</pose>
 			<axis>
-				<xyz>0.996099607705757 -0.013764012296173602 -0.0871557427479456</xyz>
+				<xyz>-3.503246160812043e-46 3.1675370922415445e-16 0.9999999999999991</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint5" type="revolute">
-			<parent>link4</parent>
-			<child>link5</child>
-			<pose frame="">0.000690347835129188 0.1666068556516055 -0.018421317419200847 0 0 0</pose>
+		<joint name="sphere_axis1" type="revolute">
+			<parent>sphere_link1</parent>
+			<child>sphere_link2</child>
+			<pose frame="">8.526512829121202e-16 5.467313712870237e-11 7.945899938022194e-11 0 0 0</pose>
 			<axis>
-				<xyz>-0.006168613879663185 -0.9962045602189674 0.0868240888333195</xyz>
+				<xyz>-6.716849298982191e-15 -1.0 3.1675370922415475e-16</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<!--<plugin filename="libmusc_plugin.so" name="musc_plugin">-->
-			<!--<myoMuscle name="motor0">-->
-				<!--<link name="theClaw">-->
-					<!--<viaPoint type="FIXPOINT">-0.045451823953425646 -0.162069198061336 -0.062275085977813234</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">-1.9456618411224498 -0.4399999999999999 2.7</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor1">-->
-				<!--<link name="theClaw">-->
-					<!--<viaPoint type="FIXPOINT">0.14052687635655262 -0.109666792575577 -0.06227508597781295</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">0.9728309205612249 1.31 2.7</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor2">-->
-				<!--<link name="theClaw">-->
-					<!--<viaPoint type="FIXPOINT">0.14052517154550642 -0.21480895220483617 -0.06236641450446257</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">0.9728309205612249 -0.87 2.7</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-		<!--</plugin>-->
+		<plugin filename="libmusc_plugin.so" name="musc_plugin"/>
 	</model>
 </sdf>

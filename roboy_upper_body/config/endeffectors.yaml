@@ -4,10 +4,10 @@ joint_names: ['sphere_head_axis0', 'sphere_head_axis1', 'sphere_head_axis2','hip
 endeffectors: ['head','lower_arm_left', 'lower_arm_right']
 head:
   base_link: 'base'
-  joints: ['sphere_head_axis0', 'sphere_head_axis1', 'sphere_head_axis2']
+  joints: ['hip_joint','sphere_head_axis0', 'sphere_head_axis1', 'sphere_head_axis2']
 lower_arm_left:
   base_link: 'base'
-  joints: ['hip_joint', 'sphere_left_axis0', 'sphere_left_axis1', 'sphere_left_axis2', 'elbow_left_rot0', 'elbow_left_rot1']
+  joints: ['sphere_left_axis0', 'sphere_left_axis1', 'sphere_left_axis2', 'elbow_left_rot0', 'elbow_left_rot1']
 lower_arm_right:
   base_link: 'base'
   joints: ['sphere_right_axis0', 'sphere_right_axis1', 'sphere_right_axis2', 'elbow_right_rot0', 'elbow_right_rot1']
