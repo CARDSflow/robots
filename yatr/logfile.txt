@@ -1,15 +1,3 @@
-Joint: EXPORT_joint0
-	parent: base
-	child: link0
-	pos: 0.0	-0.5	0.0
-Joint: EXPORT_joint1
-	parent: link0
-	child: link1
-	pos: -1.7556647654035474e-09	-0.4999999999999998	19.999773612988896
-Joint: EXPORT_joint2
-	parent: link1
-	child: link2
-	pos: -1.3013301767506253e-13	-0.4999999999999989	39.999547225977764
 Body: link0
 COM: link0 -5.563947494092521e-07 0.0 9.999889067288539
 exporting stl of link0
@@ -22,3 +10,15 @@ exporting stl of link1
 Body: link2
 COM: link2 -5.563948862593776e-07 1.1993322788254998e-15 49.99943629326631
 exporting stl of link2
+Joint: EXPORT_joint0
+	parent: base
+	child: link0
+	pos: 5.563947494092521e-07	-0.5	-9.999889067288539
+Joint: EXPORT_joint1
+	parent: link0
+	child: link1
+	pos: -5.563946838776725e-07	0.49999999999999933	-9.999889067288535
+Joint: EXPORT_joint2
+	parent: link1
+	child: link2
+	pos: 5.5639475612636e-07	-0.5000000000000001	-9.999889067288542

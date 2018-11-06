@@ -1,45 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="yatr">
-		<joint name="joint0" type="revolute">
-			<parent>base</parent>
-			<child>link0</child>
-			<pose frame="">0.0 -0.005 0.0 0 0 0</pose>
-			<axis>
-				<xyz>0.0 -1.0 0.0</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint1" type="revolute">
-			<parent>link0</parent>
-			<child>link1</child>
-			<pose frame="">-1.7556647654035476e-11 -0.0049999999999999975 0.19999773612988897 0 0 0</pose>
-			<axis>
-				<xyz>0.0 -0.9999999999999996 0.0</xyz>
-				<limit>
-					<lower>-6.283185307179586</lower>
-					<upper>-3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint2" type="revolute">
-			<parent>link1</parent>
-			<child>link2</child>
-			<pose frame="">-1.3013301767506253e-15 -0.004999999999999989 0.39999547225977766 0 0 0</pose>
-			<axis>
-				<xyz>0.0 -0.9999999999999984 0.0</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
 		<link name="link0">
 			<self_collide>false</self_collide>
 			<pose frame="">-5.563947494092521e-09 0.0 0.0999988906728854 0.0 -0.0 0.0</pose>
@@ -168,6 +129,45 @@
 				</geometry>
 			</visual>
 		</link>
+		<joint name="joint0" type="revolute">
+			<parent>base</parent>
+			<child>link0</child>
+			<pose frame="">5.563947494092521e-09 -0.005 -0.0999988906728854 0 0 0</pose>
+			<axis>
+				<xyz>0.0 -1.0 0.0</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint1" type="revolute">
+			<parent>link0</parent>
+			<child>link1</child>
+			<pose frame="">-5.563946838776726e-09 0.004999999999999993 -0.09999889067288535 0 0 0</pose>
+			<axis>
+				<xyz>0.0 -0.9999999999999996 0.0</xyz>
+				<limit>
+					<lower>-6.283185307179586</lower>
+					<upper>-3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint2" type="revolute">
+			<parent>link1</parent>
+			<child>link2</child>
+			<pose frame="">5.5639475612636e-09 -0.005000000000000001 -0.09999889067288542 0 0 0</pose>
+			<axis>
+				<xyz>0.0 -0.9999999999999984 0.0</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
 		<plugin filename="libmusc_plugin.so" name="musc_plugin">
 			<myoMuscle name="motor0">
 				<link name="link0">
