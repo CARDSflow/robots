@@ -1,10 +1,14 @@
 Body: link0
+COM: link0 -5.563947494092521e-07 0.0 9.999889067288539
 exporting stl of link0
 Body: base
+COM: base 0.0 0.5 0.0
 exporting stl of base
 Body: link1
+COM: link1 5.54639019112269e-07 -0.9999999999999991 29.99966268027743
 exporting stl of link1
 Body: link2
+COM: link2 -5.563948862593776e-07 1.1993322788254998e-15 49.99943629326631
 exporting stl of link2
 Joint: EXPORT_joint0
 	parent: base
