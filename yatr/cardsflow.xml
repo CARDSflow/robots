@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<cardsflow>
+	<myoMuscle name="motor0">
+		<link name="link0">
+			<viaPoint type="FIXPOINT">-0.005 -0.15999818933418183 -0.02000000024599064</viaPoint>
+		</link>
+		<link name="link1">
+			<viaPoint type="FIXPOINT">0.004999999999999992 -0.3599959254640705 0.020000000228432672</viaPoint>
+		</link>
+	</myoMuscle>
+	<myoMuscle name="motor1">
+		<link name="link0">
+			<viaPoint type="FIXPOINT">-0.0049999999999999975 -0.15999275507580485 0.01999999901573027</viaPoint>
+		</link>
+		<link name="link1">
+			<viaPoint type="FIXPOINT">0.00499999999999999 -0.35999049120569354 -0.019999999033288224</viaPoint>
+		</link>
+	</myoMuscle>
+	<myoMuscle name="motor2">
+		<link name="link1">
+			<viaPoint type="FIXPOINT">0.005 -0.239995924172082 0.019998641663990076</viaPoint>
+		</link>
+		<link name="link2">
+			<viaPoint type="FIXPOINT">-0.005000000000000015 -0.4399936603019709 -0.01999864168154813</viaPoint>
+		</link>
+	</myoMuscle>
+	<myoMuscle name="motor3">
+		<link name="link1">
+			<viaPoint type="FIXPOINT">0.0049999999999999975 -0.23999048991370497 -0.020001357597730553</viaPoint>
+		</link>
+		<link name="link2">
+			<viaPoint type="FIXPOINT">-0.005000000000000012 -0.4399882260435939 0.020001357580172713</viaPoint>
+		</link>
+	</myoMuscle>
+	<myoMuscle name="motor4">
+		<link name="link0">
+			<viaPoint type="FIXPOINT">-0.005 -0.0399927537838163 0.020001357580174045</viaPoint>
+		</link>
+		<link name="link2">
+			<viaPoint type="FIXPOINT">-0.005000000000000013 -0.5599936615939592 -0.020000000245992036</viaPoint>
+		</link>
+	</myoMuscle>
+	<myoMuscle name="motor5">
+		<link name="link0">
+			<viaPoint type="FIXPOINT">-0.005000000000000003 -0.039998188042193294 -0.01999864168154687</viaPoint>
+		</link>
+		<link name="link2">
+			<viaPoint type="FIXPOINT">-0.005000000000000011 -0.5599882273355823 0.019999999015728815</viaPoint>
+		</link>
+	</myoMuscle>
+</cardsflow>

@@ -1,0 +1,20 @@
+Body: link0
+exporting stl of link0
+Body: base
+exporting stl of base
+Body: link1
+exporting stl of link1
+Body: link2
+exporting stl of link2
+Joint: EXPORT_joint0
+	parent: base
+	child: link0
+	pos: 0.0	-0.5	0.0
+Joint: EXPORT_joint1
+	parent: link0
+	child: link1
+	pos: -1.7556647654035474e-09	-0.4999999999999998	19.999773612988896
+Joint: EXPORT_joint2
+	parent: link1
+	child: link2
+	pos: -1.3013301767506253e-13	-0.4999999999999989	39.999547225977764
