@@ -2,12 +2,12 @@
 #  type: cardsflow/kindyn/TorquePositionController
 #  type: cardsflow/kindyn/CableLengthController
 #  type: cardsflow/kindyn/ForcePositionController
-sphere_axis0:
-  joint: sphere_axis0
+joint0:
+  joint: joint0
   type: cardsflow/kindyn/CableLengthController
-sphere_axis1:
-  joint: sphere_axis1
+joint1:
+  joint: joint1
   type: cardsflow/kindyn/CableLengthController
-sphere_axis2:
-  joint: sphere_axis2
+joint2:
+  joint: joint2
   type: cardsflow/kindyn/CableLengthController
