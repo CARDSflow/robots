@@ -38,14 +38,14 @@
 			<pose frame="">0.0 0.005 0.0 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.024661502330679867</mass>
+				<mass>0.049323004661358645</mass>
 				<inertia>
-					<ixx>8.220500378772341e-07</ixx>
-					<ixy>8.715250743307479e-23</ixy>
-					<ixz>-9.670511946779926e-17</ixz>
-					<iyy>1.2330750369097686e-06</iyy>
-					<iyz>0.0</iyz>
-					<izz>8.220500378771992e-07</izz>
+					<ixx>4.264384748154175e-06</ixx>
+					<ixy>-2.4065857640032105e-18</ixy>
+					<ixz>-9.662493916096083e-17</ixz>
+					<iyy>0.0022242106194684656</iyy>
+					<iyz>2.578881552750545e-16</iyz>
+					<izz>0.0022206655285581956</izz>
 				</inertia>
 			</inertial>
 			<collision name="base_collision">
@@ -215,6 +215,22 @@
 				</link>
 				<link name="link2">
 					<viaPoint type="FIXPOINT">0.020000004579677672 0.004999999999999999 0.05999386440291921</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor6">
+				<link name="base">
+					<viaPoint type="FIXPOINT">-0.3 -0.005000000000000651 0.02</viaPoint>
+				</link>
+				<link name="link0">
+					<viaPoint type="FIXPOINT">-0.019999994682043144 -0.0049999999999999975 0.05999929866129644</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor7">
+				<link name="base">
+					<viaPoint type="FIXPOINT">0.3 -0.005 0.02</viaPoint>
+				</link>
+				<link name="link0">
+					<viaPoint type="FIXPOINT">0.020000004579677762 -0.0049999999999999975 0.05999386440291945</viaPoint>
 				</link>
 			</myoMuscle>
 		</plugin>

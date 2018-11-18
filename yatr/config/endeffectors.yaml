@@ -1,5 +1,0 @@
-joint_names: ['joint0', 'joint1', 'joint2']
-endeffectors: ['link2']
-link5:
-  base_link: 'base'
-  joints: ['joint0', 'joint1', 'joint2']
