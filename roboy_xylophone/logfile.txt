@@ -1,123 +1,99 @@
-mass[kg] 	 COM[cm] 			 component name
 Body: torso
-looking for cached torso
-torsonot found, copying bodies to new component
+COM: torso 0.0 0.0 0.0
 exporting stl of torso
-mass[kg] 	 COM[cm] 			 component name
 Body: right_hand
-looking for cached right_hand
-right_handnot found, copying bodies to new component
+COM: right_hand -26.98510367085325 -0.17499434157416083 -13.024698196882762
 exporting stl of right_hand
-mass[kg] 	 COM[cm] 			 component name
 Body: left_hand
-looking for cached left_hand
-left_handnot found, copying bodies to new component
+COM: left_hand 26.975949001658112 -0.6792324262862302 -13.14462184560031
 exporting stl of left_hand
-mass[kg] 	 COM[cm] 			 component name
 Body: elbow_left
-looking for cached elbow_left
-elbow_leftnot found, copying bodies to new component
+COM: elbow_left 29.246099888787032 0.26742978127753525 24.36851997831152
 exporting stl of elbow_left
-mass[kg] 	 COM[cm] 			 component name
 Body: elbow_right
-looking for cached elbow_right
-elbow_rightnot found, copying bodies to new component
+COM: elbow_right -29.205436561642703 0.2562136866253571 24.07449775865269
 exporting stl of elbow_right
-mass[kg] 	 COM[cm] 			 component name
 Body: sphere_right_link1
-looking for cached sphere_right_link1
-sphere_right_link1not found, copying bodies to new component
+COM: sphere_right_link1 -29.21799666276168 0.9210203783611735 54.8615244082417
 exporting stl of sphere_right_link1
-mass[kg] 	 COM[cm] 			 component name
 Body: sphere_right_link2
-looking for cached sphere_right_link2
-sphere_right_link2not found, copying bodies to new component
+COM: sphere_right_link2 -29.218017249450913 0.9209908408672508 54.86152414548352
 exporting stl of sphere_right_link2
-mass[kg] 	 COM[cm] 			 component name
 Body: sphere_left_link1
-looking for cached sphere_left_link1
-sphere_left_link1not found, copying bodies to new component
+COM: sphere_left_link1 29.218005222734156 0.9210203825021934 54.861526875690465
 exporting stl of sphere_left_link1
-mass[kg] 	 COM[cm] 			 component name
 Body: sphere_left_link2
-looking for cached sphere_left_link2
-sphere_left_link2not found, copying bodies to new component
+COM: sphere_left_link2 29.21800660285928 0.9209897632250984 54.86152570091471
 exporting stl of sphere_left_link2
-mass[kg] 	 COM[cm] 			 component name
 Body: wrist_left_1
-looking for cached wrist_left_1
-wrist_left_1not found, copying bodies to new component
+COM: wrist_left_1 28.382910812159288 -0.4517829187733993 -4.60263795467499
 exporting stl of wrist_left_1
-mass[kg] 	 COM[cm] 			 component name
 Body: wrist_right_1
-looking for cached wrist_right_1
-wrist_right_1not found, copying bodies to new component
+COM: wrist_right_1 -28.668674295414657 -0.4439510879921008 -4.905987848597987
 exporting stl of wrist_right_1
-mass[kg] 	 COM[cm] 			 component name
 Body: upper_arm_left
-looking for cached upper_arm_left
-upper_arm_leftnot found, copying bodies to new component
+COM: upper_arm_left 30.316149801185674 0.6609366620456846 39.70754157042611
 exporting stl of upper_arm_left
-mass[kg] 	 COM[cm] 			 component name
 Body: lower_arm_left
-looking for cached lower_arm_left
-lower_arm_leftnot found, copying bodies to new component
+COM: lower_arm_left 28.67576752988603 -0.12029774645435036 9.482915225116281
 exporting stl of lower_arm_left
-mass[kg] 	 COM[cm] 			 component name
 Body: lower_arm_right
-looking for cached lower_arm_right
-lower_arm_rightnot found, copying bodies to new component
+COM: lower_arm_right -28.69031619781163 -0.12971012985662464 9.028215193184677
 exporting stl of lower_arm_right
-mass[kg] 	 COM[cm] 			 component name
 Body: upper_arm_right
-looking for cached upper_arm_right
-upper_arm_rightnot found, copying bodies to new component
+COM: upper_arm_right -30.25447305327413 0.4242419884484555 39.76329725734144
 exporting stl of upper_arm_right
-mass[kg] 	 COM[cm] 			 component name
 Body: zed_camera_left_lense
-looking for cached zed_camera_left_lense
-zed_camera_left_lensenot found, copying bodies to new component
+COM: zed_camera_left_lense 5.999964724565572 -8.173913560527492 95.28625747224352
 exporting stl of zed_camera_left_lense
-mass[kg] 	 COM[cm] 			 component name
 Body: zed_camera_right_lense
-looking for cached zed_camera_right_lense
-zed_camera_right_lensenot found, copying bodies to new component
+COM: zed_camera_right_lense -6.000035275434433 -8.173913560527538 95.28625747224348
 exporting stl of zed_camera_right_lense
-mass[kg] 	 COM[cm] 			 component name
 Body: zed_camera
-looking for cached zed_camera
-zed_cameranot found, copying bodies to new component
+COM: zed_camera -3.51796944748628e-05 -5.6307298059096125 94.74568704182059
 exporting stl of zed_camera
-mass[kg] 	 COM[cm] 			 component name
 Body: sphere_head_link1
-looking for cached sphere_head_link1
-sphere_head_link1not found, copying bodies to new component
+COM: sphere_head_link1 -2.0591149070298684e-12 0.1521781085076716 71.10989936345878
 exporting stl of sphere_head_link1
-mass[kg] 	 COM[cm] 			 component name
 Body: shere_head_link2
-looking for cached shere_head_link2
-shere_head_link2not found, copying bodies to new component
+COM: shere_head_link2 -2.0576940733084e-12 0.1521781085076725 71.10989936345874
 exporting stl of shere_head_link2
-mass[kg] 	 COM[cm] 			 component name
 Body: head
-looking for cached head
-headnot found, copying bodies to new component
+COM: head 0.06492376358659663 1.5046110821376588 86.64862621002403
 exporting stl of head
-mass[kg] 	 COM[cm] 			 component name
 Body: base
-looking for cached base
-basenot found, copying bodies to new component
+COM: base -5.551115123125783e-17 -3.3306690738754696e-16 0.0
 exporting stl of base
-mass[kg] 	 COM[cm] 			 component name
 Body: left_stick_tip
-looking for cached left_stick_tip
-left_stick_tipnot found, copying bodies to new component
+COM: left_stick_tip 26.920934288914786 -27.579017670378484 -20.327503666285686
 exporting stl of left_stick_tip
-mass[kg] 	 COM[cm] 			 component name
 Body: right_stick_tip
-looking for cached right_stick_tip
-right_stick_tipnot found, copying bodies to new component
+COM: right_stick_tip -27.2131258246756 -27.567848415451376 -20.336496032974374
 exporting stl of right_stick_tip
+Joint: EXPORT_hip_joint
+	parent: base
+	child: torso
+	pos: 6.819971302895877e-17	0.1521781085074027	10.423789166998208
+Joint: EXPORT_elbow_right_rot1
+	parent: elbow_right
+	child: lower_arm_right
+	pos: -0.14317049176433017	0.2833190416926896	12.36931270570428
+Joint: EXPORT_left_wrist_0
+	parent: lower_arm_left
+	child: wrist_left_1
+	pos: -0.9900625387205118	-0.06389576348572507	-0.10673226779253131
+Joint: EXPORT_left_wrist_1
+	parent: wrist_left_1
+	child: left_hand
+	pos: 1.5726692712065784	-1.5184675598829038	8.434970839173358
+Joint: EXPORT_elbow_left_rot1
+	parent: elbow_left
+	child: lower_arm_left
+	pos: 0.15883800233882184	0.27619758351277873	12.014580167753083
+Joint: EXPORT_elbow_left_rot0
+	parent: upper_arm_left
+	child: elbow_left
+	pos: 1.4657053051341755	-0.368655744913409	3.741012373978524
 Joint: EXPORT_sphere_left_axis0
 	parent: torso
 	child: sphere_left_link1
@@ -130,14 +106,6 @@ Joint: EXPORT_sphere_left_axis2
 	parent: sphere_left_link2
 	child: upper_arm_left
 	pos: -1.0981441799162148	0.26006691102354107	15.15398154160323
-Joint: EXPORT_elbow_left_rot1
-	parent: elbow_left
-	child: lower_arm_left
-	pos: 0.15883800233882184	0.27619758351277873	12.014580167753083
-Joint: EXPORT_elbow_left_rot0
-	parent: upper_arm_left
-	child: elbow_left
-	pos: 1.4657053051341755	-0.368655744913409	3.741012373978524
 Joint: EXPORT_sphere_right_axis0
 	parent: torso
 	child: sphere_right_link1
@@ -150,10 +118,18 @@ Joint: EXPORT_sphere_right_axis1
 	parent: sphere_right_link1
 	child: sphere_right_link2
 	pos: 1.1628181660228165e-05	1.2732201988607805e-05	-1.033454232413078e-06
-Joint: EXPORT_zed_camera_mount
-	parent: head
-	child: zed_camera
-	pos: 1.7441984798717158	-0.035287165494438	0.8157120344507689
+Joint: EXPORT_elbow_right_rot0
+	parent: upper_arm_right
+	child: elbow_right
+	pos: -1.5052497896296053	-0.35973057548359805	3.9350670996568837
+Joint: EXPORT_right_wrist_0
+	parent: lower_arm_right
+	child: wrist_right_1
+	pos: 1.1094392792996715	-0.0480436887553739	-0.15766831427710581
+Joint: EXPORT_right_wrist_1
+	parent: wrist_right_1
+	child: right_hand
+	pos: -1.5531310593887149	1.4734962767048851	7.934944438475782
 Joint: EXPORT_sphere_head_axis0
 	parent: torso
 	child: sphere_head_link1
@@ -166,22 +142,18 @@ Joint: EXPORT_sphere_head_axis1
 	parent: sphere_head_link1
 	child: shere_head_link2
 	pos: -1.7288546692289504e-15	-1.3322676295501878e-15	2.842170943040401e-14
+Joint: EXPORT_zed_camera_mount
+	parent: head
+	child: zed_camera
+	pos: 2.149999999998915	-4.477388309942952	-2.8803364797665836
 Joint: EXPORT_zed_camera_right
 	parent: zed_camera
 	child: zed_camera_right_lense
-	pos: -3.143450744147458e-08	1.1317372644295869	-3.0072442314121872e-09
+	pos: -1.1119993814645568e-12	-1.9342045553250422	-4.220906861921591
 Joint: EXPORT_zed_camera_left
 	parent: zed_camera
 	child: zed_camera_left_lense
-	pos: -0.00198882352576657	1.1317372644295816	-1.7942525687431043e-08
-Joint: EXPORT_left_wrist_0
-	parent: lower_arm_left
-	child: wrist_left_1
-	pos: -0.9900625387205118	-0.06389576348572507	-0.10673226779253131
-Joint: EXPORT_left_wrist_1
-	parent: wrist_left_1
-	child: left_hand
-	pos: 1.60939586898035	5.367606783607143	9.599543544589782
+	pos: -0.0017810504181934306	-1.9342045553251008	-4.220906875296009
 Joint: EXPORT_left_stick_tip_joint
 	parent: left_hand
 	child: left_stick_tip
@@ -190,23 +162,3 @@ Joint: EXPORT_right_stick_tip_joint
 	parent: right_hand
 	child: right_stick_tip
 	pos: 0.0036419375258240905	0.43751478314676717	0.11678299880273713
-Joint: EXPORT_hip_joint
-	parent: base
-	child: torso
-	pos: 6.819971302895877e-17	0.1521781085074027	-47.076210833001795
-Joint: EXPORT_elbow_right_rot1
-	parent: elbow_right
-	child: lower_arm_right
-	pos: -0.14317049176433017	0.2833190416926896	12.36931270570428
-Joint: EXPORT_elbow_right_rot0
-	parent: upper_arm_right
-	child: elbow_right
-	pos: -1.5052497896296053	-0.35973057548359805	3.9350670996568837
-Joint: EXPORT_right_wrist_0
-	parent: lower_arm_right
-	child: wrist_right_1
-	pos: 1.1094392792996715	-0.0480436887553739	-0.15766831427710581
-Joint: EXPORT_right_wrist_1
-	parent: wrist_right_1
-	child: right_hand
-	pos: -1.129546139366667	8.13567977079613	8.376377534883224
