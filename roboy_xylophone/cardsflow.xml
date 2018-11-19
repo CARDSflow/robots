@@ -194,8 +194,6 @@
 		<link name="torso">
 			<viaPoint type="FIXPOINT">-0.3100988054292128 0.0015223435010265783 0.5915377063521623</viaPoint>
 		</link>
-	</myoMuscle>
-	<myoMuscle name="motor18">
 		<link name="upper_arm_right">
 			<viaPoint type="FIXPOINT">-0.018825437428896558 0.0033877324223911287 0.10268575087498022</viaPoint>
 		</link>

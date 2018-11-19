@@ -769,32 +769,6 @@
 				</geometry>
 			</visual>
 		</link>
-		<joint name="hip_joint" type="revolute">
-			<parent>base</parent>
-			<child>torso</child>
-			<pose frame="">6.8199713028958765e-19 0.001521781085074027 0.10423789166998208 0 0 0</pose>
-			<axis>
-				<xyz>-9.863650210179225e-31 5.148659276699155e-15 -1.0000000000000002</xyz>
-				<limit>
-					<lower>-0.17453292519943295</lower>
-					<upper>0.17453292519943295</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_right_rot1" type="revolute">
-			<parent>elbow_right</parent>
-			<child>lower_arm_right</child>
-			<pose frame="">-0.0014317049176433016 0.0028331904169268964 0.1236931270570428 0 0 0</pose>
-			<axis>
-				<xyz>-0.01118842648953284 0.022909252225335578 0.999674939805517</xyz>
-				<limit>
-					<lower>-1.5707963267948966</lower>
-					<upper>1.5707963267948966</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
 		<joint name="left_wrist_0" type="revolute">
 			<parent>lower_arm_left</parent>
 			<child>wrist_left_1</child>
@@ -817,32 +791,6 @@
 				<limit>
 					<lower>-0.5235987755982988</lower>
 					<upper>0.5235987755982988</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_left_rot1" type="revolute">
-			<parent>elbow_left</parent>
-			<child>lower_arm_left</child>
-			<pose frame="">0.0015883800233882184 0.0027619758351277875 0.12014580167753083 0 0 0</pose>
-			<axis>
-				<xyz>-0.011188426489533955 -0.022909252225335637 -0.9996749398055156</xyz>
-				<limit>
-					<lower>-1.5707963267948966</lower>
-					<upper>1.5707963267948966</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_left_rot0" type="revolute">
-			<parent>upper_arm_left</parent>
-			<child>elbow_left</child>
-			<pose frame="">0.014657053051341755 -0.00368655744913409 0.03741012373978524 0 0 0</pose>
-			<axis>
-				<xyz>-0.9986354432836098 -0.05074429632816577 0.012339684270769044</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>1.5707963267948966</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -882,6 +830,58 @@
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_left_rot1" type="revolute">
+			<parent>elbow_left</parent>
+			<child>lower_arm_left</child>
+			<pose frame="">0.0015883800233882184 0.0027619758351277875 0.12014580167753083 0 0 0</pose>
+			<axis>
+				<xyz>-0.011188426489533955 -0.022909252225335637 -0.9996749398055156</xyz>
+				<limit>
+					<lower>-1.5707963267948966</lower>
+					<upper>1.5707963267948966</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_left_rot0" type="revolute">
+			<parent>upper_arm_left</parent>
+			<child>elbow_left</child>
+			<pose frame="">0.014657053051341755 -0.00368655744913409 0.03741012373978524 0 0 0</pose>
+			<axis>
+				<xyz>-0.9986354432836098 -0.05074429632816577 0.012339684270769044</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>1.5707963267948966</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_right_rot1" type="revolute">
+			<parent>elbow_right</parent>
+			<child>lower_arm_right</child>
+			<pose frame="">-0.0014317049176433016 0.0028331904169268964 0.1236931270570428 0 0 0</pose>
+			<axis>
+				<xyz>-0.01118842648953284 0.022909252225335578 0.999674939805517</xyz>
+				<limit>
+					<lower>-1.5707963267948966</lower>
+					<upper>1.5707963267948966</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="hip_joint" type="revolute">
+			<parent>base</parent>
+			<child>torso</child>
+			<pose frame="">6.8199713028958765e-19 0.001521781085074027 0.10423789166998208 0 0 0</pose>
+			<axis>
+				<xyz>-9.863650210179225e-31 5.148659276699155e-15 -1.0000000000000002</xyz>
+				<limit>
+					<lower>-0.17453292519943295</lower>
+					<upper>0.17453292519943295</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -964,6 +964,11 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
+		<joint name="zed_camera_mount" type="fixed">
+			<parent>head</parent>
+			<child>zed_camera</child>
+			<pose frame="">0.02149999999998915 -0.04477388309942952 -0.028803364797665838 0 0 0</pose>
+		</joint>
 		<joint name="sphere_head_axis0" type="revolute">
 			<parent>torso</parent>
 			<child>sphere_head_link1</child>
@@ -1003,11 +1008,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="zed_camera_mount" type="fixed">
-			<parent>head</parent>
-			<child>zed_camera</child>
-			<pose frame="">0.02149999999998915 -0.04477388309942952 -0.028803364797665838 0 0 0</pose>
-		</joint>
 		<joint name="zed_camera_right" type="fixed">
 			<parent>zed_camera</parent>
 			<child>zed_camera_right_lense</child>
@@ -1018,15 +1018,15 @@
 			<child>zed_camera_left_lense</child>
 			<pose frame="">-1.7810504181934308e-05 -0.01934204555325101 -0.04220906875296009 0 0 0</pose>
 		</joint>
-		<joint name="left_stick_tip_joint" type="fixed">
-			<parent>left_hand</parent>
-			<child>left_stick_tip</child>
-			<pose frame="">8.740522319321542e-06 0.004273732635654888 0.0011412002917457898 0 0 0</pose>
-		</joint>
 		<joint name="right_stick_tip_joint" type="fixed">
 			<parent>right_hand</parent>
 			<child>right_stick_tip</child>
 			<pose frame="">3.641937525824091e-05 0.004375147831467672 0.0011678299880273713 0 0 0</pose>
+		</joint>
+		<joint name="left_stick_tip_joint" type="fixed">
+			<parent>left_hand</parent>
+			<child>left_stick_tip</child>
+			<pose frame="">8.740522319321542e-06 0.004273732635654888 0.0011412002917457898 0 0 0</pose>
 		</joint>
 		<plugin filename="libmusc_plugin.so" name="musc_plugin">
 			<myoMuscle name="motor0">
@@ -1223,8 +1223,6 @@
 				<link name="torso">
 					<viaPoint type="FIXPOINT">-0.3100988054292128 0.0015223435010265783 0.5915377063521623</viaPoint>
 				</link>
-			</myoMuscle>
-			<myoMuscle name="motor18">
 				<link name="upper_arm_right">
 					<viaPoint type="FIXPOINT">-0.018825437428896558 0.0033877324223911287 0.10268575087498022</viaPoint>
 				</link>

@@ -70,14 +70,6 @@ exporting stl of left_stick_tip
 Body: right_stick_tip
 COM: right_stick_tip -27.2131258246756 -27.567848415451376 -20.336496032974374
 exporting stl of right_stick_tip
-Joint: EXPORT_hip_joint
-	parent: base
-	child: torso
-	pos: 6.819971302895877e-17	0.1521781085074027	10.423789166998208
-Joint: EXPORT_elbow_right_rot1
-	parent: elbow_right
-	child: lower_arm_right
-	pos: -0.14317049176433017	0.2833190416926896	12.36931270570428
 Joint: EXPORT_left_wrist_0
 	parent: lower_arm_left
 	child: wrist_left_1
@@ -86,14 +78,6 @@ Joint: EXPORT_left_wrist_1
 	parent: wrist_left_1
 	child: left_hand
 	pos: 1.5726692712065784	-1.5184675598829038	8.434970839173358
-Joint: EXPORT_elbow_left_rot1
-	parent: elbow_left
-	child: lower_arm_left
-	pos: 0.15883800233882184	0.27619758351277873	12.014580167753083
-Joint: EXPORT_elbow_left_rot0
-	parent: upper_arm_left
-	child: elbow_left
-	pos: 1.4657053051341755	-0.368655744913409	3.741012373978524
 Joint: EXPORT_sphere_left_axis0
 	parent: torso
 	child: sphere_left_link1
@@ -106,6 +90,22 @@ Joint: EXPORT_sphere_left_axis2
 	parent: sphere_left_link2
 	child: upper_arm_left
 	pos: -1.0981441799162148	0.26006691102354107	15.15398154160323
+Joint: EXPORT_elbow_left_rot1
+	parent: elbow_left
+	child: lower_arm_left
+	pos: 0.15883800233882184	0.27619758351277873	12.014580167753083
+Joint: EXPORT_elbow_left_rot0
+	parent: upper_arm_left
+	child: elbow_left
+	pos: 1.4657053051341755	-0.368655744913409	3.741012373978524
+Joint: EXPORT_elbow_right_rot1
+	parent: elbow_right
+	child: lower_arm_right
+	pos: -0.14317049176433017	0.2833190416926896	12.36931270570428
+Joint: EXPORT_hip_joint
+	parent: base
+	child: torso
+	pos: 6.819971302895877e-17	0.1521781085074027	10.423789166998208
 Joint: EXPORT_sphere_right_axis0
 	parent: torso
 	child: sphere_right_link1
@@ -130,6 +130,10 @@ Joint: EXPORT_right_wrist_1
 	parent: wrist_right_1
 	child: right_hand
 	pos: -1.5531310593887149	1.4734962767048851	7.934944438475782
+Joint: EXPORT_zed_camera_mount
+	parent: head
+	child: zed_camera
+	pos: 2.149999999998915	-4.477388309942952	-2.8803364797665836
 Joint: EXPORT_sphere_head_axis0
 	parent: torso
 	child: sphere_head_link1
@@ -142,10 +146,6 @@ Joint: EXPORT_sphere_head_axis1
 	parent: sphere_head_link1
 	child: shere_head_link2
 	pos: -1.7288546692289504e-15	-1.3322676295501878e-15	2.842170943040401e-14
-Joint: EXPORT_zed_camera_mount
-	parent: head
-	child: zed_camera
-	pos: 2.149999999998915	-4.477388309942952	-2.8803364797665836
 Joint: EXPORT_zed_camera_right
 	parent: zed_camera
 	child: zed_camera_right_lense
@@ -154,11 +154,11 @@ Joint: EXPORT_zed_camera_left
 	parent: zed_camera
 	child: zed_camera_left_lense
 	pos: -0.0017810504181934306	-1.9342045553251008	-4.220906875296009
-Joint: EXPORT_left_stick_tip_joint
-	parent: left_hand
-	child: left_stick_tip
-	pos: 0.0008740522319321542	0.42737326356548877	0.11412002917457897
 Joint: EXPORT_right_stick_tip_joint
 	parent: right_hand
 	child: right_stick_tip
 	pos: 0.0036419375258240905	0.43751478314676717	0.11678299880273713
+Joint: EXPORT_left_stick_tip_joint
+	parent: left_hand
+	child: left_stick_tip
+	pos: 0.0008740522319321542	0.42737326356548877	0.11412002917457897
