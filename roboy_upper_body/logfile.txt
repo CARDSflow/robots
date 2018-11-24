@@ -25,29 +25,13 @@ Body: head
 Body: left_stick_tip
 Body: right_stick_tip
 Body: spine_v0_sphere_link1
-COM: spine_v0_sphere_link1 0.0 -4.440892098500626e-15 8.04511885429319
-exporting stl of spine_v0_sphere_link1
 Body: spine_v0_sphere_link2
-COM: spine_v0_sphere_link2 0.0 -4.440892098500626e-15 8.04511885429319
-exporting stl of spine_v0_sphere_link2
 Body: spine_v1_sphere_link1
-COM: spine_v1_sphere_link1 0.0 -4.440892098500626e-15 11.94511885429319
-exporting stl of spine_v1_sphere_link1
 Body: spine_v1_sphere_link2
-COM: spine_v1_sphere_link2 0.0 -4.440892098500626e-15 11.94511885429319
-exporting stl of spine_v1_sphere_link2
 Body: spine_v2_sphere_link1
-COM: spine_v2_sphere_link1 0.0 -4.440892098500626e-15 15.84511885429319
-exporting stl of spine_v2_sphere_link1
 Body: spine_v2_sphere_link2
-COM: spine_v2_sphere_link2 0.0 -4.440892098500626e-15 15.84511885429319
-exporting stl of spine_v2_sphere_link2
 Body: spine_link1
-COM: spine_link1 0.0 0.0 10.098971902562745
-exporting stl of spine_link1
 Body: spine_link2
-COM: spine_link2 0.0 0.0 13.998971902562745
-exporting stl of spine_link2
 Joint: EXPORT_elbow_right_rot1
 	parent: elbow_right
 	child: lower_arm_right
@@ -139,32 +123,32 @@ Joint: EXPORT_right_stick_tip_joint
 Joint: EXPORT_spine_v1_axis0
 	parent: spine_link1
 	child: spine_v1_sphere_link1
-	pos: 6.81997130289588e-17	0.15217810850735006	8.423789166998196
+	pos: 6.81997130289588e-17	0.15217810850734562	20.368908021291386
 Joint: EXPORT_spine_v1_axis2
 	parent: spine_v1_sphere_link2
 	child: spine_link2
-	pos: 0.0	0.1521781085073465	6.36993611872864
+	pos: 0.0	0.1521781085073465	20.368908021291386
 Joint: EXPORT_spine_v1_axis1
 	parent: spine_v1_sphere_link1
 	child: spine_v1_sphere_link2
-	pos: 6.81997130289588e-17	0.15217810850735294	8.423789166998192
+	pos: 6.81997130289588e-17	0.1521781085073485	20.368908021291382
 Joint: EXPORT_spine_v0_axis0
 	ERROR writing joint EXPORT_spine_v0_axis0, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
 Joint: EXPORT_spine_v0_axis2
 	parent: spine_v0_sphere_link2
 	child: spine_link1
-	pos: 0.0	0.15217810850736707	6.3699361187286385
+	pos: 0.0	0.15217810850736707	16.468908021291384
 Joint: EXPORT_spine_v0_axis1
 	parent: spine_v0_sphere_link1
 	child: spine_v0_sphere_link2
-	pos: 6.81997130289588e-17	0.1521781085073735	8.423789166998194
+	pos: 6.81997130289588e-17	0.15217810850736907	16.468908021291384
 Joint: EXPORT_spine_v2_axis0
 	parent: spine_link2
 	child: spine_v2_sphere_link1
-	pos: 6.81997130289588e-17	0.15217810850732952	8.423789166998194
+	pos: 6.81997130289588e-17	0.15217810850732508	24.268908021291384
 Joint: EXPORT_spine_v2_axis2
 	ERROR writing joint EXPORT_spine_v2_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
 Joint: EXPORT_spine_v2_axis1
 	parent: spine_v2_sphere_link1
 	child: spine_v2_sphere_link2
-	pos: 6.81997130289588e-17	0.15217810850733243	8.423789166998194
+	pos: 6.81997130289588e-17	0.152178108507328	24.268908021291384
