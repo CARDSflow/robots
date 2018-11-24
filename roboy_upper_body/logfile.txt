@@ -2,8 +2,6 @@ Body: torso
 Body: right_hand
 Body: left_hand
 Body: base
-COM: base -5.551115123125783e-17 -3.3306690738754696e-16 0.0
-exporting stl of base
 Body: elbow_left
 Body: elbow_right
 Body: sphere_right_link1
@@ -25,6 +23,8 @@ Body: head
 Body: left_stick_tip
 Body: right_stick_tip
 Body: spine_v0_sphere_link1
+COM: spine_v0_sphere_link1 0.0 -4.440892098500626e-15 8.04511885429319
+exporting stl of spine_v0_sphere_link1
 Body: spine_v0_sphere_link2
 Body: spine_v1_sphere_link1
 Body: spine_v1_sphere_link2
