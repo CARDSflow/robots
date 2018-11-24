@@ -102,14 +102,14 @@
 			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.8858636532042157</mass>
+				<mass>0.895619303288162</mass>
 				<inertia>
-					<ixx>0.005666848323130831</ixx>
-					<ixy>1.8900954789054912e-05</ixy>
-					<ixz>2.277264147271596e-05</ixz>
-					<iyy>0.013741965393293263</iyy>
-					<iyz>7.090702646645532e-06</iyz>
-					<izz>0.012621556002038882</izz>
+					<ixx>0.005931451891323691</ixx>
+					<ixy>1.8900953994598964e-05</ixy>
+					<ixz>2.0346346378697583e-05</ixz>
+					<iyy>0.014006546680403489</iyy>
+					<iyz>7.090642651324585e-06</iyz>
+					<izz>0.012622053375679834</izz>
 				</inertia>
 			</inertial>
 			<collision name="base_collision">
@@ -1274,7 +1274,7 @@
 		<joint name="spine_v1_axis0" type="revolute">
 			<parent>spine_link1</parent>
 			<child>spine_v1_sphere_link1</child>
-			<pose frame="">6.81997130289588e-19 0.0015217810850735006 0.08423789166998195 0 0 0</pose>
+			<pose frame="">6.81997130289588e-19 0.0015217810850734561 0.20368908021291388 0 0 0</pose>
 			<axis>
 				<xyz>1.0 -1.0153886588934481e-45 -5.348582902845094e-60</xyz>
 				<limit>
@@ -1287,7 +1287,7 @@
 		<joint name="spine_v1_axis2" type="revolute">
 			<parent>spine_v1_sphere_link2</parent>
 			<child>spine_link2</child>
-			<pose frame="">0.0 0.001521781085073465 0.0636993611872864 0 0 0</pose>
+			<pose frame="">0.0 0.001521781085073465 0.20368908021291388 0 0 0</pose>
 			<axis>
 				<xyz>1.2072879321179697e-61 -5.148623695807787e-15 1.0</xyz>
 				<limit>
@@ -1300,9 +1300,22 @@
 		<joint name="spine_v1_axis1" type="revolute">
 			<parent>spine_v1_sphere_link1</parent>
 			<child>spine_v1_sphere_link2</child>
-			<pose frame="">6.81997130289588e-19 0.0015217810850735294 0.08423789166998193 0 0 0</pose>
+			<pose frame="">6.81997130289588e-19 0.001521781085073485 0.20368908021291382 0 0 0</pose>
 			<axis>
 				<xyz>-1.0153886588934481e-45 -1.0 -5.148623695807787e-15</xyz>
+				<limit>
+					<lower>-0.08726646259971647</lower>
+					<upper>0.08726646259971647</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="spine_v0_axis0" type="revolute">
+			<parent>base</parent>
+			<child>spine_v0_sphere_link1</child>
+			<pose frame="">6.81997130289588e-19 0.0015217810850737064 0.08423789166998194 0 0 0</pose>
+			<axis>
+				<xyz>1.0 -1.0153886588934481e-45 -5.348582902845094e-60</xyz>
 				<limit>
 					<lower>-0.08726646259971647</lower>
 					<upper>0.08726646259971647</upper>
@@ -1313,7 +1326,7 @@
 		<joint name="spine_v0_axis2" type="revolute">
 			<parent>spine_v0_sphere_link2</parent>
 			<child>spine_link1</child>
-			<pose frame="">0.0 0.0015217810850736708 0.06369936118728639 0 0 0</pose>
+			<pose frame="">0.0 0.0015217810850736708 0.16468908021291384 0 0 0</pose>
 			<axis>
 				<xyz>1.2072879321179697e-61 -5.148623695807787e-15 1.0</xyz>
 				<limit>
@@ -1339,7 +1352,7 @@
 		<joint name="spine_v2_axis0" type="revolute">
 			<parent>spine_link2</parent>
 			<child>spine_v2_sphere_link1</child>
-			<pose frame="">6.81997130289588e-19 0.0015217810850732952 0.08423789166998194 0 0 0</pose>
+			<pose frame="">6.81997130289588e-19 0.0015217810850732508 0.24268908021291385 0 0 0</pose>
 			<axis>
 				<xyz>1.0 -1.0153886588934481e-45 -5.348582902845094e-60</xyz>
 				<limit>
@@ -1352,7 +1365,7 @@
 		<joint name="spine_v2_axis1" type="revolute">
 			<parent>spine_v2_sphere_link1</parent>
 			<child>spine_v2_sphere_link2</child>
-			<pose frame="">6.81997130289588e-19 0.0015217810850733243 0.08423789166998194 0 0 0</pose>
+			<pose frame="">6.81997130289588e-19 0.0015217810850732798 0.24268908021291385 0 0 0</pose>
 			<axis>
 				<xyz>-1.0153886588934481e-45 -1.0 -5.148623695807787e-15</xyz>
 				<limit>
