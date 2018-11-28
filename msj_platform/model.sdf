@@ -97,7 +97,7 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="shere_link2">
+		<link name="sphere_link2">
 			<self_collide>false</self_collide>
 			<pose frame="">-0.005999999999999988 -0.00800000005467301 0.10999999992054188 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -112,18 +112,18 @@
 					<izz>5.832702133790424e-06</izz>
 				</inertia>
 			</inertial>
-			<collision name="shere_link2_collision">
+			<collision name="sphere_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/shere_link2.stl</uri>
+						<uri>model://msj_platform/meshes/CAD/sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shere_link2_visual">
+			<visual name="sphere_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/shere_link2.stl</uri>
+						<uri>model://msj_platform/meshes/CAD/sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -143,7 +143,7 @@
 			</axis>
 		</joint>
 		<joint name="sphere_axis2" type="revolute">
-			<parent>shere_link2</parent>
+			<parent>sphere_link2</parent>
 			<child>top</child>
 			<pose frame="">-0.0001289635067912609 -0.00010743849619847201 -0.06257666293213279 0 0 0</pose>
 			<axis>
@@ -157,7 +157,7 @@
 		</joint>
 		<joint name="sphere_axis1" type="revolute">
 			<parent>sphere_link1</parent>
-			<child>shere_link2</child>
+			<child>sphere_link2</child>
 			<pose frame="">-1.3322676295501878e-17 5.467300834283151e-11 7.945812896537064e-11 0 0 0</pose>
 			<axis>
 				<xyz>0.0 -1.0 0.0</xyz>
