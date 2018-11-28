@@ -1,15 +1,15 @@
-Body: base
-COM: base -0.01999063137023958 0.0012357904545724125 3.4422298170734402
-exporting stl of base
-Body: top
-COM: top -0.4785140028680843 -0.5318652122115687 16.615473201489124
-exporting stl of top
 Body: sphere_link1
 COM: sphere_link1 -0.6000000000000005 -0.6999999999999992 10.999999999999996
 exporting stl of sphere_link1
 Body: shere_link2
 COM: shere_link2 -0.5999999999999985 -0.7000000054673008 10.999999992054192
 exporting stl of shere_link2
+Body: top
+COM: top -0.4785140028680843 -0.5318652122115687 16.615473201489124
+exporting stl of top
+Body: base
+COM: base -0.10359681735855825 0.06560618582524438 3.5569574399850117
+exporting stl of base
 Joint: EXPORT_sphere_axis0
 	parent: base
 	child: sphere_link1
