@@ -11,7 +11,9 @@ Body: shere_link2
 COM: shere_link2 -0.5999999999999985 -0.7000000054673008 10.999999992054192
 exporting stl of shere_link2
 Joint: EXPORT_sphere_axis0
-	ERROR writing joint EXPORT_sphere_axis0, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+	parent: base
+	child: sphere_link1
+	pos: 4.440892098500626e-16	-8.881784197001252e-16	3.552713678800501e-15
 Joint: EXPORT_sphere_axis2
 	parent: shere_link2
 	child: top
