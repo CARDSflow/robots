@@ -1,38 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="msj_platform">
-		<link name="top">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.005871036493208736 -0.007892561503801526 0.1725766629321328 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>1.4259339831467317</mass>
-				<inertia>
-					<ixx>0.04354077944871786</ixx>
-					<ixy>-6.877184425058423e-05</ixy>
-					<ixz>0.0019413546516229077</ixz>
-					<iyy>0.04349755958240726</iyy>
-					<iyz>0.0014370255220575643</iyz>
-					<izz>0.0015565759249338191</izz>
-				</inertia>
-			</inertial>
-			<collision name="top_collision">
-				<geometry>
-					<mesh>
-						<uri>model://msj_platform/meshes/CAD/top.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="top_visual">
-				<geometry>
-					<mesh>
-						<uri>model://msj_platform/meshes/CAD/top.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
 		<link name="base">
 			<self_collide>false</self_collide>
 			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
@@ -67,17 +35,17 @@
 		</link>
 		<link name="top">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.005871036493208736 -0.007892561503801526 0.1725766629321328 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.005871036493208736 -0.00789256150380153 0.1725766629321328 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>1.4259339831467317</mass>
 				<inertia>
-					<ixx>0.04354077944871786</ixx>
-					<ixy>-6.877184425058423e-05</ixy>
-					<ixz>0.0019413546516229077</ixz>
-					<iyy>0.04349755958240726</iyy>
-					<iyz>0.0014370255220575643</iyz>
-					<izz>0.0015565759249338191</izz>
+					<ixx>0.043540779448718085</ixx>
+					<ixy>-6.8771844250587e-05</ixy>
+					<ixz>0.0019413546516229485</ixz>
+					<iyy>0.043497559582407475</iyy>
+					<iyz>0.0014370255220575831</iyz>
+					<izz>0.0015565759249338302</izz>
 				</inertia>
 			</inertial>
 			<collision name="top_collision">
@@ -177,7 +145,7 @@
 		<joint name="sphere_axis2" type="revolute">
 			<parent>shere_link2</parent>
 			<child>top</child>
-			<pose frame="">-0.005999999999999997 -0.008 0.11 0 0 0</pose>
+			<pose frame="">-0.0001289635067912609 -0.00010743849619847201 -0.06257666293213279 0 0 0</pose>
 			<axis>
 				<xyz>0.0 0.0 1.0</xyz>
 				<limit>
@@ -210,7 +178,7 @@
 					<viaPoint type="FIXPOINT">0.015999999999999834 -0.11500000000000013 0.07500003504716107</viaPoint>
 				</link>
 				<link name="top">
-					<viaPoint type="FIXPOINT">0.006013484372757801 -0.05485896505349236 0.15850000000000009</viaPoint>
+					<viaPoint type="FIXPOINT">0.011884520865966537 -0.04696640354969083 -0.014076662932132713</viaPoint>
 				</link>
 			</myoMuscle>
 			<myoMuscle name="motor1">
@@ -222,7 +190,7 @@
 					<viaPoint type="FIXPOINT">-0.0160000000000002 -0.11500000000000023 0.2370000350471611</viaPoint>
 				</link>
 				<link name="top">
-					<viaPoint type="FIXPOINT">-0.053021248247546685 -0.019939051759654488 0.16350000000000012</viaPoint>
+					<viaPoint type="FIXPOINT">-0.04715021175433795 -0.01204649025585296 -0.009076662932132678</viaPoint>
 				</link>
 			</myoMuscle>
 			<myoMuscle name="motor2">
@@ -234,7 +202,7 @@
 					<viaPoint type="FIXPOINT">-0.11500000000000031 -0.015999999999999903 0.07500003504716107</viaPoint>
 				</link>
 				<link name="top">
-					<viaPoint type="FIXPOINT">-0.053021248247546685 -0.019939051759654484 0.1585000000000001</viaPoint>
+					<viaPoint type="FIXPOINT">-0.04715021175433795 -0.012046490255852955 -0.014076662932132679</viaPoint>
 				</link>
 			</myoMuscle>
 			<myoMuscle name="motor3">
@@ -246,7 +214,7 @@
 					<viaPoint type="FIXPOINT">-0.1150000000000004 0.01460000000000013 0.2370000350471611</viaPoint>
 				</link>
 				<link name="top">
-					<viaPoint type="FIXPOINT">-0.01810133495370879 0.03909568086065001 0.16350000000000017</viaPoint>
+					<viaPoint type="FIXPOINT">-0.012230298460500055 0.04698824236445154 -0.009076662932132643</viaPoint>
 				</link>
 			</myoMuscle>
 			<myoMuscle name="motor4">
@@ -258,7 +226,7 @@
 					<viaPoint type="FIXPOINT">-0.01600000000000008 0.11500000000000023 0.07500003504716107</viaPoint>
 				</link>
 				<link name="top">
-					<viaPoint type="FIXPOINT">-0.01810133495370879 0.03909568086065002 0.15850000000000017</viaPoint>
+					<viaPoint type="FIXPOINT">-0.012230298460500055 0.046988242364451545 -0.014076662932132642</viaPoint>
 				</link>
 			</myoMuscle>
 			<myoMuscle name="motor5">
@@ -270,7 +238,7 @@
 					<viaPoint type="FIXPOINT">0.014599999999999955 0.11500000000000032 0.2370000350471611</viaPoint>
 				</link>
 				<link name="top">
-					<viaPoint type="FIXPOINT">-0.03845477839655228 0.028198637848949423 0.16350000000000012</viaPoint>
+					<viaPoint type="FIXPOINT">-0.032583741903343545 0.03609119935275095 -0.009076662932132678</viaPoint>
 				</link>
 			</myoMuscle>
 			<myoMuscle name="motor6">
@@ -282,7 +250,7 @@
 					<viaPoint type="FIXPOINT">0.11500000000000006 0.014600000000000026 0.07500003504716107</viaPoint>
 				</link>
 				<link name="top">
-					<viaPoint type="FIXPOINT">0.0409333976665957 0.004175767566812115 0.1585000000000001</viaPoint>
+					<viaPoint type="FIXPOINT">0.04680443415980443 0.012068329070613644 -0.014076662932132679</viaPoint>
 				</link>
 			</myoMuscle>
 			<myoMuscle name="motor7">
@@ -294,7 +262,7 @@
 					<viaPoint type="FIXPOINT">0.11500000000000016 -0.01600000000000001 0.2370000350471611</viaPoint>
 				</link>
 				<link name="top">
-					<viaPoint type="FIXPOINT">0.006013484372757801 -0.054858965053492366 0.1635000000000001</viaPoint>
+					<viaPoint type="FIXPOINT">0.011884520865966537 -0.04696640354969084 -0.009076662932132714</viaPoint>
 				</link>
 			</myoMuscle>
 		</plugin>
