@@ -6,14 +6,14 @@
 			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>4.686007862792891</mass>
+				<mass>4.619603263952997</mass>
 				<inertia>
-					<ixx>0.04460594028890755</ixx>
-					<ixy>0.00010670397991643834</ixy>
-					<ixz>-0.00012998164470001694</ixz>
-					<iyy>0.044628998866831276</iyy>
-					<iyz>0.00031087502181145483</iyz>
-					<izz>0.060446040582081084</izz>
+					<ixx>0.043790587351080296</ixx>
+					<ixy>0.00010989946490613441</ixy>
+					<ixz>-0.00018838652863168795</ixz>
+					<iyy>0.04381552708494565</iyy>
+					<iyz>0.0002671669807161302</iyz>
+					<izz>0.06042776353219055</izz>
 				</inertia>
 			</inertial>
 			<collision name="base_collision">
@@ -35,17 +35,17 @@
 		</link>
 		<link name="top">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.006000000000000001 -0.008 0.162 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.006000000000000001 -0.008 0.132 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>1.3142359170773847</mass>
+				<mass>1.319123043389542</mass>
 				<inertia>
-					<ixx>0.04008218375536087</ixx>
-					<ixy>-6.620016631951791e-05</ixy>
-					<ixz>0.0018694727421311559</ixz>
-					<iyy>0.04003683903773934</iyy>
-					<iyz>0.0013123718261153889</iyz>
-					<izz>0.0014818284436553073</izz>
+					<ixx>0.028201900543355907</ixx>
+					<ixy>-2.853209376381336e-05</ixy>
+					<ixz>0.0013739242782730982</ixz>
+					<iyy>0.028145595658039913</iyy>
+					<iyz>0.0004852518676695242</iyz>
+					<izz>0.0014924064332749879</izz>
 				</inertia>
 			</inertial>
 			<collision name="top_collision">
@@ -67,17 +67,17 @@
 		</link>
 		<link name="sphere_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.0060000000000000045 -0.007999999999999993 0.10999999999999999 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.006000000000000005 -0.006999999999999992 0.10999999999999997 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.04675410312962845</mass>
+				<mass>0.04675410312962846</mass>
 				<inertia>
-					<ixx>0.0005746909032619158</ixx>
-					<ixy>-2.2441969502221693e-06</ixy>
-					<ixz>4.1143610754073024e-05</ixz>
-					<iyy>0.0005733817883742863</iyy>
-					<iyz>3.085770806555482e-05</iyz>
-					<izz>1.064940310607797e-05</izz>
+					<ixx>0.0005739895917149713</ixx>
+					<ixy>-1.9636723314443955e-06</ixy>
+					<ixz>3.600065940981386e-05</ixz>
+					<iyy>0.000573381788374286</iyy>
+					<iyz>3.085770806555481e-05</iyz>
+					<izz>9.948091559133534e-06</izz>
 				</inertia>
 			</inertial>
 			<collision name="sphere_link1_collision">
@@ -97,55 +97,42 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_link2">
+		<link name="shere_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.005999999999999988 -0.00800000005467301 0.10999999992054188 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.005999999999999985 -0.0070000000546730085 0.10999999992054192 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.03134065871089989</mass>
 				<inertia>
-					<ixx>0.0003839264082594096</ixx>
-					<ixy>-1.504351628404124e-06</ixy>
-					<ixz>2.7579779853430193e-05</ixz>
+					<ixx>0.0003834562983753192</ixx>
+					<ixy>-1.3163076761387219e-06</ixy>
+					<ixz>2.4132307397721476e-05</ixz>
 					<iyy>0.00038304886982346855</iyy>
-					<iyz>2.068483473425228e-05</iyz>
-					<izz>5.832702133790424e-06</izz>
+					<iyz>2.068483473425227e-05</iyz>
+					<izz>5.362592249699947e-06</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_link2_collision">
+			<collision name="shere_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://msj_platform/meshes/CAD/shere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_link2_visual">
+			<visual name="shere_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://msj_platform/meshes/CAD/shere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<joint name="sphere_axis0" type="revolute">
-			<parent>base</parent>
-			<child>sphere_link1</child>
-			<pose frame="">3.3306690738754695e-18 -6.661338147750939e-18 1.7763568394002505e-17 0 0 0</pose>
-			<axis>
-				<xyz>1.0 0.0 0.0</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
 		<joint name="sphere_axis2" type="revolute">
-			<parent>sphere_link2</parent>
+			<parent>shere_link2</parent>
 			<child>top</child>
-			<pose frame="">4.440892098500626e-18 0.0 -0.05199999999999999 0 0 0</pose>
+			<pose frame="">4.440892098500626e-18 0.0009999999999999998 -0.021999999999999992 0 0 0</pose>
 			<axis>
 				<xyz>0.0 0.0 1.0</xyz>
 				<limit>
@@ -157,8 +144,8 @@
 		</joint>
 		<joint name="sphere_axis1" type="revolute">
 			<parent>sphere_link1</parent>
-			<child>sphere_link2</child>
-			<pose frame="">-1.3322676295501878e-17 5.467300834283151e-11 7.945812896537064e-11 0 0 0</pose>
+			<child>shere_link2</child>
+			<pose frame="">-1.5543122344752193e-17 5.467300723260848e-11 7.945807567466545e-11 0 0 0</pose>
 			<axis>
 				<xyz>0.0 -1.0 0.0</xyz>
 				<limit>
