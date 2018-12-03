@@ -2,6 +2,7 @@
 <sdf version="1.6">
 	<model name="msj_platform">
 		<link name="base">
+			<kinematic>true</kinematic>
 			<self_collide>false</self_collide>
 			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -34,6 +35,7 @@
 			</visual>
 		</link>
 		<link name="top">
+			<!--<kinematic>true</kinematic>-->
 			<self_collide>false</self_collide>
 			<pose frame="">-0.0008893012765514059 -0.0020516196624920484 0.2700000000000001 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -66,6 +68,7 @@
 			</visual>
 		</link>
 		<link name="sphere_link1">
+			<!--<kinematic>true</kinematic>-->
 			<self_collide>false</self_collide>
 			<pose frame="">-0.0008893012765514524 -0.00205161966249211 0.21699999999999997 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -98,6 +101,7 @@
 			</visual>
 		</link>
 		<link name="sphere_link2">
+			<!--<kinematic>true</kinematic>-->
 			<self_collide>false</self_collide>
 			<pose frame="">-0.0008893012765515212 -0.002051619662492078 0.21700000000000003 0.0 -0.0 0.0</pose>
 			<inertial>
