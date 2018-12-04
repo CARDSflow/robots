@@ -2,7 +2,7 @@ Body: base
 COM: base 1.1546319456101647e-14 -5.329070518200761e-15 -2.974377549180369e-30
 exporting stl of base
 Body: top
-COM: top 0.7571428571428568 -0.6000000000000021 16.357142857142858
+COM: top 0.7571428571428571 -0.6 16.15714285714286
 exporting stl of top
 Body: sphere_link1
 COM: sphere_link1 0.7571428571428578 -0.5999999999999998 10.800000000000002
@@ -17,7 +17,7 @@ Joint: EXPORT_sphere_axis0
 Joint: EXPORT_sphere_axis2
 	parent: sphere_link2
 	child: top
-	pos: 1.2212453270876722e-15	1.9984014443252818e-15	-5.557142857142857
+	pos: 8.881784197001252e-16	-1.1102230246251565e-16	-5.357142857142858
 Joint: EXPORT_sphere_axis1
 	parent: sphere_link1
 	child: sphere_link2

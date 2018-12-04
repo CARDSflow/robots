@@ -1,67 +1,67 @@
 <?xml version="1.0" ?>
 <cardsflow>
-	<myoMuscle name="motor0">
+	<myoMuscle name="motor2">
 		<link name="base">
 			<viaPoint type="FIXPOINT">-0.10899999990083986 0.014092248151036392 0.3311000348459956</viaPoint>
 		</link>
 		<link name="top">
-			<viaPoint type="FIXPOINT">-0.051618795026617974 9.992007221626408e-18 0.0</viaPoint>
-		</link>
-	</myoMuscle>
-	<myoMuscle name="motor1">
-		<link name="base">
-			<viaPoint type="FIXPOINT">-0.0140922481510363 0.10899999990083979 0.0560999999925494</viaPoint>
-		</link>
-		<link name="top">
-			<viaPoint type="FIXPOINT">-0.051618795026617974 9.992007221626408e-18 -0.005</viaPoint>
-		</link>
-	</myoMuscle>
-	<myoMuscle name="motor2">
-		<link name="base">
-			<viaPoint type="FIXPOINT">0.014107751848963786 0.10899999990083979 0.3311000348459956</viaPoint>
-		</link>
-		<link name="top">
-			<viaPoint type="FIXPOINT">1.5543122344752193e-17 0.051618795026617974 0.0</viaPoint>
+			<viaPoint type="FIXPOINT">-0.03817509438042066 0.0008137377009678038 0.0</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor3">
 		<link name="base">
-			<viaPoint type="FIXPOINT">0.10899999990083961 0.014092248151036244 0.0560999999925494</viaPoint>
+			<viaPoint type="FIXPOINT">-0.0140922481510363 0.10899999990083979 0.0560999999925494</viaPoint>
 		</link>
 		<link name="top">
-			<viaPoint type="FIXPOINT">-1.1102230246251566e-17 -0.051618795026617974 -0.005</viaPoint>
+			<viaPoint type="FIXPOINT">0.03817509438042066 -0.0008137377009678038 -0.003000000000000007</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor4">
 		<link name="base">
-			<viaPoint type="FIXPOINT">0.10899999990083961 -0.014107751848963868 0.3311000348459956</viaPoint>
+			<viaPoint type="FIXPOINT">0.014107751848963786 0.10899999990083979 0.3311000348459956</viaPoint>
 		</link>
 		<link name="top">
-			<viaPoint type="FIXPOINT">0.051618795026617974 -1.6653345369377347e-17 0.0</viaPoint>
+			<viaPoint type="FIXPOINT">0.0008137377009677937 0.038175094380420646 0.0</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor5">
 		<link name="base">
-			<viaPoint type="FIXPOINT">0.014092248151036055 -0.10899999990083968 0.0560999999925494</viaPoint>
+			<viaPoint type="FIXPOINT">0.10899999990083961 0.014092248151036244 0.0560999999925494</viaPoint>
 		</link>
 		<link name="top">
-			<viaPoint type="FIXPOINT">0.051618795026617974 -1.6653345369377347e-17 -0.005</viaPoint>
+			<viaPoint type="FIXPOINT">0.0008137377009677937 0.038175094380420646 -0.003000000000000007</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor6">
 		<link name="base">
-			<viaPoint type="FIXPOINT">-0.01410775184896403 -0.10899999990083968 0.3311000348459956</viaPoint>
+			<viaPoint type="FIXPOINT">0.10899999990083961 -0.014107751848963868 0.3311000348459956</viaPoint>
 		</link>
 		<link name="top">
-			<viaPoint type="FIXPOINT">-1.1102230246251566e-17 -0.051618795026617974 0.0</viaPoint>
+			<viaPoint type="FIXPOINT">0.03817509438042066 -0.0008137377009678038 0.0</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor7">
 		<link name="base">
+			<viaPoint type="FIXPOINT">0.014092248151036055 -0.10899999990083968 0.0560999999925494</viaPoint>
+		</link>
+		<link name="top">
+			<viaPoint type="FIXPOINT">-0.03817509438042066 0.0008137377009678038 -0.003000000000000007</viaPoint>
+		</link>
+	</myoMuscle>
+	<myoMuscle name="motor0">
+		<link name="base">
+			<viaPoint type="FIXPOINT">-0.01410775184896403 -0.10899999990083968 0.3311000348459956</viaPoint>
+		</link>
+		<link name="top">
+			<viaPoint type="FIXPOINT">-0.000813737700967796 -0.038175094380420646 0.0</viaPoint>
+		</link>
+	</myoMuscle>
+	<myoMuscle name="motor1">
+		<link name="base">
 			<viaPoint type="FIXPOINT">-0.10899999990083986 -0.014092248151036126 0.0560999999925494</viaPoint>
 		</link>
 		<link name="top">
-			<viaPoint type="FIXPOINT">1.5543122344752193e-17 0.051618795026617974 -0.005</viaPoint>
+			<viaPoint type="FIXPOINT">-0.000813737700967796 -0.038175094380420646 -0.003000000000000007</viaPoint>
 		</link>
 	</myoMuscle>
 </cardsflow>
