@@ -168,7 +168,7 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libmusc_plugin.so" name="musc_plugin">
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin">
 			<!--<myoMuscle name="motor2">-->
 				<!--<link name="base">-->
 					<!--<viaPoint type="FIXPOINT">-0.10899999990083986 0.014092248151036392 0.3311000348459956</viaPoint>-->
