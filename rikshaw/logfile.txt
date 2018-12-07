@@ -1,0 +1,49 @@
+Body: pedal_left
+Body: pedal_right
+Body: thigh_right
+Body: thigh_left
+Body: leg_right
+Body: leg_left
+Body: hip_and_bike
+Body: foot_left
+Body: foot_right
+Joint: EXPORT_joint_pedal_left
+	parent: pedal_left
+	child: foot_left
+	pos: 449.95645795729826	-11.862192675000074	19.666717385824512
+Joint: EXPORT_joint_pedal_right
+	parent: pedal_right
+	child: foot_right
+	pos: 435.27415472401844	17.43148961830127	-25.456713310533882
+Joint: EXPORT_joint_bike_right
+	parent: hip_and_bike
+	child: pedal_right
+	pos: 446.39843252242326	4.677381080712802	-6.395013313513253
+Joint: EXPORT_joint_bike_left
+	parent: hip_and_bike
+	child: pedal_left
+	pos: 446.3984325224234	4.677381079077673	0.6050173896879443
+Joint: EXPORT_joint_hip_right
+	parent: hip_and_bike
+	child: thigh_right
+	pos: 459.1095496823542	61.58610988413608	-20.629999994672897
+Joint: EXPORT_joint_knee_right
+	parent: thigh_right
+	child: leg_right
+	pos: 429.0166122583562	54.49914174469166	-21.369999997244232
+Joint: EXPORT_joint_hip_left
+	parent: hip_and_bike
+	child: thigh_left
+	pos: 459.1095496825235	61.586109866856596	15.770000004279206
+Joint: EXPORT_joint_knee_left
+	parent: thigh_left
+	child: leg_left
+	pos: 460.76300895324795	30.71251965803342	13.364999989984492
+Joint: EXPORT_joint_foot_left
+	parent: leg_left
+	child: foot_left
+	pos: 459.28138982042395	-4.806200635373287	12.824999995243754
+Joint: EXPORT_joint_foot_right
+	parent: leg_right
+	child: foot_right
+	pos: 445.7499266503593	23.855933834310136	-21.92000000789645

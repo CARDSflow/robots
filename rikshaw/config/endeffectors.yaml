@@ -1,0 +1,26 @@
+joint_names: ['joint_bike_right', 'joint_bike_left', 'joint_pedal_right', 'joint_pedal_left', 'joint_hip_right', 'joint_hip_left', 'joint_knee_right', 'joint_knee_left', 'joint_foot_right','joint_foot_left']
+endeffectors: ['pedal_left', 'pedal_right', 'thigh_right', 'thigh_left', 'leg_right', 'leg_left',  'foot_left', 'foot_right']
+pedal_left: 
+  base_link: 'foot_left'
+  joints: [joint_pedal_left]
+pedal_right:
+  base_link: 'foot_right'
+  joints: [joint_pedal_right]
+foot_left:
+  base_link: 'leg_left'
+  joints: [joint_foot_left]
+foot_right:
+  base_link: 'leg_right'
+  joints: [joint_foot_right]
+leg_left:
+  base_link: ’thigh_left'
+  joints: [joint_knee_left]
+leg_right:
+  base_link: ’thigh_right'
+  joints: [joint_knee_right]
+thigh_left:
+  base_link: 'hip_and_bike'
+  joints: [joint_hip_left]
+thigh_right:
+  base_link: 'hip_and_bike'
+  joints: [joint_hip_right]
