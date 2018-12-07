@@ -1,8 +1,0 @@
-joint_names: ['joint_hip_right', 'joint_knee_right', 'joint_foot_right']
-endeffectors: ['pedal_right']
-pedal_left: 
-  base_link: 'hip_and_bike'
-  joints: ['joint_hip_left','joint_knee_left','joint_foot_left']
-pedal_right:
-  base_link: 'hip_and_bike'
-  joints: ['joint_hip_right','joint_knee_right','joint_foot_right']
