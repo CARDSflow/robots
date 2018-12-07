@@ -1,243 +1,243 @@
 <?xml version="1.0" ?>
-<robot name="">
+<robot name="rikshaw">
   <joint name="joint_pedal_left" type="fixed">
     <parent link="pedal_left"/>
     <child link="foot_left"/>
-    <origin rpy="0  0  0" xyz="0.09815 -0.26057  0.26692"/>
-    <axis xyz="0  0  1"/>
+    <origin rpy="0 0 0" xyz="0.09815 -0.26057  0.26692"/>
+    <axis xyz="0 0 1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <joint name="joint_pedal_right" type="fixed">
     <parent link="pedal_right"/>
     <child link="foot_right"/>
-    <origin rpy="0  0  0" xyz="-0.15088  0.23913 -0.26828"/>
+    <origin rpy="0 0 0" xyz="-0.15088  0.23913 -0.26828"/>
     <axis xyz="0  0 -1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <joint name="joint_bike_right" type="fixed">
     <parent link="hip_and_bike"/>
     <child link="pedal_right"/>
-    <origin rpy="0  0  0" xyz="8.88816  0.12525 -0.1941"/>
+    <origin rpy="0 0 0" xyz="8.88816  0.12525 -0.1941"/>
     <axis xyz="0  0 -1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <joint name="joint_bike_left" type="fixed">
     <parent link="hip_and_bike"/>
     <child link="pedal_left"/>
-    <origin rpy="0  0  0" xyz="8.92735  0.04379  0.07853"/>
+    <origin rpy="0 0 0" xyz="8.92735 0.04379 0.07853"/>
     <axis xyz="0  0 -1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <joint name="joint_hip_right" type="fixed">
     <parent link="hip_and_bike"/>
     <child link="thigh_right"/>
-    <origin rpy="0  0  0" xyz="9.07449  1.20389 -0.4342"/>
-    <axis xyz="0  0  1"/>
+    <origin rpy="0 0 0" xyz="9.07449  1.20389 -0.4342"/>
+    <axis xyz="0 0 1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <joint name="joint_knee_right" type="fixed">
     <parent link="thigh_right"/>
     <child link="leg_right"/>
-    <origin rpy="0  0  0" xyz="-0.43148 -0.25074 -0.00687"/>
+    <origin rpy="0 0 0" xyz="-0.43148 -0.25074 -0.00687"/>
     <axis xyz="0  0 -1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <joint name="joint_hip_left" type="fixed">
     <parent link="hip_and_bike"/>
     <child link="thigh_left"/>
-    <origin rpy="0  0  0" xyz="9.186    1.11463  0.3261"/>
-    <axis xyz="0  0  1"/>
+    <origin rpy="0 0 0" xyz="9.186   1.11463 0.3261"/>
+    <axis xyz="0 0 1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <joint name="joint_knee_left" type="fixed">
     <parent link="thigh_left"/>
     <child link="leg_left"/>
-    <origin rpy="0  0  0" xyz="0.01209 -0.65657 -0.02503"/>
-    <axis xyz="0  0  1"/>
+    <origin rpy="0 0 0" xyz="0.01209 -0.65657 -0.02503"/>
+    <axis xyz="0 0 1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <joint name="joint_foot_left" type="fixed">
     <parent link="leg_left"/>
     <child link="foot_left"/>
-    <origin rpy="0  0  0" xyz="-0.07933 -0.60427 -0.02402"/>
+    <origin rpy="0 0 0" xyz="-0.07933 -0.60427 -0.02402"/>
     <axis xyz="0  0 -1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <joint name="joint_foot_right" type="fixed">
     <parent link="leg_right"/>
     <child link="foot_right"/>
-    <origin rpy="0  0  0" xyz="0.19902 -0.52452  0.01406"/>
-    <axis xyz="0  0  1"/>
+    <origin rpy="0 0 0" xyz="0.19902 -0.52452  0.01406"/>
+    <axis xyz="0 0 1"/>
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
   </joint>
   <link name="pedal_left">
     <inertial>
       <mass value="1.4041650832963537"/>
-      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <origin rpy="0 0 0" xyz="-4.46398 -0.04677 -0.00605"/>
       <inertia ixx="0.014735459997946634" ixy="0.019721606688003112" ixz="0.00245261864378404" iyy="27.982829106866046" iyz="-0.45467668432733854" izz="27.97936306967256"/>
     </inertial>
     <collision name="pedal_left_collision">
-      <origin rpy="0  0  0" xyz="-4.46398 -0.04677 -0.00605"/>
+      <origin rpy="0 0 0" xyz="-4.46398 -0.04677 -0.00605"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/pedal_left.stl OR robots/rikshaw/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual name="pedal_left_visual">
-      <origin rpy="0  0  0" xyz="-4.46398 -0.04677 -0.00605"/>
+      <origin rpy="0 0 0" xyz="-4.46398 -0.04677 -0.00605"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/pedal_left.stl OR robots/rikshaw/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
   <link name="pedal_right">
     <inertial>
       <mass value="1.379105754814682"/>
-      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <origin rpy="0 0 0" xyz="-4.46398 -0.04677  0.06395"/>
       <inertia ixx="0.036908783622327294" ixy="-0.47607944177195904" ixz="0.01573450412508401" iyy="27.02129040636638" iyz="0.7927307433028168" izz="27.008042714227347"/>
     </inertial>
     <collision name="pedal_right_collision">
-      <origin rpy="0  0  0" xyz="-4.46398 -0.04677  0.06395"/>
+      <origin rpy="0 0 0" xyz="-4.46398 -0.04677  0.06395"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/pedal_right.stl OR robots/rikshaw/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual name="pedal_right_visual">
-      <origin rpy="0  0  0" xyz="-4.46398 -0.04677  0.06395"/>
+      <origin rpy="0 0 0" xyz="-4.46398 -0.04677  0.06395"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/pedal_right.stl OR robots/rikshaw/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
   <link name="thigh_right">
     <inertial>
       <mass value="5.563565029572441"/>
-      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <origin rpy="0 0 0" xyz="-4.59109 -0.61586  0.2063"/>
       <inertia ixx="2.2250644979379692" ixy="-14.669502591825074" ixz="0.7461724440834332" iyy="112.14945048086474" iyz="5.6878649512806625" izz="113.78732353314614"/>
     </inertial>
     <collision name="thigh_right_collision">
-      <origin rpy="0  0  0" xyz="-4.59109 -0.61586  0.2063"/>
+      <origin rpy="0 0 0" xyz="-4.59109 -0.61586  0.2063"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/thigh_right.stl OR robots/rikshaw/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual name="thigh_right_visual">
-      <origin rpy="0  0  0" xyz="-4.59109 -0.61586  0.2063"/>
+      <origin rpy="0 0 0" xyz="-4.59109 -0.61586  0.2063"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/thigh_right.stl OR robots/rikshaw/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
   <link name="thigh_left">
     <inertial>
       <mass value="5.563546534949972"/>
-      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <origin rpy="0 0 0" xyz="-4.59109 -0.61586 -0.1577"/>
       <inertia ixx="1.5700572959646044" ixy="-12.751973094774298" ixz="-0.47036709526052095" iyy="117.63407204572337" iyz="-4.304547823425062" izz="118.87933506599414"/>
     </inertial>
     <collision name="thigh_left_collision">
-      <origin rpy="0  0  0" xyz="-4.59109 -0.61586 -0.1577"/>
+      <origin rpy="0 0 0" xyz="-4.59109 -0.61586 -0.1577"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/thigh_left.stl OR robots/rikshaw/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual name="thigh_left_visual">
-      <origin rpy="0  0  0" xyz="-4.59109 -0.61586 -0.1577"/>
+      <origin rpy="0 0 0" xyz="-4.59109 -0.61586 -0.1577"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/thigh_left.stl OR robots/rikshaw/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
   <link name="leg_right">
     <inertial>
       <mass value="5.741478436383713"/>
-      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <origin rpy="0 0 0" xyz="-4.29016 -0.54499  0.2137"/>
       <inertia ixx="1.2853122790977833" ixy="-10.188048535394877" ixz="0.5361187457117642" iyy="109.10255618472682" iyz="5.681613456699684" izz="109.78464080359927"/>
     </inertial>
     <collision name="leg_right_collision">
-      <origin rpy="0  0  0" xyz="-4.29016 -0.54499  0.2137"/>
+      <origin rpy="0 0 0" xyz="-4.29016 -0.54499  0.2137"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/leg_right.stl OR robots/rikshaw/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual name="leg_right_visual">
-      <origin rpy="0  0  0" xyz="-4.29016 -0.54499  0.2137"/>
+      <origin rpy="0 0 0" xyz="-4.29016 -0.54499  0.2137"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/leg_right.stl OR robots/rikshaw/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
   <link name="leg_left">
     <inertial>
       <mass value="5.742637963129164"/>
-      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <origin rpy="0 0 0" xyz="-4.60763 -0.30712 -0.13365"/>
       <inertia ixx="0.33173417880166484" ixy="-3.977277916658285" ixz="-0.14854912041095908" iyy="121.18444228661859" iyz="-4.413382801967785" izz="121.18476589260665"/>
     </inertial>
     <collision name="leg_left_collision">
-      <origin rpy="0  0  0" xyz="-4.60763 -0.30712 -0.13365"/>
+      <origin rpy="0 0 0" xyz="-4.60763 -0.30712 -0.13365"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/leg_left.stl OR robots/rikshaw/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual name="leg_left_visual">
-      <origin rpy="0  0  0" xyz="-4.60763 -0.30712 -0.13365"/>
+      <origin rpy="0 0 0" xyz="-4.60763 -0.30712 -0.13365"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/leg_left.stl OR robots/rikshaw/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
   <link name="hip_and_bike">
     <inertial>
       <mass value="23.22637907807533"/>
-      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <origin rpy="0 0 0" xyz="4.40706  0.45542 -0.02998"/>
       <inertia ixx="8.31460574577765" ixy="-48.88311066841537" ixz="0.3183731682979029" iyy="455.34531116466366" iyz="3.0744383106228947" izz="463.0081604203734"/>
     </inertial>
     <collision name="hip_and_bike_collision">
-      <origin rpy="0  0  0" xyz="4.40706  0.45542 -0.02998"/>
+      <origin rpy="0 0 0" xyz="4.40706  0.45542 -0.02998"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/hip_and_bike.stl OR robots/rikshaw/meshes/CAD/hip_and_bike.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/hip_and_bike.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual name="hip_and_bike_visual">
-      <origin rpy="0  0  0" xyz="4.40706  0.45542 -0.02998"/>
+      <origin rpy="0 0 0" xyz="4.40706  0.45542 -0.02998"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/hip_and_bike.stl OR robots/rikshaw/meshes/CAD/hip_and_bike.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/hip_and_bike.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
   <link name="foot_left">
     <inertial>
       <mass value="1.9548350639535856"/>
-      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <origin rpy="0 0 0" xyz="-4.59281  0.04806 -0.12825"/>
       <inertia ixx="0.06465715279337697" ixy="0.8660126825782178" ixz="0.028806723585119053" iyy="40.09309409510188" iyz="-1.3160396160971235" izz="40.06926161604787"/>
     </inertial>
     <collision name="foot_left_collision">
-      <origin rpy="0  0  0" xyz="-4.59281  0.04806 -0.12825"/>
+      <origin rpy="0 0 0" xyz="-4.59281  0.04806 -0.12825"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/foot_left.stl OR robots/rikshaw/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual name="foot_left_visual">
-      <origin rpy="0  0  0" xyz="-4.59281  0.04806 -0.12825"/>
+      <origin rpy="0 0 0" xyz="-4.59281  0.04806 -0.12825"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/foot_left.stl OR robots/rikshaw/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
   <link name="foot_right">
     <inertial>
       <mass value="1.9548357273705117"/>
-      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <origin rpy="0 0 0" xyz="-4.45749 -0.23855  0.2192"/>
       <inertia ixx="0.15686547821534494" ixy="-1.6305841455142747" ixz="0.07706985261746298" iyy="37.67107992920655" iyz="1.7809526906062672" izz="37.6571901689782"/>
     </inertial>
     <collision name="foot_right_collision">
-      <origin rpy="0  0  0" xyz="-4.45749 -0.23855  0.2192"/>
+      <origin rpy="0 0 0" xyz="-4.45749 -0.23855  0.2192"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/foot_right.stl OR robots/rikshaw/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual name="foot_right_visual">
-      <origin rpy="0  0  0" xyz="-4.45749 -0.23855  0.2192"/>
+      <origin rpy="0 0 0" xyz="-4.45749 -0.23855  0.2192"/>
       <geometry>
-        <mesh filename="package://robots/test/meshes/CAD/foot_right.stl OR robots/rikshaw/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
