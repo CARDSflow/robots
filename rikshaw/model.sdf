@@ -99,17 +99,17 @@
 		</link>
 		<link name="thigh_right">
 			<self_collide>false</self_collide>
-			<pose frame="">0.2130676220272979 0.23075804961914492 0.6636155811866733 0.0 -0.0 0.0</pose>
+			<pose frame="">0.21306762202729806 0.2307580496191449 0.6636155811866741 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.563551531361345</mass>
+				<mass>5.563551531361356</mass>
 				<inertia>
-					<ixx>2.7587103141393774</ixx>
+					<ixx>2.758710314139378</ixx>
 					<ixy>-0.27653691454319923</ixy>
 					<ixz>-0.8525725925194048</ixz>
-					<iyy>2.7338304215308424</iyy>
-					<iyz>-0.7886856442807302</iyz>
-					<izz>0.5768546331244859</izz>
+					<iyy>2.733830421530841</iyy>
+					<iyz>-0.7886856442807304</iyz>
+					<izz>0.5768546331244858</izz>
 				</inertia>
 			</inertial>
 			<collision name="thigh_right_collision">
@@ -131,17 +131,17 @@
 		</link>
 		<link name="thigh_left">
 			<self_collide>false</self_collide>
-			<pose frame="">0.33596172751211206 -0.165705685121125 0.5768343943578617 0.0 -0.0 0.0</pose>
+			<pose frame="">0.33596172751211173 -0.16570568512112502 0.5768343943578618 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.563586550484201</mass>
+				<mass>5.56358655048423</mass>
 				<inertia>
 					<ixx>2.032298455269805</ixx>
 					<ixy>0.30885145604075287</ixy>
 					<ixz>0.5347695724937122</ixz>
-					<iyy>2.5103291140248376</iyy>
+					<iyy>2.5103291140248367</iyy>
 					<iyz>-1.0778482754769985</iyz>
-					<izz>0.7927908850236612</izz>
+					<izz>0.7927908850236616</izz>
 				</inertia>
 			</inertial>
 			<collision name="thigh_left_collision">
@@ -161,51 +161,19 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="leg_right">
-			<self_collide>false</self_collide>
-			<pose frame="">0.13073111293726639 0.23018790159214506 0.5152814010211896 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.7416066293880625</mass>
-				<inertia>
-					<ixx>1.8500195908173283</ixx>
-					<ixy>-0.17043594464017472</ixy>
-					<ixz>-0.6835654057960041</ixz>
-					<iyy>1.6653849427476624</iyy>
-					<iyz>-0.37372738986267745</iyz>
-					<izz>0.4333240399601409</izz>
-				</inertia>
-			</inertial>
-			<collision name="leg_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/CAD/leg_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="leg_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/CAD/leg_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
 		<link name="leg_left">
 			<self_collide>false</self_collide>
-			<pose frame="">0.35460216180609017 -0.16476933592867768 0.2307814775788578 0.0 -0.0 0.0</pose>
+			<pose frame="">0.35424937385620825 -0.16607206397334248 0.23807825743848945 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.742615089607888</mass>
+				<mass>5.524287867603195</mass>
 				<inertia>
-					<ixx>0.5016738260717913</ixx>
-					<ixy>0.3354589885668807</ixy>
-					<ixz>0.22180598001631352</ixz>
-					<iyy>1.070741512212526</iyy>
-					<iyz>-0.4681515967886399</iyz>
-					<izz>0.8903661507239246</izz>
+					<ixx>0.4973493200849545</ixx>
+					<ixy>0.3249892870144498</ixy>
+					<ixz>0.22046728182220332</ixz>
+					<iyy>1.0413469586966366</iyy>
+					<iyz>-0.4644797348689091</iyz>
+					<izz>0.8576839534608591</izz>
 				</inertia>
 			</inertial>
 			<collision name="leg_left_collision">
@@ -220,6 +188,38 @@
 				<geometry>
 					<mesh>
 						<uri>model://rikshaw/meshes/CAD/leg_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="leg_right">
+			<self_collide>false</self_collide>
+			<pose frame="">0.12562784413945566 0.233693069857624 0.5187514348723183 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>5.07490752025796</mass>
+				<inertia>
+					<ixx>1.6604884872903782</ixx>
+					<ixy>-0.147654085828189</ixy>
+					<ixz>-0.6170549679009609</ixz>
+					<iyy>1.4802781244120977</iyy>
+					<iyz>-0.3212866014165562</iyz>
+					<izz>0.3823636748069988</izz>
+				</inertia>
+			</inertial>
+			<collision name="leg_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/leg_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="leg_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/leg_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -259,17 +259,17 @@
 		</link>
 		<link name="front_part">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.6046185937738633 0.04475872331475462 0.42323667552386973 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.6046185937738633 0.04475872331475461 0.4232366755238699 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>16.813631847740364</mass>
+				<mass>16.813631847058485</mass>
 				<inertia>
-					<ixx>5.4657790536527395</ixx>
-					<ixy>0.5110471711964572</ixy>
-					<ixz>-0.28744024450617317</ixz>
-					<iyy>14.406698755232574</iyy>
-					<iyz>2.938162171440261</iyz>
-					<izz>11.464360009651763</izz>
+					<ixx>5.46577888962775</ixx>
+					<ixy>0.511047160266088</ixy>
+					<ixz>-0.28744018766830076</ixz>
+					<iyy>14.406698608958099</iyy>
+					<iyz>2.9381621443324253</iyz>
+					<izz>11.46435998130477</izz>
 				</inertia>
 			</inertial>
 			<collision name="front_part_collision">
@@ -504,7 +504,7 @@
 		<joint name="joint_front" type="revolute">
 			<parent>bike</parent>
 			<child>front_part</child>
-			<pose frame="">-0.23009613508125631 -0.01038647904833785 -0.20523667730717188 0 0 0</pose>
+			<pose frame="">-0.23009613508125626 -0.01038647904833784 -0.20523667730717202 0 0 0</pose>
 			<axis>
 				<xyz>6.603440870084913e-16 -4.31170590847569e-14 1.0</xyz>
 				<limit>
@@ -527,23 +527,10 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_foot_left" type="revolute">
-			<parent>leg_left</parent>
-			<child>foot_left</child>
-			<pose frame="">0.02973279575976065 0.015620411716912681 0.030134741997801084 0 0 0</pose>
-			<axis>
-				<xyz>1.7379113579511293e-10 0.9999999999999997 1.5163702627450592e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
 		<joint name="joint_knee_right" type="revolute">
 			<parent>thigh_right</parent>
 			<child>leg_right</child>
-			<pose frame="">-0.1102385124091251 -0.013637927463249823 0.10246188711047716 0 0 0</pose>
+			<pose frame="">-0.10513524361131438 -0.017143095728728783 0.09899185325934845 0 0 0</pose>
 			<axis>
 				<xyz>3.8751886398178056e-11 1.000000000000023 4.832504674201488e-10</xyz>
 				<limit>
@@ -569,7 +556,7 @@
 		<joint name="joint_hip_right" type="revolute">
 			<parent>bike</parent>
 			<child>thigh_right</child>
-			<pose frame="">0.10869571349630182 -0.02190807552891389 0.023531915258738254 0 0 0</pose>
+			<pose frame="">0.10869571349630164 -0.021908075528913856 0.023531915258737542 0 0 0</pose>
 			<axis>
 				<xyz>4.714117194135765e-12 -0.9999999999999999 -4.747078088732916e-10</xyz>
 				<limit>
@@ -582,7 +569,7 @@
 		<joint name="joint_knee_left" type="revolute">
 			<parent>thigh_left</parent>
 			<child>leg_left</child>
-			<pose frame="">0.009873151240645512 0.033669310169744816 0.15015214413791014 0 0 0</pose>
+			<pose frame="">0.010225939190527457 0.03497203821440964 0.1428553642782785 0 0 0</pose>
 			<axis>
 				<xyz>-2.3658644533201752e-11 -1.0000000000000242 -2.741036256664899e-10</xyz>
 				<limit>
@@ -595,7 +582,7 @@
 		<joint name="joint_hip_left" type="revolute">
 			<parent>bike</parent>
 			<child>thigh_left</child>
-			<pose frame="">-0.014198391986819488 0.010555659221835115 0.11031310191475584 0 0 0</pose>
+			<pose frame="">-0.014198391986819133 0.01055565922183515 0.11031310191475577 0 0 0</pose>
 			<axis>
 				<xyz>4.714220161252588e-12 -0.9999999999999999 -4.747072576310608e-10</xyz>
 				<limit>
@@ -618,109 +605,109 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<!--<plugin filename="libmusc_plugin.so" name="musc_plugin">-->
-			<!--<myoMuscle name="motor0">-->
-				<!--<link name="bike">-->
-					<!--<viaPoint type="FIXPOINT">0.16124863756624933 -0.17135627098845546 0.1660591206662997</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="thigh_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.034764826231186596 0.024405659262930843 0.023691673957603784</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor1">-->
-				<!--<link name="bike">-->
-					<!--<viaPoint type="FIXPOINT">0.2503752159599816 -0.17183479404110635 0.16781063760549145</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="thigh_left">-->
-					<!--<viaPoint type="FIXPOINT">0.06115303680091145 0.02740565921307308 0.12721572664247263</viaPoint>-->
-					<!--<viaPoint type="FIXPOINT">0.02490709750950188 0.024405659259801222 0.029957575096739433</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor2">-->
-				<!--<link name="thigh_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.03035421492516548 0.02599006911176474 -0.0737053342373094</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="leg_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.08222234717168463 0.026669310077922878 0.1511797590800569</viaPoint>-->
-					<!--<viaPoint type="FIXPOINT">-0.028477155929903332 0.02366931014477583 0.029614789148275877</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor3">-->
-				<!--<link name="thigh_left">-->
-					<!--<viaPoint type="FIXPOINT">0.0411609112229528 0.022903017683455946 -0.06943850205959493</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="leg_left">-->
-					<!--<viaPoint type="FIXPOINT">0.03151719987622883 0.023669310148913353 0.030437754157998393</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor4">-->
-				<!--<link name="leg_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.032926532555208186 0.02525371999857029 -0.06778045583219332</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="foot_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.04773733783515251 -0.0003795882655907157 0.0035381557253801265</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor5">-->
-				<!--<link name="leg_left">-->
-					<!--<viaPoint type="FIXPOINT">0.0373451326056324 0.024884554957642885 -0.0673060665066313</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="foot_left">-->
-					<!--<viaPoint type="FIXPOINT">0.07944124446674793 -0.0003795882865726874 -0.0038515806487142115</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor6">-->
-				<!--<link name="bike">-->
-					<!--<viaPoint type="FIXPOINT">0.1612035153205899 0.17606151015139543 0.16605823915880621</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="thigh_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.10240712057358323 0.3720556592046569 0.12355017352290673</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor7">-->
-				<!--<link name="bike">-->
-					<!--<viaPoint type="FIXPOINT">0.25049327088358964 0.17302594786442807 0.16780292885972103</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="thigh_left">-->
-					<!--<viaPoint type="FIXPOINT">0.009271256113597701 0.37505565924614437 0.0372634067918257</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="leg_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.10947630563721213 0.37111931004021187 0.4107294443196113</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor9">-->
-				<!--<link name="thigh_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.18175060293719264 0.3699180131335132 0.02695236672700176</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="leg_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.22760051691910388 0.3713193100818539 0.32817555817172045</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor8">-->
-				<!--<link name="thigh_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.19925223182579652 0.3708468529946282 0.1090801328633043</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="leg_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.3930439830446676 0.36831931009405916 0.3161849021734073</viaPoint>-->
-					<!--<viaPoint type="FIXPOINT">-0.2648351027444377 0.3713193101060331 0.28112680028784176</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor10">-->
-				<!--<link name="leg_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.19065032519957612 0.3724559263538882 0.21503940573902483</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="foot_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.10630697885596291 0.34777041168919165 0.3414366929209973</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor11">-->
-				<!--<link name="leg_left">-->
-					<!--<viaPoint type="FIXPOINT">-0.1476935327981159 0.3697349003019042 0.27231408140924473</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="foot_left">-->
-					<!--<viaPoint type="FIXPOINT">0.016443913141224797 0.3477704116799007 0.37551334935755093</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-		<!--</plugin>-->
+		<plugin filename="libmusc_plugin.so" name="musc_plugin">
+			<myoMuscle name="motor0">
+				<link name="bike">
+					<viaPoint type="FIXPOINT">0.16124863756624933 -0.17135627098845546 0.1660591206662997</viaPoint>
+				</link>
+				<link name="thigh_left">
+					<viaPoint type="FIXPOINT">-0.03476482623118624 0.024405659262930878 0.02369167395760371</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor1">
+				<link name="bike">
+					<viaPoint type="FIXPOINT">0.2503752159599816 -0.17183479404110635 0.16781063760549145</viaPoint>
+				</link>
+				<link name="thigh_left">
+					<viaPoint type="FIXPOINT">0.06115303680091181 0.027405659213073114 0.12721572664247255</viaPoint>
+					<viaPoint type="FIXPOINT">0.024907097509502235 0.02440565925980126 0.029957575096739363</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor2">
+				<link name="thigh_left">
+					<viaPoint type="FIXPOINT">-0.030354214925165126 0.025990069111764776 -0.07370533423730947</viaPoint>
+				</link>
+				<link name="leg_left">
+					<viaPoint type="FIXPOINT">-0.08186955922180268 0.0279720381225877 0.14388297922042526</viaPoint>
+					<viaPoint type="FIXPOINT">-0.02812436798002139 0.024972038189440653 0.022318009288644233</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor3">
+				<link name="thigh_left">
+					<viaPoint type="FIXPOINT">0.041160911222953164 0.02290301768345598 -0.069438502059595</viaPoint>
+				</link>
+				<link name="leg_left">
+					<viaPoint type="FIXPOINT">0.03186998782611077 0.02497203819357818 0.02314097429836675</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor4">
+				<link name="leg_left">
+					<viaPoint type="FIXPOINT">-0.03257374460532624 0.026556448043235117 -0.07507723569182495</viaPoint>
+				</link>
+				<link name="foot_left">
+					<viaPoint type="FIXPOINT">-0.04773733783515251 -0.0003795882655907157 0.0035381557253801265</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor5">
+				<link name="leg_left">
+					<viaPoint type="FIXPOINT">0.037697920555514346 0.02618728300230771 -0.07460284636626295</viaPoint>
+				</link>
+				<link name="foot_left">
+					<viaPoint type="FIXPOINT">0.07944124446674793 -0.0003795882865726874 -0.0038515806487142115</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor6">
+				<link name="bike">
+					<viaPoint type="FIXPOINT">0.1612035153205899 0.17606151015139543 0.16605823915880621</viaPoint>
+				</link>
+				<link name="thigh_left">
+					<viaPoint type="FIXPOINT">-0.10240712057358288 0.3720556592046569 0.12355017352290666</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor7">
+				<link name="bike">
+					<viaPoint type="FIXPOINT">0.25049327088358964 0.17302594786442807 0.16780292885972103</viaPoint>
+				</link>
+				<link name="thigh_left">
+					<viaPoint type="FIXPOINT">0.009271256113598057 0.3750556592461445 0.03726340679182563</viaPoint>
+				</link>
+				<link name="leg_left">
+					<viaPoint type="FIXPOINT">-0.10912351768733018 0.3724220380848767 0.4034326644599796</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor9">
+				<link name="thigh_left">
+					<viaPoint type="FIXPOINT">-0.18175060293719228 0.3699180131335132 0.02695236672700169</viaPoint>
+				</link>
+				<link name="leg_left">
+					<viaPoint type="FIXPOINT">-0.22724772896922193 0.3726220381265188 0.3208787783120888</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor8">
+				<link name="thigh_left">
+					<viaPoint type="FIXPOINT">-0.19925223182579616 0.3708468529946282 0.10908013286330423</viaPoint>
+				</link>
+				<link name="leg_left">
+					<viaPoint type="FIXPOINT">-0.39269119509478567 0.3696220381387239 0.30888812231377566</viaPoint>
+					<viaPoint type="FIXPOINT">-0.26448231479455575 0.37262203815069794 0.27383002042821014</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor10">
+				<link name="leg_left">
+					<viaPoint type="FIXPOINT">-0.19029753724969417 0.373758654398553 0.20774262587939318</viaPoint>
+				</link>
+				<link name="foot_left">
+					<viaPoint type="FIXPOINT">-0.10630697885596291 0.34777041168919165 0.3414366929209973</viaPoint>
+				</link>
+			</myoMuscle>
+			<myoMuscle name="motor11">
+				<link name="leg_left">
+					<viaPoint type="FIXPOINT">-0.14734074484823395 0.371037628346569 0.26501730154961306</viaPoint>
+				</link>
+				<link name="foot_left">
+					<viaPoint type="FIXPOINT">0.016443913141224797 0.3477704116799007 0.37551334935755093</viaPoint>
+				</link>
+			</myoMuscle>
+		</plugin>
 	</model>
 </sdf>
