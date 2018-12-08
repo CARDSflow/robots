@@ -1,0 +1,360 @@
+<?xml version="1.0" ?>
+<robot name="rikshaw">
+  <joint name="joint_pedal_right" type="revolute">
+    <parent link="kurbel"/>
+    <child link="pedal_right"/>
+    <origin rpy="0  0  0" xyz="1.69170000e-01   2.24980000e-01  -6.00000000e-05"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_pedal_left" type="revolute">
+    <parent link="kurbel"/>
+    <child link="pedal_left"/>
+    <origin rpy="0  0  0" xyz="-1.69230000e-01  -1.56240000e-01  -7.00000000e-05"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_wheel_left" type="revolute">
+    <parent link="front_part"/>
+    <child link="left_wheel"/>
+    <origin rpy="0  0  0" xyz="-0.052  -0.304   0.0345"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_wheel_right" type="revolute">
+    <parent link="front_part"/>
+    <child link="right_wheel"/>
+    <origin rpy="0  0  0" xyz="-0.052   0.338   0.0345"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_front" type="revolute">
+    <parent link="bike"/>
+    <child link="front_part"/>
+    <origin rpy="0  0  0" xyz="-0.83471  0.03437  0.218"/>
+    <axis xyz="0  0  1"/>
+    <limit effort="0.0" lower="-0.349065850399" upper="0.349065850399" velocity="0.0"/>
+  </joint>
+  <joint name="joint_pedal" type="revolute">
+    <parent link="bike"/>
+    <child link="kurbel"/>
+    <origin rpy="0  0  0" xyz="0.20421 -0.00062  0.2101"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_foot_left" type="revolute">
+    <parent link="leg_left"/>
+    <child link="foot_left"/>
+    <origin rpy="0  0  0" xyz="-0.00521  0.0055  -0.3491"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_knee_right" type="revolute">
+    <parent link="thigh_right"/>
+    <child link="leg_right"/>
+    <origin rpy="0  0  0" xyz="-0.30127  0.0077  -0.0694"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_foot_right" type="revolute">
+    <parent link="leg_right"/>
+    <child link="foot_right"/>
+    <origin rpy="0  0  0" xyz="0.26746  0.0055  -0.22442"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_hip_right" type="revolute">
+    <parent link="bike"/>
+    <child link="thigh_right"/>
+    <origin rpy="0  0  0" xyz="0.32176  0.20885  0.68714"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_knee_left" type="revolute">
+    <parent link="thigh_left"/>
+    <child link="leg_left"/>
+    <origin rpy="0  0  0" xyz="0.04271  0.02405 -0.30621"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_hip_left" type="revolute">
+    <parent link="bike"/>
+    <child link="thigh_left"/>
+    <origin rpy="0  0  0" xyz="0.32176 -0.15515  0.68714"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="back_wheel" type="revolute">
+    <parent link="bike"/>
+    <child link="back_wheel"/>
+    <origin rpy="0  0  0" xyz="0.6486  -0.03107  0.25624"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <link name="bike">
+    <inertial>
+      <mass value="21.81331498933295"/>
+      <origin rpy="0  0  0" xyz="0.11407  0.0317   0.58319"/>
+      <inertia ixx="10.083898654031916" ixy="-0.06607369188353159" ixz="-0.3883753822995066" iyy="13.522231324250988" iyz="-3.5907666395614837" izz="4.078177458509554"/>
+    </inertial>
+    <collision name="bike_collision">
+      <origin rpy="0  0  0" xyz="0.11407  0.0317   0.58319"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/bike.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="bike_visual">
+      <origin rpy="0  0  0" xyz="0.11407  0.0317   0.58319"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/bike.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_left">
+    <inertial>
+      <mass value="1.0073570813716561"/>
+      <origin rpy="0  0  0" xyz="-0.02973 -0.01562 -0.03013"/>
+      <inertia ixx="0.020750513605191527" ixy="0.04690908383866695" ixz="0.00024345371490371603" iyy="0.11228597885468367" iyz="-0.0009047423260076533" izz="0.13240932064928215"/>
+    </inertial>
+    <collision name="foot_left_collision">
+      <origin rpy="0  0  0" xyz="-0.02973 -0.01562 -0.03013"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="foot_left_visual">
+      <origin rpy="0  0  0" xyz="-0.02973 -0.01562 -0.03013"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_right">
+    <inertial>
+      <mass value="1.0073526294372792"/>
+      <origin rpy="0  0  0" xyz="-0.0184  -0.01587 -0.03812"/>
+      <inertia ixx="0.1710169135614256" ixy="-0.056008864515654636" ixz="-0.07378206564558545" iyy="0.20317739089550094" iyz="-0.09741171616210452" izz="0.11849200847169264"/>
+    </inertial>
+    <collision name="foot_right_collision">
+      <origin rpy="0  0  0" xyz="-0.0184  -0.01587 -0.03812"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="foot_right_visual">
+      <origin rpy="0  0  0" xyz="-0.0184  -0.01587 -0.03812"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thigh_right">
+    <inertial>
+      <mass value="5.563551531361345"/>
+      <origin rpy="0  0  0" xyz="-0.10869  0.0219  -0.02353"/>
+      <inertia ixx="2.7587103141393774" ixy="-0.27653691454319923" ixz="-0.8525725925194048" iyy="2.7338304215308424" iyz="-0.7886856442807302" izz="0.5768546331244859"/>
+    </inertial>
+    <collision name="thigh_right_collision">
+      <origin rpy="0  0  0" xyz="-0.10869  0.0219  -0.02353"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thigh_right_visual">
+      <origin rpy="0  0  0" xyz="-0.10869  0.0219  -0.02353"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thigh_left">
+    <inertial>
+      <mass value="5.563586550484201"/>
+      <origin rpy="0  0  0" xyz="0.01419 -0.01055 -0.11031"/>
+      <inertia ixx="2.032298455269805" ixy="0.30885145604075287" ixz="0.5347695724937122" iyy="2.5103291140248376" iyz="-1.0778482754769985" izz="0.7927908850236612"/>
+    </inertial>
+    <collision name="thigh_left_collision">
+      <origin rpy="0  0  0" xyz="0.01419 -0.01055 -0.11031"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thigh_left_visual">
+      <origin rpy="0  0  0" xyz="0.01419 -0.01055 -0.11031"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="leg_right">
+    <inertial>
+      <mass value="5.7416066293880625"/>
+      <origin rpy="0  0  0" xyz="0.11023  0.01363 -0.10246"/>
+      <inertia ixx="1.8500195908173283" ixy="-0.17043594464017472" ixz="-0.6835654057960041" iyy="1.6653849427476624" iyz="-0.37372738986267745" izz="0.4333240399601409"/>
+    </inertial>
+    <collision name="leg_right_collision">
+      <origin rpy="0  0  0" xyz="0.11023  0.01363 -0.10246"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="leg_right_visual">
+      <origin rpy="0  0  0" xyz="0.11023  0.01363 -0.10246"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="leg_left">
+    <inertial>
+      <mass value="5.742615089607888"/>
+      <origin rpy="0  0  0" xyz="-0.00987 -0.03366 -0.15015"/>
+      <inertia ixx="0.5016738260717913" ixy="0.3354589885668807" ixz="0.22180598001631352" iyy="1.070741512212526" iyz="-0.4681515967886399" izz="0.8903661507239246"/>
+    </inertial>
+    <collision name="leg_left_collision">
+      <origin rpy="0  0  0" xyz="-0.00987 -0.03366 -0.15015"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="leg_left_visual">
+      <origin rpy="0  0  0" xyz="-0.00987 -0.03366 -0.15015"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="back_wheel">
+    <inertial>
+      <mass value="13.340163929098477"/>
+      <origin rpy="0  0  0" xyz="0     0.066  0"/>
+      <inertia ixx="1.4014062390517636" ixy="-0.3021697127655251" ixz="-0.11937965050242952" iyy="7.504381180421915" iyz="-2.2172043078944803" izz="6.137556770128537"/>
+    </inertial>
+    <collision name="back_wheel_collision">
+      <origin rpy="0  0  0" xyz="0     0.066  0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/back_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="back_wheel_visual">
+      <origin rpy="0  0  0" xyz="0     0.066  0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/back_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_part">
+    <inertial>
+      <mass value="16.813631847740364"/>
+      <origin rpy="0  0  0" xyz="0.23009  0.01038  0.20523"/>
+      <inertia ixx="5.4657790536527395" ixy="0.5110471711964572" ixz="-0.28744024450617317" iyy="14.406698755232574" iyz="2.938162171440261" izz="11.464360009651763"/>
+    </inertial>
+    <collision name="front_part_collision">
+      <origin rpy="0  0  0" xyz="0.23009  0.01038  0.20523"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/front_part.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="front_part_visual">
+      <origin rpy="0  0  0" xyz="0.23009  0.01038  0.20523"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/front_part.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="left_wheel">
+    <inertial>
+      <mass value="13.340163929097853"/>
+      <origin rpy="0  0  0" xyz="0    -0.046  0"/>
+      <inertia ixx="2.6886582542943342" ixy="-3.73354366648907" ixz="1.0631600153408742" iyy="12.355706573664577" iyz="2.986802675143824" izz="12.327019793799982"/>
+    </inertial>
+    <collision name="left_wheel_collision">
+      <origin rpy="0  0  0" xyz="0    -0.046  0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/left_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="left_wheel_visual">
+      <origin rpy="0  0  0" xyz="0    -0.046  0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/left_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="right_wheel">
+    <inertial>
+      <mass value="13.340163929097853"/>
+      <origin rpy="0  0  0" xyz="0     0.004  0"/>
+      <inertia ixx="3.24940928013889" ixy="4.452078024336449" ixz="-1.2677691125288901" iyy="12.35570657366474" iyz="2.98680267514417" izz="12.8877708196443"/>
+    </inertial>
+    <collision name="right_wheel_collision">
+      <origin rpy="0  0  0" xyz="0     0.004  0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/right_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="right_wheel_visual">
+      <origin rpy="0  0  0" xyz="0     0.004  0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/right_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="pedal_right">
+    <inertial>
+      <mass value="0.9460025886020094"/>
+      <origin rpy="0  0  0" xyz="6.00000000e-05  -4.20000000e-02  -4.00000000e-05"/>
+      <inertia ixx="0.07377911577090149" ixy="-0.06442708739658828" ixz="-0.03622638361731796" iyy="0.1740707923266257" iyz="-0.07418824195613966" izz="0.16432401911803204"/>
+    </inertial>
+    <collision name="pedal_right_collision">
+      <origin rpy="0  0  0" xyz="6.00000000e-05  -4.20000000e-02  -4.00000000e-05"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="pedal_right_visual">
+      <origin rpy="0  0  0" xyz="6.00000000e-05  -4.20000000e-02  -4.00000000e-05"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="kurbel">
+    <inertial>
+      <mass value="2.7832708381107576"/>
+      <origin rpy="0  0  0" xyz="0.00103  0.03513  0.00018"/>
+      <inertia ixx="0.1423383234578622" ixy="-0.032689001789628226" ixz="-0.02011903160634835" iyy="0.25819266867802115" iyz="-0.12002315705190886" izz="0.15384069763517777"/>
+    </inertial>
+    <collision name="kurbel_collision">
+      <origin rpy="0  0  0" xyz="0.00103  0.03513  0.00018"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/kurbel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="kurbel_visual">
+      <origin rpy="0  0  0" xyz="0.00103  0.03513  0.00018"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/kurbel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="pedal_left">
+    <inertial>
+      <mass value="0.9460025886020111"/>
+      <origin rpy="0  0  0" xyz="-6.00000000e-05   4.20000000e-02  -4.00000000e-05"/>
+      <inertia ixx="0.054798951844923956" ixy="0.0037944800841213187" ixz="0.022818718582806888" iyy="0.04327986812473328" iyz="-0.006936264200881655" izz="0.01455982259395355"/>
+    </inertial>
+    <collision name="pedal_left_collision">
+      <origin rpy="0  0  0" xyz="-6.00000000e-05   4.20000000e-02  -4.00000000e-05"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="pedal_left_visual">
+      <origin rpy="0  0  0" xyz="-6.00000000e-05   4.20000000e-02  -4.00000000e-05"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
