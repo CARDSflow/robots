@@ -20,15 +20,3 @@ joint_foot_left:
 joint_foot_right:
   joint: joint_foot_right
   type: cardsflow/kindyn/CableLengthController
-joint_pedal_left:
-  joint: joint_pedal_left
-  type: cardsflow/kindyn/CableLengthController
-joint_pedal_right:
-  joint: joint_pedal_right
-  type: cardsflow/kindyn/CableLengthController
-joint_bike_left:
-  joint: joint_bike_left
-  type: cardsflow/kindyn/TorquePositionController
-joint_bike_right:
-  joint: joint_bike_right
-  type: cardsflow/kindyn/TorquePositionController
