@@ -1,4 +1,4 @@
-joint_names: ['joint_hip_left','joint_knee_left','joint_foot_left','joint_hip_right','joint_knee_right','joint_foot_right','joint_pedal','joint_pedal_left','joint_pedal_right','joint_wheel_left','joint_wheel_right','joint_front']
+joint_names: ['joint_hip_left','joint_knee_left','joint_foot_left','joint_hip_right','joint_knee_right','joint_foot_right','joint_pedal','joint_pedal_left','joint_pedal_right','joint_wheel_left','joint_wheel_right','joint_front','joint_wheel_back']
 endeffectors: ['pedal_left','pedal_right']
 pedal_left: 
   base_link: 'bike'

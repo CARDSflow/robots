@@ -52,7 +52,7 @@ Joint: EXPORT_joint_front
 	parent: bike
 	child: front_part
 	pos: -23.009613508125625	-1.0386479048341961	-20.52366773071724
-Joint: EXPORT_joint_back_wheel
+Joint: EXPORT_joint_wheel_back
 	parent: bike
 	child: wheel_back
 	pos: -1.4210854715202004e-14	-6.899965337519751	3.197442310920451e-14
