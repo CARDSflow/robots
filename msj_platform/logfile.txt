@@ -1,31 +1,29 @@
-Body: top
 Body: base
 Body: sphere_link1
 Body: sphere_link2
+Body: top
 Body: tlv_1
 Body: tlv_2
 Body: tlv_0
-Joint: EXPORT_tlv_sensor_2
-	parent: base
-	child: tlv_2
-	pos: -0.2257026812314609	-2.2760713603415685	9.187243511918805
-Joint: EXPORT_tlv_sensor_0
-	parent: base
-	child: tlv_0
-	pos: -0.8154491690304018	-0.40406343240990555	8.690865349560584
 Joint: EXPORT_sphere_axis0
 	parent: base
 	child: sphere_link1
 	pos: 0.7571428571428572	-0.4400000000000005	10.600000000000001
 Joint: EXPORT_sphere_axis2
-	parent: sphere_link2
-	child: top
-	pos: 0.7571428571428589	-0.4400000000000005	10.600000000000001
+	ERROR writing joint EXPORT_sphere_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
 Joint: EXPORT_sphere_axis1
 	parent: sphere_link1
 	child: sphere_link2
 	pos: 0.7571428571428572	-0.4400000000000005	10.600000000000001
+Joint: EXPORT_tlv_sensor_2
+	parent: base
+	child: tlv_2
+	pos: -0.2257026812314609	-2.2760713603415685	9.187243511918805
 Joint: EXPORT_tlv_sensor_1
 	parent: base
 	child: tlv_1
 	pos: 1.8140094047370783	-0.7447957549236072	8.439028345647362
+Joint: EXPORT_tlv_sensor_0
+	parent: base
+	child: tlv_0
+	pos: -0.8154491690304018	-0.40406343240990555	8.690865349560584
