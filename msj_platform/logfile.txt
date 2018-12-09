@@ -1,45 +1,31 @@
 Body: top
-COM: top 0.7571428571428571 -0.6 16.15714285714286
-exporting stl of top
 Body: base
-COM: base 1.1546319456101647e-14 -5.329070518200761e-15 -2.974377549180369e-30
-exporting stl of base
 Body: sphere_link1
-COM: sphere_link1 0.7571428571428572 -0.44 10.6
-exporting stl of sphere_link1
 Body: sphere_link2
-COM: sphere_link2 0.7571428571428629 -0.4400000062483439 10.599999990919072
-exporting stl of sphere_link2
 Body: tlv_1
-COM: tlv_1 1.8087101486926254 -0.7308597178967146 8.493915848607692
-exporting stl of tlv_1
 Body: tlv_2
-COM: tlv_2 -0.1878879286683719 -2.2543335744795363 9.224600747982091
-exporting stl of tlv_2
 Body: tlv_0
-COM: tlv_0 -0.7780735498961288 -0.3809655400576538 8.727872187436782
-exporting stl of tlv_0
-Joint: EXPORT_sphere_axis0
-	parent: base
-	child: sphere_link1
-	pos: 0.0	-4.996003610813204e-16	1.7763568394002505e-15
-Joint: EXPORT_sphere_axis2
-	parent: sphere_link2
-	child: top
-	pos: 1.7763568394002505e-15	0.15999999999999948	-5.557142857142857
-Joint: EXPORT_sphere_axis1
-	parent: sphere_link1
-	child: sphere_link2
-	pos: -5.662137425588298e-15	6.248343398240763e-09	9.080929785909575e-09
-Joint: EXPORT_tlv_sensor_1
-	parent: base
-	child: tlv_1
-	pos: 0.005299256044452916	-0.013936037026892611	-0.05488750296033018
 Joint: EXPORT_tlv_sensor_2
 	parent: base
 	child: tlv_2
-	pos: -0.037814752563089	-0.021737785862032233	-0.037357236063286337
+	pos: -0.2257026812314609	-2.2760713603415685	9.187243511918805
 Joint: EXPORT_tlv_sensor_0
 	parent: base
 	child: tlv_0
-	pos: -0.03737561913427301	-0.023097892352251737	-0.03700683787619852
+	pos: -0.8154491690304018	-0.40406343240990555	8.690865349560584
+Joint: EXPORT_sphere_axis0
+	parent: base
+	child: sphere_link1
+	pos: 0.7571428571428572	-0.4400000000000005	10.600000000000001
+Joint: EXPORT_sphere_axis2
+	parent: sphere_link2
+	child: top
+	pos: 0.7571428571428589	-0.4400000000000005	10.600000000000001
+Joint: EXPORT_sphere_axis1
+	parent: sphere_link1
+	child: sphere_link2
+	pos: 0.7571428571428572	-0.4400000000000005	10.600000000000001
+Joint: EXPORT_tlv_sensor_1
+	parent: base
+	child: tlv_1
+	pos: 1.8140094047370783	-0.7447957549236072	8.439028345647362
