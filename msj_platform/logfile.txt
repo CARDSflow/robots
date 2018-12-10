@@ -19,6 +19,14 @@ exporting stl of sphere_link1
 Body: sphere_link2
 COM: sphere_link2 0.757142857142861 -0.45000000624834496 10.499999990919113
 exporting stl of sphere_link2
+Joint: EXPORT_tlv_sensor_1
+	parent: base
+	child: tlv_1
+	pos: 0.005299256044452916	-0.013936037026892611	-0.05488750296033018
+Joint: EXPORT_tlv_sensor_2
+	parent: base
+	child: tlv_2
+	pos: -0.037814752563089	-0.021737785862032233	-0.037357236063286337
 Joint: EXPORT_sphere_axis0
 	parent: base
 	child: sphere_link1
@@ -31,14 +39,6 @@ Joint: EXPORT_sphere_axis1
 	parent: sphere_link1
 	child: sphere_link2
 	pos: -3.4416913763379853e-15	6.248343509263066e-09	9.080929785909575e-09
-Joint: EXPORT_tlv_sensor_2
-	parent: base
-	child: tlv_2
-	pos: -0.037814752563089	-0.021737785862032233	-0.037357236063286337
-Joint: EXPORT_tlv_sensor_1
-	parent: base
-	child: tlv_1
-	pos: 0.005299256044452916	-0.013936037026892611	-0.05488750296033018
 Joint: EXPORT_tlv_sensor_0
 	parent: base
 	child: tlv_0
