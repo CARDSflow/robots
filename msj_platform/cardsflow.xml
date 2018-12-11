@@ -45,7 +45,7 @@
 			<viaPoint type="FIXPOINT">0.10899999990083961 0.014092248151036242 0.0570999999925494</viaPoint>
 		</link>
 		<link name="top">
-			<viaPoint type="FIXPOINT">0.03817509438042066 0.0007862622990321922 -0.005</viaPoint>
+			<viaPoint type="FIXPOINT">0.0008137377009677994 0.039775094380420636 -0.005</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor6">
