@@ -11,11 +11,57 @@ WirelessLove *wifi;
 
 Adafruit_BNO055 bno = Adafruit_BNO055();
 
-/**************************************************************************/
-/*
-    Arduino setup function (automatically called at startup)
-*/
-/**************************************************************************/
+void displaySensorOffsets(const adafruit_bno055_offsets_t &calibData)
+{
+    Serial.print("Accelerometer: ");
+    Serial.print(calibData.accel_offset_x); Serial.print(" ");
+    Serial.print(calibData.accel_offset_y); Serial.print(" ");
+    Serial.print(calibData.accel_offset_z); Serial.print(" ");
+
+    Serial.print("\nGyro: ");
+    Serial.print(calibData.gyro_offset_x); Serial.print(" ");
+    Serial.print(calibData.gyro_offset_y); Serial.print(" ");
+    Serial.print(calibData.gyro_offset_z); Serial.print(" ");
+
+    Serial.print("\nMag: ");
+    Serial.print(calibData.mag_offset_x); Serial.print(" ");
+    Serial.print(calibData.mag_offset_y); Serial.print(" ");
+    Serial.print(calibData.mag_offset_z); Serial.print(" ");
+
+    Serial.print("\nAccel Radius: ");
+    Serial.print(calibData.accel_radius);
+
+    Serial.print("\nMag Radius: ");
+    Serial.print(calibData.mag_radius);
+}
+
+void displayCalStatus(void)
+{
+  /* Get the four calibration values (0..3) */
+  /* Any sensor data reporting 0 should be ignored, */
+  /* 3 means 'fully calibrated" */
+  uint8_t system, gyro, accel, mag;
+  system = gyro = accel = mag = 0;
+  bno.getCalibration(&system, &gyro, &accel, &mag);
+ 
+  /* The data should be ignored until the system calibration is > 0 */
+  Serial.print("\t");
+  if (!system)
+  {
+    Serial.print("! ");
+  }
+ 
+  /* Display the individual values */
+  Serial.print("Sys:");
+  Serial.print(system, DEC);
+  Serial.print(" G:");
+  Serial.print(gyro, DEC);
+  Serial.print(" A:");
+  Serial.print(accel, DEC);
+  Serial.print(" M:");
+  Serial.println(mag, DEC);
+}
+
 void setup(void)
 {
   Serial.begin(115200);
@@ -39,6 +85,24 @@ void setup(void)
   Serial.println("");
 
   bno.setExtCrystalUse(true);
+
+  adafruit_bno055_offsets_t calibData;
+  calibData.accel_offset_x = 20;
+  calibData.accel_offset_y = 10;
+  calibData.accel_offset_z = 6;
+
+  calibData.gyro_offset_x = -5;
+  calibData.gyro_offset_y = 0;
+  calibData.gyro_offset_z = 0;
+
+  calibData.mag_offset_x = 24;
+  calibData.mag_offset_y = 214;
+  calibData.mag_offset_z = 104;
+
+  calibData.accel_radius = 1000;
+  calibData.mag_radius = 688;
+
+  bno.setSensorOffsets(calibData);
 
   Serial.println("Calibration status values: 0=uncalibrated, 3=fully calibrated");
 
@@ -88,15 +152,30 @@ void loop(void)
 
   static int counter = 0;
   if(counter++%100==0){
-  // Quaternion data
-  Serial.print("qW: ");
-  Serial.print(quat.w(), 4);
-  Serial.print(" qX: ");
-  Serial.print(quat.x(), 4);
-  Serial.print(" qY: ");
-  Serial.print(quat.y(), 4);
-  Serial.print(" qZ: ");
-  Serial.println(quat.z(), 4);
+    // Quaternion data
+    Serial.print("qW: ");
+    Serial.print(quat.w(), 4);
+    Serial.print(" qX: ");
+    Serial.print(quat.x(), 4);
+    Serial.print(" qY: ");
+    Serial.print(quat.y(), 4);
+    Serial.print(" qZ: ");
+    Serial.println(quat.z(), 4);
+    displayCalStatus();
+//    adafruit_bno055_offsets_t newCalib;
+//    bno.getSensorOffsets(newCalib);
+//    displaySensorOffsets(newCalib);
+    uint8_t data[4];
+    bno.getCalibration(&data[0], &data[1], &data[2], &data[3]);
+    Serial.print("Sys:");
+    Serial.print(data[0], DEC);
+    Serial.print(" G:");
+    Serial.print(data[1], DEC);
+    Serial.print(" A:");
+    Serial.print(data[2], DEC);
+    Serial.print(" M:");
+    Serial.println(data[3], DEC);
+    wifi->broadcast_send(data,4);
   }
 
   wifi->broadcast_send(q.data,16);
