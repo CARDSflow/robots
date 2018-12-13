@@ -1,38 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="msj_platform">
-		<link name="top">
-			<self_collide>false</self_collide>
-			<pose frame="">0.001571428571428576 -0.004400000000000004 0.1565714285714286 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.046344510214942514</mass>
-				<inertia>
-					<ixx>0.0008743627251336572</ixx>
-					<ixy>3.2306241161057014e-07</ixy>
-					<ixz>2.7781889395136075e-05</ixz>
-					<iyy>0.0008735650289965188</iyy>
-					<iyz>-9.8561505761411e-06</iyz>
-					<izz>1.5156995450348082e-05</izz>
-				</inertia>
-			</inertial>
-			<collision name="top_collision">
-				<geometry>
-					<mesh>
-						<uri>model://msj_platform/meshes/CAD/top.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="top_visual">
-				<geometry>
-					<mesh>
-						<uri>model://msj_platform/meshes/CAD/top.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
 		<link name="base">
 			<self_collide>false</self_collide>
 			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
@@ -42,7 +10,7 @@
 				<inertia>
 					<ixx>0.05727592310541465</ixx>
 					<ixy>0.00012290217214213836</ixy>
-					<ixz>-0.0002483092057539847</ixz>
+					<ixz>-0.00024830920575398503</ixz>
 					<iyy>0.05720227497311322</iyy>
 					<iyz>0.00018485788595171346</iyz>
 					<izz>0.057271534245981616</izz>
@@ -60,6 +28,38 @@
 				<geometry>
 					<mesh>
 						<uri>model://msj_platform/meshes/CAD/base.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="top">
+			<self_collide>false</self_collide>
+			<pose frame="">0.001571428571428576 -0.004400000000000004 0.1565714285714286 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.11815872951213481</mass>
+				<inertia>
+					<ixx>0.0031170831868599157</ixx>
+					<ixy>8.246923981985297e-07</ixy>
+					<ixz>8.349346525106132e-05</ixz>
+					<iyy>0.003115003383270711</iyy>
+					<iyz>-2.9581457565924708e-05</iyz>
+					<izz>7.841829285271898e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="top_collision">
+				<geometry>
+					<mesh>
+						<uri>model://msj_platform/meshes/CAD/top.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="top_visual">
+				<geometry>
+					<mesh>
+						<uri>model://msj_platform/meshes/CAD/top.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -225,6 +225,11 @@
 				</geometry>
 			</visual>
 		</link>
+		<joint name="tlv_sensor_1" type="fixed">
+			<parent>base</parent>
+			<child>tlv_1</child>
+			<pose frame="">8.072138346437718e-05 0.00025665711496402276 -0.0005026238889088397 0 0 0</pose>
+		</joint>
 		<joint name="tlv_sensor_2" type="fixed">
 			<parent>base</parent>
 			<child>tlv_2</child>
@@ -234,11 +239,6 @@
 			<parent>base</parent>
 			<child>tlv_0</child>
 			<pose frame="">-0.000337324106489445 0.00035340072468192484 -0.00030676956256675325 0 0 0</pose>
-		</joint>
-		<joint name="tlv_sensor_1" type="fixed">
-			<parent>base</parent>
-			<child>tlv_1</child>
-			<pose frame="">8.072138346437718e-05 0.00025665711496402276 -0.0005026238889088397 0 0 0</pose>
 		</joint>
 		<joint name="sphere_axis0" type="revolute">
 			<parent>base</parent>
