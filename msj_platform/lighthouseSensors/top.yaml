@@ -1,5 +1,5 @@
 name: top
-ObjectID: 0
+ObjectID: top
 mesh: ../meshes/CAD/top.stl
 sensor_relative_locations:
 - [0, 0.01707672139317149, -0.028180542495376062, 0.011632505473493761]
