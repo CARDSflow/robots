@@ -1,4 +1,3 @@
-<?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="msj_platform">
 		<link name="base">
@@ -19,7 +18,7 @@
 			<collision name="base_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/base.stl</uri>
+						<uri>model://msj_platform/meshes/collisions/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -27,7 +26,7 @@
 			<visual name="base_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/base.stl</uri>
+						<uri>model://msj_platform/meshes/visuals/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -51,7 +50,7 @@
 			<collision name="top_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/top.stl</uri>
+						<uri>model://msj_platform/meshes/collisions/top.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -59,7 +58,7 @@
 			<visual name="top_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/top.stl</uri>
+						<uri>model://msj_platform/meshes/visuals/top.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -83,7 +82,7 @@
 			<collision name="tlv_1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/tlv_1.stl</uri>
+						<uri>model://msj_platform/meshes/collisions/tlv_1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -91,7 +90,7 @@
 			<visual name="tlv_1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/tlv_1.stl</uri>
+						<uri>model://msj_platform/meshes/visuals/tlv_1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -115,7 +114,7 @@
 			<collision name="tlv_2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/tlv_2.stl</uri>
+						<uri>model://msj_platform/meshes/collisions/tlv_2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -123,7 +122,7 @@
 			<visual name="tlv_2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/tlv_2.stl</uri>
+						<uri>model://msj_platform/meshes/visuals/tlv_2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -147,7 +146,7 @@
 			<collision name="tlv_0_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/tlv_0.stl</uri>
+						<uri>model://msj_platform/meshes/collisions/tlv_0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -155,7 +154,7 @@
 			<visual name="tlv_0_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/tlv_0.stl</uri>
+						<uri>model://msj_platform/meshes/visuals/tlv_0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -179,7 +178,7 @@
 			<collision name="sphere_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://msj_platform/meshes/collisions/sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -187,7 +186,7 @@
 			<visual name="sphere_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://msj_platform/meshes/visuals/sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -211,7 +210,7 @@
 			<collision name="sphere_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://msj_platform/meshes/collisions/sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -219,7 +218,7 @@
 			<visual name="sphere_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://msj_platform/meshes/visuals/sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -280,70 +279,70 @@
 			<pose frame="">-0.000337324106489445 0.00035340072468192484 -0.00030676956256675325 0 0 0</pose>
 		</joint>
 		<plugin filename="libmusc_plugin.so" name="musc_plugin">
-			<!--<myoMuscle name="motor0">-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">-0.01409224815103644 -0.10899999990083961 0.13710003484599584</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="top">-->
-					<!--<viaPoint type="FIXPOINT">-0.03817509438042065 0.0008137377009678038 -0.003000000000000007</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor1">-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">-0.10899999989668309 -0.014107716991127145 0.05735570917661106</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="top">-->
-					<!--<viaPoint type="FIXPOINT">-0.000813737700967796 -0.038175094380420646 -0.003000000000000007</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor2">-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">-0.10899999990083979 0.014107751848963773 0.05710003484599585</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="top">-->
-					<!--<viaPoint type="FIXPOINT">0.000813737700967796 0.038175094380420646 -0.003000000000000007</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor3">-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">-0.014107716991127322 0.10899999989668302 0.13735570917661108</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="top">-->
-					<!--<viaPoint type="FIXPOINT">-0.03817509438042065 0.0008137377009678038 -0.003000000000000007</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor4">-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">0.014092248151036118 0.10899999990083975 0.13710003484599587</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="top">-->
-					<!--<viaPoint type="FIXPOINT">0.03817509438042066 -0.0008137377009678021 -0.003000000000000007</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor5">-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">0.10899999990083961 0.014092248151036242 0.0570999999925494</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="top">-->
-					<!--<viaPoint type="FIXPOINT">0.000813737700967796 0.038175094380420646 -0.003000000000000007</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor6">-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">0.10899999989668285 -0.014107716991127214 0.057355744030057436</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="top">-->
-					<!--<viaPoint type="FIXPOINT">-0.000813737700967796 -0.038175094380420646 -0.003000000000000007</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
-			<!--<myoMuscle name="motor7">-->
-				<!--<link name="base">-->
-					<!--<viaPoint type="FIXPOINT">0.014107751848963493 -0.10899999990083963 0.13709999999254932</viaPoint>-->
-				<!--</link>-->
-				<!--<link name="top">-->
-					<!--<viaPoint type="FIXPOINT">0.03817509438042066 -0.0008137377009678021 -0.003000000000000007</viaPoint>-->
-				<!--</link>-->
-			<!--</myoMuscle>-->
+			
+				
+					
+				
+				
+					
+				
+			
+			
+				
+					
+				
+				
+					
+				
+			
+			
+				
+					
+				
+				
+					
+				
+			
+			
+				
+					
+				
+				
+					
+				
+			
+			
+				
+					
+				
+				
+					
+				
+			
+			
+				
+					
+				
+				
+					
+				
+			
+			
+				
+					
+				
+				
+					
+				
+			
+			
+				
+					
+				
+				
+					
+				
+			
 		</plugin>
 	</model>
 </sdf>

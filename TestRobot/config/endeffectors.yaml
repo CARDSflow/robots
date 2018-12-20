@@ -1,0 +1,5 @@
+joint_names: ['joint0', 'joint1', 'joint2', 'sphere_axis0', 'sphere_axis1', 'sphere_axis2']
+endeffectors: ['link5']
+link5:
+  base_link: 'base'
+  joints: ['joint0', 'joint1', 'joint2', 'sphere_axis0', 'sphere_axis1', 'sphere_axis2']
