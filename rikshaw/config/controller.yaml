@@ -1,23 +1,64 @@
 #  These controllers are loaded by the robot.launch script, the following types are available
 #  type: cardsflow/kindyn/TorquePositionController
 #  type: cardsflow/kindyn/CableLengthController
-#  type: cardsflow/kindyn/CableLengthVelocityController
 #  type: cardsflow/kindyn/ForcePositionController
-joint_hip_left:
-  joint: joint_hip_left
-  type: cardsflow/kindyn/CableLengthVelocityController
-joint_hip_right:
-  joint: joint_hip_right
-  type: cardsflow/kindyn/CableLengthVelocityController
-joint_knee_left:
-  joint: joint_knee_left
-  type: cardsflow/kindyn/CableLengthVelocityController
-joint_knee_right:
-  joint: joint_knee_right
-  type: cardsflow/kindyn/CableLengthVelocityController
-joint_foot_left:
-  joint: joint_foot_left
-  type: cardsflow/kindyn/CableLengthVelocityController
-joint_foot_right:
-  joint: joint_foot_right
-  type: cardsflow/kindyn/CableLengthVelocityController
+hip_joint:
+  joint: hip_joint
+  type: cardsflow/kindyn/CableLengthController
+elbow_left_rot1:
+  joint: elbow_left_rot1
+  type: cardsflow/kindyn/CableLengthController
+elbow_right_rot1:
+  joint: elbow_right_rot1
+  type: cardsflow/kindyn/CableLengthController
+elbow_left_rot0:
+  joint: elbow_left_rot0
+  type: cardsflow/kindyn/CableLengthController
+elbow_right_rot0:
+  joint: elbow_right_rot0
+  type: cardsflow/kindyn/CableLengthController
+sphere_left_axis0:
+  joint: sphere_left_axis0
+  type: cardsflow/kindyn/CableLengthController
+sphere_left_axis1:
+  joint: sphere_left_axis1
+  type: cardsflow/kindyn/CableLengthController
+sphere_left_axis2:
+  joint: sphere_left_axis2
+  type: cardsflow/kindyn/CableLengthController
+sphere_right_axis0:
+  joint: sphere_right_axis0
+  type: cardsflow/kindyn/CableLengthController
+sphere_right_axis1:
+  joint: sphere_right_axis1
+  type: cardsflow/kindyn/CableLengthController
+sphere_right_axis2:
+  joint: sphere_right_axis2
+  type: cardsflow/kindyn/CableLengthController
+sphere_head_axis0:
+  joint: sphere_head_axis0
+  type: cardsflow/kindyn/CableLengthController
+sphere_head_axis1:
+  joint: sphere_head_axis1
+  type: cardsflow/kindyn/CableLengthController
+sphere_head_axis2:
+  joint: sphere_head_axis2
+  type: cardsflow/kindyn/CableLengthController
+left_wrist_0:
+  joint: left_wrist_0
+  type: cardsflow/kindyn/TorquePositionController
+left_wrist_1:
+  joint: left_wrist_1
+  type: cardsflow/kindyn/TorquePositionController
+right_wrist_0:
+  joint: right_wrist_0
+  type: cardsflow/kindyn/TorquePositionController
+right_wrist_1:
+  joint: right_wrist_1
+  type: cardsflow/kindyn/TorquePositionController
+left_stick_tip_joint:
+  joint: left_stick_tip_joint
+  type: cardsflow/kindyn/TorquePositionController
+right_stick_tip_joint:
+  joint: right_stick_tip_joint
+  type: cardsflow/kindyn/TorquePositionController
