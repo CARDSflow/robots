@@ -27,6 +27,30 @@ Body: lower_arm_left
 Body: lower_arm_right
 Body: sphere_left_link1
 Body: sphere_left_link2
+Joint: EXPORT_joint_wheel_left
+	parent: front_part
+	child: left_wheel
+	pos: -88.67148521253273	-26.962806218634704	25.250000000001727
+Joint: EXPORT_joint_wheel_right
+	parent: front_part
+	child: right_wheel
+	pos: -88.67148521253273	37.23726160419198	25.250000000004547
+Joint: EXPORT_joint_front
+	parent: bike
+	child: front_part
+	pos: -83.47147288551196	3.437224426641265	21.799999821669747
+Joint: EXPORT_joint_wheel_back
+	parent: bike
+	child: wheel_back
+	pos: 64.86084286036902	-3.1077697753905262	25.62488702490252
+Joint: EXPORT_joint_pedal
+	parent: bike
+	child: kurbel
+	pos: 20.421801757812545	-0.06279315437303268	21.01009521484399
+Joint: EXPORT_spine_joint
+	parent: bike
+	child: torso
+	pos: 33.21949623512944	1.994999985417912	90.18217848680884
 Joint: EXPORT_joint_pedal_right
 	parent: kurbel
 	child: pedal_right
@@ -59,15 +83,15 @@ Joint: EXPORT_joint_foot_right
 	parent: leg_right
 	child: foot_right
 	pos: 35.225706821781564	20.95000003389345	3.7972191676040707
-Joint: EXPORT_sphere_left_axis0
+Joint: EXPORT_left_shoulder_axis0
 	parent: torso
 	child: sphere_left_link1
 	pos: 33.07335142628559	-27.223005652383833	137.01605703636662
-Joint: EXPORT_sphere_left_axis1
+Joint: EXPORT_left_shoulder_axis1
 	parent: sphere_left_link1
 	child: sphere_left_link2
 	pos: 33.073351426285654	-27.223005652383858	137.01605703636656
-Joint: EXPORT_sphere_left_axis2
+Joint: EXPORT_left_shoulder_axis2
 	parent: sphere_left_link2
 	child: upper_arm_left
 	pos: 33.073351314672905	-27.223005658084762	137.01605703667965
@@ -83,18 +107,6 @@ Joint: EXPORT_elbow_right_rot1
 	parent: elbow_right
 	child: lower_arm_right
 	pos: 34.30638095988873	56.61214642535129	115.1691118184744
-Joint: EXPORT_sphere_axis0
-	parent: torso
-	child: sphere_left_link1
-	pos: 33.07033173474019	31.21315981610224	137.0160655314343
-Joint: EXPORT_sphere_axis2
-	parent: sphere_left_link2
-	child: upper_arm_right
-	pos: 33.070331734740044	31.213159816102213	137.01606553143426
-Joint: EXPORT_sphere_axis1
-	parent: sphere_left_link1
-	child: sphere_left_link2
-	pos: 33.07033173474007	31.213159816102195	137.0160655314344
 Joint: EXPORT_left_wrist_0
 	parent: lower_arm_left
 	child: wrist_left_1
@@ -115,27 +127,15 @@ Joint: EXPORT_right_wrist_1
 	parent: wrist_right_1
 	child: right_hand
 	pos: 37.0320862205131	76.62988572257728	97.99836088534097
-Joint: EXPORT_joint_wheel_left
-	parent: front_part
-	child: left_wheel
-	pos: -88.67148521253273	-26.962806218634704	25.250000000001727
-Joint: EXPORT_joint_wheel_right
-	parent: front_part
-	child: right_wheel
-	pos: -88.67148521253273	37.23726160419198	25.250000000004547
-Joint: EXPORT_joint_front
-	parent: bike
-	child: front_part
-	pos: -83.47147288551196	3.437224426641265	21.799999821669747
-Joint: EXPORT_joint_wheel_back
-	parent: bike
-	child: wheel_back
-	pos: 64.86084286036902	-3.1077697753905262	25.62488702490252
-Joint: EXPORT_joint_pedal
-	parent: bike
-	child: kurbel
-	pos: 20.421801757812545	-0.06279315437303268	21.01009521484399
-Joint: EXPORT_spine_joint
-	parent: bike
-	child: torso
-	pos: 33.21949623512944	1.994999985417912	90.18217848680884
+Joint: EXPORT_right_shoulder_axis0
+	parent: torso
+	child: sphere_left_link1
+	pos: 33.07033173474019	31.21315981610224	137.0160655314343
+Joint: EXPORT_right_shoulder_axis2
+	parent: sphere_left_link2
+	child: upper_arm_right
+	pos: 33.070331734740044	31.213159816102213	137.01606553143426
+Joint: EXPORT_right_shoulder_axis1
+	parent: sphere_left_link1
+	child: sphere_left_link2
+	pos: 33.07033173474007	31.213159816102195	137.0160655314344

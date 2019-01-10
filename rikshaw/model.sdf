@@ -1,38 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="rikshaw">
-		<link name="upper_arm_right">
-			<self_collide>false</self_collide>
-			<pose frame="">0.33457009175212965 0.4347349710816881 1.2816454241145712 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>1.094552479232937</mass>
-				<inertia>
-					<ixx>2.009361473025079</ixx>
-					<ixy>-0.15927999238943039</ixy>
-					<ixz>-0.6081702930098505</ixz>
-					<iyy>1.9239533934428024</iyy>
-					<iyz>-0.4692767107668544</iyz>
-					<izz>0.33389309069504214</izz>
-				</inertia>
-			</inertial>
-			<collision name="upper_arm_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/CAD/upper_arm_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="upper_arm_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/CAD/upper_arm_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
 		<link name="bike">
 			<self_collide>false</self_collide>
 			<pose frame="">-0.8347147288551219 0.034372244266416344 0.03699999999999589 0.0 -0.0 0.0</pose>
@@ -41,11 +9,11 @@
 				<mass>21.813314987301997</mass>
 				<inertia>
 					<ixx>10.275552951787107</ixx>
-					<ixy>-0.013989875106434351</ixy>
-					<ixz>-0.2472724707609127</ixz>
+					<ixy>-0.013989875106434159</ixy>
+					<ixz>-0.2472724707609125</ixz>
 					<iyy>13.853123065374536</iyy>
-					<iyz>-3.796078472952305</iyz>
-					<izz>4.200869439036605</izz>
+					<iyz>-3.796078472952304</iyz>
+					<izz>4.200869439036604</izz>
 				</inertia>
 			</inertial>
 			<collision name="bike_collision">
@@ -65,6 +33,38 @@
 				</geometry>
 			</visual>
 		</link>
+		<link name="upper_arm_right">
+			<self_collide>false</self_collide>
+			<pose frame="">0.33457009175212965 0.4347349710816881 1.2816454241145712 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>1.094552479232937</mass>
+				<inertia>
+					<ixx>2.009361473024954</ixx>
+					<ixy>-0.15927999238941815</ixy>
+					<ixz>-0.6081702930098083</ixz>
+					<iyy>1.9239533934426856</iyy>
+					<iyz>-0.4692767107668228</iyz>
+					<izz>0.3338930906950165</izz>
+				</inertia>
+			</inertial>
+			<collision name="upper_arm_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/upper_arm_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="upper_arm_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/upper_arm_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
 		<link name="torso">
 			<self_collide>false</self_collide>
 			<pose frame="">0.3109685394055649 0.017547815368009458 1.324266414199839 0.0 -0.0 0.0</pose>
@@ -72,12 +72,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>10.567390774387572</mass>
 				<inertia>
-					<ixx>18.931261294108133</ixx>
-					<ixy>-0.05633179125653667</ixy>
-					<ixz>-0.24498372786071373</ixz>
-					<iyy>19.71302486118382</iyy>
-					<iyz>-4.3511221502334925</iyz>
-					<izz>1.3404190207940467</izz>
+					<ixx>18.931261294108232</ixx>
+					<ixy>-0.05633179125653744</ixy>
+					<ixz>-0.24498372786071856</ixz>
+					<iyy>19.71302486118391</iyy>
+					<iyz>-4.351122150233511</iyz>
+					<izz>1.3404190207940572</izz>
 				</inertia>
 			</inertial>
 			<collision name="torso_collision">
@@ -104,12 +104,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>16.813631845520145</mass>
 				<inertia>
-					<ixx>5.465779053051922</ixx>
-					<ixy>0.5110471712219155</ixy>
-					<ixz>-0.2874402446427802</ixz>
-					<iyy>14.40669875467032</iyy>
-					<iyz>2.9381621713367108</iyz>
-					<izz>11.464360009573394</izz>
+					<ixx>5.465779053028134</ixx>
+					<ixy>0.5110471712217488</ixy>
+					<ixz>-0.2874402446427835</ixz>
+					<iyy>14.406698754685804</iyy>
+					<iyz>2.938162171335791</iyz>
+					<izz>11.464360009565059</izz>
 				</inertia>
 			</inertial>
 			<collision name="front_part_collision">
@@ -136,12 +136,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>13.340163929097852</mass>
 				<inertia>
-					<ixx>2.6886582542943342</ixx>
-					<ixy>-3.73354366648907</ixy>
-					<ixz>1.0631600153408742</ixz>
-					<iyy>12.355706573664577</iyy>
-					<iyz>2.986802675143824</iyz>
-					<izz>12.327019793799982</izz>
+					<ixx>2.6886582542943365</ixx>
+					<ixy>-3.7335436664890733</ixy>
+					<ixz>1.0631600153408756</ixz>
+					<iyy>12.355706573664586</iyy>
+					<iyz>2.9868026751438275</iyz>
+					<izz>12.327019793799991</izz>
 				</inertia>
 			</inertial>
 			<collision name="left_wheel_collision">
@@ -169,11 +169,11 @@
 				<mass>13.340163929097853</mass>
 				<inertia>
 					<ixx>3.24940928013889</ixx>
-					<ixy>4.452078024336449</ixy>
-					<ixz>-1.2677691125288901</ixz>
-					<iyy>12.35570657366474</iyy>
-					<iyz>2.98680267514417</iyz>
-					<izz>12.8877708196443</izz>
+					<ixy>4.4520780243364495</ixy>
+					<ixz>-1.2677691125288908</ixz>
+					<iyy>12.355706573664742</iyy>
+					<iyz>2.9868026751441725</iyz>
+					<izz>12.887770819644302</izz>
 				</inertia>
 			</inertial>
 			<collision name="right_wheel_collision">
@@ -330,9 +330,9 @@
 				<inertia>
 					<ixx>0.03848112914971559</ixx>
 					<ixy>-0.06281908353900195</ixy>
-					<ixz>-0.0016489922126967642</ixz>
+					<ixz>-0.0016489922126967657</ixz>
 					<iyy>0.10736081745250295</iyy>
-					<iyz>-0.0030346879286066763</iyz>
+					<iyz>-0.0030346879286066784</iyz>
 					<izz>0.145102699250954</izz>
 				</inertia>
 			</inertial>
@@ -360,12 +360,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>5.563526842051091</mass>
 				<inertia>
-					<ixx>2.195375351876423</ixx>
-					<ixy>-0.41332077798314554</ixy>
-					<ixz>-0.7129175026362529</ixz>
-					<iyy>2.5784902779322136</iyy>
-					<iyz>-1.10854305790071</iyz>
-					<izz>0.9221499084687809</izz>
+					<ixx>2.1953753518764234</ixx>
+					<ixy>-0.4133207779831457</ixy>
+					<ixz>-0.712917502636253</ixz>
+					<iyy>2.578490277932215</iyy>
+					<iyz>-1.1085430579007103</iyz>
+					<izz>0.9221499084687812</izz>
 				</inertia>
 			</inertial>
 			<collision name="thigh_right_collision">
@@ -392,12 +392,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>5.563589065127255</mass>
 				<inertia>
-					<ixx>2.107348365659756</ixx>
-					<ixy>0.3375542359065883</ixy>
-					<ixz>0.5829504291423677</ixz>
-					<iyy>2.580367560491452</iyy>
-					<iyz>-1.1103721556416584</iyz>
-					<izz>0.8358124248821922</izz>
+					<ixx>2.1073483656597585</ixx>
+					<ixy>0.3375542359065887</ixy>
+					<ixz>0.5829504291423683</ixz>
+					<iyy>2.5803675604914544</iyy>
+					<iyz>-1.11037215564166</iyz>
+					<izz>0.8358124248821934</izz>
 				</inertia>
 			</inertial>
 			<collision name="thigh_left_collision">
@@ -424,12 +424,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>5.741522183296334</mass>
 				<inertia>
-					<ixx>0.6337458051838855</ixx>
-					<ixy>-0.43107317072067064</ixy>
-					<ixz>-0.2993369937343582</ixz>
-					<iyy>1.0466344261748768</iyy>
-					<iyz>-0.4660676222167663</iyz>
-					<izz>0.9662986162769227</izz>
+					<ixx>0.6337458051838858</ixx>
+					<ixy>-0.43107317072067103</ixy>
+					<ixz>-0.2993369937343584</ixz>
+					<iyy>1.046634426174878</iyy>
+					<iyz>-0.46606762221676656</iyz>
+					<izz>0.9662986162769234</izz>
 				</inertia>
 			</inertial>
 			<collision name="leg_right_collision">
@@ -456,10 +456,10 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>5.7426173662328575</mass>
 				<inertia>
-					<ixx>0.5427884169781726</ixx>
+					<ixx>0.5427884169781724</ixx>
 					<ixy>0.3499498433914676</ixy>
 					<ixz>0.24468683550206866</ixz>
-					<iyy>1.0437222226233072</iyy>
+					<iyy>1.0437222226233074</iyy>
 					<iyz>-0.4657299321823802</iyz>
 					<izz>0.8715411400437341</izz>
 				</inertia>
@@ -488,12 +488,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>13.340163929098479</mass>
 				<inertia>
-					<ixx>1.40432084227607</ixx>
+					<ixx>1.4043208422760698</ixx>
 					<ixy>-0.32812134268378185</ixy>
-					<ixz>-0.12963248650394468</ixz>
-					<iyy>7.5043811804219125</iyy>
-					<iyz>-2.2172043078944745</iyz>
-					<izz>6.140471373352849</izz>
+					<ixz>-0.1296324865039446</ixz>
+					<iyy>7.504381180421911</iyy>
+					<iyz>-2.217204307894474</iyz>
+					<izz>6.140471373352847</izz>
 				</inertia>
 			</inertial>
 			<collision name="wheel_back_collision">
@@ -520,12 +520,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.15681540300170926</mass>
 				<inertia>
-					<ixx>0.25686495311692137</ixx>
-					<ixy>0.02715659840911403</ixy>
-					<ixz>0.09321889690871758</ixz>
-					<iyy>0.23510542876087762</iyy>
-					<iyz>-0.06309786245452521</iyz>
-					<izz>0.058625992759582815</izz>
+					<ixx>0.256864953120857</ixx>
+					<ixy>0.02715659840956128</ixy>
+					<ixz>0.09321889691014267</ixz>
+					<iyy>0.23510542876452983</iyy>
+					<iyz>-0.0630978624555684</iyz>
+					<izz>0.05862599276052077</izz>
 				</inertia>
 			</inertial>
 			<collision name="elbow_left_collision">
@@ -552,12 +552,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.17350645370716086</mass>
 				<inertia>
-					<ixx>0.29092134644317125</ixx>
-					<ixy>-0.03256614173076615</ixy>
-					<ixz>-0.1115285238013583</ixz>
-					<iyy>0.2591152755226404</iyy>
-					<iyz>-0.06967799853770598</iyz>
-					<izz>0.07260155374284175</izz>
+					<ixx>0.29092134642236867</ixx>
+					<ixy>-0.03256614172841492</ixy>
+					<ixz>-0.11152852379310105</ixz>
+					<iyy>0.25911527550455765</iyy>
+					<iyz>-0.06967799853294211</iyz>
+					<izz>0.07260155373740665</izz>
 				</inertia>
 			</inertial>
 			<collision name="elbow_right_collision">
@@ -616,12 +616,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.03133730384743735</mass>
 				<inertia>
-					<ixx>0.06124172346727022</ixx>
-					<ixy>0.0028212938060678187</ixy>
-					<ixz>0.011697257895575422</ixz>
-					<iyy>0.062346776091497864</iyy>
-					<iyz>-0.014210271992561</iyz>
-					<izz>0.0057524752048681415</izz>
+					<ixx>0.0612417234672702</ixx>
+					<ixy>0.002821293806067818</ixy>
+					<ixz>0.011697257895575418</ixz>
+					<iyy>0.06234677609149785</iyy>
+					<iyz>-0.014210271992560993</iyz>
+					<izz>0.005752475204868141</izz>
 				</inertia>
 			</inertial>
 			<collision name="sphere_left_link2_collision">
@@ -648,12 +648,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.012762217633342583</mass>
 				<inertia>
-					<ixx>0.0189706913964911</ixx>
-					<ixy>0.0032483399471308857</ixy>
-					<ixz>0.00905210879647902</ixz>
-					<iyy>0.01390669349741549</iyy>
-					<iyz>-0.004420385057485247</iyz>
-					<izz>0.008241479604974258</izz>
+					<ixx>0.018970691396491133</ixx>
+					<ixy>0.003248339947130892</ixy>
+					<ixz>0.009052108796479035</ixz>
+					<iyy>0.013906693497415518</iyy>
+					<iyz>-0.004420385057485256</iyz>
+					<izz>0.008241479604974272</izz>
 				</inertia>
 			</inertial>
 			<collision name="wrist_left_1_collision">
@@ -680,12 +680,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.08391816593127362</mass>
 				<inertia>
-					<ixx>0.12315663153009086</ixx>
-					<ixy>0.023513798366765332</ixy>
-					<ixz>0.06051648116783681</ixz>
-					<iyy>0.08285072728863338</iyy>
-					<iyz>-0.027866103242202196</iyz>
-					<izz>0.06204166204034508</izz>
+					<ixx>0.12315663152243422</ixx>
+					<ixy>0.02351379836528688</ixy>
+					<ixz>0.06051648116403934</ixz>
+					<iyy>0.08285072728366757</iyy>
+					<iyz>-0.027866103240523472</iyz>
+					<izz>0.062041662036345445</izz>
 				</inertia>
 			</inertial>
 			<collision name="left_hand_collision">
@@ -712,12 +712,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.012761782896867226</mass>
 				<inertia>
-					<ixx>0.019811926537973607</ixx>
-					<ixy>-0.0034501178168721397</ixy>
-					<ixz>-0.009608052046590826</ixz>
-					<iyy>0.013906055128874563</iyy>
-					<iyz>-0.00442236178276294</iyz>
-					<izz>0.009086859118653937</izz>
+					<ixx>0.01981192653797364</ixx>
+					<ixy>-0.0034501178168721454</ixy>
+					<ixz>-0.00960805204659084</ixz>
+					<iyy>0.013906055128874585</iyy>
+					<iyz>-0.004422361782762946</iyz>
+					<izz>0.00908685911865395</izz>
 				</inertia>
 			</inertial>
 			<collision name="wrist_right_1_collision">
@@ -744,12 +744,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.08391622142376684</mass>
 				<inertia>
-					<ixx>0.13019843504521753</ixx>
-					<ixy>-0.02490104700462609</ixy>
-					<ixz>-0.06449950189933894</ixz>
-					<iyy>0.08332891545267128</iyy>
-					<iyz>-0.027909412827495136</iyz>
-					<izz>0.0684926416771991</izz>
+					<ixx>0.13019843505363257</ixx>
+					<ixy>-0.02490104700630209</ixy>
+					<ixz>-0.06449950190353403</ixz>
+					<iyy>0.08332891545792796</iyy>
+					<iyz>-0.027909412829306077</iyz>
+					<izz>0.06849264168180677</izz>
 				</inertia>
 			</inertial>
 			<collision name="right_hand_collision">
@@ -776,12 +776,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>1.1803838170765448</mass>
 				<inertia>
-					<ixx>2.129887860689127</ixx>
-					<ixy>0.1573139632074779</ixy>
-					<ixz>0.596300088154423</ixz>
-					<iyy>2.0783455457556514</iyy>
-					<iyz>-0.5098935199655853</iyz>
-					<izz>0.32331878468395625</izz>
+					<ixx>2.1298878606900375</ixx>
+					<ixy>0.15731396320754892</ixy>
+					<ixz>0.5963000881547096</ixz>
+					<iyy>2.078345545756509</iyy>
+					<iyz>-0.5098935199657852</iyz>
+					<izz>0.3233187846841082</izz>
 				</inertia>
 			</inertial>
 			<collision name="upper_arm_left_collision">
@@ -842,10 +842,10 @@
 				<inertia>
 					<ixx>2.224056987713926</ixx>
 					<ixy>-0.32109609612110884</ixy>
-					<ixz>-0.9871381806426894</ixz>
+					<ixz>-0.9871381806426893</ixz>
 					<iyy>1.7807932691131367</iyy>
-					<iyz>-0.5212987529954033</iyz>
-					<izz>0.7827088740676037</izz>
+					<iyz>-0.5212987529954032</iyz>
+					<izz>0.7827088740676036</izz>
 				</inertia>
 			</inertial>
 			<collision name="lower_arm_right_collision">
@@ -904,12 +904,12 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.03133730384743735</mass>
 				<inertia>
-					<ixx>0.06124172346727022</ixx>
-					<ixy>0.0028212938060678187</ixy>
-					<ixz>0.011697257895575422</ixz>
-					<iyy>0.062346776091497864</iyy>
-					<iyz>-0.014210271992561</iyz>
-					<izz>0.0057524752048681415</izz>
+					<ixx>0.0612417234672702</ixx>
+					<ixy>0.002821293806067818</ixy>
+					<ixz>0.011697257895575418</ixz>
+					<iyy>0.06234677609149785</iyy>
+					<iyz>-0.014210271992560993</iyz>
+					<izz>0.005752475204868141</izz>
 				</inertia>
 			</inertial>
 			<collision name="sphere_left_link2_collision">
@@ -929,6 +929,84 @@
 				</geometry>
 			</visual>
 		</link>
+		<joint name="joint_wheel_left" type="revolute">
+			<parent>front_part</parent>
+			<child>left_wheel</child>
+			<pose frame="">-0.8867148521253273 -0.26962806218634705 0.25250000000001727 0 0 0</pose>
+			<axis>
+				<xyz>3.1662288285729275e-30 -0.9999999999999998 -4.317059530368993e-14</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_wheel_right" type="revolute">
+			<parent>front_part</parent>
+			<child>right_wheel</child>
+			<pose frame="">-0.8867148521253273 0.3723726160419198 0.25250000000004547 0 0 0</pose>
+			<axis>
+				<xyz>-3.1662288285729275e-30 0.9999999999999998 4.317059530368993e-14</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_front" type="revolute">
+			<parent>bike</parent>
+			<child>front_part</child>
+			<pose frame="">-0.8347147288551195 0.03437224426641265 0.21799999821669747 0 0 0</pose>
+			<axis>
+				<xyz>5.345642609144017e-16 -4.084397910750052e-14 1.0</xyz>
+				<limit>
+					<lower>-0.3490658503988659</lower>
+					<upper>0.3490658503988659</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_wheel_back" type="revolute">
+			<parent>bike</parent>
+			<child>wheel_back</child>
+			<pose frame="">0.6486084286036902 -0.031077697753905262 0.2562488702490252 0 0 0</pose>
+			<axis>
+				<xyz>6.938893903907228e-17 -1.0 1.27675647831893e-15</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_pedal" type="revolute">
+			<parent>bike</parent>
+			<child>kurbel</child>
+			<pose frame="">0.20421801757812547 -0.0006279315437303268 0.2101009521484399 0 0 0</pose>
+			<axis>
+				<xyz>-6.938893903907228e-17 1.0 -1.27675647831893e-15</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="spine_joint" type="revolute">
+			<parent>bike</parent>
+			<child>torso</child>
+			<pose frame="">0.3321949623512944 0.01994999985417912 0.9018217848680884 0 0 0</pose>
+			<axis>
+				<xyz>0.019535911231678107 4.747112516936242e-10 -0.9998091558754337</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
 		<joint name="joint_pedal_right" type="revolute">
 			<parent>kurbel</parent>
 			<child>pedal_right</child>
@@ -1033,7 +1111,7 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="sphere_left_axis0" type="revolute">
+		<joint name="left_shoulder_axis0" type="revolute">
 			<parent>torso</parent>
 			<child>sphere_left_link1</child>
 			<pose frame="">0.3307335142628559 -0.27223005652383836 1.3701605703636661 0 0 0</pose>
@@ -1046,7 +1124,7 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="sphere_left_axis1" type="revolute">
+		<joint name="left_shoulder_axis1" type="revolute">
 			<parent>sphere_left_link1</parent>
 			<child>sphere_left_link2</child>
 			<pose frame="">0.3307335142628566 -0.2722300565238386 1.3701605703636657 0 0 0</pose>
@@ -1059,7 +1137,7 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="sphere_left_axis2" type="revolute">
+		<joint name="left_shoulder_axis2" type="revolute">
 			<parent>sphere_left_link2</parent>
 			<child>upper_arm_left</child>
 			<pose frame="">0.33073351314672905 -0.27223005658084765 1.3701605703667965 0 0 0</pose>
@@ -1107,45 +1185,6 @@
 				<limit>
 					<lower>-1.5707963267948966</lower>
 					<upper>1.5707963267948966</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="sphere_axis0" type="revolute">
-			<parent>torso</parent>
-			<child>sphere_left_link1</child>
-			<pose frame="">0.33070331734740194 0.3121315981610224 1.370160655314343 0 0 0</pose>
-			<axis>
-				<xyz>0.9986941911143129 -0.051010494310641946 -0.002800375816389377</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="sphere_axis2" type="revolute">
-			<parent>sphere_left_link2</parent>
-			<child>upper_arm_right</child>
-			<pose frame="">0.33070331734740044 0.31213159816102215 1.3701606553143426 0 0 0</pose>
-			<axis>
-				<xyz>0.03688002228074296 0.7578073504191245 -0.651435248975152</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="sphere_axis1" type="revolute">
-			<parent>sphere_left_link1</parent>
-			<child>sphere_left_link2</child>
-			<pose frame="">0.3307033173474007 0.31213159816102193 1.3701606553143442 0 0 0</pose>
-			<axis>
-				<xyz>0.03535217943919347 0.6504813211160871 0.7586990670140364</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -1215,12 +1254,12 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_wheel_left" type="revolute">
-			<parent>front_part</parent>
-			<child>left_wheel</child>
-			<pose frame="">-0.8867148521253273 -0.26962806218634705 0.25250000000001727 0 0 0</pose>
+		<joint name="right_shoulder_axis0" type="revolute">
+			<parent>torso</parent>
+			<child>sphere_left_link1</child>
+			<pose frame="">0.33070331734740194 0.3121315981610224 1.370160655314343 0 0 0</pose>
 			<axis>
-				<xyz>3.1662288285729275e-30 -0.9999999999999998 -4.317059530368993e-14</xyz>
+				<xyz>0.9986941911143129 -0.051010494310641946 -0.002800375816389377</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -1228,12 +1267,12 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_wheel_right" type="revolute">
-			<parent>front_part</parent>
-			<child>right_wheel</child>
-			<pose frame="">-0.8867148521253273 0.3723726160419198 0.25250000000004547 0 0 0</pose>
+		<joint name="right_shoulder_axis2" type="revolute">
+			<parent>sphere_left_link2</parent>
+			<child>upper_arm_right</child>
+			<pose frame="">0.33070331734740044 0.31213159816102215 1.3701606553143426 0 0 0</pose>
 			<axis>
-				<xyz>-3.1662288285729275e-30 0.9999999999999998 4.317059530368993e-14</xyz>
+				<xyz>0.03688002228074296 0.7578073504191245 -0.651435248975152</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -1241,54 +1280,15 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_front" type="revolute">
-			<parent>bike</parent>
-			<child>front_part</child>
-			<pose frame="">-0.8347147288551195 0.03437224426641265 0.21799999821669747 0 0 0</pose>
+		<joint name="right_shoulder_axis1" type="revolute">
+			<parent>sphere_left_link1</parent>
+			<child>sphere_left_link2</child>
+			<pose frame="">0.3307033173474007 0.31213159816102193 1.3701606553143442 0 0 0</pose>
 			<axis>
-				<xyz>5.345642609144017e-16 -4.084397910750052e-14 1.0</xyz>
-				<limit>
-					<lower>-0.3490658503988659</lower>
-					<upper>0.3490658503988659</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_wheel_back" type="revolute">
-			<parent>bike</parent>
-			<child>wheel_back</child>
-			<pose frame="">0.6486084286036902 -0.031077697753905262 0.2562488702490252 0 0 0</pose>
-			<axis>
-				<xyz>6.938893903907228e-17 -1.0 1.27675647831893e-15</xyz>
+				<xyz>0.03535217943919347 0.6504813211160871 0.7586990670140364</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_pedal" type="revolute">
-			<parent>bike</parent>
-			<child>kurbel</child>
-			<pose frame="">0.20421801757812547 -0.0006279315437303268 0.2101009521484399 0 0 0</pose>
-			<axis>
-				<xyz>-6.938893903907228e-17 1.0 -1.27675647831893e-15</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="spine_joint" type="revolute">
-			<parent>bike</parent>
-			<child>torso</child>
-			<pose frame="">0.3321949623512944 0.01994999985417912 0.9018217848680884 0 0 0</pose>
-			<axis>
-				<xyz>0.019535911231678107 4.747112516936242e-10 -0.9998091558754337</xyz>
-				<limit>
-					<lower>-0.5235987755982988</lower>
-					<upper>0.5235987755982988</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
