@@ -1,13 +1,13 @@
-joint_names: ['hip_joint','sphere_head_axis0', 'sphere_head_axis1', 'sphere_head_axis2',
-              'sphere_left_axis0', 'sphere_left_axis1', 'sphere_left_axis2', 'elbow_left_rot0', 'elbow_left_rot1', 'left_wrist_0', 'left_wrist_1', 'left_stick_tip_joint',
-              'sphere_right_axis0', 'sphere_right_axis1', 'sphere_right_axis2', 'elbow_right_rot0', 'elbow_right_rot1', 'right_wrist_0', 'right_wrist_1', 'right_stick_tip_joint']
-endeffectors: ['head','left_stick_tip', 'right_stick_tip']
-head:
-  base_link: 'base'
-  joints: ['hip_joint','sphere_head_axis0', 'sphere_head_axis1', 'sphere_head_axis2']
-left_stick_tip:
-  base_link: 'torso'
-  joints: ['sphere_left_axis0', 'sphere_left_axis1', 'sphere_left_axis2', 'elbow_left_rot0', 'elbow_left_rot1', 'left_wrist_0', 'left_wrist_1', 'left_stick_tip_joint']
-right_stick_tip:
-  base_link: 'torso'
-  joints: ['sphere_right_axis0', 'sphere_right_axis1', 'sphere_right_axis2', 'elbow_right_rot0', 'elbow_right_rot1', 'right_wrist_0', 'right_wrist_1', 'right_stick_tip_joint']
+joint_names: ['spine_joint','left_shoulder_axis0', 'left_shoulder_axis1', 'left_shoulder_axis2', 'elbow_left_rot0', 'elbow_left_rot1', 'left_wrist_0', 'left_wrist_1',
+'right_shoulder_axis0', 'right_shoulder_axis1', 'right_shoulder_axis2', 'elbow_right_rot0', 'elbow_right_rot1', 'right_wrist_0', 'right_wrist_1',
+'joint_wheel_left','joint_wheel_right','joint_front','joint_wheel_back','joint_pedal','joint_pedal_right','joint_pedal_left']
+endeffectors: ['left_leg','right_leg', 'bike']
+left_leg:
+  base_link: 'bike'
+  joints: ['left_shoulder_axis0', 'left_shoulder_axis1', 'left_shoulder_axis2', 'elbow_left_rot0', 'elbow_left_rot1', 'left_wrist_0', 'left_wrist_1']
+right_leg:
+  base_link: 'bike'
+  joints: ['right_shoulder_axis0', 'right_shoulder_axis1', 'right_shoulder_axis2', 'elbow_right_rot0', 'elbow_right_rot1', 'right_wrist_0', 'right_wrist_1']
+bike:
+  base_link: 'bike'
+  joints: ['spine_joint', 'joint_wheel_left','joint_wheel_right','joint_front','joint_wheel_back','joint_pedal','joint_pedal_right','joint_pedal_left']

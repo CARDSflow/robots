@@ -2,47 +2,23 @@
 #  type: cardsflow/kindyn/TorquePositionController
 #  type: cardsflow/kindyn/CableLengthController
 #  type: cardsflow/kindyn/ForcePositionController
-hip_joint:
-  joint: hip_joint
+spine_joint:
+  joint: spine_joint
+  type: cardsflow/kindyn/TorquePositionController
+left_shoulder_axis0:
+  joint: left_shoulder_axis0
   type: cardsflow/kindyn/CableLengthController
-elbow_left_rot1:
-  joint: elbow_left_rot1
+left_shoulder_axis1:
+  joint: left_shoulder_axis1
   type: cardsflow/kindyn/CableLengthController
-elbow_right_rot1:
-  joint: elbow_right_rot1
+left_shoulder_axis2:
+  joint: left_shoulder_axis2
   type: cardsflow/kindyn/CableLengthController
 elbow_left_rot0:
   joint: elbow_left_rot0
   type: cardsflow/kindyn/CableLengthController
-elbow_right_rot0:
-  joint: elbow_right_rot0
-  type: cardsflow/kindyn/CableLengthController
-sphere_left_axis0:
-  joint: sphere_left_axis0
-  type: cardsflow/kindyn/CableLengthController
-sphere_left_axis1:
-  joint: sphere_left_axis1
-  type: cardsflow/kindyn/CableLengthController
-sphere_left_axis2:
-  joint: sphere_left_axis2
-  type: cardsflow/kindyn/CableLengthController
-sphere_right_axis0:
-  joint: sphere_right_axis0
-  type: cardsflow/kindyn/CableLengthController
-sphere_right_axis1:
-  joint: sphere_right_axis1
-  type: cardsflow/kindyn/CableLengthController
-sphere_right_axis2:
-  joint: sphere_right_axis2
-  type: cardsflow/kindyn/CableLengthController
-sphere_head_axis0:
-  joint: sphere_head_axis0
-  type: cardsflow/kindyn/CableLengthController
-sphere_head_axis1:
-  joint: sphere_head_axis1
-  type: cardsflow/kindyn/CableLengthController
-sphere_head_axis2:
-  joint: sphere_head_axis2
+elbow_left_rot1:
+  joint: elbow_left_rot1
   type: cardsflow/kindyn/CableLengthController
 left_wrist_0:
   joint: left_wrist_0
@@ -50,15 +26,46 @@ left_wrist_0:
 left_wrist_1:
   joint: left_wrist_1
   type: cardsflow/kindyn/TorquePositionController
+right_shoulder_axis0:
+  joint: right_shoulder_axis0
+  type: cardsflow/kindyn/CableLengthController
+right_shoulder_axis1:
+  joint: right_shoulder_axis1
+  type: cardsflow/kindyn/CableLengthController
+right_shoulder_axis2:
+  joint: right_shoulder_axis2
+  type: cardsflow/kindyn/CableLengthController
+elbow_right_rot0:
+  joint: elbow_right_rot0
+  type: cardsflow/kindyn/CableLengthController
+elbow_right_rot1:
+  joint: elbow_right_rot1
+  type: cardsflow/kindyn/CableLengthController
 right_wrist_0:
   joint: right_wrist_0
   type: cardsflow/kindyn/TorquePositionController
 right_wrist_1:
   joint: right_wrist_1
   type: cardsflow/kindyn/TorquePositionController
-left_stick_tip_joint:
-  joint: left_stick_tip_joint
+# bike
+joint_wheel_left:
+  joint: joint_wheel_left
   type: cardsflow/kindyn/TorquePositionController
-right_stick_tip_joint:
-  joint: right_stick_tip_joint
+joint_wheel_right:
+  joint: joint_wheel_right
+  type: cardsflow/kindyn/TorquePositionController
+joint_front:
+  joint: joint_front
+  type: cardsflow/kindyn/TorquePositionController
+joint_wheel_back:
+  joint: joint_wheel_back
+  type: cardsflow/kindyn/TorquePositionController
+joint_pedal:
+  joint: joint_pedal
+  type: cardsflow/kindyn/TorquePositionController
+joint_pedal_right:
+  joint: joint_pedal_right
+  type: cardsflow/kindyn/TorquePositionController
+joint_pedal_left:
+  joint: joint_pedal_left
   type: cardsflow/kindyn/TorquePositionController
