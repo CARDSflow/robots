@@ -577,65 +577,65 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_left_link1">
+		<link name="left_shoulder_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">0.33071409957862036 -0.272229961573844 1.3711603774754806 0.0 -0.0 0.0</pose>
+			<pose frame="">0.3307336354898511 -0.2722299615733699 1.3701605683196008 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.04675353024257251</mass>
+				<mass>0.04675353024257252</mass>
 				<inertia>
-					<ixx>0.09137125206316106</ixx>
-					<ixy>0.0042092337289464975</ixy>
-					<ixz>0.017451734035662726</ixz>
-					<iyy>0.09301990605817985</iyy>
-					<iyz>-0.021200952585589232</iyz>
-					<izz>0.008584356847086794</izz>
+					<ixx>0.09124311009121511</ixx>
+					<ixy>0.004209482376385915</ixy>
+					<ixz>0.017439008752899925</ixz>
+					<iyy>0.09289236823462671</iyy>
+					<iyz>-0.021186744952191985</iyz>
+					<izz>0.0085849609954555</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_left_link1_collision">
+			<collision name="left_shoulder_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_left_link1.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/left_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_left_link1_visual">
+			<visual name="left_shoulder_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_left_link1.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/left_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_left_link2">
+		<link name="left_shoulder_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">0.3307139439493934 -0.27222887035970095 1.3711603794928573 0.0 -0.0 0.0</pose>
+			<pose frame="">0.33073347986062407 -0.27222887035922694 1.370160570336978 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.03133730384743735</mass>
+				<mass>0.031337303847437374</mass>
 				<inertia>
-					<ixx>0.0612417234672702</ixx>
-					<ixy>0.002821293806067818</ixy>
-					<ixz>0.011697257895575418</ixz>
-					<iyy>0.06234677609149785</iyy>
-					<iyz>-0.014210271992560993</iyz>
-					<izz>0.005752475204868141</izz>
+					<ixx>0.06115583425429413</ixx>
+					<ixy>0.002821460465335818</ixy>
+					<ixz>0.011688728604804268</ixz>
+					<iyy>0.06226129181848564</iyy>
+					<iyz>-0.014200749103179578</iyz>
+					<izz>0.00575288014481582</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_left_link2_collision">
+			<collision name="left_shoulder_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_left_link2.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/left_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_left_link2_visual">
+			<visual name="left_shoulder_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_left_link2.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/left_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -865,65 +865,65 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_left_link1">
+		<link name="right_shoulder_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">0.33071409957862036 -0.272229961573844 1.3711603774754806 0.0 -0.0 0.0</pose>
+			<pose frame="">0.3307032930996389 0.3121331123103106 1.3701606552791574 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.04675353024257251</mass>
+				<mass>0.04674900288659637</mass>
 				<inertia>
-					<ixx>0.09137125206316106</ixx>
-					<ixy>0.0042092337289464975</ixy>
-					<ixz>0.017451734035662726</ixz>
-					<iyy>0.09301990605817985</iyy>
-					<iyz>-0.021200952585589232</iyz>
-					<izz>0.008584356847086794</izz>
+					<ixx>0.09232437526869294</ixx>
+					<ixy>-0.004825593285278366</ixy>
+					<ixz>-0.019993263390362594</ixz>
+					<iyy>0.0928824466151441</iyy>
+					<iyz>-0.021182751147620086</iyz>
+					<izz>0.0096732810387272</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_left_link1_collision">
+			<collision name="right_shoulder_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_left_link1.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/right_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_left_link1_visual">
+			<visual name="right_shoulder_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_left_link1.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/right_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_left_link2">
+		<link name="right_shoulder_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">0.3307139439493934 -0.27222887035970095 1.3711603794928573 0.0 -0.0 0.0</pose>
+			<pose frame="">0.3307032840612797 0.31213278014211343 1.370160655284517 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.03133730384743735</mass>
+				<mass>0.03133730384711679</mass>
 				<inertia>
-					<ixx>0.0612417234672702</ixx>
-					<ixy>0.002821293806067818</ixy>
-					<ixz>0.011697257895575418</ixz>
-					<iyy>0.06234677609149785</iyy>
-					<iyz>-0.014210271992560993</iyz>
-					<izz>0.005752475204868141</izz>
+					<ixx>0.06188657465774138</ixx>
+					<ixy>-0.003234741031616726</ixy>
+					<ixz>-0.013402089121146524</ixz>
+					<iyy>0.06226067322485201</iyy>
+					<iyz>-0.014199453462168308</iyz>
+					<izz>0.006482987366217103</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_left_link2_collision">
+			<collision name="right_shoulder_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_left_link2.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/right_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_left_link2_visual">
+			<visual name="right_shoulder_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_left_link2.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/right_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1113,8 +1113,8 @@
 		</joint>
 		<joint name="left_shoulder_axis0" type="revolute">
 			<parent>torso</parent>
-			<child>sphere_left_link1</child>
-			<pose frame="">0.3307335142628559 -0.27223005652383836 1.3701605703636661 0 0 0</pose>
+			<child>left_shoulder_link1</child>
+			<pose frame="">-1.212269951622602e-07 -9.495046842999955e-08 2.0440654679987348e-09 0 0 0</pose>
 			<axis>
 				<xyz>0.050975679058603555 -0.9986354432779868 -0.01134599372001004</xyz>
 				<limit>
@@ -1125,9 +1125,9 @@
 			</axis>
 		</joint>
 		<joint name="left_shoulder_axis1" type="revolute">
-			<parent>sphere_left_link1</parent>
-			<child>sphere_left_link2</child>
-			<pose frame="">0.3307335142628566 -0.2722300565238386 1.3701605703636657 0 0 0</pose>
+			<parent>left_shoulder_link1</parent>
+			<child>left_shoulder_link2</child>
+			<pose frame="">3.4402232458319304e-08 -1.1861646116528846e-06 2.668770093805506e-11 0 0 0</pose>
 			<axis>
 				<xyz>0.9986941911138321 0.05101049432270832 -0.002800375767957668</xyz>
 				<limit>
@@ -1138,7 +1138,7 @@
 			</axis>
 		</joint>
 		<joint name="left_shoulder_axis2" type="revolute">
-			<parent>sphere_left_link2</parent>
+			<parent>left_shoulder_link2</parent>
 			<child>upper_arm_left</child>
 			<pose frame="">0.33073351314672905 -0.27223005658084765 1.3701605703667965 0 0 0</pose>
 			<axis>
@@ -1256,8 +1256,8 @@
 		</joint>
 		<joint name="right_shoulder_axis0" type="revolute">
 			<parent>torso</parent>
-			<child>sphere_left_link1</child>
-			<pose frame="">0.33070331734740194 0.3121315981610224 1.370160655314343 0 0 0</pose>
+			<child>right_shoulder_link1</child>
+			<pose frame="">2.424776305076648e-08 -1.5141492881909357e-06 3.5185507840651554e-11 0 0 0</pose>
 			<axis>
 				<xyz>0.9986941911143129 -0.051010494310641946 -0.002800375816389377</xyz>
 				<limit>
@@ -1268,7 +1268,7 @@
 			</axis>
 		</joint>
 		<joint name="right_shoulder_axis2" type="revolute">
-			<parent>sphere_left_link2</parent>
+			<parent>right_shoulder_link2</parent>
 			<child>upper_arm_right</child>
 			<pose frame="">0.33070331734740044 0.31213159816102215 1.3701606553143426 0 0 0</pose>
 			<axis>
@@ -1281,9 +1281,9 @@
 			</axis>
 		</joint>
 		<joint name="right_shoulder_axis1" type="revolute">
-			<parent>sphere_left_link1</parent>
-			<child>sphere_left_link2</child>
-			<pose frame="">0.3307033173474007 0.31213159816102193 1.3701606553143442 0 0 0</pose>
+			<parent>right_shoulder_link1</parent>
+			<child>right_shoulder_link2</child>
+			<pose frame="">3.328612102393436e-08 -1.1819810914559525e-06 2.982716296173749e-11 0 0 0</pose>
 			<axis>
 				<xyz>0.03535217943919347 0.6504813211160871 0.7586990670140364</xyz>
 				<limit>

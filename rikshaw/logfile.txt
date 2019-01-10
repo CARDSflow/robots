@@ -16,8 +16,12 @@ Body: leg_left
 Body: wheel_back
 Body: elbow_left
 Body: elbow_right
-Body: sphere_left_link1
-Body: sphere_left_link2
+Body: left_shoulder_link1
+COM: left_shoulder_link1 33.07336354898511 -27.22299615733699 137.01605683196007
+exporting stl of left_shoulder_link1
+Body: left_shoulder_link2
+COM: left_shoulder_link2 33.07334798606241 -27.222887035922692 137.0160570336978
+exporting stl of left_shoulder_link2
 Body: wrist_left_1
 Body: left_hand
 Body: wrist_right_1
@@ -25,8 +29,12 @@ Body: right_hand
 Body: upper_arm_left
 Body: lower_arm_left
 Body: lower_arm_right
-Body: sphere_left_link1
-Body: sphere_left_link2
+Body: right_shoulder_link1
+COM: right_shoulder_link1 33.07032930996389 31.21331123103106 137.01606552791574
+exporting stl of right_shoulder_link1
+Body: right_shoulder_link2
+COM: right_shoulder_link2 33.07032840612797 31.21327801421134 137.0160655284517
+exporting stl of right_shoulder_link2
 Joint: EXPORT_joint_wheel_left
 	parent: front_part
 	child: left_wheel
@@ -85,14 +93,14 @@ Joint: EXPORT_joint_foot_right
 	pos: 35.225706821781564	20.95000003389345	3.7972191676040707
 Joint: EXPORT_left_shoulder_axis0
 	parent: torso
-	child: sphere_left_link1
-	pos: 33.07335142628559	-27.223005652383833	137.01605703636662
+	child: left_shoulder_link1
+	pos: -1.2122699516226021e-05	-9.495046842999955e-06	2.0440654679987347e-07
 Joint: EXPORT_left_shoulder_axis1
-	parent: sphere_left_link1
-	child: sphere_left_link2
-	pos: 33.073351426285654	-27.223005652383858	137.01605703636656
+	parent: left_shoulder_link1
+	child: left_shoulder_link2
+	pos: 3.4402232458319304e-06	-0.00011861646116528846	2.668770093805506e-09
 Joint: EXPORT_left_shoulder_axis2
-	parent: sphere_left_link2
+	parent: left_shoulder_link2
 	child: upper_arm_left
 	pos: 33.073351314672905	-27.223005658084762	137.01605703667965
 Joint: EXPORT_elbow_left_rot1
@@ -129,13 +137,13 @@ Joint: EXPORT_right_wrist_1
 	pos: 37.0320862205131	76.62988572257728	97.99836088534097
 Joint: EXPORT_right_shoulder_axis0
 	parent: torso
-	child: sphere_left_link1
-	pos: 33.07033173474019	31.21315981610224	137.0160655314343
+	child: right_shoulder_link1
+	pos: 2.424776305076648e-06	-0.00015141492881909357	3.5185507840651553e-09
 Joint: EXPORT_right_shoulder_axis2
-	parent: sphere_left_link2
+	parent: right_shoulder_link2
 	child: upper_arm_right
 	pos: 33.070331734740044	31.213159816102213	137.01606553143426
 Joint: EXPORT_right_shoulder_axis1
-	parent: sphere_left_link1
-	child: sphere_left_link2
-	pos: 33.07033173474007	31.213159816102195	137.0160655314344
+	parent: right_shoulder_link1
+	child: right_shoulder_link2
+	pos: 3.3286121023934356e-06	-0.00011819810914559525	2.9827162961737486e-09
