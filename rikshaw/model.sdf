@@ -1,4 +1,3 @@
-<?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="rikshaw">
 		<link name="bike">
@@ -19,7 +18,7 @@
 			<collision name="bike_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/bike.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/bike.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -27,7 +26,7 @@
 			<visual name="bike_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/bike.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/bike.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -51,7 +50,7 @@
 			<collision name="upper_arm_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/upper_arm_right.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/upper_arm_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -59,7 +58,7 @@
 			<visual name="upper_arm_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/upper_arm_right.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/upper_arm_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -83,7 +82,7 @@
 			<collision name="torso_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/torso.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/torso.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -91,7 +90,7 @@
 			<visual name="torso_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/torso.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/torso.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -115,7 +114,7 @@
 			<collision name="front_part_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/front_part.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/front_part.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -123,7 +122,7 @@
 			<visual name="front_part_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/front_part.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/front_part.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -147,7 +146,7 @@
 			<collision name="left_wheel_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/left_wheel.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/left_wheel.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -155,7 +154,7 @@
 			<visual name="left_wheel_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/left_wheel.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/left_wheel.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -179,7 +178,7 @@
 			<collision name="right_wheel_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/right_wheel.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/right_wheel.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -187,7 +186,7 @@
 			<visual name="right_wheel_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/right_wheel.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/right_wheel.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -211,7 +210,7 @@
 			<collision name="pedal_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/pedal_right.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/pedal_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -219,7 +218,7 @@
 			<visual name="pedal_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/pedal_right.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/pedal_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -243,7 +242,7 @@
 			<collision name="kurbel_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/kurbel.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/kurbel.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -251,7 +250,7 @@
 			<visual name="kurbel_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/kurbel.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/kurbel.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -275,7 +274,7 @@
 			<collision name="pedal_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/pedal_left.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/pedal_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -283,7 +282,7 @@
 			<visual name="pedal_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/pedal_left.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/pedal_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -307,7 +306,7 @@
 			<collision name="foot_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/foot_left.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/foot_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -315,7 +314,7 @@
 			<visual name="foot_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/foot_left.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/foot_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -339,7 +338,7 @@
 			<collision name="foot_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/foot_right.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/foot_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -347,7 +346,7 @@
 			<visual name="foot_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/foot_right.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/foot_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -371,7 +370,7 @@
 			<collision name="thigh_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/thigh_right.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/thigh_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -379,7 +378,7 @@
 			<visual name="thigh_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/thigh_right.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/thigh_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -403,7 +402,7 @@
 			<collision name="thigh_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/thigh_left.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/thigh_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -411,7 +410,7 @@
 			<visual name="thigh_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/thigh_left.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/thigh_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -435,7 +434,7 @@
 			<collision name="leg_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/leg_right.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/leg_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -443,7 +442,7 @@
 			<visual name="leg_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/leg_right.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/leg_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -467,7 +466,7 @@
 			<collision name="leg_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/leg_left.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/leg_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -475,7 +474,7 @@
 			<visual name="leg_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/leg_left.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/leg_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -499,7 +498,7 @@
 			<collision name="wheel_back_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/wheel_back.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/wheel_back.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -507,7 +506,7 @@
 			<visual name="wheel_back_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/wheel_back.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/wheel_back.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -531,7 +530,7 @@
 			<collision name="elbow_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/elbow_left.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/elbow_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -539,7 +538,7 @@
 			<visual name="elbow_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/elbow_left.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/elbow_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -563,7 +562,7 @@
 			<collision name="elbow_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/elbow_right.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/elbow_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -571,7 +570,7 @@
 			<visual name="elbow_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/elbow_right.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/elbow_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -595,7 +594,7 @@
 			<collision name="left_shoulder_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/left_shoulder_link1.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/left_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -603,7 +602,7 @@
 			<visual name="left_shoulder_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/left_shoulder_link1.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/left_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -627,7 +626,7 @@
 			<collision name="left_shoulder_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/left_shoulder_link2.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/left_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -635,7 +634,7 @@
 			<visual name="left_shoulder_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/left_shoulder_link2.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/left_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -659,7 +658,7 @@
 			<collision name="wrist_left_1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/wrist_left_1.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/wrist_left_1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -667,7 +666,7 @@
 			<visual name="wrist_left_1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/wrist_left_1.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/wrist_left_1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -691,7 +690,7 @@
 			<collision name="left_hand_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/left_hand.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/left_hand.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -699,7 +698,7 @@
 			<visual name="left_hand_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/left_hand.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/left_hand.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -723,7 +722,7 @@
 			<collision name="wrist_right_1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/wrist_right_1.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/wrist_right_1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -731,7 +730,7 @@
 			<visual name="wrist_right_1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/wrist_right_1.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/wrist_right_1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -755,7 +754,7 @@
 			<collision name="right_hand_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/right_hand.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/right_hand.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -763,7 +762,7 @@
 			<visual name="right_hand_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/right_hand.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/right_hand.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -787,7 +786,7 @@
 			<collision name="upper_arm_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/upper_arm_left.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/upper_arm_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -795,7 +794,7 @@
 			<visual name="upper_arm_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/upper_arm_left.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/upper_arm_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -819,7 +818,7 @@
 			<collision name="lower_arm_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/lower_arm_left.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/lower_arm_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -827,7 +826,7 @@
 			<visual name="lower_arm_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/lower_arm_left.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/lower_arm_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -851,7 +850,7 @@
 			<collision name="lower_arm_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/lower_arm_right.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/lower_arm_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -859,7 +858,7 @@
 			<visual name="lower_arm_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/lower_arm_right.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/lower_arm_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -883,7 +882,7 @@
 			<collision name="right_shoulder_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/right_shoulder_link1.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/right_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -891,7 +890,7 @@
 			<visual name="right_shoulder_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/right_shoulder_link1.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/right_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -915,7 +914,7 @@
 			<collision name="right_shoulder_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/right_shoulder_link2.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/right_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -923,7 +922,7 @@
 			<visual name="right_shoulder_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/right_shoulder_link2.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/right_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -947,7 +946,7 @@
 			<collision name="zed_camera_left_lense_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/zed_camera_left_lense.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/zed_camera_left_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -955,7 +954,7 @@
 			<visual name="zed_camera_left_lense_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/zed_camera_left_lense.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/zed_camera_left_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -979,7 +978,7 @@
 			<collision name="zed_camera_right_lense_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/zed_camera_right_lense.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/zed_camera_right_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -987,7 +986,7 @@
 			<visual name="zed_camera_right_lense_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/zed_camera_right_lense.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/zed_camera_right_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1011,7 +1010,7 @@
 			<collision name="zed_camera_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/zed_camera.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/zed_camera.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1019,7 +1018,7 @@
 			<visual name="zed_camera_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/zed_camera.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/zed_camera.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1043,7 +1042,7 @@
 			<collision name="sphere_head_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_head_link1.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/sphere_head_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1051,7 +1050,7 @@
 			<visual name="sphere_head_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/sphere_head_link1.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/sphere_head_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1075,7 +1074,7 @@
 			<collision name="shere_head_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/shere_head_link2.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/shere_head_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1083,7 +1082,7 @@
 			<visual name="shere_head_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/shere_head_link2.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/shere_head_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1107,7 +1106,7 @@
 			<collision name="head_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/head.stl</uri>
+						<uri>model://rikshaw/meshes/collisions/head.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1115,7 +1114,7 @@
 			<visual name="head_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/CAD/head.stl</uri>
+						<uri>model://rikshaw/meshes/visuals/head.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1539,6 +1538,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin" />
 	</model>
 </sdf>
