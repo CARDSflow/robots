@@ -56,9 +56,9 @@ right_wrist_0:
 right_wrist_1:
   joint: right_wrist_1
   type: cardsflow/kindyn/TorquePositionController
-left_stick_tip_joint:
-  joint: left_stick_tip_joint
+left_hand:
+  joint: left_hand
   type: cardsflow/kindyn/TorquePositionController
-right_stick_tip_joint:
-  joint: right_stick_tip_joint
+right_hand:
+  joint: right_hand
   type: cardsflow/kindyn/TorquePositionController
