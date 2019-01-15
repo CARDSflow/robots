@@ -1,0 +1,129 @@
+<sdf version="1.6">
+	<model name="musc-le">
+		<link name="base">
+			<kinematic>true</kinematic>
+			<self_collide>false</self_collide>
+			<pose frame="">0.23957826975460578 0.301639778486056 -0.0040404461598430655 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>4.577961139992451</mass>
+				<inertia>
+					<ixx>0.6964976208435603</ixx>
+					<ixy>-0.33124472607979777</ixy>
+					<ixz>0.005206946488376753</ixz>
+					<iyy>0.32525727740341887</iyy>
+					<iyz>0.004041223050726708</iyz>
+					<izz>1.0200578186053704</izz>
+				</inertia>
+			</inertial>
+			<collision name="base_collision">
+				<geometry>
+					<mesh>
+						<uri>model://musc-le/meshes/collisions/base.dae</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="base_visual">
+				<geometry>
+					<mesh>
+						<uri>model://musc-le/meshes/visuals/base.dae</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="lower_arm">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23903912786569176 0.3020852713062623 0.26729174484446844 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.15237441401359124</mass>
+				<inertia>
+					<ixx>0.02769915912543985</ixx>
+					<ixy>-0.011019455598374271</ixy>
+					<ixz>-0.01227580584944691</ixz>
+					<iyy>0.0224754634431965</iyy>
+					<iyz>-0.009719476457276234</iyz>
+					<izz>0.02268281041891002</izz>
+				</inertia>
+			</inertial>
+			<collision name="lower_arm_collision">
+				<geometry>
+					<mesh>
+						<uri>model://musc-le/meshes/collisions/lower_arm.dae</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="lower_arm_visual">
+				<geometry>
+					<mesh>
+						<uri>model://musc-le/meshes/visuals/lower_arm.dae</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="upper_arm">
+			<self_collide>false</self_collide>
+			<pose frame="">0.24047286580334848 0.2964623740503764 0.5988889249748395 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.07435348463135714</mass>
+				<inertia>
+					<ixx>0.03432570018950717</ixx>
+					<ixy>-0.005300748031122446</ixy>
+					<ixz>-0.013201431967299</ixz>
+					<iyy>0.032091647015757196</iyy>
+					<iyz>-0.010709511615421875</iyz>
+					<izz>0.010844994621171586</izz>
+				</inertia>
+			</inertial>
+			<collision name="upper_arm_collision">
+				<geometry>
+					<mesh>
+						<uri>model://musc-le/meshes/collisions/upper_arm.dae</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="upper_arm_visual">
+				<geometry>
+					<mesh>
+						<uri>model://musc-le/meshes/visuals/upper_arm.dae</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<joint name="upper_joint" type="revolute">
+			<parent>lower_arm</parent>
+			<child>upper_arm</child>
+			<pose frame="">-0.004822865803349181 -3.31893305476072e-05 -0.137753391072036 0 0 0</pose>
+			<axis>
+				<xyz>1.0000000000000002 -8.881784197001256e-16 -9.575673587391985e-16</xyz>
+				<limit>
+					<lower>-1.3962634015954636</lower>
+					<upper>1.3962634015954636</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="lower_joint" type="revolute">
+			<parent>base</parent>
+			<child>lower_arm</child>
+			<pose frame="">-0.016839127865691774 -8.52713062622712e-05 -0.2296310846758187 0 0 0</pose>
+			<axis>
+				<xyz>-1.0 2.3876466213831606e-16 7.771561172376107e-16</xyz>
+				<limit>
+					<lower>-1.0471975511965976</lower>
+					<upper>1.0471975511965976</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin">
+		</plugin>
+	</model>
+</sdf>
