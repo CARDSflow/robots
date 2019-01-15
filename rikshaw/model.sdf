@@ -1353,7 +1353,7 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_foot_right_tip" type="fixed">
+		<joint name="joint_foot_right_tip" type="revolute">
 			<parent>foot_right</parent>
 			<child>foot_right_tip</child>
 			<pose frame="">0.041098606656440495 0.00116727903697587 0.005458153035221918 0 0 0</pose>
@@ -1371,7 +1371,7 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_foot_left_tip" type="fixed">
+		<joint name="joint_foot_left_tip" type="revolute">
 			<parent>foot_left</parent>
 			<child>foot_left_tip</child>
 			<pose frame="">0.0410395941691937 -0.0011674822288275167 0.00588609110120135 0 0 0</pose>
@@ -1558,17 +1558,17 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="zed_camera_mount" type="fixed">
+		<joint name="zed_camera_mount" type="revolute">
 			<parent>head</parent>
 			<child>zed_camera</child>
 			<pose frame="">-0.0005121610898693519 -0.017441984839828128 0.008148669928216066 0 0 0</pose>
 		</joint>
-		<joint name="zed_camera_right" type="fixed">
+		<joint name="zed_camera_right" type="revolute">
 			<parent>zed_camera</parent>
 			<child>zed_camera_right_lense</child>
 			<pose frame="">0.01131521278761273 3.254634339810991e-10 0.0002210951558734564 0 0 0</pose>
 		</joint>
-		<joint name="zed_camera_left" type="fixed">
+		<joint name="zed_camera_left" type="revolute">
 			<parent>zed_camera</parent>
 			<child>zed_camera_left_lense</child>
 			<pose frame="">0.01131521279052965 1.9888224031454625e-05 0.00022109500656370074 0 0 0</pose>

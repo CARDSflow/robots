@@ -90,7 +90,7 @@
     <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
-  <joint name="joint_foot_right_tip" type="fixed">
+  <joint name="joint_foot_right_tip" type="revolute">
     <parent link="foot_right" />
     <child link="foot_right_tip" />
     <origin rpy="0 0 0" xyz="-0.06197 -0.024   -0.03679" />
@@ -104,7 +104,7 @@
     <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
-  <joint name="joint_foot_left_tip" type="fixed">
+  <joint name="joint_foot_left_tip" type="revolute">
     <parent link="foot_left" />
     <child link="foot_left_tip" />
     <origin rpy="0 0 0" xyz="-0.06158 -0.024   -0.03743" />
@@ -209,21 +209,21 @@
     <axis xyz="0.03535 0.65048 0.75869" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
-  <joint name="zed_camera_mount" type="fixed">
+  <joint name="zed_camera_mount" type="revolute">
     <parent link="head" />
     <child link="zed_camera" />
     <origin rpy="0 0 0" xyz="-0.10663 -0.0215   0.20551" />
     <axis xyz="0 0 0" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
-  <joint name="zed_camera_right" type="fixed">
+  <joint name="zed_camera_right" type="revolute">
     <parent link="zed_camera" />
     <child link="zed_camera_right_lense" />
     <origin rpy="0 0 0" xyz="0.00015  0.0815  -0.00799" />
     <axis xyz="0 0 0" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
-  <joint name="zed_camera_left" type="fixed">
+  <joint name="zed_camera_left" type="revolute">
     <parent link="zed_camera" />
     <child link="zed_camera_left_lense" />
     <origin rpy="0 0 0" xyz="0.00015 -0.03848 -0.00799" />
