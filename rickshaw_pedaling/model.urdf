@@ -1,0 +1,533 @@
+<?xml version="1.0" ?>
+<robot name="rickshaw_pedaling">
+  <joint name="rickshaw_pedaling__joint_bike_right" type="fixed">
+    <parent link="rickshaw_pedaling__bike"/>
+    <child link="rickshaw_pedaling__pedal_arm_right"/>
+    <origin rpy="0  0  0" xyz="4.51433  0.0723  -0.06395"/>
+    <axis xyz="0  0 -1"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="rickshaw_pedaling__joint_bike_left" type="fixed">
+    <parent link="rickshaw_pedaling__bike"/>
+    <child link="rickshaw_pedaling__pedal_arm_left"/>
+    <origin rpy="0  0  0" xyz="4.51433  0.0723   0.00605"/>
+    <axis xyz="0  0 -1"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="rickshaw_pedaling__joint_pedal_right" type="fixed">
+    <parent link="rickshaw_pedaling__pedal_arm_right"/>
+    <child link="rickshaw_pedaling__pedal_right"/>
+    <origin rpy="0  0  0" xyz="-0.16916  0.00249 -0.19061"/>
+    <axis xyz="0  0 -1"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="rickshaw_pedaling__joint_hip_right" type="revolute">
+    <parent link="rickshaw_pedaling__hip"/>
+    <child link="rickshaw_pedaling__thigh_right"/>
+    <origin rpy="0  0  0" xyz="4.59109  0.61586 -0.2063"/>
+    <axis xyz="0  0  1"/>
+    <limit effort="0.0" lower="0.0" upper="1.57079632679" velocity="0.0"/>
+  </joint>
+  <joint name="rickshaw_pedaling__joint_hip_left" type="revolute">
+    <parent link="rickshaw_pedaling__hip"/>
+    <child link="rickshaw_pedaling__thigh_left"/>
+    <origin rpy="0  0  0" xyz="4.59109  0.61586  0.1577"/>
+    <axis xyz="0  0  1"/>
+    <limit effort="0.0" lower="-1.3962634016" upper="0.174532925199" velocity="0.0"/>
+  </joint>
+  <joint name="rickshaw_pedaling__joint_knee_left" type="revolute">
+    <parent link="rickshaw_pedaling__thigh_left"/>
+    <child link="rickshaw_pedaling__leg_left"/>
+    <origin rpy="0  0  0" xyz="0.01653 -0.30873 -0.02405"/>
+    <axis xyz="0  0  1"/>
+    <limit effort="0.0" lower="-0.0872664625997" upper="1.74532925199" velocity="0.0"/>
+  </joint>
+  <joint name="rickshaw_pedaling__joint_knee_right" type="revolute">
+    <parent link="rickshaw_pedaling__thigh_right"/>
+    <child link="rickshaw_pedaling__leg_right"/>
+    <origin rpy="0  0  0" xyz="0.01603 -0.30874 -0.0077"/>
+    <axis xyz="0  0 -1"/>
+    <limit effort="0.0" lower="-0.174532925199" upper="1.91986217719" velocity="0.0"/>
+  </joint>
+  <joint name="rickshaw_pedaling__joint_foot_middle_left" type="revolute">
+    <parent link="rickshaw_pedaling__foot_left"/>
+    <child link="rickshaw_pedaling__pedal_left"/>
+    <origin rpy="0  0  0" xyz="4.50901 -0.07149  0.16264"/>
+    <axis xyz="0  0 -1"/>
+    <limit effort="0.0" lower="3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="rickshaw_pedaling__joint_foot_middle_right" type="fixed">
+    <parent link="rickshaw_pedaling__pedal_right"/>
+    <child link="rickshaw_pedaling__foot_right"/>
+    <origin rpy="0  0  0" xyz="0.19541 -0.15932  0.03253"/>
+    <axis xyz="0  0 -1"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="rickshaw_pedaling__joint_pedal_left" type="fixed">
+    <parent link="rickshaw_pedaling__pedal_arm_left"/>
+    <child link="rickshaw_pedaling__pedal_left"/>
+    <origin rpy="0  0  0" xyz="0.16916 -0.00236  0.19061"/>
+    <axis xyz="0  0  1"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <link name="rickshaw_pedaling__bike">
+    <inertial>
+      <mass value="9.123377965809716"/>
+      <origin rpy="0  0  0" xyz="4.18075  0.04331 -0.02977"/>
+      <inertia ixx="0.16346290903947244" ixy="-1.9666610132658198" ixz="0.011733774833334145" iyy="162.13648331159604" iyz="1.1393797176519487" izz="162.2744853218842"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__bike_collision">
+      <origin rpy="0  0  0" xyz="4.18075  0.04331 -0.02977"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/bike.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__bike_visual">
+      <origin rpy="0  0  0" xyz="4.18075  0.04331 -0.02977"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/bike.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__pedal_right">
+    <inertial>
+      <mass value="0.9460025886019702"/>
+      <origin rpy="0  0  0" xyz="6.00000000e-05  -4.00000000e-05   4.20000000e-02"/>
+      <inertia ixx="0.04863555928918733" ixy="-0.30727831713642906" ixz="0.015032160811235372" iyy="17.905207323223173" iyz="0.873779230981274" izz="17.8672405346937"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__pedal_right_collision">
+      <origin rpy="0  0  0" xyz="6.00000000e-05  -4.00000000e-05   4.20000000e-02"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__pedal_right_visual">
+      <origin rpy="0  0  0" xyz="6.00000000e-05  -4.00000000e-05   4.20000000e-02"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__pedal_arm_right">
+    <inertial>
+      <mass value="1.4041650832964476"/>
+      <origin rpy="0  0  0" xyz="-0.04733  0.0008  -0.06648"/>
+      <inertia ixx="0.03325535245252498" ixy="-0.4585157845313642" ixz="0.013425985047706415" iyy="28.05028103528971" iyz="0.8159189682621516" izz="28.03231279527508"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__pedal_arm_right_collision">
+      <origin rpy="0  0  0" xyz="-0.04733  0.0008  -0.06648"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_arm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__pedal_arm_right_visual">
+      <origin rpy="0  0  0" xyz="-0.04733  0.0008  -0.06648"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_arm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__pedal_left">
+    <inertial>
+      <mass value="0.9460025886019698"/>
+      <origin rpy="0  0  0" xyz="-6.00000000e-05  -4.00000000e-05  -4.20000000e-02"/>
+      <inertia ixx="0.0278558441797661" ixy="-0.3096637871999883" ixz="-0.010226577277141088" iyy="20.773708696134207" iyz="-0.6852593814236158" izz="20.75519161670759"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__pedal_left_collision">
+      <origin rpy="0  0  0" xyz="-6.00000000e-05  -4.00000000e-05  -4.20000000e-02"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__pedal_left_visual">
+      <origin rpy="0  0  0" xyz="-6.00000000e-05  -4.00000000e-05  -4.20000000e-02"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__pedal_arm_left">
+    <inertial>
+      <mass value="1.404165083296459"/>
+      <origin rpy="0  0  0" xyz="0.04733 -0.00055  0.06648"/>
+      <inertia ixx="0.016476989291978827" ixy="-0.45954809463259366" ixz="-0.0072800982291394084" iyy="29.234025392217436" iyz="-0.4667701365124741" izz="29.23228052236285"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__pedal_arm_left_collision">
+      <origin rpy="0  0  0" xyz="0.04733 -0.00055  0.06648"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_arm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__pedal_arm_left_visual">
+      <origin rpy="0  0  0" xyz="0.04733 -0.00055  0.06648"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_arm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__pedal_left">
+    <inertial>
+      <mass value="0.9460025886019698"/>
+      <origin rpy="0  0  0" xyz="4.68343  0.06989  0.15466"/>
+      <inertia ixx="0.0278558441797661" ixy="-0.3096637871999883" ixz="-0.010226577277141088" iyy="20.773708696134207" iyz="-0.6852593814236158" izz="20.75519161670759"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__pedal_left_collision">
+      <origin rpy="0  0  0" xyz="4.68343  0.06989  0.15466"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__pedal_left_visual">
+      <origin rpy="0  0  0" xyz="4.68343  0.06989  0.15466"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__foot_left">
+    <inertial>
+      <mass value="0.7293899554482403"/>
+      <origin rpy="0  0  0" xyz="4.57028 -0.06601  0.14407"/>
+      <inertia ixx="0.018840916670689014" ixy="0.22005620585376848" ixz="0.006938507162200534" iyy="15.250895399257722" iyz="-0.4802581027817163" izz="15.238925560192675"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__foot_left_collision">
+      <origin rpy="0  0  0" xyz="4.57028 -0.06601  0.14407"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__foot_left_visual">
+      <origin rpy="0  0  0" xyz="4.57028 -0.06601  0.14407"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__pedal_right">
+    <inertial>
+      <mass value="0.9460025886019702"/>
+      <origin rpy="0  0  0" xyz="4.34523  0.07475 -0.21256"/>
+      <inertia ixx="0.04863555928918733" ixy="-0.30727831713642906" ixz="0.015032160811235372" iyy="17.905207323223173" iyz="0.873779230981274" izz="17.8672405346937"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__pedal_right_collision">
+      <origin rpy="0  0  0" xyz="4.34523  0.07475 -0.21256"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__pedal_right_visual">
+      <origin rpy="0  0  0" xyz="4.34523  0.07475 -0.21256"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__foot_right">
+    <inertial>
+      <mass value="0.7354394369424329"/>
+      <origin rpy="0  0  0" xyz="0.06269  0.01648  0.01811"/>
+      <inertia ixx="0.0345176067882602" ixy="0.23031158573003174" ixz="-0.010205344090202403" iyy="15.615393592117789" iyz="0.6903593103695654" izz="15.588210067091229"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__foot_right_collision">
+      <origin rpy="0  0  0" xyz="0.06269  0.01648  0.01811"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__foot_right_visual">
+      <origin rpy="0  0  0" xyz="0.06269  0.01648  0.01811"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__thigh_right">
+    <inertial>
+      <mass value="5.563525722774945"/>
+      <origin rpy="0  0  0" xyz="0.0043  -0.11113 -0.0219"/>
+      <inertia ixx="1.7353117016667046" ixy="-12.905023097175643" ixz="0.643877813985801" iyy="117.79079764900422" iyz="5.834427569795924" izz="118.93740155505688"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__thigh_right_collision">
+      <origin rpy="0  0  0" xyz="0.0043  -0.11113 -0.0219"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__thigh_right_visual">
+      <origin rpy="0  0  0" xyz="0.0043  -0.11113 -0.0219"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__thigh_left">
+    <inertial>
+      <mass value="5.563590741377743"/>
+      <origin rpy="0  0  0" xyz="0.00478 -0.11112  0.01055"/>
+      <inertia ixx="1.60315615788149" ixy="-12.907004467920132" ixz="-0.4755294981797034" iyy="117.68401387221641" iyz="-4.301596236393887" izz="118.96293366128579"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__thigh_left_collision">
+      <origin rpy="0  0  0" xyz="0.00478 -0.11112  0.01055"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__thigh_left_visual">
+      <origin rpy="0  0  0" xyz="0.00478 -0.11112  0.01055"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__leg_right">
+    <inertial>
+      <mass value="5.741529181180869"/>
+      <origin rpy="0  0  0" xyz="-0.009   -0.15023 -0.01363"/>
+      <inertia ixx="0.47869715732792184" ixy="-4.1394760900216365" ixz="0.20846948679560964" iyy="121.70186926043235" iyz="6.010168497372602" izz="121.57602469061271"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__leg_right_collision">
+      <origin rpy="0  0  0" xyz="-0.009   -0.15023 -0.01363"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__leg_right_visual">
+      <origin rpy="0  0  0" xyz="-0.009   -0.15023 -0.01363"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__leg_left">
+    <inertial>
+      <mass value="5.742614979751813"/>
+      <origin rpy="0  0  0" xyz="-0.02205 -0.14885  0.03366"/>
+      <inertia ixx="0.34465066351401324" ixy="-4.1683221294805035" ixz="-0.15551095163200232" iyy="120.92577670625411" iyz="-4.406264356861259" izz="120.93940280828267"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__leg_left_collision">
+      <origin rpy="0  0  0" xyz="-0.02205 -0.14885  0.03366"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__leg_left_visual">
+      <origin rpy="0  0  0" xyz="-0.02205 -0.14885  0.03366"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__lower_hip">
+    <inertial>
+      <mass value="6.879917704865685"/>
+      <origin rpy="0  0  0" xyz="4.58836  0.74244 -0.02607"/>
+      <inertia ixx="4.026958343384613" ixy="-23.43708236134446" ixz="0.1318244733680989" iyy="145.07154295408276" iyz="0.8235596793770782" izz="148.6725627970641"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__lower_hip_collision">
+      <origin rpy="0  0  0" xyz="4.58836  0.74244 -0.02607"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/lower_hip.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__lower_hip_visual">
+      <origin rpy="0  0  0" xyz="4.58836  0.74244 -0.02607"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/lower_hip.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__hip">
+    <inertial>
+      <mass value="13.796356920916345"/>
+      <origin rpy="0  0  0" xyz="4.58813  0.74863 -0.03004"/>
+      <inertia ixx="8.07789701100973" ixy="-47.38781270121511" ixz="0.3103935607232576" iyy="290.76482385847" iyz="1.9024137342202108" izz="298.2357019675895"/>
+    </inertial>
+    <collision name="rickshaw_pedaling__hip_collision">
+      <origin rpy="0  0  0" xyz="4.58813  0.74863 -0.03004"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/hip.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="rickshaw_pedaling__hip_visual">
+      <origin rpy="0  0  0" xyz="4.58813  0.74863 -0.03004"/>
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/CAD/hip.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rickshaw_pedaling__hip">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_right">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__leg_right">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_left">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__leg_left">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__hip">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_right">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__leg_right">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_left">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__leg_left">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_right">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__hip">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_right">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__leg_right">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_left">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__leg_left">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__hip">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_right">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__leg_right">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_left">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__leg_left">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__hip">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__thigh_left">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__hip">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="rickshaw_pedaling__hip">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+</robot>
