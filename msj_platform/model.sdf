@@ -139,6 +139,9 @@
 					<upper>3.141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
+				<dynamics>
+					<friction>0.01</friction>
+				</dynamics>
 			</axis>
 		</joint>
 		<joint name="sphere_axis2" type="revolute">
@@ -152,6 +155,9 @@
 					<upper>3.141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
+				<dynamics>
+					<friction>0.01</friction>
+				</dynamics>
 			</axis>
 		</joint>
 		<joint name="sphere_axis1" type="revolute">
@@ -165,6 +171,9 @@
 					<upper>3.141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
+				<dynamics>
+					<friction>0.01</friction>
+				</dynamics>
 			</axis>
 		</joint>
 		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
