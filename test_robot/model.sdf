@@ -1,5 +1,5 @@
 <sdf version="1.6">
-	<model name="TestRobot">
+	<model name="test_robot">
 		<link name="base">
 			<self_collide>false</self_collide>
 			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>

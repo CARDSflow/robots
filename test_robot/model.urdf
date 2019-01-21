@@ -1,4 +1,4 @@
-<robot name="TestRobot">
+<robot name="test_robot">
   <joint name="joint0" type="prismatic">
     <parent link="base" />
     <child link="link0" />
