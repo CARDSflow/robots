@@ -1505,8 +1505,8 @@
 			<axis>
 				<xyz>4.713567773490396e-12 -0.9999999999999998 -4.747094653015647e-10</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-1.9</lower>
+					<upper>0.4</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -1518,8 +1518,8 @@
 			<axis>
 				<xyz>4.713397833840635e-12 -0.9999999999999999 -4.747100165437955e-10</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-1.9</lower>
+					<upper>0.4</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -1531,8 +1531,8 @@
 			<axis>
 				<xyz>-6.508844489870675e-12 -1.0000000000000238 -2.724203131930673e-10</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>0.0</lower>
+					<upper>2.6</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -1544,8 +1544,8 @@
 			<axis>
 				<xyz>-5.5782888889577e-12 1.0000000000000224 5.189987481747476e-10</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-2.6</lower>
+					<upper>0.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -1557,8 +1557,8 @@
 			<axis>
 				<xyz>9.645942725302535e-12 0.9999999999999991 1.1192843308369593e-10</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-0.6</lower>
+					<upper>0.6</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -1575,8 +1575,8 @@
 			<axis>
 				<xyz>-1.1247986451406825e-11 0.9999999999999987 7.1681206641122e-10</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-0.6</lower>
+					<upper>0.6</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
