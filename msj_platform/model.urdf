@@ -1,12 +1,12 @@
 <robot name="msj_platform">
-  <joint name="tlv_sensor_2" type="fixed">
+  <joint name="tlv_sensor_2" type="revolute">
     <parent link="base" />
     <child link="tlv_2" />
     <origin rpy="0  0  0" xyz="-0.0139   0.00098  0.08529" />
     <axis xyz="0  0  0" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
-  <joint name="tlv_sensor_1" type="fixed">
+  <joint name="tlv_sensor_1" type="revolute">
     <parent link="base" />
     <child link="tlv_1" />
     <origin rpy="0  0  0" xyz="0.01259  0.00116  0.08334" />
@@ -34,7 +34,7 @@
     <axis xyz="0 -1  0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
-  <joint name="tlv_sensor_0" type="fixed">
+  <joint name="tlv_sensor_0" type="revolute">
     <parent link="base" />
     <child link="tlv_0" />
     <origin rpy="0  0  0" xyz="-0.00566  0.01698  0.09455" />
