@@ -1,94 +1,255 @@
 Body: bike
-COM: bike -83.47147288551218 3.4372244266416345 3.699999999999589
+COM: bike 1.310899896367346e-05 -2.4426645572006578e-05 1.774980865576481e-05
 exporting stl of bike
+Body: upper_arm_right
+COM: upper_arm_right -22.287861737836614 -40.036298693958486 107.3812604810606
+exporting stl of upper_arm_right
+Body: torso
+COM: torso 0.0 0.0 0.0
+exporting stl of torso
 Body: front_part
-COM: front_part -60.46185937738633 4.475872331475461 42.323667552386986
+COM: front_part 71.63902600571726 -1.0388552466272516 21.643769421461258
 exporting stl of front_part
 Body: left_wheel
-COM: left_wheel -88.67148521253287 -31.56284088111488 25.250000000001
+COM: left_wheel 99.84258521253292 35.000040881115005 4.566700000000771
 exporting stl of left_wheel
 Body: right_wheel
-COM: right_wheel -88.67148521253283 37.63722694171182 25.250000000004
+COM: right_wheel 99.84258521253288 -34.20002694171169 4.566700000003821
 exporting stl of right_wheel
 Body: pedal_right
-COM: pedal_right 37.34595046414078 18.236129042854465 20.999067049847113
+COM: pedal_right -7.7866512064398945 -14.798929042854507 17.187503593715864
 exporting stl of pedal_right
 Body: kurbel
-COM: kurbel 20.524776280826625 3.4503718012087354 21.029021552905796
+COM: kurbel -9.222872619138844 -0.013171801208808008 0.4277283496540975
 exporting stl of kurbel
 Body: pedal_left
-COM: pedal_left 3.491749565445945 -11.487270957145626 20.998199734654882
+COM: pedal_left -10.738103245690382 14.924470957145564 -16.537796258198203
 exporting stl of pedal_left
 Body: foot_left
-COM: foot_left 34.39856318647333 -15.376978943812823 1.0408648021767068
+COM: foot_left -17.583358320217474 18.852199978740124 -20.648446058656983
 exporting stl of foot_left
+Body: foot_left_tip
+COM: foot_left_tip -13.523838377491149 18.735459670162264 -21.215746469145746
+exporting stl of foot_left_tip
 Body: foot_right
-COM: foot_right 28.40017717398811 19.36206679313199 36.39139556638853
+COM: foot_right -17.755692904068933 -15.962800036486463 -20.48798081230718
 exporting stl of foot_right
+Body: foot_right_tip
+COM: foot_right_tip -13.74757584185959 -15.796062268710264 -21.111014880223617
+exporting stl of foot_right_tip
 Body: thigh_right
-COM: thigh_right 22.75236707806924 21.820805445080914 67.23291981804321
+COM: thigh_right -22.880974325469918 -18.38358021906325 37.78972700415497
 exporting stl of thigh_right
 Body: thigh_left
-COM: thigh_left 35.041778326968924 -17.825568615145094 58.55480149848602
+COM: thigh_left -22.92807025616207 21.26278059044757 37.790682144510335
 exporting stl of thigh_left
 Body: leg_right
-COM: leg_right 14.51871351535445 21.763792946062846 52.39950020210067
+COM: leg_right -23.291239341706326 -18.32655152522098 2.9972767090955945
 exporting stl of leg_right
 Body: leg_left
-COM: leg_left 36.90581813932719 -17.73193057764178 23.9495076992137
+COM: leg_left -23.204406711003873 21.169140263300495 3.008521594900539
 exporting stl of leg_left
 Body: wheel_back
-COM: wheel_back 64.86084286036903 3.792195562129225 25.62488702490249
+COM: wheel_back -53.68974286036897 -0.35499556212921934 4.94158702490248
 exporting stl of wheel_back
-Joint: EXPORT_joint_wheel_left
-	parent: front_part
-	child: left_wheel
-	pos: 1.4210854715202004e-13	4.6000346624801765	7.283063041541027e-13
-Joint: EXPORT_joint_wheel_right
-	parent: front_part
-	child: right_wheel
-	pos: 9.947598300641403e-14	-0.39996533751984487	5.471179065352771e-13
-Joint: EXPORT_joint_front
-	parent: bike
-	child: front_part
-	pos: -23.009613508125625	-1.0386479048341961	-20.52366773071724
-Joint: EXPORT_joint_wheel_back
-	parent: bike
-	child: wheel_back
-	pos: -1.4210854715202004e-14	-6.899965337519751	3.197442310920451e-14
-Joint: EXPORT_joint_pedal
-	parent: bike
-	child: kurbel
-	pos: -0.10297452301407972	-3.513164955581768	-0.018926338061806547
-Joint: EXPORT_joint_foot_left
-	parent: leg_left
-	child: foot_left
-	pos: 2.9733559555215834	1.5619789634900236	3.013424564904201
-Joint: EXPORT_joint_hip_right
-	parent: bike
-	child: thigh_right
-	pos: 10.86956892782699	-2.190805450408007	2.3531900660929637
+Body: elbow_left
+COM: elbow_left -23.066409509999588 54.01171716105586 96.74697426308526
+exporting stl of elbow_left
+Body: elbow_right
+COM: elbow_right -23.072494665910096 -51.36902854210897 96.49761410858565
+exporting stl of elbow_right
+Body: left_shoulder_link1
+COM: left_shoulder_link1 -21.902257250894014 30.66020530751006 116.33275713285137
+exporting stl of left_shoulder_link1
+Body: left_shoulder_link2
+COM: left_shoulder_link2 -21.902251991402213 30.660324302695734 116.33275703688477
+exporting stl of left_shoulder_link2
+Body: wrist_left_1
+COM: wrist_left_1 -24.088719522801217 75.62832464364361 77.45298640433302
+exporting stl of wrist_left_1
+Body: left_hand
+COM: left_hand -24.728297077519677 81.44879664655758 71.7797943440462
+exporting stl of left_hand
+Body: wrist_right_1
+COM: wrist_right_1 -24.10890221186818 -73.19772164849917 77.44475046092366
+exporting stl of wrist_right_1
+Body: right_hand
+COM: right_hand -24.630211259917093 -79.3844358067563 72.13589039660698
+exporting stl of right_hand
+Body: upper_arm_left
+COM: upper_arm_left -22.52960596449966 42.95889752306248 107.43437474386435
+exporting stl of upper_arm_left
+Body: lower_arm_left
+COM: lower_arm_left -23.5755404130434 65.03756188584698 86.73556347512142
+exporting stl of lower_arm_left
+Body: lower_arm_right
+COM: lower_arm_right -23.591830318609723 -62.54849907380644 86.42177202999109
+exporting stl of lower_arm_right
+Body: right_shoulder_link1
+COM: right_shoulder_link1 -21.899230781246104 -27.775808395347433 116.33276553145096
+exporting stl of right_shoulder_link1
+Body: right_shoulder_link2
+COM: right_shoulder_link2 -21.89923241146676 -27.77584163912652 116.33276553163917
+exporting stl of right_shoulder_link2
+Body: zed_camera_left_lense
+COM: zed_camera_left_lense -9.050894989898309 7.442372590074609 151.55224302330114
+exporting stl of zed_camera_left_lense
+Body: zed_camera_right_lense
+COM: zed_camera_right_lense -9.050894989872258 -4.557835229204655 151.55224302743827
+exporting stl of zed_camera_right_lense
+Body: zed_camera
+COM: zed_camera -10.218003663925549 1.8479663903051526 151.55933282605707
+exporting stl of zed_camera
+Body: sphere_head_link1
+COM: sphere_head_link1 -20.830602314000824 1.4422000441736564 131.823153913462
+exporting stl of sphere_head_link1
+Body: sphere_head_link2
+COM: sphere_head_link2 -20.83060231400081 1.4422000441736575 131.8231539134621
+exporting stl of sphere_head_link2
+Body: head
+COM: head -21.879121675166882 1.5071175760851965 147.38508471242002
+exporting stl of head
 Joint: EXPORT_joint_hip_left
 	parent: bike
 	child: thigh_left
-	pos: -1.4198423209033848	1.0555686108659792	11.03130836837068
+	pos: 0.47723425009650455	-1.0555805861684568	11.11212772234638
+Joint: EXPORT_joint_hip_right
+	parent: bike
+	child: thigh_right
+	pos: 0.430138319573679	2.190780224390359	11.113082879981171
 Joint: EXPORT_joint_knee_left
 	parent: thigh_left
 	child: leg_left
-	pos: 0.9873156188826187	3.366930587398425	15.015214712057915
-Joint: EXPORT_joint_foot_right
-	parent: leg_right
-	child: foot_right
-	pos: 1.8408031217928809	1.5879332209385204	3.8120301252709794
+	pos: -0.8998885657996851	-3.3669402731644666	15.020698063130737
 Joint: EXPORT_joint_knee_right
 	parent: thigh_right
 	child: leg_right
-	pos: -11.023851009004066	-1.3637929475233825	10.246188850661
+	pos: -0.7630654968175854	1.3637515151702289	15.030966187815181
+Joint: EXPORT_joint_foot_left
+	parent: leg_left
+	child: foot_left
+	pos: -6.2029311027124905	-2.3999999984560887	3.7647902653943213
+Joint: EXPORT_joint_foot_left_tip
+	parent: foot_left
+	child: foot_left_tip
+	pos: -4.103985138514272	0.11674030872309515	0.5886567336367854
+Joint: EXPORT_joint_foot_right
+	parent: leg_right
+	child: foot_right
+	pos: -6.298913863233675	-2.3499999970076253	3.6019000035033315
+Joint: EXPORT_joint_foot_right_tip
+	parent: foot_right
+	child: foot_right_tip
+	pos: -4.109892725086624	-0.11673776796484248	0.5458746616041097
 Joint: EXPORT_joint_pedal_right
 	parent: kurbel
 	child: pedal_right
-	pos: -0.006199487566426853	4.199999999999989	0.004779491486118559
+	pos: 0.004220983134540113	-4.200000000000063	-0.006592456775027955
 Joint: EXPORT_joint_pedal_left
 	parent: kurbel
 	child: pedal_left
-	pos: 0.006199487566573847	-4.199999999999953	0.004779491486139875
+	pos: 0.00530162502176168	4.199999999999934	0.0057593365154140486
+Joint: EXPORT_elbow_right_rot1
+	parent: elbow_right
+	child: lower_arm_right
+	pos: 0.45654935872103053	9.373552648455153	8.064039788483157
+Joint: EXPORT_left_shoulder_axis0
+	parent: torso
+	child: left_shoulder_link1
+	pos: 5.824608447113633e-06	3.4487377575942446e-07	-9.64847828299753e-08
+Joint: EXPORT_left_shoulder_axis1
+	parent: left_shoulder_link1
+	child: left_shoulder_link2
+	pos: 5.6511660062597e-07	-0.00011865031193991626	-5.183125040275627e-10
+Joint: EXPORT_left_shoulder_axis2
+	parent: left_shoulder_link2
+	child: upper_arm_left
+	pos: 0.6273546498267599	-12.298691864977656	8.898382292815342
+Joint: EXPORT_elbow_left_rot1
+	parent: elbow_left
+	child: lower_arm_left
+	pos: 0.4427718763257076	-9.092040741737371	7.847955111938205
+Joint: EXPORT_elbow_left_rot0
+	parent: upper_arm_left
+	child: elbow_left
+	pos: 0.6143913370833012	-1.903307709343487	3.504187379271258
+Joint: EXPORT_left_wrist_0
+	parent: lower_arm_left
+	child: wrist_left_1
+	pos: 0.04155964834064818	-0.5533609463290645	-0.8293621144653827
+Joint: EXPORT_left_wrist_1
+	parent: wrist_left_1
+	child: left_hand
+	pos: 2.378489150686079	-5.570281027054207	5.642767184566111
+Joint: EXPORT_elbow_right_rot0
+	parent: upper_arm_right
+	child: elbow_right
+	pos: 0.6179640697866802	2.031193814542405	3.655840761542393
+Joint: EXPORT_right_wrist_0
+	parent: lower_arm_right
+	child: wrist_right_1
+	pos: 0.020839823297386317	0.5920092789905453	-0.9526132469630539
+Joint: EXPORT_right_wrist_1
+	parent: wrist_right_1
+	child: right_hand
+	pos: -1.2307749605959586	6.191750084179191	5.1791704887339165
+Joint: EXPORT_right_shoulder_axis0
+	parent: torso
+	child: right_shoulder_link1
+	pos: -9.534940730304697e-07	-0.00015142075481833217	-1.6783019418653566e-11
+Joint: EXPORT_right_shoulder_axis2
+	parent: right_shoulder_link2
+	child: upper_arm_right
+	pos: 0.3886300030965373	12.260338877856181	8.951505050373711
+Joint: EXPORT_right_shoulder_axis1
+	parent: right_shoulder_link1
+	child: right_shoulder_link2
+	pos: 6.767266427232244e-07	-0.00011817697557958695	-2.0477841644606087e-10
+Joint: EXPORT_zed_camera_mount
+	parent: head
+	child: zed_camera
+	pos: 0.05121610921336206	1.7441984839815707	0.8148669928157801
+Joint: EXPORT_zed_camera_right
+	parent: zed_camera
+	child: zed_camera_right_lense
+	pos: -1.131521292843841	7.371603771844093e-09	0.022109518862095
+Joint: EXPORT_zed_camera_left
+	parent: zed_camera
+	child: zed_camera_left_lense
+	pos: -1.1315212931356005	-0.001988862324734164	0.022109503931460495
+Joint: EXPORT_head_axis0
+	parent: torso
+	child: sphere_head_link1
+	pos: -2.842170943040401e-14	8.881784197001252e-16	2.8421709430404007e-13
+Joint: EXPORT_head_axis2
+	parent: sphere_head_link2
+	child: head
+	pos: 1.048519361166008	-0.0649175319115396	-15.561930798957889
+Joint: EXPORT_head_axis1
+	parent: sphere_head_link1
+	child: sphere_head_link2
+	pos: -4.973799150320701e-14	-1.1102230246251565e-15	-2.842170943040401e-14
+Joint: EXPORT_joint_wheel_right
+	parent: front_part
+	child: right_wheel
+	pos: -1.8474111129762605e-13	0.39996533751967434	7.167599846980011e-13
+Joint: EXPORT_joint_wheel_back
+	parent: bike
+	child: wheel_back
+	pos: -2.1316282072803006e-14	6.899965337519753	8.881784197001252e-15
+Joint: EXPORT_joint_pedal
+	parent: bike
+	child: kurbel
+	pos: -0.027829138673677534	3.513164955581838	-0.10093313481013916
+Joint: EXPORT_spine_joint
+	parent: bike
+	child: torso
+	pos: -22.048396235129445	1.4422000145820897	69.49887848680888
+Joint: EXPORT_joint_wheel_left
+	parent: front_part
+	child: left_wheel
+	pos: -2.2737367544323206e-13	-4.600034662480333	9.459100169806334e-13
+Joint: EXPORT_joint_front
+	parent: bike
+	child: front_part
+	pos: 23.003546879794612	1.0388308199859624	-20.52706959979154

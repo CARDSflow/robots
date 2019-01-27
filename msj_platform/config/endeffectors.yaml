@@ -1,5 +1,5 @@
-joint_names: ['tlv_sensor_0','tlv_sensor_1','tlv_sensor_2','sphere_axis0', 'sphere_axis1', 'sphere_axis2']
+joint_names: ['sphere_axis0', 'sphere_axis1', 'sphere_axis2']
 endeffectors: ['top']
 top:
   base_link: 'base'
-  joints: ['tlv_sensor_0','tlv_sensor_1','tlv_sensor_2','sphere_axis0', 'sphere_axis1', 'sphere_axis2']
+  joints: ['sphere_axis0', 'sphere_axis1', 'sphere_axis2']
