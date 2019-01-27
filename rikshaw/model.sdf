@@ -1518,8 +1518,8 @@
 			<axis>
 				<xyz>4.713397833840635e-12 -0.9999999999999999 -4.747100165437955e-10</xyz>
 				<limit>
-					<lower>-1.9</lower>
-					<upper>0.4</upper>
+					<lower>-2.5</lower>
+					<upper>1.9</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
