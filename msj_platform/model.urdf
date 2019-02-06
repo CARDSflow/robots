@@ -1,0 +1,99 @@
+<robot name="msj_platform">
+  <joint name="sphere_axis0" type="revolute">
+    <parent link="base" />
+    <child link="sphere_link1" />
+    <origin rpy="0 0 0" xyz="0.0011  0.00228 0.10167" />
+    <axis xyz="0.71169  0.03063 -0.70182" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis2" type="revolute">
+    <parent link="sphere_link2" />
+    <child link="top" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0.41232 0.79063 0.45263" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis1" type="revolute">
+    <parent link="sphere_link1" />
+    <child link="sphere_link2" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0.56875 -0.61152  0.55005" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <link name="base">
+    <inertial>
+      <mass value="14.618542599867167" />
+      <origin rpy="0 0 0" xyz="-0.00023  0.00049  0.02941" />
+      <inertia ixx="0.18109929971673996" ixy="9.62446256814185e-05" ixz="-0.0004334068651092932" iyy="0.18098608453985307" iyz="0.00019089563437801963" izz="0.28812941418548793" />
+    </inertial>
+    <collision name="base_collision">
+      <origin rpy="0 0 0" xyz="-0.00023  0.00049  0.02941" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/collisions/base.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="base_visual">
+      <origin rpy="0 0 0" xyz="-0.00023  0.00049  0.02941" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/visuals/base.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="top">
+    <inertial>
+      <mass value="1.123833652181709" />
+      <origin rpy="0 0 0" xyz="0.04194 0.08083 0.04621" />
+      <inertia ixx="0.03330450791256844" ixy="-0.003970849390872654" ixz="-0.013766829057208538" iyy="0.02768783275402173" iyz="-0.007125622342949343" izz="0.010821066894400516" />
+    </inertial>
+    <collision name="top_collision">
+      <origin rpy="0 0 0" xyz="0.04194 0.08083 0.04621" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/collisions/top.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="top_visual">
+      <origin rpy="0 0 0" xyz="0.04194 0.08083 0.04621" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/visuals/top.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link1">
+    <inertial>
+      <mass value="0.06979038576289648" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.000733492083837882" ixy="-1.7652886803334287e-07" ixz="-1.623057065214737e-05" iyy="0.0007332123043055094" iyz="-7.847017477074868e-06" izz="1.2097749947233713e-05" />
+    </inertial>
+    <collision name="sphere_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/collisions/sphere_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="sphere_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/visuals/sphere_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link2">
+    <inertial>
+      <mass value="0.04678256159065538" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.0004891353761314252" ixy="-1.1833237471685949e-07" ixz="-1.0879831113778616e-05" iyy="0.000488947831484923" iyz="-5.2600887425605375e-06" izz="5.563398607573056e-06" />
+    </inertial>
+    <collision name="sphere_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/collisions/sphere_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="sphere_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/visuals/sphere_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+</robot>
