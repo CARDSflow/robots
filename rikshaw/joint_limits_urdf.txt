@@ -4,35 +4,35 @@
     <child link="thigh_left" />
     <origin rpy="0  0  0" xyz="-0.2245   0.20207  0.48902" />
     <axis xyz="0  1  0" />
-    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+    <limit effort="0.0" lower="-1.8" upper="0.4" velocity="0.0" />
   </joint>
   <joint name="joint_hip_right" type="revolute">
     <parent link="bike" />
     <child link="thigh_right" />
     <origin rpy="0  0  0" xyz="-0.2245  -0.16192  0.48902" />
     <axis xyz="0  1  0" />
-    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+    <limit effort="0.0" lower="-1.8" upper="0.4" velocity="0.0" />
   </joint>
   <joint name="joint_knee_left" type="revolute">
     <parent link="thigh_left" />
     <child link="leg_left" />
     <origin rpy="0  0  0" xyz="-0.01653 -0.02405 -0.30873" />
     <axis xyz="0  1  0" />
-    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+    <limit effort="0.0" lower="0.0" upper="2.0" velocity="0.0" />
   </joint>
   <joint name="joint_knee_right" type="revolute">
     <parent link="thigh_right" />
     <child link="leg_right" />
     <origin rpy="0  0  0" xyz="-0.01603 -0.0077  -0.30874" />
     <axis xyz="0 -1  0" />
-    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+    <limit effort="0.0" lower="-2.0" upper="0.0" velocity="0.0" />
   </joint>
   <joint name="joint_foot_left" type="revolute">
     <parent link="leg_left" />
     <child link="foot_left" />
     <origin rpy="0  0  0" xyz="0.00318 -0.0135  -0.34912" />
     <axis xyz="0 -1  0" />
-    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+    <limit effort="0.0" lower="-0.6" upper="0.6" velocity="0.0" />
   </joint>
   <joint name="joint_foot_left_tip" type="revolute">
     <parent link="foot_left" />
@@ -46,7 +46,7 @@
     <child link="foot_right" />
     <origin rpy="0  0  0" xyz="0      -0.0135  -0.34914" />
     <axis xyz="0 -1  0" />
-    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+    <limit effort="0.0" lower="-0.6" upper="0.6" velocity="0.0" />
   </joint>
   <joint name="joint_foot_right_tip" type="revolute">
     <parent link="foot_right" />
