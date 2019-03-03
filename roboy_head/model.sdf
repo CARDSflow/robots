@@ -1,0 +1,284 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+	<model name="roboy_head">
+		<link name="neck">
+			<self_collide>false</self_collide>
+			<pose frame="">-1.8149377975500998e-06 -0.009175044956787616 -0.003890412565380498 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>2.047509117555703</mass>
+				<inertia>
+					<ixx>0.00434167785897833</ixx>
+					<ixy>-1.6639096374405273e-05</ixy>
+					<ixz>-0.0008482805831220521</ixz>
+					<iyy>0.01882627831378666</iyy>
+					<iyz>-1.7498429824597373e-06</iyz>
+					<izz>0.021140040932643222</izz>
+				</inertia>
+			</inertial>
+			<collision name="neck_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/neck.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="neck_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/neck.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="zed_camera_left_lense">
+			<self_collide>false</self_collide>
+			<pose frame="">0.06022402900296085 -0.07066714719955533 0.2825752876362126 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.005755421856391892</mass>
+				<inertia>
+					<ixx>0.0004886937732036396</ixx>
+					<ixy>2.4494851152647972e-05</ixy>
+					<ixz>0.0001149701083259307</ixz>
+					<iyy>0.00048064466702342837</iyy>
+					<iyz>-9.794487796522248e-05</iyz>
+					<izz>5.000839287013939e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="zed_camera_left_lense_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/zed_camera_left_lense.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="zed_camera_left_lense_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/zed_camera_left_lense.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="zed_camera_right_lense">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.05977745584801602 -0.07104414423233864 0.28257528759865397 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.005755421855125981</mass>
+				<inertia>
+					<ixx>0.0004890012549198648</ixx>
+					<ixy>-2.4441773765426554e-05</ixy>
+					<ixz>0.0001155832336407073</ixz>
+					<iyy>0.00048033623713788647</iyy>
+					<iyz>9.721833695637285e-05</iyz>
+					<izz>5.0007445146504473e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="zed_camera_right_lense_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/zed_camera_right_lense.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="zed_camera_right_lense_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/zed_camera_right_lense.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="zed_camera">
+			<self_collide>false</self_collide>
+			<pose frame="">0.004244484790253857 -0.05946040237166452 0.2799952200124991 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.009633907989226698</mass>
+				<inertia>
+					<ixx>0.0007896309497775587</ixx>
+					<ixy>2.498761008939003e-06</ixy>
+					<ixz>0.00016034142273308372</ixz>
+					<iyy>0.0007704153373092785</iyy>
+					<iyz>-1.1468335922374323e-05</iyz>
+					<izz>4.897438830692025e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="zed_camera_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/zed_camera.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="zed_camera_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/zed_camera.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="sphere_head_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">-1.5061049265673543e-10 -1.5061528859084698e-10 0.06647893559374944 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.017038665636260348</mass>
+				<inertia>
+					<ixx>7.641228262717038e-05</ixx>
+					<ixy>1.1817803680091998e-21</ixy>
+					<ixz>1.706037958473794e-13</ixz>
+					<iyy>7.641228262717038e-05</iyy>
+					<iyz>1.7059836269345264e-13</iyz>
+					<izz>1.1107708503000404e-06</izz>
+				</inertia>
+			</inertial>
+			<collision name="sphere_head_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/sphere_head_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="sphere_head_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/sphere_head_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="sphere_head_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">-1.2765771008945853e-10 -1.276638120433269e-10 0.06647893559374916 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.011421521917888844</mass>
+				<inertia>
+					<ixx>5.097860160005361e-05</ixx>
+					<ixy>-6.369687763352339e-22</ixy>
+					<ixz>9.693393743931412e-14</ixz>
+					<iyy>5.097860160005362e-05</iyy>
+					<iyz>9.692929792137761e-14</iyz>
+					<izz>5.017693548664096e-07</izz>
+				</inertia>
+			</inertial>
+			<collision name="sphere_head_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/sphere_head_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="sphere_head_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/sphere_head_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="head">
+			<self_collide>false</self_collide>
+			<pose frame="">0.0005094230073535128 0.04351669594904156 0.2093508801848028 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>2.118815567061463</mass>
+				<inertia>
+					<ixx>0.13064497336933847</ixx>
+					<ixy>-6.183025580208296e-05</ixy>
+					<ixz>-0.02239682112141031</ixz>
+					<iyy>0.12017013288084884</iyy>
+					<iyz>-0.0003373395051523233</iyz>
+					<izz>0.030265010402481148</izz>
+				</inertia>
+			</inertial>
+			<collision name="head_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/head.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="head_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_head/meshes/CAD/head.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<joint name="zed_camera_right" type="fixed">
+			<parent>zed_camera</parent>
+			<child>zed_camera_right_lense</child>
+			<pose frame="">-3.477806617292245e-05 0.01107000621781176 -0.0023530140921073084 0 0 0</pose>
+		</joint>
+		<joint name="zed_camera_left" type="fixed">
+			<parent>zed_camera</parent>
+			<child>zed_camera_left_lense</child>
+			<pose frame="">-5.466550911890522e-05 0.011069943702269382 -0.0023530142604917615 0 0 0</pose>
+		</joint>
+		<joint name="sphere_head_axis0" type="revolute">
+			<parent>neck</parent>
+			<child>sphere_head_link1</child>
+			<pose frame="">1.506150534492037e-10 1.5061482676757368e-10 6.217248937900877e-17 0 0 0</pose>
+			<axis>
+				<xyz>0.12498691257369461 -0.9921583904222635 -5.390462363911124e-16</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="sphere_head_axis2" type="revolute">
+			<parent>sphere_head_link2</parent>
+			<child>head</child>
+			<pose frame="">-0.0005094230073489531 -0.04351669594904202 -0.14287194459105348 0 0 0</pose>
+			<axis>
+				<xyz>-2.4972812708040394e-14 -3.689250658347374e-15 1.0</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="sphere_head_axis1" type="revolute">
+			<parent>sphere_head_link1</parent>
+			<child>sphere_head_link2</child>
+			<pose frame="">1.27662266667877e-10 1.276634098292196e-10 3.375077994860476e-16 0 0 0</pose>
+			<axis>
+				<xyz>-0.9921583904222635 -0.12498691257369461 -2.5238093710223307e-14</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="zed_camera_mount" type="fixed">
+			<parent>head</parent>
+			<child>zed_camera</child>
+			<pose frame="">0.01743765468509102 0.0014055889584146009 0.00805223382778383 0 0 0</pose>
+		</joint>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+	</model>
+</sdf>
