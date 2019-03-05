@@ -1,24 +1,25 @@
+<?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="rikshaw">
 		<link name="bike">
 			<self_collide>false</self_collide>
-			<pose frame="">1.310899896367346e-07 -2.442664557200658e-07 1.774980865576481e-07 0.0 -0.0 0.0</pose>
+			<pose frame="">-1.3108998963673458e-07 2.442664557200658e-07 1.774980865576481e-07 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>21.81947805717533</mass>
+				<mass>21.819480362884757</mass>
 				<inertia>
-					<ixx>5.886482099704385</ixx>
-					<ixy>0.05246604407007407</ixy>
-					<ixz>-0.14605334861846847</ixz>
-					<iyy>9.145464405182723</iyy>
-					<iyz>2.3093169469685275</iyz>
-					<izz>3.8627096944427937</izz>
+					<ixx>5.88647979750313</ixx>
+					<ixy>0.052466044382052206</ixy>
+					<ixz>0.14605356512826828</ixz>
+					<iyy>9.145452768014158</iyy>
+					<iyz>-2.309312656009525</iyz>
+					<izz>3.8627003582898043</izz>
 				</inertia>
 			</inertial>
 			<collision name="bike_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/bike.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/bike.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -26,39 +27,7 @@
 			<visual name="bike_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/bike.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="upper_arm_right">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.22287861737836615 -0.4003629869395849 1.073812604810606 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>1.0945525999991552</mass>
-				<inertia>
-					<ixx>1.4421148034784848</ixx>
-					<ixy>-0.0977475801484251</ixy>
-					<ixz>0.4688762159986468</ixz>
-					<iyy>1.3199753951468367</iyy>
-					<iyz>0.26189149622628766</iyz>
-					<izz>0.2343257965627362</izz>
-				</inertia>
-			</inertial>
-			<collision name="upper_arm_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/upper_arm_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="upper_arm_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/upper_arm_right.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/bike.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -66,23 +35,23 @@
 		</link>
 		<link name="torso">
 			<self_collide>false</self_collide>
-			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<pose frame="">0.19975297099375458 -0.016449174600733456 1.1388704533693657 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>12.829194596051684</mass>
+				<mass>12.614903730434577</mass>
 				<inertia>
-					<ixx>17.25655500920537</ixx>
-					<ixy>0.04357283427721384</ixy>
-					<ixz>-0.2404715577566944</ixz>
-					<iyy>17.518149027040117</iyy>
-					<iyz>2.95154696517872</iyz>
-					<izz>0.8597492821307174</izz>
+					<ixx>16.812997775976786</ixx>
+					<ixy>0.04222722841013072</ixy>
+					<ixz>0.23631561826691505</ixz>
+					<iyy>17.061520901816106</iyy>
+					<iyz>-2.8698977891261777</iyz>
+					<izz>0.8430253182147159</izz>
 				</inertia>
 			</inertial>
 			<collision name="torso_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/torso.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/torso.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -90,807 +59,7 @@
 			<visual name="torso_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/torso.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="front_part">
-			<self_collide>false</self_collide>
-			<pose frame="">0.7163902600571725 -0.010388552466272516 0.2164376942146126 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>16.810672465638184</mass>
-				<inertia>
-					<ixx>3.2092296528945967</ixx>
-					<ixy>0.18113615628275678</ixy>
-					<ixz>0.006723073533121614</ixz>
-					<iyy>14.66296026711583</iyy>
-					<iyz>-1.241970673631743</iyz>
-					<izz>13.91291969418297</izz>
-				</inertia>
-			</inertial>
-			<collision name="front_part_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/front_part.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="front_part_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/front_part.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="left_wheel">
-			<self_collide>false</self_collide>
-			<pose frame="">0.9984258521253293 0.3500004088111501 0.04566700000000771 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>13.34016392909787</mass>
-				<inertia>
-					<ixx>2.171169531427472</ixx>
-					<ixy>-4.661713033463371</ixy>
-					<ixz>-0.21322209220250452</ixz>
-					<iyy>14.34232616188963</iyy>
-					<iyz>-0.608246286975269</iyz>
-					<izz>15.441547158388817</izz>
-				</inertia>
-			</inertial>
-			<collision name="left_wheel_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/left_wheel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="left_wheel_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/left_wheel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="right_wheel">
-			<self_collide>false</self_collide>
-			<pose frame="">0.9984258521253289 -0.3420002694171169 0.04566700000003821 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>13.34016392909787</mass>
-				<inertia>
-					<ixx>2.097317024732184</ixx>
-					<ixy>4.55515786054409</ixy>
-					<ixz>0.2083483651538148</ixz>
-					<iyy>14.342326161889634</iyy>
-					<iyz>-0.6082462869756708</iyz>
-					<izz>15.367694651693467</izz>
-				</inertia>
-			</inertial>
-			<collision name="right_wheel_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/right_wheel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="right_wheel_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/right_wheel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="pedal_right">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.07786651206439894 -0.14798929042854508 0.17187503593715864 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.9460025886020137</mass>
-				<inertia>
-					<ixx>0.049584952858416534</ixx>
-					<ixy>-0.01090117556517612</ixy>
-					<ixz>0.024062204564554542</ixz>
-					<iyy>0.03409659621084031</iyy>
-					<iyz>0.012633073677194193</iyz>
-					<izz>0.027060626295967245</izz>
-				</inertia>
-			</inertial>
-			<collision name="pedal_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/pedal_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="pedal_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/pedal_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="kurbel">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.09222872619138844 -0.0001317180120880801 0.004277283496540975 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>2.7832708381107603</mass>
-				<inertia>
-					<ixx>0.0332152555656024</ixx>
-					<ixy>0.001021810155673795</ixy>
-					<ixz>0.012937192477663303</ixz>
-					<iyy>0.041586881852696926</iyy>
-					<iyz>-0.0003014363494414667</iyz>
-					<izz>0.039731070916128416</izz>
-				</inertia>
-			</inertial>
-			<collision name="kurbel_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/kurbel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="kurbel_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/kurbel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="pedal_left">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.10738103245690382 0.14924470957145564 -0.16537796258198204 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.9460025886020093</mass>
-				<inertia>
-					<ixx>0.047865070945934965</ixx>
-					<ixy>0.01516068573344577</ixy>
-					<ixz>0.023349033442654262</ixz>
-					<iyy>0.037196017563941204</iyy>
-					<iyz>-0.016827373941817634</iyz>
-					<izz>0.03258593744910717</izz>
-				</inertia>
-			</inertial>
-			<collision name="pedal_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/pedal_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="pedal_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/pedal_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="foot_left">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.17583358320217474 0.18852199978740125 -0.20648446058656983 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.7294147785294234</mass>
-				<inertia>
-					<ixx>0.05407216953667249</ixx>
-					<ixy>0.03251612036702484</ixy>
-					<ixz>0.026761208182578378</ixz>
-					<iyy>0.06910783811131357</iyy>
-					<iyz>-0.03357311404413584</iyz>
-					<izz>0.06737097284992735</izz>
-				</inertia>
-			</inertial>
-			<collision name="foot_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/foot_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="foot_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/foot_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="foot_left_tip">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.13523838377491149 0.18735459670162263 -0.21215746469145746 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.27796086995260727</mass>
-				<inertia>
-					<ixx>0.022352432140757796</ixx>
-					<ixy>0.007051209655856457</ixy>
-					<ixz>0.01104791819788336</ixz>
-					<iyy>0.017709776432757476</iyy>
-					<iyz>-0.007965691482024362</iyz>
-					<izz>0.01503260538749266</izz>
-				</inertia>
-			</inertial>
-			<collision name="foot_left_tip_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/foot_left_tip.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="foot_left_tip_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/foot_left_tip.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="foot_right">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.17755692904068934 -0.15962800036486463 -0.2048798081230718 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.7293884039293155</mass>
-				<inertia>
-					<ixx>0.046628493153724276</ixx>
-					<ixy>-0.027737105196730626</ixy>
-					<ixz>-0.02258940931322784</ixz>
-					<iyy>0.06999759190491005</iyy>
-					<iyz>-0.033939836746644796</iyz>
-					<izz>0.06080277396500069</izz>
-				</inertia>
-			</inertial>
-			<collision name="foot_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/foot_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="foot_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/foot_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="foot_right_tip">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.1374757584185959 -0.15796062268710265 -0.2111101488022362 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.27795073699924977</mass>
-				<inertia>
-					<ixx>0.01940696459090878</ixx>
-					<ixy>-0.006044281399509699</ixy>
-					<ixz>-0.009268276323839846</ixz>
-					<iyy>0.017755497306462847</iyy>
-					<iyz>-0.008058438745184075</iyz>
-					<izz>0.012380586242452746</izz>
-				</inertia>
-			</inertial>
-			<collision name="foot_right_tip_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/foot_right_tip.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="foot_right_tip_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/foot_right_tip.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="thigh_right">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.2288097432546992 -0.18383580219063253 0.3778972700415497 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.563544538495218</mass>
-				<inertia>
-					<ixx>1.0107794337760492</ixx>
-					<ixy>-0.23394874645676036</ixy>
-					<ixz>0.3895573298264988</ixz>
-					<iyy>1.116934262404504</iyy>
-					<iyz>0.4818341397585977</iyz>
-					<izz>0.49142600627784244</izz>
-				</inertia>
-			</inertial>
-			<collision name="thigh_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/thigh_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="thigh_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/thigh_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="thigh_left">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.2292807025616207 0.2126278059044757 0.37790682144510335 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.563607010025899</mass>
-				<inertia>
-					<ixx>1.0743502428394167</ixx>
-					<ixy>0.27061255753829405</ixy>
-					<ixz>-0.4500948529131707</ixz>
-					<iyy>1.1181878375700518</iyy>
-					<iyz>0.4831083644344466</iyz>
-					<izz>0.5561313234967189</izz>
-				</inertia>
-			</inertial>
-			<collision name="thigh_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/thigh_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="thigh_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/thigh_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="leg_right">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.23291239341706327 -0.18326551525220983 0.029972767090955945 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.741539074839567</mass>
-				<inertia>
-					<ixx>0.23782026670704295</ixx>
-					<ixy>-0.2455186518053473</ixy>
-					<ixz>0.03496971541512629</ixz>
-					<iyy>0.35940035869454817</iyy>
-					<iyz>0.03759088986317208</iyz>
-					<izz>0.5167570394584527</izz>
-				</inertia>
-			</inertial>
-			<collision name="leg_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/leg_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="leg_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/leg_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="leg_left">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.23204406711003875 0.21169140263300495 0.03008521594900539 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.742633907090983</mass>
-				<inertia>
-					<ixx>0.3024377123250296</ixx>
-					<ixy>0.28200011187752894</ixy>
-					<ixz>-0.04001203273953342</ixz>
-					<iyy>0.3572039205308176</iyy>
-					<iyz>0.0381306989371113</iyz>
-					<izz>0.5789452561844931</izz>
-				</inertia>
-			</inertial>
-			<collision name="leg_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/leg_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="leg_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/leg_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="wheel_back">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.5368974286036897 -0.0035499556212921935 0.0494158702490248 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>13.340163929098493</mass>
-				<inertia>
-					<ixx>0.5419188938328757</ixx>
-					<ixy>-0.025425846119324413</ixy>
-					<ixz>0.0023401868697195947</ixz>
-					<iyy>4.894303401629517</iyy>
-					<iyz>0.35393127318782075</iyz>
-					<izz>4.354763468464214</izz>
-				</inertia>
-			</inertial>
-			<collision name="wheel_back_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/wheel_back.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="wheel_back_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/wheel_back.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="elbow_left">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.23066409509999589 0.5401171716105586 0.9674697426308526 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.15681540300967223</mass>
-				<inertia>
-					<ixx>0.19266629450625464</ixx>
-					<ixy>0.019541794174774592</ixy>
-					<ixz>-0.08195067996592703</ixz>
-					<iyy>0.1552331043974446</iyy>
-					<iyz>0.034994843981859466</iyz>
-					<izz>0.05422684654213822</izz>
-				</inertia>
-			</inertial>
-			<collision name="elbow_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/elbow_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="elbow_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/elbow_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="elbow_right">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.23072494665910095 -0.5136902854210897 0.9649761410858565 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.1735064537201356</mass>
-				<inertia>
-					<ixx>0.2075000206797995</ixx>
-					<ixy>-0.02056914602319384</ixy>
-					<ixz>0.08601030782639262</ixz>
-					<iyy>0.17091898467001698</iyy>
-					<iyz>0.03862988659000414</iyz>
-					<izz>0.055162486401777906</izz>
-				</inertia>
-			</inertial>
-			<collision name="elbow_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/elbow_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="elbow_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/elbow_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="left_shoulder_link1">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.21902257250894014 0.30660205307510063 1.1633275713285138 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.046753849896631366</mass>
-				<inertia>
-					<ixx>0.06767449740992429</ixx>
-					<ixy>0.00313965054739232</ixy>
-					<ixz>-0.01667609874350618</ixz>
-					<iyy>0.06552223385053244</iyy>
-					<iyz>0.0119126470601849</iyz>
-					<izz>0.006643884826415351</izz>
-				</inertia>
-			</inertial>
-			<collision name="left_shoulder_link1_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/left_shoulder_link1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="left_shoulder_link1_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/left_shoulder_link1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="left_shoulder_link2">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.21902251991402213 0.30660324302695735 1.1633275703688477 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.031337295884972576</mass>
-				<inertia>
-					<ixx>0.045358313011474534</ixx>
-					<ixy>0.0021043939017770154</ixy>
-					<ixz>-0.011177386877311443</ixz>
-					<iyy>0.04391571091145054</iyy>
-					<iyz>0.007984584297783932</iyz>
-					<izz>0.004451855074852757</izz>
-				</inertia>
-			</inertial>
-			<collision name="left_shoulder_link2_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/left_shoulder_link2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="left_shoulder_link2_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/left_shoulder_link2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="wrist_left_1">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.24088719522801216 0.7562832464364361 0.7745298640433302 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.01276210274228386</mass>
-				<inertia>
-					<ixx>0.014958953395600197</ixx>
-					<ixy>0.0023249649587372334</ixy>
-					<ixz>-0.0074769785070066775</ixz>
-					<iyy>0.008400668033256913</iyy>
-					<iyz>0.002381158490744941</iyz>
-					<izz>0.008043893530445803</izz>
-				</inertia>
-			</inertial>
-			<collision name="wrist_left_1_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/wrist_left_1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="wrist_left_1_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/wrist_left_1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="left_hand">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.2472829707751968 0.8144879664655759 0.717797943440462 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08391854013243093</mass>
-				<inertia>
-					<ixx>0.0990936807995511</ixx>
-					<ixy>0.016915179144618795</ixy>
-					<ixz>-0.04898119948040993</ixz>
-					<iyy>0.04850556851408662</iyy>
-					<iyz>0.014877442754935744</iyz>
-					<izz>0.06095909720368022</izz>
-				</inertia>
-			</inertial>
-			<collision name="left_hand_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/left_hand.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="left_hand_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/left_hand.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="wrist_right_1">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.2410890221186818 -0.7319772164849917 0.7744475046092366 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.012761742618737516</mass>
-				<inertia>
-					<ixx>0.014495265462586292</ixx>
-					<ixy>-0.002252044804095112</ixy>
-					<ixz>0.007235730703507522</ixz>
-					<iyy>0.008400166661985523</iyy>
-					<iyz>0.002382816635337103</iyz>
-					<izz>0.007583144518463848</izz>
-				</inertia>
-			</inertial>
-			<collision name="wrist_right_1_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/wrist_right_1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="wrist_right_1_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/wrist_right_1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="right_hand">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.24630211259917092 -0.793844358067563 0.7213589039660698 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08391560474704363</mass>
-				<inertia>
-					<ixx>0.09673260828008547</ixx>
-					<ixy>-0.01642785532035098</ixy>
-					<ixz>0.04797394115153065</ixz>
-					<iyy>0.0488781699072868</iyy>
-					<iyz>0.014904604866633244</iyz>
-					<izz>0.058149691796935264</izz>
-				</inertia>
-			</inertial>
-			<collision name="right_hand_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/right_hand.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="right_hand_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/right_hand.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="upper_arm_left">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.2252960596449966 0.42958897523062484 1.0743437474386435 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>1.1803819781445266</mass>
-				<inertia>
-					<ixx>1.585242002687883</ixx>
-					<ixy>0.11434969923035074</ixy>
-					<ixz>-0.5429322961403309</ixz>
-					<iyy>1.4261049013852967</iyy>
-					<iyz>0.28558236377926466</iyz>
-					<izz>0.2826519290728222</izz>
-				</inertia>
-			</inertial>
-			<collision name="upper_arm_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/upper_arm_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="upper_arm_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/upper_arm_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="lower_arm_left">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.235755404130434 0.6503756188584698 0.8673556347512142 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>1.4159186820905578</mass>
-				<inertia>
-					<ixx>1.6711043719939074</ixx>
-					<ixy>0.21726236763332382</ixy>
-					<ixz>-0.7959155751086089</ixz>
-					<iyy>1.1476118832810638</iyy>
-					<iyz>0.28939502409604073</iyz>
-					<izz>0.6821912770719468</izz>
-				</inertia>
-			</inertial>
-			<collision name="lower_arm_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/collisions/lower_arm_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="lower_arm_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://rikshaw/meshes/visuals/lower_arm_left.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/torso.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -898,23 +67,23 @@
 		</link>
 		<link name="lower_arm_right">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.23591830318609724 -0.6254849907380644 0.864217720299911 0.0 -0.0 0.0</pose>
+			<pose frame="">0.23509448992371618 0.6042047722297219 0.8791588002408599 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>1.3992272098428604</mass>
+				<mass>7.123096400248415</mass>
 				<inertia>
-					<ixx>1.5991623337794942</ixx>
-					<ixy>-0.20662618938024316</ixy>
-					<ixz>0.753684363768859</ixz>
-					<iyy>1.1265213782471069</iyy>
-					<iyz>0.2851505374909441</iyz>
-					<izz>0.6296965516830374</izz>
+					<ixx>8.14006207640396</ixx>
+					<ixy>-1.0123206909403308</ixy>
+					<ixz>-3.7698391037862247</ixz>
+					<iyy>5.917194232858959</iyy>
+					<iyz>-1.471802738653568</iyz>
+					<izz>3.0162278899995094</izz>
 				</inertia>
 			</inertial>
 			<collision name="lower_arm_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/lower_arm_right.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/lower_arm_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -922,7 +91,647 @@
 			<visual name="lower_arm_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/lower_arm_right.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/lower_arm_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="lower_arm_left">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23432273108915624 -0.6363202060151564 0.88302787869392 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>7.123102043007604</mass>
+				<inertia>
+					<ixx>8.472323633353955</ixx>
+					<ixy>1.0626016899805515</ixy>
+					<ixz>3.9885451540856223</ixz>
+					<iyy>5.963142620867367</iyy>
+					<iyz>-1.4734310474311096</iyz>
+					<izz>3.297380369176723</izz>
+				</inertia>
+			</inertial>
+			<collision name="lower_arm_left_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/lower_arm_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="lower_arm_left_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/lower_arm_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="upper_arm_right">
+			<self_collide>false</self_collide>
+			<pose frame="">0.22701751490867306 0.4193927281794973 1.0397534160952473 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>3.6086945436342543</mass>
+				<inertia>
+					<ixx>4.568638174910043</ixx>
+					<ixy>-0.34470816704005836</ixy>
+					<ixz>-1.5583066438014828</ixz>
+					<iyy>4.1031906241658875</iyy>
+					<iyz>-0.8507890735781412</iyz>
+					<izz>0.8408477286033784</izz>
+				</inertia>
+			</inertial>
+			<collision name="upper_arm_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/upper_arm_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="upper_arm_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/upper_arm_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="upper_arm_left">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2225944988102799 -0.3940151292114268 1.0904279151260547 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>1.831641207539118</mass>
+				<inertia>
+					<ixx>2.4729433965865635</ixx>
+					<ixy>0.16085674352863855</ixy>
+					<ixz>0.781882172510725</ixz>
+					<iyy>2.274093123947738</iyy>
+					<iyz>-0.4443693396698353</iyz>
+					<izz>0.3822623841877871</izz>
+				</inertia>
+			</inertial>
+			<collision name="upper_arm_left_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/upper_arm_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="upper_arm_left_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/upper_arm_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="front_part">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.716390260045379 0.010388552481776845 0.21643769422809594 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>16.81067246564987</mass>
+				<inertia>
+					<ixx>3.20922967583295</ixx>
+					<ixy>0.1811361599346656</ixy>
+					<ixz>-0.006723082654580219</ixz>
+					<iyy>14.662960288859963</iyy>
+					<iyz>1.2419706811357931</iyz>
+					<izz>13.912919701383359</izz>
+				</inertia>
+			</inertial>
+			<collision name="front_part_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/front_part.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="front_part_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/front_part.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="left_wheel">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.9984258521253281 -0.3500004088111488 0.04566700000000946 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>13.340163929097853</mass>
+				<inertia>
+					<ixx>2.1711695314274517</ixx>
+					<ixy>-4.661713033463329</ixy>
+					<ixz>0.21322209220250807</ixz>
+					<iyy>14.342326161889547</iyy>
+					<iyz>0.608246286975286</iyz>
+					<izz>15.441547158388715</izz>
+				</inertia>
+			</inertial>
+			<collision name="left_wheel_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/left_wheel.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="left_wheel_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/left_wheel.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="right_wheel">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.9984258521253281 0.34200026941711825 0.04566700000003973 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>13.340163929097852</mass>
+				<inertia>
+					<ixx>2.0973170247321944</ixx>
+					<ixy>4.555157860544093</ixy>
+					<ixz>-0.20834836515382574</ixz>
+					<iyy>14.34232616188958</iyy>
+					<iyz>0.608246286975689</iyz>
+					<izz>15.367694651693421</izz>
+				</inertia>
+			</inertial>
+			<collision name="right_wheel_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/right_wheel.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="right_wheel_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/right_wheel.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="pedal_right">
+			<self_collide>false</self_collide>
+			<pose frame="">0.077866512064399 0.14798929042854536 0.17187503593715686 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.946002588602011</mass>
+				<inertia>
+					<ixx>0.049584952858415854</ixx>
+					<ixy>-0.010901175565176115</ixy>
+					<ixz>-0.024062204564554247</ixz>
+					<iyy>0.03409659621083961</iyy>
+					<iyz>-0.012633073677194028</iyz>
+					<izz>0.02706062629596726</izz>
+				</inertia>
+			</inertial>
+			<collision name="pedal_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/pedal_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="pedal_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/pedal_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="kurbel">
+			<self_collide>false</self_collide>
+			<pose frame="">0.09222872619138603 0.00013171801209023543 0.0042772834965418725 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>2.7832708381108002</mass>
+				<inertia>
+					<ixx>0.03321525556564324</ixx>
+					<ixy>0.0010218101556732108</ixy>
+					<ixz>-0.012937192477662387</ixz>
+					<iyy>0.04158688185273832</iyy>
+					<iyz>0.00030143634944108515</iyz>
+					<izz>0.039731070916127355</izz>
+				</inertia>
+			</inertial>
+			<collision name="kurbel_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/kurbel.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="kurbel_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/kurbel.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="pedal_left">
+			<self_collide>false</self_collide>
+			<pose frame="">0.10738103245690385 -0.14924470957145594 -0.16537796258198015 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.9460025886020074</mass>
+				<inertia>
+					<ixx>0.0478650709459344</ixx>
+					<ixy>0.015160685733445756</ixy>
+					<ixz>-0.02334903344265402</ixz>
+					<iyy>0.037196017563940593</iyy>
+					<iyz>0.016827373941817436</iyz>
+					<izz>0.032585937449107163</izz>
+				</inertia>
+			</inertial>
+			<collision name="pedal_left_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/pedal_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="pedal_left_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/pedal_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="foot_left">
+			<self_collide>false</self_collide>
+			<pose frame="">0.1758335832021747 -0.18852199978740128 -0.20648446058656983 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.729398908095776</mass>
+				<inertia>
+					<ixx>0.054071148495108426</ixx>
+					<ixy>0.03251558359012369</ixy>
+					<ixz>-0.0267607053444042</ixz>
+					<iyy>0.06910655839384243</iyy>
+					<iyz>0.0335724905553697</iyz>
+					<izz>0.06736985121094373</izz>
+				</inertia>
+			</inertial>
+			<collision name="foot_left_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/foot_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="foot_left_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/foot_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="foot_left_tip">
+			<self_collide>false</self_collide>
+			<pose frame="">0.13523838377518937 -0.18735459670189283 -0.21215746469129887 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.2779608699489159</mass>
+				<inertia>
+					<ixx>0.022352432140469582</ixx>
+					<ixy>0.007051209655785971</ixy>
+					<ixz>-0.011047918197745182</ixz>
+					<iyy>0.017709776432523597</iyy>
+					<iyz>0.007965691481929648</iyz>
+					<izz>0.015032605387340966</izz>
+				</inertia>
+			</inertial>
+			<collision name="foot_left_tip_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/foot_left_tip.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="foot_left_tip_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/foot_left_tip.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="foot_right">
+			<self_collide>false</self_collide>
+			<pose frame="">0.17755692904068937 0.15962800036486463 -0.2048798081230718 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.7293896455411302</mass>
+				<inertia>
+					<ixx>0.04662856715772369</ixx>
+					<ixy>-0.027737155016923216</ixy>
+					<ixz>0.022589445195432944</ixz>
+					<iyy>0.06999772599908857</iyy>
+					<iyz>0.03393990029859617</iyz>
+					<izz>0.06080289056176407</izz>
+				</inertia>
+			</inertial>
+			<collision name="foot_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/foot_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="foot_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/foot_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="foot_right_tip">
+			<self_collide>false</self_collide>
+			<pose frame="">0.13747575841859594 0.1579606226871027 -0.21111014880223608 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.2779507369992495</mass>
+				<inertia>
+					<ixx>0.01940696459090884</ixx>
+					<ixy>-0.006044281399509727</ixy>
+					<ixz>0.00926827632383988</ixz>
+					<iyy>0.017755497306462906</iyy>
+					<iyz>0.008058438745184105</iyz>
+					<izz>0.012380586242452805</izz>
+				</inertia>
+			</inertial>
+			<collision name="foot_right_tip_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/foot_right_tip.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="foot_right_tip_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/foot_right_tip.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="thigh_right">
+			<self_collide>false</self_collide>
+			<pose frame="">0.22880969633365464 0.18383575209433126 0.37789734135697756 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>5.563526842051087</mass>
+				<inertia>
+					<ixx>1.010776410644986</ixx>
+					<ixy>-0.23394788163488325</ixy>
+					<ixz>-0.38955605197647547</ixz>
+					<iyy>1.116930895029097</iyy>
+					<iyz>-0.4818325951246939</iyz>
+					<izz>0.4914242463875166</izz>
+				</inertia>
+			</inertial>
+			<collision name="thigh_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thigh_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="thigh_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thigh_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="thigh_left">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2292806537639528 -0.2126277495925066 0.37790689387442783 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>5.56358906512719</mass>
+				<inertia>
+					<ixx>1.0743469445640734</ixx>
+					<ixy>0.2706115436993354</ixy>
+					<ixz>0.4500933625889936</ixz>
+					<iyy>1.1181844164691626</iyy>
+					<iyz>-0.4831067929963112</iyz>
+					<izz>0.5561292948599905</izz>
+				</inertia>
+			</inertial>
+			<collision name="thigh_left_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thigh_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="thigh_left_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thigh_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="leg_right">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23291230336919502 0.18326545464147428 0.02997274572871179 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>5.741522183296272</mass>
+				<inertia>
+					<ixx>0.23781953163587924</ixx>
+					<ixy>-0.24551774910333893</ixy>
+					<ixz>-0.03496958960490945</ixz>
+					<iyy>0.3593991546848349</iyy>
+					<iyz>-0.03759074399885916</iyz>
+					<izz>0.5167551685561281</izz>
+				</inertia>
+			</inertial>
+			<collision name="leg_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/leg_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="leg_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/leg_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="leg_left">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23204399961628525 -0.21169134870002534 0.03008518965509079 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>5.7426173662328</mass>
+				<inertia>
+					<ixx>0.3024368006754475</ixx>
+					<ixy>0.28199913616735084</ixy>
+					<ixz>0.040011871670719415</ixz>
+					<iyy>0.357202809628062</iyy>
+					<iyz>-0.03813052890420756</iyz>
+					<izz>0.5789432910018966</izz>
+				</inertia>
+			</inertial>
+			<collision name="leg_left_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/leg_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="leg_left_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/leg_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="wheel_back">
+			<self_collide>false</self_collide>
+			<pose frame="">0.53689742860369 0.0035499556212922633 0.049415870249024677 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>13.340163929098475</mass>
+				<inertia>
+					<ixx>0.5419188938328752</ixx>
+					<ixy>-0.02542584611932503</ixy>
+					<ixz>-0.0023401868697195947</ixz>
+					<iyy>4.894303401629515</iyy>
+					<iyz>-0.3539312731878215</iyz>
+					<izz>4.3547634684642125</izz>
+				</inertia>
+			</inertial>
+			<collision name="wheel_back_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wheel_back.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="wheel_back_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wheel_back.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="left_shoulder_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.21902263548985093 -0.30660196157336944 1.1633275683196005 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.046753530242572526</mass>
+				<inertia>
+					<ixx>0.06767403176162043</ixx>
+					<ixy>0.0031396290483470734</ixy>
+					<ixz>0.016675979709794873</ixz>
+					<iyy>0.06552178683987907</iyy>
+					<iyz>-0.011912569008629326</iyz>
+					<izz>0.006643838018602061</izz>
+				</inertia>
+			</inertial>
+			<collision name="left_shoulder_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/left_shoulder_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="left_shoulder_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/left_shoulder_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="left_shoulder_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.21902247986062384 -0.30660087035922695 1.1633275703369779 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.03133730384743737</mass>
+				<inertia>
+					<ixx>0.04535827893996492</ixx>
+					<ixy>0.0021043777578654633</ixy>
+					<ixz>0.011177303220150906</ixz>
+					<iyy>0.043915721516588194</iyy>
+					<iyz>-0.00798458486619213</iyz>
+					<izz>0.004451810061398645</izz>
+				</inertia>
+			</inertial>
+			<collision name="left_shoulder_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/left_shoulder_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="left_shoulder_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/left_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -930,23 +739,23 @@
 		</link>
 		<link name="right_shoulder_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.21899230781246104 -0.27775808395347434 1.1633276553145095 0.0 -0.0 0.0</pose>
+			<pose frame="">0.21899229309963897 0.2777611123103101 1.163327655279157 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.04674901102976101</mass>
+				<mass>0.046749002886596384</mass>
 				<inertia>
-					<ixx>0.06687953509128483</ixx>
-					<ixy>-0.0028435966522462296</ixy>
-					<ixz>0.015105711571040226</ixz>
-					<iyy>0.06551484259180702</iyy>
-					<iyz>0.011909769073168024</iyz>
-					<izz>0.005854610150255846</izz>
+					<ixx>0.0668796020851593</ixx>
+					<ixy>-0.0028436269903427762</ixy>
+					<ixz>-0.015105873634725039</ixz>
+					<iyy>0.06551483087487732</iyy>
+					<iyz>-0.011909766198106813</iyz>
+					<izz>0.005854687475636317</izz>
 				</inertia>
 			</inertial>
 			<collision name="right_shoulder_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/right_shoulder_link1.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/right_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -954,7 +763,7 @@
 			<visual name="right_shoulder_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/right_shoulder_link1.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/right_shoulder_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -962,23 +771,23 @@
 		</link>
 		<link name="right_shoulder_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.2189923241146676 -0.2777584163912652 1.1633276553163918 0.0 -0.0 0.0</pose>
+			<pose frame="">0.21899228406128005 0.2777607801421144 1.1633276552845175 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.03133729588511852</mass>
+				<mass>0.031337303847116804</mass>
 				<inertia>
-					<ixx>0.04483010367618182</ixx>
-					<ixy>-0.0019061524746546135</ixy>
-					<ixz>0.010125833877362215</ixz>
-					<iyy>0.04391530263166799</iyy>
-					<iyz>0.007983484076604644</iyz>
-					<izz>0.003923225072147937</izz>
+					<ixx>0.044830156212659796</ixx>
+					<ixy>-0.0019061688408127894</ixy>
+					<ixz>-0.01012592262164037</ixz>
+					<iyy>0.043915313236125075</iyy>
+					<iyz>-0.007983484644614952</iyz>
+					<izz>0.003923266667258534</izz>
 				</inertia>
 			</inertial>
 			<collision name="right_shoulder_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/right_shoulder_link2.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/right_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -986,7 +795,7 @@
 			<visual name="right_shoulder_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/right_shoulder_link2.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/right_shoulder_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -994,23 +803,23 @@
 		</link>
 		<link name="zed_camera_left_lense">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.09050894989898309 0.0744237259007461 1.5155224302330115 0.0 -0.0 0.0</pose>
+			<pose frame="">0.13329438333042115 -0.07464602956559022 1.539883707021646 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.005755421733357211</mass>
+				<mass>0.005755421853194863</mass>
 				<inertia>
-					<ixx>0.013251176636323792</ixx>
-					<ixy>3.876858906286288e-05</ixy>
-					<ixz>-0.0006491587708028636</ixz>
-					<iyy>0.013266636305534263</iyy>
-					<iyz>0.0007894656332276956</iyz>
-					<izz>7.942719232827483e-05</izz>
+					<ixx>0.013679771537511992</ixx>
+					<ixy>5.72652695406802e-05</ixy>
+					<ixz>0.000661564018696471</ixz>
+					<iyy>0.013750144489079944</iyy>
+					<iyz>-0.0011813078645769729</iyz>
+					<izz>0.00013472193497454725</izz>
 				</inertia>
 			</inertial>
 			<collision name="zed_camera_left_lense_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/zed_camera_left_lense.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/zed_camera_left_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1018,7 +827,7 @@
 			<visual name="zed_camera_left_lense_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/zed_camera_left_lense.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/zed_camera_left_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1026,23 +835,23 @@
 		</link>
 		<link name="zed_camera_right_lense">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.09050894989872259 -0.04557835229204655 1.5155224302743826 0.0 -0.0 0.0</pose>
+			<pose frame="">0.13291745824486242 0.04535545531597055 1.5398763420588792 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.005755421733357103</mass>
+				<mass>0.005755421851933069</mass>
 				<inertia>
-					<ixx>0.01323125421744619</ixx>
-					<ixy>-2.374254662672125e-05</ixy>
-					<ixz>0.00039755584390753414</ixz>
-					<iyy>0.01326663630625537</iyy>
-					<iyz>0.0007894656332470204</iyz>
-					<izz>5.9504772729015e-05</izz>
+					<ixx>0.013659411184738096</ixx>
+					<ixy>-3.469731790041828e-05</ixy>
+					<ixz>-0.0004019688608914974</ixz>
+					<iyy>0.013749436429721106</iyy>
+					<iyz>-0.0011779616636009426</iyz>
+					<izz>0.00011391462144360803</izz>
 				</inertia>
 			</inertial>
 			<collision name="zed_camera_right_lense_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/zed_camera_right_lense.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/zed_camera_right_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1050,7 +859,7 @@
 			<visual name="zed_camera_right_lense_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/zed_camera_right_lense.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/zed_camera_right_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1058,23 +867,23 @@
 		</link>
 		<link name="zed_camera">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.10218003663925548 0.018479663903051526 1.5155933282605707 0.0 -0.0 0.0</pose>
+			<pose frame="">0.14454939338934178 -0.018666485302497798 1.5375230657843455 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.009633908101969985</mass>
+				<mass>0.009633907998289159</mass>
 				<inertia>
-					<ixx>0.02214757863539191</ixx>
-					<ixy>1.807639468020231e-05</ixy>
-					<ixz>-0.00026981613792170637</ixz>
-					<iyy>0.02223019298553637</iyy>
-					<iyz>0.0014919337341406241</iyz>
-					<izz>0.0001186047881965815</izz>
+					<ixx>0.02279266649825298</ixx>
+					<ixy>2.5926764582703765e-05</ixy>
+					<ixz>0.0002765123595065518</ixz>
+					<iyy>0.022975931882617272</iyy>
+					<iyz>-0.002141162452732364</iyz>
+					<izz>0.0002193906709609386</izz>
 				</inertia>
 			</inertial>
 			<collision name="zed_camera_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/zed_camera.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/zed_camera.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1082,7 +891,7 @@
 			<visual name="zed_camera_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/zed_camera.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/zed_camera.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1090,23 +899,23 @@
 		</link>
 		<link name="sphere_head_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.20830602314000823 0.014422000441736565 1.31823153913462 0.0 -0.0 0.0</pose>
+			<pose frame="">0.20816935418403687 -0.014422005259418186 1.3252090019188894 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.02393810080236979</mass>
+				<mass>0.017036882921238887</mass>
 				<inertia>
-					<ixx>0.04160499755559101</ixx>
-					<ixy>7.19145924626448e-05</ixy>
-					<ixz>-0.00045510006133885777</ixz>
-					<iyy>0.0426387262617714</iyy>
-					<iyz>0.006573296422452212</iyz>
-					<izz>0.0010456442314470164</izz>
+					<ixx>0.02992446859406041</ixx>
+					<ixy>5.114846276745976e-05</ixy>
+					<ixz>0.0003256118230617288</ixz>
+					<iyy>0.03065920943623709</iyy>
+					<iyz>-0.004699929149605903</iyz>
+					<izz>0.0007429387600478297</izz>
 				</inertia>
 			</inertial>
 			<collision name="sphere_head_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/sphere_head_link1.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/sphere_head_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1114,7 +923,7 @@
 			<visual name="sphere_head_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/sphere_head_link1.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/sphere_head_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1122,23 +931,23 @@
 		</link>
 		<link name="sphere_head_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.2083060231400081 0.014422000441736575 1.318231539134621 0.0 -0.0 0.0</pose>
+			<pose frame="">0.20816941322790528 -0.014422002051363687 1.3252092622592184 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.016046417516495715</mass>
+				<mass>0.011421079052524808</mass>
 				<inertia>
-					<ixx>0.02788863341630688</ixx>
-					<ixy>4.8206479942218094e-05</ixy>
-					<ixz>-0.000305067041713818</ixz>
-					<iyy>0.028581572365603776</iyy>
-					<iyz>0.0044062751562945176</iyz>
-					<izz>0.0007004983586646253</izz>
+					<ixx>0.02006034319740515</ixx>
+					<ixy>3.428858870854763e-05</ixy>
+					<ixz>0.00021828161233831427</ixz>
+					<iyy>0.020552894461428918</iyy>
+					<iyz>-0.003150710630417199</iyz>
+					<izz>0.0004978040685432111</izz>
 				</inertia>
 			</inertial>
 			<collision name="sphere_head_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/sphere_head_link2.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/sphere_head_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1146,7 +955,7 @@
 			<visual name="sphere_head_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/sphere_head_link2.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/sphere_head_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1154,23 +963,23 @@
 		</link>
 		<link name="head">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.21879121675166882 0.015071175760851966 1.4738508471242002 0.0 -0.0 0.0</pose>
+			<pose frame="">0.24888632338957675 -0.014931423526476787 1.4688995290996656 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>2.0664370230195903</mass>
+				<mass>2.1188089198006224</mass>
 				<inertia>
-					<ixx>4.516784822650517</ixx>
-					<ixy>0.00682015432548133</ixy>
-					<ixz>-0.04602734647260561</ixz>
-					<iyy>4.620379896985018</iyy>
-					<iyz>0.6688122473703546</iyz>
-					<izz>0.12437460828210316</izz>
+					<ixx>4.599596619665259</ixx>
+					<ixy>0.007886665640350255</ixy>
+					<ixz>0.046583123099830905</ixz>
+					<iyy>4.736715526700406</iyy>
+					<iyz>-0.7776869184469576</iyz>
+					<izz>0.15785270124247056</izz>
 				</inertia>
 			</inertial>
 			<collision name="head_collision">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/collisions/head.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/head.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1178,368 +987,1170 @@
 			<visual name="head_visual">
 				<geometry>
 					<mesh>
-						<uri>model://rikshaw/meshes/visuals/head.stl</uri>
+						<uri>model://rikshaw/meshes/CAD/head.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<joint name="joint_hip_left" type="revolute">
-			<parent>bike</parent>
-			<child>thigh_left</child>
-			<pose frame="">0.004772342500965045 -0.010555805861684569 0.1111212772234638 0 0 0</pose>
-			<axis>
-				<xyz>-4.713373484460976e-12 0.9999999999999994 -4.747094644637576e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_hip_right" type="revolute">
-			<parent>bike</parent>
-			<child>thigh_right</child>
-			<pose frame="">0.00430138319573679 0.02190780224390359 0.11113082879981172 0 0 0</pose>
-			<axis>
-				<xyz>-4.713259055962439e-12 0.9999999999999997 -4.747100165437955e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_knee_left" type="revolute">
-			<parent>thigh_left</parent>
-			<child>leg_left</child>
-			<pose frame="">-0.008998885657996851 -0.03366940273164467 0.15020698063130739 0 0 0</pose>
-			<axis>
-				<xyz>6.509053341793854e-12 1.000000000000024 -2.72420312161297e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_knee_right" type="revolute">
-			<parent>thigh_right</parent>
-			<child>leg_right</child>
-			<pose frame="">-0.007630654968175854 0.013637515151702289 0.1503096618781518 0 0 0</pose>
-			<axis>
-				<xyz>5.578038031472943e-12 -1.0000000000000226 5.189987478333383e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_foot_left" type="revolute">
-			<parent>leg_left</parent>
-			<child>foot_left</child>
-			<pose frame="">-0.0620293110271249 -0.02399999998456089 0.037647902653943216 0 0 0</pose>
-			<axis>
-				<xyz>-9.646261322484993e-12 -0.999999999999999 1.1192843361396554e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_foot_left_tip" type="fixed">
-			<parent>foot_left</parent>
-			<child>foot_left_tip</child>
-			<pose frame="">-0.04103985138514272 0.0011674030872309516 0.005886567336367854 0 0 0</pose>
-		</joint>
-		<joint name="joint_foot_right" type="revolute">
-			<parent>leg_right</parent>
-			<child>foot_right</child>
-			<pose frame="">-0.06298913863233675 -0.023499999970076253 0.03601900003503332 0 0 0</pose>
-			<axis>
-				<xyz>1.1247724973628692e-11 -0.9999999999999986 7.168120661733697e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_foot_right_tip" type="fixed">
-			<parent>foot_right</parent>
-			<child>foot_right_tip</child>
-			<pose frame="">-0.04109892725086624 -0.0011673776796484248 0.005458746616041097 0 0 0</pose>
-		</joint>
-		<joint name="joint_pedal_right" type="revolute">
-			<parent>kurbel</parent>
-			<child>pedal_right</child>
-			<pose frame="">4.2209831345401125e-05 -0.042000000000000634 -6.592456775027956e-05 0 0 0</pose>
-			<axis>
-				<xyz>4.2643962886166735e-16 -1.0000000000000004 -1.5799660158833406e-15</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_pedal_left" type="revolute">
-			<parent>kurbel</parent>
-			<child>pedal_left</child>
-			<pose frame="">5.3016250217616804e-05 0.041999999999999336 5.759336515414049e-05 0 0 0</pose>
-			<axis>
-				<xyz>-4.264396288616295e-16 0.9999999999999998 1.5799660158833545e-15</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_right_rot1" type="revolute">
-			<parent>elbow_right</parent>
-			<child>lower_arm_right</child>
-			<pose frame="">0.004565493587210305 0.09373552648455152 0.08064039788483157 0 0 0</pose>
-			<axis>
-				<xyz>0.036880022280742775 0.7578073504191255 0.6514352489751488</xyz>
-				<limit>
-					<lower>-1.5707963267948966</lower>
-					<upper>1.5707963267948966</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="left_shoulder_axis0" type="revolute">
-			<parent>torso</parent>
-			<child>left_shoulder_link1</child>
-			<pose frame="">5.8246084471136326e-08 3.4487377575942446e-09 -9.64847828299753e-10 0 0 0</pose>
-			<axis>
-				<xyz>-0.05097567905860326 0.9986354432779869 -0.011345993720010035</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="left_shoulder_axis1" type="revolute">
-			<parent>left_shoulder_link1</parent>
-			<child>left_shoulder_link2</child>
-			<pose frame="">5.6511660062597005e-09 -1.1865031193991628e-06 -5.183125040275627e-12 0 0 0</pose>
-			<axis>
-				<xyz>-0.9986941911138322 -0.05101049432270813 -0.0028003757679576683</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="left_shoulder_axis2" type="revolute">
-			<parent>left_shoulder_link2</parent>
-			<child>upper_arm_left</child>
-			<pose frame="">0.0062735464982675996 -0.12298691864977655 0.08898382292815342 0 0 0</pose>
-			<axis>
-				<xyz>-0.03688002228788198 0.7578073498002895 -0.6514352496946403</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_left_rot1" type="revolute">
-			<parent>elbow_left</parent>
-			<child>lower_arm_left</child>
-			<pose frame="">0.004427718763257076 -0.09092040741737371 0.07847955111938205 0 0 0</pose>
-			<axis>
-				<xyz>-0.03688002228788115 0.7578073498002851 -0.6514352496946373</xyz>
-				<limit>
-					<lower>-1.5707963267948966</lower>
-					<upper>1.5707963267948966</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_left_rot0" type="revolute">
-			<parent>upper_arm_left</parent>
-			<child>elbow_left</child>
-			<pose frame="">0.006143913370833012 -0.01903307709343487 0.03504187379271258 0 0 0</pose>
-			<axis>
-				<xyz>0.03535217944531835 -0.6504813218360856 -0.7586990663964501</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>1.5707963267948966</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="left_wrist_0" type="revolute">
-			<parent>lower_arm_left</parent>
-			<child>wrist_left_1</child>
-			<pose frame="">0.0004155964834064818 -0.0055336094632906455 -0.008293621144653826 0 0 0</pose>
-			<axis>
-				<xyz>0.047216894784735314 -0.6683646979703974 -0.7423336145924063</xyz>
-				<limit>
-					<lower>-0.5235987755982988</lower>
-					<upper>0.5235987755982988</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="left_wrist_1" type="revolute">
-			<parent>wrist_left_1</parent>
-			<child>left_hand</child>
-			<pose frame="">0.02378489150686079 -0.05570281027054207 0.05642767184566111 0 0 0</pose>
-			<axis>
-				<xyz>-0.9982455359929415 -0.05815370141400403 -0.011135388723325142</xyz>
-				<limit>
-					<lower>-0.5235987755982988</lower>
-					<upper>0.5235987755982988</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_right_rot0" type="revolute">
-			<parent>upper_arm_right</parent>
-			<child>elbow_right</child>
-			<pose frame="">0.006179640697866802 0.020311938145424053 0.036558407615423935 0 0 0</pose>
-			<axis>
-				<xyz>-0.03535217943919214 -0.6504813211160859 0.7586990670140391</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>1.5707963267948966</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="right_wrist_0" type="revolute">
-			<parent>lower_arm_right</parent>
-			<child>wrist_right_1</child>
-			<pose frame="">0.00020839823297386318 0.005920092789905454 -0.009526132469630539 0 0 0</pose>
-			<axis>
-				<xyz>0.02346171305541958 0.6321241248586624 -0.7745118713048712</xyz>
-				<limit>
-					<lower>-0.5235987755982988</lower>
-					<upper>0.5235987755982988</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="right_wrist_1" type="revolute">
-			<parent>wrist_right_1</parent>
-			<child>right_hand</child>
-			<pose frame="">-0.012307749605959586 0.06191750084179191 0.05179170488733917 0 0 0</pose>
-			<axis>
-				<xyz>-0.999022304705215 0.04386113030445887 0.005534975148719516</xyz>
-				<limit>
-					<lower>-0.5235987755982988</lower>
-					<upper>0.5235987755982988</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="right_shoulder_axis0" type="revolute">
-			<parent>torso</parent>
-			<child>right_shoulder_link1</child>
-			<pose frame="">-9.534940730304698e-09 -1.5142075481833218e-06 -1.6783019418653567e-13 0 0 0</pose>
-			<axis>
-				<xyz>-0.998694191114313 0.05101049431064217 -0.002800375816389378</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="right_shoulder_axis2" type="revolute">
-			<parent>right_shoulder_link2</parent>
-			<child>upper_arm_right</child>
-			<pose frame="">0.0038863000309653727 0.12260338877856182 0.08951505050373712 0 0 0</pose>
-			<axis>
-				<xyz>-0.03688002228074311 -0.7578073504191246 -0.6514352489751519</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="right_shoulder_axis1" type="revolute">
-			<parent>right_shoulder_link1</parent>
-			<child>right_shoulder_link2</child>
-			<pose frame="">6.767266427232244e-09 -1.1817697557958695e-06 -2.0477841644606087e-12 0 0 0</pose>
-			<axis>
-				<xyz>-0.03535217943919361 -0.6504813211160873 0.7586990670140364</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="zed_camera_mount" type="fixed">
-			<parent>head</parent>
-			<child>zed_camera</child>
-			<pose frame="">0.0005121610921336206 0.017441984839815707 0.008148669928157801 0 0 0</pose>
-		</joint>
-		<joint name="zed_camera_right" type="fixed">
-			<parent>zed_camera</parent>
-			<child>zed_camera_right_lense</child>
-			<pose frame="">-0.01131521292843841 7.371603771844093e-11 0.00022109518862095 0 0 0</pose>
-		</joint>
-		<joint name="zed_camera_left" type="fixed">
-			<parent>zed_camera</parent>
-			<child>zed_camera_left_lense</child>
-			<pose frame="">-0.011315212931356004 -1.988862324734164e-05 0.00022109503931460494 0 0 0</pose>
-		</joint>
-		<joint name="head_axis0" type="revolute">
-			<parent>torso</parent>
-			<child>sphere_head_link1</child>
-			<pose frame="">-2.842170943040401e-16 8.881784197001253e-18 2.842170943040401e-15 0 0 0</pose>
-			<axis>
-				<xyz>0.999809155875435 -4.562156208365309e-12 -0.019535911231678183</xyz>
-				<limit>
-					<lower>-0.5235987755982988</lower>
-					<upper>0.5235987755982988</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="head_axis2" type="revolute">
-			<parent>sphere_head_link2</parent>
-			<child>head</child>
-			<pose frame="">0.01048519361166008 -0.000649175319115396 -0.15561930798957888 0 0 0</pose>
-			<axis>
-				<xyz>0.019535911231678155 4.747127404711171e-10 0.9998091558754341</xyz>
-				<limit>
-					<lower>-0.5235987755982988</lower>
-					<upper>0.5235987755982988</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="head_axis1" type="revolute">
-			<parent>sphere_head_link1</parent>
-			<child>sphere_head_link2</child>
-			<pose frame="">-4.973799150320702e-16 -1.1102230246251566e-17 -2.842170943040401e-16 0 0 0</pose>
-			<axis>
-				<xyz>4.7126746949288645e-12 -1.0000000000000007 4.747112713885635e-10</xyz>
-				<limit>
-					<lower>-0.5235987755982988</lower>
-					<upper>0.5235987755982988</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
+		<link name="little_right_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2703776223993091 0.8551792977612176 0.6609678941498701 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007230564904666386</mass>
+				<inertia>
+					<ixx>0.00844754881737185</ixx>
+					<ixy>-0.0016717256846055766</ixy>
+					<ixz>-0.004086825994589089</ixz>
+					<iyy>0.0036879821037301506</iyy>
+					<iyz>-0.001292278840354022</iyz>
+					<izz>0.005817180780529369</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_right_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_right_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="little_right_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.26585625284436415 0.8128811956220895 0.6970769583771008 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.010783208913438909</mass>
+				<inertia>
+					<ixx>0.012367043466895366</ixx>
+					<ixy>-0.00232988608190317</ixy>
+					<ixz>-0.006109371663701634</ixz>
+					<iyy>0.006003251624155561</iyy>
+					<iyz>-0.001998744106830586</iyz>
+					<izz>0.007889121819399299</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_right_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_right_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="little_right_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2668262159022453 0.8364616564640865 0.6767894442890324 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.008727399884658343</mass>
+				<inertia>
+					<ixx>0.010105036327609968</ixx>
+					<ixy>-0.001947516201001286</ixy>
+					<ixz>-0.004940183790417728</ixz>
+					<iyy>0.004619848536697083</iyy>
+					<iyz>-0.0015763175050061216</iyz>
+					<izz>0.006728786504275826</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_right_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_right_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="little_right_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2703776223993091 0.8551792977612176 0.6609678941498701 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007230564904666386</mass>
+				<inertia>
+					<ixx>0.00844754881737185</ixx>
+					<ixy>-0.0016717256846055766</ixy>
+					<ixz>-0.004086825994589089</ixz>
+					<iyy>0.0036879821037301506</iyy>
+					<iyz>-0.001292278840354022</iyz>
+					<izz>0.005817180780529369</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_right_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_right_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="ring_right_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23225971142689347 0.8190768449309755 0.6930010068941554 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.010783248840452798</mass>
+				<inertia>
+					<ixx>0.012414898178048861</ixx>
+					<ixy>-0.0020508301340881976</ixy>
+					<ixz>-0.006120027515095472</ixz>
+					<iyy>0.005761788122486669</iyy>
+					<iyz>-0.0017360773271864654</iyz>
+					<izz>0.007817779405669642</izz>
+				</inertia>
+			</inertial>
+			<collision name="ring_right_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="ring_right_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="ring_right_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23029991205691183 0.8426893460756414 0.6728225549659885 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.00872746416092259</mass>
+				<inertia>
+					<ixx>0.010149561482833908</ixx>
+					<ixy>-0.0016933565068352327</ixy>
+					<ixz>-0.004947874958369445</ixz>
+					<iyy>0.004414733369149532</iyy>
+					<iyz>-0.0013526392046900083</iyz>
+					<izz>0.006661665499802899</izz>
+				</inertia>
+			</inertial>
+			<collision name="ring_right_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="ring_right_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="little_right_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2703776223993091 0.8551792977612176 0.6609678941498701 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007230564904666386</mass>
+				<inertia>
+					<ixx>0.00844754881737185</ixx>
+					<ixy>-0.0016717256846055766</ixy>
+					<ixz>-0.004086825994589089</ixz>
+					<iyy>0.0036879821037301506</iyy>
+					<iyz>-0.001292278840354022</iyz>
+					<izz>0.005817180780529369</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_right_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_right_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="middle_right_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2048341551868794 0.8177839770780796 0.695782787665069 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.010783222786021226</mass>
+				<inertia>
+					<ixx>0.012433613043271768</ixx>
+					<ixy>-0.001805688612972297</ixy>
+					<ixz>-0.006134928948914575</ixz>
+					<iyy>0.005674221087862887</iyy>
+					<iyz>-0.0015373102779523043</iyz>
+					<izz>0.007665717661803175</izz>
+				</inertia>
+			</inertial>
+			<collision name="middle_right_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="middle_right_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="middle_right_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.20092912448970393 0.8413012508989332 0.6757766218706687 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.008727454453508098</mass>
+				<inertia>
+					<ixx>0.010163853752980198</ixx>
+					<ixy>-0.0014748911218410256</ixy>
+					<ixz>-0.004961440588380607</ixz>
+					<iyy>0.0043389962082691</iyy>
+					<iyz>-0.0011853664474558144</iyz>
+					<izz>0.0065307472361486206</izz>
+				</inertia>
+			</inertial>
+			<collision name="middle_right_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="middle_right_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="little_right_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2703776223993091 0.8551792977612176 0.6609678941498701 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007230564904666386</mass>
+				<inertia>
+					<ixx>0.00844754881737185</ixx>
+					<ixy>-0.0016717256846055766</ixy>
+					<ixz>-0.004086825994589089</ixz>
+					<iyy>0.0036879821037301506</iyy>
+					<iyz>-0.001292278840354022</iyz>
+					<izz>0.005817180780529369</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_right_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_right_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="index_right_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.17272012775816362 0.8135406747045084 0.7009172289613816 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.010783226463222334</mass>
+				<inertia>
+					<ixx>0.01243610136086843</ixx>
+					<ixy>-0.001514522125897847</ixy>
+					<ixz>-0.006148237114841062</ixz>
+					<iyy>0.005620922589857911</iyy>
+					<iyz>-0.001305979259153262</iyz>
+					<izz>0.007460419515803034</izz>
+				</inertia>
+			</inertial>
+			<collision name="index_right_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="index_right_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="index_right_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.16508378889178013 0.8366077017977238 0.6814709448736221 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.008727441849375963</mass>
+				<inertia>
+					<ixx>0.010162426172463936</ixx>
+					<ixy>-0.0012049130980499247</ixy>
+					<ixz>-0.00497539412198021</ixz>
+					<iyy>0.004292014324158273</iyy>
+					<iyz>-0.0009821728451054178</iyz>
+					<izz>0.006347559401626066</izz>
+				</inertia>
+			</inertial>
+			<collision name="index_right_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="index_right_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="little_right_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2703776223993091 0.8551792977612176 0.6609678941498701 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007230564904666386</mass>
+				<inertia>
+					<ixx>0.00844754881737185</ixx>
+					<ixy>-0.0016717256846055766</ixy>
+					<ixz>-0.004086825994589089</ixz>
+					<iyy>0.0036879821037301506</iyy>
+					<iyz>-0.001292278840354022</iyz>
+					<izz>0.005817180780529369</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_right_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_right_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="thumb_right_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.20241947586468978 0.7099355347918156 0.7274217573851316 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.010783131534927236</mass>
+				<inertia>
+					<ixx>0.011142002558176154</ixx>
+					<ixy>-0.001550241899037904</ixy>
+					<ixz>-0.005568115940637139</ixz>
+					<iyy>0.006149426938912064</iyy>
+					<iyz>-0.0015871353634802543</iyz>
+					<izz>0.00587849323091298</izz>
+				</inertia>
+			</inertial>
+			<collision name="thumb_right_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="thumb_right_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_right_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="thumb_right_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.21343805092525256 0.7318152578247713 0.7082264894633125 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.008726839160214994</mass>
+				<inertia>
+					<ixx>0.009051747565890505</ixx>
+					<ixy>-0.0013635009423986735</ixy>
+					<ixz>-0.004522768730971857</ixz>
+					<iyy>0.004776043937501841</iyy>
+					<iyz>-0.0013187908359639123</iyz>
+					<izz>0.005072526532214788</izz>
+				</inertia>
+			</inertial>
+			<collision name="thumb_right_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="thumb_right_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="wrist_right_sphere_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23848602580399242 0.6799879874322906 0.8140339643228778 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.06978284193305448</mass>
+				<inertia>
+					<ixx>0.07851978202168397</ixx>
+					<ixy>-0.011316518301009272</ixy>
+					<ixz>-0.03862712797196871</ixz>
+					<iyy>0.050222277812235316</iyy>
+					<iyz>-0.013547342612687654</iyz>
+					<izz>0.0362470313845326</izz>
+				</inertia>
+			</inertial>
+			<collision name="wrist_right_sphere_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wrist_right_sphere_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="wrist_right_sphere_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wrist_right_sphere_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="wrist_right_sphere_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2384860166047287 0.6799875983759012 0.8140339643290095 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.0467775497412831</mass>
+				<inertia>
+					<ixx>0.05263161457519681</ixx>
+					<ixy>-0.007585799881420901</ixy>
+					<ixz>-0.02589291745967604</ixz>
+					<iyy>0.03366296563526608</iyy>
+					<iyz>-0.009081193183496273</iyz>
+					<izz>0.024294910939130866</izz>
+				</inertia>
+			</inertial>
+			<collision name="wrist_right_sphere_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wrist_right_sphere_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="wrist_right_sphere_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wrist_right_sphere_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="palm_right">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2349635944464265 0.7248068355318789 0.7755235140776628 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.41273188866593385</mass>
+				<inertia>
+					<ixx>0.4659944484740799</ixx>
+					<ixy>-0.07017151633840833</ixy>
+					<ixz>-0.2315980652230987</ixz>
+					<iyy>0.27173072537241216</iyy>
+					<iyz>-0.07532376897936786</iyz>
+					<izz>0.2403980958320139</izz>
+				</inertia>
+			</inertial>
+			<collision name="palm_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/palm_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="palm_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/palm_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="little_left_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.1527022528822468 -0.8824425373256056 0.6745100154002251 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007230544692585402</mass>
+				<inertia>
+					<ixx>0.008920880258361583</ixx>
+					<ixy>0.0009743736267820488</ixy>
+					<ixz>0.004303486641826472</ixz>
+					<iyy>0.0034587316347614457</iyy>
+					<iyz>-0.0007447000804050939</iyz>
+					<izz>0.005799688502855049</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_left_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_left_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="little_left_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.17020676141301394 -0.8416420046085294 0.7083087992453713 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.010783173954625098</mass>
+				<inertia>
+					<ixx>0.013050537947837957</ixx>
+					<ixy>0.0015448938998691203</ixy>
+					<ixz>0.006427369765599661</ixz>
+					<iyy>0.005723599934643548</iyy>
+					<iyz>-0.001299861202817692</iyz>
+					<izz>0.007952348786091058</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_left_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_left_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="little_left_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.16191868291951 -0.8645929374420694 0.6889924199397375 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.008727381894054248</mass>
+				<inertia>
+					<ixx>0.010668270119737738</ixx>
+					<ixy>0.0012219684355427216</ixy>
+					<ixz>0.0051983250610510125</ixz>
+					<iyy>0.004372675337793752</iyy>
+					<iyz>-0.0009734704573553792</iyz>
+					<izz>0.0067537630870727235</izz>
+				</inertia>
+			</inertial>
+			<collision name="little_left_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="little_left_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/little_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="ring_left_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.1913598966491293 -0.8880035284468629 0.6679409872183222 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007230598064083806</mass>
+				<inertia>
+					<ixx>0.008928347943888085</ixx>
+					<ixy>0.0012287783920687059</ixy>
+					<ixz>0.0042884722257512725</ixz>
+					<iyy>0.0034911807104839997</iyy>
+					<iyz>-0.0009241193018912809</iyz>
+					<izz>0.005967098279851658</izz>
+				</inertia>
+			</inertial>
+			<collision name="ring_left_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="ring_left_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="ring_left_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.20228202777025925 -0.8460328999893737 0.7030496477195615 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.01078319636299043</mass>
+				<inertia>
+					<ixx>0.013050353856718076</ixx>
+					<ixy>0.0018457311875845475</ixy>
+					<ixz>0.006412979579479117</ixz>
+					<iyy>0.005772461258785232</iyy>
+					<iyz>-0.0015332437248958364</iyz>
+					<izz>0.008161133515715705</izz>
+				</inertia>
+			</inertial>
+			<collision name="ring_left_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="ring_left_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="ring_left_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.1977091246517408 -0.8694958098327338 0.6831211857189616 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.008727381460149852</mass>
+				<inertia>
+					<ixx>0.0106720870988414</ixx>
+					<ixy>0.001500573385804876</ixy>
+					<ixz>0.005183289283126989</ixz>
+					<iyy>0.00441474733162996</iyy>
+					<iyz>-0.0011784768980072368</iyz>
+					<izz>0.006940322536460743</izz>
+				</inertia>
+			</inertial>
+			<collision name="ring_left_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="ring_left_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/ring_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="middle_left_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2228839511342991 -0.8897754687089438 0.6645574347612028 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007230534463346676</mass>
+				<inertia>
+					<ixx>0.008918428027545364</ixx>
+					<ixy>0.001434054012472262</ixy>
+					<ixz>0.004275232975691135</ixz>
+					<iyy>0.003552984068267793</iyy>
+					<iyz>-0.0010708879374729916</iyz>
+					<izz>0.006084250285497725</izz>
+				</inertia>
+			</inertial>
+			<collision name="middle_left_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="middle_left_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="middle_left_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.22996515461799877 -0.8474152059522435 0.7001791161204252 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.010783098914055156</mass>
+				<inertia>
+					<ixx>0.013031975769836177</ixx>
+					<ixy>0.002101771045467862</ixy>
+					<ixz>0.006397203441008441</ixz>
+					<iyy>0.005858047706991271</iyy>
+					<iyz>-0.0017359086798026798</iyz>
+					<izz>0.008315355985877862</izz>
+				</inertia>
+			</inertial>
+			<collision name="middle_left_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="middle_left_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="middle_left_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.22754934374608804 -0.8710137185041562 0.6800339221592827 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.008727362475596008</mass>
+				<inertia>
+					<ixx>0.010658338230062873</ixx>
+					<ixy>0.0017300647056782534</ixy>
+					<ixz>0.005168885794635884</ixz>
+					<iyy>0.004488791514126454</iyy>
+					<iyz>-0.001350209361788327</iyz>
+					<izz>0.007074133817852468</izz>
+				</inertia>
+			</inertial>
+			<collision name="middle_left_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="middle_left_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/middle_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="index_left_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2610470175686598 -0.8837182251165928 0.6679724360252719 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007230503768900909</mass>
+				<inertia>
+					<ixx>0.008873590522653452</ixx>
+					<ixy>0.0016681634092363116</ixy>
+					<ixz>0.004267944140816444</ixz>
+					<iyy>0.0037194258983734075</iyy>
+					<iyz>-0.0012606859497716982</iyz>
+					<izz>0.0061400962586935165</izz>
+				</inertia>
+			</inertial>
+			<collision name="index_left_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="index_left_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="index_left_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.26328063424698317 -0.8411599444575804 0.7039898022328486 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.01078315363645507</mass>
+				<inertia>
+					<ixx>0.0129757401236309</ixx>
+					<ixy>0.002388541236316474</ixy>
+					<ixz>0.0063846227873153825</ixz>
+					<iyy>0.0060930376728418065</iyy>
+					<iyz>-0.001998193742237074</iyz>
+					<izz>0.00837873716964178</izz>
+				</inertia>
+			</inertial>
+			<collision name="index_left_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="index_left_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="index_left_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2635765816290412 -0.8647663480999566 0.6837114504594517 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.008727346342048834</mass>
+				<inertia>
+					<ixx>0.010607370368679802</ixx>
+					<ixy>0.0019895981922273785</ixy>
+					<ixz>0.005159591614657695</ixz>
+					<iyy>0.004687020948416652</iyy>
+					<iyz>-0.001572445371030485</iyz>
+					<izz>0.007133932177059939</izz>
+				</inertia>
+			</inertial>
+			<collision name="index_left_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="index_left_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/index_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="thumb_left_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.22654793338357976 -0.775539322371942 0.7011389473389591 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.00723049056417055</mass>
+				<inertia>
+					<ixx>0.007904131551100644</ixx>
+					<ixy>0.0012703680949582834</ixy>
+					<ixz>0.003931393372166252</ixz>
+					<iyy>0.0039261208433535285</iyy>
+					<iyz>-0.0011485070066483167</iyz>
+					<izz>0.004720525292561909</izz>
+				</inertia>
+			</inertial>
+			<collision name="thumb_left_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="thumb_left_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="thumb_left_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">0.20303953249677834 -0.7378091852681823 0.7348614073940793 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.010783039116982735</mass>
+				<inertia>
+					<ixx>0.01169520211112829</ixx>
+					<ixy>0.0016153324035202534</ixy>
+					<ixz>0.005845475018461105</ixz>
+					<iyy>0.006268874743371903</iyy>
+					<iyz>-0.001608904130526376</iyz>
+					<izz>0.006315959812178764</izz>
+				</inertia>
+			</inertial>
+			<collision name="thumb_left_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="thumb_left_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_left_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="thumb_left_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.21473820979735841 -0.7594691385774748 0.7158210317963688 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.00872735081798693</mass>
+				<inertia>
+					<ixx>0.009507203688669105</ixx>
+					<ixy>0.0014232195177277817</ixy>
+					<ixz>0.004743991528645311</ixz>
+					<iyy>0.004875188349125674</iyy>
+					<iyz>-0.0013416019875791864</iyz>
+					<izz>0.005437352140995432</izz>
+				</inertia>
+			</inertial>
+			<collision name="thumb_left_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="thumb_left_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/thumb_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="wrist_left_sphere_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23753243034048546 -0.7083637172932641 0.8211146532900278 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.06978284193312742</mass>
+				<inertia>
+					<ixx>0.08207685574030728</ixx>
+					<ixy>0.011741615977790195</ixy>
+					<ixz>0.04058903845103665</ixz>
+					<iyy>0.05099854561667496</iyy>
+					<iyz>-0.013610540338370846</iyz>
+					<izz>0.03896448438178479</izz>
+				</inertia>
+			</inertial>
+			<collision name="wrist_left_sphere_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wrist_left_sphere_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="wrist_left_sphere_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wrist_left_sphere_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="wrist_left_sphere_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23753242114127976 -0.7083641031994964 0.8211146532961595 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.04677754976643715</mass>
+				<inertia>
+					<ixx>0.055016079037549015</ixx>
+					<ixy>0.00787076434195812</ixy>
+					<ixz>0.02720807504957858</ixz>
+					<iyy>0.034183321444323636</iyy>
+					<iyz>-0.009123556532480015</iyz>
+					<izz>0.026116552220382266</izz>
+				</inertia>
+			</inertial>
+			<collision name="wrist_left_sphere_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wrist_left_sphere_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="wrist_left_sphere_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/wrist_left_sphere_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="palm_left">
+			<self_collide>false</self_collide>
+			<pose frame="">0.23430678166939548 -0.7510747867492498 0.7815593046106248 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.4014213812126051</mass>
+				<inertia>
+					<ixx>0.4725658096435932</ixx>
+					<ixy>0.07053157061188525</ixy>
+					<ixz>0.23525005817609687</ixz>
+					<iyy>0.2679013471323983</iyy>
+					<iyz>-0.0736106812620326</iyz>
+					<izz>0.24928388635952062</izz>
+				</inertia>
+			</inertial>
+			<collision name="palm_left_collision">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/palm_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="palm_left_visual">
+				<geometry>
+					<mesh>
+						<uri>model://rikshaw/meshes/CAD/palm_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
 		<joint name="joint_wheel_right" type="revolute">
 			<parent>front_part</parent>
 			<child>right_wheel</child>
-			<pose frame="">-1.8474111129762605e-15 0.003999653375196743 7.167599846980011e-15 0 0 0</pose>
+			<pose frame="">5.684341886080802e-16 -0.003999653375198307 5.577760475716787e-15 0 0 0</pose>
 			<axis>
-				<xyz>-1.942890293094024e-16 -0.9999999999999996 4.3170595303689904e-14</xyz>
+				<xyz>-3.1662288285727846e-30 0.9999999999999998 4.317059530368991e-14</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -1550,9 +2161,9 @@
 		<joint name="joint_wheel_back" type="revolute">
 			<parent>bike</parent>
 			<child>wheel_back</child>
-			<pose frame="">-2.1316282072803005e-16 0.06899965337519753 8.881784197001253e-17 0 0 0</pose>
+			<pose frame="">-1.4210854715202004e-16 -0.0689996533751975 2.1316282072803005e-16 0 0 0</pose>
 			<axis>
-				<xyz>1.3877787807814457e-16 0.9999999999999998 1.2767564783189294e-15</xyz>
+				<xyz>6.938893903907228e-17 -1.0 1.27675647831893e-15</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -1563,9 +2174,9 @@
 		<joint name="joint_pedal" type="revolute">
 			<parent>bike</parent>
 			<child>kurbel</child>
-			<pose frame="">-0.0002782913867367753 0.03513164955581838 -0.0010093313481013915 0 0 0</pose>
+			<pose frame="">0.0002782913867391912 -0.035131649555820536 -0.0010093313481022886 0 0 0</pose>
 			<axis>
-				<xyz>-1.3877787807814457e-16 -0.9999999999999998 -1.2767564783189294e-15</xyz>
+				<xyz>-6.938893903907228e-17 1.0 -1.27675647831893e-15</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -1576,9 +2187,9 @@
 		<joint name="spine_joint" type="revolute">
 			<parent>bike</parent>
 			<child>torso</child>
-			<pose frame="">-0.22048396235129444 0.014422000145820898 0.6949887848680888 0 0 0</pose>
+			<pose frame="">0.02073099135753978 0.0020271744549126194 -0.443881668501277 0 0 0</pose>
 			<axis>
-				<xyz>-0.019535911231678107 -4.747112459513404e-10 -0.9998091558754337</xyz>
+				<xyz>0.01953591123167811 4.747112516936242e-10 -0.9998091558754337</xyz>
 				<limit>
 					<lower>-0.5235987755982988</lower>
 					<upper>0.5235987755982988</upper>
@@ -1589,9 +2200,9 @@
 		<joint name="joint_wheel_left" type="revolute">
 			<parent>front_part</parent>
 			<child>left_wheel</child>
-			<pose frame="">-2.2737367544323206e-15 -0.04600034662480333 9.459100169806334e-15 0 0 0</pose>
+			<pose frame="">5.684341886080802e-16 0.04600034662480173 7.638334409421077e-15 0 0 0</pose>
 			<axis>
-				<xyz>1.942890293094024e-16 0.9999999999999996 -4.3170595303689904e-14</xyz>
+				<xyz>3.1662288285727846e-30 -0.9999999999999998 -4.317059530368991e-14</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -1602,9 +2213,9 @@
 		<joint name="joint_front" type="revolute">
 			<parent>bike</parent>
 			<child>front_part</child>
-			<pose frame="">0.23003546879794612 0.010388308199859624 -0.20527069599791542 0 0 0</pose>
+			<pose frame="">-0.23003546880974085 -0.010388308215364166 -0.2052706960113988 0 0 0</pose>
 			<axis>
-				<xyz>-5.34564260914393e-16 4.0843979107500514e-14 1.0</xyz>
+				<xyz>5.345642609144017e-16 -4.084397910750052e-14 1.0</xyz>
 				<limit>
 					<lower>-0.5235987755982988</lower>
 					<upper>0.5235987755982988</upper>
@@ -1612,6 +2223,733 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin" />
+		<joint name="joint_pedal_right" type="revolute">
+			<parent>kurbel</parent>
+			<child>pedal_right</child>
+			<pose frame="">-4.220983134520573e-05 0.042000000000000405 -6.592456775077693e-05 0 0 0</pose>
+			<axis>
+				<xyz>-5.847985275656098e-16 1.0000000000000007 -1.5799660158833414e-15</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_pedal_left" type="revolute">
+			<parent>kurbel</parent>
+			<child>pedal_left</child>
+			<pose frame="">-5.301625021756351e-05 -0.04199999999999946 5.759336515112068e-05 0 0 0</pose>
+			<axis>
+				<xyz>5.847985275656082e-16 -1.0 1.5799660158833548e-15</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="right_shoulder_axis0" type="revolute">
+			<parent>torso</parent>
+			<child>right_shoulder_link1</child>
+			<pose frame="">2.4247762695495113e-08 -1.5141492875514472e-06 3.518479729791579e-11 0 0 0</pose>
+			<axis>
+				<xyz>0.9986941911143129 -0.051010494310641946 -0.0028003758163893775</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="right_shoulder_axis2" type="revolute">
+			<parent>right_shoulder_link2</parent>
+			<child>upper_arm_right</child>
+			<pose frame="">-0.008025197561272464 -0.14163313001847427 0.12357423921909515 0 0 0</pose>
+			<axis>
+				<xyz>0.03688002228074296 0.7578073504191245 -0.651435248975152</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="right_shoulder_axis1" type="revolute">
+			<parent>right_shoulder_link1</parent>
+			<child>right_shoulder_link2</child>
+			<pose frame="">3.3286120917352944e-08 -1.1819810933033636e-06 2.9826310310454576e-11 0 0 0</pose>
+			<axis>
+				<xyz>0.03535217943919346 0.6504813211160871 0.7586990670140364</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="zed_camera_mount" type="fixed">
+			<parent>head</parent>
+			<child>zed_camera</child>
+			<pose frame="">0.0012480129871261525 -0.01743765472277226 0.008078156560103196 0 0 0</pose>
+		</joint>
+		<joint name="sphere_head_axis0" type="revolute">
+			<parent>torso</parent>
+			<child>sphere_head_link1</child>
+			<pose frame="">3.2908970194256425e-07 4.8144925313131636e-09 1.409206271318908e-07 0 0 0</pose>
+			<axis>
+				<xyz>-0.9919690428220347 -0.12498691257066687 -0.01938271830238471</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="sphere_head_axis2" type="revolute">
+			<parent>sphere_head_link2</parent>
+			<child>head</child>
+			<pose frame="">-0.040716640115837956 0.0005094230815511324 -0.14369038626014885 0 0 0</pose>
+			<axis>
+				<xyz>-0.0195359112316831 -4.746870500837996e-10 0.9998091558754341</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="sphere_head_axis1" type="revolute">
+			<parent>sphere_head_link1</parent>
+			<child>sphere_head_link2</child>
+			<pose frame="">2.700458336235556e-07 1.606438047030423e-09 -1.194197020026877e-07 0 0 0</pose>
+			<axis>
+				<xyz>-0.1249630595619558 0.992158390422645 -0.0024417327582278193</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="zed_camera_right" type="fixed">
+			<parent>zed_camera</parent>
+			<child>zed_camera_right_lense</child>
+			<pose frame="">0.011113861850016669 3.477805201375972e-05 -0.002136302374827892 0 0 0</pose>
+		</joint>
+		<joint name="zed_camera_left" type="fixed">
+			<parent>zed_camera</parent>
+			<child>zed_camera_left_lense</child>
+			<pose frame="">0.011113799349263332 5.466552554251436e-05 -0.002136303766079379 0 0 0</pose>
+		</joint>
+		<joint name="left_shoulder_axis0" type="revolute">
+			<parent>torso</parent>
+			<child>left_shoulder_link1</child>
+			<pose frame="">-1.2122699509120593e-07 -9.49504689629066e-08 2.0440650416730933e-09 0 0 0</pose>
+			<axis>
+				<xyz>0.050975679058603535 -0.9986354432779868 -0.011345993720010035</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="left_shoulder_axis1" type="revolute">
+			<parent>left_shoulder_link1</parent>
+			<child>left_shoulder_link2</child>
+			<pose frame="">3.440223238726503e-08 -1.1861646111555047e-06 2.66869903953193e-11 0 0 0</pose>
+			<axis>
+				<xyz>0.9986941911138321 0.05101049432270832 -0.0028003757679576683</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="left_shoulder_axis2" type="revolute">
+			<parent>left_shoulder_link2</parent>
+			<child>upper_arm_left</child>
+			<pose frame="">-0.003571985663550805 0.08741307263057828 0.07289965524074234 0 0 0</pose>
+			<axis>
+				<xyz>0.036880022287882085 -0.7578073498002895 -0.6514352496946403</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_hip_left" type="revolute">
+			<parent>bike</parent>
+			<child>thigh_left</child>
+			<pose frame="">-0.004772293703297166 0.010555749549715365 0.1111212047941391 0 0 0</pose>
+			<axis>
+				<xyz>4.713567773490396e-12 -0.9999999999999998 -4.747094653015647e-10</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_knee_right" type="revolute">
+			<parent>thigh_right</parent>
+			<child>leg_right</child>
+			<pose frame="">0.007630745016043897 -0.01363745454096673 0.15030968324039598 0 0 0</pose>
+			<axis>
+				<xyz>-5.5782888889577e-12 1.0000000000000224 5.189987481747476e-10</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_hip_right" type="revolute">
+			<parent>bike</parent>
+			<child>thigh_right</child>
+			<pose frame="">-0.004301336274692211 -0.02190775214760226 0.11113075748438384 0 0 0</pose>
+			<axis>
+				<xyz>4.713397833840635e-12 -0.9999999999999999 -4.747100165437955e-10</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_knee_left" type="revolute">
+			<parent>thigh_left</parent>
+			<child>leg_left</child>
+			<pose frame="">0.008998953151750193 0.033669348798665164 0.15020700692522204 0 0 0</pose>
+			<axis>
+				<xyz>-6.508844489870675e-12 -1.0000000000000238 -2.724203131930673e-10</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_foot_left" type="revolute">
+			<parent>leg_left</parent>
+			<child>foot_left</child>
+			<pose frame="">0.0620293110271249 0.02399999998456085 0.03764790265394325 0 0 0</pose>
+			<axis>
+				<xyz>9.645942725302535e-12 0.9999999999999991 1.1192843308369593e-10</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_foot_left_tip" type="fixed">
+			<parent>foot_left</parent>
+			<child>foot_left_tip</child>
+			<pose frame="">0.04103985138486481 -0.0011674030869608743 0.005886567336209403 0 0 0</pose>
+		</joint>
+		<joint name="joint_foot_right" type="revolute">
+			<parent>leg_right</parent>
+			<child>foot_right</child>
+			<pose frame="">0.0629891386323365 0.023499999970076412 0.03601900003503324 0 0 0</pose>
+			<axis>
+				<xyz>-1.1247986451406825e-11 0.9999999999999987 7.1681206641122e-10</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint_foot_right_tip" type="fixed">
+			<parent>foot_right</parent>
+			<child>foot_right_tip</child>
+			<pose frame="">0.041098927250866134 0.0011673776796483893 0.0054587466160410615 0 0 0</pose>
+		</joint>
+		<joint name="thumb_left_joint1" type="revolute">
+			<parent>thumb_left_link0</parent>
+			<child>thumb_left_link1</child>
+			<pose frame="">0.0026706486015498853 0.011960236232936268 0.01050882863385965 0 0 0</pose>
+			<axis>
+				<xyz>-0.930350820737579 -0.2988983516681703 -0.21238438201280818</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="thumb_left_joint2" type="revolute">
+			<parent>thumb_left_link1</parent>
+			<child>thumb_left_link2</child>
+			<pose frame="">0.001050125523456309 0.009261195174154437 0.008667412595311105 0 0 0</pose>
+			<axis>
+				<xyz>-0.9303508207375775 -0.29889835166816975 -0.21238438201280796</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="ring_left_joint1" type="revolute">
+			<parent>ring_left_link0</parent>
+			<child>ring_left_link1</child>
+			<pose frame="">-0.00634744355378114 0.011322781051525368 0.009597744015633368 0 0 0</pose>
+			<axis>
+				<xyz>0.9901758132211781 -0.0799706758709029 -0.11470200483221009</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="ring_left_joint2" type="revolute">
+			<parent>ring_left_link1</parent>
+			<child>ring_left_link2</child>
+			<pose frame="">-0.004007485132257891 0.009466186050521373 0.007505126716953044 0 0 0</pose>
+			<axis>
+				<xyz>0.9901758132211763 -0.0799706758709028 -0.1147020048322099</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="little_left_joint1" type="revolute">
+			<parent>little_left_link0</parent>
+			<child>little_left_link1</child>
+			<pose frame="">-0.004492438168613582 0.011868137328671367 0.00997887365149083 0 0 0</pose>
+			<axis>
+				<xyz>0.9663080757242769 -0.17142255416927957 -0.19199742371220413</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="little_left_joint2" type="revolute">
+			<parent>little_left_link1</parent>
+			<child>little_left_link2</child>
+			<pose frame="">-0.0025076021524014893 0.009801504534056562 0.007722777629392397 0 0 0</pose>
+			<axis>
+				<xyz>0.9663080757242752 -0.1714225541692791 -0.1919974237122037</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="index_right_joint1" type="revolute">
+			<parent>index_right_link0</parent>
+			<child>index_right_link1</child>
+			<pose frame="">0.011552452062521255 -0.009009825280963214 0.006780593974199008 0 0 0</pose>
+			<axis>
+				<xyz>-0.9658386796997157 -0.17277984858019121 0.19313924697097398</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="index_right_joint2" type="revolute">
+			<parent>index_right_link1</parent>
+			<child>little_right_link2</child>
+			<pose frame="">0.17005256913254133 0.8476295333509318 0.6713838873501194 0 0 0</pose>
+			<axis>
+				<xyz>-0.9658386796997139 -0.1727798485801909 0.19313924697097354</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="ring_right_joint1" type="revolute">
+			<parent>ring_right_link0</parent>
+			<child>ring_right_link1</child>
+			<pose frame="">0.00928634661594991 -0.01042766809896321 0.008101788820116411 0 0 0</pose>
+			<axis>
+				<xyz>-0.9965812248848287 -0.03377938338290934 0.0753977152526714</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="ring_right_joint2" type="revolute">
+			<parent>ring_right_link1</parent>
+			<child>little_right_link2</child>
+			<pose frame="">0.2379289586040708 0.8527606515925374 0.66342648350535 0 0 0</pose>
+			<axis>
+				<xyz>-0.9965812248848267 -0.033779383382909214 0.07539771525267128</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="middle_right_joint1" type="revolute">
+			<parent>middle_right_link0</parent>
+			<child>middle_right_link1</child>
+			<pose frame="">0.010095668233527776 -0.009983092319431819 0.007682919198385179 0 0 0</pose>
+			<axis>
+				<xyz>-0.9899259309590029 -0.08135633514080493 0.11587837566779541</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="middle_right_joint2" type="revolute">
+			<parent>middle_right_link1</parent>
+			<child>little_right_link2</child>
+			<pose frame="">0.2076795264707256 0.8517365712858177 0.6661094029289428 0 0 0</pose>
+			<axis>
+				<xyz>-0.9899259309590008 -0.08135633514080473 0.11587837566779519</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="middle_left_joint1" type="revolute">
+			<parent>middle_left_link0</parent>
+			<child>middle_left_link1</child>
+			<pose frame="">-0.007366766566667948 0.010936091872323033 0.009313727800795561 0 0 0</pose>
+			<axis>
+				<xyz>0.9972008124297193 -0.02708877664561783 -0.06969029967901386</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="middle_left_joint2" type="revolute">
+			<parent>middle_left_link1</parent>
+			<child>middle_left_link2</child>
+			<pose frame="">-0.0048393538210491725 0.009213543148528203 0.007327334087132442 0 0 0</pose>
+			<axis>
+				<xyz>0.9972008124297173 -0.027088776645617787 -0.06969029967901369</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_right" type="revolute">
+			<parent>upper_arm_right</parent>
+			<child>lower_arm_right</child>
+			<pose frame="">-0.0055760765619178795 -0.10772548332701504 0.07944483517700007 0 0 0</pose>
+			<axis>
+				<xyz>-0.035352179439123534 -0.6504813211160914 -0.7586990670140357</xyz>
+				<limit>
+					<lower>-1.221730476396031</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="thumb_right_joint1" type="revolute">
+			<parent>thumb_right_link0</parent>
+			<child>thumb_right_link1</child>
+			<pose frame="">-0.012757722627659689 -0.007002958227170524 0.006988162959730318 0 0 0</pose>
+			<axis>
+				<xyz>0.9303407514815814 -0.29908302356210714 0.21216840280690513</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="thumb_right_joint2" type="revolute">
+			<parent>thumb_right_link1</parent>
+			<child>little_right_link2</child>
+			<pose frame="">0.21019948029312166 0.7437968618911884 0.6985382674120909 0 0 0</pose>
+			<axis>
+				<xyz>0.9303407514815796 -0.29908302356210664 0.2121684028069049</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="little_right_joint0" type="revolute">
+			<parent>palm_right</parent>
+			<child>little_right_link0</child>
+			<pose frame="">0.008296971379913707 -0.013873061345971962 0.011076615573679192 0 0 0</pose>
+			<axis>
+				<xyz>-0.999185730289981 0.03777716328458339 0.014169062038204639</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="ring_right_joint0" type="revolute">
+			<parent>palm_right</parent>
+			<child>ring_right_link0</child>
+			<pose frame="">0.009928761325575053 -0.013256836224033605 0.010472221902896308 0 0 0</pose>
+			<axis>
+				<xyz>-0.9965812248848281 -0.03377938338290869 0.07539771525267164</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="middle_right_joint0" type="revolute">
+			<parent>palm_right</parent>
+			<child>middle_right_link0</child>
+			<pose frame="">0.01096836230888833 -0.012781397617544172 0.010016163618993375 0 0 0</pose>
+			<axis>
+				<xyz>-0.9899259309590018 -0.0813563351408041 0.11587837566779582</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="index_right_joint0" type="revolute">
+			<parent>palm_right</parent>
+			<child>index_right_link0</child>
+			<pose frame="">0.01286234915171569 -0.011716712160467609 0.009015080810856802 0 0 0</pose>
+			<axis>
+				<xyz>-0.9658386796997146 -0.17277984858019002 0.19313924697097476</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="thumb_right_joint0" type="revolute">
+			<parent>palm_right</parent>
+			<child>thumb_right_link0</child>
+			<pose frame="">-0.014457615150512382 -0.009486994703732422 0.00921796007900312 0 0 0</pose>
+			<axis>
+				<xyz>0.9303407514815806 -0.29908302356210714 0.21216840280690452</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_left_sphere_axis0" type="revolute">
+			<parent>lower_arm_left</parent>
+			<child>wrist_left_sphere_link1</child>
+			<pose frame="">2.884205748898694e-08 -1.7415880827797992e-06 4.021302402179572e-11 0 0 0</pose>
+			<axis>
+				<xyz>-0.9986941911138317 -0.0510104943227163 0.0028003757679504566</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_left_sphere_axis2" type="revolute">
+			<parent>wrist_left_sphere_link2</parent>
+			<child>palm_left</child>
+			<pose frame="">0.0032256775131477866 0.04270932786790297 0.03955534871961604 0 0 0</pose>
+			<axis>
+				<xyz>0.036880022287891945 -0.7578073498002825 -0.6514352496946396</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_left_sphere_axis1" type="revolute">
+			<parent>wrist_left_sphere_link1</parent>
+			<child>wrist_left_sphere_link2</child>
+			<pose frame="">3.804126354367554e-08 -1.355681851009649e-06 3.4081182320733205e-11 0 0 0</pose>
+			<axis>
+				<xyz>0.03535217944532112 -0.6504813218360879 0.7586990663964479</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="little_left_joint0" type="revolute">
+			<parent>palm_left</parent>
+			<child>little_left_link0</child>
+			<pose frame="">-0.0038960492918171143 0.014702122215729646 0.012355577686201685 0 0 0</pose>
+			<axis>
+				<xyz>0.9663080757242779 -0.17142255416927965 -0.19199742371220438</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="ring_left_joint0" type="revolute">
+			<parent>palm_left</parent>
+			<child>ring_left_link0</child>
+			<pose frame="">-0.006205923552755621 0.014180607751261221 0.012016063653604903 0 0 0</pose>
+			<axis>
+				<xyz>0.9901758132211792 -0.0799706758709044 -0.1147020048322089</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="middle_left_joint0" type="revolute">
+			<parent>palm_left</parent>
+			<child>middle_left_link0</child>
+			<pose frame="">-0.007486633138271443 0.013788598677024026 0.01173970620373325 0 0 0</pose>
+			<axis>
+				<xyz>0.9972008124297198 -0.027088776645619574 -0.06969029967901205</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="index_left_joint0" type="revolute">
+			<parent>palm_left</parent>
+			<child>index_left_link0</child>
+			<pose frame="">-0.009035517482285479 0.01320571397103663 0.011312122747433762 0 0 0</pose>
+			<axis>
+				<xyz>0.9991483720023661 0.0391689147079214 -0.012974083614126204</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="thumb_left_joint0" type="revolute">
+			<parent>palm_left</parent>
+			<child>thumb_left_link0</child>
+			<pose frame="">0.0016508583184847226 0.014664042412704106 0.012893518100370188 0 0 0</pose>
+			<axis>
+				<xyz>-0.9303508207375801 -0.2988983516681708 -0.2123843820128083</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="index_left_joint1" type="revolute">
+			<parent>index_left_link0</parent>
+			<child>index_left_link1</child>
+			<pose frame="">-0.008589967660520052 0.010379478163988267 0.008893528454088511 0 0 0</pose>
+			<axis>
+				<xyz>0.9991483720023647 0.039168914707923656 -0.012974083614128742</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="index_left_joint2" type="revolute">
+			<parent>index_left_link1</parent>
+			<child>index_left_link2</child>
+			<pose frame="">-0.005845697626909611 0.00883743699336378 0.007051789323489714 0 0 0</pose>
+			<axis>
+				<xyz>0.9991483720023628 0.03916891470792362 -0.012974083614128702</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="little_right_joint1" type="revolute">
+			<parent>little_right_link0</parent>
+			<child>little_right_link1</child>
+			<pose frame="">0.008004621004631254 -0.011018422836367137 0.00866805135631239 0 0 0</pose>
+			<axis>
+				<xyz>-0.9991857302899829 0.03777716328458346 0.01416906203820477</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="little_right_joint2" type="revolute">
+			<parent>little_right_link1</parent>
+			<child>little_right_link2</child>
+			<pose frame="">0.27571566021091565 0.8459113488889426 0.6678676399722449 0 0 0</pose>
+			<axis>
+				<xyz>-0.9991857302899813 0.037777163284583366 0.01416906203820481</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_right_sphere_axis0" type="revolute">
+			<parent>lower_arm_right</parent>
+			<child>wrist_right_sphere_link1</child>
+			<pose frame="">2.884205539288587e-08 -1.7398990985384444e-06 4.021231347905996e-11 0 0 0</pose>
+			<axis>
+				<xyz>-0.998694191114315 0.051010494310595796 0.002800375816335603</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_right_sphere_axis2" type="revolute">
+			<parent>wrist_right_sphere_link2</parent>
+			<child>palm_right</child>
+			<pose frame="">0.00352246019962152 -0.04482058799868668 0.03851045028542771 0 0 0</pose>
+			<axis>
+				<xyz>0.036880022280746654 0.7578073504191248 -0.6514352489751525</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_right_sphere_axis1" type="revolute">
+			<parent>wrist_right_sphere_link1</parent>
+			<child>wrist_right_sphere_link2</child>
+			<pose frame="">3.8041319285753164e-08 -1.3508427086605933e-06 3.40808981036389e-11 0 0 0</pose>
+			<axis>
+				<xyz>-0.03535217943911993 -0.6504813211160908 -0.7586990670140364</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
 	</model>
 </sdf>
