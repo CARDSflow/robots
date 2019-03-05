@@ -1,0 +1,1731 @@
+<?xml version="1.0" ?>
+<robot name="rikshaw">
+  <joint name="joint_pedal_right" type="revolute">
+    <parent link="kurbel"/>
+    <child link="pedal_right"/>
+    <origin rpy="0 0 0" xyz="-0.01468  0.22498  0.16854"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_pedal_left" type="revolute">
+    <parent link="kurbel"/>
+    <child link="pedal_left"/>
+    <origin rpy="0 0 0" xyz="0.01482 -0.15624 -0.16858"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="right_shoulder_axis0" type="revolute">
+    <parent link="torso"/>
+    <child link="right_shoulder_link1"/>
+    <origin rpy="0 0 0" xyz="-0.00149  0.29218  0.46833"/>
+    <axis xyz="0.99869 -0.05101 -0.0028"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="right_shoulder_axis2" type="revolute">
+    <parent link="right_shoulder_link2"/>
+    <child link="upper_arm_right"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0.03688  0.7578  -0.65143"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="right_shoulder_axis1" type="revolute">
+    <parent link="right_shoulder_link1"/>
+    <child link="right_shoulder_link2"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0.03535 0.65048 0.75869"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="left_shoulder_axis0" type="revolute">
+    <parent link="torso"/>
+    <child link="left_shoulder_link1"/>
+    <origin rpy="0 0 0" xyz="-0.00146 -0.29218  0.46833"/>
+    <axis xyz="0.05097 -0.99863 -0.01134"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="left_shoulder_axis1" type="revolute">
+    <parent link="left_shoulder_link1"/>
+    <child link="left_shoulder_link2"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0.99869  0.05101 -0.0028"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="left_shoulder_axis2" type="revolute">
+    <parent link="left_shoulder_link2"/>
+    <child link="upper_arm_left"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0.03688 -0.7578  -0.65143"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_foot_right" type="revolute">
+    <parent link="leg_right"/>
+    <child link="foot_right"/>
+    <origin rpy="0 0 0" xyz="0       0.0135  -0.34914"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_foot_right_tip" type="fixed">
+    <parent link="foot_right"/>
+    <child link="foot_right_tip"/>
+    <origin rpy="0 0 0" xyz="-0.06197 -0.024   -0.03679"/>
+    <axis xyz="0 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+  </joint>
+  <joint name="joint_hip_left" type="revolute">
+    <parent link="bike"/>
+    <child link="thigh_left"/>
+    <origin rpy="0 0 0" xyz="0.2245  -0.20207  0.48902"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_hip_right" type="revolute">
+    <parent link="bike"/>
+    <child link="thigh_right"/>
+    <origin rpy="0 0 0" xyz="0.2245  0.16192 0.48902"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_knee_right" type="revolute">
+    <parent link="thigh_right"/>
+    <child link="leg_right"/>
+    <origin rpy="0 0 0" xyz="0.01603  0.0077  -0.30874"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_foot_left" type="revolute">
+    <parent link="leg_left"/>
+    <child link="foot_left"/>
+    <origin rpy="0 0 0" xyz="-0.00318  0.0135  -0.34912"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_foot_left_tip" type="fixed">
+    <parent link="foot_left"/>
+    <child link="foot_left_tip"/>
+    <origin rpy="0 0 0" xyz="-0.06158 -0.024   -0.03743"/>
+    <axis xyz="0 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+  </joint>
+  <joint name="joint_knee_left" type="revolute">
+    <parent link="thigh_left"/>
+    <child link="leg_left"/>
+    <origin rpy="0 0 0" xyz="0.01653  0.02405 -0.30873"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="thumb_left_joint1" type="fixed">
+    <parent link="thumb_left_link0"/>
+    <child link="thumb_left_link1"/>
+    <origin rpy="0 0 0" xyz="0.01271 -0.02436 -0.02142"/>
+    <axis xyz="-0.93035 -0.29889 -0.21238"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="thumb_left_joint2" type="fixed">
+    <parent link="thumb_left_link1"/>
+    <child link="thumb_left_link2"/>
+    <origin rpy="0 0 0" xyz="0.01018 -0.01876 -0.01652"/>
+    <axis xyz="-0.93035 -0.29889 -0.21238"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="little_left_joint1" type="fixed">
+    <parent link="little_left_link0"/>
+    <child link="little_left_link1"/>
+    <origin rpy="0 0 0" xyz="-0.00888 -0.02578 -0.02169"/>
+    <axis xyz="0.9663  -0.17142 -0.19199"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="little_left_joint2" type="fixed">
+    <parent link="little_left_link1"/>
+    <child link="little_left_link2"/>
+    <origin rpy="0 0 0" xyz="-0.00723 -0.01991 -0.01673"/>
+    <axis xyz="0.9663  -0.17142 -0.19199"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="sphere_head_axis0" type="revolute">
+    <parent link="torso"/>
+    <child link="sphere_head_link1"/>
+    <origin rpy="0 0 0" xyz="-0.01231  0       0.63022"/>
+    <axis xyz="-0.99196 -0.12498 -0.01938"/>
+    <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0"/>
+  </joint>
+  <joint name="sphere_head_axis2" type="revolute">
+    <parent link="sphere_head_link2"/>
+    <child link="head"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="-0.01953  0       0.9998"/>
+    <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0"/>
+  </joint>
+  <joint name="sphere_head_axis1" type="revolute">
+    <parent link="sphere_head_link1"/>
+    <child link="sphere_head_link2"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="-0.12496  0.99215 -0.00244"/>
+    <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0"/>
+  </joint>
+  <joint name="zed_camera_mount" type="fixed">
+    <parent link="head"/>
+    <child link="zed_camera"/>
+    <origin rpy="0 0 0" xyz="-0.06237 -0.02168  0.22039"/>
+    <axis xyz="0 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+  </joint>
+  <joint name="zed_camera_right" type="fixed">
+    <parent link="zed_camera"/>
+    <child link="zed_camera_right_lense"/>
+    <origin rpy="0 0 0" xyz="-0.00176  0.08149 -0.00786"/>
+    <axis xyz="0 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+  </joint>
+  <joint name="zed_camera_left" type="fixed">
+    <parent link="zed_camera"/>
+    <child link="zed_camera_left_lense"/>
+    <origin rpy="0 0 0" xyz="-0.00138 -0.03848 -0.00785"/>
+    <axis xyz="0 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+  </joint>
+  <joint name="little_right_joint0" type="fixed">
+    <parent link="palm_right"/>
+    <child link="little_right_link0"/>
+    <origin rpy="0 0 0" xyz="0.03566  0.11902 -0.10588"/>
+    <axis xyz="-0.99918  0.03777  0.01416"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="ring_right_joint0" type="fixed">
+    <parent link="palm_right"/>
+    <child link="ring_right_link0"/>
+    <origin rpy="0 0 0" xyz="0.0037   0.12583 -0.11056"/>
+    <axis xyz="-0.99658 -0.03377  0.07539"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="middle_right_joint0" type="fixed">
+    <parent link="palm_right"/>
+    <child link="middle_right_link0"/>
+    <origin rpy="0 0 0" xyz="-0.02268  0.12501 -0.10823"/>
+    <axis xyz="-0.98992 -0.08135  0.11587"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="index_right_joint0" type="fixed">
+    <parent link="palm_right"/>
+    <child link="index_right_link0"/>
+    <origin rpy="0 0 0" xyz="-0.0529   0.12183 -0.1041"/>
+    <axis xyz="-0.96583 -0.17278  0.19313"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="thumb_right_joint0" type="fixed">
+    <parent link="palm_right"/>
+    <child link="thumb_right_link0"/>
+    <origin rpy="0 0 0" xyz="-0.05052  0.02046 -0.07739"/>
+    <axis xyz="0.93034 -0.29908  0.21216"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="elbow_right" type="revolute">
+    <parent link="upper_arm_right"/>
+    <child link="lower_arm_right"/>
+    <origin rpy="0 0 0" xyz="0.01052  0.21872 -0.20472"/>
+    <axis xyz="-0.03535 -0.65048 -0.75869"/>
+    <limit effort="0.0" lower="-1.2217304764" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="little_right_joint1" type="fixed">
+    <parent link="little_right_link0"/>
+    <child link="little_right_link1"/>
+    <origin rpy="0 0 0" xyz="0.00067  0.02643 -0.02269"/>
+    <axis xyz="-0.99918  0.03777  0.01416"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="little_right_joint2" type="fixed">
+    <parent link="little_right_link1"/>
+    <child link="little_right_link2"/>
+    <origin rpy="0 0 0" xyz="0.00088  0.02046 -0.01759"/>
+    <axis xyz="-0.99918  0.03777  0.01416"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="ring_right_joint1" type="fixed">
+    <parent link="ring_right_link0"/>
+    <child link="ring_right_link1"/>
+    <origin rpy="0 0 0" xyz="-0.0026   0.02644 -0.02254"/>
+    <axis xyz="-0.99658 -0.03377  0.07539"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="ring_right_joint2" type="fixed">
+    <parent link="ring_right_link1"/>
+    <child link="ring_right_link2"/>
+    <origin rpy="0 0 0" xyz="-0.00165  0.02049 -0.01749"/>
+    <axis xyz="-0.99658 -0.03377  0.07539"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="middle_right_joint1" type="fixed">
+    <parent link="middle_right_link0"/>
+    <child link="middle_right_link1"/>
+    <origin rpy="0 0 0" xyz="-0.00477  0.02631 -0.02233"/>
+    <axis xyz="-0.98992 -0.08135  0.11587"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="middle_right_joint2" type="fixed">
+    <parent link="middle_right_link1"/>
+    <child link="middle_right_link2"/>
+    <origin rpy="0 0 0" xyz="-0.00334  0.02041 -0.01735"/>
+    <axis xyz="-0.98992 -0.08135  0.11587"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="index_right_joint1" type="fixed">
+    <parent link="index_right_link0"/>
+    <child link="index_right_link1"/>
+    <origin rpy="0 0 0" xyz="-0.00894  0.02577 -0.02168"/>
+    <axis xyz="-0.96583 -0.17278  0.19313"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="index_right_joint2" type="fixed">
+    <parent link="index_right_link1"/>
+    <child link="index_right_link2"/>
+    <origin rpy="0 0 0" xyz="-0.00658  0.02003 -0.01686"/>
+    <axis xyz="-0.96583 -0.17278  0.19313"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="thumb_right_joint1" type="fixed">
+    <parent link="thumb_right_link0"/>
+    <child link="thumb_right_link1"/>
+    <origin rpy="0 0 0" xyz="0.01271  0.02436 -0.02142"/>
+    <axis xyz="0.93034 -0.29908  0.21216"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="thumb_right_joint2" type="fixed">
+    <parent link="thumb_right_link1"/>
+    <child link="thumb_right_link2"/>
+    <origin rpy="0 0 0" xyz="0.00951  0.01898 -0.01667"/>
+    <axis xyz="0.93034 -0.29908  0.21216"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="wrist_right_sphere_axis0" type="revolute">
+    <parent link="lower_arm_right"/>
+    <child link="wrist_right_sphere_link1"/>
+    <origin rpy="0 0 0" xyz="0.00896  0.1835  -0.14457"/>
+    <axis xyz="-0.99869  0.05101  0.0028"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="wrist_right_sphere_axis2" type="revolute">
+    <parent link="wrist_right_sphere_link2"/>
+    <child link="palm_right"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0.03688  0.7578  -0.65143"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="wrist_right_sphere_axis1" type="revolute">
+    <parent link="wrist_right_sphere_link1"/>
+    <child link="wrist_right_sphere_link2"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="-0.03535 -0.65048 -0.75869"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="little_left_joint0" type="fixed">
+    <parent link="palm_left"/>
+    <child link="little_left_link0"/>
+    <origin rpy="0 0 0" xyz="-0.07122 -0.11857 -0.10045"/>
+    <axis xyz="0.9663  -0.17142 -0.19199"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="ring_left_joint0" type="fixed">
+    <parent link="palm_left"/>
+    <child link="ring_left_link0"/>
+    <origin rpy="0 0 0" xyz="-0.04145 -0.12348 -0.10604"/>
+    <axis xyz="0.99017 -0.07997 -0.1147"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="middle_left_joint0" type="fixed">
+    <parent link="palm_left"/>
+    <child link="middle_left_link0"/>
+    <origin rpy="0 0 0" xyz="-0.01505 -0.12526 -0.10919"/>
+    <axis xyz="0.9972  -0.02708 -0.06969"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="index_left_joint0" type="fixed">
+    <parent link="palm_left"/>
+    <child link="index_left_link0"/>
+    <origin rpy="0 0 0" xyz="0.01671 -0.11958 -0.10581"/>
+    <axis xyz="0.99914  0.03916 -0.01297"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="thumb_left_joint0" type="fixed">
+    <parent link="palm_left"/>
+    <child link="thumb_left_link0"/>
+    <origin rpy="0 0 0" xyz="-0.03284 -0.01478 -0.07335"/>
+    <axis xyz="-0.93035 -0.29889 -0.21238"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="ring_left_joint1" type="fixed">
+    <parent link="ring_left_link0"/>
+    <child link="ring_left_link1"/>
+    <origin rpy="0 0 0" xyz="-0.00471 -0.02632 -0.02234"/>
+    <axis xyz="0.99017 -0.07997 -0.1147"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="ring_left_joint2" type="fixed">
+    <parent link="ring_left_link1"/>
+    <child link="ring_left_link2"/>
+    <origin rpy="0 0 0" xyz="-0.004   -0.02036 -0.01727"/>
+    <axis xyz="0.99017 -0.07997 -0.1147"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="middle_left_joint1" type="fixed">
+    <parent link="middle_left_link0"/>
+    <child link="middle_left_link1"/>
+    <origin rpy="0 0 0" xyz="-0.00229 -0.02645 -0.02257"/>
+    <axis xyz="0.9972  -0.02708 -0.06969"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="middle_left_joint2" type="fixed">
+    <parent link="middle_left_link1"/>
+    <child link="middle_left_link2"/>
+    <origin rpy="0 0 0" xyz="-0.00213 -0.02048 -0.01746"/>
+    <axis xyz="0.9972  -0.02708 -0.06969"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="index_left_joint1" type="fixed">
+    <parent link="index_left_link0"/>
+    <child link="index_left_link1"/>
+    <origin rpy="0 0 0" xyz="0.00074 -0.02643 -0.02269"/>
+    <axis xyz="0.99914  0.03916 -0.01297"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="index_left_joint2" type="fixed">
+    <parent link="index_left_link1"/>
+    <child link="index_left_link2"/>
+    <origin rpy="0 0 0" xyz="0.00021 -0.02049 -0.01758"/>
+    <axis xyz="0.99914  0.03916 -0.01297"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="wrist_left_sphere_axis0" type="revolute">
+    <parent link="lower_arm_left"/>
+    <child link="wrist_left_sphere_link1"/>
+    <origin rpy="0 0 0" xyz="0.23753 -0.70836  0.82111"/>
+    <axis xyz="-0.99869 -0.05101  0.0028"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="wrist_left_sphere_axis2" type="revolute">
+    <parent link="wrist_left_sphere_link2"/>
+    <child link="palm_left"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0.03688 -0.7578  -0.65143"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="wrist_left_sphere_axis1" type="revolute">
+    <parent link="wrist_left_sphere_link1"/>
+    <child link="wrist_left_sphere_link2"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0.03535 -0.65048  0.75869"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_wheel_right" type="revolute">
+    <parent link="front_part"/>
+    <child link="right_wheel"/>
+    <origin rpy="0 0 0" xyz="-0.052   0.338   0.0345"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_wheel_back" type="revolute">
+    <parent link="bike"/>
+    <child link="wheel_back"/>
+    <origin rpy="0 0 0" xyz="0.53689 -0.06544  0.04941"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_pedal" type="revolute">
+    <parent link="bike"/>
+    <child link="kurbel"/>
+    <origin rpy="0 0 0" xyz="0.0925  -0.035    0.00326"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="spine_joint" type="revolute">
+    <parent link="bike"/>
+    <child link="torso"/>
+    <origin rpy="0 0 0" xyz="0.22048 -0.01442  0.69498"/>
+    <axis xyz="0.01953  0      -0.9998"/>
+    <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0"/>
+  </joint>
+  <joint name="joint_wheel_left" type="revolute">
+    <parent link="front_part"/>
+    <child link="left_wheel"/>
+    <origin rpy="0 0 0" xyz="-0.052  -0.304   0.0345"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0"/>
+  </joint>
+  <joint name="joint_front" type="revolute">
+    <parent link="bike"/>
+    <child link="front_part"/>
+    <origin rpy="0 0 0" xyz="-0.94642  0       0.01116"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0"/>
+  </joint>
+  <link name="bike">
+    <inertial>
+      <mass value="21.819480362884757"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="5.88647979750313" ixy="0.052466044382052206" ixz="0.14605356512826828" iyy="9.145452768014158" iyz="-2.309312656009525" izz="3.8627003582898043"/>
+    </inertial>
+    <collision name="bike_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/bike.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="bike_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/bike.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="torso">
+    <inertial>
+      <mass value="12.614903730434577"/>
+      <origin rpy="0 0 0" xyz="-0.02073 -0.00202  0.44388"/>
+      <inertia ixx="16.812997775976786" ixy="0.04222722841013072" ixz="0.23631561826691505" iyy="17.061520901816106" iyz="-2.8698977891261777" izz="0.8430253182147159"/>
+    </inertial>
+    <collision name="torso_collision">
+      <origin rpy="0 0 0" xyz="-0.02073 -0.00202  0.44388"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/torso.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="torso_visual">
+      <origin rpy="0 0 0" xyz="-0.02073 -0.00202  0.44388"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/torso.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="lower_arm_right">
+    <inertial>
+      <mass value="7.123096400248415"/>
+      <origin rpy="0 0 0" xyz="0.00557  0.10772 -0.07944"/>
+      <inertia ixx="8.14006207640396" ixy="-1.0123206909403308" ixz="-3.7698391037862247" iyy="5.917194232858959" iyz="-1.471802738653568" izz="3.0162278899995094"/>
+    </inertial>
+    <collision name="lower_arm_right_collision">
+      <origin rpy="0 0 0" xyz="0.00557  0.10772 -0.07944"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/lower_arm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="lower_arm_right_visual">
+      <origin rpy="0 0 0" xyz="0.00557  0.10772 -0.07944"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/lower_arm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="lower_arm_left">
+    <inertial>
+      <mass value="7.123102043007604"/>
+      <origin rpy="0 0 0" xyz="0.23432 -0.63632  0.88302"/>
+      <inertia ixx="8.472323633353955" ixy="1.0626016899805515" ixz="3.9885451540856223" iyy="5.963142620867367" iyz="-1.4734310474311096" izz="3.297380369176723"/>
+    </inertial>
+    <collision name="lower_arm_left_collision">
+      <origin rpy="0 0 0" xyz="0.23432 -0.63632  0.88302"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/lower_arm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="lower_arm_left_visual">
+      <origin rpy="0 0 0" xyz="0.23432 -0.63632  0.88302"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/lower_arm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_arm_right">
+    <inertial>
+      <mass value="3.6086945436342543"/>
+      <origin rpy="0 0 0" xyz="0.00802  0.14163 -0.12357"/>
+      <inertia ixx="4.568638174910043" ixy="-0.34470816704005836" ixz="-1.5583066438014828" iyy="4.1031906241658875" iyz="-0.8507890735781412" izz="0.8408477286033784"/>
+    </inertial>
+    <collision name="upper_arm_right_collision">
+      <origin rpy="0 0 0" xyz="0.00802  0.14163 -0.12357"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/upper_arm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_arm_right_visual">
+      <origin rpy="0 0 0" xyz="0.00802  0.14163 -0.12357"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/upper_arm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_arm_left">
+    <inertial>
+      <mass value="1.831641207539118"/>
+      <origin rpy="0 0 0" xyz="0.00357 -0.08741 -0.0729"/>
+      <inertia ixx="2.4729433965865635" ixy="0.16085674352863855" ixz="0.781882172510725" iyy="2.274093123947738" iyz="-0.4443693396698353" izz="0.3822623841877871"/>
+    </inertial>
+    <collision name="upper_arm_left_collision">
+      <origin rpy="0 0 0" xyz="0.00357 -0.08741 -0.0729"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/upper_arm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_arm_left_visual">
+      <origin rpy="0 0 0" xyz="0.00357 -0.08741 -0.0729"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/upper_arm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_part">
+    <inertial>
+      <mass value="16.81067246564987"/>
+      <origin rpy="0 0 0" xyz="0.23003 0.01038 0.20527"/>
+      <inertia ixx="3.20922967583295" ixy="0.1811361599346656" ixz="-0.006723082654580219" iyy="14.662960288859963" iyz="1.2419706811357931" izz="13.912919701383359"/>
+    </inertial>
+    <collision name="front_part_collision">
+      <origin rpy="0 0 0" xyz="0.23003 0.01038 0.20527"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/front_part.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="front_part_visual">
+      <origin rpy="0 0 0" xyz="0.23003 0.01038 0.20527"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/front_part.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="left_wheel">
+    <inertial>
+      <mass value="13.340163929097853"/>
+      <origin rpy="0 0 0" xyz="0    -0.046  0"/>
+      <inertia ixx="2.1711695314274517" ixy="-4.661713033463329" ixz="0.21322209220250807" iyy="14.342326161889547" iyz="0.608246286975286" izz="15.441547158388715"/>
+    </inertial>
+    <collision name="left_wheel_collision">
+      <origin rpy="0 0 0" xyz="0    -0.046  0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/left_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="left_wheel_visual">
+      <origin rpy="0 0 0" xyz="0    -0.046  0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/left_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="right_wheel">
+    <inertial>
+      <mass value="13.340163929097852"/>
+      <origin rpy="0 0 0" xyz="0    0.004 0"/>
+      <inertia ixx="2.0973170247321944" ixy="4.555157860544093" ixz="-0.20834836515382574" iyy="14.34232616188958" iyz="0.608246286975689" izz="15.367694651693421"/>
+    </inertial>
+    <collision name="right_wheel_collision">
+      <origin rpy="0 0 0" xyz="0    0.004 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/right_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="right_wheel_visual">
+      <origin rpy="0 0 0" xyz="0    0.004 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/right_wheel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="pedal_right">
+    <inertial>
+      <mass value="0.946002588602011"/>
+      <origin rpy="0 0 0" xyz="4.0e-05 -4.2e-02  6.0e-05"/>
+      <inertia ixx="0.049584952858415854" ixy="-0.010901175565176115" ixz="-0.024062204564554247" iyy="0.03409659621083961" iyz="-0.012633073677194028" izz="0.02706062629596726"/>
+    </inertial>
+    <collision name="pedal_right_collision">
+      <origin rpy="0 0 0" xyz="4.0e-05 -4.2e-02  6.0e-05"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="pedal_right_visual">
+      <origin rpy="0 0 0" xyz="4.0e-05 -4.2e-02  6.0e-05"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="kurbel">
+    <inertial>
+      <mass value="2.7832708381108002"/>
+      <origin rpy="0 0 0" xyz="-0.00027  0.03513  0.001"/>
+      <inertia ixx="0.03321525556564324" ixy="0.0010218101556732108" ixz="-0.012937192477662387" iyy="0.04158688185273832" iyz="0.00030143634944108515" izz="0.039731070916127355"/>
+    </inertial>
+    <collision name="kurbel_collision">
+      <origin rpy="0 0 0" xyz="-0.00027  0.03513  0.001"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/kurbel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="kurbel_visual">
+      <origin rpy="0 0 0" xyz="-0.00027  0.03513  0.001"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/kurbel.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="pedal_left">
+    <inertial>
+      <mass value="0.9460025886020074"/>
+      <origin rpy="0 0 0" xyz="5.0e-05  4.2e-02 -5.0e-05"/>
+      <inertia ixx="0.0478650709459344" ixy="0.015160685733445756" ixz="-0.02334903344265402" iyy="0.037196017563940593" iyz="0.016827373941817436" izz="0.032585937449107163"/>
+    </inertial>
+    <collision name="pedal_left_collision">
+      <origin rpy="0 0 0" xyz="5.0e-05  4.2e-02 -5.0e-05"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="pedal_left_visual">
+      <origin rpy="0 0 0" xyz="5.0e-05  4.2e-02 -5.0e-05"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/pedal_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_left">
+    <inertial>
+      <mass value="0.729398908095776"/>
+      <origin rpy="0 0 0" xyz="-0.06202 -0.024   -0.03764"/>
+      <inertia ixx="0.054071148495108426" ixy="0.03251558359012369" ixz="-0.0267607053444042" iyy="0.06910655839384243" iyz="0.0335724905553697" izz="0.06736985121094373"/>
+    </inertial>
+    <collision name="foot_left_collision">
+      <origin rpy="0 0 0" xyz="-0.06202 -0.024   -0.03764"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="foot_left_visual">
+      <origin rpy="0 0 0" xyz="-0.06202 -0.024   -0.03764"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_left_tip">
+    <inertial>
+      <mass value="0.2779608699489159"/>
+      <origin rpy="0 0 0" xyz="-0.04104  0.00116 -0.00588"/>
+      <inertia ixx="0.022352432140469582" ixy="0.007051209655785971" ixz="-0.011047918197745182" iyy="0.017709776432523597" iyz="0.007965691481929648" izz="0.015032605387340966"/>
+    </inertial>
+    <collision name="foot_left_tip_collision">
+      <origin rpy="0 0 0" xyz="-0.04104  0.00116 -0.00588"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_left_tip.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="foot_left_tip_visual">
+      <origin rpy="0 0 0" xyz="-0.04104  0.00116 -0.00588"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_left_tip.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_right">
+    <inertial>
+      <mass value="0.7293896455411302"/>
+      <origin rpy="0 0 0" xyz="-0.06298 -0.0235  -0.03601"/>
+      <inertia ixx="0.04662856715772369" ixy="-0.027737155016923216" ixz="0.022589445195432944" iyy="0.06999772599908857" iyz="0.03393990029859617" izz="0.06080289056176407"/>
+    </inertial>
+    <collision name="foot_right_collision">
+      <origin rpy="0 0 0" xyz="-0.06298 -0.0235  -0.03601"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="foot_right_visual">
+      <origin rpy="0 0 0" xyz="-0.06298 -0.0235  -0.03601"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_right_tip">
+    <inertial>
+      <mass value="0.2779507369992495"/>
+      <origin rpy="0 0 0" xyz="-0.04109 -0.00116 -0.00545"/>
+      <inertia ixx="0.01940696459090884" ixy="-0.006044281399509727" ixz="0.00926827632383988" iyy="0.017755497306462906" iyz="0.008058438745184105" izz="0.012380586242452805"/>
+    </inertial>
+    <collision name="foot_right_tip_collision">
+      <origin rpy="0 0 0" xyz="-0.04109 -0.00116 -0.00545"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_right_tip.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="foot_right_tip_visual">
+      <origin rpy="0 0 0" xyz="-0.04109 -0.00116 -0.00545"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/foot_right_tip.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thigh_right">
+    <inertial>
+      <mass value="5.563526842051087"/>
+      <origin rpy="0 0 0" xyz="0.0043   0.0219  -0.11113"/>
+      <inertia ixx="1.010776410644986" ixy="-0.23394788163488325" ixz="-0.38955605197647547" iyy="1.116930895029097" iyz="-0.4818325951246939" izz="0.4914242463875166"/>
+    </inertial>
+    <collision name="thigh_right_collision">
+      <origin rpy="0 0 0" xyz="0.0043   0.0219  -0.11113"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thigh_right_visual">
+      <origin rpy="0 0 0" xyz="0.0043   0.0219  -0.11113"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thigh_left">
+    <inertial>
+      <mass value="5.56358906512719"/>
+      <origin rpy="0 0 0" xyz="0.00477 -0.01055 -0.11112"/>
+      <inertia ixx="1.0743469445640734" ixy="0.2706115436993354" ixz="0.4500933625889936" iyy="1.1181844164691626" iyz="-0.4831067929963112" izz="0.5561292948599905"/>
+    </inertial>
+    <collision name="thigh_left_collision">
+      <origin rpy="0 0 0" xyz="0.00477 -0.01055 -0.11112"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thigh_left_visual">
+      <origin rpy="0 0 0" xyz="0.00477 -0.01055 -0.11112"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thigh_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="leg_right">
+    <inertial>
+      <mass value="5.741522183296272"/>
+      <origin rpy="0 0 0" xyz="-0.00763  0.01363 -0.15031"/>
+      <inertia ixx="0.23781953163587924" ixy="-0.24551774910333893" ixz="-0.03496958960490945" iyy="0.3593991546848349" iyz="-0.03759074399885916" izz="0.5167551685561281"/>
+    </inertial>
+    <collision name="leg_right_collision">
+      <origin rpy="0 0 0" xyz="-0.00763  0.01363 -0.15031"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="leg_right_visual">
+      <origin rpy="0 0 0" xyz="-0.00763  0.01363 -0.15031"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="leg_left">
+    <inertial>
+      <mass value="5.7426173662328"/>
+      <origin rpy="0 0 0" xyz="-0.00899 -0.03366 -0.1502"/>
+      <inertia ixx="0.3024368006754475" ixy="0.28199913616735084" ixz="0.040011871670719415" iyy="0.357202809628062" iyz="-0.03813052890420756" izz="0.5789432910018966"/>
+    </inertial>
+    <collision name="leg_left_collision">
+      <origin rpy="0 0 0" xyz="-0.00899 -0.03366 -0.1502"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="leg_left_visual">
+      <origin rpy="0 0 0" xyz="-0.00899 -0.03366 -0.1502"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/leg_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="wheel_back">
+    <inertial>
+      <mass value="13.340163929098475"/>
+      <origin rpy="0 0 0" xyz="0    0.069 0"/>
+      <inertia ixx="0.5419188938328752" ixy="-0.02542584611932503" ixz="-0.0023401868697195947" iyy="4.894303401629515" iyz="-0.3539312731878215" izz="4.3547634684642125"/>
+    </inertial>
+    <collision name="wheel_back_collision">
+      <origin rpy="0 0 0" xyz="0    0.069 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wheel_back.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="wheel_back_visual">
+      <origin rpy="0 0 0" xyz="0    0.069 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wheel_back.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="left_shoulder_link1">
+    <inertial>
+      <mass value="0.046753530242572526"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.06767403176162043" ixy="0.0031396290483470734" ixz="0.016675979709794873" iyy="0.06552178683987907" iyz="-0.011912569008629326" izz="0.006643838018602061"/>
+    </inertial>
+    <collision name="left_shoulder_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/left_shoulder_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="left_shoulder_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/left_shoulder_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="left_shoulder_link2">
+    <inertial>
+      <mass value="0.03133730384743737"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.04535827893996492" ixy="0.0021043777578654633" ixz="0.011177303220150906" iyy="0.043915721516588194" iyz="-0.00798458486619213" izz="0.004451810061398645"/>
+    </inertial>
+    <collision name="left_shoulder_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/left_shoulder_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="left_shoulder_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/left_shoulder_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="right_shoulder_link1">
+    <inertial>
+      <mass value="0.046749002886596384"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.0668796020851593" ixy="-0.0028436269903427762" ixz="-0.015105873634725039" iyy="0.06551483087487732" iyz="-0.011909766198106813" izz="0.005854687475636317"/>
+    </inertial>
+    <collision name="right_shoulder_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/right_shoulder_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="right_shoulder_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/right_shoulder_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="right_shoulder_link2">
+    <inertial>
+      <mass value="0.031337303847116804"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.044830156212659796" ixy="-0.0019061688408127894" ixz="-0.01012592262164037" iyy="0.043915313236125075" iyz="-0.007983484644614952" izz="0.003923266667258534"/>
+    </inertial>
+    <collision name="right_shoulder_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/right_shoulder_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="right_shoulder_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/right_shoulder_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="zed_camera_left_lense">
+    <inertial>
+      <mass value="0.005755421853194863"/>
+      <origin rpy="0 0 0" xyz="-1.111e-02 -5.000e-05  2.130e-03"/>
+      <inertia ixx="0.013679771537511992" ixy="5.72652695406802e-05" ixz="0.000661564018696471" iyy="0.013750144489079944" iyz="-0.0011813078645769729" izz="0.00013472193497454725"/>
+    </inertial>
+    <collision name="zed_camera_left_lense_collision">
+      <origin rpy="0 0 0" xyz="-1.111e-02 -5.000e-05  2.130e-03"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/zed_camera_left_lense.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="zed_camera_left_lense_visual">
+      <origin rpy="0 0 0" xyz="-1.111e-02 -5.000e-05  2.130e-03"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/zed_camera_left_lense.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="zed_camera_right_lense">
+    <inertial>
+      <mass value="0.005755421851933069"/>
+      <origin rpy="0 0 0" xyz="-1.111e-02 -3.000e-05  2.130e-03"/>
+      <inertia ixx="0.013659411184738096" ixy="-3.469731790041828e-05" ixz="-0.0004019688608914974" iyy="0.013749436429721106" iyz="-0.0011779616636009426" izz="0.00011391462144360803"/>
+    </inertial>
+    <collision name="zed_camera_right_lense_collision">
+      <origin rpy="0 0 0" xyz="-1.111e-02 -3.000e-05  2.130e-03"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/zed_camera_right_lense.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="zed_camera_right_lense_visual">
+      <origin rpy="0 0 0" xyz="-1.111e-02 -3.000e-05  2.130e-03"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/zed_camera_right_lense.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="zed_camera">
+    <inertial>
+      <mass value="0.009633907998289159"/>
+      <origin rpy="0 0 0" xyz="-0.00124  0.01743 -0.00807"/>
+      <inertia ixx="0.02279266649825298" ixy="2.5926764582703765e-05" ixz="0.0002765123595065518" iyy="0.022975931882617272" iyz="-0.002141162452732364" izz="0.0002193906709609386"/>
+    </inertial>
+    <collision name="zed_camera_collision">
+      <origin rpy="0 0 0" xyz="-0.00124  0.01743 -0.00807"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/zed_camera.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="zed_camera_visual">
+      <origin rpy="0 0 0" xyz="-0.00124  0.01743 -0.00807"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/zed_camera.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_head_link1">
+    <inertial>
+      <mass value="0.017036882921238887"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.02992446859406041" ixy="5.114846276745976e-05" ixz="0.0003256118230617288" iyy="0.03065920943623709" iyz="-0.004699929149605903" izz="0.0007429387600478297"/>
+    </inertial>
+    <collision name="sphere_head_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/sphere_head_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="sphere_head_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/sphere_head_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_head_link2">
+    <inertial>
+      <mass value="0.011421079052524808"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.02006034319740515" ixy="3.428858870854763e-05" ixz="0.00021828161233831427" iyy="0.020552894461428918" iyz="-0.003150710630417199" izz="0.0004978040685432111"/>
+    </inertial>
+    <collision name="sphere_head_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/sphere_head_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="sphere_head_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/sphere_head_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="head">
+    <inertial>
+      <mass value="2.1188089198006224"/>
+      <origin rpy="0 0 0" xyz="0.04071 -0.0005   0.14369"/>
+      <inertia ixx="4.599596619665259" ixy="0.007886665640350255" ixz="0.046583123099830905" iyy="4.736715526700406" iyz="-0.7776869184469576" izz="0.15785270124247056"/>
+    </inertial>
+    <collision name="head_collision">
+      <origin rpy="0 0 0" xyz="0.04071 -0.0005   0.14369"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/head.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="head_visual">
+      <origin rpy="0 0 0" xyz="0.04071 -0.0005   0.14369"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/head.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="little_right_link2">
+    <inertial>
+      <mass value="0.007230564904666386"/>
+      <origin rpy="0 0 0" xyz="-0.00533  0.00926 -0.0069"/>
+      <inertia ixx="0.00844754881737185" ixy="-0.0016717256846055766" ixz="-0.004086825994589089" iyy="0.0036879821037301506" iyz="-0.001292278840354022" izz="0.005817180780529369"/>
+    </inertial>
+    <collision name="little_right_link2_collision">
+      <origin rpy="0 0 0" xyz="-0.00533  0.00926 -0.0069"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="little_right_link2_visual">
+      <origin rpy="0 0 0" xyz="-0.00533  0.00926 -0.0069"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="little_right_link0">
+    <inertial>
+      <mass value="0.010783208913438909"/>
+      <origin rpy="0 0 0" xyz="-0.00829  0.01387 -0.01107"/>
+      <inertia ixx="0.012367043466895366" ixy="-0.00232988608190317" ixz="-0.006109371663701634" iyy="0.006003251624155561" iyz="-0.001998744106830586" izz="0.007889121819399299"/>
+    </inertial>
+    <collision name="little_right_link0_collision">
+      <origin rpy="0 0 0" xyz="-0.00829  0.01387 -0.01107"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="little_right_link0_visual">
+      <origin rpy="0 0 0" xyz="-0.00829  0.01387 -0.01107"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="little_right_link1">
+    <inertial>
+      <mass value="0.008727399884658343"/>
+      <origin rpy="0 0 0" xyz="-0.008    0.01101 -0.00866"/>
+      <inertia ixx="0.010105036327609968" ixy="-0.001947516201001286" ixz="-0.004940183790417728" iyy="0.004619848536697083" iyz="-0.0015763175050061216" izz="0.006728786504275826"/>
+    </inertial>
+    <collision name="little_right_link1_collision">
+      <origin rpy="0 0 0" xyz="-0.008    0.01101 -0.00866"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="little_right_link1_visual">
+      <origin rpy="0 0 0" xyz="-0.008    0.01101 -0.00866"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="ring_right_link2">
+    <inertial>
+      <mass value="0.007230552864674504"/>
+      <origin rpy="0 0 0" xyz="-0.00639  0.00886 -0.0065"/>
+      <inertia ixx="0.008488987634079495" ixy="-0.0014422893175977246" ixz="-0.004092432946782776" iyy="0.0035084158367746235" iyz="-0.0010998563639696747" izz="0.005756295137618685"/>
+    </inertial>
+    <collision name="ring_right_link2_collision">
+      <origin rpy="0 0 0" xyz="-0.00639  0.00886 -0.0065"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="ring_right_link2_visual">
+      <origin rpy="0 0 0" xyz="-0.00639  0.00886 -0.0065"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="ring_right_link0">
+    <inertial>
+      <mass value="0.010783248840452798"/>
+      <origin rpy="0 0 0" xyz="-0.00992  0.01325 -0.01047"/>
+      <inertia ixx="0.012414898178048861" ixy="-0.0020508301340881976" ixz="-0.006120027515095472" iyy="0.005761788122486669" iyz="-0.0017360773271864654" izz="0.007817779405669642"/>
+    </inertial>
+    <collision name="ring_right_link0_collision">
+      <origin rpy="0 0 0" xyz="-0.00992  0.01325 -0.01047"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="ring_right_link0_visual">
+      <origin rpy="0 0 0" xyz="-0.00992  0.01325 -0.01047"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="ring_right_link1">
+    <inertial>
+      <mass value="0.00872746416092259"/>
+      <origin rpy="0 0 0" xyz="-0.00928  0.01042 -0.0081"/>
+      <inertia ixx="0.010149561482833908" ixy="-0.0016933565068352327" ixz="-0.004947874958369445" iyy="0.004414733369149532" iyz="-0.0013526392046900083" izz="0.006661665499802899"/>
+    </inertial>
+    <collision name="ring_right_link1_collision">
+      <origin rpy="0 0 0" xyz="-0.00928  0.01042 -0.0081"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="ring_right_link1_visual">
+      <origin rpy="0 0 0" xyz="-0.00928  0.01042 -0.0081"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="middle_right_link2">
+    <inertial>
+      <mass value="0.007230650401745365"/>
+      <origin rpy="0 0 0" xyz="-0.00707  0.00856 -0.00621"/>
+      <inertia ixx="0.008500854287556139" ixy="-0.0012476938264289865" ixz="-0.004104701457077143" iyy="0.0034402019364678503" iyz="-0.0009573068442030666" izz="0.005643178583406474"/>
+    </inertial>
+    <collision name="middle_right_link2_collision">
+      <origin rpy="0 0 0" xyz="-0.00707  0.00856 -0.00621"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="middle_right_link2_visual">
+      <origin rpy="0 0 0" xyz="-0.00707  0.00856 -0.00621"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="middle_right_link0">
+    <inertial>
+      <mass value="0.010783222786021226"/>
+      <origin rpy="0 0 0" xyz="-0.01096  0.01278 -0.01001"/>
+      <inertia ixx="0.012433613043271768" ixy="-0.001805688612972297" ixz="-0.006134928948914575" iyy="0.005674221087862887" iyz="-0.0015373102779523043" izz="0.007665717661803175"/>
+    </inertial>
+    <collision name="middle_right_link0_collision">
+      <origin rpy="0 0 0" xyz="-0.01096  0.01278 -0.01001"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="middle_right_link0_visual">
+      <origin rpy="0 0 0" xyz="-0.01096  0.01278 -0.01001"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="middle_right_link1">
+    <inertial>
+      <mass value="0.008727454453508098"/>
+      <origin rpy="0 0 0" xyz="-0.01009  0.00998 -0.00768"/>
+      <inertia ixx="0.010163853752980198" ixy="-0.0014748911218410256" ixz="-0.004961440588380607" iyy="0.0043389962082691" iyz="-0.0011853664474558144" izz="0.0065307472361486206"/>
+    </inertial>
+    <collision name="middle_right_link1_collision">
+      <origin rpy="0 0 0" xyz="-0.01009  0.00998 -0.00768"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="middle_right_link1_visual">
+      <origin rpy="0 0 0" xyz="-0.01009  0.00998 -0.00768"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="index_right_link2">
+    <inertial>
+      <mass value="0.007230613589821098"/>
+      <origin rpy="0 0 0" xyz="-0.0083   0.00787 -0.00556"/>
+      <inertia ixx="0.008498029515265326" ixy="-0.0010003395016302805" ixz="-0.0041184596389472776" iyy="0.0033951724444091654" iyz="-0.000778828582884532" izz="0.0054818716216465755"/>
+    </inertial>
+    <collision name="index_right_link2_collision">
+      <origin rpy="0 0 0" xyz="-0.0083   0.00787 -0.00556"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="index_right_link2_visual">
+      <origin rpy="0 0 0" xyz="-0.0083   0.00787 -0.00556"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="index_right_link0">
+    <inertial>
+      <mass value="0.010783226463222334"/>
+      <origin rpy="0 0 0" xyz="-0.01286  0.01171 -0.00901"/>
+      <inertia ixx="0.01243610136086843" ixy="-0.001514522125897847" ixz="-0.006148237114841062" iyy="0.005620922589857911" iyz="-0.001305979259153262" izz="0.007460419515803034"/>
+    </inertial>
+    <collision name="index_right_link0_collision">
+      <origin rpy="0 0 0" xyz="-0.01286  0.01171 -0.00901"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="index_right_link0_visual">
+      <origin rpy="0 0 0" xyz="-0.01286  0.01171 -0.00901"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="index_right_link1">
+    <inertial>
+      <mass value="0.008727441849375963"/>
+      <origin rpy="0 0 0" xyz="-0.01155  0.00901 -0.00678"/>
+      <inertia ixx="0.010162426172463936" ixy="-0.0012049130980499247" ixz="-0.00497539412198021" iyy="0.004292014324158273" iyz="-0.0009821728451054178" izz="0.006347559401626066"/>
+    </inertial>
+    <collision name="index_right_link1_collision">
+      <origin rpy="0 0 0" xyz="-0.01155  0.00901 -0.00678"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="index_right_link1_visual">
+      <origin rpy="0 0 0" xyz="-0.01155  0.00901 -0.00678"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_right_link2">
+    <inertial>
+      <mass value="0.007230558586521256"/>
+      <origin rpy="0 0 0" xyz="0.00934  0.00592 -0.00629"/>
+      <inertia ixx="0.007529565126577462" ixy="-0.0011902855020857258" ixz="-0.0037524150229174126" iyy="0.0038140681793013254" iyz="-0.0010986943575693965" izz="0.004413301222077684"/>
+    </inertial>
+    <collision name="thumb_right_link2_collision">
+      <origin rpy="0 0 0" xyz="0.00934  0.00592 -0.00629"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thumb_right_link2_visual">
+      <origin rpy="0 0 0" xyz="0.00934  0.00592 -0.00629"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_right_link0">
+    <inertial>
+      <mass value="0.010783131534927236"/>
+      <origin rpy="0 0 0" xyz="0.01445  0.00948 -0.00921"/>
+      <inertia ixx="0.011142002558176154" ixy="-0.001550241899037904" ixz="-0.005568115940637139" iyy="0.006149426938912064" iyz="-0.0015871353634802543" izz="0.00587849323091298"/>
+    </inertial>
+    <collision name="thumb_right_link0_collision">
+      <origin rpy="0 0 0" xyz="0.01445  0.00948 -0.00921"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thumb_right_link0_visual">
+      <origin rpy="0 0 0" xyz="0.01445  0.00948 -0.00921"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_right_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_right_link1">
+    <inertial>
+      <mass value="0.008726839160214994"/>
+      <origin rpy="0 0 0" xyz="0.01275  0.007   -0.00698"/>
+      <inertia ixx="0.009051747565890505" ixy="-0.0013635009423986735" ixz="-0.004522768730971857" iyy="0.004776043937501841" iyz="-0.0013187908359639123" izz="0.005072526532214788"/>
+    </inertial>
+    <collision name="thumb_right_link1_collision">
+      <origin rpy="0 0 0" xyz="0.01275  0.007   -0.00698"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thumb_right_link1_visual">
+      <origin rpy="0 0 0" xyz="0.01275  0.007   -0.00698"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="wrist_right_sphere_link1">
+    <inertial>
+      <mass value="0.06978284193305448"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.07851978202168397" ixy="-0.011316518301009272" ixz="-0.03862712797196871" iyy="0.050222277812235316" iyz="-0.013547342612687654" izz="0.0362470313845326"/>
+    </inertial>
+    <collision name="wrist_right_sphere_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wrist_right_sphere_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="wrist_right_sphere_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wrist_right_sphere_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="wrist_right_sphere_link2">
+    <inertial>
+      <mass value="0.0467775497412831"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.05263161457519681" ixy="-0.007585799881420901" ixz="-0.02589291745967604" iyy="0.03366296563526608" iyz="-0.009081193183496273" izz="0.024294910939130866"/>
+    </inertial>
+    <collision name="wrist_right_sphere_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wrist_right_sphere_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="wrist_right_sphere_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wrist_right_sphere_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="palm_right">
+    <inertial>
+      <mass value="0.41273188866593385"/>
+      <origin rpy="0 0 0" xyz="-0.00352  0.04482 -0.03851"/>
+      <inertia ixx="0.4659944484740799" ixy="-0.07017151633840833" ixz="-0.2315980652230987" iyy="0.27173072537241216" iyz="-0.07532376897936786" izz="0.2403980958320139"/>
+    </inertial>
+    <collision name="palm_right_collision">
+      <origin rpy="0 0 0" xyz="-0.00352  0.04482 -0.03851"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/palm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="palm_right_visual">
+      <origin rpy="0 0 0" xyz="-0.00352  0.04482 -0.03851"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/palm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="little_left_link2">
+    <inertial>
+      <mass value="0.007230544692585402"/>
+      <origin rpy="0 0 0" xyz="0.0025  -0.0098  -0.00772"/>
+      <inertia ixx="0.008920880258361583" ixy="0.0009743736267820488" ixz="0.004303486641826472" iyy="0.0034587316347614457" iyz="-0.0007447000804050939" izz="0.005799688502855049"/>
+    </inertial>
+    <collision name="little_left_link2_collision">
+      <origin rpy="0 0 0" xyz="0.0025  -0.0098  -0.00772"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="little_left_link2_visual">
+      <origin rpy="0 0 0" xyz="0.0025  -0.0098  -0.00772"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="little_left_link0">
+    <inertial>
+      <mass value="0.010783173954625098"/>
+      <origin rpy="0 0 0" xyz="0.00389 -0.0147  -0.01235"/>
+      <inertia ixx="0.013050537947837957" ixy="0.0015448938998691203" ixz="0.006427369765599661" iyy="0.005723599934643548" iyz="-0.001299861202817692" izz="0.007952348786091058"/>
+    </inertial>
+    <collision name="little_left_link0_collision">
+      <origin rpy="0 0 0" xyz="0.00389 -0.0147  -0.01235"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="little_left_link0_visual">
+      <origin rpy="0 0 0" xyz="0.00389 -0.0147  -0.01235"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="little_left_link1">
+    <inertial>
+      <mass value="0.008727381894054248"/>
+      <origin rpy="0 0 0" xyz="0.00449 -0.01186 -0.00997"/>
+      <inertia ixx="0.010668270119737738" ixy="0.0012219684355427216" ixz="0.0051983250610510125" iyy="0.004372675337793752" iyz="-0.0009734704573553792" izz="0.0067537630870727235"/>
+    </inertial>
+    <collision name="little_left_link1_collision">
+      <origin rpy="0 0 0" xyz="0.00449 -0.01186 -0.00997"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="little_left_link1_visual">
+      <origin rpy="0 0 0" xyz="0.00449 -0.01186 -0.00997"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/little_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="ring_left_link2">
+    <inertial>
+      <mass value="0.007230598064083806"/>
+      <origin rpy="0 0 0" xyz="0.004   -0.00946 -0.0075"/>
+      <inertia ixx="0.008928347943888085" ixy="0.0012287783920687059" ixz="0.0042884722257512725" iyy="0.0034911807104839997" iyz="-0.0009241193018912809" izz="0.005967098279851658"/>
+    </inertial>
+    <collision name="ring_left_link2_collision">
+      <origin rpy="0 0 0" xyz="0.004   -0.00946 -0.0075"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="ring_left_link2_visual">
+      <origin rpy="0 0 0" xyz="0.004   -0.00946 -0.0075"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="ring_left_link0">
+    <inertial>
+      <mass value="0.01078319636299043"/>
+      <origin rpy="0 0 0" xyz="0.0062  -0.01418 -0.01201"/>
+      <inertia ixx="0.013050353856718076" ixy="0.0018457311875845475" ixz="0.006412979579479117" iyy="0.005772461258785232" iyz="-0.0015332437248958364" izz="0.008161133515715705"/>
+    </inertial>
+    <collision name="ring_left_link0_collision">
+      <origin rpy="0 0 0" xyz="0.0062  -0.01418 -0.01201"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="ring_left_link0_visual">
+      <origin rpy="0 0 0" xyz="0.0062  -0.01418 -0.01201"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="ring_left_link1">
+    <inertial>
+      <mass value="0.008727381460149852"/>
+      <origin rpy="0 0 0" xyz="0.00634 -0.01132 -0.00959"/>
+      <inertia ixx="0.0106720870988414" ixy="0.001500573385804876" ixz="0.005183289283126989" iyy="0.00441474733162996" iyz="-0.0011784768980072368" izz="0.006940322536460743"/>
+    </inertial>
+    <collision name="ring_left_link1_collision">
+      <origin rpy="0 0 0" xyz="0.00634 -0.01132 -0.00959"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="ring_left_link1_visual">
+      <origin rpy="0 0 0" xyz="0.00634 -0.01132 -0.00959"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/ring_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="middle_left_link2">
+    <inertial>
+      <mass value="0.007230534463346676"/>
+      <origin rpy="0 0 0" xyz="0.00483 -0.00921 -0.00732"/>
+      <inertia ixx="0.008918428027545364" ixy="0.001434054012472262" ixz="0.004275232975691135" iyy="0.003552984068267793" iyz="-0.0010708879374729916" izz="0.006084250285497725"/>
+    </inertial>
+    <collision name="middle_left_link2_collision">
+      <origin rpy="0 0 0" xyz="0.00483 -0.00921 -0.00732"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="middle_left_link2_visual">
+      <origin rpy="0 0 0" xyz="0.00483 -0.00921 -0.00732"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="middle_left_link0">
+    <inertial>
+      <mass value="0.010783098914055156"/>
+      <origin rpy="0 0 0" xyz="0.00748 -0.01378 -0.01174"/>
+      <inertia ixx="0.013031975769836177" ixy="0.002101771045467862" ixz="0.006397203441008441" iyy="0.005858047706991271" iyz="-0.0017359086798026798" izz="0.008315355985877862"/>
+    </inertial>
+    <collision name="middle_left_link0_collision">
+      <origin rpy="0 0 0" xyz="0.00748 -0.01378 -0.01174"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="middle_left_link0_visual">
+      <origin rpy="0 0 0" xyz="0.00748 -0.01378 -0.01174"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="middle_left_link1">
+    <inertial>
+      <mass value="0.008727362475596008"/>
+      <origin rpy="0 0 0" xyz="0.00736 -0.01093 -0.00931"/>
+      <inertia ixx="0.010658338230062873" ixy="0.0017300647056782534" ixz="0.005168885794635884" iyy="0.004488791514126454" iyz="-0.001350209361788327" izz="0.007074133817852468"/>
+    </inertial>
+    <collision name="middle_left_link1_collision">
+      <origin rpy="0 0 0" xyz="0.00736 -0.01093 -0.00931"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="middle_left_link1_visual">
+      <origin rpy="0 0 0" xyz="0.00736 -0.01093 -0.00931"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/middle_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="index_left_link2">
+    <inertial>
+      <mass value="0.007230503768900909"/>
+      <origin rpy="0 0 0" xyz="0.00584 -0.00883 -0.00705"/>
+      <inertia ixx="0.008873590522653452" ixy="0.0016681634092363116" ixz="0.004267944140816444" iyy="0.0037194258983734075" iyz="-0.0012606859497716982" izz="0.0061400962586935165"/>
+    </inertial>
+    <collision name="index_left_link2_collision">
+      <origin rpy="0 0 0" xyz="0.00584 -0.00883 -0.00705"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="index_left_link2_visual">
+      <origin rpy="0 0 0" xyz="0.00584 -0.00883 -0.00705"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="index_left_link0">
+    <inertial>
+      <mass value="0.01078315363645507"/>
+      <origin rpy="0 0 0" xyz="0.00903 -0.0132  -0.01131"/>
+      <inertia ixx="0.0129757401236309" ixy="0.002388541236316474" ixz="0.0063846227873153825" iyy="0.0060930376728418065" iyz="-0.001998193742237074" izz="0.00837873716964178"/>
+    </inertial>
+    <collision name="index_left_link0_collision">
+      <origin rpy="0 0 0" xyz="0.00903 -0.0132  -0.01131"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="index_left_link0_visual">
+      <origin rpy="0 0 0" xyz="0.00903 -0.0132  -0.01131"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="index_left_link1">
+    <inertial>
+      <mass value="0.008727346342048834"/>
+      <origin rpy="0 0 0" xyz="0.00859 -0.01037 -0.00889"/>
+      <inertia ixx="0.010607370368679802" ixy="0.0019895981922273785" ixz="0.005159591614657695" iyy="0.004687020948416652" iyz="-0.001572445371030485" izz="0.007133932177059939"/>
+    </inertial>
+    <collision name="index_left_link1_collision">
+      <origin rpy="0 0 0" xyz="0.00859 -0.01037 -0.00889"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="index_left_link1_visual">
+      <origin rpy="0 0 0" xyz="0.00859 -0.01037 -0.00889"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/index_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_left_link2">
+    <inertial>
+      <mass value="0.00723049056417055"/>
+      <origin rpy="0 0 0" xyz="-0.00105 -0.00926 -0.00866"/>
+      <inertia ixx="0.007904131551100644" ixy="0.0012703680949582834" ixz="0.003931393372166252" iyy="0.0039261208433535285" iyz="-0.0011485070066483167" izz="0.004720525292561909"/>
+    </inertial>
+    <collision name="thumb_left_link2_collision">
+      <origin rpy="0 0 0" xyz="-0.00105 -0.00926 -0.00866"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thumb_left_link2_visual">
+      <origin rpy="0 0 0" xyz="-0.00105 -0.00926 -0.00866"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_left_link0">
+    <inertial>
+      <mass value="0.010783039116982735"/>
+      <origin rpy="0 0 0" xyz="-0.00165 -0.01466 -0.01289"/>
+      <inertia ixx="0.01169520211112829" ixy="0.0016153324035202534" ixz="0.005845475018461105" iyy="0.006268874743371903" iyz="-0.001608904130526376" izz="0.006315959812178764"/>
+    </inertial>
+    <collision name="thumb_left_link0_collision">
+      <origin rpy="0 0 0" xyz="-0.00165 -0.01466 -0.01289"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thumb_left_link0_visual">
+      <origin rpy="0 0 0" xyz="-0.00165 -0.01466 -0.01289"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_left_link0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_left_link1">
+    <inertial>
+      <mass value="0.00872735081798693"/>
+      <origin rpy="0 0 0" xyz="-0.00267 -0.01196 -0.0105"/>
+      <inertia ixx="0.009507203688669105" ixy="0.0014232195177277817" ixz="0.004743991528645311" iyy="0.004875188349125674" iyz="-0.0013416019875791864" izz="0.005437352140995432"/>
+    </inertial>
+    <collision name="thumb_left_link1_collision">
+      <origin rpy="0 0 0" xyz="-0.00267 -0.01196 -0.0105"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="thumb_left_link1_visual">
+      <origin rpy="0 0 0" xyz="-0.00267 -0.01196 -0.0105"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/thumb_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="wrist_left_sphere_link1">
+    <inertial>
+      <mass value="0.06978284193312742"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.08207685574030728" ixy="0.011741615977790195" ixz="0.04058903845103665" iyy="0.05099854561667496" iyz="-0.013610540338370846" izz="0.03896448438178479"/>
+    </inertial>
+    <collision name="wrist_left_sphere_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wrist_left_sphere_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="wrist_left_sphere_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wrist_left_sphere_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="wrist_left_sphere_link2">
+    <inertial>
+      <mass value="0.04677754976643715"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.055016079037549015" ixy="0.00787076434195812" ixz="0.02720807504957858" iyy="0.034183321444323636" iyz="-0.009123556532480015" izz="0.026116552220382266"/>
+    </inertial>
+    <collision name="wrist_left_sphere_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wrist_left_sphere_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="wrist_left_sphere_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/wrist_left_sphere_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="palm_left">
+    <inertial>
+      <mass value="0.4014213812126051"/>
+      <origin rpy="0 0 0" xyz="-0.00322 -0.0427  -0.03955"/>
+      <inertia ixx="0.4725658096435932" ixy="0.07053157061188525" ixz="0.23525005817609687" iyy="0.2679013471323983" iyz="-0.0736106812620326" izz="0.24928388635952062"/>
+    </inertial>
+    <collision name="palm_left_collision">
+      <origin rpy="0 0 0" xyz="-0.00322 -0.0427  -0.03955"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/palm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="palm_left_visual">
+      <origin rpy="0 0 0" xyz="-0.00322 -0.0427  -0.03955"/>
+      <geometry>
+        <mesh filename="package://robots/rikshaw/meshes/CAD/palm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
