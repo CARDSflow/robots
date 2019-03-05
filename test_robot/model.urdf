@@ -1,0 +1,177 @@
+<robot name="test_robot">
+  <joint name="joint0" type="prismatic">
+    <parent link="base" />
+    <child link="link0" />
+    <origin rpy="0  0  0" xyz="0    0    0.01" />
+    <axis xyz="1  0  0" />
+    <limit effort="0.0" lower="-0.25" upper="0.25" velocity="0.0" />
+  </joint>
+  <joint name="joint1" type="prismatic">
+    <parent link="link0" />
+    <child link="link1" />
+    <origin rpy="0  0  0" xyz="0    0    0.01" />
+    <axis xyz="0  1  0" />
+    <limit effort="0.0" lower="-0.25" upper="0.25" velocity="0.0" />
+  </joint>
+  <joint name="joint2" type="prismatic">
+    <parent link="link1" />
+    <child link="link2" />
+    <origin rpy="0  0  0" xyz="0  0  0" />
+    <axis xyz="0  0  1" />
+    <limit effort="0.0" lower="0.0" upper="0.5" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis0" type="revolute">
+    <parent link="link2" />
+    <child link="link3" />
+    <origin rpy="0  0  0" xyz="-0.005  0     0.528" />
+    <axis xyz="1  0  0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis1" type="revolute">
+    <parent link="link3" />
+    <child link="link4" />
+    <origin rpy="0  0  0" xyz="0  0  0" />
+    <axis xyz="0  1  0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis2" type="revolute">
+    <parent link="link4" />
+    <child link="link5" />
+    <origin rpy="0  0  0" xyz="0  0  0" />
+    <axis xyz="0  0  1" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <link name="base">
+    <inertial>
+      <mass value="61.94396425397244" />
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <inertia ixx="4.030776202710464" ixy="-1.091393642127514e-15" ixz="-5.968558980384842e-17" iyy="4.030776202710346" iyz="-1.1368683772161604e-17" izz="7.775324141234855" />
+    </inertial>
+    <collision name="base_collision">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/collisions/base.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="base_visual">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/visuals/base.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="link0">
+    <inertial>
+      <mass value="0.26666504410640257" />
+      <origin rpy="0  0  0" xyz="0       0       0.00506" />
+      <inertia ixx="0.00011810660112508352" ixy="8.881784197001253e-20" ixz="-2.7755575615628915e-21" iyy="0.005679638141654712" iyz="4.60964599824365e-17" izz="0.00567196902024502" />
+    </inertial>
+    <collision name="link0_collision">
+      <origin rpy="0  0  0" xyz="0       0       0.00506" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/collisions/link0.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="link0_visual">
+      <origin rpy="0  0  0" xyz="0       0       0.00506" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/visuals/link0.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="link1">
+    <inertial>
+      <mass value="0.2666650441064026" />
+      <origin rpy="0  0  0" xyz="0       0      -0.00493" />
+      <inertia ixx="0.005679638141653147" ixy="1.721733866588693e-16" ixz="-1.70086167372574e-17" iyy="0.00011810660112684548" iyz="1.7136292385089293e-17" izz="0.005671969020245216" />
+    </inertial>
+    <collision name="link1_collision">
+      <origin rpy="0  0  0" xyz="0       0      -0.00493" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/collisions/link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="link1_visual">
+      <origin rpy="0  0  0" xyz="0       0      -0.00493" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/visuals/link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="link2">
+    <inertial>
+      <mass value="0.2747992576927284" />
+      <origin rpy="0  0  0" xyz="-0.005    0       0.25983" />
+      <inertia ixx="0.027815452473875076" ixy="-9.120851776393471e-10" ixz="9.694468713542931e-08" iyy="0.027769322425034035" iyz="0.0003844905298372498" izz="6.586545049189735e-05" />
+    </inertial>
+    <collision name="link2_collision">
+      <origin rpy="0  0  0" xyz="-0.005    0       0.25983" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/collisions/link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="link2_visual">
+      <origin rpy="0  0  0" xyz="-0.005    0       0.25983" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/visuals/link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="link3">
+    <inertial>
+      <mass value="0.006313292906675941" />
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <inertia ixx="0.001896713792328032" ixy="5.255670031123483e-21" ixz="-5.891120924417237e-19" iyy="0.0018968716246506995" iyz="1.72984225642923e-05" izz="9.645116042849931e-07" />
+    </inertial>
+    <collision name="link3_collision">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/collisions/link3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="link3_visual">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/visuals/link3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="link4">
+    <inertial>
+      <mass value="0.004231987036121513" />
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <inertia ixx="0.001271247036360482" ixy="-1.1568734416139985e-15" ixz="1.2939630859853946e-13" iyy="0.0012713528360411624" iyz="1.1595644477291761e-05" izz="4.702015114956135e-07" />
+    </inertial>
+    <collision name="link4_collision">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/collisions/link4.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="link4_visual">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/visuals/link4.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="link5">
+    <inertial>
+      <mass value="3.5165548311700805" />
+      <origin rpy="0  0  0" xyz="0.0001   0.0001   0.09308" />
+      <inertia ixx="1.458491213239523" ixy="1.8731730927313555e-06" ixz="-0.000269736920250679" iyy="1.4585859953997353" iyz="0.010989203959695593" izz="0.013303908390296016" />
+    </inertial>
+    <collision name="link5_collision">
+      <origin rpy="0  0  0" xyz="0.0001   0.0001   0.09308" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/collisions/link5.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="link5_visual">
+      <origin rpy="0  0  0" xyz="0.0001   0.0001   0.09308" />
+      <geometry>
+        <mesh filename="package://robots/TestRobot/meshes/visuals/link5.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+</robot>

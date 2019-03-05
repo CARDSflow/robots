@@ -1,0 +1,307 @@
+<sdf version="1.6">
+	<model name="test_robot">
+		<link name="base">
+			<self_collide>false</self_collide>
+			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>61.94396425397244</mass>
+				<inertia>
+					<ixx>4.030776202710464</ixx>
+					<ixy>-1.091393642127514e-15</ixy>
+					<ixz>-5.968558980384842e-17</ixz>
+					<iyy>4.030776202710346</iyy>
+					<iyz>-1.1368683772161604e-17</iyz>
+					<izz>7.775324141234855</izz>
+				</inertia>
+			</inertial>
+			<collision name="base_collision">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/collisions/base.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="base_visual">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/visuals/base.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="link0">
+			<self_collide>false</self_collide>
+			<pose frame="">-8.214312584259862e-15 0.0 0.015062439533909747 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.26666504410640257</mass>
+				<inertia>
+					<ixx>0.00011810660112508352</ixx>
+					<ixy>8.881784197001253e-20</ixy>
+					<ixz>-2.7755575615628915e-21</ixz>
+					<iyy>0.005679638141654712</iyy>
+					<iyz>4.60964599824365e-17</iyz>
+					<izz>0.00567196902024502</izz>
+				</inertia>
+			</inertial>
+			<collision name="link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/collisions/link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/visuals/link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="link1">
+			<self_collide>false</self_collide>
+			<pose frame="">-3.1990230268275066e-15 3.2557488296458242e-15 0.015062439533909748 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.2666650441064026</mass>
+				<inertia>
+					<ixx>0.005679638141653147</ixx>
+					<ixy>1.721733866588693e-16</ixy>
+					<ixz>-1.70086167372574e-17</ixz>
+					<iyy>0.00011810660112684548</iyy>
+					<iyz>1.7136292385089293e-17</iyz>
+					<izz>0.005671969020245216</izz>
+				</inertia>
+			</inertial>
+			<collision name="link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/collisions/link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/visuals/link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="link2">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.00499999754889011 -6.631505517127593e-07 0.27983401061456564 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.2747992576927284</mass>
+				<inertia>
+					<ixx>0.027815452473875076</ixx>
+					<ixy>-9.120851776393471e-10</ixy>
+					<ixz>9.694468713542931e-08</ixz>
+					<iyy>0.027769322425034035</iyy>
+					<iyz>0.0003844905298372498</iyz>
+					<izz>6.586545049189735e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/collisions/link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/visuals/link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="link3">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.0050000000000000626 1.703593625393671e-16 0.5480000000000005 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.006313292906675941</mass>
+				<inertia>
+					<ixx>0.001896713792328032</ixx>
+					<ixy>5.255670031123483e-21</ixy>
+					<ixz>-5.891120924417237e-19</ixz>
+					<iyy>0.0018968716246506995</iyy>
+					<iyz>1.72984225642923e-05</iyz>
+					<izz>9.645116042849931e-07</izz>
+				</inertia>
+			</inertial>
+			<collision name="link3_collision">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/collisions/link3.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="link3_visual">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/visuals/link3.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="link4">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.00500000000000006 -5.467282769816466e-11 0.5479999999205426 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.004231987036121513</mass>
+				<inertia>
+					<ixx>0.001271247036360482</ixx>
+					<ixy>-1.1568734416139985e-15</ixy>
+					<ixz>1.2939630859853946e-13</ixz>
+					<iyy>0.0012713528360411624</iyy>
+					<iyz>1.1595644477291761e-05</iyz>
+					<izz>4.702015114956135e-07</izz>
+				</inertia>
+			</inertial>
+			<collision name="link4_collision">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/collisions/link4.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="link4_visual">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/visuals/link4.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="link5">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.004893465268357571 0.00010653453408870285 0.6410850414206763 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>3.5165548311700805</mass>
+				<inertia>
+					<ixx>1.458491213239523</ixx>
+					<ixy>1.8731730927313555e-06</ixy>
+					<ixz>-0.000269736920250679</ixz>
+					<iyy>1.4585859953997353</iyy>
+					<iyz>0.010989203959695593</iyz>
+					<izz>0.013303908390296016</izz>
+				</inertia>
+			</inertial>
+			<collision name="link5_collision">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/collisions/link5.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="link5_visual">
+				<geometry>
+					<mesh>
+						<uri>model://TestRobot/meshes/visuals/link5.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<joint name="joint0" type="prismatic">
+			<parent>base</parent>
+			<child>link0</child>
+			<pose frame="">8.214312584259862e-15 0.0 -0.0050624395339097465 0 0 0</pose>
+			<axis>
+				<xyz>1.0 0.0 0.0</xyz>
+				<limit>
+					<lower>-0.25</lower>
+					<upper>0.25</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint1" type="prismatic">
+			<parent>link0</parent>
+			<child>link1</child>
+			<pose frame="">3.1990230268275066e-15 -3.2557488296458242e-15 0.004937560466090252 0 0 0</pose>
+			<axis>
+				<xyz>0.0 1.0 0.0</xyz>
+				<limit>
+					<lower>-0.25</lower>
+					<upper>0.25</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="joint2" type="prismatic">
+			<parent>link1</parent>
+			<child>link2</child>
+			<pose frame="">0.0049999975488901815 6.631505516606933e-07 -0.2598340106145657 0 0 0</pose>
+			<axis>
+				<xyz>0.0 0 1.0</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.5</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="sphere_axis0" type="revolute">
+			<parent>link2</parent>
+			<child>link3</child>
+			<pose frame="">-4.440892098500626e-18 1.948081707193246e-17 1.4210854715202004e-16 0 0 0</pose>
+			<axis>
+				<xyz>1.0 0.0 0.0</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="sphere_axis1" type="revolute">
+			<parent>link3</parent>
+			<child>link4</child>
+			<pose frame="">-6.661338147750939e-18 5.467301753834427e-11 7.945800462039187e-11 0 0 0</pose>
+			<axis>
+				<xyz>0.0 1.0 0</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="sphere_axis2" type="revolute">
+			<parent>link4</parent>
+			<child>link5</child>
+			<pose frame="">-0.00010653473164249971 -0.000106534534088513 -0.0930850414206757 0 0 0</pose>
+			<axis>
+				<xyz>0 0 1.0</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin" />
+	</model>
+</sdf>
