@@ -3,196 +3,196 @@
 #  type: cardsflow/kindyn/CableLengthController
 #  type: cardsflow/kindyn/CableLengthVelocityController
 #  type: cardsflow/kindyn/ForcePositionController
-rikshaw__joint_hip_left:
-  joint: rikshaw__joint_hip_left
+joint_hip_left:
+  joint: joint_hip_left
   type: cardsflow/kindyn/CableLengthController
-rikshaw__joint_hip_right:
-  joint: rikshaw__joint_hip_right
+joint_hip_right:
+  joint: joint_hip_right
   type: cardsflow/kindyn/CableLengthController
-rikshaw__joint_knee_left:
-  joint: rikshaw__joint_knee_left
+joint_knee_left:
+  joint: joint_knee_left
   type: cardsflow/kindyn/CableLengthController
-rikshaw__joint_knee_right:
-  joint: rikshaw__joint_knee_right
+joint_knee_right:
+  joint: joint_knee_right
   type: cardsflow/kindyn/CableLengthController
-rikshaw__joint_foot_left:
-  joint: rikshaw__joint_foot_left
+joint_foot_left:
+  joint: joint_foot_left
   type: cardsflow/kindyn/CableLengthController
-rikshaw__joint_foot_right:
-  joint: rikshaw__joint_foot_right
-  type: cardsflow/kindyn/CableLengthController
-
-rikshaw__left_shoulder_axis0:
-  joint: rikshaw__left_shoulder_axis0
-  type: cardsflow/kindyn/CableLengthController
-rikshaw__left_shoulder_axis1:
-  joint: rikshaw__left_shoulder_axis1
-  type: cardsflow/kindyn/CableLengthController
-rikshaw__left_shoulder_axis2:
-  joint: rikshaw__left_shoulder_axis2
-  type: cardsflow/kindyn/CableLengthController
-rikshaw__elbow_left:
-  joint: rikshaw__elbow_left_rot0
-  type: cardsflow/kindyn/CableLengthController
-rikshaw__wrist_left_sphere_axis0:
-  joint: rikshaw__wrist_left_sphere_axis0
-  type: cardsflow/kindyn/CableLengthController
-rikshaw__wrist_left_sphere_axis1:
-  joint: rikshaw__wrist_left_sphere_axis1
-  type: cardsflow/kindyn/CableLengthController
-rikshaw__wrist_left_sphere_axis2:
-  joint: rikshaw__wrist_left_sphere_axis2
+joint_foot_right:
+  joint: joint_foot_right
   type: cardsflow/kindyn/CableLengthController
 
-rikshaw__right_shoulder_axis0:
-  joint: rikshaw__right_shoulder_axis0
+left_shoulder_axis0:
+  joint: left_shoulder_axis0
   type: cardsflow/kindyn/CableLengthController
-rikshaw__right_shoulder_axis1:
-  joint: rikshaw__right_shoulder_axis1
+left_shoulder_axis1:
+  joint: left_shoulder_axis1
   type: cardsflow/kindyn/CableLengthController
-rikshaw__right_shoulder_axis2:
-  joint: rikshaw__right_shoulder_axis2
+left_shoulder_axis2:
+  joint: left_shoulder_axis2
   type: cardsflow/kindyn/CableLengthController
-rikshaw__elbow_right:
-  joint: rikshaw__elbow_right
+elbow_left:
+  joint: elbow_left
   type: cardsflow/kindyn/CableLengthController
-rikshaw__wrist_right_sphere_axis0:
-  joint: rikshaw__wrist_right_sphere_axis0
+wrist_left_sphere_axis0:
+  joint: wrist_left_sphere_axis0
   type: cardsflow/kindyn/CableLengthController
-rikshaw__wrist_right_sphere_axis1:
-  joint: rikshaw__wrist_right_sphere_axis1
+wrist_left_sphere_axis1:
+  joint: wrist_left_sphere_axis1
   type: cardsflow/kindyn/CableLengthController
-rikshaw__wrist_right_sphere_axis2:
-  joint: rikshaw__wrist_right_sphere_axis2
+wrist_left_sphere_axis2:
+  joint: wrist_left_sphere_axis2
   type: cardsflow/kindyn/CableLengthController
 
-rikshaw__little_right_joint0:
-  joint: rikshaw__little_right_joint0
+right_shoulder_axis0:
+  joint: right_shoulder_axis0
+  type: cardsflow/kindyn/CableLengthController
+right_shoulder_axis1:
+  joint: right_shoulder_axis1
+  type: cardsflow/kindyn/CableLengthController
+right_shoulder_axis2:
+  joint: right_shoulder_axis2
+  type: cardsflow/kindyn/CableLengthController
+elbow_right:
+  joint: elbow_right
+  type: cardsflow/kindyn/CableLengthController
+wrist_right_sphere_axis0:
+  joint: wrist_right_sphere_axis0
+  type: cardsflow/kindyn/CableLengthController
+wrist_right_sphere_axis1:
+  joint: wrist_right_sphere_axis1
+  type: cardsflow/kindyn/CableLengthController
+wrist_right_sphere_axis2:
+  joint: wrist_right_sphere_axis2
+  type: cardsflow/kindyn/CableLengthController
+
+little_right_joint0:
+  joint: little_right_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__ring_right_joint0:
-  joint: rikshaw__ring_right_joint0
+ring_right_joint0:
+  joint: ring_right_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__middle_right_joint0:
-  joint: rikshaw__middle_right_joint0
+middle_right_joint0:
+  joint: middle_right_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__index_right_joint0:
-  joint: rikshaw__index_right_joint0
+index_right_joint0:
+  joint: index_right_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__thumb_right_joint0:
-  joint: rikshaw__thumb_right_joint0
+thumb_right_joint0:
+  joint: thumb_right_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__little_right_joint1:
-  joint: rikshaw__little_right_joint1
+little_right_joint1:
+  joint: little_right_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__ring_right_joint1:
-  joint: rikshaw__ring_right_joint1
+ring_right_joint1:
+  joint: ring_right_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__middle_right_joint1:
-  joint: rikshaw__middle_right_joint1
+middle_right_joint1:
+  joint: middle_right_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__index_right_joint1:
-  joint: rikshaw__index_right_joint1
+index_right_joint1:
+  joint: index_right_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__thumb_right_joint1:
-  joint: rikshaw__thumb_right_joint1
+thumb_right_joint1:
+  joint: thumb_right_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__little_right_joint2:
-  joint: rikshaw__little_right_joint2
+little_right_joint2:
+  joint: little_right_joint2
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__ring_right_joint2:
-  joint: rikshaw__ring_right_joint2
+ring_right_joint2:
+  joint: ring_right_joint2
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__middle_right_joint2:
-  joint: rikshaw__middle_right_joint2
+middle_right_joint2:
+  joint: middle_right_joint2
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__index_right_joint2:
-  joint: rikshaw__index_right_joint2
+index_right_joint2:
+  joint: index_right_joint2
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__thumb_right_joint2:
-  joint: rikshaw__thumb_right_joint2
+thumb_right_joint2:
+  joint: thumb_right_joint2
   type: cardsflow/kindyn/TorquePositionController
 
-rikshaw__little_left_joint0:
-  joint: rikshaw__little_left_joint0
+little_left_joint0:
+  joint: little_left_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__ring_left_joint0:
-  joint: rikshaw__ring_left_joint0
+ring_left_joint0:
+  joint: ring_left_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__middle_left_joint0:
-  joint: rikshaw__middle_left_joint0
+middle_left_joint0:
+  joint: middle_left_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__index_left_joint0:
-  joint: rikshaw__index_left_joint0
+index_left_joint0:
+  joint: index_left_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__thumb_left_joint0:
-  joint: rikshaw__thumb_left_joint0
+thumb_left_joint0:
+  joint: thumb_left_joint0
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__little_left_joint1:
-  joint: rikshaw__little_left_joint1
+little_left_joint1:
+  joint: little_left_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__ring_left_joint1:
-  joint: rikshaw__ring_left_joint1
+ring_left_joint1:
+  joint: ring_left_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__middle_left_joint1:
-  joint: rikshaw__middle_left_joint1
+middle_left_joint1:
+  joint: middle_left_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__index_left_joint1:
-  joint: rikshaw__index_left_joint1
+index_left_joint1:
+  joint: index_left_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__thumb_left_joint1:
-  joint: rikshaw__thumb_left_joint1
+thumb_left_joint1:
+  joint: thumb_left_joint1
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__little_left_joint2:
-  joint: rikshaw__little_left_joint2
+little_left_joint2:
+  joint: little_left_joint2
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__ring_left_joint2:
-  joint: rikshaw__ring_left_joint2
+ring_left_joint2:
+  joint: ring_left_joint2
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__middle_left_joint2:
-  joint: rikshaw__middle_left_joint2
+middle_left_joint2:
+  joint: middle_left_joint2
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__index_left_joint2:
-  joint: rikshaw__index_left_joint2
+index_left_joint2:
+  joint: index_left_joint2
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__thumb_left_joint2:
-  joint: rikshaw__thumb_left_joint2
+thumb_left_joint2:
+  joint: thumb_left_joint2
   type: cardsflow/kindyn/TorquePositionController
 
-rikshaw__spine_joint:
+spine_joint:
   joint: spine_joint
   type: cardsflow/kindyn/CableLengthController
-rikshaw__sphere_head_axis0:
-  joint: rikshaw__sphere_head_axis0
+sphere_head_axis0:
+  joint: sphere_head_axis0
   type: cardsflow/kindyn/CableLengthController
-rikshaw__sphere_head_axis1:
-  joint: rikshaw__sphere_head_axis1
+sphere_head_axis1:
+  joint: sphere_head_axis1
   type: cardsflow/kindyn/CableLengthController
-rikshaw__sphere_head_axis2:
-  joint: rikshaw__sphere_head_axis2
+sphere_head_axis2:
+  joint: sphere_head_axis2
   type: cardsflow/kindyn/CableLengthController
 
 
-rikshjoint_wheel_right:
-  joint: rikshaw__joint_wheel_right
+joint_wheel_right:
+  joint: joint_wheel_right
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__joint_wheel_back:
-  joint: rikshaw__joint_wheel_back
+joint_wheel_back:
+  joint: joint_wheel_back
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__joint_pedal:
-  joint: rikshaw__joint_pedal
+joint_pedal:
+  joint: joint_pedal
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__joint_wheel_left:
-  joint: rikshaw__joint_wheel_left
+joint_wheel_left:
+  joint: joint_wheel_left
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__joint_front:
-  joint: rikshaw__joint_front
+joint_front:
+  joint: joint_front
   type: cardsflow/kindyn/CableLengthController
-rikshaw__joint_pedal_right:
-  joint: rikshaw__joint_pedal_right
+joint_pedal_right:
+  joint: joint_pedal_right
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__joint_wheel_back:
-  joint: rikshaw__joint_wheel_back
+joint_wheel_back:
+  joint: joint_wheel_back
   type: cardsflow/kindyn/TorquePositionController
-rikshaw__joint_pedal_left:
-  joint: rikshaw__joint_pedal_left
+joint_pedal_left:
+  joint: joint_pedal_left
   type: cardsflow/kindyn/TorquePositionController
