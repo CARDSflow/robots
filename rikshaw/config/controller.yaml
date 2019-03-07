@@ -37,12 +37,7 @@ elbow_left:
 wrist_left_sphere_axis0:
   joint: wrist_left_sphere_axis0
   type: cardsflow/kindyn/CableLengthController
-wrist_left_sphere_axis1:
-  joint: wrist_left_sphere_axis1
-  type: cardsflow/kindyn/CableLengthController
-wrist_left_sphere_axis2:
-  joint: wrist_left_sphere_axis2
-  type: cardsflow/kindyn/CableLengthController
+
 
 right_shoulder_axis0:
   joint: right_shoulder_axis0
@@ -59,104 +54,6 @@ elbow_right:
 wrist_right_sphere_axis0:
   joint: wrist_right_sphere_axis0
   type: cardsflow/kindyn/CableLengthController
-wrist_right_sphere_axis1:
-  joint: wrist_right_sphere_axis1
-  type: cardsflow/kindyn/CableLengthController
-wrist_right_sphere_axis2:
-  joint: wrist_right_sphere_axis2
-  type: cardsflow/kindyn/CableLengthController
-
-little_right_joint0:
-  joint: little_right_joint0
-  type: cardsflow/kindyn/TorquePositionController
-ring_right_joint0:
-  joint: ring_right_joint0
-  type: cardsflow/kindyn/TorquePositionController
-middle_right_joint0:
-  joint: middle_right_joint0
-  type: cardsflow/kindyn/TorquePositionController
-index_right_joint0:
-  joint: index_right_joint0
-  type: cardsflow/kindyn/TorquePositionController
-thumb_right_joint0:
-  joint: thumb_right_joint0
-  type: cardsflow/kindyn/TorquePositionController
-little_right_joint1:
-  joint: little_right_joint1
-  type: cardsflow/kindyn/TorquePositionController
-ring_right_joint1:
-  joint: ring_right_joint1
-  type: cardsflow/kindyn/TorquePositionController
-middle_right_joint1:
-  joint: middle_right_joint1
-  type: cardsflow/kindyn/TorquePositionController
-index_right_joint1:
-  joint: index_right_joint1
-  type: cardsflow/kindyn/TorquePositionController
-thumb_right_joint1:
-  joint: thumb_right_joint1
-  type: cardsflow/kindyn/TorquePositionController
-little_right_joint2:
-  joint: little_right_joint2
-  type: cardsflow/kindyn/TorquePositionController
-ring_right_joint2:
-  joint: ring_right_joint2
-  type: cardsflow/kindyn/TorquePositionController
-middle_right_joint2:
-  joint: middle_right_joint2
-  type: cardsflow/kindyn/TorquePositionController
-index_right_joint2:
-  joint: index_right_joint2
-  type: cardsflow/kindyn/TorquePositionController
-thumb_right_joint2:
-  joint: thumb_right_joint2
-  type: cardsflow/kindyn/TorquePositionController
-
-little_left_joint0:
-  joint: little_left_joint0
-  type: cardsflow/kindyn/TorquePositionController
-ring_left_joint0:
-  joint: ring_left_joint0
-  type: cardsflow/kindyn/TorquePositionController
-middle_left_joint0:
-  joint: middle_left_joint0
-  type: cardsflow/kindyn/TorquePositionController
-index_left_joint0:
-  joint: index_left_joint0
-  type: cardsflow/kindyn/TorquePositionController
-thumb_left_joint0:
-  joint: thumb_left_joint0
-  type: cardsflow/kindyn/TorquePositionController
-little_left_joint1:
-  joint: little_left_joint1
-  type: cardsflow/kindyn/TorquePositionController
-ring_left_joint1:
-  joint: ring_left_joint1
-  type: cardsflow/kindyn/TorquePositionController
-middle_left_joint1:
-  joint: middle_left_joint1
-  type: cardsflow/kindyn/TorquePositionController
-index_left_joint1:
-  joint: index_left_joint1
-  type: cardsflow/kindyn/TorquePositionController
-thumb_left_joint1:
-  joint: thumb_left_joint1
-  type: cardsflow/kindyn/TorquePositionController
-little_left_joint2:
-  joint: little_left_joint2
-  type: cardsflow/kindyn/TorquePositionController
-ring_left_joint2:
-  joint: ring_left_joint2
-  type: cardsflow/kindyn/TorquePositionController
-middle_left_joint2:
-  joint: middle_left_joint2
-  type: cardsflow/kindyn/TorquePositionController
-index_left_joint2:
-  joint: index_left_joint2
-  type: cardsflow/kindyn/TorquePositionController
-thumb_left_joint2:
-  joint: thumb_left_joint2
-  type: cardsflow/kindyn/TorquePositionController
 
 spine_joint:
   joint: spine_joint
