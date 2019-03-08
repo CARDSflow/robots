@@ -221,7 +221,7 @@
     <child link="wrist_right_sphere_link1" />
     <origin rpy="0 0 0" xyz="0.00171  0.18503 -0.14508" />
     <axis xyz="-0.99299  0.10853 -0.04678" />
-    <limit effort="0.0" lower="0" upper="0" velocity="0.0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="wrist_right_sphere_axis2" type="revolute">
     <parent link="wrist_right_sphere_link2" />
@@ -396,7 +396,7 @@
     <child link="wrist_left_sphere_link1" />
     <origin rpy="0 0 0" xyz="0.2456  -0.87507  0.66462" />
     <axis xyz="-0.99869 -0.05101  0.0028" />
-    <limit effort="0.0" lower="0" upper="0" velocity="0.0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="wrist_left_sphere_axis2" type="revolute">
     <parent link="wrist_left_sphere_link2" />
