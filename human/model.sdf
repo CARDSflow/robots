@@ -1120,7 +1120,7 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="6dof_link4">
+		<link name="dof6_link4">
 			<self_collide>false</self_collide>
 			<pose frame="">0.042639659949809026 -7.101249734164418e-05 0.9999999999999923 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -1135,24 +1135,24 @@
 					<izz>6.385696503560865e-05</izz>
 				</inertia>
 			</inertial>
-			<collision name="6dof_link4_collision">
+			<collision name="dof6_link4_collision">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/collisions/6dof_link4.stl</uri>
+						<uri>model://human/meshes/collisions/dof6_link4.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="6dof_link4_visual">
+			<visual name="dof6_link4_visual">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/visuals/6dof_link4.stl</uri>
+						<uri>model://human/meshes/visuals/dof6_link4.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="6dof_link5">
+		<link name="dof6_link5">
 			<self_collide>false</self_collide>
 			<pose frame="">6.1008287956425485e-05 0.04260984108746041 0.9999999812294209 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -1167,24 +1167,24 @@
 					<izz>6.382844100897486e-05</izz>
 				</inertia>
 			</inertial>
-			<collision name="6dof_link5_collision">
+			<collision name="dof6_link5_collision">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/collisions/6dof_link5.stl</uri>
+						<uri>model://human/meshes/collisions/dof6_link5.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="6dof_link5_visual">
+			<visual name="dof6_link5_visual">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/visuals/6dof_link5.stl</uri>
+						<uri>model://human/meshes/visuals/dof6_link5.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="6dof_link1">
+		<link name="dof6_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">-3.5510243406436533e-06 -1.0069391479243579e-05 0.9999999999999999 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -1199,24 +1199,24 @@
 					<izz>1.6786721116758843e-06</izz>
 				</inertia>
 			</inertial>
-			<collision name="6dof_link1_collision">
+			<collision name="dof6_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/collisions/6dof_link1.stl</uri>
+						<uri>model://human/meshes/collisions/dof6_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="6dof_link1_visual">
+			<visual name="dof6_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/visuals/6dof_link1.stl</uri>
+						<uri>model://human/meshes/visuals/dof6_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="6dof_link2">
+		<link name="dof6_link2">
 			<self_collide>false</self_collide>
 			<pose frame="">-3.551024340641647e-06 -1.0069391479245249e-05 0.9999999999999998 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -1231,24 +1231,24 @@
 					<izz>2.4270959112454043e-08</izz>
 				</inertia>
 			</inertial>
-			<collision name="6dof_link2_collision">
+			<collision name="dof6_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/collisions/6dof_link2.stl</uri>
+						<uri>model://human/meshes/collisions/dof6_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="6dof_link2_visual">
+			<visual name="dof6_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/visuals/6dof_link2.stl</uri>
+						<uri>model://human/meshes/visuals/dof6_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="6dof_link3">
+		<link name="dof6_link3">
 			<self_collide>false</self_collide>
 			<pose frame="">-3.3130953811449347e-06 -1.0358420894244247e-05 1.010729363507488 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -1263,18 +1263,18 @@
 					<izz>2.606891529664852e-07</izz>
 				</inertia>
 			</inertial>
-			<collision name="6dof_link3_collision">
+			<collision name="dof6_link3_collision">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/collisions/6dof_link3.stl</uri>
+						<uri>model://human/meshes/collisions/dof6_link3.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="6dof_link3_visual">
+			<visual name="dof6_link3_visual">
 				<geometry>
 					<mesh>
-						<uri>model://human/meshes/visuals/6dof_link3.stl</uri>
+						<uri>model://human/meshes/visuals/dof6_link3.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -2270,9 +2270,9 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="6dof_axis0" type="revolute">
+		<joint name="dof6_axis0" type="revolute">
 			<parent>base</parent>
-			<child>6dof_link1</child>
+			<child>dof6_link1</child>
 			<pose frame="">1.0679391398982218e-18 -2.198762005800603e-18 1.4210854715202004e-16 0 0 0</pose>
 			<axis>
 				<xyz>1.0 -2.6844855317200687e-42 -1.4936788733982073e-64</xyz>
@@ -2283,9 +2283,9 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="6dof_axis1" type="revolute">
-			<parent>6dof_link1</parent>
-			<child>6dof_link2</child>
+		<joint name="dof6_axis1" type="revolute">
+			<parent>dof6_link1</parent>
+			<child>dof6_link2</child>
 			<pose frame="">-9.38376980286204e-19 -5.269222558279552e-19 2.842170943040401e-16 0 0 0</pose>
 			<axis>
 				<xyz>2.6844855317200687e-42 1.0 5.564117200781429e-23</xyz>
@@ -2296,9 +2296,9 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="6dof_axis2" type="revolute">
-			<parent>6dof_link2</parent>
-			<child>6dof_link3</child>
+		<joint name="dof6_axis2" type="revolute">
+			<parent>dof6_link2</parent>
+			<child>dof6_link3</child>
 			<pose frame="">-2.379289594976508e-07 2.890294149984697e-07 -0.010729363507488045 0 0 0</pose>
 			<axis>
 				<xyz>-3.388310440774361e-71 -5.564117200781429e-23 1.0</xyz>
@@ -2413,9 +2413,9 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="6dof_axis3" type="prismatic">
-			<parent>6dof_link3</parent>
-			<child>6dof_link4</child>
+		<joint name="dof6_axis3" type="prismatic">
+			<parent>dof6_link3</parent>
+			<child>dof6_link4</child>
 			<pose frame="">-0.04264321097414968 6.09431058623984e-05 7.673861546209083e-15 0 0 0</pose>
 			<axis>
 				<xyz>-1.0 2.6814997359924824e-41 -4.336808689942018e-19</xyz>
@@ -2426,9 +2426,9 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="6dof_axis4" type="prismatic">
-			<parent>6dof_link4</parent>
-			<child>6dof_link5</child>
+		<joint name="dof6_axis4" type="prismatic">
+			<parent>dof6_link4</parent>
+			<child>dof6_link5</child>
 			<pose frame="">-6.1008287956425485e-05 -0.042619910478939656 1.8770579117699527e-08 0 0 0</pose>
 			<axis>
 				<xyz>-2.4477572411455523e-32 1.0 5.56411602478092e-23</xyz>
@@ -2439,8 +2439,8 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="6dof_axis5" type="prismatic">
-			<parent>6dof_link5</parent>
+		<joint name="dof6_axis5" type="prismatic">
+			<parent>dof6_link5</parent>
 			<child>hip</child>
 			<pose frame="">0.019384473705082953 0.003106221167012608 0.04942551368446473 0 0 0</pose>
 			<axis>

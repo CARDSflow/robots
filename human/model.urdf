@@ -153,23 +153,23 @@
     <axis xyz="0 0 1" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis0" type="revolute">
+  <joint name="dof6_axis0" type="revolute">
     <parent link="base" />
-    <child link="6dof_link1" />
+    <child link="dof6_link1" />
     <origin rpy="0 0 0" xyz="0.e+00 -1.e-05  1.e+00" />
     <axis xyz="1 0 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis1" type="revolute">
-    <parent link="6dof_link1" />
-    <child link="6dof_link2" />
+  <joint name="dof6_axis1" type="revolute">
+    <parent link="dof6_link1" />
+    <child link="dof6_link2" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis2" type="revolute">
-    <parent link="6dof_link2" />
-    <child link="6dof_link3" />
+  <joint name="dof6_axis2" type="revolute">
+    <parent link="dof6_link2" />
+    <child link="dof6_link3" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="0 0 1" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
@@ -230,22 +230,22 @@
     <axis xyz="-1  0  0" />
     <limit effort="0.0" lower="0.0" upper="1.4" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis3" type="prismatic">
-    <parent link="6dof_link3" />
-    <child link="6dof_link4" />
+  <joint name="dof6_axis3" type="prismatic">
+    <parent link="dof6_link3" />
+    <child link="dof6_link4" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="-1  0  0" />
     <limit effort="0.0" lower="-1.0" upper="1.0" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis4" type="prismatic">
-    <parent link="6dof_link4" />
-    <child link="6dof_link5" />
+  <joint name="dof6_axis4" type="prismatic">
+    <parent link="dof6_link4" />
+    <child link="dof6_link5" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-1.0" upper="1.0" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis5" type="prismatic">
-    <parent link="6dof_link5" />
+  <joint name="dof6_axis5" type="prismatic">
+    <parent link="dof6_link5" />
     <child link="hip" />
     <origin rpy="0 0 0" xyz="0.e+00 1.e-05 0.e+00" />
     <axis xyz="0 0 1" />
@@ -1091,98 +1091,98 @@
       </geometry>
     </visual>
   </link>
-  <link name="6dof_link4">
+  <link name="dof6_link4">
     <inertial>
       <mass value="0.029253556048299417" />
       <origin rpy="0 0 0" xyz="4.264e-02 -6.000e-05  0.000e+00" />
       <inertia ixx="0.029253976989686226" ixy="1.1626215438336713e-07" ixz="-0.0012473616822221846" iyy="0.0293174136030794" iyz="2.077379146644587e-06" izz="6.385696503560865e-05" />
     </inertial>
-    <collision name="6dof_link4_collision">
+    <collision name="dof6_link4_collision">
       <origin rpy="0 0 0" xyz="4.264e-02 -6.000e-05  0.000e+00" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/collisions/6dof_link4.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/collisions/dof6_link4.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
-    <visual name="6dof_link4_visual">
+    <visual name="dof6_link4_visual">
       <origin rpy="0 0 0" xyz="4.264e-02 -6.000e-05  0.000e+00" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/visuals/6dof_link4.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/visuals/dof6_link4.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
-  <link name="6dof_link5">
+  <link name="dof6_link5">
     <inertial>
       <mass value="0.029267161202751052" />
       <origin rpy="0 0 0" xyz="6.000e-05 4.262e-02 0.000e+00" />
       <inertia ixx="0.029330975552184543" ixy="-1.0360731338597083e-07" ixz="-1.7800545179101354e-06" iyy="0.029267568334721984" iyz="-0.001247068788576186" izz="6.382844100897486e-05" />
     </inertial>
-    <collision name="6dof_link5_collision">
+    <collision name="dof6_link5_collision">
       <origin rpy="0 0 0" xyz="6.000e-05 4.262e-02 0.000e+00" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/collisions/6dof_link5.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/collisions/dof6_link5.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
-    <visual name="6dof_link5_visual">
+    <visual name="dof6_link5_visual">
       <origin rpy="0 0 0" xyz="6.000e-05 4.262e-02 0.000e+00" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/visuals/6dof_link5.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/visuals/dof6_link5.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
-  <link name="6dof_link1">
+  <link name="dof6_link1">
     <inertial>
       <mass value="0.03806502884740436" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.03806670751903605" ixy="-1.361078074833995e-12" ixz="1.3516984396440834e-07" iyy="0.038066707515656516" iyz="3.8329167713316574e-07" izz="1.6786721116758843e-06" />
     </inertial>
-    <collision name="6dof_link1_collision">
+    <collision name="dof6_link1_collision">
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/collisions/6dof_link1.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/collisions/dof6_link1.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
-    <visual name="6dof_link1_visual">
+    <visual name="dof6_link1_visual">
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/visuals/6dof_link1.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/visuals/dof6_link1.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
-  <link name="6dof_link2">
+  <link name="dof6_link2">
     <inertial>
       <mass value="0.0029963725331776064" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.002996396804098933" ixy="-1.0714025662895805e-13" ixz="1.064019179894265e-08" iyy="0.0029963968038329066" iyz="3.017164805422385e-08" izz="2.4270959112454043e-08" />
     </inertial>
-    <collision name="6dof_link2_collision">
+    <collision name="dof6_link2_collision">
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/collisions/6dof_link2.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/collisions/dof6_link2.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
-    <visual name="6dof_link2_visual">
+    <visual name="dof6_link2_visual">
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/visuals/6dof_link2.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/visuals/dof6_link2.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
-  <link name="6dof_link3">
+  <link name="dof6_link3">
     <inertial>
       <mass value="0.015709236754408065" />
       <origin rpy="0 0 0" xyz="0      0      0.01072" />
       <inertia ixx="0.016048786465636584" ixy="3.398942377017531e-12" ixz="5.256991621185631e-08" iyy="0.016048779040639085" iyz="1.6451093000258178e-07" izz="2.606891529664852e-07" />
     </inertial>
-    <collision name="6dof_link3_collision">
+    <collision name="dof6_link3_collision">
       <origin rpy="0 0 0" xyz="0      0      0.01072" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/collisions/6dof_link3.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/collisions/dof6_link3.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
-    <visual name="6dof_link3_visual">
+    <visual name="dof6_link3_visual">
       <origin rpy="0 0 0" xyz="0      0      0.01072" />
       <geometry>
-        <mesh filename="package://robots/human/meshes/visuals/6dof_link3.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/human/meshes/visuals/dof6_link3.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
