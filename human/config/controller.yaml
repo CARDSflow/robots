@@ -1,0 +1,177 @@
+#  These controllers are loaded by the robot.launch script, the following types are available
+#  type: cardsflow/kindyn/TorquePositionController
+#  type: cardsflow/kindyn/CableLengthController
+#  type: cardsflow/kindyn/CableLengthVelocityController
+#  type: cardsflow/kindyn/ForcePositionController
+ankle_left_axis0:
+  joint: ankle_left_axis0
+  type: cardsflow/kindyn/TorquePositionController
+ankle_left_axis1:
+  joint: ankle_left_axis1
+  type: cardsflow/kindyn/TorquePositionController
+ankle_left_axis2:
+  joint: ankle_left_axis2
+  type: cardsflow/kindyn/TorquePositionController
+ankle_right_axis0:
+  joint: ankle_right_axis0
+  type: cardsflow/kindyn/TorquePositionController
+ankle_right_axis1:
+  joint: ankle_right_axis1
+  type: cardsflow/kindyn/TorquePositionController
+ankle_right_axis2:
+  joint: ankle_right_axis2
+  type: cardsflow/kindyn/TorquePositionController
+knee_left_axis0:
+  joint: knee_left_axis0
+  type: cardsflow/kindyn/TorquePositionController
+knee_left_axis1:
+  joint: knee_left_axis1
+  type: cardsflow/kindyn/TorquePositionController
+knee_left_axis2:
+  joint: knee_left_axis2
+  type: cardsflow/kindyn/TorquePositionController
+knee_right_axis0:
+  joint: knee_right_axis0
+  type: cardsflow/kindyn/TorquePositionController
+knee_right_axis1:
+  joint: knee_right_axis1
+  type: cardsflow/kindyn/TorquePositionController
+knee_right_axis2:
+  joint: knee_right_axis2
+  type: cardsflow/kindyn/TorquePositionController
+hip_left_axis0:
+  joint: hip_left_axis0
+  type: cardsflow/kindyn/TorquePositionController
+hip_left_axis1:
+  joint: hip_left_axis1
+  type: cardsflow/kindyn/TorquePositionController
+hip_left_axis2:
+  joint: hip_left_axis2
+  type: cardsflow/kindyn/TorquePositionController
+hip_right_axis0:
+  joint: hip_right_axis0
+  type: cardsflow/kindyn/TorquePositionController
+hip_right_axis1:
+  joint: hip_right_axis1
+  type: cardsflow/kindyn/TorquePositionController
+hip_right_axis2:
+  joint: hip_right_axis2
+  type: cardsflow/kindyn/TorquePositionController
+spine_right_axis0:
+  joint: spine_right_axis0
+  type: cardsflow/kindyn/TorquePositionController
+spine_right_axis1:
+  joint: spine_right_axis1
+  type: cardsflow/kindyn/TorquePositionController
+spine_right_axis2:
+  joint: spine_right_axis2
+  type: cardsflow/kindyn/TorquePositionController
+shoulder_left_axis0:
+  joint: shoulder_left_axis0
+  type: cardsflow/kindyn/TorquePositionController
+shoulder_left_axis1:
+  joint: shoulder_left_axis1
+  type: cardsflow/kindyn/TorquePositionController
+shoulder_left_axis2:
+  joint: shoulder_left_axis2
+  type: cardsflow/kindyn/TorquePositionController
+shoulder_right_axis0:
+  joint: shoulder_right_axis0
+  type: cardsflow/kindyn/TorquePositionController
+shoulder_right_axis1:
+  joint: shoulder_right_axis1
+  type: cardsflow/kindyn/TorquePositionController
+shoulder_right_axis2:
+  joint: shoulder_right_axis2
+  type: cardsflow/kindyn/TorquePositionController
+elbow_left_axis0:
+  joint: shoulder_left_axis0
+  type: cardsflow/kindyn/TorquePositionController
+elbow_left_axis1:
+  joint: shoulder_left_axis1
+  type: cardsflow/kindyn/TorquePositionController
+elbow_left_axis2:
+  joint: shoulder_left_axis2
+  type: cardsflow/kindyn/TorquePositionController
+elbow_right_axis0:
+  joint: shoulder_right_axis0
+  type: cardsflow/kindyn/TorquePositionController
+elbow_right_axis1:
+  joint: shoulder_right_axis1
+  type: cardsflow/kindyn/TorquePositionController
+elbow_right_axis2:
+  joint: shoulder_right_axis2
+  type: cardsflow/kindyn/TorquePositionController
+
+motor0:
+  joint: motor0
+  type: cardsflow/kindyn/CableLengthController
+motor1:
+  joint: motor1
+  type: cardsflow/kindyn/CableLengthController
+motor2:
+  joint: motor2
+  type: cardsflow/kindyn/CableLengthController
+motor3:
+  joint: motor3
+  type: cardsflow/kindyn/CableLengthController
+motor4:
+  joint: motor4
+  type: cardsflow/kindyn/CableLengthController
+motor5:
+  joint: motor5
+  type: cardsflow/kindyn/CableLengthController
+motor6:
+  joint: motor6
+  type: cardsflow/kindyn/CableLengthController
+motor7:
+  joint: motor7
+  type: cardsflow/kindyn/CableLengthController
+motor8:
+  joint: motor8
+  type: cardsflow/kindyn/CableLengthController
+motor9:
+  joint: motor9
+  type: cardsflow/kindyn/CableLengthController
+motor10:
+  joint: motor10
+  type: cardsflow/kindyn/CableLengthController
+motor11:
+  joint: motor11
+  type: cardsflow/kindyn/CableLengthController
+motor12:
+  joint: motor12
+  type: cardsflow/kindyn/CableLengthController
+motor13:
+  joint: motor13
+  type: cardsflow/kindyn/CableLengthController
+motor14:
+  joint: motor14
+  type: cardsflow/kindyn/CableLengthController
+motor15:
+  joint: motor15
+  type: cardsflow/kindyn/CableLengthController
+motor16:
+  joint: motor16
+  type: cardsflow/kindyn/CableLengthController
+motor17:
+  joint: motor17
+  type: cardsflow/kindyn/CableLengthController
+motor18:
+  joint: motor18
+  type: cardsflow/kindyn/CableLengthController
+motor19:
+  joint: motor19
+  type: cardsflow/kindyn/CableLengthController
+motor20:
+  joint: motor20
+  type: cardsflow/kindyn/CableLengthController
+motor21:
+  joint: motor21
+  type: cardsflow/kindyn/CableLengthController
+motor22:
+  joint: motor22
+  type: cardsflow/kindyn/CableLengthController
+motor23:
+  joint: motor23
+  type: cardsflow/kindyn/CableLengthController
