@@ -1,24 +1,25 @@
+<?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="msj_platform_head">
 		<link name="base">
 			<self_collide>false</self_collide>
-			<pose frame="">1.2525797764688219e-05 0.00012099267369551208 0.029112309409121996 0.0 -0.0 0.0</pose>
+			<pose frame="">1.2460408777667346e-05 0.00012045346925450954 0.0291098860989122 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>14.488893321678509</mass>
+				<mass>14.48736938230805</mass>
 				<inertia>
-					<ixx>0.18025975509095166</ixx>
-					<ixy>-1.83158947684374e-05</ixy>
-					<ixz>-3.5910554247763628e-06</ixz>
-					<iyy>0.18026005572374784</iyy>
-					<iyz>-0.00013086650671482176</iyz>
-					<izz>0.2875503759819749</izz>
+					<ixx>0.18025542697905259</ixx>
+					<ixy>-1.830203330761583e-05</ixy>
+					<ixz>-3.5334771061246954e-06</ixz>
+					<iyy>0.18025577126830947</iyy>
+					<iyz>-0.00013045058338290725</iyz>
+					<izz>0.28755007094844376</izz>
 				</inertia>
 			</inertial>
 			<collision name="base_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform_head/meshes/collisions/base.stl</uri>
+						<uri>model://msj_platform_head/meshes/CAD/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -26,7 +27,7 @@
 			<visual name="base_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform_head/meshes/visuals/base.stl</uri>
+						<uri>model://msj_platform_head/meshes/CAD/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -34,23 +35,23 @@
 		</link>
 		<link name="top">
 			<self_collide>false</self_collide>
-			<pose frame="">0.00021808095070919225 0.005854603794077464 0.1994223870646119 0.0 -0.0 0.0</pose>
+			<pose frame="">0.00021636920237876362 0.005962810921703765 0.20424517327604455 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>1.1948687198419368</mass>
+				<mass>1.1256268820877624</mass>
 				<inertia>
-					<ixx>0.04933285145966646</ixx>
-					<ixy>-4.425753219042965e-06</ixy>
-					<ixz>-5.984794849927179e-05</ixz>
-					<iyy>0.04928858140994544</iyy>
-					<iyz>-0.00140614613944832</iyz>
-					<izz>0.001186553580431596</izz>
+					<ixx>0.048302451676906485</ixx>
+					<ixy>-4.4700533083345986e-06</ixy>
+					<ixz>-5.790514725158821e-05</ixz>
+					<iyy>0.04826022400713032</iyy>
+					<iyz>-0.001370876643442416</iyz>
+					<izz>0.0011632900957365899</izz>
 				</inertia>
 			</inertial>
 			<collision name="top_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform_head/meshes/collisions/top.stl</uri>
+						<uri>model://msj_platform_head/meshes/CAD/top.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -58,7 +59,7 @@
 			<visual name="top_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform_head/meshes/visuals/top.stl</uri>
+						<uri>model://msj_platform_head/meshes/CAD/top.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -82,7 +83,7 @@
 			<collision name="sphere_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform_head/meshes/collisions/sphere_link1.stl</uri>
+						<uri>model://msj_platform_head/meshes/CAD/sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -90,7 +91,7 @@
 			<visual name="sphere_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform_head/meshes/visuals/sphere_link1.stl</uri>
+						<uri>model://msj_platform_head/meshes/CAD/sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -114,7 +115,7 @@
 			<collision name="sphere_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform_head/meshes/collisions/sphere_link2.stl</uri>
+						<uri>model://msj_platform_head/meshes/CAD/sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -122,7 +123,7 @@
 			<visual name="sphere_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://msj_platform_head/meshes/visuals/sphere_link2.stl</uri>
+						<uri>model://msj_platform_head/meshes/CAD/sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -157,7 +158,7 @@
 		<joint name="sphere_axis2" type="revolute">
 			<parent>sphere_link2</parent>
 			<child>top</child>
-			<pose frame="">-0.00021808095015673885 0.0001453962072244508 -0.0839223870661391 0 0 0</pose>
+			<pose frame="">-0.00021636920182631022 3.718907959814999e-05 -0.08874517327757175 0 0 0</pose>
 			<axis>
 				<xyz>4.976669869694518e-18 2.037835877315196e-11 1.0</xyz>
 				<limit>
@@ -167,6 +168,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin" />
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
 	</model>
 </sdf>
