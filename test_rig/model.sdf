@@ -3,16 +3,16 @@
 	<model name="test_rig">
 		<link name="weigths">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.016000000058417858 0.05999999994313841 -0.8241905856946449 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.016000000058417858 0.05999999994313841 0.575809414305355 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>7.340606071919854</mass>
 				<inertia>
-					<ixx>5.071052535066656</ixx>
+					<ixx>2.5184768662755554</ixx>
 					<ixy>0.007046981845070233</ixy>
-					<ixz>-0.09680093507328699</ixz>
-					<iyy>5.046505573217859</iyy>
-					<iyz>0.363003504634289</iyz>
+					<ixz>0.06762864153806918</ixz>
+					<iyy>2.493929904426759</iyy>
+					<iyz>-0.2536074048226213</iyz>
 					<izz>0.0888810463738978</izz>
 				</inertia>
 			</inertial>
@@ -35,17 +35,17 @@
 		</link>
 		<link name="base">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.04520840420402363 -9.682586175113483e-05 -0.8483952543883265 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.04520840420402366 -9.682586175108711e-05 0.5516047453650074 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>64.19474165324299</mass>
+				<mass>64.194741653243</mass>
 				<inertia>
-					<ixx>67.072219491214</ixx>
-					<ixy>-0.00014213295138572194</ixy>
-					<ixz>-1.6345408438556714</ixz>
-					<iyy>67.05365484584925</iyy>
-					<iyz>0.008667157269387568</iyz>
-					<izz>5.982695010751687</izz>
+					<ixx>40.398873413873275</ixx>
+					<ixy>-0.00014213295138116084</ixy>
+					<ixz>2.428457716665941</ixz>
+					<iyy>40.38030876850846</iyy>
+					<iyz>0.017369152923575874</iyz>
+					<izz>5.982695010751682</izz>
 				</inertia>
 			</inertial>
 			<collision name="base_collision">
@@ -68,12 +68,12 @@
 		<joint name="joint_weigths" type="prismatic">
 			<parent>base</parent>
 			<child>weigths</child>
-			<pose frame="">-0.029999999941581663 -0.05999999994313841 0.5441905856946448 0 0 0</pose>
+			<pose frame="">-0.029999999941581663 -0.05999999994313841 0.544190585694645 0 0 0</pose>
 			<axis>
 				<xyz>0.0 0.0 -1.0</xyz>
 				<limit>
 					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<upper>0.2</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
