@@ -1,19 +1,19 @@
 <robot name="roboy_head">
-  <joint name="zed_camera_mount" type="fixed">
+  <joint name="zed_camera_mount" type="revolute">
     <parent link="head" />
     <child link="zed_camera" />
     <origin rpy="0  0  0" xyz="0.02168 -0.05805  0.21956" />
     <axis xyz="0  0  0" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
-  <joint name="zed_camera_right" type="fixed">
+  <joint name="zed_camera_right" type="revolute">
     <parent link="zed_camera" />
     <child link="zed_camera_right_lense" />
     <origin rpy="0  0  0" xyz="-0.08149 -0.00191 -0.00782" />
     <axis xyz="0  0  0" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
-  <joint name="zed_camera_left" type="fixed">
+  <joint name="zed_camera_left" type="revolute">
     <parent link="zed_camera" />
     <child link="zed_camera_left_lense" />
     <origin rpy="0  0  0" xyz="0.03848 -0.00154 -0.00782" />
@@ -23,7 +23,7 @@
   <joint name="sphere_head_axis0" type="revolute">
     <parent link="neck" />
     <child link="sphere_head_link1" />
-    <origin rpy="0  0  0" xyz="0       0       0.06647" />
+    <origin rpy="1  0  0" xyz="0       0       0.06647" />
     <axis xyz="0.12498 -0.99215  0" />
     <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0" />
   </joint>
@@ -32,13 +32,13 @@
     <child link="head" />
     <origin rpy="0  0  0" xyz="0  0  0" />
     <axis xyz="0  0  1" />
-    <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0" />
+    <limit effort="0.0" lower="-1.5" upper="1.5" velocity="0.0" />
   </joint>
   <joint name="sphere_head_axis1" type="revolute">
     <parent link="sphere_head_link1" />
     <child link="sphere_head_link2" />
     <origin rpy="0  0  0" xyz="0  0  0" />
-    <axis xyz="-0.99215 -0.12498  0" />
+    <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0" />
   </joint>
   <link name="neck">
