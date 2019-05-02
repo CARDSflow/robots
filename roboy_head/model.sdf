@@ -258,7 +258,7 @@
 			<child>head</child>
 			<pose frame="">-0.0005102159778959732 -0.04492411500875237 -0.14550204315326162 0 0 0</pose>
 			<axis>
-				<xyz>0 0 1</xyz>
+				<xyz>0 1 0</xyz>
 				<limit>
 					<lower>-1.5</lower>
 					<upper>1.5</upper>
@@ -271,7 +271,7 @@
 			<child>sphere_head_link2</child>
 			<pose frame="">1.27662266667877e-10 1.276634098292196e-10 3.375077994860476e-16 0 0 0</pose>
 			<axis>
-				<xyz>0 1 0</xyz>
+				<xyz>0 0 1</xyz>
 				<limit>
 					<lower>-0.5235987755982988</lower>
 					<upper>0.5235987755982988</upper>

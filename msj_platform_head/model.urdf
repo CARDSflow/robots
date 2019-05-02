@@ -1,0 +1,99 @@
+<robot name="msj_platform_head">
+  <joint name="sphere_axis0" type="revolute">
+    <parent link="base" />
+    <child link="sphere_link1" />
+    <origin rpy="0  0  0" xyz="0.00424  0.00424  0.1155" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis1" type="revolute">
+    <parent link="sphere_link1" />
+    <child link="sphere_link2" />
+    <origin rpy="0  0  0" xyz="0  0  0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis2" type="revolute">
+    <parent link="sphere_link2" />
+    <child link="top" />
+    <origin rpy="0  0  0" xyz="0  0  0" />
+    <axis xyz="0  0  1" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <link name="base">
+    <inertial>
+      <mass value="15.629842988436991" />
+      <origin rpy="0  0  0" xyz="-0.00972  0.00986  0.05513" />
+      <inertia ixx="0.37101179139154744" ixy="0.020544761689086373" ixz="0.058964832543668265" iyy="0.37110336276629335" iyz="-0.05906303191293011" izz="0.32968638674351486" />
+    </inertial>
+    <collision name="base_collision">
+      <origin rpy="0  0  0" xyz="-0.00972  0.00986  0.05513" />
+      <geometry>
+        <mesh filename="package://robots/msj_platform_head/meshes/collisions/base.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="base_visual">
+      <origin rpy="0  0  0" xyz="-0.00972  0.00986  0.05513" />
+      <geometry>
+        <mesh filename="package://robots/msj_platform_head/meshes/visuals/base.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="top">
+    <inertial>
+      <mass value="1.20591356597939" />
+      <origin rpy="0  0  0" xyz="-0.00034  0.00025  0.05997" />
+      <inertia ixx="0.03819643364705958" ixy="-2.4663343568917342e-05" ixz="-0.0008183781921683772" iyy="0.0381888418670597" iyz="-0.0009525221954992814" izz="0.0011780867159781737" />
+    </inertial>
+    <collision name="top_collision">
+      <origin rpy="0  0  0" xyz="-0.00034  0.00025  0.05997" />
+      <geometry>
+        <mesh filename="package://robots/msj_platform_head/meshes/collisions/top.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="top_visual">
+      <origin rpy="0  0  0" xyz="-0.00034  0.00025  0.05997" />
+      <geometry>
+        <mesh filename="package://robots/msj_platform_head/meshes/visuals/top.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link1">
+    <inertial>
+      <mass value="0.022028373175580263" />
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <inertia ixx="0.0002949351348937359" ixy="-3.9651071733250453e-07" ixz="-1.07944535545109e-05" iyy="0.000294935134893882" iyz="-1.0794453552522937e-05" izz="1.4676403631671595e-06" />
+    </inertial>
+    <collision name="sphere_link1_collision">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/msj_platform_head/meshes/collisions/sphere_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="sphere_link1_visual">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/msj_platform_head/meshes/visuals/sphere_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link2">
+    <inertial>
+      <mass value="0.0017340118826259295" />
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <inertia ixx="2.3173118047323906e-05" ixy="-3.1212213901003247e-08" ixz="-8.497091719340116e-07" iyy="2.31731180473354e-05" iyz="-8.497091717772792e-07" izz="7.217824464186813e-08" />
+    </inertial>
+    <collision name="sphere_link2_collision">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/msj_platform_head/meshes/collisions/sphere_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="sphere_link2_visual">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/msj_platform_head/meshes/visuals/sphere_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+</robot>
