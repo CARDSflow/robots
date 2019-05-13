@@ -2,6 +2,7 @@
 <sdf version="1.6">
 	<model name="test_rig">
 		<link name="weigths">
+			<!--<kinematic>true</kinematic>-->
 			<self_collide>false</self_collide>
 			<pose frame="">-0.016000000058417858 0.05999999994313841 0.575809414305355 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -35,6 +36,7 @@
 		</link>
 		<link name="base">
 			<self_collide>false</self_collide>
+			<kinematic>true</kinematic>
 			<pose frame="">-0.04520840420402366 -9.682586175108711e-05 0.5516047453650074 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
