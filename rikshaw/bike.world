@@ -1,0 +1,1219 @@
+<sdf version='1.6'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <gravity>0 0 -9.81</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <audio>
+      <device>default</device>
+    </audio>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <state world_name='default'>
+      <sim_time>48 664000000</sim_time>
+      <real_time>96 678772062</real_time>
+      <wall_time>1557765938 695797843</wall_time>
+      <iterations>37023</iterations>
+      <model name='ground_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='rikshaw'>
+        <pose frame=''>0.290128 -0.933628 0.245894 0 0.002442 2.6e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='bike'>
+          <pose frame=''>0.290128 -0.933628 0.245894 0 0.002442 2.6e-05</pose>
+          <velocity>0.000106 6.8e-05 -0.000904 -0.000107 0.000291 5.6e-05</velocity>
+          <acceleration>0.129649 0.036683 -1.87714 -0.312159 0.583294 0.048957</acceleration>
+          <wrench>2.82888 0.800411 -40.9583 0 -0 0</wrench>
+        </link>
+        <link name='foot_left'>
+          <pose frame=''>0.483839 -1.12215 0.029175 -3e-06 -0.176153 2.6e-05</pose>
+          <velocity>0.000486 0.000127 -0.001575 -0.00038 0.012342 0.00021</velocity>
+          <acceleration>0.112715 0.212586 -2.30879 0.826494 -1.08326 2.47623</acceleration>
+          <wrench>0.082213 0.155057 -1.684 0 -0 0</wrench>
+        </link>
+        <link name='foot_left_tip'>
+          <pose frame=''>0.444865 -1.12098 0.016476 0 -0.176152 2.6e-05</pose>
+          <velocity>0.000289 0.000114 -0.001143 -0.001555 0.013204 -0.00046</velocity>
+          <acceleration>0.180179 0.18995 -2.47389 -2.61761 0.358614 -1.65368</acceleration>
+          <wrench>0.050079 0.052795 -0.687593 0 -0 0</wrench>
+        </link>
+        <link name='foot_right'>
+          <pose frame=''>0.477422 -0.773996 0.029847 1e-06 -0.18393 2.4e-05</pose>
+          <velocity>0.000229 3.1e-05 -0.001085 -7.9e-05 0.017855 -0.000277</velocity>
+          <acceleration>0.077278 -0.02251 -1.56558 -1.86519 -1.30581 -1.59679</acceleration>
+          <wrench>0.056366 -0.016419 -1.14192 0 -0 0</wrench>
+        </link>
+        <link name='foot_right_tip'>
+          <pose frame=''>0.439157 -0.775664 0.016392 -1.1e-05 -0.183924 1.4e-05</pose>
+          <velocity>0.000195 -2e-05 -0.000308 -0.003455 0.01763 -0.00268</velocity>
+          <acceleration>0.090708 -0.0587 -1.18619 -1.87609 0.321068 2.87541</acceleration>
+          <wrench>0.025212 -0.016316 -0.329701 0 -0 0</wrench>
+        </link>
+        <link name='front_part'>
+          <pose frame=''>-0.425732 -0.923243 0.464081 0 0.002442 9.2e-05</pose>
+          <velocity>0.000313 6e-05 -0.000718 -0.000119 0.000225 -4.9e-05</velocity>
+          <acceleration>0.263136 0.104361 -1.46905 -0.355333 0.561052 -0.054711</acceleration>
+          <wrench>4.4235 1.75438 -24.6957 0 -0 0</wrench>
+        </link>
+        <link name='kurbel'>
+          <pose frame=''>0.382471 -0.933494 0.247904 -3.14159 -0.433822 -3.14157</pose>
+          <velocity>0.000102 7.2e-05 -0.000924 -9.3e-05 0.003712 4.5e-05</velocity>
+          <acceleration>0.128255 0.0409 -1.91915 -0.351465 -0.0443 0.041989</acceleration>
+          <wrench>0.356969 0.113836 -5.34152 0 -0 0</wrench>
+        </link>
+        <link name='left_wheel'>
+          <pose frame=''>-0.708151 -1.28366 0.293999 1e-06 2e-06 9.2e-05</pose>
+          <velocity>0.000552 0.000129 -0.000588 -0.000528 0.001927 0</velocity>
+          <acceleration>0.175637 0.088287 -1.14008 -0.419009 0.615306 -0.051342</acceleration>
+          <wrench>2.34303 1.17777 -15.2089 0 -0 0</wrench>
+        </link>
+        <link name='leg_left'>
+          <pose frame=''>0.515449 -1.14531 0.274799 -1e-06 -0.085893 2.7e-05</pose>
+          <velocity>0.008771 0.000143 -0.001311 2e-06 0.03885 7.7e-05</velocity>
+          <acceleration>0.153538 0.229917 -1.95933 0.066091 1.50204 -0.002404</acceleration>
+          <wrench>0.88171 1.32032 -11.2517 0 -0 0</wrench>
+        </link>
+        <link name='leg_right'>
+          <pose frame=''>0.512788 -0.750358 0.274754 -1e-06 -0.062166 2.5e-05</pose>
+          <velocity>0.009256 5.9e-05 -0.001272 -0.00016 0.041417 -0.000108</velocity>
+          <acceleration>0.3823 0.026656 -2.03063 -0.194257 -0.252759 0.250031</acceleration>
+          <wrench>2.19498 0.153047 -11.6589 0 -0 0</wrench>
+        </link>
+        <link name='pedal_left'>
+          <pose frame=''>0.440068 -1.08287 0.408059 1e-06 0.67423 2.6e-05</pose>
+          <velocity>0.000691 8.9e-05 -0.001134 4.8e-05 0.113446 2.3e-05</velocity>
+          <acceleration>0.122218 0.088501 -1.89506 0.994779 -0.630845 0.219325</acceleration>
+          <wrench>0.115619 0.083722 -1.79273 0 -0 0</wrench>
+        </link>
+        <link name='pedal_right'>
+          <pose frame=''>0.325189 -0.785639 0.089865 -1e-06 0.623725 2.6e-05</pose>
+          <velocity>-0.00049 7.2e-05 -0.000734 -0.000109 0.164275 5e-05</velocity>
+          <acceleration>0.12252 0.029949 -1.95449 -2.48796 -1.30545 -0.742274</acceleration>
+          <wrench>0.115905 0.028331 -1.84895 0 -0 0</wrench>
+        </link>
+        <link name='right_wheel'>
+          <pose frame=''>-0.708214 -0.591658 0.293999 -1e-06 2e-06 9.2e-05</pose>
+          <velocity>0.000684 -4.5e-05 -0.000702 0.000174 0.002366 -3e-06</velocity>
+          <acceleration>0.116063 0.059298 -1.43353 -0.207328 0.395659 -0.026381</acceleration>
+          <wrench>1.5483 0.791044 -19.1235 0 -0 0</wrench>
+        </link>
+        <link name='thigh_left'>
+          <pose frame=''>0.51311 -1.14625 0.623182 -1e-06 0.067436 2.7e-05</pose>
+          <velocity>0.005414 0.000133 -0.001088 -4.7e-05 -0.046403 0.000121</velocity>
+          <acceleration>0.385021 0.195932 -1.96356 -0.077852 0.265878 0.148909</acceleration>
+          <wrench>2.1421 1.09009 -10.9244 0 -0 0</wrench>
+        </link>
+        <link name='thigh_right'>
+          <pose frame=''>0.512646 -0.749787 0.623204 -1e-06 0.06728 2.5e-05</pose>
+          <velocity>0.005592 0.000106 -0.00113 -0.0002 -0.050067 -0.000118</velocity>
+          <acceleration>0.343299 0.160204 -2.04657 -0.875219 -0.350438 -0.71345</acceleration>
+          <wrench>1.90996 0.891302 -11.3862 0 -0 0</wrench>
+        </link>
+        <link name='wheel_back'>
+          <pose frame=''>0.827143 -0.930065 0.293999 -1e-06 -2e-06 2.6e-05</pose>
+          <velocity>-0.000815 5.7e-05 -0.000936 -0.000176 -0.002823 -1.6e-05</velocity>
+          <acceleration>-0.168397 0.111114 -1.99209 -0.355331 -0.621943 -0.008293</acceleration>
+          <wrench>-2.24645 1.48229 -26.5749 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>0.953581 1.55051 0.535232 0 0.139643 -1.33099</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='rikshaw'>
+      <link name='bike'>
+        <self_collide>0</self_collide>
+        <pose frame=''>-0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>21.8195</mass>
+          <inertia>
+            <ixx>5.88648</ixx>
+            <ixy>0.052466</ixy>
+            <ixz>0.146054</ixz>
+            <iyy>9.14545</iyy>
+            <iyz>-2.30931</iyz>
+            <izz>3.8627</izz>
+          </inertia>
+        </inertial>
+        <collision name='bike_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/bike.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='bike_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/bike.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='front_part'>
+        <self_collide>0</self_collide>
+        <pose frame=''>-0.71639 0.010389 0.216438 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>16.8107</mass>
+          <inertia>
+            <ixx>3.20923</ixx>
+            <ixy>0.181136</ixy>
+            <ixz>-0.00672308</ixz>
+            <iyy>14.663</iyy>
+            <iyz>1.24197</iyz>
+            <izz>13.9129</izz>
+          </inertia>
+        </inertial>
+        <collision name='front_part_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/front_part.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='front_part_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/front_part.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='left_wheel'>
+        <self_collide>0</self_collide>
+        <pose frame=''>-0.998426 -0.35 0.045667 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>13.3402</mass>
+          <inertia>
+            <ixx>2.17117</ixx>
+            <ixy>-4.66171</ixy>
+            <ixz>0.213222</ixz>
+            <iyy>14.3423</iyy>
+            <iyz>0.608246</iyz>
+            <izz>15.4415</izz>
+          </inertia>
+        </inertial>
+        <collision name='left_wheel_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/left_wheel.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='left_wheel_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/left_wheel.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='right_wheel'>
+        <self_collide>0</self_collide>
+        <pose frame=''>-0.998426 0.342 0.045667 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>13.3402</mass>
+          <inertia>
+            <ixx>2.09732</ixx>
+            <ixy>4.55516</ixy>
+            <ixz>-0.208348</ixz>
+            <iyy>14.3423</iyy>
+            <iyz>0.608246</iyz>
+            <izz>15.3677</izz>
+          </inertia>
+        </inertial>
+        <collision name='right_wheel_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/right_wheel.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='right_wheel_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/right_wheel.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='pedal_right'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.077867 0.147989 0.171875 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>0.946003</mass>
+          <inertia>
+            <ixx>0.049585</ixx>
+            <ixy>-0.0109012</ixy>
+            <ixz>-0.0240622</ixz>
+            <iyy>0.0340966</iyy>
+            <iyz>-0.0126331</iyz>
+            <izz>0.0270606</izz>
+          </inertia>
+        </inertial>
+        <collision name='pedal_right_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/pedal_right.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='pedal_right_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/pedal_right.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='kurbel'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.092229 0.000132 0.004277 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>2.78327</mass>
+          <inertia>
+            <ixx>0.0332153</ixx>
+            <ixy>0.00102181</ixy>
+            <ixz>-0.0129372</ixz>
+            <iyy>0.0415869</iyy>
+            <iyz>0.000301436</iyz>
+            <izz>0.0397311</izz>
+          </inertia>
+        </inertial>
+        <collision name='kurbel_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/kurbel.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='kurbel_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/kurbel.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='pedal_left'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.107381 -0.149245 -0.165378 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>0.946003</mass>
+          <inertia>
+            <ixx>0.0478651</ixx>
+            <ixy>0.0151607</ixy>
+            <ixz>-0.023349</ixz>
+            <iyy>0.037196</iyy>
+            <iyz>0.0168274</iyz>
+            <izz>0.0325859</izz>
+          </inertia>
+        </inertial>
+        <collision name='pedal_left_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/pedal_left.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='pedal_left_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/pedal_left.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='foot_left'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.175834 -0.188522 -0.206484 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>0.729387</mass>
+          <inertia>
+            <ixx>0.0540703</ixx>
+            <ixy>0.0325151</ixy>
+            <ixz>-0.0267603</ixz>
+            <iyy>0.0691055</iyy>
+            <iyz>0.033572</iyz>
+            <izz>0.0673689</izz>
+          </inertia>
+        </inertial>
+        <collision name='foot_left_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/foot_left.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='foot_left_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/foot_left.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='foot_left_tip'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.135237 -0.187356 -0.212157 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>0.27794</mass>
+          <inertia>
+            <ixx>0.0223508</ixx>
+            <ixy>0.00705069</ixy>
+            <ixz>-0.0110471</ixz>
+            <iyy>0.0177083</iyy>
+            <iyz>0.00796501</iyz>
+            <izz>0.0150315</izz>
+          </inertia>
+        </inertial>
+        <collision name='foot_left_tip_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/foot_left_tip.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='foot_left_tip_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/foot_left_tip.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='foot_right'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.177557 0.159628 -0.20488 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>0.729389</mass>
+          <inertia>
+            <ixx>0.0466286</ixx>
+            <ixy>-0.0277371</ixy>
+            <ixz>0.0225894</ixz>
+            <iyy>0.0699977</iyy>
+            <iyz>0.0339399</iyz>
+            <izz>0.0608029</izz>
+          </inertia>
+        </inertial>
+        <collision name='foot_right_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/foot_right.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='foot_right_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/foot_right.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='foot_right_tip'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.137476 0.157961 -0.21111 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>0.277951</mass>
+          <inertia>
+            <ixx>0.019407</ixx>
+            <ixy>-0.00604428</ixy>
+            <ixz>0.00926828</ixz>
+            <iyy>0.0177555</iyy>
+            <iyz>0.00805844</iyz>
+            <izz>0.0123806</izz>
+          </inertia>
+        </inertial>
+        <collision name='foot_right_tip_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/foot_right_tip.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='foot_right_tip_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/foot_right_tip.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='thigh_right'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.22881 0.183836 0.377897 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>5.56353</mass>
+          <inertia>
+            <ixx>1.01078</ixx>
+            <ixy>-0.233948</ixy>
+            <ixz>-0.389556</ixz>
+            <iyy>1.11693</iyy>
+            <iyz>-0.481833</iyz>
+            <izz>0.491424</izz>
+          </inertia>
+        </inertial>
+        <collision name='thigh_right_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/thigh_right.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='thigh_right_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/thigh_right.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='thigh_left'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.229281 -0.212628 0.377907 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>5.56359</mass>
+          <inertia>
+            <ixx>1.07435</ixx>
+            <ixy>0.270612</ixy>
+            <ixz>0.450093</ixz>
+            <iyy>1.11818</iyy>
+            <iyz>-0.483107</iyz>
+            <izz>0.556129</izz>
+          </inertia>
+        </inertial>
+        <collision name='thigh_left_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/thigh_left.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='thigh_left_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/thigh_left.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='leg_right'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.232912 0.183265 0.029973 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>5.74152</mass>
+          <inertia>
+            <ixx>0.23782</ixx>
+            <ixy>-0.245518</ixy>
+            <ixz>-0.0349696</ixz>
+            <iyy>0.359399</iyy>
+            <iyz>-0.0375907</iyz>
+            <izz>0.516755</izz>
+          </inertia>
+        </inertial>
+        <collision name='leg_right_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/leg_right.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='leg_right_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/leg_right.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='leg_left'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.232044 -0.211691 0.030085 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>5.74262</mass>
+          <inertia>
+            <ixx>0.302437</ixx>
+            <ixy>0.281999</ixy>
+            <ixz>0.0400119</ixz>
+            <iyy>0.357203</iyy>
+            <iyz>-0.0381305</iyz>
+            <izz>0.578943</izz>
+          </inertia>
+        </inertial>
+        <collision name='leg_left_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/leg_left.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='leg_left_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/leg_left.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='wheel_back'>
+        <self_collide>0</self_collide>
+        <pose frame=''>0.536897 0.00355 0.049416 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>13.3402</mass>
+          <inertia>
+            <ixx>0.541919</ixx>
+            <ixy>-0.0254258</ixy>
+            <ixz>-0.00234019</ixz>
+            <iyy>4.8943</iyy>
+            <iyz>-0.353931</iyz>
+            <izz>4.35476</izz>
+          </inertia>
+        </inertial>
+        <collision name='wheel_back_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/collisions/wheel_back.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='wheel_back_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rikshaw/meshes/visuals/wheel_back.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='joint_hip_left' type='revolute'>
+        <parent>bike</parent>
+        <child>thigh_left</child>
+        <pose frame=''>-0.004772 0.010556 0.111121 0 -0 0</pose>
+        <axis>
+          <xyz>0 -1 -0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_pedal_right' type='revolute'>
+        <parent>kurbel</parent>
+        <child>pedal_right</child>
+        <pose frame=''>-4.2e-05 0.042 -6.6e-05 0 -0 0</pose>
+        <axis>
+          <xyz>-0 1 -0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_pedal_left' type='revolute'>
+        <parent>kurbel</parent>
+        <child>pedal_left</child>
+        <pose frame=''>-5.3e-05 -0.042 5.8e-05 0 -0 0</pose>
+        <axis>
+          <xyz>0 -1 0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_wheel_right' type='revolute'>
+        <parent>front_part</parent>
+        <child>right_wheel</child>
+        <pose frame=''>0 -0.004 0 0 -0 0</pose>
+        <axis>
+          <xyz>-0 1 0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_wheel_back' type='revolute'>
+        <parent>bike</parent>
+        <child>wheel_back</child>
+        <pose frame=''>-0 -0.069 0 0 -0 0</pose>
+        <axis>
+          <xyz>0 -1 0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_pedal' type='revolute'>
+        <parent>bike</parent>
+        <child>kurbel</child>
+        <pose frame=''>0.000278 -0.035132 -0.001009 0 -0 0</pose>
+        <axis>
+          <xyz>-0 1 -0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='spine_joint' type='revolute'>
+        <parent>bike</parent>
+        <child>torso</child>
+        <pose frame=''>0.020608 0.002662 -0.443886 0 -0 0</pose>
+        <axis>
+          <xyz>0.019536 0 -0.999809</xyz>
+          <limit>
+            <lower>-0.523599</lower>
+            <upper>0.523599</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_wheel_left' type='revolute'>
+        <parent>front_part</parent>
+        <child>left_wheel</child>
+        <pose frame=''>0 0.046 0 0 -0 0</pose>
+        <axis>
+          <xyz>0 -1 -0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_front' type='revolute'>
+        <parent>bike</parent>
+        <child>front_part</child>
+        <pose frame=''>-0.230035 -0.010388 -0.205271 0 -0 0</pose>
+        <axis>
+          <xyz>0 -0 1</xyz>
+          <limit>
+            <lower>-0.523599</lower>
+            <upper>0.523599</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_knee_left' type='revolute'>
+        <parent>thigh_left</parent>
+        <child>leg_left</child>
+        <pose frame=''>0.008999 0.033669 0.150207 0 -0 0</pose>
+        <axis>
+          <xyz>0 -1 -0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_hip_right' type='revolute'>
+        <parent>bike</parent>
+        <child>thigh_right</child>
+        <pose frame=''>-0.004301 -0.021908 0.111131 0 -0 0</pose>
+        <axis>
+          <xyz>0 -1 -0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_knee_right' type='revolute'>
+        <parent>thigh_right</parent>
+        <child>leg_right</child>
+        <pose frame=''>0.007631 -0.013637 0.15031 0 -0 0</pose>
+        <axis>
+          <xyz>-0 1 0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_foot_left' type='revolute'>
+        <parent>leg_left</parent>
+        <child>foot_left</child>
+        <pose frame=''>0.062029 0.024 0.037648 0 -0 0</pose>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_foot_left_tip' type='fixed'>
+        <parent>foot_left</parent>
+        <child>foot_left_tip</child>
+        <pose frame=''>0.041041 -0.001166 0.005886 0 -0 0</pose>
+      </joint>
+      <joint name='joint_foot_right' type='revolute'>
+        <parent>leg_right</parent>
+        <child>foot_right</child>
+        <pose frame=''>0.062989 0.0235 0.036019 0 -0 0</pose>
+        <axis>
+          <xyz>-0 1 0</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+          </limit>
+          <use_parent_model_frame>0</use_parent_model_frame>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='joint_foot_right_tip' type='fixed'>
+        <parent>foot_right</parent>
+        <child>foot_right_tip</child>
+        <pose frame=''>0.041099 0.001167 0.005459 0 -0 0</pose>
+      </joint>
+      <plugin name='cardsflow_gazebo_plugin' filename='libcardsflow_gazebo_plugin.so'/>
+      <pose frame=''>0.290275 -0.93392 0 0 -0 0</pose>
+    </model>
+  </world>
+</sdf>
