@@ -1,0 +1,116 @@
+Body: front_part
+COM: front_part -71.63902611040209 1.038855171471533 48.643769332085725
+exporting stl of front_part
+Body: left_wheel
+COM: left_wheel -99.84258521253282 -35.00004088111488 31.566700000000953
+exporting stl of left_wheel
+Body: right_wheel
+COM: right_wheel -99.8425852125328 34.200026941711826 31.56670000000398
+exporting stl of right_wheel
+Body: pedal_right
+COM: pedal_right 7.7746104966979015 14.798929042854425 44.18127038717655
+exporting stl of pedal_right
+Body: kurbel
+COM: kurbel 9.22287261913865 0.01317180120901971 27.427728349653442
+exporting stl of kurbel
+Body: pedal_left
+COM: pedal_left 10.735780788647807 -14.924470957145624 10.475201983143817
+exporting stl of pedal_left
+Body: foot_left
+COM: foot_left 18.97674392416587 -18.543468324767964 18.71338047856837
+exporting stl of foot_left
+Body: foot_left_tip
+COM: foot_left_tip 10.826126700838605 -18.434958840510635 12.448318248391775
+exporting stl of foot_left_tip
+Body: foot_right
+COM: foot_right 16.010489889140818 16.245001328005937 53.62466085339849
+exporting stl of foot_right
+Body: foot_right_tip
+COM: foot_right_tip 8.424412261007058 16.136601717809395 46.66801449787898
+exporting stl of foot_right_tip
+Body: thigh_right
+COM: thigh_right 15.291704075979972 18.72338006524151 85.81259773082586
+exporting stl of thigh_right
+Body: thigh_left
+COM: thigh_left 23.927058179080575 -20.961659598636942 75.40823428131587
+exporting stl of thigh_left
+Body: shin_right
+COM: shin_right 3.1394395745753583 18.66620014690709 72.05073169993815
+exporting stl of shin_right
+Body: shin_left
+COM: shin_left 19.818396760023088 -20.868027850563024 40.86834793169656
+exporting stl of shin_left
+Body: wheel_back
+COM: wheel_back 53.689742860369016 0.35499556212922667 31.941587024902454
+exporting stl of wheel_back
+Body: bike
+COM: bike -1.3108998963673457e-05 2.4426645572006578e-05 1.774980865576481e-05
+exporting stl of bike
+Joint: EXPORT_joint_wheel_right
+	parent: front_part
+	child: right_wheel
+	pos: 4.263256414560601e-14	-0.39996533751983065	5.506706202140776e-13
+Joint: EXPORT_joint_wheel_back
+	parent: bike
+	child: wheel_back
+	pos: -2.1316282072803006e-14	-6.89996533751975	3.552713678800501e-14
+Joint: EXPORT_joint_pedal
+	parent: bike
+	child: kurbel
+	pos: 0.027829138673871157	-3.5131649555820497	-0.10093313480948396
+Joint: EXPORT_joint_wheel_left
+	parent: front_part
+	child: left_wheel
+	pos: 7.105427357601002e-14	4.6000346624801765	7.567280135845067e-13
+Joint: EXPORT_joint_front
+	parent: bike
+	child: front_part
+	pos: -23.003546775109896	-1.0388307448302652	-20.52706951041601
+Joint: EXPORT_joint_foot_pedal_left
+	parent: pedal_left
+	child: foot_left_tip
+	pos: -0.6837710574004259	-0.6895121166349263	-0.9399528245311792
+Joint: EXPORT_joint_foot_pedal_right
+	parent: pedal_right
+	child: foot_right_tip
+	pos: 0.006816686019510243	2.862327325045179	-0.5724728343973098
+Joint: EXPORT_joint_pedal_right
+	parent: kurbel
+	child: pedal_right
+	pos: 0.007819726607506183	4.200000000000141	-0.0003592502357747662
+Joint: EXPORT_joint_pedal_left
+	parent: kurbel
+	child: pedal_left
+	pos: -0.002979167979164643	-4.19999999999993	-0.0072389048268330924
+Joint: EXPORT_joint_hip_left
+	parent: bike
+	child: thigh_left
+	pos: 0.9267098308495747	1.0551322014355904	11.083828047598274
+Joint: EXPORT_joint_knee_left
+	parent: thigh_left
+	child: shin_left
+	pos: 2.785427223305444	3.3665004640008895	14.787854561039396
+Joint: EXPORT_joint_hip_right
+	parent: bike
+	child: thigh_right
+	pos: 11.119613195499419	-2.190338176338493	0.21276553200884507
+Joint: EXPORT_joint_knee_right
+	parent: thigh_right
+	child: shin_right
+	pos: -7.628122292507754	-1.363158255267205	12.974631753044932
+Joint: EXPORT_joint_foot_left
+	parent: shin_left
+	child: foot_left
+	pos: -1.087585613456632	2.391940944064153	2.348285919476801
+Joint: EXPORT_joint_foot_left_tip
+	parent: foot_left
+	child: foot_left_tip
+	pos: 3.3570715660319888	-0.11656854018282559	2.4322592364017375
+Joint: EXPORT_joint_foot_right
+	parent: shin_right
+	child: foot_right
+	pos: -1.300507208443717	2.4080405619540244	2.2387196955038817
+Joint: EXPORT_joint_foot_right_tip
+	parent: foot_right
+	child: foot_right_tip
+	pos: 3.1324300678942034	0.11644017214091917	2.7148023470056373
