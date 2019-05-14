@@ -44,7 +44,7 @@ Body: wheel_back
 COM: wheel_back 53.689742860369016 0.35499556212922667 31.941587024902454
 exporting stl of wheel_back
 Body: bike
-COM: bike -1.3108998963673457e-05 2.4426645572006578e-05 1.774980865576481e-05
+COM: bike -1.3108998963673457e-05 2.4426645572006578e-05 27.001017749808657
 exporting stl of bike
 Joint: EXPORT_joint_wheel_right
 	parent: front_part
