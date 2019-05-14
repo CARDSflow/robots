@@ -3,17 +3,17 @@
 	<model name="VRpuppet">
 		<link name="base">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.017515512320616235 -0.0030107299740181545 0.9287069467325038 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.017487246007245664 -0.002783560450145605 0.9287790371069308 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>48.77412205270252</mass>
+				<mass>48.6631452966204</mass>
 				<inertia>
-					<ixx>52.62295381392352</ixx>
-					<ixy>-0.0053980945558382044</ixy>
-					<ixz>0.8072875162500746</ixz>
-					<iyy>52.60999467690776</iyy>
-					<iyz>0.13937779609615675</iyz>
-					<izz>12.865303201489157</izz>
+					<ixx>52.532463152686645</ixx>
+					<ixy>-0.00505744957896311</ixy>
+					<ixz>0.8043097493283048</ixz>
+					<iyy>52.52057351092106</iyy>
+					<iyz>0.12916086191335321</iyz>
+					<izz>12.864025153609571</izz>
 				</inertia>
 			</inertial>
 			<collision name="base_collision">
@@ -809,10 +809,10 @@
 				<mass>0.06979037783542182</mass>
 				<inertia>
 					<ixx>0.1809198577960802</ixx>
-					<ixy>-4.5420726845470915e-06</ixy>
+					<ixy>-4.542072684547092e-06</ixy>
 					<ixz>0.0033945845073235633</ixz>
 					<iyy>0.1809832304363084</iyy>
-					<iyz>0.00024206107360706254</iyz>
+					<iyz>0.00024206107360706246</iyz>
 					<izz>7.566768967812972e-05</izz>
 				</inertia>
 			</inertial>
@@ -835,16 +835,16 @@
 		</link>
 		<link name="neck_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.03021065209880325 -0.002154261532699797 1.6100189040829913 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.03021065209880325 -0.002154261532699798 1.6100189040829918 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.04678255602502142</mass>
 				<inertia>
 					<ixx>0.12127338974092727</ixx>
-					<ixy>-3.0446857358908502e-06</ixy>
-					<ixz>0.002275490471963592</ixz>
+					<ixy>-3.044685735890851e-06</ixy>
+					<ixz>0.0022754904719635917</ixz>
 					<iyy>0.12131587029742415</iyy>
-					<iyz>0.00016226070115084857</iyz>
+					<iyz>0.00016226070115084863</iyz>
 					<izz>4.817621074330742e-05</izz>
 				</inertia>
 			</inertial>
@@ -904,11 +904,11 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.046782556025021446</mass>
 				<inertia>
-					<ixx>0.0012875040333462837</ixx>
-					<ixy>-0.00017629937924279257</ixy>
+					<ixx>0.0012875040333462835</ixx>
+					<ixy>-0.00017629937924279254</ixy>
 					<ixz>0.00016053641697158822</ixz>
 					<iyy>0.0006308475754659841</iyy>
-					<iyz>0.0006383193566728547</iyz>
+					<iyz>0.0006383193566728546</iyz>
 					<izz>0.0007505959810860087</izz>
 				</inertia>
 			</inertial>
@@ -970,9 +970,9 @@
 				<inertia>
 					<ixx>0.010699878776091546</ixx>
 					<ixy>-0.00015359806483449144</ixy>
-					<ixz>0.0006546684012049038</ixz>
-					<iyy>0.010184175268552751</iyy>
-					<iyz>0.0023782530630796664</iyz>
+					<ixz>0.0006546684012049039</ixz>
+					<iyy>0.010184175268552753</iyy>
+					<iyz>0.002378253063079667</iyz>
 					<izz>0.0006055276823434818</izz>
 				</inertia>
 			</inertial>
@@ -1027,13 +1027,13 @@
 		</link>
 		<link name="wrist_right_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.09718306851434588 -0.26280910119509565 0.8690189040829803 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.09718306851434591 -0.2628091011950957 0.8690189040829803 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.046782556025034956</mass>
 				<inertia>
 					<ixx>0.038566367051744425</ixx>
-					<ixy>-0.0011948543112435834</ixy>
+					<ixy>-0.0011948543112435836</ixy>
 					<ixz>0.003950970416830831</ixz>
 					<iyy>0.03577700042892654</iyy>
 					<iyz>0.010684484447436892</iyz>
@@ -1059,7 +1059,7 @@
 		</link>
 		<link name="shoulder_left_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.04890500456828595 0.18574827576446715 1.4000189040829958 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.048905004568285955 0.18574827576446712 1.400018904082996 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.0697903778354231</mass>
@@ -1069,7 +1069,7 @@
 					<ixz>0.004778402767111253</ixz>
 					<iyy>0.13697139957424642</iyy>
 					<iyz>-0.01814906434902278</iyz>
-					<izz>0.0025865019509990015</izz>
+					<izz>0.002586501950999001</izz>
 				</inertia>
 			</inertial>
 			<collision name="shoulder_left_link1_collision">
@@ -1099,7 +1099,7 @@
 					<ixx>0.0933156590150584</ixx>
 					<ixy>0.0004249736873216092</ixy>
 					<ixz>0.0032031048120405516</ixz>
-					<iyy>0.09181343734134116</iyy>
+					<iyy>0.09181343734134118</iyy>
 					<iyz>-0.012165855038011845</iyz>
 					<izz>0.0017312627358952296</izz>
 				</inertia>
@@ -1133,7 +1133,7 @@
 					<ixz>0.008740952190120837</ixz>
 					<iyy>0.09108429556020144</iyy>
 					<iyz>0.01714029064816496</iyz>
-					<izz>0.004114616232233812</izz>
+					<izz>0.004114616232233811</izz>
 				</inertia>
 			</inertial>
 			<collision name="elbow_right_link1_collision">
@@ -1155,17 +1155,17 @@
 		</link>
 		<link name="elbow_right_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.1101527920868839 -0.21600059480521178 1.1370189040829777 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.11015279208688393 -0.21600059480521178 1.1370189040829777 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.046782556025034956</mass>
+				<mass>0.04678255602503495</mass>
 				<inertia>
 					<ixx>0.06266900965815193</ixx>
 					<ixy>-0.0011131005652651998</ixy>
-					<ixz>0.005859318980085709</ixz>
+					<ixz>0.005859318980085708</ixz>
 					<iyy>0.061053953284201525</iyy>
-					<iyz>0.01148964416493151</iyz>
-					<izz>0.0027556029692682297</izz>
+					<iyz>0.011489644164931511</iyz>
+					<izz>0.0027556029692682293</izz>
 				</inertia>
 			</inertial>
 			<collision name="elbow_right_link2_collision">
@@ -1194,10 +1194,10 @@
 				<inertia>
 					<ixx>0.13902613917927265</ixx>
 					<ixy>-0.0010056854983776684</ixy>
-					<ixz>0.00789142324521368</ixz>
-					<iyy>0.1372597292073034</iyy>
+					<ixz>0.007891423245213683</ixz>
+					<iyy>0.13725972920730342</iyy>
 					<iyz>0.01743292253525537</iyz>
-					<izz>0.0026885517348020026</izz>
+					<izz>0.002688551734802003</izz>
 				</inertia>
 			</inertial>
 			<collision name="shoulder_right_link1_collision">
@@ -1219,17 +1219,17 @@
 		</link>
 		<link name="shoulder_right_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.08076550022659496 -0.1784188561930476 1.4000189040829887 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.08076550022659496 -0.1784188561930476 1.4000189040829885 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.046782556025034935</mass>
+				<mass>0.04678255602503495</mass>
 				<inertia>
 					<ixx>0.09319079011769002</ixx>
 					<ixy>-0.0006741407571522098</ixy>
 					<ixz>0.005289854582436727</ixz>
 					<iyy>0.09200671322875241</iyy>
 					<iyz>0.011685803980387287</iyz>
-					<izz>0.0017996697259244625</izz>
+					<izz>0.0017996697259244627</izz>
 				</inertia>
 			</inertial>
 			<collision name="shoulder_right_link2_collision">
@@ -1289,7 +1289,7 @@
 				<mass>0.046782556025046794</mass>
 				<inertia>
 					<ixx>0.010695559036529741</ixx>
-					<ixy>5.593491319448228e-05</ixy>
+					<ixy>5.5934913194482276e-05</ixy>
 					<ixz>0.0002393350082696423</ixz>
 					<iyy>0.010147544812570268</iyy>
 					<iyz>-0.0023690293412525084</iyz>
@@ -1315,16 +1315,16 @@
 		</link>
 		<link name="elbow_left_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.0713198370087738 0.22786211299951023 1.1370189040829852 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.07131983700877378 0.22786211299951023 1.1370189040829852 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.06979037783542312</mass>
+				<mass>0.0697903778354231</mass>
 				<inertia>
-					<ixx>0.0938610805625378</ixx>
+					<ixx>0.09386108056253778</ixx>
 					<ixy>0.001134169624769473</ixy>
-					<ixz>0.005659441522875585</ixz>
-					<iyy>0.09059247450039482</iyy>
-					<iyz>-0.01808153744996574</iyz>
+					<ixz>0.005659441522875583</ixz>
+					<iyy>0.0905924745003948</iyy>
+					<iyz>-0.018081537449965733</iyz>
 					<izz>0.00399023352606866</izz>
 				</inertia>
 			</inertial>
@@ -1353,11 +1353,11 @@
 				<mass>0.046782556025031015</mass>
 				<inertia>
 					<ixx>0.06291531446335553</ixx>
-					<ixy>0.000760267470229521</ixy>
+					<ixy>0.0007602674702295211</ixy>
 					<ixz>0.003793691168582457</ixz>
 					<iyy>0.06072427107020524</iyy>
-					<iyz>-0.01212058975858432</iyz>
-					<izz>0.0026722255604843103</izz>
+					<iyz>-0.012120589758584321</iyz>
+					<izz>0.0026722255604843107</izz>
 				</inertia>
 			</inertial>
 			<collision name="elbow_left_link2_collision">
@@ -1379,7 +1379,7 @@
 		</link>
 		<link name="wrist_left_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.05041894084619907 0.2717073241359743 0.8690189040829854 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.05041894084619908 0.2717073241359743 0.8690189040829854 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.06979037783542305</mass>
@@ -1443,14 +1443,14 @@
 		</link>
 		<link name="foot_left_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.009410557923568283 0.12191109690325765 0.11146497559651632 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.009410557923568284 0.1219110969032576 0.11146497559651632 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.06979037783542483</mass>
 				<inertia>
 					<ixx>0.0019160003117788468</ixx>
-					<ixy>8.006711139542837e-05</ixy>
-					<ixz>7.320644998262254e-05</ixz>
+					<ixy>8.006711139542831e-05</ixy>
+					<ixz>7.32064499826225e-05</ixz>
 					<iyy>0.0008849342323485516</iyy>
 					<iyz>-0.0009483687035625753</iyz>
 					<izz>0.0010550744329006008</izz>
@@ -1475,15 +1475,15 @@
 		</link>
 		<link name="foot_left_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.00941055790523389 0.12191109692158363 0.11146497559651661 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.00941055790523389 0.12191109692158364 0.11146497559651661 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.0467825560250468</mass>
 				<inertia>
-					<ixx>0.0012818056405032102</ixx>
+					<ixx>0.00128180564050321</ixx>
 					<ixy>5.367135462023979e-05</ixy>
-					<ixz>4.9072450203816196e-05</ixz>
-					<iyy>0.0005906515281707711</iyy>
+					<ixz>4.907245020381618e-05</ixz>
+					<iyy>0.000590651528170771</iyy>
 					<iyz>-0.0006357196133557313</iyz>
 					<izz>0.0007047015409470922</izz>
 				</inertia>
@@ -1505,39 +1505,39 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_link1">
+		<link name="spine_sphere_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">-0.020368108885115747 -0.0033342838925980063 1.0302379930054062 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.03806502733617433</mass>
 				<inertia>
-					<ixx>0.040403953483853804</ixx>
+					<ixx>0.04040395348385381</ixx>
 					<ixy>-2.5851123855890627e-06</ixy>
-					<ixz>0.0007987565191239687</ixz>
-					<iyy>0.04041932194974548</iyy>
+					<ixz>0.0007987565191239688</ixz>
+					<iyy>0.040419321949745485</iyy>
 					<iyz>0.00013075740172269605</iyz>
 					<izz>1.7893505613608954e-05</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_link1_collision">
+			<collision name="spine_sphere_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/spine_sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_link1_visual">
+			<visual name="spine_sphere_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/spine_sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_link2">
+		<link name="spine_sphere_link2">
 			<self_collide>false</self_collide>
 			<pose frame="">-0.020368108783552233 -0.0033342837910344883 1.0302379930054062 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -1552,146 +1552,146 @@
 					<izz>1.3006573104353652e-06</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_link2_collision">
+			<collision name="spine_sphere_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/spine_sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_link2_visual">
+			<visual name="spine_sphere_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/spine_sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_link1">
+		<link name="hip_left_sphere_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.020368108885115747 -0.0033342838925980063 1.0302379930054062 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.012525237363247163 0.09608736243713784 0.8970954229409361 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.03806502733617433</mass>
 				<inertia>
-					<ixx>0.040403953483853804</ixx>
-					<ixy>-2.5851123855890627e-06</ixy>
-					<ixz>0.0007987565191239687</ixz>
-					<iyy>0.04041932194974548</iyy>
-					<iyz>0.00013075740172269605</iyz>
-					<izz>1.7893505613608954e-05</izz>
+					<ixx>0.030987104968491903</ixx>
+					<ixy>4.581190834706321e-05</ixy>
+					<ixz>0.0004277113269835763</ixz>
+					<iyy>0.030641630600247754</iyy>
+					<iyz>-0.0032811875817166567</iyz>
+					<izz>0.00035909643853781</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_link1_collision">
+			<collision name="hip_left_sphere_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/hip_left_sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_link1_visual">
+			<visual name="hip_left_sphere_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/hip_left_sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_link2">
+		<link name="hip_left_sphere_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.020368108783552233 -0.0033342837910344883 1.0302379930054062 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.01252523726168365 0.09608736253870134 0.8970954229409361 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.002996372533177607</mass>
 				<inertia>
-					<ixx>0.0031803783911504586</ixx>
-					<ixy>-2.034928125593611e-07</ixy>
-					<ixz>6.287587978140801e-05</ixz>
-					<iyy>0.0031815881538093307</iyy>
-					<iyz>1.0292856790487888e-05</iyz>
-					<izz>1.3006573104353652e-06</izz>
+					<ixx>0.002439110402846494</ixx>
+					<ixy>3.606185322902754e-06</ixy>
+					<ixz>3.366823963088628e-05</ixz>
+					<iyy>0.0024119156263578876</iyy>
+					<iyz>-0.00025828591346124965</iyz>
+					<izz>2.8159198351524762e-05</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_link2_collision">
+			<collision name="hip_left_sphere_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/hip_left_sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_link2_visual">
+			<visual name="hip_left_sphere_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/hip_left_sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_link1">
+		<link name="hip_left_sphere_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.020368108885115747 -0.0033342838925980063 1.0302379930054062 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.012525237363247163 0.09608736243713784 0.8970954229409361 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.03806502733617433</mass>
 				<inertia>
-					<ixx>0.040403953483853804</ixx>
-					<ixy>-2.5851123855890627e-06</ixy>
-					<ixz>0.0007987565191239687</ixz>
-					<iyy>0.04041932194974548</iyy>
-					<iyz>0.00013075740172269605</iyz>
-					<izz>1.7893505613608954e-05</izz>
+					<ixx>0.030987104968491903</ixx>
+					<ixy>4.581190834706321e-05</ixy>
+					<ixz>0.0004277113269835763</ixz>
+					<iyy>0.030641630600247754</iyy>
+					<iyz>-0.0032811875817166567</iyz>
+					<izz>0.00035909643853781</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_link1_collision">
+			<collision name="hip_left_sphere_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/hip_left_sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_link1_visual">
+			<visual name="hip_left_sphere_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/hip_left_sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="sphere_link2">
+		<link name="hip_right_sphere_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.020368108783552233 -0.0033342837910344883 1.0302379930054062 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.029910249263837525 -0.10262423393055797 0.8970954229406419 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.002996372533177607</mass>
 				<inertia>
-					<ixx>0.0031803783911504586</ixx>
-					<ixy>-2.034928125593611e-07</ixy>
-					<ixz>6.287587978140801e-05</ixz>
-					<iyy>0.0031815881538093307</iyy>
-					<iyz>1.0292856790487888e-05</iyz>
-					<izz>1.3006573104353652e-06</izz>
+					<ixx>0.002443002547389655</ixx>
+					<ixy>-9.197414683155272e-06</ixy>
+					<ixz>8.039970968970905e-05</ixz>
+					<iyy>0.0024141261745513906</iyy>
+					<iyz>0.00027585723349759345</iyz>
+					<izz>3.426189109135013e-05</izz>
 				</inertia>
 			</inertial>
-			<collision name="sphere_link2_collision">
+			<collision name="hip_right_sphere_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/hip_right_sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="sphere_link2_visual">
+			<visual name="hip_right_sphere_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/hip_right_sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1763,17 +1763,17 @@
 		</link>
 		<link name="torso">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.02506639813781786 -0.002744413901436524 1.3449886072869484 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.025066398137817858 -0.002744413901436524 1.3449886072869484 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>2.0895139865867263</mass>
 				<inertia>
 					<ixx>3.953151182767228</ixx>
 					<ixy>-0.0006656008249198482</ixy>
-					<ixz>0.0711959030546329</ixz>
-					<iyy>3.9482728202691275</iyy>
-					<iyz>0.00766616337482982</iyz>
-					<izz>0.009024596759740149</izz>
+					<ixz>0.07119590305463287</ixz>
+					<iyy>3.9482728202691266</iyy>
+					<iyz>0.007666163374829815</iyz>
+					<izz>0.009024596759740145</izz>
 				</inertia>
 			</inertial>
 			<collision name="torso_collision">
@@ -1801,10 +1801,10 @@
 				<mass>0.11563807156317799</mass>
 				<inertia>
 					<ixx>0.16564830019102675</ixx>
-					<ixy>-0.0025852498411248303</ixy>
+					<ixy>-0.00258524984112483</ixy>
 					<ixz>0.014267436827144889</ixz>
 					<iyy>0.16185014433988829</iyy>
-					<iyz>0.02827128548919638</iyz>
+					<iyz>0.028271285489196375</iyz>
 					<izz>0.006439566613380333</izz>
 				</inertia>
 			</inertial>
@@ -1830,13 +1830,13 @@
 			<pose frame="">-0.09895299495120308 -0.2549532998024565 0.9072944075039571 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.11563807156317799</mass>
+				<mass>0.115638071563178</mass>
 				<inertia>
 					<ixx>0.1037952358192096</ixx>
 					<ixy>-0.00290773074489254</ixy>
 					<ixz>0.010427544319140373</ixz>
 					<iyy>0.09736536466204024</iyy>
-					<iyz>0.0265315029392369</iyz>
+					<iyz>0.026531502939236902</iyz>
 					<izz>0.00872149600005539</izz>
 				</inertia>
 			</inertial>
@@ -1894,14 +1894,14 @@
 			<pose frame="">-0.0679964372833337 0.22301467194975302 1.1745803029018593 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.11563810874472029</mass>
+				<mass>0.11563810874472027</mass>
 				<inertia>
-					<ixx>0.166307413582168</ixx>
-					<ixy>0.0017639251461552608</ixy>
+					<ixx>0.16630741358216797</ixx>
+					<ixy>0.0017639251461552604</ixy>
 					<ixz>0.009148892975354943</ixz>
 					<iyy>0.16108329631059937</iyy>
 					<iyz>-0.030173755987746763</iyz>
-					<izz>0.006331735454186379</izz>
+					<izz>0.006331735454186378</izz>
 				</inertia>
 			</inertial>
 			<collision name="upper_arm_left_collision">
@@ -1926,12 +1926,12 @@
 			<pose frame="">-0.053281833040679454 0.2666126106813735 0.9072943959252863 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.11563810874472034</mass>
+				<mass>0.11563810874472033</mass>
 				<inertia>
 					<ixx>0.10446759284304319</ixx>
 					<ixy>0.0016332345481314349</ixy>
-					<ixz>0.00566609346857091</ixz>
-					<iyy>0.09656499331827892</iyy>
+					<ixz>0.005666093468570909</ixz>
+					<iyy>0.09656499331827889</iyy>
 					<iyz>-0.02784611885307521</iyz>
 					<izz>0.008593425228288779</izz>
 				</inertia>
@@ -2083,17 +2083,17 @@
 		</link>
 		<link name="upper_leg_left">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.00428283280456362 0.10172914327419966 0.7421710621084325 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.004276143902191709 0.10178248117124525 0.7421279487245191 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>63.291555788584134</mass>
+				<mass>63.27504051101159</mass>
 				<inertia>
-					<ixx>36.55202709327526</ixx>
-					<ixy>0.025448341855714554</ixy>
-					<ixz>0.22969616301799184</ixz>
-					<iyy>35.95535571417742</iyy>
-					<iyz>-4.788730787292012</iyz>
-					<izz>0.8507540063491045</izz>
+					<ixx>36.53825563344212</ixx>
+					<ixy>0.025499035587120612</ixy>
+					<ixz>0.2292479561329127</ixz>
+					<iyy>35.941743415275624</iyy>
+					<iyz>-4.790268632531172</iyz>
+					<izz>0.8505650258771399</izz>
 				</inertia>
 			</inertial>
 			<collision name="upper_leg_left_collision">
@@ -2457,45 +2457,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="foot_right_axis0" type="revolute">
-			<parent>lower_leg_right</parent>
-			<child>ankle_right_link1</child>
-			<pose frame="">1.2026375451057448e-10 1.2026315943103327e-10 2.504663143554353e-15 0 0 0</pose>
-			<axis>
-				<xyz>0.08715574274765865 0.9961946980917463 -2.2204460492503032e-15</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="foot_right_axis2" type="revolute">
-			<parent>ankle_right_link2</parent>
-			<child>foot_right</child>
-			<pose frame="">1.504047216549509e-08 -1.478245122754629e-08 0.0006058641470340831 0 0 0</pose>
-			<axis>
-				<xyz>-1.3693641338350853e-14 1.1980383794956672e-15 -0.9999999999999997</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="foot_right_axis1" type="revolute">
-			<parent>ankle_right_link1</parent>
-			<child>ankle_right_link2</child>
-			<pose frame="">1.0194517230388555e-10 1.0193691224458235e-10 -2.6645352591003756e-16 0 0 0</pose>
-			<axis>
-				<xyz>-0.996194698091746 0.08715574274765862 1.371819324802458e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
 		<joint name="knee_right_axis0" type="revolute">
 			<parent>upper_leg_right</parent>
 			<child>knee_right_link1</child>
@@ -2535,6 +2496,45 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
+		<joint name="foot_right_axis0" type="revolute">
+			<parent>lower_leg_right</parent>
+			<child>ankle_right_link1</child>
+			<pose frame="">1.2026375451057448e-10 1.2026315943103327e-10 2.504663143554353e-15 0 0 0</pose>
+			<axis>
+				<xyz>0.08715574274765865 0.9961946980917463 -2.2204460492503032e-15</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="foot_right_axis2" type="revolute">
+			<parent>ankle_right_link2</parent>
+			<child>foot_right</child>
+			<pose frame="">1.504047216549509e-08 -1.478245122754629e-08 0.0006058641470340831 0 0 0</pose>
+			<axis>
+				<xyz>-1.3693641338350853e-14 1.1980383794956672e-15 -0.9999999999999997</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="foot_right_axis1" type="revolute">
+			<parent>ankle_right_link1</parent>
+			<child>ankle_right_link2</child>
+			<pose frame="">1.0194517230388555e-10 1.0193691224458235e-10 -2.6645352591003756e-16 0 0 0</pose>
+			<axis>
+				<xyz>-0.996194698091746 0.08715574274765862 1.371819324802458e-14</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
 		<joint name="shoulder_right_axis0" type="revolute">
 			<parent>torso</parent>
 			<child>shoulder_right_link1</child>
@@ -2564,7 +2564,7 @@
 		<joint name="shoulder_right_axis1" type="revolute">
 			<parent>shoulder_right_link1</parent>
 			<child>shoulder_right_link2</child>
-			<pose frame="">1.0193769384159168e-10 1.019406070668083e-10 2.2737367544323206e-15 0 0 0</pose>
+			<pose frame="">1.0193769384159168e-10 1.019406070668083e-10 2.5579538487363606e-15 0 0 0</pose>
 			<axis>
 				<xyz>-0.9961946980917488 0.08715574274765878 1.4012442775107149e-14</xyz>
 				<limit>
@@ -2574,12 +2574,12 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="elbow_right_axis0" type="revolute">
-			<parent>upper_arm_right</parent>
-			<child>elbow_right_link1</child>
-			<pose frame="">1.2026326601244363e-10 1.202601751515431e-10 3.268496584496461e-15 0 0 0</pose>
+		<joint name="foot_left_axis0" type="revolute">
+			<parent>lower_leg_left</parent>
+			<child>foot_left_link1</child>
+			<pose frame="">1.2026379003771125e-10 1.202636568109483e-10 3.552713678800501e-17 0 0 0</pose>
 			<axis>
-				<xyz>-8.34502424239561e-15 -2.48436170578458e-13 1.0000000000000049</xyz>
+				<xyz>0.08715574274765865 0.9961946980917463 -6.123233995736757e-17</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -2587,12 +2587,12 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="elbow_right_axis2" type="revolute">
-			<parent>elbow_right_link2</parent>
-			<child>lower_arm_right</child>
-			<pose frame="">-0.011199797033743462 0.038952705099181986 0.22972449657902347 0 0 0</pose>
+		<joint name="foot_left_axis2" type="revolute">
+			<parent>foot_left_link2</parent>
+			<child>foot_left</child>
+			<pose frame="">0.0005092897401555053 0.005821395063067012 0.0015305307358121566 0 0 0</pose>
 			<axis>
-				<xyz>0.08715574274765844 0.9961946980917449 2.507161145359759e-13</xyz>
+				<xyz>1.3693641338350853e-14 -1.198038379495668e-15 0.9999999999999997</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -2600,90 +2600,12 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="elbow_right_axis1" type="revolute">
-			<parent>elbow_right_link1</parent>
-			<child>elbow_right_link2</child>
-			<pose frame="">1.0193755173304453e-10 1.019402873225772e-10 2.9842794901924207e-15 0 0 0</pose>
+		<joint name="foot_left_axis1" type="revolute">
+			<parent>foot_left_link1</parent>
+			<child>foot_left_link2</child>
+			<pose frame="">1.0192940713693588e-10 1.0193758726018132e-10 -2.6645352591003756e-16 0 0 0</pose>
 			<axis>
-				<xyz>-0.9961946980917465 0.0871557427476586 1.4033259456818555e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="wrist_right_axis0" type="revolute">
-			<parent>lower_arm_right</parent>
-			<child>wrist_right_link1</child>
-			<pose frame="">1.2026340812099079e-10 1.2026063700432133e-10 6.536993168992922e-15 0 0 0</pose>
-			<axis>
-				<xyz>-8.331199263760187e-15 -2.484373801073617e-13 1.0000000000000049</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="wrist_right_axis2" type="revolute">
-			<parent>wrist_right_link2</parent>
-			<child>hand_right</child>
-			<pose frame="">-0.0008936032515322446 -0.01021709230149245 -2.2709543671339815e-07 0 0 0</pose>
-			<axis>
-				<xyz>0.0871557427476585 0.9961946980917449 2.50716114535976e-13</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="wrist_right_axis1" type="revolute">
-			<parent>wrist_right_link1</parent>
-			<child>wrist_right_link2</child>
-			<pose frame="">1.0193740962449738e-10 1.0194021626830363e-10 7.105427357601002e-16 0 0 0</pose>
-			<axis>
-				<xyz>-0.9961946980917465 0.08715574274765865 1.4074892820242e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="shoulder_left_axis0" type="revolute">
-			<parent>torso</parent>
-			<child>shoulder_left_link1</child>
-			<pose frame="">1.2026391438269002e-10 1.2026625029193384e-10 -3.126388037344441e-15 0 0 0</pose>
-			<axis>
-				<xyz>-3.551597200607818e-14 -2.5090693862042123e-13 -1.0000000000000049</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="shoulder_left_axis2" type="revolute">
-			<parent>shoulder_left_link2</parent>
-			<child>upper_arm_left</child>
-			<pose frame="">0.01909143283531167 -0.03726639606501962 0.225438601181133 0 0 0</pose>
-			<axis>
-				<xyz>0.08715574274765875 0.9961946980917463 -2.5071611453597593e-13</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="shoulder_left_axis1" type="revolute">
-			<parent>shoulder_left_link1</parent>
-			<child>shoulder_left_link2</child>
-			<pose frame="">1.0193650368250929e-10 1.0193389243795537e-10 -4.547473508864641e-15 0 0 0</pose>
-			<axis>
-				<xyz>0.9961946980917488 -0.08715574274765894 -1.4012442775107327e-14</xyz>
+				<xyz>0.996194698091746 -0.08715574274765862 -1.371819324802458e-14</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -2694,7 +2616,7 @@
 		<joint name="wrist_left_axis0" type="revolute">
 			<parent>lower_arm_left</parent>
 			<child>wrist_left_link1</child>
-			<pose frame="">1.20263958791611e-10 1.2026568185774522e-10 -2.2737367544323206e-15 0 0 0</pose>
+			<pose frame="">1.202639676733952e-10 1.2026568185774522e-10 -2.2737367544323206e-15 0 0 0</pose>
 			<axis>
 				<xyz>-3.552288449539533e-14 -2.509063338559654e-13 -1.0000000000000049</xyz>
 				<limit>
@@ -2723,45 +2645,6 @@
 			<pose frame="">1.0193631716504114e-10 1.0193399901936572e-10 -5.826450433232822e-15 0 0 0</pose>
 			<axis>
 				<xyz>0.9961946980917465 -0.08715574274765868 -1.4074892820242178e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_left_axis0" type="revolute">
-			<parent>upper_arm_left</parent>
-			<child>elbow_left_link1</child>
-			<pose frame="">1.2026380780127966e-10 1.20265717384882e-10 -4.973799150320702e-15 0 0 0</pose>
-			<axis>
-				<xyz>-3.5509059516760165e-14 -2.5090754338487325e-13 -1.0000000000000049</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_left_axis2" type="revolute">
-			<parent>elbow_left_link2</parent>
-			<child>lower_arm_left</child>
-			<pose frame="">-0.018038003847830497 -0.03875049756159754 0.22972450815769435 0 0 0</pose>
-			<axis>
-				<xyz>0.08715574274765861 0.9961946980917449 -2.507161145359759e-13</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="ankle_right_axis1" type="revolute">
-			<parent>elbow_left_link1</parent>
-			<child>elbow_left_link2</child>
-			<pose frame="">1.0193642374645152e-10 1.019341056007761e-10 -3.4106051316484808e-15 0 0 0</pose>
-			<axis>
-				<xyz>0.9961946980917465 -0.08715574274765873 -1.4033259456818733e-14</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
@@ -2808,84 +2691,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="foot_left_axis0" type="revolute">
-			<parent>lower_leg_left</parent>
-			<child>foot_left_link1</child>
-			<pose frame="">1.202637878172652e-10 1.202636212838115e-10 3.552713678800501e-17 0 0 0</pose>
-			<axis>
-				<xyz>0.08715574274765865 0.9961946980917463 -6.123233995736757e-17</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="foot_left_axis2" type="revolute">
-			<parent>foot_left_link2</parent>
-			<child>foot_left</child>
-			<pose frame="">0.0005092897401555053 0.005821395063067012 0.0015305307358121566 0 0 0</pose>
-			<axis>
-				<xyz>1.3693641338350853e-14 -1.198038379495668e-15 0.9999999999999997</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="foot_left_axis1" type="revolute">
-			<parent>foot_left_link1</parent>
-			<child>foot_left_link2</child>
-			<pose frame="">1.0192940713693588e-10 1.0193760502374972e-10 -2.6645352591003756e-16 0 0 0</pose>
-			<axis>
-				<xyz>0.996194698091746 -0.08715574274765862 -1.371819324802458e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="sphere_axis0" type="revolute">
-			<parent>base</parent>
-			<child>sphere_link1</child>
-			<pose frame="">-0.029910249263837525 -0.10262423393055797 0.8970954229406419 0 0 0</pose>
-			<axis>
-				<xyz>0.9961946980917457 -0.08715574274765821 -1.4719829380542798e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="sphere_axis1" type="revolute">
-			<parent>sphere_link1</parent>
-			<child>sphere_link2</child>
-			<pose frame="">-0.029910249263837525 -0.10262423393055797 0.8970954229406419 0 0 0</pose>
-			<axis>
-				<xyz>0.08715574274765821 0.9961946980917457 2.220446049250309e-15</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="sphere_axis2" type="revolute">
-			<parent>sphere_link2</parent>
-			<child>upper_leg_right</child>
-			<pose frame="">-0.007137304704435841 0.00699664273810777 0.15493637954729067 0 0 0</pose>
-			<axis>
-				<xyz>2.0953448721170926e-19 -2.2289461243244613e-15 1.0</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
 		<joint name="neck_axis0" type="revolute">
 			<parent>torso</parent>
 			<child>neck_link1</child>
@@ -2915,7 +2720,7 @@
 		<joint name="neck_axis1" type="revolute">
 			<parent>neck_link1</parent>
 			<child>neck_link2</child>
-			<pose frame="">1.0194513677674877e-10 1.0193600241681367e-10 5.684341886080802e-16 0 0 0</pose>
+			<pose frame="">1.0194513677674877e-10 1.0193600380459244e-10 0.0 0 0 0</pose>
 			<axis>
 				<xyz>-0.9961946980917483 0.08715574274765885 -1.0214051826551439e-14</xyz>
 				<limit>
@@ -2927,8 +2732,8 @@
 		</joint>
 		<joint name="sphere_axis0" type="revolute">
 			<parent>base</parent>
-			<child>sphere_link1</child>
-			<pose frame="">-0.020368108783552233 -0.0033342837910344883 1.0302379930054062 0 0 0</pose>
+			<child>spine_sphere_link1</child>
+			<pose frame="">1.0156351315515622e-10 1.0156351815115982e-10 0.0 0 0 0</pose>
 			<axis>
 				<xyz>0.9961946980917457 -0.08715574274765824 -1.4615745971984193e-14</xyz>
 				<limit>
@@ -2939,9 +2744,9 @@
 			</axis>
 		</joint>
 		<joint name="sphere_axis1" type="revolute">
-			<parent>sphere_link1</parent>
-			<child>sphere_link2</child>
-			<pose frame="">-0.020368108783552233 -0.0033342837910344883 1.0302379930054062 0 0 0</pose>
+			<parent>spine_sphere_link1</parent>
+			<child>spine_sphere_link2</child>
+			<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 			<axis>
 				<xyz>0.08715574274765824 0.9961946980917457 2.220446049250312e-15</xyz>
 				<limit>
@@ -2952,11 +2757,219 @@
 			</axis>
 		</joint>
 		<joint name="sphere_axis2" type="revolute">
-			<parent>sphere_link2</parent>
+			<parent>spine_sphere_link2</parent>
 			<child>torso</child>
-			<pose frame="">0.00469828935426563 -0.0005898698895979637 -0.3147506142815422 0 0 0</pose>
+			<pose frame="">0.004698289354265626 -0.0005898698895979637 -0.3147506142815422 0 0 0</pose>
 			<axis>
 				<xyz>2.0803306108103309e-19 -2.2289459929666984e-15 1.0</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="hip_left_sphere_axis0" type="revolute">
+			<parent>base</parent>
+			<child>hip_left_sphere_link1</child>
+			<pose frame="">-0.012525237261683721 0.09608736253870134 0.8970954229409359 0 0 0</pose>
+			<axis>
+				<xyz>0.9961946980917457 -0.08715574274765821 -1.4598398737224428e-14</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="hip_left_sphere_axis1" type="revolute">
+			<parent>hip_left_sphere_link1</parent>
+			<child>hip_left_sphere_link2</child>
+			<pose frame="">0.0 0.0 -1.4210854715202004e-16 0 0 0</pose>
+			<axis>
+				<xyz>0.08715574274765821 0.9961946980917457 2.20990294428773e-15</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="hip_left_sphere_axis2" type="revolute">
+			<parent>hip_left_sphere_link2</parent>
+			<child>upper_leg_right</child>
+			<pose frame="">0.010247707297718033 0.20570823920736708 0.15493637954758469 0 0 0</pose>
+			<axis>
+				<xyz>2.0953448721170926e-19 -2.2183627464137227e-15 1.0</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="hip_right_sphere_axis1" type="revolute">
+			<parent>hip_left_sphere_link1</parent>
+			<child>hip_right_sphere_link2</child>
+			<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+			<axis>
+				<xyz>0.08715574274765821 0.9961946980917457 2.220446049250309e-15</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="shoulder_left_axis0" type="revolute">
+			<parent>torso</parent>
+			<child>shoulder_left_link1</child>
+			<pose frame="">1.2026392326447423e-10 1.202662858190706e-10 -3.4106051316484808e-15 0 0 0</pose>
+			<axis>
+				<xyz>-3.551597200607818e-14 -2.5090693862042123e-13 -1.0000000000000049</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="shoulder_left_axis2" type="revolute">
+			<parent>shoulder_left_link2</parent>
+			<child>upper_arm_left</child>
+			<pose frame="">0.01909143283531167 -0.03726639606501962 0.225438601181133 0 0 0</pose>
+			<axis>
+				<xyz>0.08715574274765875 0.9961946980917463 -2.5071611453597593e-13</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="shoulder_left_axis1" type="revolute">
+			<parent>shoulder_left_link1</parent>
+			<child>shoulder_left_link2</child>
+			<pose frame="">1.0193650368250929e-10 1.0193389243795537e-10 -4.547473508864641e-15 0 0 0</pose>
+			<axis>
+				<xyz>0.9961946980917488 -0.08715574274765894 -1.4012442775107327e-14</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_right_axis0" type="revolute">
+			<parent>lower_arm_right</parent>
+			<child>wrist_right_link1</child>
+			<pose frame="">1.2026340812099079e-10 1.2026063700432133e-10 6.536993168992922e-15 0 0 0</pose>
+			<axis>
+				<xyz>-8.331199263760187e-15 -2.484373801073617e-13 1.0000000000000049</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_right_axis2" type="revolute">
+			<parent>wrist_right_link2</parent>
+			<child>hand_right</child>
+			<pose frame="">-0.0008936032515322446 -0.01021709230149245 -2.2709543671339815e-07 0 0 0</pose>
+			<axis>
+				<xyz>0.0871557427476585 0.9961946980917449 2.50716114535976e-13</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_right_axis1" type="revolute">
+			<parent>wrist_right_link1</parent>
+			<child>wrist_right_link2</child>
+			<pose frame="">1.0193742738806577e-10 1.0194025179544042e-10 7.105427357601002e-16 0 0 0</pose>
+			<axis>
+				<xyz>-0.9961946980917465 0.08715574274765865 1.4074892820242e-14</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_right_axis0" type="revolute">
+			<parent>upper_arm_right</parent>
+			<child>elbow_right_link1</child>
+			<pose frame="">1.2026326601244363e-10 1.202601751515431e-10 3.268496584496461e-15 0 0 0</pose>
+			<axis>
+				<xyz>-8.34502424239561e-15 -2.48436170578458e-13 1.0000000000000049</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_right_axis2" type="revolute">
+			<parent>elbow_right_link2</parent>
+			<child>lower_arm_right</child>
+			<pose frame="">-0.011199797033743462 0.038952705099181986 0.22972449657902347 0 0 0</pose>
+			<axis>
+				<xyz>0.08715574274765844 0.9961946980917449 2.507161145359759e-13</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_right_axis1" type="revolute">
+			<parent>elbow_right_link1</parent>
+			<child>elbow_right_link2</child>
+			<pose frame="">1.0193756949661292e-10 1.019402873225772e-10 3.126388037344441e-15 0 0 0</pose>
+			<axis>
+				<xyz>-0.9961946980917465 0.0871557427476586 1.4033259456818555e-14</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_left_axis0" type="revolute">
+			<parent>upper_arm_left</parent>
+			<child>elbow_left_link1</child>
+			<pose frame="">1.2026379003771125e-10 1.20265717384882e-10 -4.831690603168682e-15 0 0 0</pose>
+			<axis>
+				<xyz>-3.5509059516760165e-14 -2.5090754338487325e-13 -1.0000000000000049</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_left_axis2" type="revolute">
+			<parent>elbow_left_link2</parent>
+			<child>lower_arm_left</child>
+			<pose frame="">-0.018038003847830497 -0.03875049756159754 0.22972450815769435 0 0 0</pose>
+			<axis>
+				<xyz>0.08715574274765861 0.9961946980917449 -2.507161145359759e-13</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="ankle_right_axis1" type="revolute">
+			<parent>elbow_left_link1</parent>
+			<child>elbow_left_link2</child>
+			<pose frame="">1.0193642374645152e-10 1.019341056007761e-10 -3.4106051316484808e-15 0 0 0</pose>
+			<axis>
+				<xyz>0.9961946980917465 -0.08715574274765873 -1.4033259456818733e-14</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>
