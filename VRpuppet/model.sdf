@@ -3,17 +3,17 @@
 	<model name="VRpuppet">
 		<link name="base">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.017487246007245664 -0.002783560450145605 0.9287790371069308 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.017515512320616235 -0.0030107299740181554 0.9287069467325038 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>48.6631452966204</mass>
+				<mass>48.77412205270252</mass>
 				<inertia>
-					<ixx>52.532463152686645</ixx>
-					<ixy>-0.00505744957896311</ixy>
-					<ixz>0.8043097493283048</ixz>
-					<iyy>52.52057351092106</iyy>
-					<iyz>0.12916086191335321</iyz>
-					<izz>12.864025153609571</izz>
+					<ixx>52.62295381392352</ixx>
+					<ixy>-0.005398094555838205</ixy>
+					<ixz>0.8072875162500746</ixz>
+					<iyy>52.60999467690776</iyy>
+					<iyz>0.1393777960961568</iyz>
+					<izz>12.865303201489157</izz>
 				</inertia>
 			</inertial>
 			<collision name="base_collision">
@@ -2918,6 +2918,19 @@
 			<pose frame="">-0.008246940896384952 -0.005693632473564758 0.1549243608325034 0 0 0</pose>
 			<axis>
 				<xyz>2.0953448721170926e-19 -2.2183627464137227e-15 1.0</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="hip_right_sphere_axis0" type="revolute">
+			<parent>base</parent>
+			<child>hip_right_sphere_link1</child>
+			<pose frame="">1.0156350427337202e-10 1.0156352203694041e-10 0.0 0 0 0</pose>
+			<axis>
+				<xyz>0.9961946980917457 -0.08715574274765821 -1.4719829380542798e-14</xyz>
 				<limit>
 					<lower>-3.141592653589793</lower>
 					<upper>3.141592653589793</upper>

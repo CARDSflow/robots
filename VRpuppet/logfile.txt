@@ -1,5 +1,5 @@
 Body: base
-COM: base -1.7487246007245663 -0.27835604501456046 92.87790371069308
+COM: base -1.7515512320616233 -0.30107299740181553 92.87069467325037
 exporting stl of base
 Body: motor3
 COM: motor3 -148.3359934510256 -123.41007779944289 1.0516722780027652
@@ -440,7 +440,9 @@ Joint: EXPORT_hip_left_sphere_axis2
 	child: upper_leg_left
 	pos: -0.8246940896384951	-0.5693632473564758	15.49243608325034
 Joint: EXPORT_hip_right_sphere_axis0
-	ERROR writing joint EXPORT_hip_right_sphere_axis0, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+	parent: base
+	child: hip_right_sphere_link1
+	pos: 1.0156350427337202e-08	1.0156352203694041e-08	0.0
 Joint: EXPORT_hip_right_sphere_axis1
 	parent: hip_right_sphere_link1
 	child: hip_right_sphere_link2
