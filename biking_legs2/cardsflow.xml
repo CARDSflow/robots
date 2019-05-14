@@ -22,7 +22,7 @@
 			<viaPoint type="FIXPOINT">0.18064774863985467 -0.18221160238809975 0.6911944827992658</viaPoint>
 		</link>
 		<link name="shin_left">
-			<viaPoint type="FIXPOINT">0.1347343291538172 -0.1812402965612338 0.5686646968780177</viaPoint>
+			<viaPoint type="FIXPOINT">0.1347343291538172 -0.1812402965612338 0.5686646968780178</viaPoint>
 			<viaPoint type="FIXPOINT">0.1532766182121846 -0.18301527390207525 0.43061072488677793</viaPoint>
 		</link>
 	</myoMuscle>
@@ -39,7 +39,7 @@
 			<viaPoint type="FIXPOINT">0.14387051378221632 -0.1820116023483905 0.3481603226651875</viaPoint>
 		</link>
 		<link name="foot_left_tip">
-			<viaPoint type="FIXPOINT">0.12384160161193876 -0.18551527380693425 0.14997602888577952</viaPoint>
+			<viaPoint type="FIXPOINT">0.12384160161193876 -0.18551527380693425 0.14997602888577954</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor5">
@@ -47,7 +47,7 @@
 			<viaPoint type="FIXPOINT">0.2384006069378352 -0.18779733576304763 0.3338511286695073</viaPoint>
 		</link>
 		<link name="foot_left">
-			<viaPoint type="FIXPOINT">0.24532682789256313 -0.18551527380689717 0.19355744459873744</viaPoint>
+			<viaPoint type="FIXPOINT">0.24532682789256313 -0.18551527380689717 0.19355744459873747</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor6">
