@@ -1,21 +1,23 @@
-joint_names: ['motor0','motor1','motor2','motor3','motor4','motor5','motor7','motor8','motor9','motor11','motor12',
-              'motor13','motor14','motor15','motor16','motor17','motor18','motor19','motor20','motor21','motor22','motor23',
-              'dof6_axis0','dof6_axis1','dof6_axis2','dof6_axis3','dof6_axis4','dof6_axis5',
-              'spine_axis0','spine_axis1','spine_axis2',
-              'shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2',
-              'elbow_left_axis0','elbow_left_axis1','elbow_left_axis2','elbow_right_axis0','elbow_right_axis1','elbow_right_axis2',
-              'hip_left_axis0','hip_left_axis1','hip_left_axis2','hip_right_axis0','hip_right_axis1','hip_right_axis2',
-              'knee_left_axis0','knee_left_axis1','knee_left_axis2','knee_right_axis0','knee_right_axis1','knee_right_axis2',
-              'ankle_left_axis0','ankle_left_axis1','ankle_left_axis2','ankle_right_axis0','ankle_right_axis1','ankle_right_axis2']
+joint_names: [ 'spine_sphere_axis0','spine_sphere_axis1','spine_sphere_axis2',
+               'hip_left_sphere_axis0','hip_left_sphere_axis1','hip_left_sphere_axis2',
+               'hip_right_sphere_axis0','hip_right_sphere_axis1','hip_right_sphere_axis2',
+               'shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2',
+               'shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2']
 endeffectors: ['human']
 human:
-  base_link: 'hip'
-  joints: ['motor0','motor1','motor2','motor3','motor4','motor5','motor7','motor8','motor9','motor11','motor12',
-           'motor13','motor14','motor15','motor16','motor17','motor18','motor19','motor20','motor21','motor22','motor23',
-           'dof6_axis0','dof6_axis1','dof6_axis2','dof6_axis3','dof6_axis4','dof6_axis5',
-           'spine_axis0','spine_axis1','spine_axis2',
-           'shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2',
-           'elbow_left_axis0','elbow_left_axis1','elbow_left_axis2','elbow_right_axis0','elbow_right_axis1','elbow_right_axis2',
-           'hip_left_axis0','hip_left_axis1','hip_left_axis2','hip_right_axis0','hip_right_axis1','hip_right_axis2',
-           'knee_left_axis0','knee_left_axis1','knee_left_axis2','knee_right_axis0','knee_right_axis1','knee_right_axis2',
-           'ankle_left_axis0','ankle_left_axis1','ankle_left_axis2','ankle_right_axis0','ankle_right_axis1','ankle_right_axis2']
+  base_link: 'base'
+  joints: [ 'spine_sphere_axis0','spine_sphere_axis1','spine_sphere_axis2',
+            'hip_left_sphere_axis0','hip_left_sphere_axis1','hip_left_sphere_axis2',
+            'hip_right_sphere_axis0','hip_right_sphere_axis1','hip_right_sphere_axis2',
+            'shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2',
+            'shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2'
+  ]
+#            'dof6_axis0','dof6_axis1','dof6_axis2','dof6_axis3','dof6_axis4','dof6_axis5',
+#  'elbow_left_axis1','elbow_left_axis2',
+# 'elbow_left_axis0','elbow_left_axis1','elbow_left_axis2',
+#  'ankle_left_axis0','ankle_left_axis1','ankle_left_axis2','ankle_right_axis0','ankle_right_axis1','ankle_right_axis2'
+#  'elbow_right_axis0','elbow_right_axis1','elbow_right_axis2',
+#  'hip_left_sphere_axis0','hip_left_sphere_axis1','hip_left_sphere_axis2','hip_right_sphere_axis0','hip_right_sphere_axis1','hip_right_sphere_axis2',
+#  'knee_left_axis0','knee_left_axis1','knee_left_axis2','knee_right_axis0','knee_right_axis1','knee_right_axis2'
+#'motor0','motor1','motor2','motor3','motor4','motor5','motor6','motor7','motor8','motor9','motor11','motor12',
+#              'motor13','motor14','motor15','motor16','motor17','motor18','motor19','motor20','motor21','motor22','motor23',
