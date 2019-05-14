@@ -21,3 +21,75 @@ joint_foot_left:
 joint_foot_right:
   joint: joint_foot_right
   type: cardsflow/kindyn/CableLengthVelocityController
+
+left_shoulder_axis0:
+  joint: left_shoulder_axis0
+  type: cardsflow/kindyn/CableLengthController
+left_shoulder_axis1:
+  joint: left_shoulder_axis1
+  type: cardsflow/kindyn/CableLengthController
+left_shoulder_axis2:
+  joint: left_shoulder_axis2
+  type: cardsflow/kindyn/CableLengthController
+elbow_left:
+  joint: elbow_left
+  type: cardsflow/kindyn/CableLengthController
+wrist_left_sphere_axis0:
+  joint: wrist_left_sphere_axis0
+  type: cardsflow/kindyn/CableLengthController
+
+
+right_shoulder_axis0:
+  joint: right_shoulder_axis0
+  type: cardsflow/kindyn/CableLengthController
+right_shoulder_axis1:
+  joint: right_shoulder_axis1
+  type: cardsflow/kindyn/CableLengthController
+right_shoulder_axis2:
+  joint: right_shoulder_axis2
+  type: cardsflow/kindyn/CableLengthController
+elbow_right:
+  joint: elbow_right
+  type: cardsflow/kindyn/CableLengthController
+wrist_right_sphere_axis0:
+  joint: wrist_right_sphere_axis0
+  type: cardsflow/kindyn/CableLengthController
+
+spine_joint:
+  joint: spine_joint
+  type: cardsflow/kindyn/CableLengthController
+sphere_head_axis0:
+  joint: sphere_head_axis0
+  type: cardsflow/kindyn/CableLengthController
+sphere_head_axis1:
+  joint: sphere_head_axis1
+  type: cardsflow/kindyn/CableLengthController
+sphere_head_axis2:
+  joint: sphere_head_axis2
+  type: cardsflow/kindyn/CableLengthController
+
+
+joint_wheel_right:
+  joint: joint_wheel_right
+  type: cardsflow/kindyn/TorquePositionController
+joint_wheel_back:
+  joint: joint_wheel_back
+  type: cardsflow/kindyn/TorquePositionController
+joint_pedal:
+  joint: joint_pedal
+  type: cardsflow/kindyn/TorquePositionController
+joint_wheel_left:
+  joint: joint_wheel_left
+  type: cardsflow/kindyn/TorquePositionController
+joint_front:
+  joint: joint_front
+  type: cardsflow/kindyn/CableLengthController
+joint_pedal_right:
+  joint: joint_pedal_right
+  type: cardsflow/kindyn/TorquePositionController
+joint_wheel_back:
+  joint: joint_wheel_back
+  type: cardsflow/kindyn/TorquePositionController
+joint_pedal_left:
+  joint: joint_pedal_left
+  type: cardsflow/kindyn/TorquePositionController

@@ -1,0 +1,115 @@
+Body: bike
+looking for cached bike
+bike not found, copying bodies to new component
+bike mass[kg] 9.123377965809423 	 COM[cm] 418.07557015435543 4.331665439219971 -2.977666901148152
+exporting stl of bike
+Body: pedal_right
+looking for cached pedal_right
+pedal_right not found, copying bodies to new component
+pedal_right mass[kg] 0.9460025886019714 	 COM[cm] 434.52350965706546 7.475374833566465 -21.25671325914417
+exporting stl of pedal_right
+Body: pedal_arm_right
+looking for cached pedal_arm_right
+pedal_arm_right not found, copying bodies to new component
+pedal_arm_right mass[kg] 1.40416508329645 	 COM[cm] 446.7000081053079 7.311562755714549 -13.042995132342714
+exporting stl of pedal_arm_right
+Body: pedal_left
+looking for cached pedal_left
+pedal_left not found, copying bodies to new component
+pedal_left mass[kg] 0.9460025886019711 	 COM[cm] 468.3435176914309 6.98939891349106 15.466717440353904
+exporting stl of pedal_left
+Body: pedal_arm_left
+looking for cached pedal_arm_left
+pedal_arm_left not found, copying bodies to new component
+pedal_arm_left mass[kg] 1.4041650832964594 	 COM[cm] 456.16733984188255 7.175522121475512 7.252999314359773
+exporting stl of pedal_arm_left
+Body: pedal_left
+looking for cached pedal_left
+exporting stl of pedal_left
+Body: foot_left
+looking for cached foot_left
+foot_left not found, copying bodies to new component
+foot_left mass[kg] 0.7293899554482948 	 COM[cm] 457.0279518298192 -6.601476189682775 14.406960264414671
+exporting stl of foot_left
+Body: pedal_right
+looking for cached pedal_right
+exporting stl of pedal_right
+Body: foot_right
+looking for cached foot_right
+foot_right not found, copying bodies to new component
+foot_right mass[kg] 0.7354394369424058 	 COM[cm] 460.3285175866534 -6.803872846025115 -20.392027896428324
+exporting stl of foot_right
+Body: thigh_right
+looking for cached thigh_right
+thigh_right not found, copying bodies to new component
+thigh_right mass[kg] 5.5635257227784 	 COM[cm] 459.5405683709733 50.473061261756 -22.820784701718782
+exporting stl of thigh_right
+Body: thigh_left
+looking for cached thigh_left
+thigh_left not found, copying bodies to new component
+thigh_left mass[kg] 5.563590740371279 	 COM[cm] 459.5876869453954 50.474006236418084 16.825565149265913
+exporting stl of thigh_left
+Body: leg_right
+looking for cached leg_right
+leg_right not found, copying bodies to new component
+leg_right mass[kg] 5.741529181179979 	 COM[cm] 459.81281577387176 15.688146939015558 -22.763742269050287
+exporting stl of leg_right
+Body: leg_left
+looking for cached leg_left
+leg_left not found, copying bodies to new component
+leg_left mass[kg] 5.74261497975339 	 COM[cm] 458.5572843756472 15.827417677506576 16.731937464769636
+exporting stl of leg_left
+Body: lower_hip
+looking for cached lower_hip
+lower_hip not found, copying bodies to new component
+lower_hip mass[kg] 6.8799179161589015 	 COM[cm] 458.83675431297297 74.24461549374013 -2.607946501119915
+exporting stl of lower_hip
+Body: hip
+looking for cached hip
+hip not found, copying bodies to new component
+hip mass[kg] 13.796357132209156 	 COM[cm] 458.81393646769374 74.86351489098539 -3.004732241547637
+exporting stl of hip
+Joint: EXPORT_joint_bike_right
+	parent: bike
+	child: pedal_arm_right
+	pos: 4.733484458783494	-0.08064491159730558	6.6479818719033865
+Joint: EXPORT_joint_bike_left
+	parent: bike
+	child: pedal_arm_left
+	pos: -4.733847277057919	0.055395720715510244	-6.6479818715978745
+Joint: EXPORT_joint_pedal_right
+	parent: pedal_arm_right
+	child: pedal_right
+	pos: -0.00613017716301556	0.004868073422895414	-4.199999999995793
+Joint: EXPORT_joint_hip_right
+	parent: hip
+	child: thigh_right
+	pos: -0.43101868861907633	11.113048622380077	2.1907847070458857
+Joint: EXPORT_joint_hip_left
+	parent: hip
+	child: thigh_left
+	pos: -0.47813726287188274	11.112103630438511	-1.0555651449867067
+Joint: EXPORT_joint_knee_left
+	parent: thigh_left
+	child: leg_left
+	pos: 2.2057245770724307	14.885101980480327	-3.3669374558923284
+Joint: EXPORT_joint_knee_right
+	parent: thigh_right
+	child: leg_right
+	pos: 0.9002027313893564	15.023395957044867	1.3637422324407567
+Joint: EXPORT_joint_foot_left
+	ERROR writing joint EXPORT_joint_foot_left, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+Joint: EXPORT_joint_foot_right
+	ERROR writing joint EXPORT_joint_foot_right, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+Joint: EXPORT_joint_foot_middle_left
+	parent: foot_left
+	child: pedal_left
+	pos: -17.441525230703576	-14.139213104085883	0.7982825562820928
+Joint: EXPORT_joint_foot_middle_right
+	parent: pedal_right
+	child: foot_right
+	pos: -6.269556269888426	-1.6483605520352373	-1.81116495865745
+Joint: EXPORT_joint_pedal_left
+	parent: pedal_arm_left
+	child: pedal_left
+	pos: 0.006267520671656257	0.0046899228066248355	4.199999999998401

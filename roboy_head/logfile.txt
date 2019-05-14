@@ -1,0 +1,45 @@
+Body: neck
+COM: neck -0.00018149377975533532 -0.9175044956787616 -0.38904125653804983
+exporting stl of neck
+Body: head
+COM: head 0.051021597790049646 4.492411500875192 21.198097874701098
+exporting stl of head
+Body: zed_camera_left_lense
+COM: zed_camera_left_lense 6.022402900296084 -7.066714719955536 28.057528763621242
+exporting stl of zed_camera_left_lense
+Body: zed_camera_right_lense
+COM: zed_camera_right_lense -5.977745584801605 -7.104414423233865 28.0575287598654
+exporting stl of zed_camera_right_lense
+Body: zed_camera
+COM: zed_camera 0.42444847902538396 -5.946040237166452 27.799522001249898
+exporting stl of zed_camera
+Body: sphere_head_link1
+COM: sphere_head_link1 -1.5061049265673542e-08 -1.50615288590847e-08 6.6478935593749435
+exporting stl of sphere_head_link1
+Body: sphere_head_link2
+COM: sphere_head_link2 -1.2765771046916347e-08 -1.276638116636219e-08 6.647893559374916
+exporting stl of sphere_head_link2
+Joint: EXPORT_zed_camera_right
+	parent: zed_camera
+	child: zed_camera_right_lense
+	pos: -0.0034778066172904687	1.1070006217811788	-0.2353014092107415
+Joint: EXPORT_zed_camera_left
+	parent: zed_camera
+	child: zed_camera_left_lense
+	pos: -0.005466550911889634	1.1069943702269418	-0.2353014260491726
+Joint: EXPORT_zed_camera_mount
+	parent: head
+	child: zed_camera
+	pos: 1.7437654685091044	0.14055889584145653	0.8052233827783866
+Joint: EXPORT_sphere_head_axis0
+	parent: neck
+	child: sphere_head_link1
+	pos: 1.506150534492037e-08	1.5061482676757368e-08	6.217248937900877e-15
+Joint: EXPORT_sphere_head_axis2
+	parent: sphere_head_link2
+	child: head
+	pos: -0.05102159778959368	-4.492411500875237	-14.550204315326166
+Joint: EXPORT_sphere_head_axis1
+	parent: sphere_head_link1
+	child: sphere_head_link2
+	pos: 1.2766226704758195e-08	1.276634094495146e-08	3.375077994860476e-14
