@@ -1,0 +1,44 @@
+Body: base
+Body: shoulder_left_link1
+Body: shoulder_left_link2
+Body: elbow_left_link1
+Body: elbow_left_link2
+Body: wrist_left_link1
+Body: wrist_left_link2
+Body: upper_arm_left
+Body: lower_arm_left
+Body: hand_left
+Joint: EXPORT_wrist_left_axis0
+	parent: lower_arm_left
+	child: wrist_left_link1
+	pos: 26.627909562924174	7.390793509010994	16.901890408298296
+Joint: EXPORT_wrist_left_axis2
+	parent: wrist_left_link2
+	child: hand_left
+	pos: 26.627909562924188	7.390793509011016	16.90189040829841
+Joint: EXPORT_wrist_left_axis1
+	parent: wrist_left_link1
+	child: wrist_left_link2
+	pos: 26.627909562923886	7.390793509011017	16.901890408298105
+Joint: EXPORT_shoulder_left_axis0
+	ERROR writing joint EXPORT_shoulder_left_axis0, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+Joint: EXPORT_shoulder_left_axis2
+	parent: shoulder_left_link2
+	child: upper_arm_left
+	pos: 18.077909562930838	6.490793509010364	70.00189040829912
+Joint: EXPORT_shoulder_left_axis1
+	parent: shoulder_left_link1
+	child: shoulder_left_link2
+	pos: 18.077909562930543	6.490793509010365	70.00189040829908
+Joint: EXPORT_elbow_left_axis0
+	parent: upper_arm_left
+	child: elbow_left_link1
+	pos: 22.07790956292422	9.090793509010672	43.70189040829796
+Joint: EXPORT_elbow_left_axis2
+	parent: elbow_left_link2
+	child: lower_arm_left
+	pos: 22.077909562924223	9.090793509010688	43.701890408298105
+Joint: EXPORT_ankle_right_axis1
+	parent: elbow_left_link1
+	child: elbow_left_link2
+	pos: 22.077909562923935	9.09079350901068	43.701890408298084
