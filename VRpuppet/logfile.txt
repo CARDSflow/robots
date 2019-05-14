@@ -1,5 +1,5 @@
 Body: base
-COM: base -1.74920138254576 -0.3008807938494491 92.86191847004409
+COM: base -1.7510105448323279 -0.2997453193259559 92.86927039539661
 exporting stl of base
 Body: motor3
 COM: motor3 -148.38021873254814 -123.4239402810262 1.051655894117484
@@ -77,7 +77,7 @@ Body: neck_link1
 COM: neck_link1 -3.021065211712152 -0.21542615510272153 161.00189040829915
 exporting stl of neck_link1
 Body: neck_link2
-COM: neck_link2 -3.0210652098803252 -0.2154261532699797 161.00189040829912
+COM: neck_link2 -3.0210652098803252 -0.21542615326997983 161.00189040829918
 exporting stl of neck_link2
 Body: hip_right_link1
 COM: hip_right_link1 -2.962723787172305 -10.423074516990154 89.54841277672509
@@ -107,10 +107,10 @@ Body: wrist_right_link1
 COM: wrist_right_link1 -9.718306853267212 -26.28091012134199 86.90189040829772
 exporting stl of wrist_right_link1
 Body: wrist_right_link2
-COM: wrist_right_link2 -9.718306851434589 -26.280910119509567 86.90189040829803
+COM: wrist_right_link2 -9.71830685143459 -26.28091011950957 86.90189040829803
 exporting stl of wrist_right_link2
 Body: shoulder_left_link1
-COM: shoulder_left_link1 -4.890500456828595 18.574827576446715 140.00189040829957
+COM: shoulder_left_link1 -4.890500456828596 18.57482757644671 140.0018904082996
 exporting stl of shoulder_left_link1
 Body: shoulder_left_link2
 COM: shoulder_left_link2 -4.8905004549958875 18.574827578279574 140.00189040829952
@@ -119,13 +119,13 @@ Body: elbow_right_link1
 COM: elbow_right_link1 -11.015279210520996 -21.6000594823536 113.70189040829767
 exporting stl of elbow_right_link1
 Body: elbow_right_link2
-COM: elbow_right_link2 -11.01527920868839 -21.60005948052118 113.70189040829777
+COM: elbow_right_link2 -11.015279208688392 -21.60005948052118 113.70189040829776
 exporting stl of elbow_right_link2
 Body: shoulder_right_link1
 COM: shoulder_right_link1 -8.0765500244921 -17.841885621137163 140.00189040829872
 exporting stl of shoulder_right_link1
 Body: shoulder_right_link2
-COM: shoulder_right_link2 -8.076550022659495 -17.841885619304758 140.00189040829886
+COM: shoulder_right_link2 -8.076550022659495 -17.841885619304758 140.00189040829883
 exporting stl of shoulder_right_link2
 Body: knee_left_link1
 COM: knee_left_link1 -1.0990498880752284 10.878815624979847 46.54841277672509
@@ -134,13 +134,13 @@ Body: knee_left_link2
 COM: knee_left_link2 -1.0990498862418001 10.878815626812386 46.548412776725186
 exporting stl of knee_left_link2
 Body: elbow_left_link1
-COM: elbow_left_link1 -7.13198370087738 22.786211299951024 113.70189040829852
+COM: elbow_left_link1 -7.131983700877378 22.786211299951024 113.70189040829851
 exporting stl of elbow_left_link1
 Body: elbow_left_link2
 COM: elbow_left_link2 -7.131983699044677 22.786211301783883 113.70189040829841
 exporting stl of elbow_left_link2
 Body: wrist_left_link1
-COM: wrist_left_link1 -5.041894084619907 27.17073241359743 86.90189040829854
+COM: wrist_left_link1 -5.041894084619908 27.17073241359743 86.90189040829854
 exporting stl of wrist_left_link1
 Body: wrist_left_link2
 COM: wrist_left_link2 -5.041894082787189 27.170732415430297 86.90189040829868
@@ -149,13 +149,13 @@ Body: hip_left_link1
 COM: hip_left_link1 -1.1426277594490812 10.380718275933768 89.54841277672543
 exporting stl of hip_left_link1
 Body: hip_left_link2
-COM: hip_left_link2 -1.1426277576156765 10.380718277766483 89.54841277672544
+COM: hip_left_link2 -1.1426277576156763 10.380718277766483 89.54841277672544
 exporting stl of hip_left_link2
 Body: foot_left_link1
-COM: foot_left_link1 -0.9410557923568282 12.191109690325764 11.146497559651632
+COM: foot_left_link1 -0.9410557923568285 12.19110969032576 11.146497559651632
 exporting stl of foot_left_link1
 Body: foot_left_link2
-COM: foot_left_link2 -0.941055790523389 12.191109692158362 11.14649755965166
+COM: foot_left_link2 -0.941055790523389 12.191109692158363 11.14649755965166
 exporting stl of foot_left_link2
 Body: lower_leg_right
 COM: lower_leg_right -4.764862432306886 -11.249174998202205 32.81763683960044
@@ -166,9 +166,9 @@ exporting stl of foot_right
 Body: upper_leg_right
 COM: upper_leg_right -2.2788154128297466 -10.96646331669406 74.23935581154242
 exporting stl of upper_leg_right
-Body: chest
-COM: chest -2.5065457998930336 -0.2741971531160698 134.48247502839467
-exporting stl of chest
+Body: torso
+COM: torso -2.506545799893033 -0.2741971531160698 134.48247502839467
+exporting stl of torso
 Body: upper_arm_right
 COM: upper_arm_right -10.587334673601347 -20.946254793602325 117.45803142509361
 exporting stl of upper_arm_right
@@ -199,33 +199,6 @@ exporting stl of foot_left
 Body: head
 COM: head -1.7081207803059244 -0.3652589220768542 165.42285628209407
 exporting stl of head
-Body: hip
-COM: hip -1.9764489805874665 -0.3383368150272576 95.05141785492641
-exporting stl of hip
-Joint: EXPORT_elbow_left_axis0
-	parent: upper_arm_left
-	child: elbow_left_link1
-	pos: 29.209893263801604	-13.69541779094035	-4.831690603168681e-13
-Joint: EXPORT_elbow_left_axis2
-	parent: elbow_left_link2
-	child: lower_arm_left
-	pos: 27.40609286699217	-17.570467559126676	22.972450815769406
-Joint: EXPORT_ankle_right_axis1
-	parent: elbow_left_link1
-	child: elbow_left_link2
-	pos: 29.2098932619686	-13.695417792773203	-3.268496584496461e-13
-Joint: EXPORT_wrist_left_axis0
-	parent: lower_arm_left
-	child: wrist_left_link1
-	pos: 31.669803647544086	-19.779938904586434	-2.2737367544323206e-13
-Joint: EXPORT_wrist_left_axis2
-	parent: wrist_left_link2
-	child: hand_left
-	pos: 31.580388430619454	-20.8016433454067	-2.2709543102905627e-05
-Joint: EXPORT_wrist_left_axis1
-	parent: wrist_left_link1
-	child: wrist_left_link2
-	pos: 31.669803645711063	-19.77993890641928	-5.826450433232822e-13
 Joint: EXPORT_motor0
 	parent: base
 	child: motor0
@@ -258,18 +231,6 @@ Joint: EXPORT_motor7
 	parent: base
 	child: motor6
 	pos: 123.58101829513677	0.03343018224896355	-0.948580550527066
-Joint: EXPORT_knee_left_axis0
-	parent: upper_leg_left
-	child: knee_left_link1
-	pos: 11.84067983891455	-8.835796708463471	7.815970093361102e-14
-Joint: EXPORT_knee_left_axis2
-	parent: knee_left_link2
-	child: lower_leg_left
-	pos: 13.47640581242422	-8.87244641482626	14.667079993081106
-Joint: EXPORT_knee_left_axis1
-	parent: knee_left_link1
-	child: knee_left_link2
-	pos: 11.84067983708119	-8.83579671029601	-9.237055564881302e-14
 Joint: EXPORT_motor8
 	parent: base
 	child: motor8
@@ -334,135 +295,171 @@ Joint: EXPORT_motor23
 	parent: base
 	child: motor22
 	pos: 123.4239402810262	-0.11978126745222539	-0.9483441058824553
-Joint: EXPORT_foot_right_axis0
-	parent: lower_leg_right
-	child: ankle_right_link1
-	pos: -9.384115112673463	14.240964622624928	2.4868995751603507e-13
-Joint: EXPORT_foot_right_axis2
-	parent: ankle_right_link2
-	child: foot_right
-	pos: -9.384113620652583	14.240963132353443	0.06058641470340653
-Joint: EXPORT_foot_right_axis1
-	parent: ankle_right_link1
-	child: ankle_right_link2
-	pos: -9.384115114505283	14.240964620792262	-3.019806626980426e-14
-Joint: EXPORT_knee_right_axis0
-	parent: upper_leg_right
-	child: knee_right_link1
-	pos: -8.135328292293314	12.964190782552624	3.126388037344441e-13
-Joint: EXPORT_knee_right_axis2
-	parent: knee_right_link2
-	child: lower_leg_right
-	pos: -6.376767518532441	13.292193914718581	13.73077593712474
-Joint: EXPORT_knee_right_axis1
-	parent: knee_right_link1
-	child: knee_right_link2
-	pos: -8.135328294125154	12.964190780719912	-8.526512829121202e-14
 Joint: EXPORT_hip_right_axis0
-	parent: hip
+	parent: upper_leg_right
 	child: hip_right_link1
-	pos: -7.678906163666873	12.466093433506572	3.552713678800501e-13
+	pos: 1.2026387441466113e-08	1.202633548302856e-08	3.552713678800501e-13
 Joint: EXPORT_hip_right_axis2
 	parent: hip_right_link2
 	child: upper_leg_right
-	pos: -8.362814538009127	13.009482233210486	15.309056965182748
+	pos: -0.6839083623161519	0.5433888117305461	15.309056965182762
 Joint: EXPORT_hip_right_axis1
 	parent: hip_right_link1
 	child: hip_right_link2
-	pos: -7.678906165498745	12.466093431673638	-1.4210854715202004e-13
+	pos: 1.0194495914106483e-08	1.0193412336434449e-08	-1.4210854715202004e-13
+Joint: EXPORT_foot_right_axis0
+	parent: lower_leg_right
+	child: ankle_right_link1
+	pos: 1.2026375451057447e-08	1.2026315943103327e-08	2.504663143554353e-13
+Joint: EXPORT_foot_right_axis2
+	parent: ankle_right_link2
+	child: foot_right
+	pos: 1.504047216549509e-06	-1.478245122754629e-06	0.06058641470340831
+Joint: EXPORT_foot_right_axis1
+	parent: ankle_right_link1
+	child: ankle_right_link2
+	pos: 1.0194517230388556e-08	1.0193691224458235e-08	-2.6645352591003757e-14
+Joint: EXPORT_knee_right_axis0
+	parent: upper_leg_right
+	child: knee_right_link1
+	pos: 1.2026373674700608e-08	1.2026326601244364e-08	3.197442310920451e-13
+Joint: EXPORT_knee_right_axis2
+	parent: knee_right_link2
+	child: lower_leg_right
+	pos: 1.7585607857871683	0.32800314419236365	13.730775937124747
+Joint: EXPORT_knee_right_axis1
+	parent: knee_right_link1
+	child: knee_right_link2
+	pos: 1.0194511013139618e-08	1.0193636157396213e-08	-7.815970093361102e-14
 Joint: EXPORT_spine_axis0
-	parent: hip
+	parent: base
 	child: spine_link1
-	pos: 1.5469609506906343	2.293375406860519	3.694822225952521e-13
+	pos: 1.2026388329644533e-08	1.2026346529747656e-08	3.552713678800501e-13
 Joint: EXPORT_spine_axis2
 	parent: spine_link2
-	child: chest
-	pos: 2.0286362369624866	2.264990662126358	-31.48058462009567
+	child: torso
+	pos: 0.4816752982981001	-0.028384732707676996	-31.48058462009567
 Joint: EXPORT_spine_axis1
 	parent: spine_link1
 	child: spine_link2
-	pos: 1.5469609488587641	2.293375405027774	-1.4210854715202004e-13
+	pos: 1.0194510124961198e-08	1.0193596466923083e-08	-1.4210854715202004e-13
 Joint: EXPORT_shoulder_right_axis0
-	parent: chest
+	parent: torso
 	child: shoulder_right_link1
-	pos: -10.401359538438925	24.332679130147522	3.694822225952521e-13
+	pos: 1.2026340812099079e-08	1.2025978435303841e-08	3.694822225952521e-13
 Joint: EXPORT_shoulder_right_axis2
 	parent: shoulder_right_link2
 	child: upper_arm_right
-	pos: -7.890574889329571	27.43704830261269	22.543858983205652
+	pos: 2.51078466113559	3.104369184491251	22.543858983205624
 Joint: EXPORT_shoulder_right_axis1
 	parent: shoulder_right_link1
 	child: shoulder_right_link2
-	pos: -10.401359540271047	24.332679128315128	2.2737367544323206e-13
-Joint: EXPORT_elbow_right_axis0
-	parent: upper_arm_right
-	child: elbow_right_link1
-	pos: -11.462630352403353	30.69085299136428	3.410605131648481e-13
-Joint: EXPORT_elbow_right_axis2
-	parent: elbow_right_link2
-	child: lower_arm_right
-	pos: -12.582610067803918	34.58612348925632	22.972449657902317
-Joint: EXPORT_elbow_right_axis1
-	parent: elbow_right_link1
-	child: elbow_right_link2
-	pos: -11.462630354235529	30.69085298953186	3.126388037344441e-13
+	pos: 1.0193769384159168e-08	1.019406070668083e-08	2.5579538487363607e-13
 Joint: EXPORT_wrist_right_axis0
 	parent: lower_arm_right
 	child: wrist_right_link1
-	pos: -17.309602709657046	33.671703630353	6.536993168992922e-13
+	pos: 1.2026340812099079e-08	1.2026063700432132e-08	6.536993168992922e-13
 Joint: EXPORT_wrist_right_axis2
 	parent: wrist_right_link2
 	child: hand_right
-	pos: -17.398963046836556	32.6499943881776	-2.2709543671339816e-05
+	pos: -0.08936032515322445	-1.021709230149245	-2.2709543671339816e-05
 Joint: EXPORT_wrist_right_axis1
 	parent: wrist_right_link1
 	child: wrist_right_link2
-	pos: -17.309602711489283	33.67170362852059	7.105427357601002e-14
+	pos: 1.0193742738806577e-08	1.0194025179544042e-08	7.105427357601002e-14
+Joint: EXPORT_elbow_right_axis0
+	parent: upper_arm_right
+	child: elbow_right_link1
+	pos: 1.2026326601244364e-08	1.2026017515154308e-08	3.268496584496461e-13
+Joint: EXPORT_elbow_right_axis2
+	parent: elbow_right_link2
+	child: lower_arm_right
+	pos: -1.1199797033743462	3.8952705099181983	22.972449657902345
+Joint: EXPORT_elbow_right_axis1
+	parent: elbow_right_link1
+	child: elbow_right_link2
+	pos: 1.0193756949661292e-08	1.019402873225772e-08	3.126388037344441e-13
+Joint: EXPORT_elbow_left_axis0
+	parent: upper_arm_left
+	child: elbow_left_link1
+	pos: 1.2026379003771126e-08	1.2026571738488201e-08	-4.831690603168681e-13
+Joint: EXPORT_elbow_left_axis2
+	parent: elbow_left_link2
+	child: lower_arm_left
+	pos: -1.8038003847830497	-3.875049756159754	22.972450815769434
+Joint: EXPORT_ankle_right_axis1
+	parent: elbow_left_link1
+	child: elbow_left_link2
+	pos: 1.0193642374645151e-08	1.019341056007761e-08	-3.410605131648481e-13
 Joint: EXPORT_shoulder_left_axis0
-	parent: chest
+	parent: torso
 	child: shoulder_left_link1
-	pos: 22.968410019759514	-12.084034067436349	-3.126388037344441e-13
+	pos: 1.2026392326447422e-08	1.2026628581907062e-08	-3.410605131648481e-13
 Joint: EXPORT_shoulder_left_axis2
 	parent: shoulder_left_link2
 	child: upper_arm_left
-	pos: 24.877553291264288	-15.810673685964936	22.54386011811333
+	pos: 1.9091432835311668	-3.726639606501962	22.5438601181133
 Joint: EXPORT_shoulder_left_axis1
 	parent: shoulder_left_link1
 	child: shoulder_left_link2
-	pos: 22.96841001792643	-12.084034069269206	-4.547473508864641e-13
+	pos: 1.0193650368250928e-08	1.0193389243795536e-08	-4.547473508864641e-13
+Joint: EXPORT_wrist_left_axis0
+	parent: lower_arm_left
+	child: wrist_left_link1
+	pos: 1.202639676733952e-08	1.2026568185774522e-08	-2.2737367544323206e-13
+Joint: EXPORT_wrist_left_axis2
+	parent: wrist_left_link2
+	child: hand_left
+	pos: -0.08941520489824129	-1.021704428793683	-2.2709543102905627e-05
+Joint: EXPORT_wrist_left_axis1
+	parent: wrist_left_link1
+	child: wrist_left_link2
+	pos: 1.0193631716504115e-08	1.0193399901936573e-08	-5.826450433232822e-13
+Joint: EXPORT_knee_left_axis0
+	parent: upper_leg_left
+	child: knee_left_link1
+	pos: 1.2026367679496275e-08	1.2026294626821254e-08	7.815970093361102e-14
+Joint: EXPORT_knee_left_axis2
+	parent: knee_left_link2
+	child: lower_leg_left
+	pos: 1.6357259855360327	-0.03664969433649112	14.667079993081114
+Joint: EXPORT_knee_left_axis1
+	parent: knee_left_link1
+	child: knee_left_link2
+	pos: 1.0192945598674896e-08	1.019382089850751e-08	-8.526512829121202e-14
 Joint: EXPORT_foot_left_axis0
 	parent: lower_leg_left
 	child: foot_left_link1
-	pos: 13.003756226193161	-10.191109690325295	1.7763568394002505e-15
+	pos: 1.2026379003771126e-08	1.202636568109483e-08	3.552713678800501e-15
 Joint: EXPORT_foot_left_axis2
 	parent: foot_left_link2
 	child: foot_left
-	pos: 13.054685188182333	-9.608970196044957	0.1530530735812139
+	pos: 0.05092897401555052	0.5821395063067012	0.15305307358121567
 Joint: EXPORT_foot_left_axis1
 	parent: foot_left_link1
 	child: foot_left_link2
-	pos: 13.003756224359723	-10.191109692157895	-3.019806626980426e-14
+	pos: 1.0192940713693588e-08	1.0193758726018132e-08	-2.6645352591003757e-14
 Joint: EXPORT_hip_left_axis0
-	parent: hip
+	parent: base
 	child: upper_leg_left
-	pos: 10.669391140122494	-8.13535562513114	15.323435428057294
+	pos: -0.7148665581394287	0.2023437463125699	15.323435428057294
 Joint: EXPORT_hip_leftt_axis2
 	parent: hip_left_link2
 	child: upper_leg_left
-	pos: 10.669391140122507	-8.13535562513114	15.323435428057252
+	pos: -0.7148665581394273	0.20234374631258056	15.323435428057266
 Joint: EXPORT_hip_left_axis1
 	parent: hip_left_link1
 	child: hip_left_link2
-	pos: 11.384257708454854	-8.337699361250065	0.0
+	pos: 1.01929322759986e-08	1.0193641486466731e-08	-1.4210854715202004e-14
 Joint: EXPORT_neck_axis0
-	parent: chest
+	parent: torso
 	child: neck_link1
-	pos: 2.543155648781388	3.2062196641121212	3.126388037344441e-13
+	pos: 1.202633903574224e-08	1.2026341228432713e-08	3.410605131648481e-13
 Joint: EXPORT_neck_axis2
 	parent: neck_link2
 	child: head
-	pos: 1.230211217375293	3.356052431086265	-4.42096587379487
+	pos: -1.3129444193798885	0.14983277900060654	-4.420965873794842
 Joint: EXPORT_neck_axis1
 	parent: neck_link1
 	child: neck_link2
-	pos: 2.543155646949562	3.2062196622793784	5.684341886080802e-14
+	pos: 1.0194513677674877e-08	1.0193600380459245e-08	0.0
