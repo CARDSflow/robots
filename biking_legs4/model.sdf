@@ -1,4 +1,3 @@
-<?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="biking_legs4">
 		<link name="bike">
@@ -6,7 +5,7 @@
 			<pose frame="">-1.3108998963673458e-07 2.442664557200658e-07 0.2700101774980866 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>21.72189156161177</mass>
+				<mass>210.72189156161177</mass>
 				<inertia>
 					<ixx>13.210732611947313</ixx>
 					<ixy>0.06448842844444229</ixy>
@@ -51,7 +50,7 @@
 			<collision name="shin_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/shin_right.stl</uri>
+						<uri>model://biking_legs4/meshes/collisions/shin_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -59,7 +58,7 @@
 			<visual name="shin_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/shin_right.stl</uri>
+						<uri>model://biking_legs4/meshes/visuals/shin_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -83,7 +82,7 @@
 			<collision name="thigh_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/thigh_right.stl</uri>
+						<uri>model://biking_legs4/meshes/collisions/thigh_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -91,7 +90,7 @@
 			<visual name="thigh_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/thigh_right.stl</uri>
+						<uri>model://biking_legs4/meshes/visuals/thigh_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -115,7 +114,7 @@
 			<collision name="thigh_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/thigh_left.stl</uri>
+						<uri>model://biking_legs4/meshes/collisions/thigh_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -123,7 +122,7 @@
 			<visual name="thigh_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/thigh_left.stl</uri>
+						<uri>model://biking_legs4/meshes/visuals/thigh_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -147,7 +146,7 @@
 			<collision name="shin_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/shin_left.stl</uri>
+						<uri>model://biking_legs4/meshes/collisions/shin_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -155,7 +154,7 @@
 			<visual name="shin_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/shin_left.stl</uri>
+						<uri>model://biking_legs4/meshes/visuals/shin_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -371,7 +370,7 @@
 			<collision name="foot_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/foot_left.stl</uri>
+						<uri>model://biking_legs4/meshes/collisions/foot_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -379,7 +378,7 @@
 			<visual name="foot_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/foot_left.stl</uri>
+						<uri>model://biking_legs4/meshes/visuals/foot_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -403,7 +402,7 @@
 			<collision name="foot_left_tip_collision">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/foot_left_tip.stl</uri>
+						<uri>model://biking_legs4/meshes/collisions/foot_left_tip.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -411,7 +410,7 @@
 			<visual name="foot_left_tip_visual">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/foot_left_tip.stl</uri>
+						<uri>model://biking_legs4/meshes/visuals/foot_left_tip.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -435,7 +434,7 @@
 			<collision name="foot_right_collision">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/foot_right.stl</uri>
+						<uri>model://biking_legs4/meshes/collisions/foot_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -443,7 +442,7 @@
 			<visual name="foot_right_visual">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/foot_right.stl</uri>
+						<uri>model://biking_legs4/meshes/visuals/foot_right.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -467,7 +466,7 @@
 			<collision name="foot_right_tip_collision">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/foot_right_tip.stl</uri>
+						<uri>model://biking_legs4/meshes/collisions/foot_right_tip.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -475,7 +474,7 @@
 			<visual name="foot_right_tip_visual">
 				<geometry>
 					<mesh>
-						<uri>model://biking_legs4/meshes/CAD/foot_right_tip.stl</uri>
+						<uri>model://biking_legs4/meshes/visuals/foot_right_tip.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -520,8 +519,8 @@
 			<axis>
 				<xyz>-2.0192365920660242e-17 1.0000000000000016 -1.9344833188838944e-15</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-3141592653589793</lower>
+					<upper>3141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -533,8 +532,8 @@
 			<axis>
 				<xyz>2.0192365920646832e-17 -1.0 1.9344833188838944e-15</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-3141592653589793</lower>
+					<upper>3141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -546,8 +545,8 @@
 			<axis>
 				<xyz>-3.1662288285727846e-30 0.9999999999999998 4.317059530368991e-14</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-3141592653589793</lower>
+					<upper>3141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -557,10 +556,10 @@
 			<child>wheel_back</child>
 			<pose frame="">-2.1316282072803005e-16 -0.0689996533751975 3.552713678800501e-16 0 0 0</pose>
 			<axis>
-				<xyz>6.938893903907228e-17 -1.0 1.27675647831893e-15</xyz>
+				<xyz>6.938893903907228e-17 1.0 1.27675647831893e-15</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>6.283185307179586</upper>
+					<lower>-3141592653589793</lower>
+					<upper>3141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -572,8 +571,8 @@
 			<axis>
 				<xyz>-6.938893903907228e-17 1.0 -1.27675647831893e-15</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-3141592653589793</lower>
+					<upper>3141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -583,15 +582,15 @@
 			<child>left_wheel</child>
 			<pose frame="">7.105427357601002e-16 0.04600034662480176 7.567280135845067e-15 0 0 0</pose>
 			<axis>
-				<xyz>3.1662288285727846e-30 -0.9999999999999998 -4.317059530368991e-14</xyz>
+				<xyz>3.1662288285727846e-30 0.9999999999999998 -4.317059530368991e-14</xyz>
 				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
+					<lower>-3141592653589793</lower>
+					<upper>3141592653589793</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_front" type="revolute">
+		<joint name="joint_front" type="fixed">
 			<parent>bike</parent>
 			<child>front_part</child>
 			<pose frame="">-0.23003546775109895 -0.010388307448302651 -0.2052706951041601 0 0 0</pose>
@@ -671,10 +670,10 @@
 			<child>shin_right</child>
 			<pose frame="">-0.015102164074851017 -0.02138964207676139 0.1828007131827338 0 0 0</pose>
 			<axis>
-				<xyz>4.7132319394947356e-12 -0.9999999999999989 -4.747102699329492e-10</xyz>
+				<xyz>4.7132319394947356e-12 0.9999999999999989 -4.747102699329492e-10</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>1.5707963267948966</upper>
+					<lower>-6.28</lower>
+					<upper>6.28</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -686,8 +685,8 @@
 			<axis>
 				<xyz>4.713515162669238e-12 -0.9999999999999984 -4.747101598323789e-10</xyz>
 				<limit>
-					<lower>-1.5707963267948966</lower>
-					<upper>1.5707963267948966</upper>
+					<lower>-6.14</lower>
+					<upper>6.14</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -699,8 +698,8 @@
 			<axis>
 				<xyz>4.713573455708269e-12 -0.9999999999999983 -4.747102669537604e-10</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>1.5707963267948966</upper>
+					<lower>-6.28</lower>
+					<upper>6.28</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -712,12 +711,12 @@
 			<axis>
 				<xyz>4.713392143410444e-12 -0.9999999999999977 -4.747101326464687e-10</xyz>
 				<limit>
-					<lower>-1.5707963267948966</lower>
-					<upper>1.5707963267948966</upper>
+					<lower>-6.14</lower>
+					<upper>6.14</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin" />
 	</model>
 </sdf>
