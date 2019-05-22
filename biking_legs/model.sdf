@@ -1,723 +1,1881 @@
-<?xml version="1.0" ?>
-<sdf version="1.6">
-	<model name="biking_legs">
-		<link name="bike">
-			<self_collide>false</self_collide>
-			<pose frame="">-1.3108998963673458e-07 2.442664557200658e-07 1.774980865576481e-07 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>21.819480363284676</mass>
-				<inertia>
-					<ixx>7.748754718380337</ixx>
-					<ixy>0.0634634157089934</ixy>
-					<ixz>-3.1083916843420316</ixz>
-					<iyy>11.34231156532716</iyy>
-					<iyz>0.17002960224664204</iyz>
-					<izz>4.197269130500377</izz>
-				</inertia>
-			</inertial>
-			<collision name="bike_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/bike.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="bike_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/bike.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="front_part">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.716390260045379 0.010388552481776845 0.21643769422809594 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>16.81067246564987</mass>
-				<inertia>
-					<ixx>3.209229675803012</ixx>
-					<ixy>0.18113615980958322</ixy>
-					<ixz>1.2419706792383163</ixz>
-					<iyy>14.662960281869834</iyy>
-					<iyz>-0.006723082565225897</iyz>
-					<izz>13.912919694635468</izz>
-				</inertia>
-			</inertial>
-			<collision name="front_part_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/front_part.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="front_part_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/front_part.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="left_wheel">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.9984258521253281 -0.3500004088111488 0.04566700000000946 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>13.340163929097853</mass>
-				<inertia>
-					<ixx>2.1711695314274566</ixx>
-					<ixy>-4.661713033463341</ixy>
-					<ixz>0.6082462869752925</ixz>
-					<iyy>14.34232616188959</iyy>
-					<iyz>0.21322209220250976</iyz>
-					<izz>15.441547158388762</izz>
-				</inertia>
-			</inertial>
-			<collision name="left_wheel_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/left_wheel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="left_wheel_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/left_wheel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="right_wheel">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.9984258521253281 0.34200026941711825 0.04566700000003973 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>13.340163929097852</mass>
-				<inertia>
-					<ixx>2.097317024732198</ixx>
-					<ixy>4.555157860544104</ixy>
-					<ixz>0.6082462869756978</ixz>
-					<iyy>14.342326161889625</iyy>
-					<iyz>-0.20834836515382796</iyz>
-					<izz>15.367694651693462</izz>
-				</inertia>
-			</inertial>
-			<collision name="right_wheel_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/right_wheel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="right_wheel_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/right_wheel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="pedal_right">
-			<self_collide>false</self_collide>
-			<pose frame="">0.07774610496697895 0.14798929042854417 0.17181270387176825 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.9460025886020238</mass>
-				<inertia>
-					<ixx>0.04935288883260874</ixx>
-					<ixy>-0.01088431878202957</ixy>
-					<ixz>-0.012786337049734428</ixz>
-					<iyy>0.034058605096705115</iyy>
-					<iyz>-0.0240534781843675</iyz>
-					<izz>0.027254699207640648</izz>
-				</inertia>
-			</inertial>
-			<collision name="pedal_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/pedal_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="pedal_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/pedal_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="kurbel">
-			<self_collide>false</self_collide>
-			<pose frame="">0.0922287261913865 0.00013171801209019073 0.004277283496539319 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>2.7832708381108002</mass>
-				<inertia>
-					<ixx>0.03321525556564437</ixx>
-					<ixy>0.0010218101556732024</ixy>
-					<ixz>0.00030143634944182626</ixz>
-					<iyy>0.04158688185274008</iyy>
-					<iyz>-0.012937192477663166</iyz>
-					<izz>0.03973107091612807</izz>
-				</inertia>
-			</inertial>
-			<collision name="kurbel_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/kurbel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="kurbel_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/kurbel.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="pedal_left">
-			<self_collide>false</self_collide>
-			<pose frame="">0.10735780788647806 -0.14924470957145622 -0.1652479801685643 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.9460025886020125</mass>
-				<inertia>
-					<ixx>0.04758769759190253</ixx>
-					<ixy>0.015157406751995513</ixy>
-					<ixz>0.01664449930819223</ixz>
-					<iyy>0.03715064465435263</iyy>
-					<iyz>-0.023330681761024347</iyz>
-					<izz>0.03281793789355073</izz>
-				</inertia>
-			</inertial>
-			<collision name="pedal_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/pedal_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="pedal_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/pedal_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="foot_left">
-			<self_collide>false</self_collide>
-			<pose frame="">0.1897674392416586 -0.18543468324767953 -0.08286619521431683 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.7294038873138551</mass>
-				<inertia>
-					<ixx>0.0306577418169339</ixx>
-					<ixy>0.02567006886610866</ixy>
-					<ixz>0.011406503881992783</ixz>
-					<iyy>0.03192332756060587</iyy>
-					<iyz>-0.01120882375238102</iyz>
-					<izz>0.05196042978318963</izz>
-				</inertia>
-			</inertial>
-			<collision name="foot_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/foot_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="foot_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/foot_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="foot_left_tip">
-			<self_collide>false</self_collide>
-			<pose frame="">0.10826126700838597 -0.18434958840510632 -0.1455183253014241 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.27794557605062853</mass>
-				<inertia>
-					<ixx>0.015446923623454754</ixx>
-					<ixy>0.00555426821902182</ixy>
-					<ixz>0.00432896819384346</ixz>
-					<iyy>0.009258021899104133</iyy>
-					<iyz>-0.007451689940435026</iyz>
-					<izz>0.012864207978689868</izz>
-				</inertia>
-			</inertial>
-			<collision name="foot_left_tip_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/foot_left_tip.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="foot_left_tip_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/foot_left_tip.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="foot_right">
-			<self_collide>false</self_collide>
-			<pose frame="">0.1601048988914081 0.16245001328005948 0.26624660853398463 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.7293878571115926</mass>
-				<inertia>
-					<ixx>0.07153244962429531</ixx>
-					<ixy>-0.018971432034320494</ixy>
-					<ixz>-0.031157993912075008</ixz>
-					<iyy>0.07104825524861147</iyy>
-					<iyz>-0.03154601530368083</iyz>
-					<izz>0.038545152940531194</izz>
-				</inertia>
-			</inertial>
-			<collision name="foot_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/foot_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="foot_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/foot_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="foot_right_tip">
-			<self_collide>false</self_collide>
-			<pose frame="">0.08424412261006962 0.16136601717809437 0.19667474192207288 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.2779613337433242</mass>
-				<inertia>
-					<ixx>0.018113430137829244</ixx>
-					<ixy>-0.003785199618600992</ixy>
-					<ixz>-0.004658186900864219</ixz>
-					<iyy>0.012838844107194129</iyy>
-					<iyz>-0.008826268505343786</iyz>
-					<izz>0.009361994879396195</izz>
-				</inertia>
-			</inertial>
-			<collision name="foot_right_tip_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/foot_right_tip.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="foot_right_tip_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/foot_right_tip.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="thigh_right">
-			<self_collide>false</self_collide>
-			<pose frame="">0.15291704075979964 0.1872338006524142 0.5881254223435735 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.562451737207245</mass>
-				<inertia>
-					<ixx>2.1311595939557693</ixx>
-					<ixy>-0.16231256156120097</ixy>
-					<ixz>-0.49916489306506795</ixz>
-					<iyy>2.085217259526499</iyy>
-					<iyz>-0.612530712748862</iyz>
-					<izz>0.35327947395260595</izz>
-				</inertia>
-			</inertial>
-			<collision name="thigh_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/thigh_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="thigh_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/thigh_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="thigh_left">
-			<self_collide>false</self_collide>
-			<pose frame="">0.23927058179080216 -0.20961659598636861 0.48408184257983045 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.5625041601002305</mass>
-				<inertia>
-					<ixx>1.5756381308618856</ixx>
-					<ixy>0.2787543309424781</ixy>
-					<ixz>-0.6473085626129221</ixz>
-					<iyy>1.653091918601532</iyy>
-					<iyz>0.5675281724757307</iyz>
-					<izz>0.5754998257863525</izz>
-				</inertia>
-			</inertial>
-			<collision name="thigh_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/thigh_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="thigh_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/thigh_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="shin_right">
-			<self_collide>false</self_collide>
-			<pose frame="">0.03139439574575232 0.18666200146907103 0.45050736193377283 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.740563261047474</mass>
-				<inertia>
-					<ixx>1.394362697417588</ixx>
-					<ixy>-0.03212249678174864</ixy>
-					<ixz>-0.06763318739636637</ixz>
-					<iyy>1.2135169544688156</iyy>
-					<iyz>-0.48584816725921975</iyz>
-					<izz>0.22868918998228582</izz>
-				</inertia>
-			</inertial>
-			<collision name="shin_right_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/shin_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="shin_right_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/shin_right.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="shin_left">
-			<self_collide>false</self_collide>
-			<pose frame="">0.1981839674700483 -0.20868027854614457 0.1386835556167773 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>5.741528405375817</mass>
-				<inertia>
-					<ixx>0.4004016989550067</ixx>
-					<ixy>0.237798987591566</ixy>
-					<ixz>-0.15934626886972894</ixz>
-					<iyy>0.3787310010699574</iyy>
-					<iyz>0.16958466226808394</iyz>
-					<izz>0.4878720051511908</izz>
-				</inertia>
-			</inertial>
-			<collision name="shin_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/shin_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="shin_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/shin_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="wheel_back">
-			<self_collide>false</self_collide>
-			<pose frame="">0.53689742860369 0.0035499556212922633 0.049415870249024677 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>13.340163929098475</mass>
-				<inertia>
-					<ixx>0.5419188938328761</ixx>
-					<ixy>-0.025425846119325</ixy>
-					<ixz>-0.35393127318782003</ixz>
-					<iyy>4.894303401629515</iyy>
-					<iyz>-0.002340186869719608</iyz>
-					<izz>4.354763468464212</izz>
-				</inertia>
-			</inertial>
-			<collision name="wheel_back_collision">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/wheel_back.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="wheel_back_visual">
-				<geometry>
-					<mesh>
-						<uri>model://biking_legs/meshes/CAD/wheel_back.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<joint name="joint_pedal_right" type="revolute">
-			<parent>kurbel</parent>
-			<child>pedal_right</child>
-			<pose frame="">7.819726607520394e-05 0.0420000000000015 -3.5925023610161587e-06 0 0 0</pose>
-			<axis>
-				<xyz>-5.996634558900877e-16 1.0000000000000016 -1.589276281596867e-15</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_pedal_left" type="revolute">
-			<parent>kurbel</parent>
-			<child>pedal_left</child>
-			<pose frame="">-2.979167979169972e-05 -0.041999999999999336 -7.238904826529336e-05 0 0 0</pose>
-			<axis>
-				<xyz>5.996634558900908e-16 -1.0 1.589276281596884e-15</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_hip_left" type="revolute">
-			<parent>bike</parent>
-			<child>thigh_left</child>
-			<pose frame="">0.009267098308499372 0.010551322014355087 0.11083878070931114 0 0 0</pose>
-			<axis>
-				<xyz>-4.0005042474417543e-11 -0.9999999999999998 -3.582135224889594e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_hip_right" type="revolute">
-			<parent>bike</parent>
-			<child>thigh_right</child>
-			<pose frame="">0.11119613195499425 -0.02190338176338404 0.002128210284773644 0 0 0</pose>
-			<axis>
-				<xyz>-7.079315732196055e-11 -0.9999999999999996 1.6436650960909208e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_knee_left" type="revolute">
-			<parent>thigh_left</parent>
-			<child>shin_left</child>
-			<pose frame="">0.027854272363237023 0.033665004680523226 0.14787846931058232 0 0 0</pose>
-			<axis>
-				<xyz>-1.843261882736942e-11 -1.0000000000000242 -1.5703927253974884e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_foot_left" type="revolute">
-			<parent>shin_left</parent>
-			<child>foot_left</child>
-			<pose frame="">-0.010875856134566214 0.02391940944064146 0.023482859194768536 0 0 0</pose>
-			<axis>
-				<xyz>1.3216428234399045e-12 1.0000000000000004 -2.568636283218604e-12</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_foot_left_tip" type="fixed">
-			<parent>foot_left</parent>
-			<child>foot_left_tip</child>
-			<pose frame="">0.03357071566031998 -0.0011656854018282914 0.0243241001493592 0 0 0</pose>
-		</joint>
-		<joint name="joint_knee_right" type="revolute">
-			<parent>thigh_right</parent>
-			<child>shin_right</child>
-			<pose frame="">-0.07628122292507628 -0.013631582552672121 0.12974627259605803 0 0 0</pose>
-			<axis>
-				<xyz>1.1509052997628615e-10 1.0000000000000233 -1.6436680328862931e-10</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_foot_right" type="revolute">
-			<parent>shin_right</parent>
-			<child>foot_right</child>
-			<pose frame="">-0.013005072084437064 0.024080405619540137 0.022387196955039136 0 0 0</pose>
-			<axis>
-				<xyz>1.582794023190842e-12 0.9999999999999996 -2.261138367347678e-12</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_foot_right_tip" type="fixed">
-			<parent>foot_right</parent>
-			<child>foot_right_tip</child>
-			<pose frame="">0.03132430067894301 0.0011644017214087299 0.027153426526773394 0 0 0</pose>
-		</joint>
-		<joint name="joint_wheel_right" type="revolute">
-			<parent>front_part</parent>
-			<child>right_wheel</child>
-			<pose frame="">5.684341886080802e-16 -0.003999653375198307 5.577760475716787e-15 0 0 0</pose>
-			<axis>
-				<xyz>-3.1662288285727846e-30 0.9999999999999998 4.317059530368991e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_wheel_back" type="revolute">
-			<parent>bike</parent>
-			<child>wheel_back</child>
-			<pose frame="">-1.4210854715202004e-16 -0.0689996533751975 2.1316282072803005e-16 0 0 0</pose>
-			<axis>
-				<xyz>6.938893903907228e-17 -1.0 1.27675647831893e-15</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_pedal" type="revolute">
-			<parent>bike</parent>
-			<child>kurbel</child>
-			<pose frame="">0.0002782913867387116 -0.03513164955582049 -0.001009331348099735 0 0 0</pose>
-			<axis>
-				<xyz>-6.938893903907228e-17 1.0 -1.27675647831893e-15</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_wheel_left" type="revolute">
-			<parent>front_part</parent>
-			<child>left_wheel</child>
-			<pose frame="">5.684341886080802e-16 0.04600034662480173 7.638334409421077e-15 0 0 0</pose>
-			<axis>
-				<xyz>3.1662288285727846e-30 -0.9999999999999998 -4.317059530368991e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_front" type="revolute">
-			<parent>bike</parent>
-			<child>front_part</child>
-			<pose frame="">-0.23003546880974085 -0.010388308215364166 -0.2052706960113988 0 0 0</pose>
-			<axis>
-				<xyz>5.345642609144017e-16 -4.084397910750052e-14 1.0</xyz>
-				<limit>
-					<lower>-0.5235987755982988</lower>
-					<upper>0.5235987755982988</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_foot_pedal_left" type="prismatic">
-			<parent>pedal_left</parent>
-			<child>foot_left_tip</child>
-			<pose frame="">-0.00683771057400417 -0.006895121166349299 -0.009398020459969932 0 0 0</pose>
-			<axis>
-				<xyz>0.8660254037844375 -1.0430006455671455e-15 0.4999999999999994</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_foot_pedal_right" type="prismatic">
-			<parent>pedal_right</parent>
-			<child>foot_right_tip</child>
-			<pose frame="">6.816686019606166e-05 0.028623273250451362 -0.005719325287256183 0 0 0</pose>
-			<axis>
-				<xyz>-0.8191520442889908 -3.253332229808144e-16 -0.5735764363510454</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
-	</model>
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='biking_legs'>
+    <link name='bike'>
+      <self_collide>0</self_collide>
+      <pose frame=''>-0 -0 0.27001 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>210.722</mass>
+        <inertia>
+          <ixx>13.2107</ixx>
+          <ixy>0.0644884</ixy>
+          <ixz>-3.81485</ixz>
+          <iyy>17.2175</iyy>
+          <iyz>0.187874</iyz>
+          <izz>4.59482</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='bike_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/CAD/bike.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='bike_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/CAD/bike.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='foot_left'>
+      <self_collide>0</self_collide>
+      <pose frame=''>0.250029 -0.188091 0.335495 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.729406</mass>
+        <inertia>
+          <ixx>0.10856</ixx>
+          <ixy>0.034305</ixy>
+          <ixz>-0.0612022</ixz>
+          <iyy>0.128346</iyy>
+          <iyz>0.0460298</iyz>
+          <izz>0.0719283</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='foot_left_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/visuals/foot_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='foot_left_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/collisions/foot_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='foot_left_tip'>
+      <self_collide>0</self_collide>
+      <pose frame=''>0.240688 -0.187005 0.233116 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.277943</mass>
+        <inertia>
+          <ixx>0.0250136</ixx>
+          <ixy>0.0125117</ixy>
+          <ixz>-0.0156135</ixz>
+          <iyy>0.0313204</iyy>
+          <iyz>0.0121248</iyz>
+          <izz>0.0259081</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='foot_left_tip_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/visuals/foot_left_tip.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='foot_left_tip_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/collisions/foot_left_tip.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='foot_right'>
+      <self_collide>0</self_collide>
+      <pose frame=''>0.040551 0.158748 0.403186 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.72939</mass>
+        <inertia>
+          <ixx>0.137491</ixx>
+          <ixy>-0.00469565</ixy>
+          <ixz>-0.0119713</ixz>
+          <iyy>0.120415</iyy>
+          <iyz>-0.046683</iyz>
+          <izz>0.0202188</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='foot_right_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/visuals/foot_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='foot_right_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/collisions/foot_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='foot_right_tip'>
+      <self_collide>0</self_collide>
+      <pose frame=''>-0.053745 0.157664 0.36191 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.277956</mass>
+        <inertia>
+          <ixx>0.0434088</ixx>
+          <ixy>0.00234721</ixy>
+          <ixz>0.00537278</ixz>
+          <iyy>0.0373225</iyy>
+          <iyz>-0.0158621</iyz>
+          <izz>0.0078933</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='foot_right_tip_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/visuals/foot_right_tip.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='foot_right_tip_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/collisions/foot_right_tip.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='front_part'>
+      <self_collide>0</self_collide>
+      <pose frame=''>-0.71639 0.010389 0.486438 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>16.8107</mass>
+        <inertia>
+          <ixx>6.3995</ixx>
+          <ixy>0.181136</ixy>
+          <ixz>4.49358</ixz>
+          <iyy>17.8532</iyy>
+          <iyz>-0.0538755</iyz>
+          <izz>13.9129</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='front_part_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/CAD/front_part.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='front_part_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/CAD/front_part.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='kurbel'>
+      <self_collide>0</self_collide>
+      <pose frame=''>0.091481 0.000132 0.273478 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>2.78327</mass>
+        <inertia>
+          <ixx>0.226612</ixx>
+          <ixy>0.0119714</ixy>
+          <ixz>-0.0635345</ixz>
+          <iyy>0.249316</iyy>
+          <iyz>-0.00503234</iyz>
+          <izz>0.0540631</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='kurbel_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/CAD/kurbel.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='kurbel_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/CAD/kurbel.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='left_wheel'>
+      <self_collide>0</self_collide>
+      <pose frame=''>-0.998426 -0.35 0.315667 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>13.3402</mass>
+        <inertia>
+          <ixx>3.47264</ixx>
+          <ixy>-4.66171</ixy>
+          <ixz>4.20442</ixz>
+          <iyy>15.6438</iyy>
+          <iyz>1.47387</iyz>
+          <izz>15.4415</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='left_wheel_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/CAD/left_wheel.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='left_wheel_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/CAD/left_wheel.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='pedal_left'>
+      <self_collide>0</self_collide>
+      <pose frame=''>0.254561 -0.151901 0.219058 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.946003</mass>
+        <inertia>
+          <ixx>0.0681311</ixx>
+          <ixy>0.0365802</ixy>
+          <ixz>-0.0528211</ixz>
+          <iyy>0.107112</iyy>
+          <iyz>0.0314785</iyz>
+          <izz>0.08375</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='pedal_left_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/CAD/pedal_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='pedal_left_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/CAD/pedal_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='pedal_right'>
+      <self_collide>0</self_collide>
+      <pose frame=''>-0.067935 0.144287 0.340484 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.946003</mass>
+        <inertia>
+          <ixx>0.129993</ixx>
+          <ixy>0.00927282</ixy>
+          <ixz>0.0217968</ixz>
+          <iyy>0.11445</iyy>
+          <iyz>-0.0464746</iyz>
+          <izz>0.0249592</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='pedal_right_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/CAD/pedal_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='pedal_right_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/CAD/pedal_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='right_wheel'>
+      <self_collide>0</self_collide>
+      <pose frame=''>-0.998426 0.342 0.315667 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>13.3402</mass>
+        <inertia>
+          <ixx>3.39879</ixx>
+          <ixy>4.55516</ixy>
+          <ixz>4.20442</ixz>
+          <iyy>15.6438</iyy>
+          <iyz>-1.44018</iyz>
+          <izz>15.3677</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='right_wheel_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/CAD/right_wheel.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='right_wheel_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/CAD/right_wheel.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='shin_left'>
+      <self_collide>0</self_collide>
+      <pose frame=''>0.126258 -0.212589 0.452522 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>5.45755</mass>
+        <inertia>
+          <ixx>1.38383</ixx>
+          <ixy>0.144395</ixy>
+          <ixz>-0.303783</ixz>
+          <iyy>1.23548</iyy>
+          <iyz>0.527394</iyz>
+          <izz>0.354008</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='shin_left_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/visuals/shin_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='shin_left_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/collisions/shin_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='shin_right'>
+      <self_collide>0</self_collide>
+      <pose frame=''>-0.006326 0.184218 0.568859 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>5.45751</mass>
+        <inertia>
+          <ixx>1.97707</ixx>
+          <ixy>0.0066634</ixy>
+          <ixz>0.0251182</ixz>
+          <iyy>1.79705</iyy>
+          <iyz>-0.575077</iyz>
+          <izz>0.199473</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='shin_right_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/visuals/shin_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='shin_right_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/collisions/shin_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='thigh_left'>
+      <self_collide>0</self_collide>
+      <pose frame=''>0.211514 -0.21419 0.715041 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>5.12204</mass>
+        <inertia>
+          <ixx>2.86679</ixx>
+          <ixy>0.233968</ixy>
+          <ixz>-0.777895</ixz>
+          <iyy>2.87159</iyy>
+          <iyz>0.786285</iyz>
+          <izz>0.483302</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='thigh_left_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/visuals/thigh_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='thigh_left_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/collisions/thigh_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='thigh_right'>
+      <self_collide>0</self_collide>
+      <pose frame=''>0.18626 0.185874 0.768576 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>5.1221</mass>
+        <inertia>
+          <ixx>3.21431</ixx>
+          <ixy>-0.17991</ixy>
+          <ixz>-0.733083</ixz>
+          <iyy>3.22696</iyy>
+          <iyz>-0.731987</iyz>
+          <izz>0.375095</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='thigh_right_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/visuals/thigh_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='thigh_right_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/collisions/thigh_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <link name='wheel_back'>
+      <self_collide>0</self_collide>
+      <pose frame=''>0.536897 0.00355 0.319416 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>13.3402</mass>
+        <inertia>
+          <ixx>1.87039</ixx>
+          <ixy>-0.0254258</ixy>
+          <ixz>-2.28775</ixz>
+          <iyy>6.22278</iyy>
+          <iyz>-0.0151266</iyz>
+          <izz>4.35476</izz>
+        </inertia>
+      </inertial>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='wheel_back_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://biking_legs/meshes/CAD/wheel_back.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='wheel_back_collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/missxa/.gazebo/models/biking_legs/meshes/CAD/wheel_back.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <joint name='joint_foot_left' type='revolute'>
+      <parent>shin_left</parent>
+      <child>foot_left</child>
+      <pose frame=''>-0.024625 0.023919 0.007959 0 -0 0</pose>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-1.22173</lower>
+          <upper>1.22173</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_foot_left_tip' type='fixed'>
+      <parent>foot_left</parent>
+      <child>foot_left_tip</child>
+      <pose frame=''>0.004935 -0.001167 0.041162 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_foot_pedal_left' type='prismatic'>
+      <parent>pedal_left</parent>
+      <child>foot_left_tip</child>
+      <pose frame=''>0.002258 -0.006896 -0.0114 0 -0 0</pose>
+      <axis>
+        <xyz>0.220888 -0 0.975299</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_foot_pedal_right' type='prismatic'>
+      <parent>pedal_right</parent>
+      <child>foot_right_tip</child>
+      <pose frame=''>-0.001782 0.028623 -0.005438 0 -0 0</pose>
+      <axis>
+        <xyz>-0.960685 0 -0.27764</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_foot_right' type='revolute'>
+      <parent>shin_right</parent>
+      <child>foot_right</child>
+      <pose frame=''>-0.005061 0.02408 0.025391 0 -0 0</pose>
+      <axis>
+        <xyz>-0 1 0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-1.22173</lower>
+          <upper>1.22173</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_foot_right_tip' type='fixed'>
+      <parent>foot_right</parent>
+      <child>foot_right_tip</child>
+      <pose frame=''>0.038429 0.001164 0.015552 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_front' type='fixed'>
+      <parent>bike</parent>
+      <child>front_part</child>
+      <pose frame=''>-0.230035 -0.010388 -0.205271 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_hip_left' type='revolute'>
+      <parent>bike</parent>
+      <child>thigh_left</child>
+      <pose frame=''>0.113485 0.030018 0.094974 0 -0 0</pose>
+      <axis>
+        <xyz>0 -1 -0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-6.14</lower>
+          <upper>6.14</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_hip_right' type='revolute'>
+      <parent>bike</parent>
+      <child>thigh_right</child>
+      <pose frame=''>0.137739 -0.023046 0.041419 0 -0 0</pose>
+      <axis>
+        <xyz>0 -1 -0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-6.14</lower>
+          <upper>6.14</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_knee_left' type='revolute'>
+      <parent>thigh_left</parent>
+      <child>shin_left</child>
+      <pose frame=''>-0.094528 0.028417 0.157084 0 -0 0</pose>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-1.0</lower>
+          <upper>2</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_knee_right' type='revolute'>
+      <parent>thigh_right</parent>
+      <child>shin_right</child>
+      <pose frame=''>-0.015102 -0.02139 0.182801 0 -0 0</pose>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-1.57</lower>
+          <upper>1.0</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_pedal' type='revolute'>
+      <parent>bike</parent>
+      <child>kurbel</child>
+      <pose frame=''>0.001026 -0.035132 -0.00021 0 -0 0</pose>
+      <axis>
+        <xyz>-0 1 -0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-3.14159e+15</lower>
+          <upper>3.14159e+15</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_pedal_left' type='revolute'>
+      <parent>kurbel</parent>
+      <child>pedal_left</child>
+      <pose frame=''>-0.005112 -0.039343 -0.009122 0 -0 0</pose>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-3.14159e+15</lower>
+          <upper>3.14159e+15</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_pedal_right' type='revolute'>
+      <parent>kurbel</parent>
+      <child>pedal_right</child>
+      <pose frame=''>0.003605 0.045702 -0.003782 0 -0 0</pose>
+      <axis>
+        <xyz>-0 1 -0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-3.14159e+15</lower>
+          <upper>3.14159e+15</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_wheel_back' type='revolute'>
+      <parent>bike</parent>
+      <child>wheel_back</child>
+      <pose frame=''>-0 -0.069 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-3.14159e+15</lower>
+          <upper>3.14159e+15</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_wheel_left' type='revolute'>
+      <parent>front_part</parent>
+      <child>left_wheel</child>
+      <pose frame=''>0 0.046 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 1 -0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-3.14159e+15</lower>
+          <upper>3.14159e+15</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='joint_wheel_right' type='revolute'>
+      <parent>front_part</parent>
+      <child>right_wheel</child>
+      <pose frame=''>0 -0.004 0 0 -0 0</pose>
+      <axis>
+        <xyz>-0 1 0</xyz>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <limit>
+          <lower>-3.14159e+15</lower>
+          <upper>3.14159e+15</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+    <plugin name='cardsflow_gazebo_plugin' filename='libcardsflow_gazebo_plugin.so'/>
+  </model>
 </sdf>
