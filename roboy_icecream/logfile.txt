@@ -13,12 +13,12 @@ exporting stl of torso
 Body: arm_left_upper
 COM: arm_left_upper 40.564551581889084 -7.560251729585329 40.5624489324478
 exporting stl of arm_left_upper
-Body: sphere_link1
-COM: sphere_link1 29.189436724179465 1.3936393619393581 54.48918362217307
-exporting stl of sphere_link1
-Body: sphere_link2
-COM: sphere_link2 29.18943623808747 1.3936393384462418 54.48918357909863
-exporting stl of sphere_link2
+Body: shoulder_left_link1
+COM: shoulder_left_link1 29.189436724179465 1.3936393619393581 54.48918362217307
+exporting stl of shoulder_left_link1
+Body: shoulder_left_link2
+COM: shoulder_left_link2 29.18943623808747 1.3936393384462418 54.48918357909863
+exporting stl of shoulder_left_link2
 Body: hand_left_index_link1
 COM: hand_left_index_link1 70.2437084935041 -33.155883526785004 8.02361100836834
 exporting stl of hand_left_index_link1
@@ -64,8 +64,12 @@ exporting stl of hand_left_thumb_link0
 Body: hand_left_thumb_link1
 COM: hand_left_thumb_link1 62.97410186013307 -32.37537480106981 17.188614446884383
 exporting stl of hand_left_thumb_link1
-Body: sphere_link1
-Body: sphere_link2
+Body: shoulder_right_link1
+COM: shoulder_right_link1 -29.306426090238606 1.109383220250954 54.68414984574267
+exporting stl of shoulder_right_link1
+Body: shoulder_right_link2
+COM: shoulder_right_link2 -29.30642607647908 1.1093832147498361 54.68414985002677
+exporting stl of shoulder_right_link2
 Body: arm_right_upper
 COM: arm_right_upper -39.96144779889579 -7.054454294075384 41.4629719979367
 exporting stl of arm_right_upper
@@ -258,12 +262,12 @@ Joint: EXPORT_elbow_left
 	ERROR writing joint EXPORT_elbow_left, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
 Joint: EXPORT_sphere_axis0
 	parent: torso
-	child: sphere_link1
-	pos: -29.30642607647471	1.1093832130987014	54.68414984572001
+	child: shoulder_right_link1
+	pos: 1.376389491269947e-08	-7.152252567976802e-09	-2.2659207843389595e-11
 Joint: EXPORT_sphere_axis1
-	parent: sphere_link1
-	child: sphere_link2
-	pos: -29.30642607647276	1.1093832130978252	54.68414984571889
+	parent: shoulder_right_link1
+	child: shoulder_right_link2
+	pos: 6.320277634586091e-12	-1.6520109724638132e-09	-4.307878498366335e-09
 Joint: EXPORT_sphere_axis2
 	ERROR writing joint EXPORT_sphere_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
 Joint: EXPORT_hand_left_little_joint1
@@ -308,12 +312,12 @@ Joint: EXPORT_elbow_right
 	pos: -6.239924077861708	-5.891284646414949	-7.215504332118428
 Joint: EXPORT_sphere_axis0
 	parent: torso
-	child: sphere_link1
-	pos: 29.18943623808313	1.393639346894595	54.48918362271509
+	child: shoulder_left_link1
+	pos: -4.860963365160842e-07	-1.5044763213012402e-08	5.420162096925196e-10
 Joint: EXPORT_sphere_axis1
-	parent: sphere_link1
-	child: sphere_link2
-	pos: 29.18943623808115	1.3936393468937192	54.48918362271398
+	parent: shoulder_left_link1
+	child: shoulder_left_link2
+	pos: -6.320277634586091e-12	8.447477384265767e-09	4.3615351330572594e-08
 Joint: EXPORT_sphere_axis2
 	ERROR writing joint EXPORT_sphere_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
 Joint: EXPORT_hand_left_middle_joint1
