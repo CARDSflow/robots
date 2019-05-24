@@ -161,6 +161,38 @@
 				</geometry>
 			</visual>
 		</link>
+		<link name="arm_left_palm (1)">
+			<self_collide>false</self_collide>
+			<pose frame="">0.6362894573646023 -0.25033359772046937 0.13881242308605793 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.808000530768249</mass>
+				<inertia>
+					<ixx>0.06718930036844228</ixx>
+					<ixy>0.1289067988555911</ixy>
+					<ixz>-0.07110389309100248</ixz>
+					<iyy>0.3435129841323171</iyy>
+					<iyz>0.028130017181324535</iyz>
+					<izz>0.378637781981304</izz>
+				</inertia>
+			</inertial>
+			<collision name="arm_left_palm (1)_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/arm_left_palm (1).stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="arm_left_palm (1)_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/arm_left_palm (1).stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
 		<link name="arm_left_upper">
 			<self_collide>false</self_collide>
 			<pose frame="">0.40564551581889086 -0.0756025172958533 0.40562448932447825 0.0 -0.0 0.0</pose>
@@ -2065,7 +2097,7 @@
 			</axis>
 		</joint>
 		<joint name="hand_left_middle_joint0" type="revolute">
-			<parent>arm_left_palm</parent>
+			<parent>arm_left_palm (1)</parent>
 			<child>hand_left_middle_link0</child>
 			<pose frame="">-0.011438518147669755 0.013416455623722108 0.015944404173918753 0 0 0</pose>
 			<axis>
@@ -2078,7 +2110,7 @@
 			</axis>
 		</joint>
 		<joint name="hand_left_iring_joint0" type="revolute">
-			<parent>arm_left_palm</parent>
+			<parent>arm_left_palm (1)</parent>
 			<child>hand_left_ring_link0</child>
 			<pose frame="">-0.011353534324585865 0.014956245904274504 0.014574948209301173 0 0 0</pose>
 			<axis>
@@ -2091,7 +2123,7 @@
 			</axis>
 		</joint>
 		<joint name="hand_left_little_joint0" type="revolute">
-			<parent>arm_left_palm</parent>
+			<parent>arm_left_palm (1)</parent>
 			<child>hand_left_index_link0</child>
 			<pose frame="">-0.011167491037309248 0.0163888505314047 0.013102489725529517 0 0 0</pose>
 			<axis>
@@ -2104,7 +2136,7 @@
 			</axis>
 		</joint>
 		<joint name="hand_left_index_joint0" type="revolute">
-			<parent>arm_left_palm</parent>
+			<parent>arm_left_palm (1)</parent>
 			<child>hand_left_little_link0</child>
 			<pose frame="">-0.0073407938780209745 0.008166978205952517 0.009102988674333679 0 0 0</pose>
 			<axis>
@@ -2117,7 +2149,7 @@
 			</axis>
 		</joint>
 		<joint name="hand_left_thumb_joint0" type="revolute">
-			<parent>arm_left_palm</parent>
+			<parent>arm_left_palm (1)</parent>
 			<child>hand_left_thumb_link0</child>
 			<pose frame="">0.0001101181106715643 0.01507115711718363 -0.01199144642680361 0 0 0</pose>
 			<axis>

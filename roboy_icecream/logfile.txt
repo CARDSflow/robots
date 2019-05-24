@@ -13,6 +13,9 @@ exporting stl of torso
 Body: arm_left_lower
 COM: arm_left_lower 53.73544149140898 -18.456932327610147 24.519589874047917
 exporting stl of arm_left_lower
+Body: arm_left_palm (1)
+COM: arm_left_palm (1) 63.62894573646023 -25.03335977204694 13.881242308605792
+exporting stl of arm_left_palm (1)
 Body: arm_left_upper
 COM: arm_left_upper 40.564551581889084 -7.560251729585329 40.56244893244782
 exporting stl of arm_left_upper
@@ -300,23 +303,23 @@ Joint: EXPORT_shoulder_left_axis1
 Joint: EXPORT_shoulder_left_axis2
 	ERROR writing joint EXPORT_shoulder_left_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
 Joint: EXPORT_hand_left_middle_joint0
-	parent: arm_left_palm
+	parent: arm_left_palm (1)
 	child: hand_left_middle_link0
 	pos: -1.1438518147669754	1.3416455623722108	1.5944404173918754
 Joint: EXPORT_hand_left_iring_joint0
-	parent: arm_left_palm
+	parent: arm_left_palm (1)
 	child: hand_left_ring_link0
 	pos: -1.1353534324585866	1.4956245904274503	1.4574948209301173
 Joint: EXPORT_hand_left_little_joint0
-	parent: arm_left_palm
+	parent: arm_left_palm (1)
 	child: hand_left_index_link0
 	pos: -1.1167491037309247	1.63888505314047	1.3102489725529516
 Joint: EXPORT_hand_left_index_joint0
-	parent: arm_left_palm
+	parent: arm_left_palm (1)
 	child: hand_left_little_link0
 	pos: -0.7340793878020975	0.8166978205952518	0.9102988674333679
 Joint: EXPORT_hand_left_thumb_joint0
-	parent: arm_left_palm
+	parent: arm_left_palm (1)
 	child: hand_left_thumb_link0
 	pos: 0.01101181106715643	1.5071157117183631	-1.199144642680361
 Joint: EXPORT_hand_left_middle_joint1
