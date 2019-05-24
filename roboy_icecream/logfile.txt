@@ -4,21 +4,24 @@ exporting stl of head
 Body: torso
 COM: torso -0.00535255132199797 -0.020638163411974032 50.87696386782599
 exporting stl of torso
-Body: arm_left_lower
-COM: arm_left_lower 53.70118768504008 -17.878250619837036 24.12717553490033
-exporting stl of arm_left_lower
 Body: arm_right_palm
 COM: arm_right_palm -63.75555744206083 -24.6773796558467 13.554097790837938
 exporting stl of arm_right_palm
+Body: arm_left_palm
+COM: arm_left_palm 63.59469314832924 -24.454698645113265 13.488841925691009
+exporting stl of arm_left_palm
+Body: arm_left_upper
+COM: arm_left_upper 39.69479092585928 -6.87557995598089 41.62724221525472
+exporting stl of arm_left_upper
+Body: arm_right_upper
+COM: arm_right_upper -39.8541213573976 -6.9723333598205475 41.59618073011953
+exporting stl of arm_right_upper
+Body: arm_left_lower
+COM: arm_left_lower 53.701189029493875 -17.8782733329587 24.127190937071333
+exporting stl of arm_left_lower
 Body: arm_right_lower
 COM: arm_right_lower -53.85846651599526 -18.098143715678475 24.196868697070045
 exporting stl of arm_right_lower
-Body: arm_left_palm
-COM: arm_left_palm 63.594693148329505 -24.454698645113343 13.488841925690908
-exporting stl of arm_left_palm
-Body: arm_left_upper
-COM: arm_left_upper 40.564551581889084 -7.560251729585329 40.5624489324478
-exporting stl of arm_left_upper
 Body: shoulder_left_link1
 COM: shoulder_left_link1 29.189436724179465 1.3936393619393581 54.48918362217307
 exporting stl of shoulder_left_link1
@@ -26,49 +29,49 @@ Body: shoulder_left_link2
 COM: shoulder_left_link2 29.18943623808747 1.3936393384462418 54.48918357909863
 exporting stl of shoulder_left_link2
 Body: hand_left_index_link1
-COM: hand_left_index_link1 70.20945590519067 -32.57722239676192 7.6312106233583945
+COM: hand_left_index_link1 70.20945590519045 -32.577222396761826 7.63121062335839
 exporting stl of hand_left_index_link1
 Body: hand_left_index_link0
-COM: hand_left_index_link0 68.13873765209766 -30.793269611963325 9.89924007864984
+COM: hand_left_index_link0 68.13873765209756 -30.79326961196321 9.899240078649852
 exporting stl of hand_left_index_link0
 Body: hand_left_index_link2
-COM: hand_left_index_link2 71.67599123101644 -33.84691719416548 6.014904547064821
+COM: hand_left_index_link2 71.67599123101651 -33.84691719416549 6.014904547064845
 exporting stl of hand_left_index_link2
 Body: hand_left_middle_link1
-COM: hand_left_middle_link1 69.84378123567987 -27.142015861904966 4.026810273649315
+COM: hand_left_middle_link1 69.8437812356798 -27.142015861904902 4.026810273649299
 exporting stl of hand_left_middle_link1
 Body: hand_left_middle_link0
-COM: hand_left_middle_link0 67.80397787920354 -25.870278632898728 6.641222995506741
+COM: hand_left_middle_link0 67.80397787920346 -25.870278632898714 6.641222995506792
 exporting stl of hand_left_middle_link0
 Body: hand_left_middle_link2
-COM: hand_left_middle_link2 71.28823040569381 -28.04750277246775 2.1644247987551086
+COM: hand_left_middle_link2 71.2882304056937 -28.047502772467688 2.1644247987551095
 exporting stl of hand_left_middle_link2
 Body: hand_left_ring_link1
-COM: hand_left_ring_link1 70.46840830829589 -30.15305180787639 5.242403848715771
+COM: hand_left_ring_link1 70.46840830829592 -30.153051807876416 5.242403848715782
 exporting stl of hand_left_ring_link1
 Body: hand_left_ring_link0
-COM: hand_left_ring_link0 68.40551034817963 -28.619254692810266 7.693059851654221
+COM: hand_left_ring_link0 68.40551034817946 -28.619254692810163 7.693059851654294
 exporting stl of hand_left_ring_link0
 Body: hand_left_ring_link2
-COM: hand_left_ring_link2 71.92932791552057 -31.244837674721946 3.4963384343480706
+COM: hand_left_ring_link2 71.92932791552032 -31.24483767472179 3.4963384343480937
 exporting stl of hand_left_ring_link2
 Body: hand_left_little_link1
-COM: hand_left_little_link1 67.88865055958021 -23.58482876081846 5.023456146695414
+COM: hand_left_little_link1 67.8886505595801 -23.584828760818464 5.023456146695448
 exporting stl of hand_left_little_link1
 Body: hand_left_little_link2
-COM: hand_left_little_link2 69.3180416579427 -24.37509613705442 3.0981303555460853
+COM: hand_left_little_link2 69.31804165794235 -24.375096137054328 3.0981303555461266
 exporting stl of hand_left_little_link2
 Body: hand_left_little_link0
-COM: hand_left_little_link0 66.45346260783673 -22.755225617382585 7.026458704405022
+COM: hand_left_little_link0 66.45346260783664 -22.755225617382553 7.02645870440505
 exporting stl of hand_left_little_link0
 Body: hand_left_thumb_link2
-COM: hand_left_thumb_link2 63.048826442203826 -33.85812853857167 18.247378979522715
+COM: hand_left_thumb_link2 63.04882644220327 -33.85812853857143 18.24737897952272
 exporting stl of hand_left_thumb_link2
 Body: hand_left_thumb_link0
-COM: hand_left_thumb_link0 62.071343327899555 -28.099302851934148 15.489885949022625
+COM: hand_left_thumb_link0 62.07134332789939 -28.099302851934073 15.489885949022677
 exporting stl of hand_left_thumb_link0
 Body: hand_left_thumb_link1
-COM: hand_left_thumb_link1 62.93984798481008 -31.796691928391862 16.79619931779431
+COM: hand_left_thumb_link1 62.93984798480997 -31.79669192839179 16.796199317794436
 exporting stl of hand_left_thumb_link1
 Body: shoulder_right_link1
 COM: shoulder_right_link1 -29.306426090238606 1.109383220250954 54.68414984574267
@@ -76,9 +79,6 @@ exporting stl of shoulder_right_link1
 Body: shoulder_right_link2
 COM: shoulder_right_link2 -29.30642607647908 1.1093832147498361 54.68414985002677
 exporting stl of shoulder_right_link2
-Body: arm_right_upper
-COM: arm_right_upper -39.96144779889579 -7.054454294075384 41.4629719979367
-exporting stl of arm_right_upper
 Body: hand_right_index_link1
 COM: hand_right_index_link1 -70.37693692645931 -32.83650341593377 7.713046627894896
 exporting stl of hand_right_index_link1
@@ -125,10 +125,10 @@ Body: hand_right_thumb_link1
 COM: hand_right_thumb_link1 -63.11334804099266 -32.020049685849045 16.856918302155652
 exporting stl of hand_right_thumb_link1
 Body: wrist_left_link1
-COM: wrist_left_link1 59.421081953090706 -22.365650340898757 17.01068813892717
+COM: wrist_left_link1 59.421081953090436 -22.36565034089869 17.01068813892725
 exporting stl of wrist_left_link1
 Body: wrist_left_link2
-COM: wrist_left_link2 59.4210814669987 -22.365650364391872 17.010688095852707
+COM: wrist_left_link2 59.421081466998444 -22.36565036439179 17.01068809585281
 exporting stl of wrist_left_link2
 Body: wrist_right_link1
 COM: wrist_right_link1 -59.30631014104508 -22.373453929325606 17.416876963064574
@@ -151,60 +151,10 @@ exporting stl of neck_link1
 Body: neck_link2
 COM: neck_link2 -1.2765957595970417e-08 0.15217809573941915 71.06779292283449
 exporting stl of neck_link2
-Joint: EXPORT_hand_left_middle_joint0
-	parent: arm_left_palm
-	child: hand_left_middle_link0
-	pos: -1.1438517559807195	1.3416445692411507	1.5944410908516904
-Joint: EXPORT_hand_left_iring_joint0
-	parent: arm_left_palm
-	child: hand_left_ring_link0
-	pos: -1.1353534171066144	1.4956243310704664	1.4574949968047086
-Joint: EXPORT_hand_left_little_joint0
-	parent: arm_left_palm
-	child: hand_left_index_link0
-	pos: -1.1167490912476978	1.6388848422478546	1.3102491155629785
-Joint: EXPORT_hand_left_index_joint0
-	parent: arm_left_palm
-	child: hand_left_little_link0
-	pos: -0.7340793876029323	0.8166978172304127	0.9102988697151382
-Joint: EXPORT_hand_left_thumb_joint0
-	parent: arm_left_palm
-	child: hand_left_thumb_link0
-	pos: 0.011011819785835542	1.5071155644260337	-1.1991445427988108
-Joint: EXPORT_hand_left_index_joint1
-	parent: hand_left_index_link0
-	child: hand_left_index_link1
-	pos: -0.6374938536654469	1.1296249392186972	0.6647179030050667
-Joint: EXPORT_hand_left_index_joint2
-	parent: hand_left_index_link1
-	child: hand_left_index_link2
-	pos: -0.6307101975251896	1.0760099567160921	0.5963259636935438
-Joint: EXPORT_hand_left_thumb_joint1
-	parent: hand_left_thumb_link0
-	child: hand_left_thumb_link1
-	pos: -0.5547319696619937	1.0385447221051471	-0.8626954865341787
-Joint: EXPORT_hand_left_thumb_joint2
-	parent: hand_left_thumb_link1
-	child: hand_left_thumb_link2
-	pos: -0.540606285369023	0.9489153951052813	-0.8586137613614753
-Joint: EXPORT_shoulder_right_axis0
-	parent: torso
-	child: shoulder_right_link1
-	pos: 1.376389491269947e-08	-7.152252567976802e-09	-2.2659207843389595e-11
-Joint: EXPORT_shoulder_right_axis1
-	parent: shoulder_right_link1
-	child: shoulder_right_link2
-	pos: 6.320277634586091e-12	-1.6520109724638132e-09	-4.307878498366335e-09
-Joint: EXPORT_shoulder_right_axis2
-	ERROR writing joint EXPORT_shoulder_right_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
-Joint: EXPORT_hand_left_middle_joint1
-	parent: hand_left_middle_link0
-	child: hand_left_middle_link1
-	pos: -0.6725562081694818	0.9689852027569081	0.8561881375150007
-Joint: EXPORT_hand_left_middle_joint2
-	parent: hand_left_middle_link1
-	child: hand_left_middle_link2
-	pos: -0.6663550153413667	0.9261958069227489	0.7804274436405167
+Joint: EXPORT_elbow_right
+	parent: arm_right_lower
+	child: arm_right_upper
+	pos: -6.347250519359896	-5.973405580669786	-7.348713064301258
 Joint: EXPORT_zed_camera_mount
 	parent: head
 	child: zed_camera
@@ -217,6 +167,16 @@ Joint: EXPORT_zed_camera_left
 	parent: zed_camera
 	child: zed_camera_left_lense
 	pos: -0.005466550911877199	1.1069943702269303	-0.23530142604906246
+Joint: EXPORT_wrist_right_axis0
+	parent: arm_right_lower
+	child: wrist_right_link1
+	pos: 1.3765976802915247e-08	-7.151108150083019e-09	-2.5163870986943948e-11
+Joint: EXPORT_wrist_right_axis1
+	parent: wrist_right_link1
+	child: wrist_right_link2
+	pos: -2.056162884400692e-08	-5.963745053350067e-09	-3.552713678800501e-15
+Joint: EXPORT_wrist_right_axis2
+	ERROR writing joint EXPORT_wrist_right_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
 Joint: EXPORT_neck_axis0
 	parent: torso
 	child: neck_link1
@@ -229,6 +189,30 @@ Joint: EXPORT_neck_axis1
 	parent: neck_link1
 	child: neck_link2
 	pos: 1.276622840242204e-08	1.2766342372128037e-08	2.842170943040401e-14
+Joint: EXPORT_hand_left_little_joint1
+	parent: hand_left_little_link0
+	child: hand_left_little_link1
+	pos: -0.6783253127031657	0.915137835256651	0.909276138854513
+Joint: EXPORT_hand_left_little_joint2
+	parent: hand_left_little_link1
+	child: hand_left_little_link2
+	pos: -0.672528467667604	0.8758020728807843	0.83159938394166
+Joint: EXPORT_hand_left_thumb_joint1
+	parent: hand_left_thumb_link0
+	child: hand_left_thumb_link1
+	pos: -0.5547319696620789	1.0385447221051898	-0.8626954865342178
+Joint: EXPORT_hand_left_thumb_joint2
+	parent: hand_left_thumb_link1
+	child: hand_left_thumb_link2
+	pos: -0.5406062853686535	0.9489153951051392	-0.8586137613613936
+Joint: EXPORT_hand_right_thumb_joint1
+	parent: hand_right_thumb_link0
+	child: hand_right_thumb_link1
+	pos: -0.23026189104690786	1.3706585742585986	-0.43902378624035876
+Joint: EXPORT_hand_right_thumb_joint2
+	parent: hand_right_thumb_link1
+	child: hand_right_thumb_link2
+	pos: -0.27531238186532647	1.2957435827960708	-0.4179160085389242
 Joint: EXPORT_shoulder_left_axis0
 	parent: torso
 	child: shoulder_left_link1
@@ -238,7 +222,45 @@ Joint: EXPORT_shoulder_left_axis1
 	child: shoulder_left_link2
 	pos: -6.320277634586091e-12	8.447477384265767e-09	4.3615351330572594e-08
 Joint: EXPORT_shoulder_left_axis2
-	ERROR writing joint EXPORT_shoulder_left_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+	parent: shoulder_left_link2
+	child: arm_left_upper
+	pos: -10.50535468777813	8.269219302874609	12.861941407459263
+Joint: EXPORT_hand_right_little_joint1
+	parent: hand_right_little_link0
+	child: hand_right_little_link1
+	pos: 0.557694770772386	0.07926802518630893	1.344224679243462
+Joint: EXPORT_hand_right_little_joint2
+	parent: hand_right_little_link1
+	child: hand_right_little_link2
+	pos: 0.5519626111717599	0.03975499526302073	1.2667571225857244
+Joint: EXPORT_shoulder_right_axis0
+	parent: torso
+	child: shoulder_right_link1
+	pos: 1.376389491269947e-08	-7.152252567976802e-09	-2.2659207843389595e-11
+Joint: EXPORT_shoulder_right_axis1
+	parent: shoulder_right_link1
+	child: shoulder_right_link2
+	pos: 6.320277634586091e-12	-1.6520109724638132e-09	-4.307878498366335e-09
+Joint: EXPORT_shoulder_right_axis2
+	parent: shoulder_right_link2
+	child: arm_right_upper
+	pos: 10.547695280924842	8.081716572918376	13.087969115599364
+Joint: EXPORT_hand_left_ring_joint1
+	parent: hand_left_ring_link0
+	child: hand_left_ring_link1
+	pos: -0.6580487917874223	1.0530963644602664	0.7630699202666493
+Joint: EXPORT_hand_left_ring_joint2
+	parent: hand_left_ring_link1
+	child: hand_left_ring_link2
+	pos: -0.6513990955527049	1.0047506859281548	0.6907939478808287
+Joint: EXPORT_hand_left_middle_joint1
+	parent: hand_left_middle_link0
+	child: hand_left_middle_link1
+	pos: -0.6725562081695244	0.9689852027568833	0.8561881375150557
+Joint: EXPORT_hand_left_middle_joint2
+	parent: hand_left_middle_link1
+	child: hand_left_middle_link2
+	pos: -0.6663550153413382	0.9261958069227276	0.7804274436405163
 Joint: EXPORT_hand_right_index_joint0
 	parent: arm_right_palm
 	child: hand_right_index_link0
@@ -275,6 +297,10 @@ Joint: EXPORT_hand_right_ring_joint2
 	parent: hand_right_ring_link1
 	child: hand_right_ring_link2
 	pos: 0.5733973962649515	0.10725410075938768	1.2532656784602239
+Joint: EXPORT_elbow_left
+	parent: arm_left_upper
+	child: arm_left_lower
+	pos: -7.662424485700015	5.077723036548429	10.119287135500187
 Joint: EXPORT_hand_right_middle_joint1
 	parent: hand_right_middle_link0
 	child: hand_right_middle_link1
@@ -283,63 +309,41 @@ Joint: EXPORT_hand_right_middle_joint2
 	parent: hand_right_middle_link1
 	child: hand_right_middle_link2
 	pos: 0.6049662510514224	0.21925461970707616	1.2234922008449525
-Joint: EXPORT_wrist_right_axis0
-	parent: arm_right_lower
-	child: wrist_right_link1
-	pos: 1.3765976802915247e-08	-7.151108150083019e-09	-2.5163870986943948e-11
-Joint: EXPORT_wrist_right_axis1
-	parent: wrist_right_link1
-	child: wrist_right_link2
-	pos: -2.056162884400692e-08	-5.963745053350067e-09	-3.552713678800501e-15
-Joint: EXPORT_wrist_right_axis2
-	ERROR writing joint EXPORT_wrist_right_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
-Joint: EXPORT_hand_left_little_joint1
-	parent: hand_left_little_link0
-	child: hand_left_little_link1
-	pos: -0.6783253127030378	0.9151378352565764	0.9092761388545121
-Joint: EXPORT_hand_left_little_joint2
-	parent: hand_left_little_link1
-	child: hand_left_little_link2
-	pos: -0.6725284676677319	0.8758020728807949	0.8315993839416431
-Joint: EXPORT_hand_left_ring_joint1
-	parent: hand_left_ring_link0
-	child: hand_left_ring_link1
-	pos: -0.6580487917872517	1.0530963644601776	0.7630699202666023
-Joint: EXPORT_hand_left_ring_joint2
-	parent: hand_left_ring_link1
-	child: hand_left_ring_link2
-	pos: -0.6513990955528186	1.0047506859282436	0.6907939478808465
-Joint: EXPORT_hand_right_little_joint1
-	parent: hand_right_little_link0
-	child: hand_right_little_link1
-	pos: 0.557694770772386	0.07926802518630893	1.344224679243462
-Joint: EXPORT_hand_right_little_joint2
-	parent: hand_right_little_link1
-	child: hand_right_little_link2
-	pos: 0.5519626111717599	0.03975499526302073	1.2667571225857244
-Joint: EXPORT_hand_right_thumb_joint1
-	parent: hand_right_thumb_link0
-	child: hand_right_thumb_link1
-	pos: -0.23026189104690786	1.3706585742585986	-0.43902378624035876
-Joint: EXPORT_hand_right_thumb_joint2
-	parent: hand_right_thumb_link1
-	child: hand_right_thumb_link2
-	pos: -0.27531238186532647	1.2957435827960708	-0.4179160085389242
 Joint: EXPORT_wrist_left_axis0
 	parent: arm_left_lower
 	child: wrist_left_link1
-	pos: -4.860947413476424e-07	-1.5044456347368396e-08	5.400231373187125e-10
+	pos: -4.860946916096509e-07	-1.5044435031086323e-08	5.400764280238946e-10
 Joint: EXPORT_wrist_left_axis1
 	parent: wrist_left_link1
 	child: wrist_left_link2
-	pos: -6.316724920907291e-12	8.447475607908927e-09	4.361535843599995e-08
+	pos: -6.338041202980094e-12	8.447464949767891e-09	4.3615344225145236e-08
 Joint: EXPORT_wrist_left_axis2
 	ERROR writing joint EXPORT_wrist_left_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
-Joint: EXPORT_elbow_right
-	parent: arm_right_lower
-	child: arm_right_upper
-	pos: -6.239924077861708	-5.891284646414949	-7.215504332118428
-Joint: EXPORT_elbow_left
-	parent: arm_left_upper
-	child: arm_left_lower
-	pos: -7.662423141246222	5.077700323426766	10.119302537671189
+Joint: EXPORT_hand_left_middle_joint0
+	parent: arm_left_palm
+	child: hand_left_middle_link0
+	pos: -1.1438517559809185	1.3416445692411756	1.594441090851702
+Joint: EXPORT_hand_left_iring_joint0
+	parent: arm_left_palm
+	child: hand_left_ring_link0
+	pos: -1.1353534171067423	1.495624331070406	1.457494996804705
+Joint: EXPORT_hand_left_little_joint0
+	parent: arm_left_palm
+	child: hand_left_index_link0
+	pos: -1.1167490912478968	1.6388848422477906	1.3102491155630442
+Joint: EXPORT_hand_left_index_joint0
+	parent: arm_left_palm
+	child: hand_left_little_link0
+	pos: -0.7340793876031455	0.8166978172304162	0.9102988697151675
+Joint: EXPORT_hand_left_thumb_joint0
+	parent: arm_left_palm
+	child: hand_left_thumb_link0
+	pos: 0.01101181978571475	1.5071155644260692	-1.1991445427988285
+Joint: EXPORT_hand_left_index_joint1
+	parent: hand_left_index_link0
+	child: hand_left_index_link1
+	pos: -0.6374938536653474	1.1296249392186972	0.6647179030050996
+Joint: EXPORT_hand_left_index_joint2
+	parent: hand_left_index_link1
+	child: hand_left_index_link2
+	pos: -0.6307101975253602	1.076009956716156	0.5963259636935136
