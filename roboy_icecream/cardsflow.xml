@@ -22,7 +22,7 @@
 	</myoMuscle>
 	<myoMuscle name="motorderLeftMotor4">
 		<link name="torso">
-			<viaPoint type="FIXPOINT">0.3034470282386136 0.00020638163412506932 0.08737531434252305</viaPoint>
+			<viaPoint type="FIXPOINT">0.3034470282386136 0.00020638163412506968 0.08737531434252305</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motorderLeftMotor5">
@@ -67,7 +67,7 @@
 	</myoMuscle>
 	<myoMuscle name="motorderRightMotor4">
 		<link name="torso">
-			<viaPoint type="FIXPOINT">-0.31004527991599284 0.0017287251351463181 0.08276806767390234</viaPoint>
+			<viaPoint type="FIXPOINT">-0.31004527991599284 0.0017287251351463184 0.08276806767390234</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motorderRightMotor5">
