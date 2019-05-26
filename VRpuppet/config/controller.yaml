@@ -35,43 +35,43 @@ wrist_left_axis2:
 
 motor0:
   joint: motor0
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor1:
   joint: motor1
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor2:
   joint: motor2
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor3:
   joint: motor3
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor4:
   joint: motor4
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor5:
   joint: motor5
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor6:
   joint: motor6
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor7:
   joint: motor7
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor8:
   joint: motor8
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor9:
   joint: motor9
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor10:
   joint: motor10
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor11:
   joint: motor11
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor12:
   joint: motor12
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
 motor13:
   joint: motor13
-  type: cardsflow/kindyn/TorquePositionController
+  type: cardsflow/kindyn/CableLengthController
