@@ -1,7 +1,11 @@
 Error in motorderLeftMotor2Error in motorderRightMotor2Error in motorderLeftMotor7Error in motorderLeftMotor0Error in motorderLeftMotor8Error in motorderLeftMotor3Error in motorderLeftMotor6Error in motorderRightMotor5Error in motorderLeftMotor5Error in motorderRightMotor1Error in motorderLeftMotor1Error in motorderRightMotor8Error in motorderRightMotor0Error in motorderLeftMotor4Error in motorderRightMotor6Error in motorderRightMotor7Error in motorderRightMotor3Error in motorderRightMotor4Body: head
 Body: torso
 Body: arm_right_palm
+COM: arm_right_palm -63.65181212163203 -24.546068220999054 13.580281334054447
+exporting stl of arm_right_palm
 Body: arm_left_palm
+COM: arm_left_palm 63.5025667896919 -24.411296270711077 13.562763623248387
+exporting stl of arm_left_palm
 Body: arm_left_upper
 Body: arm_right_upper
 Body: arm_left_lower
@@ -210,7 +214,9 @@ Joint: EXPORT_wrist_left_axis1
 	child: wrist_left_link2
 	pos: 59.421081466992106	-22.365650355944325	17.010688139468154
 Joint: EXPORT_wrist_left_axis2
-	ERROR writing joint EXPORT_wrist_left_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+	parent: wrist_left_link2
+	child: arm_left_palm
+	pos: -4.081485322699805	2.0456459147667694	3.4479245162197714
 Joint: EXPORT_wrist_right_axis0
 	parent: arm_right_lower
 	child: wrist_right_link1
@@ -220,7 +226,9 @@ Joint: EXPORT_wrist_right_axis1
 	child: wrist_right_link2
 	pos: -59.301416900404035	-22.29078806121344	17.36081976548898
 Joint: EXPORT_wrist_right_axis2
-	ERROR writing joint EXPORT_wrist_right_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+	parent: wrist_right_link2
+	child: arm_right_palm
+	pos: 4.350395221227991	2.255280159785613	3.7805384314345325
 Joint: EXPORT_zed_camera_mount
 	parent: head
 	child: zed_camera
