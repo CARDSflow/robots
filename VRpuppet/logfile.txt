@@ -1,5 +1,5 @@
 Body: base
-COM: base 60.5213391582992 13.881562880382075 27.607497715145783
+COM: base 60.29779274889351 13.842655165900025 27.830607233373033
 exporting stl of base
 Body: shoulder_left_link1
 COM: shoulder_left_link1 18.07790956293054 6.490793509010379 70.00189040829909
@@ -19,12 +19,12 @@ exporting stl of wrist_left_link1
 Body: wrist_left_link2
 COM: wrist_left_link2 26.627909562924188 7.390793509011033 16.9018904082984
 exporting stl of wrist_left_link2
-Body: upper_arm_left
-COM: upper_arm_left 21.62397825464516 8.717470687284044 47.4580238551713
-exporting stl of upper_arm_left
-Body: lower_arm_left
-COM: lower_arm_left 26.09542815299026 7.631589663805266 20.729433038488853
-exporting stl of lower_arm_left
+Body: arm_left_upper
+COM: arm_left_upper 21.62397825464516 8.717470687284044 47.4580238551713
+exporting stl of arm_left_upper
+Body: arm_left_lower
+COM: arm_left_lower 26.09542815299026 7.631589663805266 20.729433038488853
+exporting stl of arm_left_lower
 Body: hand_left
 COM: hand_left 27.653519146500827 7.3907659643226165 16.901913117660992
 exporting stl of hand_left
@@ -67,23 +67,23 @@ exporting stl of motor11
 Body: motor12
 COM: motor12 -22.233583642068183 148.19976998114402 -41.50209145201795
 exporting stl of motor12
-Body: motor14
-COM: motor14 -60.46750132035373 142.21077745557884 -41.50209143872232
-exporting stl of motor14
+Body: motor13
+COM: motor13 -60.46750132035373 142.21077745557884 -41.50209143872232
+exporting stl of motor13
 Joint: EXPORT_elbow_left_axis0
-	parent: upper_arm_left
+	parent: arm_left_upper
 	child: elbow_left_link1
 	pos: 2.913225216616411e-13	-2.4868995751603507e-14	-1.3500311979441904e-13
 Joint: EXPORT_elbow_left_axis2
 	parent: elbow_left_link2
-	child: lower_arm_left
+	child: arm_left_lower
 	pos: -4.017518590066036	1.4592038452054217	22.972457369809252
-Joint: EXPORT_ankle_right_axis1
+Joint: EXPORT_elbow_left_axis1
 	parent: elbow_left_link1
 	child: elbow_left_link2
 	pos: -2.8066438062523957e-13	-2.3092638912203256e-14	-1.4210854715202004e-14
 Joint: EXPORT_wrist_left_axis0
-	parent: lower_arm_left
+	parent: arm_left_lower
 	child: wrist_left_link1
 	pos: 2.877698079828406e-13	-4.3520742565306136e-14	1.7053025658242404e-13
 Joint: EXPORT_wrist_left_axis2
@@ -95,10 +95,12 @@ Joint: EXPORT_wrist_left_axis1
 	child: wrist_left_link2
 	pos: -3.019806626980426e-13	-1.5987211554602254e-14	-2.948752353404416e-13
 Joint: EXPORT_shoulder_left_axis0
-	ERROR writing joint EXPORT_shoulder_left_axis0, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+	parent: base
+	child: shoulder_left_link1
+	pos: 3.801403636316536e-13	-1.5987211554602254e-14	1.4210854715202004e-13
 Joint: EXPORT_shoulder_left_axis2
 	parent: shoulder_left_link2
-	child: upper_arm_left
+	child: arm_left_upper
 	pos: -3.5460686917143214	-2.22667717827368	22.54386655312782
 Joint: EXPORT_shoulder_left_axis1
 	parent: shoulder_left_link1
@@ -158,5 +160,5 @@ Joint: EXPORT_motor12
 	pos: -2.4397455630180183	1.0116763947798404	1.505376310671771
 Joint: EXPORT_motor13
 	parent: base
-	child: motor14
+	child: motor13
 	pos: -2.618454377493869	0.3457517555192169	1.5053762973783051
