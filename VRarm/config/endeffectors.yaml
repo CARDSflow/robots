@@ -1,9 +1,0 @@
-joint_names: [ 'shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2',
-               'elbow_left_axis0','elbow_left_axis1','elbow_left_axis2',
-               'wrist_left_axis0','wrist_left_axis1','wrist_left_axis2']
-endeffectors: ['hand_left']
-hand_left:
-  base_link: 'hand_left'
-  joints: [ 'shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2',
-            'elbow_left_axis0','elbow_left_axis1','elbow_left_axis2',
-            'wrist_left_axis0','wrist_left_axis1','wrist_left_axis2' ]

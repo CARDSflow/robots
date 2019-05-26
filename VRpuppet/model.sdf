@@ -1,4 +1,3 @@
-<?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="VRpuppet">
 		<link name="base">
@@ -19,7 +18,7 @@
 			<collision name="base_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/base.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -27,7 +26,7 @@
 			<visual name="base_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/base.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -51,7 +50,7 @@
 			<collision name="shoulder_left_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/shoulder_left_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/shoulder_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -59,7 +58,7 @@
 			<visual name="shoulder_left_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/shoulder_left_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/shoulder_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -83,7 +82,7 @@
 			<collision name="shoulder_left_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/shoulder_left_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/shoulder_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -91,7 +90,7 @@
 			<visual name="shoulder_left_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/shoulder_left_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/shoulder_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -115,7 +114,7 @@
 			<collision name="elbow_left_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/elbow_left_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/elbow_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -123,7 +122,7 @@
 			<visual name="elbow_left_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/elbow_left_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/elbow_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -147,7 +146,7 @@
 			<collision name="elbow_left_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/elbow_left_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/elbow_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -155,7 +154,7 @@
 			<visual name="elbow_left_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/elbow_left_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/elbow_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -179,7 +178,7 @@
 			<collision name="wrist_left_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/wrist_left_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/wrist_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -187,7 +186,7 @@
 			<visual name="wrist_left_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/wrist_left_link1.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/wrist_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -211,7 +210,7 @@
 			<collision name="wrist_left_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/wrist_left_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/wrist_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -219,7 +218,7 @@
 			<visual name="wrist_left_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/wrist_left_link2.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/wrist_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -243,7 +242,7 @@
 			<collision name="arm_left_upper_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/arm_left_upper.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/arm_left_upper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -251,7 +250,7 @@
 			<visual name="arm_left_upper_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/arm_left_upper.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/arm_left_upper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -275,7 +274,7 @@
 			<collision name="arm_left_lower_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/arm_left_lower.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/arm_left_lower.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -283,7 +282,7 @@
 			<visual name="arm_left_lower_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/arm_left_lower.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/arm_left_lower.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -307,7 +306,7 @@
 			<collision name="hand_left_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/hand_left.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/hand_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -315,7 +314,7 @@
 			<visual name="hand_left_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/hand_left.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/hand_left.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -339,7 +338,7 @@
 			<collision name="motor0_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor0.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -347,7 +346,7 @@
 			<visual name="motor0_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor0.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -371,7 +370,7 @@
 			<collision name="motor1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor1.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -379,7 +378,7 @@
 			<visual name="motor1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor1.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -403,7 +402,7 @@
 			<collision name="motor2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor2.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -411,7 +410,7 @@
 			<visual name="motor2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor2.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -435,7 +434,7 @@
 			<collision name="motor3_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor3.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor3.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -443,7 +442,7 @@
 			<visual name="motor3_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor3.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor3.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -467,7 +466,7 @@
 			<collision name="motor4_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor4.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor4.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -475,7 +474,7 @@
 			<visual name="motor4_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor4.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor4.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -499,7 +498,7 @@
 			<collision name="motor5_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor5.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor5.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -507,7 +506,7 @@
 			<visual name="motor5_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor5.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor5.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -531,7 +530,7 @@
 			<collision name="motor6_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor6.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor6.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -539,7 +538,7 @@
 			<visual name="motor6_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor6.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor6.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -563,7 +562,7 @@
 			<collision name="motor7_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor7.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor7.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -571,7 +570,7 @@
 			<visual name="motor7_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor7.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor7.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -595,7 +594,7 @@
 			<collision name="motor8_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor8.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor8.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -603,7 +602,7 @@
 			<visual name="motor8_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor8.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor8.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -627,7 +626,7 @@
 			<collision name="motor9_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor9.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor9.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -635,7 +634,7 @@
 			<visual name="motor9_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor9.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor9.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -659,7 +658,7 @@
 			<collision name="motor10_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor10.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor10.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -667,7 +666,7 @@
 			<visual name="motor10_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor10.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor10.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -691,7 +690,7 @@
 			<collision name="motor11_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor11.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor11.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -699,7 +698,7 @@
 			<visual name="motor11_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor11.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor11.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -723,7 +722,7 @@
 			<collision name="motor12_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor12.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor12.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -731,7 +730,7 @@
 			<visual name="motor12_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor12.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor12.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -755,7 +754,7 @@
 			<collision name="motor13_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor13.stl</uri>
+						<uri>model://VRpuppet/meshes/collisions/motor13.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -763,7 +762,7 @@
 			<visual name="motor13_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/CAD/motor13.stl</uri>
+						<uri>model://VRpuppet/meshes/visuals/motor13.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -1068,6 +1067,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin" />
 	</model>
 </sdf>
