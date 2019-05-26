@@ -1,0 +1,146 @@
+#  These controllers are loaded by the robot.launch script, the following types are available
+#  type: cardsflow/kindyn/TorquePositionController
+#  type: cardsflow/kindyn/CableLengthController
+#  type: cardsflow/kindyn/ForcePositionController
+#  roslaunch kindyn robot.launch robot_name:=roboy_icecream start_controllers:='neck_axis0 neck_axis1 neck_axis2 shoulder_left_axis0 shoulder_left_axis1 shoulder_left_axis2 elbow_left wrist_left_axis0 wrist_left_axis1 wrist_left_axis2 shoulder_right_axis0 shoulder_right_axis1 shoulder_right_axis2 elbow_right wrist_right_axis0 wrist_right_axis1 wrist_right_axis2'
+elbow_left:
+  joint: elbow_left
+  type: cardsflow/kindyn/TorquePositionController
+shoulder_left_axis0:
+  joint: shoulder_left_axis0
+  type: cardsflow/kindyn/CableLengthController
+shoulder_left_axis1:
+  joint: shoulder_left_axis1
+  type: cardsflow/kindyn/CableLengthController
+shoulder_left_axis2:
+  joint: shoulder_left_axis2
+  type: cardsflow/kindyn/CableLengthController
+hand_left_middle_joint0:
+  joint: hand_left_middle_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_iring_joint0:
+  joint: hand_left_iring_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_little_joint0:
+  joint: hand_left_little_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_index_joint0:
+  joint: hand_left_index_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_thumb_joint0:
+  joint: hand_left_thumb_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_index_joint1:
+  joint: hand_left_index_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_index_joint2:
+  joint: hand_left_index_joint2
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_middle_joint1:
+  joint: hand_left_middle_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_middle_joint2:
+  joint: hand_left_middle_joint2
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_ring_joint1:
+  joint: hand_left_ring_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_ring_joint2:
+  joint: hand_left_ring_joint2
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_thumb_joint1:
+  joint: hand_left_thumb_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_thumb_joint2:
+  joint: hand_left_thumb_joint2
+  type: cardsflow/kindyn/TorquePositionController
+elbow_right:
+  joint: elbow_right
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_little_joint1:
+  joint: hand_left_little_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_left_little_joint2:
+  joint: hand_left_little_joint2
+  type: cardsflow/kindyn/TorquePositionController
+shoulder_right_axis0:
+  joint: shoulder_right_axis0
+  type: cardsflow/kindyn/CableLengthController
+shoulder_right_axis1:
+  joint: shoulder_right_axis1
+  type: cardsflow/kindyn/CableLengthController
+shoulder_right_axis2:
+  joint: shoulder_right_axis2
+  type: cardsflow/kindyn/CableLengthController
+hand_right_index_joint1:
+  joint: hand_right_index_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_index_joint2:
+  joint: hand_right_index_joint2
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_index_joint0:
+  joint: hand_right_index_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_middle_joint0:
+  joint: hand_right_middle_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_ring_joint0:
+  joint: hand_right_ring_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_little_joint0:
+  joint: hand_right_little_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_thumb_joint0:
+  joint: hand_right_thumb_joint0
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_middle_joint1:
+  joint: hand_right_middle_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_middle_joint2:
+  joint: hand_right_middle_joint2
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_ring_joint1:
+  joint: hand_right_ring_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_ring_joint2:
+  joint: hand_right_ring_joint2
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_little_joint1:
+  joint: hand_right_little_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_little_joint2:
+  joint: hand_right_little_joint2
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_thumb_joint1:
+  joint: hand_right_thumb_joint1
+  type: cardsflow/kindyn/TorquePositionController
+hand_right_thumb_joint2:
+  joint: hand_right_thumb_joint2
+  type: cardsflow/kindyn/TorquePositionController
+wrist_left_axis0:
+  joint: wrist_left_axis0
+  type: cardsflow/kindyn/TorquePositionController
+wrist_left_axis1:
+  joint: wrist_left_axis1
+  type: cardsflow/kindyn/TorquePositionController
+wrist_left_axis2:
+  joint: wrist_left_axis2
+  type: cardsflow/kindyn/TorquePositionController
+wrist_right_axis0:
+  joint: wrist_right_axis0
+  type: cardsflow/kindyn/TorquePositionController
+wrist_right_axis1:
+  joint: wrist_right_axis1
+  type: cardsflow/kindyn/TorquePositionController
+wrist_right_axis2:
+  joint: wrist_right_axis2
+  type: cardsflow/kindyn/TorquePositionController
+neck_axis0:
+  joint: neck_axis0
+  type: cardsflow/kindyn/CableLengthController
+neck_axis2:
+  joint: neck_axis2
+  type: cardsflow/kindyn/CableLengthController
+neck_axis1:
+  joint: neck_axis1
+  type: cardsflow/kindyn/CableLengthController
