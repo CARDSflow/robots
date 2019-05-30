@@ -12,7 +12,7 @@
 					<ixy>1.3999987984804296</ixy>
 					<ixz>-2.972029462116702</ixz>
 					<iyy>23.29825486423074</iyy>
-					<iyz>-0.7006446566366975</iyz>
+					<iyz>-0.7006446566366978</iyz>
 					<izz>37.405102655876526</izz>
 				</inertia>
 			</inertial>
@@ -131,7 +131,7 @@
 		</link>
 		<link name="elbow_left_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">0.22077909562924217 0.09090793509010704 0.437018904082981 0.0 -0.0 0.0</pose>
+			<pose frame="">0.22077909562924228 0.09090793509010704 0.437018904082981 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.04678255835713113</mass>
@@ -203,7 +203,7 @@
 					<ixx>0.0015972612657379286</ixx>
 					<ixy>-0.0009206872098703605</ixy>
 					<ixz>-0.0021055052211346567</ixz>
-					<iyy>0.0046588135852248585</iyy>
+					<iyy>0.004658813585224858</iyy>
 					<iyz>-0.0005844001492035248</iyz>
 					<izz>0.0035779022437181867</izz>
 				</inertia>
@@ -230,14 +230,14 @@
 			<pose frame="">0.2162397825464516 0.08717470687284044 0.474580238551713 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.11563830149074947</mass>
+				<mass>0.11563830149074948</mass>
 				<inertia>
 					<ixx>0.02793525054980266</ixx>
-					<ixy>-0.002190710498888394</ixy>
-					<ixz>-0.011757687480349638</ixz>
-					<iyy>0.03246740586200935</iyy>
+					<ixy>-0.0021907104988883944</ixy>
+					<ixz>-0.01175768748034964</ixz>
+					<iyy>0.03246740586200936</iyy>
 					<iyz>-0.0046874002961990405</iyz>
-					<izz>0.006331747557804084</izz>
+					<izz>0.006331747557804085</izz>
 				</inertia>
 			</inertial>
 			<collision name="arm_left_upper_collision">
@@ -262,14 +262,14 @@
 			<pose frame="">0.2609542815299026 0.07631589663805266 0.20729433038488854 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.1156383014907495</mass>
+				<mass>0.11563830149074954</mass>
 				<inertia>
-					<ixx>0.006686379201650511</ixx>
-					<ixy>-0.0022945620539641946</ixy>
-					<ixz>-0.006122953136491075</ixz>
-					<iyy>0.013901718009694416</iyy>
-					<iyz>-0.001893965440112791</iyz>
-					<izz>0.008593441282457053</izz>
+					<ixx>0.0066863792016505115</ixx>
+					<ixy>-0.002294562053964195</ixy>
+					<ixz>-0.006122953136491078</ixz>
+					<iyy>0.013901718009694418</iyy>
+					<iyz>-0.0018939654401127915</iyz>
+					<izz>0.008593441282457055</izz>
 				</inertia>
 			</inertial>
 			<collision name="arm_left_lower_collision">
@@ -419,7 +419,7 @@
 		</link>
 		<link name="motor3">
 			<self_collide>false</self_collide>
-			<pose frame="">0.8875544180836997 -1.0223150043608962 -0.41502091444791495 0.0 -0.0 0.0</pose>
+			<pose frame="">0.8875544180836998 -1.022315004360896 -0.41502091444791483 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.08230729713170418</mass>
@@ -550,13 +550,13 @@
 			<pose frame="">1.2360813725456945 0.41859971043204885 -0.4150209143872424 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729791585122</mass>
+				<mass>0.08230729791585123</mass>
 				<inertia>
 					<ixx>0.028631418642994504</ixx>
-					<ixy>-0.04259442137182155</ixy>
+					<ixy>-0.04259442137182156</ixy>
 					<ixz>0.04221676027297695</ixz>
 					<iyy>0.13999598658891765</iyy>
-					<iyz>0.014294230877206321</iyz>
+					<iyz>0.014294230877206323</iyz>
 					<izz>0.14022357170777844</izz>
 				</inertia>
 			</inertial>
@@ -648,7 +648,7 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.08230729711800873</mass>
 				<inertia>
-					<ixx>0.15366981725647116</ixx>
+					<ixx>0.15366981725647114</ixx>
 					<ixy>-0.056101435066266504</ixy>
 					<ixz>0.01788217799285131</ixz>
 					<iyy>0.036776920074991434</iyy>
@@ -744,7 +744,7 @@
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
 				<mass>0.08230729778739827</mass>
 				<inertia>
-					<ixx>0.18069639884603586</ixx>
+					<ixx>0.1806963988460359</ixx>
 					<ixy>0.0707838257275863</ixy>
 					<ixz>-0.020650423639268677</ixz>
 					<iyy>0.04430323461811527</iyy>
@@ -769,14 +769,14 @@
 				</geometry>
 			</visual>
 		</link>
-		<joint name="motor11" type="prismatic">
+		<joint name="motor4" type="prismatic">
 			<parent>base</parent>
-			<child>motor11</child>
-			<pose frame="">-0.020947721304717195 0.016086569746829014 0.01505376310116823 0 0 0</pose>
+			<child>motor4</child>
+			<pose frame="">0.020960102475239068 0.01607043437548711 0.015053763032418887 0 0 0</pose>
 			<axis>
-				<xyz>3.3363597454277215e-16 5.744564178373285e-16 -0.9999999999999944</xyz>
+				<xyz>-2.0860407414937908e-16 1.926544012340239e-16 -0.9999999999999984</xyz>
 				<limit>
-					<lower>-1.999999999999989</lower>
+					<lower>-1.999999999999997</lower>
 					<upper>0.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
@@ -889,7 +889,7 @@
 		<joint name="elbow_left_axis1" type="revolute">
 			<parent>elbow_left_link1</parent>
 			<child>elbow_left_link2</child>
-			<pose frame="">-2.806643806252396e-15 -2.3092638912203257e-16 -1.4210854715202004e-16 0 0 0</pose>
+			<pose frame="">-2.913225216616411e-15 -2.3092638912203257e-16 -1.4210854715202004e-16 0 0 0</pose>
 			<axis>
 				<xyz>-7.156266817765029e-17 -1.0 -1.403325945681873e-14</xyz>
 				<limit>
@@ -941,76 +941,11 @@
 		<joint name="motor3" type="prismatic">
 			<parent>base</parent>
 			<child>motor3</child>
-			<pose frame="">0.024405238766372295 0.010097973903090605 0.015053763034450612 0 0 0</pose>
+			<pose frame="">0.024405238766372152 0.010097973903090463 0.01505376303445047 0 0 0</pose>
 			<axis>
 				<xyz>-5.2045670386102756e-17 7.136805119196542e-17 -0.9999999999999982</xyz>
 				<limit>
 					<lower>-1.9999999999999967</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor5" type="prismatic">
-			<parent>base</parent>
-			<child>motor5</child>
-			<pose frame="">0.016086569751473122 0.020947721304713198 0.015053763101169225 0 0 0</pose>
-			<axis>
-				<xyz>-4.930621149851313e-16 2.528746432933897e-16 -0.9999999999999961</xyz>
-				<limit>
-					<lower>-1.9999999999999922</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor4" type="prismatic">
-			<parent>base</parent>
-			<child>motor4</child>
-			<pose frame="">0.020960102475239068 0.01607043437548711 0.015053763032418887 0 0 0</pose>
-			<axis>
-				<xyz>-2.0860407414937908e-16 1.926544012340239e-16 -0.9999999999999984</xyz>
-				<limit>
-					<lower>-1.999999999999997</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor7" type="prismatic">
-			<parent>base</parent>
-			<child>motor7</child>
-			<pose frame="">0.003457517553232066 0.026184543774942313 0.015053762973779854 0 0 0</pose>
-			<axis>
-				<xyz>1.6871928833206562e-16 3.768618882203649e-16 -0.9999999999999952</xyz>
-				<limit>
-					<lower>-1.9999999999999902</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor6" type="prismatic">
-			<parent>base</parent>
-			<child>motor6</child>
-			<pose frame="">0.010116763948291236 0.024397455630181974 0.015053763106715579 0 0 0</pose>
-			<axis>
-				<xyz>-1.6126262773521998e-16 2.2384594959530944e-16 -0.9999999999999959</xyz>
-				<limit>
-					<lower>-1.9999999999999918</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor9" type="prismatic">
-			<parent>base</parent>
-			<child>motor9</child>
-			<pose frame="">-0.01009797390310041 0.024405238766363625 0.015053763034454874 0 0 0</pose>
-			<axis>
-				<xyz>3.4148904639639373e-16 6.126933412190465e-16 -0.9999999999999952</xyz>
-				<limit>
-					<lower>-1.9999999999999902</lower>
 					<upper>0.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
@@ -1029,19 +964,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="motor13" type="prismatic">
-			<parent>base</parent>
-			<child>motor13</child>
-			<pose frame="">-0.02618454377493869 0.003457517555192169 0.015053762973783053 0 0 0</pose>
-			<axis>
-				<xyz>-5.477802642445066e-14 5.346550208593059e-15 -0.9999999999999949</xyz>
-				<limit>
-					<lower>-1.9999999999999898</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
 		<joint name="motor10" type="prismatic">
 			<parent>base</parent>
 			<child>motor10</child>
@@ -1055,12 +977,90 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
+		<joint name="motor6" type="prismatic">
+			<parent>base</parent>
+			<child>motor6</child>
+			<pose frame="">0.010116763948291236 0.024397455630181974 0.015053763106715579 0 0 0</pose>
+			<axis>
+				<xyz>-1.6126262773521998e-16 2.2384594959530944e-16 -0.9999999999999959</xyz>
+				<limit>
+					<lower>-1.9999999999999918</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="motor5" type="prismatic">
+			<parent>base</parent>
+			<child>motor5</child>
+			<pose frame="">0.016086569751473122 0.020947721304713198 0.015053763101169225 0 0 0</pose>
+			<axis>
+				<xyz>-4.930621149851313e-16 2.528746432933897e-16 -0.9999999999999961</xyz>
+				<limit>
+					<lower>-1.9999999999999922</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="motor11" type="prismatic">
+			<parent>base</parent>
+			<child>motor11</child>
+			<pose frame="">-0.020947721304717195 0.016086569746829014 0.01505376310116823 0 0 0</pose>
+			<axis>
+				<xyz>3.3363597454277215e-16 5.744564178373285e-16 -0.9999999999999944</xyz>
+				<limit>
+					<lower>-1.999999999999989</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="motor13" type="prismatic">
+			<parent>base</parent>
+			<child>motor13</child>
+			<pose frame="">-0.02618454377493869 0.003457517555192169 0.015053762973783053 0 0 0</pose>
+			<axis>
+				<xyz>-5.477802642445066e-14 5.346550208593059e-15 -0.9999999999999949</xyz>
+				<limit>
+					<lower>-1.9999999999999898</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="motor7" type="prismatic">
+			<parent>base</parent>
+			<child>motor7</child>
+			<pose frame="">0.003457517553232066 0.026184543774942313 0.015053762973779854 0 0 0</pose>
+			<axis>
+				<xyz>1.6871928833206562e-16 3.768618882203649e-16 -0.9999999999999952</xyz>
+				<limit>
+					<lower>-1.9999999999999902</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
 		<joint name="motor12" type="prismatic">
 			<parent>base</parent>
 			<child>motor12</child>
 			<pose frame="">-0.024397455630180184 0.010116763947798405 0.01505376310671771 0 0 0</pose>
 			<axis>
 				<xyz>-5.4798630409153044e-14 5.389079539532698e-15 -0.9999999999999951</xyz>
+				<limit>
+					<lower>-1.9999999999999902</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="motor9" type="prismatic">
+			<parent>base</parent>
+			<child>motor9</child>
+			<pose frame="">-0.01009797390310041 0.024405238766363625 0.015053763034454874 0 0 0</pose>
+			<axis>
+				<xyz>3.4148904639639373e-16 6.126933412190465e-16 -0.9999999999999952</xyz>
 				<limit>
 					<lower>-1.9999999999999902</lower>
 					<upper>0.0</upper>
