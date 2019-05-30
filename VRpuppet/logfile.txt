@@ -1,5 +1,5 @@
 Body: base
-COM: base 60.29779274889351 13.842655165900025 27.830607233373033
+COM: base 0.0 0.0 0.0
 exporting stl of base
 Body: shoulder_left_link1
 COM: shoulder_left_link1 18.07790956293054 6.490793509010379 70.00189040829909
@@ -70,30 +70,10 @@ exporting stl of motor12
 Body: motor13
 COM: motor13 -60.46750132035373 142.21077745557884 -41.50209143872232
 exporting stl of motor13
-Joint: EXPORT_elbow_left_axis0
-	parent: arm_left_upper
-	child: elbow_left_link1
-	pos: 2.913225216616411e-13	-2.4868995751603507e-14	-1.3500311979441904e-13
-Joint: EXPORT_elbow_left_axis2
-	parent: elbow_left_link2
-	child: arm_left_lower
-	pos: -4.017518590066036	1.4592038452054217	22.972457369809252
-Joint: EXPORT_elbow_left_axis1
-	parent: elbow_left_link1
-	child: elbow_left_link2
-	pos: -2.8066438062523957e-13	-2.3092638912203256e-14	-1.4210854715202004e-14
-Joint: EXPORT_wrist_left_axis0
-	parent: arm_left_lower
-	child: wrist_left_link1
-	pos: 2.877698079828406e-13	-4.3520742565306136e-14	1.7053025658242404e-13
-Joint: EXPORT_wrist_left_axis2
-	parent: wrist_left_link2
-	child: hand_left
-	pos: -1.0256095835766388	2.7544688399494532e-05	-2.270936258241818e-05
-Joint: EXPORT_wrist_left_axis1
-	parent: wrist_left_link1
-	child: wrist_left_link2
-	pos: -3.019806626980426e-13	-1.5987211554602254e-14	-2.948752353404416e-13
+Joint: EXPORT_motor11
+	parent: base
+	child: motor11
+	pos: -2.0947721304717195	1.6086569746829014	1.505376310116823
 Joint: EXPORT_shoulder_left_axis0
 	parent: base
 	child: shoulder_left_link1
@@ -106,14 +86,34 @@ Joint: EXPORT_shoulder_left_axis1
 	parent: shoulder_left_link1
 	child: shoulder_left_link2
 	pos: -3.019806626980426e-13	-1.7763568394002505e-14	-2.842170943040401e-14
+Joint: EXPORT_wrist_left_axis0
+	parent: arm_left_lower
+	child: wrist_left_link1
+	pos: 2.877698079828406e-13	-4.3520742565306136e-14	1.7053025658242404e-13
+Joint: EXPORT_wrist_left_axis2
+	parent: wrist_left_link2
+	child: hand_left
+	pos: -1.0256095835766388	2.7544688399494532e-05	-2.270936258241818e-05
+Joint: EXPORT_wrist_left_axis1
+	parent: wrist_left_link1
+	child: wrist_left_link2
+	pos: -3.019806626980426e-13	-1.5987211554602254e-14	-2.948752353404416e-13
+Joint: EXPORT_elbow_left_axis0
+	parent: arm_left_upper
+	child: elbow_left_link1
+	pos: 2.913225216616411e-13	-2.4868995751603507e-14	-1.3500311979441904e-13
+Joint: EXPORT_elbow_left_axis2
+	parent: elbow_left_link2
+	child: arm_left_lower
+	pos: -4.017518590066036	1.4592038452054217	22.972457369809252
+Joint: EXPORT_elbow_left_axis1
+	parent: elbow_left_link1
+	child: elbow_left_link2
+	pos: -2.8066438062523957e-13	-2.3092638912203256e-14	-1.4210854715202004e-14
 Joint: EXPORT_motor0
 	parent: base
 	child: motor0
 	pos: 2.439745563018148	-1.0116763948288394	1.5053763106716218
-Joint: EXPORT_motor6
-	parent: base
-	child: motor6
-	pos: 1.0116763948291236	2.4397455630181972	1.5053763106715579
 Joint: EXPORT_motor1
 	parent: base
 	child: motor1
@@ -126,30 +126,34 @@ Joint: EXPORT_motor3
 	parent: base
 	child: motor3
 	pos: 2.4405238766372293	1.0097973903090605	1.5053763034450611
-Joint: EXPORT_motor4
-	parent: base
-	child: motor4
-	pos: 2.096010247523907	1.607043437548711	1.5053763032418885
 Joint: EXPORT_motor5
 	parent: base
 	child: motor5
 	pos: 1.608656975147312	2.09477213047132	1.5053763101169224
+Joint: EXPORT_motor4
+	parent: base
+	child: motor4
+	pos: 2.096010247523907	1.607043437548711	1.5053763032418885
 Joint: EXPORT_motor7
 	parent: base
 	child: motor7
 	pos: 0.34575175532320657	2.6184543774942313	1.5053762973779854
-Joint: EXPORT_motor8
+Joint: EXPORT_motor6
 	parent: base
-	child: motor8
-	pos: -0.3437353163218688	2.618719842132535	1.505376301809143
+	child: motor6
+	pos: 1.0116763948291236	2.4397455630181972	1.5053763106715579
 Joint: EXPORT_motor9
 	parent: base
 	child: motor9
 	pos: -1.009797390310041	2.4405238766363624	1.5053763034454875
-Joint: EXPORT_motor11
+Joint: EXPORT_motor8
 	parent: base
-	child: motor11
-	pos: -2.0947721304717195	1.6086569746829014	1.505376310116823
+	child: motor8
+	pos: -0.3437353163218688	2.618719842132535	1.505376301809143
+Joint: EXPORT_motor13
+	parent: base
+	child: motor13
+	pos: -2.618454377493869	0.3457517555192169	1.5053762973783051
 Joint: EXPORT_motor10
 	parent: base
 	child: motor10
@@ -158,7 +162,3 @@ Joint: EXPORT_motor12
 	parent: base
 	child: motor12
 	pos: -2.4397455630180183	1.0116763947798404	1.505376310671771
-Joint: EXPORT_motor13
-	parent: base
-	child: motor13
-	pos: -2.618454377493869	0.3457517555192169	1.5053762973783051
