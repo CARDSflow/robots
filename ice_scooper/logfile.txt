@@ -1,0 +1,10 @@
+Body: scooper_link0
+COM: scooper_link0 -4.218861302418104e-16 0.0 5.0
+exporting stl of scooper_link0
+Body: scooper_link1
+COM: scooper_link1 -0.0045356372103014415 1.5 14.01335355489842
+exporting stl of scooper_link1
+Joint: EXPORT_scooper_joint0
+	parent: scooper_link0
+	child: scooper_link1
+	pos: 0.00453563721030102	-1.5	-9.01335355489842

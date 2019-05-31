@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+	<model name="ice_scooper">
+		<link name="scooper_link0">
+			<self_collide>false</self_collide>
+			<pose frame="">-4.218861302418105e-18 0.0 0.05 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.2669885304809557</mass>
+				<inertia>
+					<ixx>0.00022458008170118322</ixx>
+					<ixy>-4.80036010941376e-19</ixy>
+					<ixz>8.967904800409653e-15</ixz>
+					<iyy>0.00022458007831105729</iyy>
+					<iyz>-1.0804078465209697e-18</iyz>
+					<izz>2.80874024360927e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="scooper_link0_collision">
+				<geometry>
+					<mesh>
+						<uri>model://ice_scooper/meshes/CAD/scooper_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="scooper_link0_visual">
+				<geometry>
+					<mesh>
+						<uri>model://ice_scooper/meshes/CAD/scooper_link0.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="scooper_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">-4.5356372103014414e-05 0.015 0.1401335355489842 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.38440686802691965</mass>
+				<inertia>
+					<ixx>0.003826556881460197</ixx>
+					<ixy>2.30129396177059e-09</ixy>
+					<ixz>1.8759946429014462e-08</ixz>
+					<iyy>0.003838390342701065</iyy>
+					<iyz>-5.339767762843662e-06</iyz>
+					<izz>5.363601459708919e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="scooper_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://ice_scooper/meshes/CAD/scooper_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="scooper_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://ice_scooper/meshes/CAD/scooper_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<joint name="scooper_joint0" type="fixed">
+			<parent>scooper_link0</parent>
+			<child>scooper_link1</child>
+			<pose frame="">4.53563721030102e-05 -0.015 -0.09013353554898419 0 0 0</pose>
+		</joint>
+	</model>
+</sdf>
