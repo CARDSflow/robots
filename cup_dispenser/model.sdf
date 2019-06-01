@@ -380,6 +380,18 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+		<joint name="slider_joint" type="prismatic">
+			<parent>base</parent>
+			<child>slider</child>
+			<pose frame="">0.07236479064256386 -0.00015071828572864378 0.0030000000000000005 0 0 0</pose>
+			<axis>
+				<xyz>1.0 0.0 0.0</xyz>
+				<limit>
+					<lower>-0.0</lower>
+					<upper>0.12</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
 	</model>
 </sdf>

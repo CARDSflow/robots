@@ -53,3 +53,7 @@ Joint: EXPORT_joint_cup6
 	parent: slider
 	child: cup6
 	pos: -7.563394355258879e-16	-5.1014200981104115e-15	-12.339256472917972
+Joint: EXPORT_slider_joint
+	parent: base
+	child: slider
+	pos: 7.236479064256386	-0.015071828572864376	0.30000000000000004
