@@ -2,7 +2,7 @@
 <sdf version="1.6">
 	<model name="cup_dispenser">
 		<link name="cup0">
-			<self_collide>false</self_collide>
+			<self_collide>true</self_collide>
 			<pose frame="">0.00029561021442630047 -7.602297566101374e-17 0.06839256472917847 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
@@ -34,7 +34,7 @@
 			</visual>
 		</link>
 		<link name="slider">
-			<self_collide>false</self_collide>
+			<self_collide>true</self_collide>
 			<pose frame="">0.10263520935743614 0.00015071828572864378 -0.013000000000000001 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
@@ -65,200 +65,201 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="cup1">
-			<self_collide>false</self_collide>
-			<pose frame="">0.00029561021442631115 1.689399459133641e-18 0.07839256472917863 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08214627826938703</mass>
-				<inertia>
-					<ixx>0.0006252487411543166</ixx>
-					<ixy>-6.489166842760241e-19</ixy>
-					<ixz>-1.9036285156354097e-06</ixz>
-					<iyy>0.000625255919539564</iyy>
-					<iyz>-4.418687638008123e-18</iyz>
-					<izz>0.0001395375723212804</izz>
-				</inertia>
-			</inertial>
-			<collision name="cup1_collision">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="cup1_visual">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="cup2">
-			<self_collide>false</self_collide>
-			<pose frame="">0.0002956102144263601 4.899258431487584e-17 0.09339256472917899 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08214627826938714</mass>
-				<inertia>
-					<ixx>0.0008369213768597501</ixx>
-					<ixy>3.191891195797325e-20</ixy>
-					<ixz>-2.2678776996382703e-06</ixz>
-					<iyy>0.0008369285552449978</iyy>
-					<iyz>-3.919087276926803e-18</iyz>
-					<izz>0.00013953757232128034</izz>
-				</inertia>
-			</inertial>
-			<collision name="cup2_collision">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="cup2_visual">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="cup3">
-			<self_collide>false</self_collide>
-			<pose frame="">0.0002956102144263601 4.899258431487584e-17 0.10839256472917867 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08214627826938714</mass>
-				<inertia>
-					<ixx>0.0010855598377864084</ixx>
-					<ixy>3.191891195797325e-20</ixy>
-					<ixz>-2.632126883640935e-06</ixz>
-					<iyy>0.0010855670161716562</iyy>
-					<iyz>-4.130029651605583e-18</iyz>
-					<izz>0.00013953757232128034</izz>
-				</inertia>
-			</inertial>
-			<collision name="cup3_collision">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup3.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="cup3_visual">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup3.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="cup4">
-			<self_collide>false</self_collide>
-			<pose frame="">0.0002956102144263447 1.8583394050470244e-16 0.12339256472917944 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08214627826938714</mass>
-				<inertia>
-					<ixx>0.0013711641239342925</ixx>
-					<ixy>-4.603088743504458e-19</ixy>
-					<ixz>-2.996376067642723e-06</ixz>
-					<iyy>0.0013711713023195423</iyy>
-					<iyz>-5.040412531798211e-18</iyz>
-					<izz>0.00013953757232128275</izz>
-				</inertia>
-			</inertial>
-			<collision name="cup4_collision">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup4.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="cup4_visual">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup4.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="cup5">
-			<self_collide>false</self_collide>
-			<pose frame="">0.0002956102144263615 6.250777998794461e-17 0.13839256472917927 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08214627826938714</mass>
-				<inertia>
-					<ixx>0.0016937342353034006</ixx>
-					<ixy>-1.00301711380979e-18</ixy>
-					<ixz>-3.3606252516464834e-06</ixz>
-					<iyy>0.0016937414136886486</iyy>
-					<iyz>-2.9309887850104133e-18</iyz>
-					<izz>0.0001395375723212822</izz>
-				</inertia>
-			</inertial>
-			<collision name="cup5_collision">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup5.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="cup5_visual">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup5.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="cup6">
-			<self_collide>false</self_collide>
-			<pose frame="">0.0002956102144263615 6.250777998794461e-17 0.15339256472917973 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08214627826938714</mass>
-				<inertia>
-					<ixx>0.0020532701718937304</ixx>
-					<ixy>-1.00301711380979e-18</ixy>
-					<ixz>-3.7248744356497e-06</ixz>
-					<iyy>0.002053277350278978</iyy>
-					<iyz>-3.1752378504279478e-18</iyz>
-					<izz>0.0001395375723212822</izz>
-				</inertia>
-			</inertial>
-			<collision name="cup6_collision">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup6.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="cup6_visual">
-				<geometry>
-					<mesh>
-						<uri>model://cup_dispenser/meshes/CAD/cup6.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
+		<!--<link name="cup1">-->
+			<!--<self_collide>true</self_collide>-->
+			<!--<pose frame="">0.00029561021442631115 1.689399459133641e-18 0.07839256472917863 0.0 -0.0 0.0</pose>-->
+			<!--<inertial>-->
+				<!--<pose frame="">0.0 0.0 0.0 0 0 0</pose>-->
+				<!--<mass>0.08214627826938703</mass>-->
+				<!--<inertia>-->
+					<!--<ixx>0.0006252487411543166</ixx>-->
+					<!--<ixy>-6.489166842760241e-19</ixy>-->
+					<!--<ixz>-1.9036285156354097e-06</ixz>-->
+					<!--<iyy>0.000625255919539564</iyy>-->
+					<!--<iyz>-4.418687638008123e-18</iyz>-->
+					<!--<izz>0.0001395375723212804</izz>-->
+				<!--</inertia>-->
+			<!--</inertial>-->
+			<!--<collision name="cup1_collision">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup1.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</collision>-->
+			<!--<visual name="cup1_visual">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup1.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</visual>-->
+		<!--</link>-->
+		<!--<link name="cup2">-->
+			<!--<self_collide>true</self_collide>-->
+			<!--<pose frame="">0.0002956102144263601 4.899258431487584e-17 0.09339256472917899 0.0 -0.0 0.0</pose>-->
+			<!--<inertial>-->
+				<!--<pose frame="">0.0 0.0 0.0 0 0 0</pose>-->
+				<!--<mass>0.08214627826938714</mass>-->
+				<!--<inertia>-->
+					<!--<ixx>0.0008369213768597501</ixx>-->
+					<!--<ixy>3.191891195797325e-20</ixy>-->
+					<!--<ixz>-2.2678776996382703e-06</ixz>-->
+					<!--<iyy>0.0008369285552449978</iyy>-->
+					<!--<iyz>-3.919087276926803e-18</iyz>-->
+					<!--<izz>0.00013953757232128034</izz>-->
+				<!--</inertia>-->
+			<!--</inertial>-->
+			<!--<collision name="cup2_collision">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup2.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</collision>-->
+			<!--<visual name="cup2_visual">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup2.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</visual>-->
+		<!--</link>-->
+		<!--<link name="cup3">-->
+			<!--<self_collide>true</self_collide>-->
+			<!--<pose frame="">0.0002956102144263601 4.899258431487584e-17 0.10839256472917867 0.0 -0.0 0.0</pose>-->
+			<!--<inertial>-->
+				<!--<pose frame="">0.0 0.0 0.0 0 0 0</pose>-->
+				<!--<mass>0.08214627826938714</mass>-->
+				<!--<inertia>-->
+					<!--<ixx>0.0010855598377864084</ixx>-->
+					<!--<ixy>3.191891195797325e-20</ixy>-->
+					<!--<ixz>-2.632126883640935e-06</ixz>-->
+					<!--<iyy>0.0010855670161716562</iyy>-->
+					<!--<iyz>-4.130029651605583e-18</iyz>-->
+					<!--<izz>0.00013953757232128034</izz>-->
+				<!--</inertia>-->
+			<!--</inertial>-->
+			<!--<collision name="cup3_collision">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup3.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</collision>-->
+			<!--<visual name="cup3_visual">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup3.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</visual>-->
+		<!--</link>-->
+		<!--<link name="cup4">-->
+			<!--<self_collide>true</self_collide>-->
+			<!--<pose frame="">0.0002956102144263447 1.8583394050470244e-16 0.12339256472917944 0.0 -0.0 0.0</pose>-->
+			<!--<inertial>-->
+				<!--<pose frame="">0.0 0.0 0.0 0 0 0</pose>-->
+				<!--<mass>0.08214627826938714</mass>-->
+				<!--<inertia>-->
+					<!--<ixx>0.0013711641239342925</ixx>-->
+					<!--<ixy>-4.603088743504458e-19</ixy>-->
+					<!--<ixz>-2.996376067642723e-06</ixz>-->
+					<!--<iyy>0.0013711713023195423</iyy>-->
+					<!--<iyz>-5.040412531798211e-18</iyz>-->
+					<!--<izz>0.00013953757232128275</izz>-->
+				<!--</inertia>-->
+			<!--</inertial>-->
+			<!--<collision name="cup4_collision">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup4.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</collision>-->
+			<!--<visual name="cup4_visual">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup4.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</visual>-->
+		<!--</link>-->
+		<!--<link name="cup5">-->
+			<!--<self_collide>true</self_collide>-->
+			<!--<pose frame="">0.0002956102144263615 6.250777998794461e-17 0.13839256472917927 0.0 -0.0 0.0</pose>-->
+			<!--<inertial>-->
+				<!--<pose frame="">0.0 0.0 0.0 0 0 0</pose>-->
+				<!--<mass>0.08214627826938714</mass>-->
+				<!--<inertia>-->
+					<!--<ixx>0.0016937342353034006</ixx>-->
+					<!--<ixy>-1.00301711380979e-18</ixy>-->
+					<!--<ixz>-3.3606252516464834e-06</ixz>-->
+					<!--<iyy>0.0016937414136886486</iyy>-->
+					<!--<iyz>-2.9309887850104133e-18</iyz>-->
+					<!--<izz>0.0001395375723212822</izz>-->
+				<!--</inertia>-->
+			<!--</inertial>-->
+			<!--<collision name="cup5_collision">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup5.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</collision>-->
+			<!--<visual name="cup5_visual">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup5.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</visual>-->
+		<!--</link>-->
+		<!--<link name="cup6">-->
+			<!--<self_collide>true</self_collide>-->
+			<!--<pose frame="">0.0002956102144263615 6.250777998794461e-17 0.15339256472917973 0.0 -0.0 0.0</pose>-->
+			<!--<inertial>-->
+				<!--<pose frame="">0.0 0.0 0.0 0 0 0</pose>-->
+				<!--<mass>0.08214627826938714</mass>-->
+				<!--<inertia>-->
+					<!--<ixx>0.0020532701718937304</ixx>-->
+					<!--<ixy>-1.00301711380979e-18</ixy>-->
+					<!--<ixz>-3.7248744356497e-06</ixz>-->
+					<!--<iyy>0.002053277350278978</iyy>-->
+					<!--<iyz>-3.1752378504279478e-18</iyz>-->
+					<!--<izz>0.0001395375723212822</izz>-->
+				<!--</inertia>-->
+			<!--</inertial>-->
+			<!--<collision name="cup6_collision">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup6.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</collision>-->
+			<!--<visual name="cup6_visual">-->
+				<!--<geometry>-->
+					<!--<mesh>-->
+						<!--<uri>model://cup_dispenser/meshes/CAD/cup6.stl</uri>-->
+						<!--<scale>0.001 0.001 0.001</scale>-->
+					<!--</mesh>-->
+				<!--</geometry>-->
+			<!--</visual>-->
+		<!--</link>-->
 		<link name="base">
-			<self_collide>false</self_collide>
+			<self_collide>true</self_collide>
+			<kinematic>true</kinematic>
 			<pose frame="">0.07013926713802335 3.3535679372552075e-18 -0.008434170822049952 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
@@ -302,84 +303,84 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_cup1" type="prismatic">
-			<parent>slider</parent>
-			<child>cup1</child>
-			<pose frame="">4.28129753871076e-17 9.80417954770685e-18 -0.04839256472917863 0 0 0</pose>
-			<axis>
-				<xyz>0.0 0.0 -1.0</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>0.35</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_cup2" type="prismatic">
-			<parent>slider</parent>
-			<child>cup2</child>
-			<pose frame="">-6.175615574477433e-18 -3.749900530803534e-17 -0.063392564729179 0 0 0</pose>
-			<axis>
-				<xyz>0.0 0.0 -1.0</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>0.35</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_cup3" type="prismatic">
-			<parent>slider</parent>
-			<child>cup3</child>
-			<pose frame="">-6.175615574477433e-18 -3.749900530803534e-17 -0.07839256472917867 0 0 0</pose>
-			<axis>
-				<xyz>0.0 0.0 -1.0</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>0.35</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_cup4" type="prismatic">
-			<parent>slider</parent>
-			<child>cup4</child>
-			<pose frame="">9.228728892196614e-18 -1.7434036149786197e-16 -0.09339256472917944 0 0 0</pose>
-			<axis>
-				<xyz>0.0 0.0 -1.0</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>0.35</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_cup5" type="prismatic">
-			<parent>slider</parent>
-			<child>cup5</child>
-			<pose frame="">-7.56339435525888e-18 -5.101420098110412e-17 -0.10839256472917928 0 0 0</pose>
-			<axis>
-				<xyz>0.0 0.0 -1.0</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>0.35</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="joint_cup6" type="prismatic">
-			<parent>slider</parent>
-			<child>cup6</child>
-			<pose frame="">-7.56339435525888e-18 -5.101420098110412e-17 -0.12339256472917973 0 0 0</pose>
-			<axis>
-				<xyz>0.0 0.0 -1.0</xyz>
-				<limit>
-					<lower>0.0</lower>
-					<upper>0.35</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
+		<!--<joint name="joint_cup1" type="prismatic">-->
+			<!--<parent>slider</parent>-->
+			<!--<child>cup1</child>-->
+			<!--<pose frame="">4.28129753871076e-17 9.80417954770685e-18 -0.04839256472917863 0 0 0</pose>-->
+			<!--<axis>-->
+				<!--<xyz>0.0 0.0 -1.0</xyz>-->
+				<!--<limit>-->
+					<!--<lower>0.0</lower>-->
+					<!--<upper>0.35</upper>-->
+				<!--</limit>-->
+				<!--<use_parent_model_frame>0</use_parent_model_frame>-->
+			<!--</axis>-->
+		<!--</joint>-->
+		<!--<joint name="joint_cup2" type="prismatic">-->
+			<!--<parent>slider</parent>-->
+			<!--<child>cup2</child>-->
+			<!--<pose frame="">-6.175615574477433e-18 -3.749900530803534e-17 -0.063392564729179 0 0 0</pose>-->
+			<!--<axis>-->
+				<!--<xyz>0.0 0.0 -1.0</xyz>-->
+				<!--<limit>-->
+					<!--<lower>0.0</lower>-->
+					<!--<upper>0.35</upper>-->
+				<!--</limit>-->
+				<!--<use_parent_model_frame>0</use_parent_model_frame>-->
+			<!--</axis>-->
+		<!--</joint>-->
+		<!--<joint name="joint_cup3" type="prismatic">-->
+			<!--<parent>slider</parent>-->
+			<!--<child>cup3</child>-->
+			<!--<pose frame="">-6.175615574477433e-18 -3.749900530803534e-17 -0.07839256472917867 0 0 0</pose>-->
+			<!--<axis>-->
+				<!--<xyz>0.0 0.0 -1.0</xyz>-->
+				<!--<limit>-->
+					<!--<lower>0.0</lower>-->
+					<!--<upper>0.35</upper>-->
+				<!--</limit>-->
+				<!--<use_parent_model_frame>0</use_parent_model_frame>-->
+			<!--</axis>-->
+		<!--</joint>-->
+		<!--<joint name="joint_cup4" type="prismatic">-->
+			<!--<parent>slider</parent>-->
+			<!--<child>cup4</child>-->
+			<!--<pose frame="">9.228728892196614e-18 -1.7434036149786197e-16 -0.09339256472917944 0 0 0</pose>-->
+			<!--<axis>-->
+				<!--<xyz>0.0 0.0 -1.0</xyz>-->
+				<!--<limit>-->
+					<!--<lower>0.0</lower>-->
+					<!--<upper>0.35</upper>-->
+				<!--</limit>-->
+				<!--<use_parent_model_frame>0</use_parent_model_frame>-->
+			<!--</axis>-->
+		<!--</joint>-->
+		<!--<joint name="joint_cup5" type="prismatic">-->
+			<!--<parent>slider</parent>-->
+			<!--<child>cup5</child>-->
+			<!--<pose frame="">-7.56339435525888e-18 -5.101420098110412e-17 -0.10839256472917928 0 0 0</pose>-->
+			<!--<axis>-->
+				<!--<xyz>0.0 0.0 -1.0</xyz>-->
+				<!--<limit>-->
+					<!--<lower>0.0</lower>-->
+					<!--<upper>0.35</upper>-->
+				<!--</limit>-->
+				<!--<use_parent_model_frame>0</use_parent_model_frame>-->
+			<!--</axis>-->
+		<!--</joint>-->
+		<!--<joint name="joint_cup6" type="prismatic">-->
+			<!--<parent>slider</parent>-->
+			<!--<child>cup6</child>-->
+			<!--<pose frame="">-7.56339435525888e-18 -5.101420098110412e-17 -0.12339256472917973 0 0 0</pose>-->
+			<!--<axis>-->
+				<!--<xyz>0.0 0.0 -1.0</xyz>-->
+				<!--<limit>-->
+					<!--<lower>0.0</lower>-->
+					<!--<upper>0.35</upper>-->
+				<!--</limit>-->
+				<!--<use_parent_model_frame>0</use_parent_model_frame>-->
+			<!--</axis>-->
+		<!--</joint>-->
 		<joint name="slider_joint" type="prismatic">
 			<parent>base</parent>
 			<child>slider</child>
@@ -393,5 +394,11 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
+
+		<gazebo>
+			<plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+				<robotNamespace>/CupDispenser</robotNamespace>
+			</plugin>
+		</gazebo>
 	</model>
 </sdf>
