@@ -1,6 +1,6 @@
 <sdf version="1.6">
 	<model name="exosuit">
-		<link name="upperArm">
+		<link name="upperarm">
 			<self_collide>false</self_collide>
 			<pose frame="">-2.240976708423975e-08 -0.16397986682428348 0.8703731150531406 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -15,18 +15,18 @@
 					<izz>0.0009767466962208463</izz>
 				</inertia>
 			</inertial>
-			<collision name="upperArm_collision">
+			<collision name="upperarm_collision">
 				<geometry>
 					<mesh>
-						<uri>model://exosuit/meshes/collisions/upperArm.dae</uri>
+						<uri>model://exosuit/meshes/collisions/upperarm.dae</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="upperArm_visual">
+			<visual name="upperarm_visual">
 				<geometry>
 					<mesh>
-						<uri>model://exosuit/meshes/visuals/upperArm.dae</uri>
+						<uri>model://exosuit/meshes/visuals/upperarm.dae</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -97,7 +97,7 @@
 			</visual>
 		</link>
 		<joint name="elbow" type="revolute">
-			<parent>upperArm</parent>
+			<parent>upperarm</parent>
 			<child>lowerarm</child>
 			<pose frame="">5.932862208144765e-07 -2.271684660968276e-06 0.18500350889794712 0 0 0</pose>
 			<axis>
@@ -111,7 +111,7 @@
 		</joint>
 		<joint name="shoulderJoint" type="revolute">
 			<parent>shoulder</parent>
-			<child>upperArm</child>
+			<child>upperarm</child>
 			<pose frame="">2.2409767368456846e-08 -3.317266438429556e-07 0.18614062167005357 0 0 0</pose>
 			<axis>
 				<xyz>0.0 -1.0 1.4235051200718108e-15</xyz>
