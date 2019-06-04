@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+	<model name="exosuit">
+		<link name="upperArm">
+			<self_collide>false</self_collide>
+			<pose frame="">-2.240976708423975e-08 -0.16397986682428348 0.8703731150531406 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.035365042126382244</mass>
+				<inertia>
+					<ixx>0.027861542637398526</ixx>
+					<ixy>-1.3051313438317003e-10</ixy>
+					<ixz>6.917971441922078e-10</ixz>
+					<iyy>0.02691058529862239</iyy>
+					<iyz>0.005047428483642949</iyz>
+					<izz>0.0009767466962208463</izz>
+				</inertia>
+			</inertial>
+			<collision name="upperArm_collision">
+				<geometry>
+					<mesh>
+						<uri>model://exosuit/meshes/CAD/upperArm.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="upperArm_visual">
+				<geometry>
+					<mesh>
+						<uri>model://exosuit/meshes/CAD/upperArm.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="lowerArm">
+			<self_collide>false</self_collide>
+			<pose frame="">-5.932862205467922e-07 -0.16397792686626678 0.6015102278252219 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.03902618819077214</mass>
+				<inertia>
+					<ixx>0.015286751806616965</ixx>
+					<ixy>6.457443580965006e-11</ixy>
+					<ixz>1.4217519374915001e-08</ixz>
+					<iyy>0.014237367079683696</iyy>
+					<iyz>0.003849315904522822</iyz>
+					<izz>0.0010958297131815936</izz>
+				</inertia>
+			</inertial>
+			<collision name="lowerArm_collision">
+				<geometry>
+					<mesh>
+						<uri>model://exosuit/meshes/CAD/lowerArm.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="lowerArm_visual">
+				<geometry>
+					<mesh>
+						<uri>model://exosuit/meshes/CAD/lowerArm.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="shoulder">
+			<self_collide>false</self_collide>
+			<pose frame="">-7.908049807056098e-07 -0.16397633036233863 1.0812802560574821 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.016302692469470338</mass>
+				<inertia>
+					<ixx>0.019515568502847802</ixx>
+					<ixy>-1.996650780966558e-09</ixy>
+					<ixz>1.3722221800405166e-08</ixz>
+					<iyy>0.01907720473244557</iyy>
+					<iyz>0.0028905394265482387</iyz>
+					<izz>0.00046497426005392414</izz>
+				</inertia>
+			</inertial>
+			<collision name="shoulder_collision">
+				<geometry>
+					<mesh>
+						<uri>model://exosuit/meshes/CAD/shoulder.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="shoulder_visual">
+				<geometry>
+					<mesh>
+						<uri>model://exosuit/meshes/CAD/shoulder.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<joint name="elbow" type="revolute">
+			<parent>upperArm</parent>
+			<child>lowerArm</child>
+			<pose frame="">5.932862208144765e-07 -2.271684660968276e-06 0.18500350889794712 0 0 0</pose>
+			<axis>
+				<xyz>2.064988378536746e-17 -1.0 1.4235051200718108e-15</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>1.57</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="shoulderJoint" type="revolute">
+			<parent>shoulder</parent>
+			<child>upperArm</child>
+			<pose frame="">2.2409767368456846e-08 -3.317266438429556e-07 0.18614062167005357 0 0 0</pose>
+			<axis>
+				<xyz>0.0 -1.0 1.4235051200718108e-15</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>1.57</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+	</model>
+</sdf>
