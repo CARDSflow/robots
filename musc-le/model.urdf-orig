@@ -1,0 +1,130 @@
+<?xml version="1.0" ?>
+<robot name="musc-le">
+  <joint name="upper_joint" type="revolute">
+    <parent link="lower_arm"/>
+    <child link="upper_arm"/>
+    <origin rpy="0  0  0" xyz="0.01345 -0.00557  0.42347"/>
+    <axis xyz="1  0  0"/>
+    <limit effort="0.0" lower="-1.3962634016" upper="1.3962634016" velocity="0.0"/>
+  </joint>
+  <joint name="lower_joint" type="revolute">
+    <parent link="base"/>
+    <child link="lower_arm"/>
+    <origin rpy="0  0  0" xyz="0.2222   0.302    0.03766"/>
+    <axis xyz="-1  0  0"/>
+    <limit effort="0.0" lower="-1.0471975512" upper="1.0471975512" velocity="0.0"/>
+  </joint>
+  <link name="base">
+    <inertial>
+      <mass value="4.577961139992451"/>
+      <origin rpy="0  0  0" xyz="0.23957  0.30164 -0.00404"/>
+      <inertia ixx="0.6964976208435603" ixy="-0.33124472607979777" ixz="0.005206946488376753" iyy="0.32525727740341887" iyz="0.004041223050726708" izz="1.0200578186053704"/>
+    </inertial>
+    <collision name="base_collision">
+      <origin rpy="0  0  0" xyz="0.23957  0.30164 -0.00404"/>
+      <geometry>
+        <mesh filename="package://robots/musc-le/meshes/CAD/base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="base_visual">
+      <origin rpy="0  0  0" xyz="0.23957  0.30164 -0.00404"/>
+      <geometry>
+        <mesh filename="package://robots/musc-le/meshes/CAD/base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="lower_arm">
+    <inertial>
+      <mass value="1.5237441401359124"/>
+      <origin rpy="0  0  0" xyz="1.68300000e-02   8.00000000e-05   2.29630000e-01"/>
+      <inertia ixx="0.2769915912543985" ixy="-0.11019455598374271" ixz="-0.1227580584944691" iyy="0.224754634431965" iyz="-0.09719476457276234" izz="0.2268281041891002"/>
+    </inertial>
+    <collision name="lower_arm_collision">
+      <origin rpy="0  0  0" xyz="1.68300000e-02   8.00000000e-05   2.29630000e-01"/>
+      <geometry>
+        <mesh filename="package://robots/musc-le/meshes/CAD/lower_arm.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="lower_arm_visual">
+      <origin rpy="0  0  0" xyz="1.68300000e-02   8.00000000e-05   2.29630000e-01"/>
+      <geometry>
+        <mesh filename="package://robots/musc-le/meshes/CAD/lower_arm.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_arm">
+    <inertial>
+      <mass value="0.7435348463135714"/>
+      <origin rpy="0  0  0" xyz="4.82000000e-03   3.00000000e-05   1.37750000e-01"/>
+      <inertia ixx="0.3432570018950717" ixy="-0.05300748031122446" ixz="-0.13201431967299" iyy="0.32091647015757196" iyz="-0.10709511615421875" izz="0.10844994621171586"/>
+    </inertial>
+    <collision name="upper_arm_collision">
+      <origin rpy="0  0  0" xyz="4.82000000e-03   3.00000000e-05   1.37750000e-01"/>
+      <geometry>
+        <mesh filename="package://robots/musc-le/meshes/CAD/upper_arm.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_arm_visual">
+      <origin rpy="0  0  0" xyz="4.82000000e-03   3.00000000e-05   1.37750000e-01"/>
+      <geometry>
+        <mesh filename="package://robots/musc-le/meshes/CAD/upper_arm.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="base">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="lower_arm">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="base">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="lower_arm">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="lower_arm">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="upper_arm">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="lower_arm">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="upper_arm">
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+</robot>
