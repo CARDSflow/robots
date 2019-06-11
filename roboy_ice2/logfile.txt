@@ -1,0 +1,353 @@
+Body: shoulder_left_link1
+COM: shoulder_left_link1 29.189436724181412 1.393639361940194 94.4891836221742
+exporting stl of shoulder_left_link1
+Body: shoulder_left_link2
+COM: shoulder_left_link2 29.18943626799987 1.3936392193742155 94.48918353221822
+exporting stl of shoulder_left_link2
+Body: hand_left_index_link1
+COM: hand_left_index_link1 31.856271462174696 -0.25864584987019484 23.619804063811102
+exporting stl of hand_left_index_link1
+Body: hand_left_index_link0
+COM: hand_left_index_link0 31.686339452202564 -0.06683422914441096 27.16213344326707
+exporting stl of hand_left_index_link0
+Body: hand_left_index_link2
+COM: hand_left_index_link2 31.969208455806005 -0.3949341041138042 21.100962949188702
+exporting stl of hand_left_index_link2
+Body: hand_left_middle_link1
+COM: hand_left_middle_link1 30.8780152740782 6.194957567040631 23.866346461996496
+exporting stl of hand_left_middle_link1
+Body: hand_left_middle_link0
+COM: hand_left_middle_link0 30.80067042197168 5.7749997339429475 27.392221288052436
+exporting stl of hand_left_middle_link0
+Body: hand_left_middle_link2
+COM: hand_left_middle_link2 30.92512379094444 6.493528646094637 21.359448903752313
+exporting stl of hand_left_middle_link2
+Body: hand_left_ring_link1
+COM: hand_left_ring_link1 31.369470828058336 3.0540131261523733 22.956936409625673
+exporting stl of hand_left_ring_link1
+Body: hand_left_ring_link0
+COM: hand_left_ring_link0 31.245624599907398 2.9395511466483946 26.504564487764842
+exporting stl of hand_left_ring_link0
+Body: hand_left_ring_link2
+COM: hand_left_ring_link2 31.449636887396746 3.135437313788086 20.434473261579537
+exporting stl of hand_left_ring_link2
+Body: hand_left_little_link1
+COM: hand_left_little_link1 30.535271286661544 8.562027336484045 27.29403250723861
+exporting stl of hand_left_little_link1
+Body: hand_left_little_link2
+COM: hand_left_little_link2 30.562511794161566 8.989921663824065 24.805611680163704
+exporting stl of hand_left_little_link2
+Body: hand_left_little_link0
+COM: hand_left_little_link0 30.550953431389864 8.127796921187466 29.857472192700545
+exporting stl of hand_left_little_link0
+Body: hand_left_thumb_link2
+COM: hand_left_thumb_link2 31.081085939429116 -7.386550524146745 34.30622480187437
+exporting stl of hand_left_thumb_link2
+Body: hand_left_thumb_link0
+COM: hand_left_thumb_link0 30.099866856939258 -1.1404531801574964 35.627089004675646
+exporting stl of hand_left_thumb_link0
+Body: hand_left_thumb_link1
+COM: hand_left_thumb_link1 30.689879268889168 -4.892322512052464 34.326922764917434
+exporting stl of hand_left_thumb_link1
+Body: shoulder_right_link1
+COM: shoulder_right_link1 -29.306426090240592 1.1093832202518359 94.68414984574387
+exporting stl of shoulder_right_link1
+Body: shoulder_right_link2
+COM: shoulder_right_link2 -29.30642610639146 1.1093830378143497 94.68414990605304
+exporting stl of shoulder_right_link2
+Body: hand_right_index_link1
+COM: hand_right_index_link1 -31.641358025018178 -0.4837035689249102 23.714834179435258
+exporting stl of hand_right_index_link1
+Body: hand_right_index_link0
+COM: hand_right_index_link0 -31.496556518773183 -0.2729316889975881 27.257180174222217
+exporting stl of hand_right_index_link0
+Body: hand_right_index_link2
+COM: hand_right_index_link2 -31.736574098802716 -0.6352410808999924 21.196088870863612
+exporting stl of hand_right_index_link2
+Body: hand_right_middle_link1
+COM: hand_right_middle_link1 -31.44346859055271 2.8596714537329158 23.053752734367258
+exporting stl of hand_right_middle_link1
+Body: hand_right_middle_link0
+COM: hand_right_middle_link0 -31.317904361078423 2.7612886953466367 26.601744515746137
+exporting stl of hand_right_middle_link0
+Body: hand_right_middle_link2
+COM: hand_right_middle_link2 -31.525019319131292 2.9278497505831105 20.530864055807474
+exporting stl of hand_right_middle_link2
+Body: hand_right_ring_link1
+COM: hand_right_ring_link1 -31.229697926337185 6.030426758160334 23.964718614800578
+exporting stl of hand_right_ring_link1
+Body: hand_right_ring_link0
+COM: hand_right_ring_link0 -31.12378199585301 5.623643839630139 27.49135903786564
+exporting stl of hand_right_ring_link0
+Body: hand_right_ring_link2
+COM: hand_right_ring_link2 -31.297279925939502 6.317843508397608 21.45690879889586
+exporting stl of hand_right_ring_link2
+Body: hand_right_little_link1
+COM: hand_right_little_link1 -31.027913660280024 8.330016932085341 27.379431481626142
+exporting stl of hand_right_little_link1
+Body: hand_right_little_link2
+COM: hand_right_little_link2 -31.087018078894847 8.748038222682242 24.889813553568228
+exporting stl of hand_right_little_link2
+Body: hand_right_little_link0
+COM: hand_right_little_link0 -31.01113801176481 7.902239515754965 29.943948990077196
+exporting stl of hand_right_little_link0
+Body: hand_right_thumb_link2
+COM: hand_right_thumb_link2 -30.251350215070644 -7.4935059352203135 34.39166490133742
+exporting stl of hand_right_thumb_link2
+Body: hand_right_thumb_link0
+COM: hand_right_thumb_link0 -29.84825675907656 -1.1858493314693124 35.72304249117745
+exporting stl of hand_right_thumb_link0
+Body: hand_right_thumb_link1
+COM: hand_right_thumb_link1 -30.108546127170847 -4.972831222291077 34.41692107928518
+exporting stl of hand_right_thumb_link1
+Body: wrist_left_link1
+COM: wrist_left_link1 29.91962565132774 2.763672022147714 40.81718072936511
+exporting stl of wrist_left_link1
+Body: wrist_left_link2
+COM: wrist_left_link2 29.919625632044802 2.7636720409475055 40.8171827024093
+exporting stl of wrist_left_link2
+Body: wrist_right_link1
+COM: wrist_right_link1 -30.00602774971495 2.697309036469747 41.41795567223612
+exporting stl of wrist_right_link1
+Body: wrist_right_link2
+COM: wrist_right_link2 -30.006027863165915 2.697309657800281 41.41795507539661
+exporting stl of wrist_right_link2
+Body: zed_camera_left_lense
+COM: zed_camera_left_lense 6.022402900295879 -6.914536611449559 132.4774281270804
+exporting stl of zed_camera_left_lense
+Body: zed_camera_right_lense
+COM: zed_camera_right_lense -5.97774558480175 -6.952236314727868 132.4774281233242
+exporting stl of zed_camera_right_lense
+Body: zed_camera
+COM: zed_camera 0.4244484790252145 -5.793862128660509 132.2194213647095
+exporting stl of zed_camera
+Body: neck_link1
+COM: neck_link1 -1.5061232881800248e-08 0.15217809344427233 111.06779292283451
+exporting stl of neck_link1
+Body: neck_link2
+COM: neck_link2 -1.2765957595970417e-08 0.15217809573941915 111.06779292283449
+exporting stl of neck_link2
+Body: head
+COM: head 0.05102180295686944 4.644589822931081 125.61762140518363
+exporting stl of head
+Body: torso
+COM: torso -0.005352551156052878 -0.020638202630240382 90.87696333411337
+exporting stl of torso
+Body: arm_right_palm
+COM: arm_right_palm -31.20560781494366 2.9783213750418076 35.3491321888562
+exporting stl of arm_right_palm
+Body: arm_left_palm
+COM: arm_left_palm 31.098005978025274 3.127537935452669 35.22681757831822
+exporting stl of arm_left_palm
+Body: arm_left_lower
+COM: arm_left_lower 29.792915439999295 2.4846481971085113 50.985879968519825
+exporting stl of arm_left_lower
+Body: arm_right_lower
+COM: arm_right_lower -29.88687613047004 2.4292026084329175 51.10496011008595
+exporting stl of arm_right_lower
+Body: arm_right_upper
+COM: arm_right_upper -29.63209053079876 1.7462513012618763 76.04971183588381
+exporting stl of arm_right_upper
+Body: arm_left_upper
+COM: arm_left_upper 29.53938979050999 1.7867244157243118 75.94735478197975
+exporting stl of arm_left_upper
+Joint: EXPORT_elbow_left
+	parent: arm_left_upper
+	child: arm_left_lower
+	pos: -0.07107386585945719	-1.4709680149028794	13.591530260348293
+Joint: EXPORT_hand_right_index_joint0
+	parent: arm_right_palm
+	child: hand_right_index_link0
+	pos: -0.21983682476854938	-0.3410317147266069	2.3461494833996106
+Joint: EXPORT_hand_right_middle_joint0
+	parent: arm_right_palm
+	child: hand_right_middle_link0
+	pos: -0.23317700529797136	-0.5433897051693246	2.3063330426742823
+Joint: EXPORT_hand_right_ring_joint0
+	parent: arm_right_palm
+	child: hand_right_ring_link0
+	pos: -0.24654327076008897	-0.7415190699955936	2.249015144557898
+Joint: EXPORT_hand_right_little_joint0
+	parent: arm_right_palm
+	child: hand_right_little_link0
+	pos: -0.18934511544216193	-0.7042516155070286	1.2693300242107028
+Joint: EXPORT_hand_right_thumb_joint0
+	parent: arm_right_palm
+	child: hand_right_thumb_link0
+	pos: 0.13521438963694976	1.892841010681654	0.7707426197994351
+Joint: EXPORT_hand_right_index_joint1
+	parent: hand_right_index_link0
+	child: hand_right_index_link1
+	pos: -0.1670136715502366	-0.38177129269362853	1.3964461720074937
+Joint: EXPORT_hand_right_index_joint2
+	parent: hand_right_index_link1
+	child: hand_right_index_link2
+	pos: -0.12577822544369965	-0.38916750859929783	1.3206103656440753
+Joint: EXPORT_hand_right_middle_joint1
+	parent: hand_right_middle_link0
+	child: hand_right_middle_link1
+	pos: -0.17517769227053392	-0.5015026833521641	1.3569940189143388
+Joint: EXPORT_hand_right_middle_joint2
+	parent: hand_right_middle_link1
+	child: hand_right_middle_link2
+	pos: -0.1335234525565312	-0.5022709315689449	1.2810581255725353
+Joint: EXPORT_hand_right_ring_joint1
+	parent: hand_right_ring_link0
+	child: hand_right_ring_link1
+	pos: -0.1832644291595571	-0.6173185421035141	1.3072706627270527
+Joint: EXPORT_hand_right_ring_joint2
+	parent: hand_right_ring_link1
+	child: hand_right_ring_link2
+	pos: -0.14119103855975723	-0.6114945181024174	1.2317910718500826
+Joint: EXPORT_hand_right_little_joint1
+	parent: hand_right_little_link0
+	child: hand_right_little_link1
+	pos: -0.18805792753538597	-0.6845700667997736	1.2726436004826596
+Joint: EXPORT_hand_right_little_joint2
+	parent: hand_right_little_link1
+	child: hand_right_little_link2
+	pos: -0.14572915744640014	-0.6748139407959943	1.197744018469141
+Joint: EXPORT_hand_right_thumb_joint1
+	parent: hand_right_thumb_link0
+	child: hand_right_thumb_link1
+	pos: -0.38550723832604206	1.3894233302667143	0.2110921736961231
+Joint: EXPORT_hand_right_thumb_joint2
+	parent: hand_right_thumb_link1
+	child: hand_right_thumb_link2
+	pos: -0.41110869239063774	1.3164890438807229	0.1666566584036815
+Joint: EXPORT_wrist_right_axis0
+	parent: arm_right_lower
+	child: wrist_right_link1
+	pos: -1.134507989775102e-07	6.213384793340992e-07	-5.978611739010375e-07
+Joint: EXPORT_wrist_right_axis1
+	parent: wrist_right_link1
+	child: wrist_right_link2
+	pos: -7.105427357601002e-15	5.495159882684675e-12	-1.0217462431683089e-09
+Joint: EXPORT_wrist_right_axis2
+	parent: wrist_right_link2
+	child: arm_right_palm
+	pos: 1.1995799517777392	-0.2810117172360318	6.068822885518664
+Joint: EXPORT_wrist_left_axis0
+	parent: arm_left_lower
+	child: wrist_left_link1
+	pos: -1.928001225337539e-08	9.554586011262245e-09	2.017571702594978e-06
+Joint: EXPORT_wrist_left_axis1
+	parent: wrist_left_link1
+	child: wrist_left_link2
+	pos: 3.907985046680551e-14	-9.24692633574864e-09	4.452946456012796e-08
+Joint: EXPORT_wrist_left_axis2
+	parent: wrist_left_link2
+	child: arm_left_palm
+	pos: -1.1783803459804751	-0.36386590375215544	5.590365168620686
+Joint: EXPORT_zed_camera_mount
+	parent: head
+	child: zed_camera
+	pos: 1.74376546850911	0.1405588958414281	0.8052233827783652
+Joint: EXPORT_neck_axis0
+	parent: torso
+	child: neck_link1
+	pos: 1.506158876512121e-08	1.5061493080503752e-08	0.0
+Joint: EXPORT_neck_axis2
+	parent: neck_link2
+	child: head
+	pos: -0.051021802956598326	-4.492411714425326	-14.549828482349128
+Joint: EXPORT_neck_axis1
+	parent: neck_link1
+	child: neck_link2
+	pos: 1.276622840242204e-08	1.276634367664009e-08	2.842170943040401e-14
+Joint: EXPORT_zed_camera_right
+	parent: zed_camera
+	child: zed_camera_right_lense
+	pos: -0.0034778066173304367	1.1070006217811335	-0.235301409209967
+Joint: EXPORT_zed_camera_left
+	parent: zed_camera
+	child: zed_camera_left_lense
+	pos: -0.005466550911869206	1.1069943702269232	-0.2353014260487214
+Joint: EXPORT_hand_left_thumb_joint1
+	parent: hand_left_thumb_link0
+	child: hand_left_thumb_link1
+	pos: -0.6767965418695141	1.2762976825033734	0.1918027146045418
+Joint: EXPORT_hand_left_thumb_joint2
+	parent: hand_left_thumb_link1
+	child: hand_left_thumb_link2
+	pos: -0.684021625194287	1.1998725415220628	0.14673208892202183
+Joint: EXPORT_hand_left_little_joint1
+	parent: hand_left_little_link0
+	child: hand_left_little_link1
+	pos: 0.10109387947143489	0.2619671784360449	1.4299851837082223
+Joint: EXPORT_hand_left_little_joint2
+	parent: hand_left_little_link1
+	child: hand_left_little_link2
+	pos: 0.0581712272479713	0.2683032662566518	1.3549663261237583
+Joint: EXPORT_shoulder_right_axis0
+	parent: torso
+	child: shoulder_right_link1
+	pos: 1.3765884432359599e-08	-7.153123871006528e-09	-2.3845814212108962e-11
+Joint: EXPORT_shoulder_right_axis1
+	parent: shoulder_right_link1
+	child: shoulder_right_link2
+	pos: 2.991671976815269e-08	1.7528436502267652e-07	-6.033293686869001e-08
+Joint: EXPORT_shoulder_right_axis2
+	parent: shoulder_right_link2
+	child: arm_right_upper
+	pos: 0.32566445432401636	-0.636868088163137	18.634438009836245
+Joint: EXPORT_elbow_right
+	parent: arm_right_upper
+	child: arm_right_lower
+	pos: 0.16642791062307438	-1.4781216164599473	13.571738045417284
+Joint: EXPORT_shoulder_left_axis0
+	parent: torso
+	child: shoulder_left_link1
+	pos: -4.860982905086075e-07	-1.504561475407229e-08	5.408793413153035e-10
+Joint: EXPORT_shoulder_left_axis1
+	parent: shoulder_left_link1
+	child: shoulder_left_link2
+	pos: -2.9916758848003155e-08	1.2752033295981846e-07	9.049686866546836e-08
+Joint: EXPORT_shoulder_left_axis2
+	parent: shoulder_left_link2
+	child: arm_left_upper
+	pos: -0.349953552426836	-0.3930850688296772	18.541828840735377
+Joint: EXPORT_hand_left_index_joint1
+	parent: hand_left_index_link0
+	child: hand_left_index_link1
+	pos: 0.055889499039352586	0.5734770998423756	1.338559158974988
+Joint: EXPORT_hand_left_index_joint2
+	parent: hand_left_index_link1
+	child: hand_left_index_link2
+	pos: 0.01554263160563707	0.5628414577127587	1.2625652032600776
+Joint: EXPORT_hand_left_middle_joint0
+	parent: arm_left_palm
+	child: hand_left_middle_link0
+	pos: 0.15880292256180795	0.23808601480886704	2.359549563360062
+Joint: EXPORT_hand_left_ring_joint0
+	parent: arm_left_palm
+	child: hand_left_ring_link0
+	pos: 0.12882421114074916	0.4403574019370118	2.332142609104654
+Joint: EXPORT_hand_left_little_joint0
+	parent: arm_left_palm
+	child: hand_left_index_link0
+	pos: 0.09964511425133793	0.6395635190949717	2.287064124981125
+Joint: EXPORT_hand_left_index_joint0
+	parent: arm_left_palm
+	child: hand_left_little_link0
+	pos: 0.034023318813787284	0.17204254756642534	1.4153188734772435
+Joint: EXPORT_hand_left_thumb_joint0
+	parent: arm_left_palm
+	child: hand_left_thumb_link0
+	pos: -0.28040988457695093	1.9009782120703416	-0.1316983060948047
+Joint: EXPORT_hand_left_ring_joint1
+	parent: hand_left_ring_link0
+	child: hand_left_ring_link1
+	pos: 0.07273784157601426	0.4561424134356322	1.3821636209362396
+Joint: EXPORT_hand_left_ring_joint2
+	parent: hand_left_ring_link1
+	child: hand_left_ring_link2
+	pos: 0.031406129157822704	0.45205871987009205	1.3060626767429007
+Joint: EXPORT_hand_left_middle_joint1
+	parent: hand_left_middle_link0
+	child: hand_left_middle_link1
+	pos: 0.09028534102274577	0.3355288683466373	1.4152741001343578
+Joint: EXPORT_hand_left_middle_joint2
+	parent: hand_left_middle_link1
+	child: hand_left_middle_link2
+	pos: 0.04795963189199881	0.3379740213993738	1.3396551816142512
