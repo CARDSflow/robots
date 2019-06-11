@@ -1,7 +1,6 @@
-<?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="exosuit">
-		<link name="upperArm">
+		<link name="upperarm">
 			<self_collide>false</self_collide>
 			<pose frame="">-2.240976708423975e-08 -0.16397986682428348 0.8703731150531406 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -16,24 +15,24 @@
 					<izz>0.0009767466962208463</izz>
 				</inertia>
 			</inertial>
-			<collision name="upperArm_collision">
+			<collision name="upperarm_collision">
 				<geometry>
 					<mesh>
-						<uri>model://exosuit/meshes/CAD/upperArm.stl</uri>
+						<uri>model://exosuit/meshes/collisions/upperarm.dae</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="upperArm_visual">
+			<visual name="upperarm_visual">
 				<geometry>
 					<mesh>
-						<uri>model://exosuit/meshes/CAD/upperArm.stl</uri>
+						<uri>model://exosuit/meshes/visuals/upperarm.dae</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="lowerArm">
+		<link name="lowerarm">
 			<self_collide>false</self_collide>
 			<pose frame="">-5.932862205467922e-07 -0.16397792686626678 0.6015102278252219 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -48,18 +47,18 @@
 					<izz>0.0010958297131815936</izz>
 				</inertia>
 			</inertial>
-			<collision name="lowerArm_collision">
+			<collision name="lowerarm_collision">
 				<geometry>
 					<mesh>
-						<uri>model://exosuit/meshes/CAD/lowerArm.stl</uri>
+						<uri>model://exosuit/meshes/collisions/lowerarm.dae</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="lowerArm_visual">
+			<visual name="lowerarm_visual">
 				<geometry>
 					<mesh>
-						<uri>model://exosuit/meshes/CAD/lowerArm.stl</uri>
+						<uri>model://exosuit/meshes/visuals/lowerarm.dae</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -83,7 +82,7 @@
 			<collision name="shoulder_collision">
 				<geometry>
 					<mesh>
-						<uri>model://exosuit/meshes/CAD/shoulder.stl</uri>
+						<uri>model://exosuit/meshes/collisions/shoulder.dae</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -91,15 +90,15 @@
 			<visual name="shoulder_visual">
 				<geometry>
 					<mesh>
-						<uri>model://exosuit/meshes/CAD/shoulder.stl</uri>
+						<uri>model://exosuit/meshes/visuals/shoulder.dae</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
 		<joint name="elbow" type="revolute">
-			<parent>upperArm</parent>
-			<child>lowerArm</child>
+			<parent>upperarm</parent>
+			<child>lowerarm</child>
 			<pose frame="">5.932862208144765e-07 -2.271684660968276e-06 0.18500350889794712 0 0 0</pose>
 			<axis>
 				<xyz>2.064988378536746e-17 -1.0 1.4235051200718108e-15</xyz>
@@ -112,7 +111,7 @@
 		</joint>
 		<joint name="shoulderJoint" type="revolute">
 			<parent>shoulder</parent>
-			<child>upperArm</child>
+			<child>upperarm</child>
 			<pose frame="">2.2409767368456846e-08 -3.317266438429556e-07 0.18614062167005357 0 0 0</pose>
 			<axis>
 				<xyz>0.0 -1.0 1.4235051200718108e-15</xyz>
@@ -123,6 +122,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin" />
 	</model>
 </sdf>

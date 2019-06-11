@@ -1,0 +1,73 @@
+<robot name="exosuit">
+  <joint name="elbow" type="revolute">
+    <parent link="upperArm" />
+    <child link="lowerarm" />
+    <origin rpy="0 0 0" xyz="0    0   -0.27" />
+    <axis xyz="0 -1  0" />
+    <limit effort="0.0" lower="0.0" upper="1.57" velocity="0.0" />
+  </joint>
+  <joint name="shoulderJoint" type="revolute">
+    <parent link="shoulder" />
+    <child link="upperArm" />
+    <origin rpy="0 0 0" xyz="0      -0.16398  1.05651" />
+    <axis xyz="0 -1  0" />
+    <limit effort="0.0" lower="0.0" upper="1.57" velocity="0.0" />
+  </joint>
+  <link name="upperArm">
+    <inertial>
+      <mass value="0.035365042126382244" />
+      <origin rpy="0 0 0" xyz="0       0      -0.18614" />
+      <inertia ixx="0.027861542637398526" ixy="-1.3051313438317003e-10" ixz="6.917971441922078e-10" iyy="0.02691058529862239" iyz="0.005047428483642949" izz="0.0009767466962208463" />
+    </inertial>
+    <collision name="upperArm_collision">
+      <origin rpy="0 0 0" xyz="0       0      -0.18614" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/collisions/upperArm.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="upperArm_visual">
+      <origin rpy="0 0 0" xyz="0       0      -0.18614" />
+      <geometry>
+        <mesh filename="package://PATHTOMESHES/meshes/visuals/upperArm.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="lowerarm">
+    <inertial>
+      <mass value="0.03902618819077214" />
+      <origin rpy="0 0 0" xyz="0     0    -0.185" />
+      <inertia ixx="0.015286751806616965" ixy="6.457443580965006e-11" ixz="1.4217519374915001e-08" iyy="0.014237367079683696" iyz="0.003849315904522822" izz="0.0010958297131815936" />
+    </inertial>
+    <collision name="lowerarm_collision">
+      <origin rpy="0 0 0" xyz="0     0    -0.185" />
+      <geometry>
+        <mesh filename="package://robots/exosuit/meshes/collisions/lowerarm.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="lowerarm_visual">
+      <origin rpy="0 0 0" xyz="0     0    -0.185" />
+      <geometry>
+        <mesh filename="package://robots/exosuit/meshes/visuals/lowerarm.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="shoulder">
+    <inertial>
+      <mass value="0.016302692469470338" />
+      <origin rpy="0 0 0" xyz="0      -0.16397  1.08128" />
+      <inertia ixx="0.019515568502847802" ixy="-1.996650780966558e-09" ixz="1.3722221800405166e-08" iyy="0.01907720473244557" iyz="0.0028905394265482387" izz="0.00046497426005392414" />
+    </inertial>
+    <collision name="shoulder_collision">
+      <origin rpy="0 0 0" xyz="0      -0.16397  1.08128" />
+      <geometry>
+        <mesh filename="package://robots/exosuit/meshes/collisions/shoulder.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="shoulder_visual">
+      <origin rpy="0 0 0" xyz="0      -0.16397  1.08128" />
+      <geometry>
+        <mesh filename="package://robots/exosuit/meshes/visuals/shoulder.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+</robot>
