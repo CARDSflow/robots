@@ -1,24 +1,25 @@
+<?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="VRpuppet">
 		<link name="base">
-			<kinematic>true</kinematic>
-			<pose frame="">0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<self_collide>false</self_collide>
+			<pose frame="">0.0001901919426824477 0.5169540680491131 0.3596164678395443 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>18.834971461032392</mass>
+				<mass>14.69473796695913</mass>
 				<inertia>
-					<ixx>33.33959964657777</ixx>
-					<ixy>1.3999987984804296</ixy>
-					<ixz>-2.972029462116702</ixz>
-					<iyy>23.29825486423074</iyy>
-					<iyz>-0.7006446566366978</iyz>
-					<izz>37.405102655876526</izz>
+					<ixx>10.684689333678833</ixx>
+					<ixy>-0.0005083987852701654</ixy>
+					<ixz>-0.0027654760315275894</ixz>
+					<iyy>6.756408948551988</iyy>
+					<iyz>-2.7324379280551483</iyz>
+					<izz>7.9937684672241085</izz>
 				</inertia>
 			</inertial>
 			<collision name="base_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/base.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -26,295 +27,7 @@
 			<visual name="base_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/base.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="shoulder_left_link1">
-			<self_collide>false</self_collide>
-			<pose frame="">0.1807790956293054 0.06490793509010379 0.700018904082991 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.06979038134801809</mass>
-				<inertia>
-					<ixx>0.03450481088643034</ixx>
-					<ixy>-0.0008189201815306329</ixy>
-					<ixz>-0.008831887922651223</ixz>
-					<iyy>0.03649160635049412</iyy>
-					<iyz>-0.003171050314257621</iyz>
-					<izz>0.002586502083462145</izz>
-				</inertia>
-			</inertial>
-			<collision name="shoulder_left_link1_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/shoulder_left_link1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="shoulder_left_link1_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/shoulder_left_link1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="shoulder_left_link2">
-			<self_collide>false</self_collide>
-			<pose frame="">0.18077909562930847 0.06490793509010383 0.7000189040829911 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.04678255835713114</mass>
-				<inertia>
-					<ixx>0.023127049970576203</ixx>
-					<ixy>-0.000548946437063391</ixy>
-					<ixz>-0.005920275891382745</ixz>
-					<iyy>0.02445885777769733</iyy>
-					<iyz>-0.0021256488862038438</iyz>
-					<izz>0.0017312628234954627</izz>
-				</inertia>
-			</inertial>
-			<collision name="shoulder_left_link2_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/shoulder_left_link2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="shoulder_left_link2_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/shoulder_left_link2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="elbow_left_link1">
-			<self_collide>false</self_collide>
-			<pose frame="">0.22077909562923928 0.09090793509010696 0.437018904082981 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.0697903813480181</mass>
-				<inertia>
-					<ixx>0.013917365071566613</ixx>
-					<ixy>-0.0014007328524469267</ixy>
-					<ixz>-0.0067336997093007354</ixz>
-					<iyy>0.01674242083368397</iyy>
-					<iyz>-0.0027726661998714753</iyz>
-					<izz>0.003990233729513199</izz>
-				</inertia>
-			</inertial>
-			<collision name="elbow_left_link1_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/elbow_left_link1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="elbow_left_link1_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/elbow_left_link1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="elbow_left_link2">
-			<self_collide>false</self_collide>
-			<pose frame="">0.22077909562924228 0.09090793509010704 0.437018904082981 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.04678255835713113</mass>
-				<inertia>
-					<ixx>0.009326675668917664</ixx>
-					<ixy>-0.0009389526915690209</ixy>
-					<ixz>-0.004513798227278331</ixz>
-					<iyy>0.01122039416565951</iyy>
-					<iyz>-0.0018586002224791661</iyz>
-					<izz>0.0026722256951792244</izz>
-				</inertia>
-			</inertial>
-			<collision name="elbow_left_link2_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/elbow_left_link2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="elbow_left_link2_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/elbow_left_link2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="wrist_left_link1">
-			<self_collide>false</self_collide>
-			<pose frame="">0.26627909562923885 0.07390793509011037 0.16901890408298126 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.06979038134801814</mass>
-				<inertia>
-					<ixx>0.0023865980990384135</ixx>
-					<ixy>-0.0013734843440707217</ixy>
-					<ixz>-0.0031409999254738905</ixz>
-					<iyy>0.006953832371751661</iyy>
-					<iyz>-0.0008718101511550842</iyz>
-					<izz>0.0053413251174183485</izz>
-				</inertia>
-			</inertial>
-			<collision name="wrist_left_link1_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/wrist_left_link1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="wrist_left_link1_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/wrist_left_link1.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="wrist_left_link2">
-			<self_collide>false</self_collide>
-			<pose frame="">0.2662790956292419 0.07390793509011033 0.169018904082984 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.04678255835713115</mass>
-				<inertia>
-					<ixx>0.0015972612657379286</ixx>
-					<ixy>-0.0009206872098703605</ixy>
-					<ixz>-0.0021055052211346567</ixz>
-					<iyy>0.004658813585224858</iyy>
-					<iyz>-0.0005844001492035248</iyz>
-					<izz>0.0035779022437181867</izz>
-				</inertia>
-			</inertial>
-			<collision name="wrist_left_link2_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/wrist_left_link2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="wrist_left_link2_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/wrist_left_link2.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="arm_left_upper">
-			<self_collide>false</self_collide>
-			<pose frame="">0.2162397825464516 0.08717470687284044 0.474580238551713 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>2.0</mass>
-				<inertia>
-					<ixx>0.02793525054980266</ixx>
-					<ixy>-0.0021907104988883944</ixy>
-					<ixz>-0.01175768748034964</ixz>
-					<iyy>0.03246740586200936</iyy>
-					<iyz>-0.0046874002961990405</iyz>
-					<izz>0.006331747557804085</izz>
-				</inertia>
-			</inertial>
-			<collision name="arm_left_upper_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/arm_left_upper.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="arm_left_upper_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/arm_left_upper.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="arm_left_lower">
-			<self_collide>false</self_collide>
-			<pose frame="">0.2609542815299026 0.07631589663805266 0.20729433038488854 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>1.5</mass>
-				<inertia>
-					<ixx>0.0066863792016505115</ixx>
-					<ixy>-0.002294562053964195</ixy>
-					<ixz>-0.006122953136491078</ixz>
-					<iyy>0.013901718009694418</iyy>
-					<iyz>-0.0018939654401127915</iyz>
-					<izz>0.008593441282457055</izz>
-				</inertia>
-			</inertial>
-			<collision name="arm_left_lower_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/arm_left_lower.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="arm_left_lower_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/arm_left_lower.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="hand_left">
-			<self_collide>false</self_collide>
-			<pose frame="">0.27653519146500827 0.07390765964322617 0.16901913117660994 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.5</mass>
-				<inertia>
-					<ixx>0.0005622818231408339</ixx>
-					<ixy>-0.00033754024859741674</ixy>
-					<ixz>-0.0007719195821289069</ixz>
-					<iyy>0.001735465190983193</iyy>
-					<iyz>-0.00020630562661710128</iyz>
-					<izz>0.0013538779291615921</izz>
-				</inertia>
-			</inertial>
-			<collision name="hand_left_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/hand_left.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="hand_left_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/hand_left.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/base.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -322,23 +35,23 @@
 		</link>
 		<link name="motor0">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.15961394589305974 -1.4837830823469722 -0.4150209145201808 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.015845447389059037 -0.002960060762676503 0.1070911341135532 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729665227556</mass>
+				<mass>0.43629459845139135</mass>
 				<inertia>
-					<ixx>0.1954490060380128</ixx>
-					<ixy>-0.019494691043757666</ixy>
-					<ixz>-0.005455176090205054</ixz>
-					<iyy>0.01630461916189472</iyy>
-					<iyz>-0.05067704979872532</iyz>
-					<izz>0.18334979209292157</izz>
+					<ixx>0.005704479485529596</ixx>
+					<ixy>-5.39600982427005e-05</ixy>
+					<ixz>0.0007647920148924098</ixz>
+					<iyy>0.005867057501025582</iyy>
+					<iyz>0.0001712835467593431</iyz>
+					<izz>0.0005066875563435714</izz>
 				</inertia>
 			</inertial>
 			<collision name="motor0_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor0.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -346,7 +59,7 @@
 			<visual name="motor0_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor0.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -354,23 +67,23 @@
 		</link>
 		<link name="motor1">
 			<self_collide>false</self_collide>
-			<pose frame="">0.23257330841991966 -1.4221566753171129 -0.415020914387245 0.0 -0.0 0.0</pose>
+			<pose frame="">0.4422526020721498 0.24325954839310232 0.10691969518804309 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729785162337</mass>
+				<mass>0.4363809929153096</mass>
 				<inertia>
-					<ixx>0.1807078468393261</ixx>
-					<ixy>0.027230313814513643</ixy>
-					<ixz>0.007939708490801344</ixz>
-					<iyy>0.018661093331227743</iyy>
-					<iyz>-0.04857295302980304</iyz>
-					<izz>0.1709651066683428</izz>
+					<ixx>0.031580994814732866</ixx>
+					<ixy>-0.0469546695916107</ixy>
+					<ixz>-0.020650879709634893</ixz>
+					<iyy>0.09102230859297562</iyy>
+					<iyz>-0.011311485518812408</iyz>
+					<izz>0.11156588382429838</izz>
 				</inertia>
 			</inertial>
 			<collision name="motor1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor1.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -378,7 +91,7 @@
 			<visual name="motor1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor1.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -386,23 +99,23 @@
 		</link>
 		<link name="motor2">
 			<self_collide>false</self_collide>
-			<pose frame="">0.58638394056471 -1.265350789333011 -0.41502091443155353 0.0 -0.0 0.0</pose>
+			<pose frame="">0.45809694305981424 0.7630758369911415 0.10691980681415961 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729747387144</mass>
+				<mass>0.43637989704911995</mass>
 				<inertia>
-					<ixx>0.14601680021354385</ixx>
-					<ixy>0.061083750165110064</ixy>
-					<ixz>0.020024004991755728</ixz>
-					<iyy>0.042515460908058224</iyy>
-					<iyz>-0.04321806270663767</iyz>
-					<izz>0.1601284277435439</izz>
+					<ixx>0.2597974619033026</ixx>
+					<ixy>-0.15250081840963697</ixy>
+					<ixz>-0.0214152137391521</ixz>
+					<iyy>0.09730520981059797</iyy>
+					<iyz>-0.03559828955432776</iyz>
+					<izz>0.3460652352058029</izz>
 				</inertia>
 			</inertial>
 			<collision name="motor2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor2.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -410,7 +123,7 @@
 			<visual name="motor2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor2.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -418,23 +131,23 @@
 		</link>
 		<link name="motor3">
 			<self_collide>false</self_collide>
-			<pose frame="">0.8875544180836998 -1.022315004360896 -0.41502091444791483 0.0 -0.0 0.0</pose>
+			<pose frame="">0.015845676319101058 1.0367364034033846 0.10709166412197565 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729713170418</mass>
+				<mass>0.43628953344146976</mass>
 				<inertia>
-					<ixx>0.10024729014679647</ixx>
-					<ixy>0.0746986387565248</ixy>
-					<ixz>0.03031059144014415</ixz>
-					<iyy>0.07906013849168987</iyy>
-					<iyz>-0.0349179898218747</iyz>
-					<izz>0.1509035953761763</izz>
+					<ixx>0.47463438076278264</ixx>
+					<ixy>-0.007200764698140614</ixy>
+					<ixz>-0.000764802695559814</ixz>
+					<iyy>0.005867029647524154</iyy>
+					<iyz>-0.048472385233820164</iyz>
+					<izz>0.46943660945962284</izz>
 				</inertia>
 			</inertial>
 			<collision name="motor3_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor3.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor3.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -442,7 +155,7 @@
 			<visual name="motor3_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor3.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor3.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -450,23 +163,23 @@
 		</link>
 		<link name="motor4">
 			<self_collide>false</self_collide>
-			<pose frame="">1.1155604705821882 -0.7096118075162903 -0.4150209144458828 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.44225424449694933 0.7905171502081413 0.10692005111233298 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729711800862</mass>
+				<mass>0.43633130265901054</mass>
 				<inertia>
-					<ixx>0.05566302453043872</ixx>
-					<ixy>0.06517059958514165</ixy>
-					<ixz>0.03809845413385201</ixz>
-					<iyy>0.11666007579932021</iyy>
-					<iyz>-0.02423837072610677</iyz>
-					<izz>0.14391926707244077</izz>
+					<ixx>0.2784284732072221</ixx>
+					<ixy>0.15253772988110678</ixy>
+					<ixz>0.020648671430114215</ixz>
+					<iyy>0.09101265308110286</iyy>
+					<iyz>-0.03691809321595001</iyz>
+					<izz>0.35840480753636467</izz>
 				</inertia>
 			</inertial>
 			<collision name="motor4_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor4.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor4.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -474,7 +187,7 @@
 			<visual name="motor4_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor4.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor4.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -482,23 +195,23 @@
 		</link>
 		<link name="motor5">
 			<self_collide>false</self_collide>
-			<pose frame="">1.2548638625215573 -0.34855140493324094 -0.41502091451463313 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.45809600274610035 0.27070016510579153 0.10691944897857551 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729671347992</mass>
+				<mass>0.4363690901435038</mass>
 				<inertia>
-					<ixx>0.02421006917174091</ixx>
-					<ixy>0.03600950692268823</ixy>
-					<ixz>0.042856862830796885</ixz>
-					<iyy>0.14384517594593763</iyy>
-					<iyz>-0.011907003588606758</iyz>
-					<izz>0.13965141199035708</izz>
+					<ixx>0.0376764492785796</ixx>
+					<ixy>0.054153996184430724</ixy>
+					<ixz>0.021414565216775008</ixz>
+					<iyy>0.09730239860386165</iyy>
+					<iyz>-0.012634919165036302</iyz>
+					<izz>0.1239417279563606</izz>
 				</inertia>
 			</inertial>
 			<collision name="motor5_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor5.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor5.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -506,419 +219,52 @@
 			<visual name="motor5_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor5.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/motor5.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="motor6">
+		<link name="box">
 			<self_collide>false</self_collide>
-			<pose frame="">1.2959712977989029 0.036260533649195376 -0.4150209145201788 0.0 -0.0 0.0</pose>
+			<pose frame="">3.6987060335515945e-05 0.5001199924802076 0.08822286690177963 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.0823072966522758</mass>
+				<mass>1.9759674075483924</mass>
 				<inertia>
-					<ixx>0.014315927921432985</ixx>
-					<ixy>-0.003866184299175448</ixy>
-					<ixz>0.04426154018599078</ixz>
-					<iyy>0.15247878376021504</iyy>
-					<iyz>0.0012357491327068607</iyz>
-					<izz>0.13839087857466206</izz>
+					<ixx>0.5140518745430102</ixx>
+					<ixy>-3.3351428118892794e-05</ixy>
+					<ixz>-9.755909896797407e-06</ixz>
+					<iyy>0.019824299044768273</iyy>
+					<iyz>-0.08719715331855628</iyz>
+					<izz>0.49794885650845067</izz>
 				</inertia>
 			</inertial>
-			<collision name="motor6_collision">
+			<collision name="box_collision">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor6.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/box.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="motor6_visual">
+			<visual name="box_visual">
 				<geometry>
 					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor6.stl</uri>
+						<uri>model://VRpuppet/meshes/CAD/box.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="motor7">
-			<self_collide>false</self_collide>
-			<pose frame="">1.2360813725456945 0.41859971043204885 -0.4150209143872424 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729791585123</mass>
-				<inertia>
-					<ixx>0.028631418642994504</ixx>
-					<ixy>-0.04259442137182156</ixy>
-					<ixz>0.04221676027297695</ixz>
-					<iyy>0.13999598658891765</iyy>
-					<iyz>0.014294230877206323</iyz>
-					<izz>0.14022357170777844</izz>
-				</inertia>
-			</inertial>
-			<collision name="motor7_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor7.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="motor7_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor7.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="motor8">
-			<self_collide>false</self_collide>
-			<pose frame="">1.0792754865615801 0.7724103425768377 -0.41502091443155287 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729718839874</mass>
-				<inertia>
-					<ixx>0.06332040892538632</ixx>
-					<ixy>-0.06862821512395866</ixy>
-					<ixz>0.03686186982096071</ixz>
-					<iyy>0.1101080153875266</iyy>
-					<iyz>0.02637852725067415</iyz>
-					<izz>0.14502459103229598</izz>
-				</inertia>
-			</inertial>
-			<collision name="motor8_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor8.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="motor8_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor8.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="motor9">
-			<self_collide>false</self_collide>
-			<pose frame="">0.8362397015894353 1.0735808200958035 -0.41502091444791617 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.0823072971317042</mass>
-				<inertia>
-					<ixx>0.1090877279741889</ixx>
-					<ixy>-0.07390936987242522</ixy>
-					<ixz>0.02856179708753074</ixz>
-					<iyy>0.07178286460319029</iyy>
-					<iyz>0.03666511376123685</iyz>
-					<izz>0.15246675931506945</izz>
-				</inertia>
-			</inertial>
-			<collision name="motor9_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor9.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="motor9_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor9.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="motor10">
-			<self_collide>false</self_collide>
-			<pose frame="">0.5235365047448123 1.3015868725942614 -0.4150209144458783 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729711800873</mass>
-				<inertia>
-					<ixx>0.15366981725647114</ixx>
-					<ixy>-0.056101435066266504</ixy>
-					<ixz>0.01788217799285131</ixz>
-					<iyy>0.036776920074991434</iyy>
-					<iyz>0.04445297645385545</iyz>
-					<izz>0.16204290407414487</izz>
-				</inertia>
-			</inertial>
-			<collision name="motor10_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor10.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="motor10_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor10.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="motor11">
-			<self_collide>false</self_collide>
-			<pose frame="">0.16247610216176228 1.4408902645382644 -0.41502091451462975 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729671348162</mass>
-				<inertia>
-					<ixx>0.18512075770486444</ixx>
-					<ixy>-0.01927854645615867</ixy>
-					<ixz>0.00555081088553821</ixz>
-					<iyy>0.016383501405961357</iyy>
-					<iyz>0.04921138512077989</iyz>
-					<izz>0.17310042598350406</izz>
-				</inertia>
-			</inertial>
-			<collision name="motor11_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor11.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="motor11_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor11.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="motor12">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.22233583642068183 1.4819976998114401 -0.41502091452017953 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729665223203</mass>
-				<inertia>
-					<ixx>0.1950131845223458</ixx>
-					<ixy>0.027118702401607277</ixy>
-					<ixz>-0.00759194183112989</ixz>
-					<iyy>0.018276423168218713</iyy>
-					<iyz>0.05061606247116418</iyz>
-					<izz>0.1848857745835936</izz>
-				</inertia>
-			</inertial>
-			<collision name="motor12_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor12.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="motor12_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor12.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="motor13">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.6046750132035373 1.4221077745557884 -0.41502091438722316 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.08230729778739827</mass>
-				<inertia>
-					<ixx>0.1806963988460359</ixx>
-					<ixy>0.0707838257275863</ixy>
-					<ixz>-0.020650423639268677</ixz>
-					<iyy>0.04430323461811527</iyy>
-					<iyz>0.048571282578412006</iyz>
-					<izz>0.1965957999838652</izz>
-				</inertia>
-			</inertial>
-			<collision name="motor13_collision">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/collisions/motor13.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="motor13_visual">
-				<geometry>
-					<mesh>
-						<uri>model://VRpuppet/meshes/visuals/motor13.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<joint name="motor4" type="prismatic">
-			<parent>base</parent>
-			<child>motor4</child>
-			<pose frame="">0.020960102475239068 0.01607043437548711 0.015053763032418887 0 0 0</pose>
-			<axis>
-				<xyz>-2.0860407414937908e-16 1.926544012340239e-16 -0.9999999999999984</xyz>
-				<limit>
-					<lower>-1.999999999999997</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="shoulder_left_axis0" type="revolute">
-			<parent>base</parent>
-			<child>shoulder_left_link1</child>
-			<pose frame="">3.801403636316536e-15 -1.5987211554602254e-16 1.4210854715202005e-15 0 0 0</pose>
-			<axis>
-				<xyz>-2.530475828876892e-13 1.3512842414025931e-14 -1.0000000000000047</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="shoulder_left_axis2" type="revolute">
-			<parent>shoulder_left_link2</parent>
-			<child>arm_left_upper</child>
-			<pose frame="">-0.035460686917143214 -0.0222667717827368 0.2254386655312782 0 0 0</pose>
-			<axis>
-				<xyz>0.9999999999999998 -1.0267234056412008e-16 -2.507299923237837e-13</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="shoulder_left_axis1" type="revolute">
-			<parent>shoulder_left_link1</parent>
-			<child>shoulder_left_link2</child>
-			<pose frame="">-3.0198066269804257e-15 -1.7763568394002506e-16 -2.842170943040401e-16 0 0 0</pose>
-			<axis>
-				<xyz>-8.544045600203712e-17 -1.0000000000000022 -1.4012442775107327e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="wrist_left_axis0" type="revolute">
-			<parent>arm_left_lower</parent>
-			<child>wrist_left_link1</child>
-			<pose frame="">2.877698079828406e-15 -4.3520742565306136e-16 1.7053025658242404e-15 0 0 0</pose>
-			<axis>
-				<xyz>-2.5304758288768547e-13 1.3519781307929614e-14 -1.0000000000000047</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="wrist_left_axis2" type="revolute">
-			<parent>wrist_left_link2</parent>
-			<child>hand_left</child>
-			<pose frame="">-0.010256095835766388 2.7544688399494535e-07 -2.270936258241818e-07 0 0 0</pose>
-			<axis>
-				<xyz>0.9999999999999983 -3.3283401589037034e-17 -2.507299923237839e-13</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="wrist_left_axis1" type="revolute">
-			<parent>wrist_left_link1</parent>
-			<child>wrist_left_link2</child>
-			<pose frame="">-3.0198066269804257e-15 -1.5987211554602254e-16 -2.948752353404416e-15 0 0 0</pose>
-			<axis>
-				<xyz>-1.6051516946001187e-17 -1.0 -1.4074892820242177e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_left_axis0" type="revolute">
-			<parent>arm_left_upper</parent>
-			<child>elbow_left_link1</child>
-			<pose frame="">2.913225216616411e-15 -2.486899575160351e-16 -1.3500311979441904e-15 0 0 0</pose>
-			<axis>
-				<xyz>-2.530475828876892e-13 1.35059035201217e-14 -1.0000000000000047</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_left_axis2" type="revolute">
-			<parent>elbow_left_link2</parent>
-			<child>arm_left_lower</child>
-			<pose frame="">-0.04017518590066036 0.014592038452054217 0.22972457369809252 0 0 0</pose>
-			<axis>
-				<xyz>0.9999999999999983 -8.879455281984364e-17 -2.5072999232378374e-13</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="elbow_left_axis1" type="revolute">
-			<parent>elbow_left_link1</parent>
-			<child>elbow_left_link2</child>
-			<pose frame="">-2.913225216616411e-15 -2.3092638912203257e-16 -1.4210854715202004e-16 0 0 0</pose>
-			<axis>
-				<xyz>-7.156266817765029e-17 -1.0 -1.403325945681873e-14</xyz>
-				<limit>
-					<lower>-3.141592653589793</lower>
-					<upper>3.141592653589793</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
 		<joint name="motor0" type="prismatic">
 			<parent>base</parent>
 			<child>motor0</child>
-			<pose frame="">0.02439745563018148 -0.010116763948288395 0.015053763106716219 0 0 0</pose>
+			<pose frame="">0.015845447389059037 0.007460060762676544 -0.10705828552701745 0 0 0</pose>
 			<axis>
-				<xyz>-4.7301024612873397e-32 -6.04764452045922e-19 -1.0</xyz>
+				<xyz>-1.7516230804060213e-46 0.0 -1.0</xyz>
 				<limit>
-					<lower>-2.0</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor1" type="prismatic">
-			<parent>base</parent>
-			<child>motor1</child>
-			<pose frame="">0.026184543774941744 -0.0034575175532344815 0.015053762973780138 0 0 0</pose>
-			<axis>
-				<xyz>-4.062754208494406e-17 1.665137133219758e-16 -0.9999999999999998</xyz>
-				<limit>
-					<lower>-1.9999999999999993</lower>
+					<lower>-0.79</lower>
 					<upper>0.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
@@ -927,11 +273,24 @@
 		<joint name="motor2" type="prismatic">
 			<parent>base</parent>
 			<child>motor2</child>
-			<pose frame="">0.026187198421334087 0.003437353163207604 0.015053763018088731 0 0 0</pose>
+			<pose frame="">-0.014355765466881821 0.01000642801025549 -0.10688695822762215 0 0 0</pose>
 			<axis>
-				<xyz>-4.8166985405603936e-17 -2.7857852695986646e-17 -0.9999999999999987</xyz>
+				<xyz>-4.564032648851929e-15 6.759967440614182e-16 -1.0</xyz>
 				<limit>
-					<lower>-1.9999999999999978</lower>
+					<lower>-0.79</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="motor1" type="prismatic">
+			<parent>base</parent>
+			<child>motor1</child>
+			<pose frame="">0.0014885755207797047 0.01743453994069629 -0.10688684660150653 0 0 0</pose>
+			<axis>
+				<xyz>-5.071147387613207e-16 1.4842458363327e-15 -1.0</xyz>
+				<limit>
+					<lower>-0.79</lower>
 					<upper>0.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
@@ -940,50 +299,11 @@
 		<joint name="motor3" type="prismatic">
 			<parent>base</parent>
 			<child>motor3</child>
-			<pose frame="">0.024405238766372152 0.010097973903090463 0.01505376303445047 0 0 0</pose>
+			<pose frame="">-0.015845676319095798 -0.007460050068185211 -0.10705881553544287 0 0 0</pose>
 			<axis>
-				<xyz>-5.2045670386102756e-17 7.136805119196542e-17 -0.9999999999999982</xyz>
+				<xyz>7.713980309253913e-16 -4.998218758884115e-15 -1.0</xyz>
 				<limit>
-					<lower>-1.9999999999999967</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor8" type="prismatic">
-			<parent>base</parent>
-			<child>motor8</child>
-			<pose frame="">-0.0034373531632186883 0.026187198421325348 0.01505376301809143 0 0 0</pose>
-			<axis>
-				<xyz>1.8488438998171978e-16 4.0240008776051616e-16 -0.9999999999999941</xyz>
-				<limit>
-					<lower>-1.9999999999999887</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor10" type="prismatic">
-			<parent>base</parent>
-			<child>motor10</child>
-			<pose frame="">-0.016070434375487254 0.02096010247524191 0.015053763032416826 0 0 0</pose>
-			<axis>
-				<xyz>3.5380063018408127e-16 6.185816165589511e-16 -0.9999999999999949</xyz>
-				<limit>
-					<lower>-1.9999999999999898</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor6" type="prismatic">
-			<parent>base</parent>
-			<child>motor6</child>
-			<pose frame="">0.010116763948291236 0.024397455630181974 0.015053763106715579 0 0 0</pose>
-			<axis>
-				<xyz>-1.6126262773521998e-16 2.2384594959530944e-16 -0.9999999999999959</xyz>
-				<limit>
-					<lower>-1.9999999999999918</lower>
+					<lower>-0.79</lower>
 					<upper>0.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
@@ -992,81 +312,29 @@
 		<joint name="motor5" type="prismatic">
 			<parent>base</parent>
 			<child>motor5</child>
-			<pose frame="">0.016086569751473122 0.020947721304713198 0.015053763101169225 0 0 0</pose>
+			<pose frame="">0.014354825153172825 -0.01000607677198886 -0.10688660039203769 0 0 0</pose>
 			<axis>
-				<xyz>-4.930621149851313e-16 2.528746432933897e-16 -0.9999999999999961</xyz>
+				<xyz>6.035394926270176e-16 1.9852835547407376e-15 -1.0</xyz>
 				<limit>
-					<lower>-1.9999999999999922</lower>
+					<lower>-0.79</lower>
 					<upper>0.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="motor11" type="prismatic">
+		<joint name="motor4" type="prismatic">
 			<parent>base</parent>
-			<child>motor11</child>
-			<pose frame="">-0.020947721304717195 0.016086569746829014 0.01505376310116823 0 0 0</pose>
+			<child>motor4</child>
+			<pose frame="">-0.0014869330959756866 -0.017434885206740632 -0.10688720252579445 0 0 0</pose>
 			<axis>
-				<xyz>3.3363597454277215e-16 5.744564178373285e-16 -0.9999999999999944</xyz>
+				<xyz>5.431855433643031e-15 1.5110596080747193e-15 -1.0</xyz>
 				<limit>
-					<lower>-1.999999999999989</lower>
+					<lower>-0.79</lower>
 					<upper>0.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="motor13" type="prismatic">
-			<parent>base</parent>
-			<child>motor13</child>
-			<pose frame="">-0.02618454377493869 0.003457517555192169 0.015053762973783053 0 0 0</pose>
-			<axis>
-				<xyz>-5.477802642445066e-14 5.346550208593059e-15 -0.9999999999999949</xyz>
-				<limit>
-					<lower>-1.9999999999999898</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor7" type="prismatic">
-			<parent>base</parent>
-			<child>motor7</child>
-			<pose frame="">0.003457517553232066 0.026184543774942313 0.015053762973779854 0 0 0</pose>
-			<axis>
-				<xyz>1.6871928833206562e-16 3.768618882203649e-16 -0.9999999999999952</xyz>
-				<limit>
-					<lower>-1.9999999999999902</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor12" type="prismatic">
-			<parent>base</parent>
-			<child>motor12</child>
-			<pose frame="">-0.024397455630180184 0.010116763947798405 0.01505376310671771 0 0 0</pose>
-			<axis>
-				<xyz>-5.4798630409153044e-14 5.389079539532698e-15 -0.9999999999999951</xyz>
-				<limit>
-					<lower>-1.9999999999999902</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<joint name="motor9" type="prismatic">
-			<parent>base</parent>
-			<child>motor9</child>
-			<pose frame="">-0.01009797390310041 0.024405238766363625 0.015053763034454874 0 0 0</pose>
-			<axis>
-				<xyz>3.4148904639639373e-16 6.126933412190465e-16 -0.9999999999999952</xyz>
-				<limit>
-					<lower>-1.9999999999999902</lower>
-					<upper>0.0</upper>
-				</limit>
-				<use_parent_model_frame>0</use_parent_model_frame>
-			</axis>
-		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin" />
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
 	</model>
 </sdf>
