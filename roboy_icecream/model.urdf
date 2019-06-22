@@ -90,27 +90,6 @@
     <axis xyz="-0.99215 -0.12498  0" />
     <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0" />
   </joint>
-  <joint name="zed_camera_mount" type="revolute">
-    <parent link="head" />
-    <child link="zed_camera" />
-    <origin rpy="0 0 0" xyz="0.02168 -0.05805  0.21956" />
-    <axis xyz="0 0 0" />
-    <limit effort="0" lower="0" upper="0" velocity="0" />
-  </joint>
-  <joint name="zed_camera_right" type="revolute">
-    <parent link="zed_camera" />
-    <child link="zed_camera_right_lense" />
-    <origin rpy="0 0 0" xyz="-0.08149 -0.00191 -0.00782" />
-    <axis xyz="0 0 0" />
-    <limit effort="0" lower="0" upper="0" velocity="0" />
-  </joint>
-  <joint name="zed_camera_left" type="revolute">
-    <parent link="zed_camera" />
-    <child link="zed_camera_left_lense" />
-    <origin rpy="0 0 0" xyz="0.03848 -0.00154 -0.00782" />
-    <axis xyz="0 0 0" />
-    <limit effort="0" lower="0" upper="0" velocity="0" />
-  </joint>
   <joint name="hand_right_ring_joint1" type="revolute">
     <parent link="hand_right_ring_link0" />
     <child link="hand_right_ring_link1" />
@@ -1220,63 +1199,6 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
         <mesh filename="package://robots/roboy_icecream/meshes/visuals/wrist_right_link2.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="zed_camera_left_lense">
-    <inertial>
-      <mass value="0.005755421856391889" />
-      <origin rpy="0 0 0" xyz="5.000e-05 -1.107e-02  2.350e-03" />
-      <inertia ixx="0.004949985508986997" ixy="2.3967379469334992e-05" ixz="-0.00032054048486266214" iyy="0.004943160949602587" iyz="0.00036806516895399434" izz="4.8783846074335874e-05" />
-    </inertial>
-    <collision name="zed_camera_left_lense_collision">
-      <origin rpy="0 0 0" xyz="5.000e-05 -1.107e-02  2.350e-03" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/collisions/zed_camera_left_lense.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="zed_camera_left_lense_visual">
-      <origin rpy="0 0 0" xyz="5.000e-05 -1.107e-02  2.350e-03" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/visuals/zed_camera_left_lense.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="zed_camera_right_lense">
-    <inertial>
-      <mass value="0.005755421855125979" />
-      <origin rpy="0 0 0" xyz="3.000e-05 -1.107e-02  2.350e-03" />
-      <inertia ixx="0.004950286385593239" ixy="-2.3918213389687756e-05" ixz="0.00031816335310091417" iyy="0.004942852518457872" iyz="0.00037007172279470996" izz="4.877629449989437e-05" />
-    </inertial>
-    <collision name="zed_camera_right_lense_collision">
-      <origin rpy="0 0 0" xyz="3.000e-05 -1.107e-02  2.350e-03" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/collisions/zed_camera_right_lense.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="zed_camera_right_lense_visual">
-      <origin rpy="0 0 0" xyz="3.000e-05 -1.107e-02  2.350e-03" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/visuals/zed_camera_right_lense.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="zed_camera">
-    <inertial>
-      <mass value="0.009633907989226696" />
-      <origin rpy="0 0 0" xyz="-0.01743 -0.0014  -0.00805" />
-      <inertia ixx="0.008225718793064217" ixy="2.436533895216616e-06" ixz="-3.772847951396886e-05" iyy="0.008208224332339191" iyz="0.0005146961428966748" izz="4.725323656366557e-05" />
-    </inertial>
-    <collision name="zed_camera_collision">
-      <origin rpy="0 0 0" xyz="-0.01743 -0.0014  -0.00805" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/collisions/zed_camera.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="zed_camera_visual">
-      <origin rpy="0 0 0" xyz="-0.01743 -0.0014  -0.00805" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/visuals/zed_camera.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>

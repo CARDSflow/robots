@@ -1472,102 +1472,6 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="zed_camera_left_lense">
-			<self_collide>false</self_collide>
-			<pose frame="">0.060224029002958875 -0.06914536611449576 0.9247742812708074 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.005755421856391889</mass>
-				<inertia>
-					<ixx>0.004949985508986997</ixx>
-					<ixy>2.3967379469334992e-05</ixy>
-					<ixz>-0.00032054048486266214</ixz>
-					<iyy>0.004943160949602587</iyy>
-					<iyz>0.00036806516895399434</iyz>
-					<izz>4.8783846074335874e-05</izz>
-				</inertia>
-			</inertial>
-			<collision name="zed_camera_left_lense_collision">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/collisions/zed_camera_left_lense.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="zed_camera_left_lense_visual">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/visuals/zed_camera_left_lense.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="zed_camera_right_lense">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.05977745584801775 -0.06952236314727905 0.924774281233249 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.005755421855125979</mass>
-				<inertia>
-					<ixx>0.004950286385593239</ixx>
-					<ixy>-2.3918213389687756e-05</ixy>
-					<ixz>0.00031816335310091417</ixz>
-					<iyy>0.004942852518457872</iyy>
-					<iyz>0.00037007172279470996</iyz>
-					<izz>4.877629449989437e-05</izz>
-				</inertia>
-			</inertial>
-			<collision name="zed_camera_right_lense_collision">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/collisions/zed_camera_right_lense.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="zed_camera_right_lense_visual">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/visuals/zed_camera_right_lense.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="zed_camera">
-			<self_collide>false</self_collide>
-			<pose frame="">0.0042444847902519045 -0.057938621286605034 0.9221942136470952 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.009633907989226696</mass>
-				<inertia>
-					<ixx>0.008225718793064217</ixx>
-					<ixy>2.436533895216616e-06</ixy>
-					<ixz>-3.772847951396886e-05</ixz>
-					<iyy>0.008208224332339191</iyy>
-					<iyz>0.0005146961428966748</iyz>
-					<izz>4.725323656366557e-05</izz>
-				</inertia>
-			</inertial>
-			<collision name="zed_camera_collision">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/collisions/zed_camera.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="zed_camera_visual">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/visuals/zed_camera.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
 		<link name="neck_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">-1.506123290725299e-10 0.0015217809344427139 0.7106779292283452 0.0 -0.0 0.0</pose>
@@ -1800,21 +1704,6 @@
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
-		</joint>
-		<joint name="zed_camera_mount" type="fixed">
-			<parent>head</parent>
-			<child>zed_camera</child>
-			<pose frame="">0.017437654685091123 0.001405588958414743 0.008052233827783938 0 0 0</pose>
-		</joint>
-		<joint name="zed_camera_right" type="fixed">
-			<parent>zed_camera</parent>
-			<child>zed_camera_right_lense</child>
-			<pose frame="">-3.477806617303791e-05 0.011070006217811663 -0.002353014092106349 0 0 0</pose>
-		</joint>
-		<joint name="zed_camera_left" type="fixed">
-			<parent>zed_camera</parent>
-			<child>zed_camera_left_lense</child>
-			<pose frame="">-5.4665509118771995e-05 0.011069943702269302 -0.002353014260490625 0 0 0</pose>
 		</joint>
 		<joint name="hand_right_ring_joint1" type="revolute">
 			<parent>hand_right_ring_link0</parent>
