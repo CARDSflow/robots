@@ -1,13 +1,13 @@
 joint_names: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left','wrist_left_axis0','wrist_left_axis1','wrist_left_axis2',
               'shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right_axis0','wrist_right_axis1','wrist_right_axis2',
               'neck_axis0','neck_axis1','neck_axis2']
-endeffectors: ['head','hand_left', 'hand_right']
+endeffectors: ['head','arm_left_palm', 'arm_right_palm']
 head:
   base_link: 'torso'
   joints: ['neck_axis0','neck_axis1','neck_axis2']
-hand_left:
+arm_left_palm:
   base_link: 'torso'
   joints: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left','wrist_left_axis0','wrist_left_axis1','wrist_left_axis2']
-hand_right:
+arm_right_palm:
   base_link: 'torso'
   joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right_axis0','wrist_right_axis1','wrist_right_axis2']

@@ -1,0 +1,14 @@
+#  These controllers are loaded by the robot.launch script, the following types are available
+#  type: cardsflow/kindyn/TorquePositionController
+#  type: cardsflow/kindyn/CableLengthController
+#  type: cardsflow/kindyn/CableLengthVelocityController
+#  type: cardsflow/kindyn/ForcePositionController
+sphere_axis0:
+  joint: sphere_axis0
+  type: cardsflow/kindyn/CableLengthController
+sphere_axis1:
+  joint: sphere_axis1
+  type: cardsflow/kindyn/CableLengthController
+sphere_axis2:
+  joint: sphere_axis2
+  type: cardsflow/kindyn/CableLengthController
