@@ -4,7 +4,7 @@ joint_names: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2',
               'hip_left_axis0', 'hip_left_axis1', 'knee_left_axis0', 'knee_left_axis1', 'joint_foot_left', 'joint_foot_left_tip',
               'hip_right_axis0', 'hip_right_axis1', 'knee_right_axis0', 'knee_right_axis1', 'joint_foot_right', 'joint_foot_right_tip'
 ]
-endeffectors: ['head','arm_right_palm', 'arm_right_palm']
+endeffectors: ['arm_right_palm', 'arm_left_palm']
 head:
   base_link: 'torso'
   joints: ['neck_axis0','neck_axis1','neck_axis2']
