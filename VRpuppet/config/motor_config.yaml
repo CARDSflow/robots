@@ -1,0 +1,7 @@
+head:
+  bodyPartID: 4
+  init_mode: 'DIRECT_PWM'
+  init_setpoint: 10
+  real_motor_ids: [0,1,2,3,4,5]
+  sim_motor_ids: [0,1,2,3,4,5]
+  motor_type: [2,2,1,1,2,2]

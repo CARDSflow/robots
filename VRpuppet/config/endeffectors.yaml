@@ -1,0 +1,5 @@
+joint_names: ['motor0', 'motor1', 'motor2', 'motor3', 'motor4', 'motor5', '6dof_axis0', '6dof_axis1', '6dof_axis2', '6dof_axis3', '6dof_axis4', '6dof_axis5']
+endeffectors: ['top']
+top:
+  base_link: 'base'
+  joints: ['6dof_axis0', '6dof_axis1', '6dof_axis2', '6dof_axis3', '6dof_axis4', '6dof_axis5']
