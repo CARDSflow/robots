@@ -1600,102 +1600,6 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="zed_camera_left_lense">
-			<self_collide>false</self_collide>
-			<pose frame="">0.060224029002958875 -0.06914536611449566 0.9297742812708069 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.005755421856391891</mass>
-				<inertia>
-					<ixx>0.005003354055639959</ixx>
-					<ixy>2.3967379469334976e-05</ixy>
-					<ixz>-0.0003222735583266803</ixz>
-					<iyy>0.004996529496255549</iyy>
-					<iyz>0.000370054972711012</iyz>
-					<izz>4.878384607433584e-05</izz>
-				</inertia>
-			</inertial>
-			<collision name="zed_camera_left_lense_collision">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/collisions/zed_camera_left_lense.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="zed_camera_left_lense_visual">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/visuals/zed_camera_left_lense.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="zed_camera_right_lense">
-			<self_collide>false</self_collide>
-			<pose frame="">-0.05977745584801778 -0.06952236314727904 0.9297742812332496 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.0057554218551259745</mass>
-				<inertia>
-					<ixx>0.0050036549322322954</ixx>
-					<ixy>-2.391821338968771e-05</ixy>
-					<ixz>0.00031988357548007145</ixz>
-					<iyy>0.004996221065096928</iyy>
-					<iyz>0.00037207237543609864</iyz>
-					<izz>4.877629449989427e-05</izz>
-				</inertia>
-			</inertial>
-			<collision name="zed_camera_right_lense_collision">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/collisions/zed_camera_right_lense.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="zed_camera_right_lense_visual">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/visuals/zed_camera_right_lense.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
-		<link name="zed_camera">
-			<self_collide>false</self_collide>
-			<pose frame="">0.004244484790251953 -0.057938621286604985 0.9271942136470953 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.009633907989226701</mass>
-				<inertia>
-					<ixx>0.008314802982788687</ixx>
-					<ixy>2.4365338952166025e-06</ixy>
-					<ixz>-3.793293439362343e-05</ixz>
-					<iyy>0.008297308522063661</iyy>
-					<iyz>0.0005174870196291635</iyz>
-					<izz>4.725323656366554e-05</izz>
-				</inertia>
-			</inertial>
-			<collision name="zed_camera_collision">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/collisions/zed_camera.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="zed_camera_visual">
-				<geometry>
-					<mesh>
-						<uri>model://roboy_icecream/meshes/visuals/zed_camera.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
 		<link name="neck_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">-1.506123287543706e-10 0.0015217809344427158 0.7156779292283452 0.0 -0.0 0.0</pose>
@@ -2510,11 +2414,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="zed_camera_mount" type="fixed">
-			<parent>head</parent>
-			<child>zed_camera</child>
-			<pose frame="">0.01743765468509108 0.001405588958414743 0.008052233827783653 0 0 0</pose>
-		</joint>
 		<joint name="wrist_left_axis0" type="revolute">
 			<parent>arm_left_lower</parent>
 			<child>wrist_left_link1</child>
@@ -2631,16 +2530,6 @@
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
-		</joint>
-		<joint name="zed_camera_right" type="fixed">
-			<parent>zed_camera</parent>
-			<child>zed_camera_right_lense</child>
-			<pose frame="">-3.4778066173002385e-05 0.011070006217811717 -0.0023530140921069176 0 0 0</pose>
-		</joint>
-		<joint name="zed_camera_left" type="fixed">
-			<parent>zed_camera</parent>
-			<child>zed_camera_left_lense</child>
-			<pose frame="">-5.466550911876311e-05 0.011069943702269311 -0.0023530142604900562 0 0 0</pose>
 		</joint>
 		<joint name="joint_foot_left" type="revolute">
 			<parent>leg_left</parent>
