@@ -339,7 +339,7 @@
     <parent link="foot_left" />
     <child link="foot_left_tip" />
     <origin rpy="0  0  0" xyz="0.024   -0.0623  -0.03622" />
-    <axis xyz="0  0  0" />
+    <axis xyz="0  0  1" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
   <joint name="joint_foot_right" type="revolute">
@@ -353,7 +353,7 @@
     <parent link="foot_right" />
     <child link="foot_right_tip" />
     <origin rpy="0  0  0" xyz="0.024 -0.063 -0.035" />
-    <axis xyz="0  0  0" />
+    <axis xyz="0  0  1" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
   <joint name="hip_right_axis0" type="revolute">

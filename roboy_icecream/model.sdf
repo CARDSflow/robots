@@ -2544,7 +2544,7 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_foot_left_tip" type="fixed">
+		<joint name="joint_foot_left_tip" type="revolute">
 			<parent>foot_left</parent>
 			<child>foot_left_tip</child>
 			<pose frame="">0.001165612913354508 0.04114953307431009 0.0050844248222531975 0 0 0</pose>
@@ -2562,7 +2562,7 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="joint_foot_right_tip" type="fixed">
+		<joint name="joint_foot_right_tip" type="revolute">
 			<parent>foot_right</parent>
 			<child>foot_right_tip</child>
 			<pose frame="">-0.0011675411604717923 0.041239823742300674 0.004279691865698254 0 0 0</pose>
