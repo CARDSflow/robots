@@ -1,0 +1,645 @@
+<robot name="roboy_icecream">
+  <joint name="shoulder_left_axis0" type="revolute">
+    <parent link="torso" />
+    <child link="shoulder_left_link1" />
+    <origin rpy="0 0 0" xyz="0.29189 0.01393 0.54489" />
+    <axis xyz="-0.99863 -0.05074  0.01234" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="shoulder_left_axis1" type="revolute">
+    <parent link="shoulder_left_link1" />
+    <child link="shoulder_left_link2" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="-0.05101  0.99844 -0.02231" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="shoulder_left_axis2" type="revolute">
+    <parent link="shoulder_left_link2" />
+    <child link="arm_left_upper" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="-0.01118 -0.0229  -0.99967" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="shoulder_right_axis0" type="revolute">
+    <parent link="torso" />
+    <child link="shoulder_right_link1" />
+    <origin rpy="0 0 0" xyz="-0.29317  0.00923  0.5481" />
+    <axis xyz="0.99863 -0.05074  0.01234" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="shoulder_right_axis1" type="revolute">
+    <parent link="shoulder_right_link1" />
+    <child link="shoulder_right_link2" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="-0.05101 -0.99844  0.02231" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="shoulder_right_axis2" type="revolute">
+    <parent link="shoulder_right_link2" />
+    <child link="arm_right_upper" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0.01118 -0.0229  -0.99967" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="zed_camera_mount" type="revolute">
+    <parent link="head" />
+    <child link="zed_camera" />
+    <origin rpy="0 0 0" xyz="0.02168 -0.05805  0.21956" />
+    <axis xyz="0 0 0" />
+    <limit effort="0" lower="-3.14" upper="3.14" velocity="0" />
+  </joint>
+  <joint name="zed_camera_right" type="revolute">
+    <parent link="zed_camera" />
+    <child link="zed_camera_right_lense" />
+    <origin rpy="0 0 0" xyz="-0.08149 -0.00191 -0.00782" />
+    <axis xyz="0 0 0" />
+    <limit effort="0" lower="-3.14" upper="3.14" velocity="0" />
+  </joint>
+  <joint name="zed_camera_left" type="revolute">
+    <parent link="zed_camera" />
+    <child link="zed_camera_left_lense" />
+    <origin rpy="0 0 0" xyz="0.03848 -0.00154 -0.00782" />
+    <axis xyz="0 0 0" />
+    <limit effort="0" lower="-3.14" upper="3.14" velocity="0" />
+  </joint>
+  <joint name="neck_axis0" type="revolute">
+    <parent link="torso" />
+    <child link="neck_link1" />
+    <origin rpy="0 0 0" xyz="0      0.00152 0.71567" />
+    <axis xyz="0.12498 -0.99215  0" />
+    <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0" />
+  </joint>
+  <joint name="neck_axis2" type="revolute">
+    <parent link="neck_link2" />
+    <child link="head" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0" />
+  </joint>
+  <joint name="neck_axis1" type="revolute">
+    <parent link="neck_link1" />
+    <child link="neck_link2" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="-0.99215 -0.12498  0" />
+    <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0" />
+  </joint>
+  <joint name="joint_foot_left" type="revolute">
+    <parent link="leg_left" />
+    <child link="foot_left" />
+    <origin rpy="0 0 0" xyz="-0.0244  0     -0.366" />
+    <axis xyz="-1  0  0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="joint_foot_left_tip" type="revolute">
+    <parent link="foot_left" />
+    <child link="foot_left_tip" />
+    <origin rpy="0 0 0" xyz="0.024   -0.0623  -0.03622" />
+    <axis xyz="0 0 0" />
+    <limit effort="0" lower="-3.14" upper="3.14" velocity="0" />
+  </joint>
+  <joint name="joint_foot_right" type="revolute">
+    <parent link="leg_right" />
+    <child link="foot_right" />
+    <origin rpy="0 0 0" xyz="-0.026  0    -0.366" />
+    <axis xyz="-1  0  0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="joint_foot_right_tip" type="revolute">
+    <parent link="foot_right" />
+    <child link="foot_right_tip" />
+    <origin rpy="0 0 0" xyz="0.024 -0.063 -0.035" />
+    <axis xyz="0 0 0" />
+    <limit effort="0" lower="-3.14" upper="3.14" velocity="0" />
+  </joint>
+  <joint name="hip_right_axis0" type="revolute">
+    <parent link="torso" />
+    <child link="hip_right_tendon_guide" />
+    <origin rpy="0 0 0" xyz="-0.1718   0.00152 -0.14299" />
+    <axis xyz="-1  0  0" />
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <joint name="hip_right_axis1" type="revolute">
+    <parent link="hip_right_tendon_guide" />
+    <child link="thigh_right" />
+    <origin rpy="0 0 0" xyz="0.0001  -0.02828 -0.02828" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <joint name="hip_left_axis0" type="revolute">
+    <parent link="torso" />
+    <child link="hip_left_tendon_guide" />
+    <origin rpy="0 0 0" xyz="0.1757   0.00152 -0.14299" />
+    <axis xyz="-1  0  0" />
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <joint name="hip_left_axis1" type="revolute">
+    <parent link="hip_left_tendon_guide" />
+    <child link="thigh_left" />
+    <origin rpy="0 0 0" xyz="0.0004  -0.02828 -0.02828" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <joint name="knee_right_axis0" type="revolute">
+    <parent link="thigh_right" />
+    <child link="knee_right_tendon_guide" />
+    <origin rpy="0 0 0" xyz="0.0058 -0.31    0" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <joint name="knee_right_axis1" type="revolute">
+    <parent link="knee_right_tendon_guide" />
+    <child link="leg_right" />
+    <origin rpy="0 0 0" xyz="-0.0004  -0.02828 -0.02828" />
+    <axis xyz="-1  0  0" />
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <joint name="knee_left_axis0" type="revolute">
+    <parent link="thigh_left" />
+    <child link="knee_left_tendon_guide" />
+    <origin rpy="0 0 0" xyz="-2.9e-04 -3.1e-01  0.0e+00" />
+    <axis xyz="-1  0  0" />
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <joint name="knee_left_axis1" type="revolute">
+    <parent link="knee_left_tendon_guide" />
+    <child link="leg_left" />
+    <origin rpy="0 0 0" xyz="0.0039  -0.02828 -0.02828" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <link name="head">
+    <inertial>
+      <mass value="2.0495740351295755" />
+      <origin rpy="0 0 0" xyz="0.00051 0.04492 0.14549" />
+      <inertia ixx="1.5567369122227626" ixy="-6.313507101654769e-05" ixz="-0.0010119595995291288" iyy="1.5459780882221035" iyz="-0.08466584811454805" izz="0.030527659727341304" />
+    </inertial>
+    <collision name="head_collision">
+      <origin rpy="0 0 0" xyz="0.00051 0.04492 0.14549" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/head.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="head_visual">
+      <origin rpy="0 0 0" xyz="0.00051 0.04492 0.14549" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/head.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="torso">
+    <inertial>
+      <mass value="25.255252368470526" />
+      <origin rpy="0 0 0" xyz="0.00119 0.0005  0.23644" />
+      <inertia ixx="3.261438455738047" ixy="-0.0009569092580896373" ixz="0.0009571519580433986" iyy="3.7687825445349534" iyz="0.012688766188387029" izz="0.643174222767752" />
+    </inertial>
+    <collision name="torso_collision">
+      <origin rpy="0 0 0" xyz="0.00119 0.0005  0.23644" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/torso.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="torso_visual">
+      <origin rpy="0 0 0" xyz="0.00119 0.0005  0.23644" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/torso.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="leg_left">
+    <inertial>
+      <mass value="5.3069086053352645" />
+      <origin rpy="0 0 0" xyz="0.0247   0      -0.17741" />
+      <inertia ixx="1.4958514962952287" ixy="0.39626126461968764" ixz="0.40407197720210775" iyy="1.0079346830005544" iyz="-0.7304668669744724" izz="0.9402349967104995" />
+    </inertial>
+    <collision name="leg_left_collision">
+      <origin rpy="0 0 0" xyz="0.0247   0      -0.17741" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/leg_left.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="leg_left_visual">
+      <origin rpy="0 0 0" xyz="0.0247   0      -0.17741" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/leg_left.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="leg_right">
+    <inertial>
+      <mass value="5.307143647531778" />
+      <origin rpy="0 0 0" xyz="-0.02811  0      -0.17741" />
+      <inertia ixx="1.4959067826097439" ixy="-0.376381226304725" ixz="-0.3840964982466324" iyy="0.9868335594143278" iyz="-0.7302141353671603" izz="0.9191322833570323" />
+    </inertial>
+    <collision name="leg_right_collision">
+      <origin rpy="0 0 0" xyz="-0.02811  0      -0.17741" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/leg_right.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="leg_right_visual">
+      <origin rpy="0 0 0" xyz="-0.02811  0      -0.17741" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/leg_right.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="thigh_right">
+    <inertial>
+      <mass value="4.868895609721541" />
+      <origin rpy="0 0 0" xyz="-0.025   -0.11647  0" />
+      <inertia ixx="0.262877169716753" ixy="-0.13394437957736335" ixz="-0.16432108177872964" iyy="0.3421212423736508" iyz="-0.11958770332972489" izz="0.3056754037294861" />
+    </inertial>
+    <collision name="thigh_right_collision">
+      <origin rpy="0 0 0" xyz="-0.025   -0.11647  0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/thigh_right.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="thigh_right_visual">
+      <origin rpy="0 0 0" xyz="-0.025   -0.11647  0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/thigh_right.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="thigh_left">
+    <inertial>
+      <mass value="4.8688957108641855" />
+      <origin rpy="0 0 0" xyz="0.03051 -0.11647  0" />
+      <inertia ixx="0.2628774035237147" ixy="0.14083610318444495" ixz="0.17203256927961605" iyy="0.3615745898532772" iyz="-0.11930747101919766" izz="0.32512853942534875" />
+    </inertial>
+    <collision name="thigh_left_collision">
+      <origin rpy="0 0 0" xyz="0.03051 -0.11647  0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/thigh_left.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="thigh_left_visual">
+      <origin rpy="0 0 0" xyz="0.03051 -0.11647  0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/thigh_left.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="arm_right_upper">
+    <inertial>
+      <mass value="0.2281199319638123" />
+      <origin rpy="0 0 0" xyz="0.00042 -0.00248 -0.11042" />
+      <inertia ixx="0.04557016535456511" ixy="0.0004509573182206368" ixz="0.029258910361029677" iyy="0.06510611627128385" iyz="-0.0007156676417900319" izz="0.01959555863496721" />
+    </inertial>
+    <collision name="arm_right_upper_collision">
+      <origin rpy="0 0 0" xyz="0.00042 -0.00248 -0.11042" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/arm_right_upper.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="arm_right_upper_visual">
+      <origin rpy="0 0 0" xyz="0.00042 -0.00248 -0.11042" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/arm_right_upper.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="arm_left_upper">
+    <inertial>
+      <mass value="0.2281370871796593" />
+      <origin rpy="0 0 0" xyz="-0.00039 -0.00241 -0.1071" />
+      <inertia ixx="0.04558446856917854" ixy="-0.000766875140595447" ixz="-0.029143740859696267" iyy="0.06493631396112542" iyz="-0.0011924861365197768" izz="0.01945125999523794" />
+    </inertial>
+    <collision name="arm_left_upper_collision">
+      <origin rpy="0 0 0" xyz="-0.00039 -0.00241 -0.1071" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/arm_left_upper.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="arm_left_upper_visual">
+      <origin rpy="0 0 0" xyz="-0.00039 -0.00241 -0.1071" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/arm_left_upper.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="shoulder_left_link1">
+    <inertial>
+      <mass value="0.09036188404972213" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.02685378687433705" ixy="-0.0003675942095744657" ixz="-0.014372126974416378" iyy="0.03453525279236316" iyz="-0.0006862058794001957" izz="0.007723659313970099" />
+    </inertial>
+    <collision name="shoulder_left_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/shoulder_left_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="shoulder_left_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/shoulder_left_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="shoulder_left_link2">
+    <inertial>
+      <mass value="0.0071131701088449385" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.0021134396605301123" ixy="-2.8936797892138277e-05" ixz="-0.0011313551510287823" iyy="0.0027181145964377414" iyz="-5.401772354686376e-05" izz="0.0006075407028130095" />
+    </inertial>
+    <collision name="shoulder_left_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/shoulder_left_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="shoulder_left_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/shoulder_left_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="shoulder_right_link1">
+    <inertial>
+      <mass value="0.09036491191489954" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.027161982499601865" ixy="0.0002446351983003588" ixz="0.014520690305838616" iyy="0.03492121325205229" iyz="-0.0004573582024898006" izz="0.007781732682689985" />
+    </inertial>
+    <collision name="shoulder_right_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/shoulder_right_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="shoulder_right_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/shoulder_right_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="shoulder_right_link2">
+    <inertial>
+      <mass value="0.00711317178967469" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.002137629138590559" ixy="1.9257030838094223e-05" ixz="0.0011430126697503566" iyy="0.0027484062306818192" iyz="-3.600199417069216e-05" izz="0.0006120927192806694" />
+    </inertial>
+    <collision name="shoulder_right_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/shoulder_right_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="shoulder_right_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/shoulder_right_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="zed_camera_left_lense">
+    <inertial>
+      <mass value="0.005755421856391891" />
+      <origin rpy="0 0 0" xyz="5.000e-05 -1.107e-02  2.350e-03" />
+      <inertia ixx="0.005003354055639959" ixy="2.3967379469334976e-05" ixz="-0.0003222735583266803" iyy="0.004996529496255549" iyz="0.000370054972711012" izz="4.878384607433584e-05" />
+    </inertial>
+    <collision name="zed_camera_left_lense_collision">
+      <origin rpy="0 0 0" xyz="5.000e-05 -1.107e-02  2.350e-03" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/zed_camera_left_lense.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="zed_camera_left_lense_visual">
+      <origin rpy="0 0 0" xyz="5.000e-05 -1.107e-02  2.350e-03" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/zed_camera_left_lense.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="zed_camera_right_lense">
+    <inertial>
+      <mass value="0.0057554218551259745" />
+      <origin rpy="0 0 0" xyz="3.000e-05 -1.107e-02  2.350e-03" />
+      <inertia ixx="0.0050036549322322954" ixy="-2.391821338968771e-05" ixz="0.00031988357548007145" iyy="0.004996221065096928" iyz="0.00037207237543609864" izz="4.877629449989427e-05" />
+    </inertial>
+    <collision name="zed_camera_right_lense_collision">
+      <origin rpy="0 0 0" xyz="3.000e-05 -1.107e-02  2.350e-03" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/zed_camera_right_lense.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="zed_camera_right_lense_visual">
+      <origin rpy="0 0 0" xyz="3.000e-05 -1.107e-02  2.350e-03" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/zed_camera_right_lense.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="zed_camera">
+    <inertial>
+      <mass value="0.009633907989226701" />
+      <origin rpy="0 0 0" xyz="-0.01743 -0.0014  -0.00805" />
+      <inertia ixx="0.008314802982788687" ixy="2.4365338952166025e-06" ixz="-3.793293439362343e-05" iyy="0.008297308522063661" iyz="0.0005174870196291635" izz="4.725323656366554e-05" />
+    </inertial>
+    <collision name="zed_camera_collision">
+      <origin rpy="0 0 0" xyz="-0.01743 -0.0014  -0.00805" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/zed_camera.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="zed_camera_visual">
+      <origin rpy="0 0 0" xyz="-0.01743 -0.0014  -0.00805" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/zed_camera.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="neck_link1">
+    <inertial>
+      <mass value="0.017038665636260372" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.008728267843512112" ixy="3.905246324887799e-15" ixz="1.836596576210159e-12" iyy="0.008728228385076956" iyz="-1.855689641317778e-05" izz="1.150229285457388e-06" />
+    </inertial>
+    <collision name="neck_link1_collision">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/neck_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="neck_link1_visual">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/neck_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="neck_link2">
+    <inertial>
+      <mass value="0.011421521917888837" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.005850573477666747" ixy="2.2188572078871497e-15" ixz="1.043505928194355e-12" iyy="0.0058505470275089" iyz="-1.2439237134664033e-05" izz="5.282195127138842e-07" />
+    </inertial>
+    <collision name="neck_link2_collision">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/neck_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="neck_link2_visual">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/neck_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_right">
+    <inertial>
+      <mass value="0.7293872776434517" />
+      <origin rpy="0 0 0" xyz="0.02408 -0.00218 -0.02579" />
+      <inertia ixx="0.35408899217191014" ixy="-0.045058777822451934" ixz="-0.07256033928073168" iyy="0.2762400728992758" iyz="-0.15841385385165987" izz="0.11966132360417292" />
+    </inertial>
+    <collision name="foot_right_collision">
+      <origin rpy="0 0 0" xyz="0.02408 -0.00218 -0.02579" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/foot_right.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="foot_right_visual">
+      <origin rpy="0 0 0" xyz="0.02408 -0.00218 -0.02579" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/foot_right.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_right_tip">
+    <inertial>
+      <mass value="0.27796169383200264" />
+      <origin rpy="0 0 0" xyz="0.00116 -0.04124 -0.00428" />
+      <inertia ixx="0.163018926716156" ixy="-0.021792868769714743" ixz="-0.028098576274686173" iyy="0.10953700480881963" iyz="-0.07890333279317867" izz="0.0691720869721408" />
+    </inertial>
+    <collision name="foot_right_tip_collision">
+      <origin rpy="0 0 0" xyz="0.00116 -0.04124 -0.00428" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/foot_right_tip.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="foot_right_tip_visual">
+      <origin rpy="0 0 0" xyz="0.00116 -0.04124 -0.00428" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/foot_right_tip.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_left">
+    <inertial>
+      <mass value="0.7293778980792932" />
+      <origin rpy="0 0 0" xyz="0.02392 -0.00181 -0.02581" />
+      <inertia ixx="0.3539015699777266" ixy="0.04795411958144601" ixz="0.07730674080298215" iyy="0.27903896738870787" iyz="-0.1582589705297329" izz="0.12224975405698266" />
+    </inertial>
+    <collision name="foot_left_collision">
+      <origin rpy="0 0 0" xyz="0.02392 -0.00181 -0.02581" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/foot_left.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="foot_left_visual">
+      <origin rpy="0 0 0" xyz="0.02392 -0.00181 -0.02581" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/foot_left.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="foot_left_tip">
+    <inertial>
+      <mass value="0.2779374729954732" />
+      <origin rpy="0 0 0" xyz="-0.00116 -0.04115 -0.00508" />
+      <inertia ixx="0.16348309724729793" ixy="0.023187053562808757" ixz="0.03004593384309638" iyy="0.1112667447436401" iyz="-0.07903061678042086" izz="0.07001667828903972" />
+    </inertial>
+    <collision name="foot_left_tip_collision">
+      <origin rpy="0 0 0" xyz="-0.00116 -0.04115 -0.00508" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/foot_left_tip.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="foot_left_tip_visual">
+      <origin rpy="0 0 0" xyz="-0.00116 -0.04115 -0.00508" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/foot_left_tip.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="hip_right_tendon_guide">
+    <inertial>
+      <mass value="0.0256071741027992" />
+      <origin rpy="0 0 0" xyz="0.0026   0.00145 -0.02974" />
+      <inertia ixx="0.0007688721042748645" ixy="1.2907946738553109e-05" ixz="-0.0007484377774593835" iyy="0.0015017398221674476" iyz="1.31280501412243e-05" izz="0.000737868889511365" />
+    </inertial>
+    <collision name="hip_right_tendon_guide_collision">
+      <origin rpy="0 0 0" xyz="0.0026   0.00145 -0.02974" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/hip_right_tendon_guide.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="hip_right_tendon_guide_visual">
+      <origin rpy="0 0 0" xyz="0.0026   0.00145 -0.02974" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/hip_right_tendon_guide.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="hip_left_tendon_guide">
+    <inertial>
+      <mass value="0.025607174102799186" />
+      <origin rpy="0 0 0" xyz="0.0029   0.00145 -0.02974" />
+      <inertia ixx="0.000768872104274598" ixy="-1.362500772751181e-05" ixz="0.0007900179804727499" iyy="0.001585458618190613" iyz="1.3128050125302674e-05" izz="0.0008215876855336985" />
+    </inertial>
+    <collision name="hip_left_tendon_guide_collision">
+      <origin rpy="0 0 0" xyz="0.0029   0.00145 -0.02974" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/hip_left_tendon_guide.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="hip_left_tendon_guide_visual">
+      <origin rpy="0 0 0" xyz="0.0029   0.00145 -0.02974" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/hip_left_tendon_guide.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="knee_right_tendon_guide">
+    <inertial>
+      <mass value="0.02560490583004142" />
+      <origin rpy="0 0 0" xyz="-0.0029  -0.02974  0.00145" />
+      <inertia ixx="0.0041823946263214945" ixy="-0.0015840714252371775" ixz="-0.0007340025726217843" iyy="0.001472575084145065" iyz="-0.0015937408745932437" izz="0.004173503757151044" />
+    </inertial>
+    <collision name="knee_right_tendon_guide_collision">
+      <origin rpy="0 0 0" xyz="-0.0029  -0.02974  0.00145" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/knee_right_tendon_guide.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="knee_right_tendon_guide_visual">
+      <origin rpy="0 0 0" xyz="-0.0029  -0.02974  0.00145" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/knee_right_tendon_guide.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="knee_left_tendon_guide">
+    <inertial>
+      <mass value="0.025604905830041404" />
+      <origin rpy="0 0 0" xyz="0.0029  -0.02974  0.00145" />
+      <inertia ixx="0.004182394626728793" ixy="0.0016769753387839929" ixz="0.0007770510269326971" iyy="0.0015606617148220664" iyz="-0.0015937408747146232" izz="0.004261590388171581" />
+    </inertial>
+    <collision name="knee_left_tendon_guide_collision">
+      <origin rpy="0 0 0" xyz="0.0029  -0.02974  0.00145" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/collisions/knee_left_tendon_guide.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="knee_left_tendon_guide_visual">
+      <origin rpy="0 0 0" xyz="0.0029  -0.02974  0.00145" />
+      <geometry>
+        <mesh filename="package://robots/roboy_icecream/meshes/visuals/knee_left_tendon_guide.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+</robot>
