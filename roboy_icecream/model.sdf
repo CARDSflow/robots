@@ -1505,6 +1505,134 @@
 				</geometry>
 			</visual>
 		</link>
+		<link name="bike_back">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.00011016712009415609 -0.35971902055976573 -0.5575062332679412 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>12.951344920363105</mass>
+				<inertia>
+					<ixx>8.427849827537374</ixx>
+					<ixy>0.05546237762126666</ixy>
+					<ixz>-0.001773546771442773</ixz>
+					<iyy>4.264300775944795</iyy>
+					<iyz>-2.9883672879282495</iyz>
+					<izz>4.288588594083351</izz>
+				</inertia>
+			</inertial>
+			<collision name="bike_back_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/bike_back.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="bike_back_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/bike_back.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="bike_front">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.0005298836412812269 -0.8761873428974964 -0.1620508286648237 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>1304.0891153033951</mass>
+				<inertia>
+					<ixx>1310.924350405119</ixx>
+					<ixy>0.8973273768555641</ixy>
+					<ixz>0.1615130209156043</ixz>
+					<iyy>108.26627008238589</iyy>
+					<iyz>-230.3310120218922</iyz>
+					<izz>1260.1442813829296</izz>
+				</inertia>
+			</inertial>
+			<collision name="bike_front_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/bike_front.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="bike_front_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/bike_front.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="ice_right">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.0019400036637683595 -0.7226193593344915 0.2289603507295956 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>223.72499999997402</mass>
+				<inertia>
+					<ixx>80.48798182058596</ixx>
+					<ixy>-15.807672799913927</ixy>
+					<ixz>0.0533937516430947</ixz>
+					<iyy>6.326935362437674</iyy>
+					<iyz>1.5706230541943142</iyz>
+					<izz>82.96210360077056</izz>
+				</inertia>
+			</inertial>
+			<collision name="ice_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/ice_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="ice_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/ice_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="ice_left">
+			<self_collide>false</self_collide>
+			<pose frame="">0.238059996336256 -0.7226193593344767 0.22896035072959442 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>223.72499999997987</mass>
+				<inertia>
+					<ixx>80.48798182058744</ixx>
+					<ixy>15.304688672870762</ixy>
+					<ixz>-0.051694816582293655</ixz>
+					<iyy>6.11860224899444</iyy>
+					<iyz>1.5706230541959068</iyz>
+					<izz>82.75377048732874</izz>
+				</inertia>
+			</inertial>
+			<collision name="ice_left_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/ice_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="ice_left_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_icecream/meshes/CAD/ice_left.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
 		<joint name="hand_left_middle_joint1" type="revolute">
 			<parent>hand_left_middle_link0</parent>
 			<child>hand_left_middle_link1</child>
@@ -1631,6 +1759,32 @@
 				<limit>
 					<lower>-0.8726646259971648</lower>
 					<upper>0.8726646259971648</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="ice_left_linear" type="prismatic">
+			<parent>bike_front</parent>
+			<child>ice_left</child>
+			<pose frame="">9.592326932761353e-16 -0.012499999999994174 -0.021650635094606442 0 0 0</pose>
+			<axis>
+				<xyz>-3.362995815786149e-14 0.4999999999999116 0.8660254037845081</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="ice_right_linear" type="prismatic">
+			<parent>bike_front</parent>
+			<child>ice_right</child>
+			<pose frame="">8.396061623727746e-16 -0.01249999999999389 -0.02165063509460648 0 0 0</pose>
+			<axis>
+				<xyz>-3.362995815786149e-14 0.4999999999999116 0.8660254037845081</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -2075,6 +2229,19 @@
 				<limit>
 					<lower>0.0</lower>
 					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="bike_steering" type="revolute">
+			<parent>bike_back</parent>
+			<child>bike_front</child>
+			<pose frame="">-0.0014046336601973375 -0.3246176684786654 -0.4416118989058839 0 0 0</pose>
+			<axis>
+				<xyz>-1.804500090569684e-16 -9.57045920427828e-08 0.9999999999999957</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>

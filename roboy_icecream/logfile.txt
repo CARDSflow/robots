@@ -139,6 +139,18 @@ exporting stl of hand_right_thumb_link0
 Body: hand_right_thumb_link1
 COM: hand_right_thumb_link1 -28.544270894112234 -8.326361986135865 -5.674319799963043
 exporting stl of hand_right_thumb_link1
+Body: bike_back
+COM: bike_back -0.011016712009415609 -35.97190205597657 -55.75062332679412
+exporting stl of bike_back
+Body: bike_front
+COM: bike_front -0.05298836412812268 -87.61873428974964 -16.20508286648237
+exporting stl of bike_front
+Body: ice_right
+COM: ice_right -0.19400036637683596 -72.26193593344915 22.89603507295956
+exporting stl of ice_right
+Body: ice_left
+COM: ice_left 23.8059996336256 -72.26193593344767 22.896035072959442
+exporting stl of ice_left
 Joint: EXPORT_hand_left_middle_joint1
 	parent: hand_left_middle_link0
 	child: hand_left_middle_link1
@@ -179,6 +191,15 @@ Joint: EXPORT_wrist_right
 	parent: arm_right_lower
 	child: hand_right_palm
 	pos: 1.1119911055780598	0.0017083741634915106	4.596492205265855
+Joint: EXPORT_spine
+Joint: EXPORT_ice_left_linear
+	parent: bike_front
+	child: ice_left
+	pos: 9.592326932761353e-14	-1.2499999999994174	-2.1650635094606443
+Joint: EXPORT_ice_right_linear
+	parent: bike_front
+	child: ice_right
+	pos: 8.396061623727746e-14	-1.249999999999389	-2.165063509460648
 Joint: EXPORT_zed_camera_right
 	parent: zed_camera
 	child: zed_camera_right_lense
@@ -323,3 +344,7 @@ Joint: EXPORT_hand_right_thumb_joint2
 	parent: hand_right_thumb_link1
 	child: hand_right_thumb_link2
 	pos: -0.429994834996851	1.3179514818474836	0.08820291141342373
+Joint: EXPORT_bike_steering
+	parent: bike_back
+	child: bike_front
+	pos: -0.14046336601973375	-32.46176684786654	-44.16118989058839
