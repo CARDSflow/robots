@@ -1664,6 +1664,18 @@
 				</geometry>
 			</visual>
 		</link>
+		<link name="scooper_dummy_axis0">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.25479373533573063 -0.11727220512885421 -0.06759218797509427 0.0 -0.0 0.0</pose>
+		</link> 
+		<link name="scooper_dummy_axis1">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.25479373533573063 -0.11727220512885421 -0.06759218797509427 0.0 -0.0 0.0</pose>
+		</link> 
+		<link name="scooper_dummy_axis2">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.25479373533573063 -0.11727220512885421 -0.06759218797509427 0.0 -0.0 0.0</pose>
+		</link> 
 		<joint name="wrist_left" type="revolute">
 			<parent>arm_left_lower</parent>
 			<child>hand_left_palm</child>
@@ -1727,6 +1739,27 @@
 					<upper>3.14</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="scooper_dummy_joint0" type="continuous">
+			<parent>scooper</parent>
+			<child>scooper_dummy_axis0</child>
+			<axis>
+				<xyz>1 0 0</xyz>
+			</axis>
+		</joint>
+		<joint name="scooper_dummy_joint1" type="continuous">
+			<parent>scooper_dummy_axis0</parent>
+			<child>scooper_dummy_axis1</child>
+			<axis>
+				<xyz>0 1 0</xyz>
+			</axis>
+		</joint>
+		<joint name="scooper_dummy_joint2" type="continuous">
+			<parent>scooper_dummy_axis1</parent>
+			<child>scooper_dummy_axis2</child>
+			<axis>
+				<xyz>0 0 1</xyz>
 			</axis>
 		</joint>
 		<joint name="spine" type="revolute">
@@ -1841,9 +1874,13 @@
 			<pose frame="">-2.1381177685242393e-07 1.4075271709046433e-07 -4.02217224859669e-09 0 0 0</pose>
 			<axis>
 				<xyz>0.9986354432836153 -0.050744296328168695 0.012339684270770077</xyz>
-				<limit>
+				<!-- <limit>
 					<lower>-1.57</lower>
 					<upper>0.0</upper>
+				</limit> -->
+				<limit>
+					<lower>-3.14</lower>
+					<upper>3.14</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -1854,9 +1891,13 @@
 			<pose frame="">-3.552713678800501e-17 -2.4369395390522186e-14 3.5639402540255104e-12 0 0 0</pose>
 			<axis>
 				<xyz>-0.05101049431667531 -0.9984488883025696 0.022310242422115448</xyz>
-				<limit>
+				<!-- <limit>
 					<lower>0.0</lower>
 					<upper>1.57</upper>
+				</limit> -->
+				<limit>
+					<lower>-3.14</lower>
+					<upper>3.14</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -1867,9 +1908,13 @@
 			<pose frame="">-0.0016627026830830262 0.003658326750145147 0.160133302758141 0 0 0</pose>
 			<axis>
 				<xyz>0.01118842648945351 -0.0229092522253328 -0.9996749398055195</xyz>
-				<limit>
+				<!-- <limit>
 					<lower>-1.57</lower>
 					<upper>1.57</upper>
+				</limit> -->
+				<limit>
+					<lower>-3.14</lower>
+					<upper>3.14</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
