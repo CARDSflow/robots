@@ -30,9 +30,18 @@ shoulder_right_axis1:
 shoulder_right_axis2:
   joint: shoulder_right_axis2
   type: cardsflow/kindyn/CableLengthController
-#elbow_left:
-#  joint: elbow_left
-#  type: cardsflow/kindyn/CableLengthController
+elbow_left:
+ joint: elbow_left
+ type: cardsflow/kindyn/CableLengthController
+spine:
+  joint: elbow_left
+  type: cardsflow/kindyn/CableLengthController
+ice_left_linear:
+  joint: elbow_left
+  type: cardsflow/kindyn/CableLengthController
+ice_right_linear:
+  joint: elbow_left
+  type: cardsflow/kindyn/CableLengthController
 #hand_left_middle_joint0:
 #  joint: hand_left_middle_joint0
 #  type: cardsflow/kindyn/TorquePositionController
@@ -72,9 +81,9 @@ shoulder_right_axis2:
 #hand_left_thumb_joint2:
 #  joint: hand_left_thumb_joint2
 #  type: cardsflow/kindyn/TorquePositionController
-#elbow_right:
-#  joint: elbow_right
-#  type: cardsflow/kindyn/CableLengthController
+elbow_right:
+ joint: elbow_right
+ type: cardsflow/kindyn/CableLengthController
 #hand_left_little_joint1:
 #  joint: hand_left_little_joint1
 #  type: cardsflow/kindyn/TorquePositionController

@@ -4,31 +4,33 @@
 #              'hip_left_axis0', 'hip_left_axis1', 'knee_left_axis0', 'knee_left_axis1', 'joint_foot_left', 'joint_foot_left_tip',
 #              'hip_right_axis0', 'hip_right_axis1', 'knee_right_axis0', 'knee_right_axis1', 'joint_foot_right', 'joint_foot_right_tip'
 #]
-joint_names: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2',
-              'shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2',
-              'neck_axis0','neck_axis1','neck_axis2',
-              'hip_left_axis0', 'hip_left_axis1', 'knee_left_axis0', 'knee_left_axis1', 'joint_foot_left', 'joint_foot_left_tip',
-              'hip_right_axis0', 'hip_right_axis1', 'knee_right_axis0', 'knee_right_axis1', 'joint_foot_right', 'joint_foot_right_tip'
-]
+joint_names: ["ice_left_linear", "ice_right_linear", "bike_steering",
+              "spine",
+              "neck_axis0",  "neck_axis1", "neck_axis2",
+              "shoulder_left_axis0", "shoulder_left_axis1" ,"shoulder_left_axis2",
+              "shoulder_right_axis0", "shoulder_right_axis1", "shoulder_right_axis2",
+              "elbow_right", "elbow_left",
+              "wrist_left", "wrist_right"]
+
 endeffectors: ['arm_left', 'arm_right']
 head:
   base_link: 'torso'
   joints: ['neck_axis0','neck_axis1','neck_axis2']
-arm_left_palm:
+arm_left:
   base_link: 'torso'
-  joints: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left','wrist_left_axis0','wrist_left_axis1','wrist_left_axis2']
-arm_right_palm:
+  joints: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left', "wrist_left"]
+arm_right:
   base_link: 'torso'
-  joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right_axis0','wrist_right_axis1','wrist_right_axis2']
+  joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right', "wrist_right"]
 foot_left:
   base_link: 'torso'
   joints: ['hip_left_axis0', 'hip_left_axis1', 'knee_left_axis0', 'knee_left_axis1', 'ankle_left']
 foot_right:
   base_link: 'torso'
   joints: ['hip_right_axis0', 'hip_right_axis1', 'knee_right_axis0', 'knee_right_axis1', 'ankle_right']
-arm_left:
+shoulder_left:
   base_link: 'torso'
   joints: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2']
-arm_right:
+shoulder_right:
   base_link: 'torso'
   joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2']
