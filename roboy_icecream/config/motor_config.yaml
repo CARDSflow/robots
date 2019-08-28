@@ -22,11 +22,19 @@ shoulder_right:
   sim_motor_ids: [0,1,2,3,4,5,6,7,8]
   motor_type: [0,0,0,0,0,0,0,0,0]
   board_name: 'shoulder_right'
-arms:
-  bodyPartID: 3
+arm_left:
+  bodyPartID: 5
   init_mode: 'DIRECT_PWM'
   init_setpoint: 100
-  real_motor_ids: [9,10,11,12]
-  sim_motor_ids: [26,27,24,25]
-  motor_type: [2,2,2,2]
-  board_name: 'shoulder_left'
+  real_motor_ids: [0, 1]
+  sim_motor_ids: [26, 27]
+  motor_type: [2, 2]
+  board_name: 'arm_left'
+arm_right:
+  bodypartID: 6
+  init_mode: 'DIRECT_PWM'
+  init_setpoint: 100
+  real_motor_ids: [0, 1]
+  sim_motor_ids: [24, 25]
+  motor_type: [2, 2]
+  board_name: 'arm_right'
