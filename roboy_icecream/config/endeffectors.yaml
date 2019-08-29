@@ -12,7 +12,7 @@ joint_names: ["ice_left_linear", "ice_right_linear", "bike_steering",
               "elbow_right", "elbow_left",
               "wrist_left", "wrist_right"]
 
-endeffectors: ['arm_left', 'arm_right']
+endeffectors: ['arm_right']
 head:
   base_link: 'torso'
   joints: ['neck_axis0','neck_axis1','neck_axis2']
