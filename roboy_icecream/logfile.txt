@@ -14,13 +14,13 @@ Body: arm_right_upper
 COM: arm_right_upper -29.016453811576323 0.8325343188540874 29.600783937746115
 exporting stl of arm_right_upper
 Body: arm_right_lower
-COM: arm_right_lower -28.919912268700845 0.9183753318322416 14.51851425430673
+COM: arm_right_lower -28.887196953294602 0.9191366727076268 11.393402189029468
 exporting stl of arm_right_lower
 Body: arm_left_upper
 COM: arm_left_upper 28.912154915293307 0.8803437455959124 29.432382793604983
 exporting stl of arm_left_upper
 Body: arm_left_lower
-COM: arm_left_lower 28.877128005093986 0.5538232827142615 14.304337046691156
+COM: arm_left_lower 28.864637320745818 0.48930129403086364 11.329774422525492
 exporting stl of arm_left_lower
 Body: shoulder_left_link1
 COM: shoulder_left_link1 29.18938839693684 1.3936649708446083 54.48924278024039
@@ -366,10 +366,10 @@ Joint: EXPORT_bike_steering
 	parent: bike_back
 	child: bike_front
 	pos: -0.15563171980319163	-33.30432582043768	-68.92346279284436
-Joint: EXPORT_elbow_left
+Joint: EXPORT_elbow_right
 	parent: arm_right_upper
 	child: arm_right_lower
-	pos: -1.6980052934313257	0.08475095989118042	4.051070712681227
+	pos: -1.7307206088375686	0.08398961901579527	7.1761827779584895
 Joint: EXPORT_scooper_axis0
 	parent: palm_right
 	child: sphere_link1
@@ -385,4 +385,4 @@ Joint: EXPORT_scooper_axis2
 Joint: EXPORT_elbow_left
 	parent: arm_left_upper
 	child: arm_left_lower
-	pos: 1.6546262468886184	0.09888319020537795	3.9550663151114165
+	pos: 1.6671169312367873	0.16340517888877581	6.92962893927708
