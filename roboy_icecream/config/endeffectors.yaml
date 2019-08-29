@@ -1,13 +1,12 @@
-joint_names: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2',
-              'shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2',
-              'neck_axis0','neck_axis1','neck_axis2', 'wrist_left', 'wrist_right', 
-              'ice_left_linear', 'ice_right_linear', 'scooper_palm',
-              'scooper_dummy_joint0', 'scooper_dummy_joint1', 'scooper_dummy_joint2',
-              'elbow_left', 'elbow_right', 'bike_steering' ]
+joint_names: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left','wrist_left','scooper_axis0', 'scooper_axis1', 'scooper_axis2',
+              'shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right',
+              'spine','neck_axis0','neck_axis1','neck_axis2',
+              'bike_steering', 'ice_tray_0', 'ice_tray_1'
+              ]
 endeffectors: ['arm_left', 'arm_right', 'head', 'scooper']
 scooper:
   base_link: 'torso'
-  joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right', 'scooper_palm']
+  joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right', 'scooper_axis0', 'scooper_axis1', 'scooper_axis2']
 head:
   base_link: 'torso'
   joints: ['neck_axis0','neck_axis1','neck_axis2']
