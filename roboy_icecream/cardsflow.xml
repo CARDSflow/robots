@@ -5,7 +5,7 @@
 			<viaPoint type="FIXPOINT">0.24003539451940242 -0.02703122074861018 0.16795677503670584</viaPoint>
 		</link>
 		<link name="arm_left_upper">
-			<viaPoint type="FIXPOINT">-0.007850248163768931 -0.02502079849877528 0.10554541713981351</viaPoint>
+			<viaPoint type="FIXPOINT">-0.007919307247998084 -0.025143848566377018 0.09997491310263215</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor15">
@@ -13,7 +13,7 @@
 			<viaPoint type="FIXPOINT">0.25121801331283605 -0.030189186742418803 0.21522182527910352</viaPoint>
 		</link>
 		<link name="arm_left_upper">
-			<viaPoint type="FIXPOINT">0.005761662094039863 -0.02579884726409152 0.10541090207242725</viaPoint>
+			<viaPoint type="FIXPOINT">0.0056926030098107105 -0.025921897331693255 0.09984039803524589</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor13">
@@ -21,7 +21,7 @@
 			<viaPoint type="FIXPOINT">0.30339350272539345 -0.0015217810850677535 0.2968076785743067</viaPoint>
 		</link>
 		<link name="arm_left_upper">
-			<viaPoint type="FIXPOINT">0.030373190313798093 0.0037600309555892307 0.09745578010802226</viaPoint>
+			<viaPoint type="FIXPOINT">0.03030413122956894 0.003636980887987491 0.0918852760708409</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor11">
@@ -29,7 +29,7 @@
 			<viaPoint type="FIXPOINT">0.24756132617262286 0.04138461897981998 0.21362251561443166</viaPoint>
 		</link>
 		<link name="arm_left_upper">
-			<viaPoint type="FIXPOINT">0.002826363429969021 0.03165493214418914 0.10412710301001951</viaPoint>
+			<viaPoint type="FIXPOINT">0.0027573043457398685 0.0315318820765874 0.09855659897283815</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor10">
@@ -37,7 +37,7 @@
 			<viaPoint type="FIXPOINT">0.2361746654019216 0.048536380526838604 0.16626822440235273</viaPoint>
 		</link>
 		<link name="arm_left_upper">
-			<viaPoint type="FIXPOINT">-0.010565777263094808 0.028131342971237948 0.10435773775497686</viaPoint>
+			<viaPoint type="FIXPOINT">-0.010634836347323961 0.02800829290363621 0.0987872337177955</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor0">
@@ -117,7 +117,7 @@
 			<viaPoint type="FIXPOINT">0.2803504693540846 -0.02380766187649076 0.25427763691772165</viaPoint>
 		</link>
 		<link name="arm_left_upper">
-			<viaPoint type="FIXPOINT">0.01918102621788165 -0.02078722518852419 0.09814358567392346</viaPoint>
+			<viaPoint type="FIXPOINT">0.0191119671336525 -0.02091027525612593 0.0925730816367421</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor17">
@@ -125,7 +125,7 @@
 			<viaPoint type="FIXPOINT">0.28865490866602483 -0.0059628768236671395 0.27253184634412764</viaPoint>
 		</link>
 		<link name="arm_left_upper">
-			<viaPoint type="FIXPOINT">0.02807867832460168 -0.009338329206791542 0.0977816316448046</viaPoint>
+			<viaPoint type="FIXPOINT">0.02800961924037253 -0.009461379274393281 0.09221112760762325</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor9">
@@ -133,7 +133,7 @@
 			<viaPoint type="FIXPOINT">0.2862591549172652 0.030823376755383384 0.2722942866827697</viaPoint>
 		</link>
 		<link name="arm_left_upper">
-			<viaPoint type="FIXPOINT">0.02655219767797167 0.01762364191043853 0.0971808366699591</viaPoint>
+			<viaPoint type="FIXPOINT">0.026483138593742517 0.01750059184283679 0.09161033263277772</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor12">
@@ -141,7 +141,7 @@
 			<viaPoint type="FIXPOINT">0.27670095043030485 0.04762583746711193 0.2526814623853182</viaPoint>
 		</link>
 		<link name="arm_left_upper">
-			<viaPoint type="FIXPOINT">0.017177215671267555 0.027314171874947925 0.0970636870911622</viaPoint>
+			<viaPoint type="FIXPOINT">0.0171081565870384 0.02719112180734619 0.09149318305398083</viaPoint>
 		</link>
 	</myoMuscle>
 	<myoMuscle name="motor21">
@@ -205,6 +205,21 @@
 		<link name="arm_right_upper">
 			<viaPoint type="FIXPOINT">-0.0018234983265734783 -0.05376978973844031 0.024826305183148847</viaPoint>
 			<viaPoint type="FIXPOINT">0.00011751099560424194 -0.04711299992702591 -0.2794752468791943</viaPoint>
+		</link>
+	</myoMuscle>
+	<myoMuscle name="motor26">
+		<link name="arm_left_upper">
+			<viaPoint type="FIXPOINT">-0.003470351642704408 0.04720540246442484 -0.0757894649532027</viaPoint>
+			<viaPoint type="FIXPOINT">-0.004119653507086589 0.0221781018528691 -0.2178810325176874</viaPoint>
+		</link>
+		<link name="arm_left_lower">
+			<viaPoint type="FIXPOINT">0.003050787088026361 0.051651901297332214 -0.12653545733718605</viaPoint>
+		</link>
+	</myoMuscle>
+	<myoMuscle name="motor27">
+		<link name="arm_left_upper">
+			<viaPoint type="FIXPOINT">0.001528676800329869 -0.0506425885892255 -0.07360306119583619</viaPoint>
+			<viaPoint type="FIXPOINT">-0.005389392702777443 -0.049278310648037955 -0.3776871092380087</viaPoint>
 		</link>
 	</myoMuscle>
 </cardsflow>
