@@ -5,8 +5,7 @@ head:
   real_motor_ids: [9,10,11,12,13,14]
   sim_motor_ids: [21,22,23,18,19,20]
   motor_type: [2,2,1,1,2,2]
-  board_name: 'shoulder_right'
-  use_motor_config: true
+  fpga_name: 'shoulder_right'
 shoulder_left:
   bodyPartID: 3
   init_mode: 'DISPLACEMENT'
@@ -14,8 +13,7 @@ shoulder_left:
   real_motor_ids: [0,1,2,3,4,5,6,7,8]
   sim_motor_ids: [9,10,11,12,13,14,15,16,17]
   motor_type: [0,0,0,0,0,0,0,0,0]
-  board_name: 'shoulder_left'
-  use_motor_config: true
+  fpga_name: 'shoulder_left'
 shoulder_right:
   bodyPartID: 4
   init_mode: 'DISPLACEMENT'
@@ -23,23 +21,24 @@ shoulder_right:
   real_motor_ids: [0,1,2,3,4,5,6,7,8]
   sim_motor_ids: [0,1,2,3,4,5,6,7,8]
   motor_type: [0,0,0,0,0,0,0,0,0]
-  board_name: 'shoulder_right'
-  use_motor_config: true
-arm_left:
-  bodyPartID: 5
+  fpga_name: 'shoulder_right'
+arms:
+  bodyPartID: 3
   init_mode: 'DIRECT_PWM'
   init_setpoint: 100
-  real_motor_ids: [0, 1]
-  sim_motor_ids: [26, 27]
-  motor_type: [2, 2]
-  board_name: 'arm_left'
-  use_motor_config: false
-arm_right:
-  bodyPartID: 6
-  init_mode: 'DIRECT_PWM'
-  init_setpoint: 130
-  real_motor_ids: [0]
-  sim_motor_ids: [25]
-  motor_type: [1]
-  board_name: 'arm_right'
-  use_motor_config: false
+  real_motor_ids: [9,10,11,12]
+  sim_motor_ids: [26,27,24,25]
+  motor_type: [2,2,2,2]
+  fpga_name: 'shoulder_left'
+#leg_left:
+#  bodyPartID: 3
+#  init_mode: 'DISPLACEMENT'
+#  init_setpoint: 100
+#  real_motor_ids: [15,16,17,18,19,20]
+#  sim_motor_ids: [15,16,17,18,19,20]
+#leg_right:
+#  bodyPartID: 4
+#  init_mode: 'DISPLACEMENT'
+#  init_setpoint: 100
+#  real_motor_ids: [15,16,17,18,19,20]
+#  sim_motor_ids: [15,16,17,18,19,20]
