@@ -1,5 +1,5 @@
 joint_names: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left','wrist_left',
-              'scooper_target_axis0', 'scooper_target_axis1', 'scooper_target_axis2',
+              'palm_scooper', 'scooper_target_axis0', 'scooper_target_axis1', 'scooper_target_axis2',
               'shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right',
               'spine','neck_axis0','neck_axis1','neck_axis2',
               'bike_steering', 'ice_tray_0', 'ice_tray_1'
