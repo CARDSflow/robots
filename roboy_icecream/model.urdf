@@ -74,7 +74,7 @@
     <child link="scooper" />
     <origin rpy="0  0  0" xyz="-0.01679  0.00896 -0.06231" />
     <axis xyz="0.99863 -0.05074  0.01234" />
-    <limit effort="0.0" lower="-1.57079632679" upper="1.57079632679" velocity="0.0" />
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
   </joint>
   <joint name="shoulder_right_axis0" type="revolute">
     <parent link="torso" />
