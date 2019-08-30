@@ -38,8 +38,8 @@ arm_right:
   bodyPartID: 6
   init_mode: 'DIRECT_PWM'
   init_setpoint: 130
-  real_motor_ids: [0]
-  sim_motor_ids: [25]
-  motor_type: [1]
+  real_motor_ids: [0, 1]
+  sim_motor_ids: [25, 24]
+  motor_type: [1, 1]
   board_name: 'arm_right'
   use_motor_config: false
