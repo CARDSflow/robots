@@ -2417,7 +2417,7 @@
 		</joint>
 		<joint name="scooper_axis0" type="revolute">
 			<parent>palm_right</parent>
-			<child>sphere_link1</child>
+			<child>scooper</child>
 			<pose frame="">9.901062504980018e-08 -1.1760062330612441e-08 9.940317404755206e-08 0 0 0</pose>
 			<axis>
 				<xyz>0.050743529127074125 0.998711646714098 0.0003754588500069938</xyz>
@@ -2429,8 +2429,8 @@
 			</axis>
 		</joint>
 		<joint name="scooper_axis1" type="revolute">
-			<parent>sphere_link1</parent>
-			<child>sphere_link2</child>
+			<parent>scooper</parent>
+			<child>sphere_link1</child>
 			<pose frame="">7.105427357601002e-17 2.446487457063995e-14 2.7888802378583933e-15 0 0 0</pose>
 			<axis>
 				<xyz>-0.9986354432836139 0.0507442963281716 -0.01233968427077307</xyz>
@@ -2442,8 +2442,8 @@
 			</axis>
 		</joint>
 		<joint name="scooper_axis2" type="revolute">
-			<parent>sphere_link2</parent>
-			<child>scooper</child>
+			<parent>sphere_link1</parent>
+			<child>sphere_link2</child>
 			<pose frame="">0.00045315850738010256 0.010554704063581631 -0.00025291097512425865 0 0 0</pose>
 			<axis>
 				<xyz>-0.012342838793139613 0.00025121261310145394 0.9999237927075986</xyz>

@@ -358,21 +358,21 @@
   </joint>
   <joint name="scooper_axis0" type="revolute">
     <parent link="palm_right" />
-    <child link="sphere_link1" />
+    <child link="scooper" />
     <origin rpy="0 0 0" xyz="0.02137 -0.02802 -0.06183" />
-    <axis xyz="5.0740e-02 9.9871e-01 3.7000e-04" />
+    <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="scooper_axis1" type="revolute">
-    <parent link="sphere_link1" />
-    <child link="sphere_link2" />
-    <origin rpy="0 0 0" xyz="0 0 0" />
-    <axis xyz="-0.99863  0.05074 -0.01234" />
+    <parent link="scooper" />
+    <child link="sphere_link1" />
+    <origin rpy="0 0 0" xyz="0 -0.085 0" />
+    <axis xyz="-1 0 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="scooper_axis2" type="revolute">
-    <parent link="sphere_link2" />
-    <child link="scooper" />
+    <parent link="sphere_link1" />
+    <child link="sphere_link2" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="-1.2340e-02  2.5000e-04  9.9992e-01" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
