@@ -374,7 +374,14 @@
     <parent link="sphere_link1" />
     <child link="sphere_link2" />
     <origin rpy="0 0 0" xyz="0 0 0" />
-    <axis xyz="-1.2340e-02  2.5000e-04  9.9992e-01" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="scooper_axis3" type="revolute">
+    <parent link="sphere_link2" />
+    <child link="sphere_link3" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0 0 1" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="elbow_left" type="revolute">
@@ -1378,18 +1385,6 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.000508176230091826" ixy="-0.00019080350019897474" ixz="-0.0011495713660317828" iyy="0.003175597480686683" iyz="-8.181357510811029e-05" izz="0.0026962584186364146" />
     </inertial>
-    <collision name="sphere_link1_collision">
-      <origin rpy="0 0 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/collisions/sphere_link1.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="sphere_link1_visual">
-      <origin rpy="0 0 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/visuals/sphere_link1.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
   </link>
   <link name="sphere_link2">
     <inertial>
@@ -1397,18 +1392,13 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="3.9895765680050054e-05" ixy="-1.5020082023172697e-05" ixz="-9.049430715461394e-05" iyy="0.00024987538582296455" iyz="-6.44037455179304e-06" izz="0.00021214181428445342" />
     </inertial>
-    <collision name="sphere_link2_collision">
+  </link>
+  <link name="sphere_link3">
+    <inertial>
+      <mass value="0.002996372533076606" />
       <origin rpy="0 0 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/collisions/sphere_link2.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="sphere_link2_visual">
-      <origin rpy="0 0 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/visuals/sphere_link2.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
+      <inertia ixx="3.9895765680050054e-05" ixy="-1.5020082023172697e-05" ixz="-9.049430715461394e-05" iyy="0.00024987538582296455" iyz="-6.44037455179304e-06" izz="0.00021214181428445342" />
+    </inertial>
   </link>
   <link name="zed_mini">
     <inertial>
