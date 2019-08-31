@@ -39,7 +39,7 @@
     <child link="palm_right" />
     <origin rpy="0  0  0" xyz="0.01941 -0.00089 -0.23765" />
     <axis xyz="1.23400000e-02  -2.50000000e-04  -9.99920000e-01" />
-    <limit effort="0.0" lower="-0.872664625997" upper="0.872664625997" velocity="0.0" />
+    <limit effort="0.0" lower="-180" upper="180" velocity="0.0" />
   </joint>
   <joint name="ice_tray_0" type="prismatic">
     <parent link="bike_front" />
@@ -361,7 +361,7 @@
     <child link="arm_right_lower" />
     <origin rpy="0  0  0" xyz="-0.013    0.00079 -0.3624" />
     <axis xyz="-0.99863  0.05074 -0.01234" />
-    <limit effort="0.0" lower="0.0" upper="1.91986217719" velocity="0.0" />
+    <limit effort="0.0" lower="0.0" upper="10" velocity="0.0" />
   </joint>
   <joint name="elbow_left" type="revolute">
     <parent link="arm_left_upper" />
