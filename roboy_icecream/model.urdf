@@ -69,7 +69,7 @@
     <axis xyz="0  0  0" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
-  <joint name="palm_scooper" type="revolute">
+  <joint name="palm_scooper" type="fixed">
     <parent link="palm_right" />
     <child link="scooper" />
     <origin rpy="0  0  0" xyz="-0.01679  0.00896 -0.06231" />
