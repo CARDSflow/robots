@@ -1,0 +1,83 @@
+digraph G {
+node [shape=box];
+"torso" [label="torso"];
+"neck_link1" [label="neck_link1"];
+"neck_link2" [label="neck_link2"];
+"head" [label="head"];
+"zed_camera" [label="zed_camera"];
+"zed_camera_left_lense" [label="zed_camera_left_lense"];
+"zed_camera_right_lense" [label="zed_camera_right_lense"];
+"shoulder_left_link1" [label="shoulder_left_link1"];
+"shoulder_left_link2" [label="shoulder_left_link2"];
+"arm_left_upper" [label="arm_left_upper"];
+"arm_left_lower" [label="arm_left_lower"];
+"hand_left_palm" [label="hand_left_palm"];
+"shoulder_right_link1" [label="shoulder_right_link1"];
+"shoulder_right_link2" [label="shoulder_right_link2"];
+"arm_right_upper" [label="arm_right_upper"];
+"arm_right_lower" [label="arm_right_lower"];
+"palm_right" [label="palm_right"];
+"scooper" [label="scooper"];
+"sphere_link1" [label="sphere_link1"];
+"sphere_link2" [label="sphere_link2"];
+"scooper_target" [label="scooper_target"];
+"bike_back" [label="bike_back"];
+"bike_front" [label="bike_front"];
+"ice_left" [label="ice_left"];
+"ice_right" [label="ice_right"];
+"zed_mini" [label="zed_mini"];
+"pico_flexx" [label="pico_flexx"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"torso" -> "neck_axis0" [label="xyz: 0 0.00152 0.71567 \nrpy: 0 -0 0"]
+"neck_axis0" -> "neck_link1"
+"neck_link1" -> "neck_axis1" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"neck_axis1" -> "neck_link2"
+"neck_link2" -> "neck_axis2" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"neck_axis2" -> "head"
+"head" -> "zed_camera_mount" [label="xyz: 0.02168 -0.05805 0.21956 \nrpy: 0 -0 0"]
+"zed_camera_mount" -> "zed_camera"
+"zed_camera" -> "zed_camera_left" [label="xyz: 0.03848 -0.00154 -0.00782 \nrpy: 0 -0 0"]
+"zed_camera_left" -> "zed_camera_left_lense"
+"zed_camera" -> "zed_camera_right" [label="xyz: -0.08149 -0.00191 -0.00782 \nrpy: 0 -0 0"]
+"zed_camera_right" -> "zed_camera_right_lense"
+"torso" -> "shoulder_left_axis0" [label="xyz: 0.29189 0.01393 0.54489 \nrpy: 0 -0 0"]
+"shoulder_left_axis0" -> "shoulder_left_link1"
+"shoulder_left_link1" -> "shoulder_left_axis1" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"shoulder_left_axis1" -> "shoulder_left_link2"
+"shoulder_left_link2" -> "shoulder_left_axis2" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"shoulder_left_axis2" -> "arm_left_upper"
+"arm_left_upper" -> "elbow_left" [label="xyz: 0.01342 -0.00741 -0.36229 \nrpy: 0 -0 0"]
+"elbow_left" -> "arm_left_lower"
+"arm_left_lower" -> "wrist_left" [label="xyz: -0.0176 -0.00514 -0.22998 \nrpy: 0 -0 0"]
+"wrist_left" -> "hand_left_palm"
+"torso" -> "shoulder_right_axis0" [label="xyz: -0.29317 0.00923 0.5481 \nrpy: 0 -0 0"]
+"shoulder_right_axis0" -> "shoulder_right_link1"
+"shoulder_right_link1" -> "shoulder_right_axis1" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"shoulder_right_axis1" -> "shoulder_right_link2"
+"shoulder_right_link2" -> "shoulder_right_axis2" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"shoulder_right_axis2" -> "arm_right_upper"
+"arm_right_upper" -> "elbow_right" [label="xyz: -0.013 0.00079 -0.3624 \nrpy: 0 -0 0"]
+"elbow_right" -> "arm_right_lower"
+"arm_right_lower" -> "wrist_right" [label="xyz: 0.01941 -0.00089 -0.23765 \nrpy: 0 -0 0"]
+"wrist_right" -> "palm_right"
+"palm_right" -> "palm_scooper" [label="xyz: -0.01679 0.00896 -0.06231 \nrpy: 0 -0 0"]
+"palm_scooper" -> "scooper"
+"scooper" -> "scooper_target_axis0" [label="xyz: 0.05602 0.09788 0.00053 \nrpy: 0 -0 0"]
+"scooper_target_axis0" -> "sphere_link1"
+"sphere_link1" -> "scooper_target_axis1" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"scooper_target_axis1" -> "sphere_link2"
+"sphere_link2" -> "scooper_target_axis2" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"scooper_target_axis2" -> "scooper_target"
+"torso" -> "spine" [label="xyz: 0 -2e-05 0.29933 \nrpy: 0 -0 0"]
+"spine" -> "bike_back"
+"bike_back" -> "bike_steering" [label="xyz: -0.00193 -1.20232 -0.903 \nrpy: 0 -0 0"]
+"bike_steering" -> "bike_front"
+"bike_front" -> "ice_tray_0" [label="xyz: 0.23999 0.46633 1.15482 \nrpy: 0 -0 0"]
+"ice_tray_0" -> "ice_left"
+"bike_front" -> "ice_tray_1" [label="xyz: 0 0.46633 1.15482 \nrpy: 0 -0 0"]
+"ice_tray_1" -> "ice_right"
+"torso" -> "zed_mini_attachement" [label="xyz: 0.00047 -0.10882 0.42356 \nrpy: 0 -0 0"]
+"zed_mini_attachement" -> "zed_mini"
+"zed_mini" -> "zed_pico_attachement" [label="xyz: 0.0576 -0.00665 -0.01668 \nrpy: 0 -0 0"]
+"zed_pico_attachement" -> "pico_flexx"
+}
