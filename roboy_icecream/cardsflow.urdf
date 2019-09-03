@@ -41,20 +41,20 @@
     <axis xyz="1.23400000e-02  -2.50000000e-04  -9.99920000e-01" />
     <limit effort="0.0" lower="-180" upper="180" velocity="0.0" />
   </joint>
-  <joint name="ice_tray_0" type="prismatic">
-    <parent link="bike_front" />
-    <child link="ice_left" />
-    <origin rpy="0  0  0" xyz="0.23999  0.46633  1.15482" />
-    <axis xyz="0       0.5      0.86602" />
-    <limit effort="0.0" lower="-3.14" upper="3.14" velocity="0.0" />
-  </joint>
-  <joint name="ice_tray_1" type="prismatic">
-    <parent link="bike_front" />
-    <child link="ice_right" />
-    <origin rpy="0  0  0" xyz="0       0.46633  1.15482" />
-    <axis xyz="0       0.5      0.86602" />
-    <limit effort="0.0" lower="-3.14" upper="3.14" velocity="0.0" />
-  </joint>
+<!--  <joint name="ice_tray_0" type="prismatic">-->
+<!--    <parent link="bike_front" />-->
+<!--    <child link="ice_left" />-->
+<!--    <origin rpy="0  0  0" xyz="0.23999  0.46633  1.15482" />-->
+<!--    <axis xyz="0       0.5      0.86602" />-->
+<!--    <limit effort="0.0" lower="-3.14" upper="3.14" velocity="0.0" />-->
+<!--  </joint>-->
+<!--  <joint name="ice_tray_1" type="prismatic">-->
+<!--    <parent link="bike_front" />-->
+<!--    <child link="ice_right" />-->
+<!--    <origin rpy="0  0  0" xyz="0       0.46633  1.15482" />-->
+<!--    <axis xyz="0       0.5      0.86602" />-->
+<!--    <limit effort="0.0" lower="-3.14" upper="3.14" velocity="0.0" />-->
+<!--  </joint>-->
   <joint name="zed_pico_attachement" type="revolute">
     <parent link="zed_mini" />
     <child link="pico_flexx" />
@@ -1341,44 +1341,44 @@
       </geometry>
     </visual>
   </link>
-  <link name="ice_right">
-    <inertial>
-      <mass value="223.724999999968" />
-      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />
-      <inertia ixx="107.50798517446542" ixy="-16.173051463053042" ixz="8.843293061360113" iyy="29.83437223173023" iyz="44.31003474165655" izz="86.47467008535332" />
-    </inertial>
-    <collision name="ice_right_collision">
-      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/collisions/ice_right.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="ice_right_visual">
-      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/visuals/ice_right.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="ice_left">
-    <inertial>
-      <mass value="223.72499999997825" />
-      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />
-      <inertia ixx="107.507985174471" ixy="15.658441357276965" ixz="-8.561908439038996" iyy="29.62603911829324" iyz="44.31003474165986" izz="86.26633697191619" />
-    </inertial>
-    <collision name="ice_left_collision">
-      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/collisions/ice_left.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="ice_left_visual">
-      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />
-      <geometry>
-        <mesh filename="package://robots/roboy_icecream/meshes/visuals/ice_left.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
+<!--  <link name="ice_right">-->
+<!--    <inertial>-->
+<!--      <mass value="223.724999999968" />-->
+<!--      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />-->
+<!--      <inertia ixx="107.50798517446542" ixy="-16.173051463053042" ixz="8.843293061360113" iyy="29.83437223173023" iyz="44.31003474165655" izz="86.47467008535332" />-->
+<!--    </inertial>-->
+<!--    <collision name="ice_right_collision">-->
+<!--      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />-->
+<!--      <geometry>-->
+<!--        <mesh filename="package://robots/roboy_icecream/meshes/collisions/ice_right.stl" scale="0.001 0.001 0.001" />-->
+<!--      </geometry>-->
+<!--    </collision>-->
+<!--    <visual name="ice_right_visual">-->
+<!--      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />-->
+<!--      <geometry>-->
+<!--        <mesh filename="package://robots/roboy_icecream/meshes/visuals/ice_right.stl" scale="0.001 0.001 0.001" />-->
+<!--      </geometry>-->
+<!--    </visual>-->
+<!--  </link>-->
+<!--  <link name="ice_left">-->
+<!--    <inertial>-->
+<!--      <mass value="223.72499999997825" />-->
+<!--      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />-->
+<!--      <inertia ixx="107.507985174471" ixy="15.658441357276965" ixz="-8.561908439038996" iyy="29.62603911829324" iyz="44.31003474165986" izz="86.26633697191619" />-->
+<!--    </inertial>-->
+<!--    <collision name="ice_left_collision">-->
+<!--      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />-->
+<!--      <geometry>-->
+<!--        <mesh filename="package://robots/roboy_icecream/meshes/collisions/ice_left.stl" scale="0.001 0.001 0.001" />-->
+<!--      </geometry>-->
+<!--    </collision>-->
+<!--    <visual name="ice_left_visual">-->
+<!--      <origin rpy="0  0  0" xyz="-0.12     0.14318 -0.227" />-->
+<!--      <geometry>-->
+<!--        <mesh filename="package://robots/roboy_icecream/meshes/visuals/ice_left.stl" scale="0.001 0.001 0.001" />-->
+<!--      </geometry>-->
+<!--    </visual>-->
+<!--  </link>-->
   <link name="zed_mini">
     <inertial>
       <mass value="0.4361891515825777" />
