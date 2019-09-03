@@ -51,7 +51,7 @@ Body: bike_back
 COM: bike_back -0.01101671200718244 -36.126275744903424 -55.75062332679439
 exporting stl of bike_back
 Body: bike_front
-COM: bike_front 0.40452502800316276 -150.79089409895522 -33.99737497388162
+COM: bike_front 0.1211683303697229 -111.05264212253107 -13.497386907788984
 exporting stl of bike_front
 Body: zed_mini
 COM: zed_mini -0.10197009809532288 -11.846878800848305 39.355765988353866
@@ -77,7 +77,7 @@ exporting stl of scooper_link1
 Joint: EXPORT_bike_steering
 	parent: bike_back
 	child: bike_front
-	pos: -0.59797675814855	30.55601940417938	-26.3688977831888
+	pos: -0.3146200605151102	-9.182232572244772	-46.86888584928143
 Joint: EXPORT_elbow_right
 	parent: arm_right_upper
 	child: arm_right_lower

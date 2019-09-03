@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
-	<model name="roboy_iccream">
+	<model name="roboy_icecream">
 		<link name="head">
 			<self_collide>false</self_collide>
 			<pose frame="">0.0005102180295691139 0.046445898229309404 0.8611776443142852 0.0 -0.0 0.0</pose>
@@ -19,7 +19,7 @@
 			<collision name="head_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/head.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/head.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -27,7 +27,7 @@
 			<visual name="head_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/head.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/head.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -51,7 +51,7 @@
 			<collision name="torso_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/torso.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/torso.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -59,7 +59,7 @@
 			<visual name="torso_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/torso.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/torso.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -83,7 +83,7 @@
 			<collision name="arm_right_upper_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/arm_right_upper.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/arm_right_upper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -91,7 +91,7 @@
 			<visual name="arm_right_upper_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/arm_right_upper.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/arm_right_upper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -115,7 +115,7 @@
 			<collision name="arm_right_lower_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/arm_right_lower.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/arm_right_lower.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -123,7 +123,7 @@
 			<visual name="arm_right_lower_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/arm_right_lower.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/arm_right_lower.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -147,7 +147,7 @@
 			<collision name="arm_left_upper_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/arm_left_upper.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/arm_left_upper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -155,7 +155,7 @@
 			<visual name="arm_left_upper_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/arm_left_upper.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/arm_left_upper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -179,7 +179,7 @@
 			<collision name="arm_left_lower_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/arm_left_lower.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/arm_left_lower.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -187,7 +187,7 @@
 			<visual name="arm_left_lower_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/arm_left_lower.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/arm_left_lower.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -211,7 +211,7 @@
 			<collision name="scooper_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -219,7 +219,7 @@
 			<visual name="scooper_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -243,7 +243,7 @@
 			<collision name="scooper_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -251,7 +251,7 @@
 			<visual name="scooper_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -275,7 +275,7 @@
 			<collision name="shoulder_left_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/shoulder_left_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/shoulder_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -283,7 +283,7 @@
 			<visual name="shoulder_left_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/shoulder_left_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/shoulder_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -307,7 +307,7 @@
 			<collision name="shoulder_left_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/shoulder_left_link2.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/shoulder_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -315,7 +315,7 @@
 			<visual name="shoulder_left_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/shoulder_left_link2.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/shoulder_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -339,7 +339,7 @@
 			<collision name="shoulder_right_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/shoulder_right_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/shoulder_right_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -347,7 +347,7 @@
 			<visual name="shoulder_right_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/shoulder_right_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/shoulder_right_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -371,7 +371,7 @@
 			<collision name="shoulder_right_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/shoulder_right_link2.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/shoulder_right_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -379,7 +379,7 @@
 			<visual name="shoulder_right_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/shoulder_right_link2.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/shoulder_right_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -403,7 +403,7 @@
 			<collision name="zed_camera_left_lense_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/zed_camera_left_lense.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/zed_camera_left_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -411,7 +411,7 @@
 			<visual name="zed_camera_left_lense_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/zed_camera_left_lense.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/zed_camera_left_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -435,7 +435,7 @@
 			<collision name="zed_camera_right_lense_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/zed_camera_right_lense.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/zed_camera_right_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -443,7 +443,7 @@
 			<visual name="zed_camera_right_lense_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/zed_camera_right_lense.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/zed_camera_right_lense.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -467,7 +467,7 @@
 			<collision name="zed_camera_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/zed_camera.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/zed_camera.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -475,7 +475,7 @@
 			<visual name="zed_camera_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/zed_camera.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/zed_camera.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -499,7 +499,7 @@
 			<collision name="neck_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/neck_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/neck_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -507,7 +507,7 @@
 			<visual name="neck_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/neck_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/neck_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -531,7 +531,7 @@
 			<collision name="neck_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/neck_link2.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/neck_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -539,7 +539,7 @@
 			<visual name="neck_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/neck_link2.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/neck_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -563,7 +563,7 @@
 			<collision name="bike_back_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/bike_back.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/bike_back.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -571,7 +571,7 @@
 			<visual name="bike_back_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/bike_back.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/bike_back.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -579,23 +579,23 @@
 		</link>
 		<link name="bike_front">
 			<self_collide>false</self_collide>
-			<pose frame="">0.0040452502800316275 -1.5079089409895523 -0.3399737497388162 0.0 -0.0 0.0</pose>
+			<pose frame="">0.001211683303697229 -1.1105264212253108 -0.13497386907788986 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>335.59048286557845</mass>
+				<mass>637.307664696775</mass>
 				<inertia>
-					<ixx>825.9403943129366</ixx>
-					<ixy>2.275967845180073</ixy>
-					<ixz>0.4455540006423285</ixz>
-					<iyy>51.91758901297106</iyy>
-					<iyz>-172.44821921097983</iyz>
-					<izz>788.7086791068839</izz>
+					<ixx>972.9796056018367</ixx>
+					<ixy>1.8846553118688074</ixy>
+					<ixz>0.5000139261544522</ixz>
+					<iyy>65.76697684911534</iyy>
+					<iyz>-151.057167024435</iyz>
+					<izz>937.8235037267203</izz>
 				</inertia>
 			</inertial>
 			<collision name="bike_front_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/bike_front.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/bike_front.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -603,7 +603,7 @@
 			<visual name="bike_front_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/bike_front.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/bike_front.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -627,7 +627,7 @@
 			<collision name="zed_mini_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/zed_mini.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/zed_mini.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -635,7 +635,7 @@
 			<visual name="zed_mini_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/zed_mini.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/zed_mini.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -659,7 +659,7 @@
 			<collision name="pico_flexx_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/pico_flexx.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/pico_flexx.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -667,7 +667,7 @@
 			<visual name="pico_flexx_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/pico_flexx.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/pico_flexx.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -691,7 +691,7 @@
 			<collision name="sphere_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -699,7 +699,7 @@
 			<visual name="sphere_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/sphere_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/sphere_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -723,7 +723,7 @@
 			<collision name="sphere_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -731,7 +731,7 @@
 			<visual name="sphere_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/sphere_link2.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/sphere_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -755,7 +755,7 @@
 			<collision name="scooper_target_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper_target.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper_target.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -763,7 +763,7 @@
 			<visual name="scooper_target_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper_target.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper_target.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -787,7 +787,7 @@
 			<collision name="scooper_link0_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper_link0.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper_link0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -795,7 +795,7 @@
 			<visual name="scooper_link0_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper_link0.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper_link0.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -819,7 +819,7 @@
 			<collision name="scooper_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -827,7 +827,7 @@
 			<visual name="scooper_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://roboy_iccream/meshes/CAD/scooper_link1.stl</uri>
+						<uri>model://roboy_icecream/meshes/CAD/scooper_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -836,7 +836,7 @@
 		<joint name="bike_steering" type="revolute">
 			<parent>bike_back</parent>
 			<child>bike_front</child>
-			<pose frame="">-0.0059797675814855 0.3055601940417938 -0.263688977831888 0 0 0</pose>
+			<pose frame="">-0.003146200605151102 -0.09182232572244772 -0.46868885849281433 0 0 0</pose>
 			<axis>
 				<xyz>-1.8044974943364984e-16 -9.570458378672299e-08 0.9999999999999957</xyz>
 				<limit>
