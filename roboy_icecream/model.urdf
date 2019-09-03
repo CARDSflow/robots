@@ -311,21 +311,21 @@
     <parent link="torso" />
     <child link="shoulder_left_link1" />
     <origin rpy="0 0 0" xyz="0.29189 0.01393 0.54489" />
-    <axis xyz="-0.99863 -0.05074  0.01234" />
+    <axis xyz="1 0 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="shoulder_left_axis1" type="revolute">
     <parent link="shoulder_left_link1" />
     <child link="shoulder_left_link2" />
     <origin rpy="0 0 0" xyz="0 0 0" />
-    <axis xyz="-0.05101  0.99844 -0.02231" />
+    <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="shoulder_left_axis2" type="revolute">
     <parent link="shoulder_left_link2" />
     <child link="arm_left_upper" />
     <origin rpy="0 0 0" xyz="0 0 0" />
-    <axis xyz="-0.01118 -0.0229  -0.99967" />
+    <axis xyz="0 0 1" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="shoulder_right_axis0" type="revolute">
