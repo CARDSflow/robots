@@ -1325,17 +1325,17 @@
   <link name="bike_front">
     <inertial>
       <mass value="1286.0735575666731" />
-      <origin rpy="0  0  0" xyz="0.00155  0.33304  0.68923" />
+      <origin rpy="0  0  0" xyz="0.00155  0.10304  0.45923" />
       <inertia ixx="1309.930820530021" ixy="1.0887808321170818" ixz="0.8803936253774313" iyy="143.49238189135068" iyz="-26.118381241082727" izz="1223.7503807159978" />
     </inertial>
     <collision name="bike_front_collision">
-      <origin rpy="0  0  0" xyz="0.00155  0.33304  0.68923" />
+      <origin rpy="0  0  0" xyz="0.00155  0.10304  0.45923" />
       <geometry>
         <mesh filename="package://robots/roboy_icecream/meshes/collisions/bike_front.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <visual name="bike_front_visual">
-      <origin rpy="0  0  0" xyz="0.00155  0.33304  0.68923" />
+      <origin rpy="0  0  0" xyz="0.00155  0.10304  0.45923" />
       <geometry>
         <mesh filename="package://robots/roboy_icecream/meshes/visuals/bike_front.stl" scale="0.001 0.001 0.001" />
       </geometry>
