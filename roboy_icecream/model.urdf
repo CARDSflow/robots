@@ -39,7 +39,7 @@
     <child link="palm_right" />
     <origin rpy="0  0  0" xyz="0.01941 -0.00089 -0.23765" />
     <axis xyz="1.23400000e-02  -2.50000000e-04  -9.99920000e-01" />
-    <limit effort="0.0" lower="-2" upper="2" velocity="0.0" />
+    <limit effort="0.0" lower="-3.14" upper="3.14" velocity="0.0" />
   </joint>
   <joint name="palm_scooper" type="fixed">
     <parent link="palm_right" />

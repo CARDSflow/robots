@@ -37,7 +37,7 @@ arm_left:
 arm_right:
   bodyPartID: 6
   init_mode: 'DIRECT_PWM'
-  init_setpoint: 130
+  init_setpoint: 180
   real_motor_ids: [0, 1]
   sim_motor_ids: [25, 24]
   motor_type: [1, 1]
