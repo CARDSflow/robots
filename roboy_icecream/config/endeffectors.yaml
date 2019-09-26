@@ -1,21 +1,20 @@
-joint_names: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left','wrist_left',
-              'palm_scooper', 'scooper_target_axis0', 'scooper_target_axis1', 'scooper_target_axis2',
-              'shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right',
+joint_names: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left',
+              'shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right',
               'spine','neck_axis0','neck_axis1','neck_axis2',
               'bike_steering']
-endeffectors: ['scooper']
+endeffectors: ['arm_left_palm']
 scooper:
   base_link: 'torso'
-  joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right', 'scooper_target_axis0', 'scooper_target_axis1', 'scooper_target_axis2']
+  joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right']
 head:
   base_link: 'torso'
   joints: ['neck_axis0','neck_axis1','neck_axis2']
 arm_left_palm:
   base_link: 'torso'
-  joints: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left','wrist_left']
+  joints: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left']
 arm_right_palm:
   base_link: 'torso'
-  joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right','wrist_right']
+  joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2','elbow_right']
 arm_left:
   base_link: 'torso'
   joints: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2']
