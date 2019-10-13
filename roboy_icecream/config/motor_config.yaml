@@ -1,10 +1,10 @@
 head:
   bodyPartID: 4
   init_mode: 'DIRECT_PWM'
-  init_setpoint: 10
+  init_setpoint: 250
   real_motor_ids: [9,10,11,12,13,14]
-  sim_motor_ids: [21,22,23,18,19,20]
-  motor_type: [1,1,2,2,1,1] 
+  sim_motor_ids: [20,19,18,23,22,21]
+  motor_type: [2,1,1,1,1,2]
   board_name: 'shoulder_right'
   use_motor_config: true
 shoulder_left:

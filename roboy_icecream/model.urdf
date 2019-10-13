@@ -1,33 +1,33 @@
 <robot name="roboy_icecream">
-  <joint name="spine" type="fixed">
+  <joint name="spine" type="revolute">
     <parent link="torso" />
     <child link="bike_back" />
     <origin rpy="0 0 0" xyz="0.0000e+00 -2.0000e-05  2.9933e-01" />
     <axis xyz="0  0 -1" />
     <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0" />
   </joint>
-  <joint name="zed_pico_attachement" type="fixed">
+  <joint name="zed_pico_attachement" type="revolute">
     <parent link="zed_mini" />
     <child link="pico_flexx" />
     <origin rpy="0 0 0" xyz="0.0576  -0.00665 -0.01668" />
     <axis xyz="0 0 0" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
-  <joint name="zed_mini_attachement" type="fixed">
+  <joint name="zed_mini_attachement" type="revolute">
     <parent link="torso" />
     <child link="zed_mini" />
     <origin rpy="0 0 0" xyz="0.00047 -0.10882  0.42356" />
     <axis xyz="0 0 0" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
-  <joint name="zed_camera_right" type="fixed">
+  <joint name="zed_camera_right" type="revolute">
     <parent link="zed_camera" />
     <child link="zed_camera_right_lense" />
     <origin rpy="0 0 0" xyz="-0.08149 -0.00191 -0.00782" />
     <axis xyz="0 0 0" />
     <limit effort="0" lower="0" upper="0" velocity="0" />
   </joint>
-  <joint name="zed_camera_left" type="fixed">
+  <joint name="zed_camera_left" type="revolute">
     <parent link="zed_camera" />
     <child link="zed_camera_left_lense" />
     <origin rpy="0 0 0" xyz="0.03848 -0.00154 -0.00782" />
@@ -55,7 +55,7 @@
     <axis xyz="-0.99215 -0.12498  0" />
     <limit effort="0.0" lower="-0.523598775598" upper="0.523598775598" velocity="0.0" />
   </joint>
-  <joint name="zed_camera_mount" type="fixed">
+  <joint name="zed_camera_mount" type="revolute">
     <parent link="head" />
     <child link="zed_camera" />
     <origin rpy="0 0 0" xyz="0.02168 -0.05805  0.21956" />
@@ -66,42 +66,42 @@
     <parent link="torso" />
     <child link="shoulder_right_link1" />
     <origin rpy="0 0 0" xyz="-0.29317  0.00923  0.5481" />
-    <axis xyz="0.99863 -0.05074  0.01234" />
+    <axis xyz="1 0 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="shoulder_right_axis1" type="revolute">
     <parent link="shoulder_right_link1" />
     <child link="shoulder_right_link2" />
     <origin rpy="0 0 0" xyz="0 0 0" />
-    <axis xyz="-5.0740e-02 -9.9871e-01 -3.7000e-04" />
+    <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="shoulder_right_axis2" type="revolute">
     <parent link="shoulder_right_link2" />
     <child link="arm_right_upper" />
     <origin rpy="0 0 0" xyz="0 0 0" />
-    <axis xyz="1.2340e-02 -2.5000e-04 -9.9992e-01" />
+    <axis xyz="0 0 1" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="shoulder_left_axis0" type="revolute">
     <parent link="torso" />
     <child link="shoulder_left_link1" />
     <origin rpy="0 0 0" xyz="0.29189 0.01393 0.54489" />
-    <axis xyz="-0.99863 -0.05074  0.01234" />
+    <axis xyz="1 0 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="shoulder_left_axis1" type="revolute">
     <parent link="shoulder_left_link1" />
     <child link="shoulder_left_link2" />
     <origin rpy="0 0 0" xyz="0 0 0" />
-    <axis xyz="-0.05101  0.99844 -0.02231" />
+    <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="shoulder_left_axis2" type="revolute">
     <parent link="shoulder_left_link2" />
     <child link="arm_left_upper" />
     <origin rpy="0 0 0" xyz="0 0 0" />
-    <axis xyz="-0.01118 -0.0229  -0.99967" />
+    <axis xyz="0 0 1" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
   <joint name="bike_steering" type="revolute">
@@ -118,7 +118,7 @@
     <axis xyz="-0.99863  0.05074 -0.01234" />
     <limit effort="0.0" lower="0.0" upper="1.91986217719" velocity="0.0" />
   </joint>
-  <joint name="elbow_left" type="fixed">
+  <joint name="elbow_left" type="revolute">
     <parent link="arm_left_upper" />
     <child link="arm_left_lower" />
     <origin rpy="0 0 0" xyz="0.01342 -0.00741 -0.36229" />
