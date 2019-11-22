@@ -1,0 +1,125 @@
+<robot name="shoulder_testbed">
+  <joint name="joint_axis3" type="revolute">
+    <parent link="link0" />
+    <child link="link1" />
+    <origin rpy="0  0  0" xyz="0.02713  0.00262 -0.061" />
+    <axis xyz="-0.08797 -0.02783  0.99573" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis0" type="revolute">
+    <parent link="base" />
+    <child link="sphere_link1" />
+    <origin rpy="0  0  0" xyz="0.46647  0.0165   0.30299" />
+    <axis xyz="0 -1  0" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis1" type="revolute">
+    <parent link="sphere_link1" />
+    <child link="sphere_link2" />
+    <origin rpy="0  0  0" xyz="0  0  0" />
+    <axis xyz="-0.7071  0     -0.7071" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <joint name="sphere_axis2" type="revolute">
+    <parent link="sphere_link2" />
+    <child link="link0" />
+    <origin rpy="0  0  0" xyz="0  0  0" />
+    <axis xyz="0.7071  0     -0.7071" />
+    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+  </joint>
+  <link name="link0">
+    <inertial>
+      <mass value="0.3464496352812503" />
+      <origin rpy="0  0  0" xyz="0.02015  0.0016  -0.03414" />
+      <inertia ixx="0.025297031599366283" ixy="-0.0030526335654748257" ixz="-0.045305746032064935" iyy="0.10722355095830884" iyz="-0.0016836400860695052" izz="0.08225021375925705" />
+    </inertial>
+    <collision name="link0_collision">
+      <origin rpy="0  0  0" xyz="0.02015  0.0016  -0.03414" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/collisions/link0.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="link0_visual">
+      <origin rpy="0  0  0" xyz="0.02015  0.0016  -0.03414" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/visuals/link0.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="base">
+    <inertial>
+      <mass value="7.066204716584848" />
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <inertia ixx="0.388197814797746" ixy="-0.029342053286195286" ixz="-0.3834872054080739" iyy="0.8621025029838427" iyz="-0.028297210967366357" izz="0.4896168836436841" />
+    </inertial>
+    <collision name="base_collision">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/collisions/base.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="base_visual">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/visuals/base.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="link1">
+    <inertial>
+      <mass value="0.6794417520843521" />
+      <origin rpy="0  0  0" xyz="0.00137  0.00054 -0.01988" />
+      <inertia ixx="0.03409305949924449" ixy="-0.006611706515550387" ixz="-0.07468779451939428" iyy="0.20029437677486592" iyz="-0.002963627875662352" izz="0.166927257038415" />
+    </inertial>
+    <collision name="link1_collision">
+      <origin rpy="0  0  0" xyz="0.00137  0.00054 -0.01988" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/collisions/link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="link1_visual">
+      <origin rpy="0  0  0" xyz="0.00137  0.00054 -0.01988" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/visuals/link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link1">
+    <inertial>
+      <mass value="0.09022821652718069" />
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <inertia ixx="0.008314932091121193" ixy="-0.0006944686587959163" ixz="-0.012752609076428927" iyy="0.027923746010935026" iyz="-0.00045108320496681914" izz="0.019665017075888618" />
+    </inertial>
+    <collision name="sphere_link1_collision">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/collisions/sphere_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="sphere_link1_visual">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/visuals/sphere_link1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="sphere_link2">
+    <inertial>
+      <mass value="0.007102512825359175" />
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <inertia ixx="0.0006540736356054609" ixy="-5.466663030770365e-05" ixz="-0.0010038497160048798" iyy="0.0021976246192501247" iyz="-3.550800816197733e-05" izz="0.0015475205780596888" />
+    </inertial>
+    <collision name="sphere_link2_collision">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/collisions/sphere_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="sphere_link2_visual">
+      <origin rpy="0  0  0" xyz="0  0  0" />
+      <geometry>
+        <mesh filename="package://robots/shoulder_testbed/meshes/visuals/sphere_link2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+</robot>

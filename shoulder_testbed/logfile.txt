@@ -1,0 +1,31 @@
+Body: link0
+COM: link0 48.66289163564499 1.8103056861802322 26.884434234581445
+exporting stl of link0
+Body: base
+COM: base 0.0 0.0 0.0
+exporting stl of base
+Body: link1
+COM: link1 49.498230600152645 1.9659601836690785 22.209582847878995
+exporting stl of link1
+Body: sphere_link1
+COM: sphere_link1 46.64728091052797 1.650000000000059 30.299142674906587
+exporting stl of sphere_link1
+Body: sphere_link2
+COM: sphere_link2 46.64728091342976 1.650000000000062 30.29914267780833
+exporting stl of sphere_link2
+Joint: EXPORT_joint_axis3
+	parent: link0
+	child: link1
+	pos: -0.13769470876735568	-0.05398260135122834	1.9889050963209947
+Joint: EXPORT_sphere_axis0
+	parent: base
+	child: sphere_link1
+	pos: 1.4210854715202004e-14	0.0	-1.4210854715202004e-14
+Joint: EXPORT_sphere_axis1
+	parent: sphere_link1
+	child: sphere_link2
+	pos: -2.9017925839980308e-09	-1.3322676295501878e-15	-2.901767715002279e-09
+Joint: EXPORT_sphere_axis2
+	parent: sphere_link2
+	child: link0
+	pos: -2.015610725116993	-0.16030568618017327	3.414708440325125

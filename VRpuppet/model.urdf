@@ -1,275 +1,161 @@
 <robot name="VRpuppet">
-  <joint name="motor1" type="prismatic">
-    <parent link="base" />
-    <child link="motor1" />
-    <origin rpy="0 0 0" xyz="4.4374e-01 2.6069e-01 3.0000e-05" />
-    <axis xyz="0  0 -1" />
-    <limit effort="0.0" lower="-0.79" upper="0.0" velocity="0.0" />
-  </joint>
-  <joint name="motor5" type="prismatic">
-    <parent link="base" />
-    <child link="motor5" />
-    <origin rpy="0 0 0" xyz="-4.4374e-01  2.6069e-01  3.0000e-05" />
-    <axis xyz="0  0 -1" />
-    <limit effort="0.0" lower="-0.79" upper="0.0" velocity="0.0" />
-  </joint>
-  <joint name="motor3" type="prismatic">
-    <parent link="base" />
-    <child link="motor3" />
-    <origin rpy="0 0 0" xyz="0.00000e+00 1.02927e+00 3.00000e-05" />
-    <axis xyz="0  0 -1" />
-    <limit effort="0.0" lower="-0.79" upper="0.0" velocity="0.0" />
-  </joint>
-  <joint name="6dof_axis3" type="prismatic">
+  <joint name="axis3" type="prismatic">
     <parent link="6dof_link3" />
     <child link="6dof_link4" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="-1  0  0" />
     <limit effort="0.0" lower="-1.0" upper="1.0" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis4" type="prismatic">
+  <joint name="axis4" type="prismatic">
     <parent link="6dof_link4" />
     <child link="6dof_link5" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-1.0" upper="1.0" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis5" type="prismatic">
+  <joint name="axis5" type="prismatic">
     <parent link="6dof_link5" />
     <child link="box" />
     <origin rpy="0 0 0" xyz="0.e+00 1.e-05 0.e+00" />
     <axis xyz="0 0 1" />
     <limit effort="0.0" lower="-1.0" upper="1.0" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis0" type="revolute">
+  <joint name="axis0" type="revolute">
     <parent link="base" />
     <child link="6dof_link1" />
-    <origin rpy="0 0 0" xyz="0      0.49999 0" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="1 0 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis1" type="revolute">
+  <joint name="axis1" type="revolute">
     <parent link="6dof_link1" />
     <child link="6dof_link2" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="0 1 0" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
-  <joint name="6dof_axis2" type="revolute">
+  <joint name="axis2" type="revolute">
     <parent link="6dof_link2" />
     <child link="6dof_link3" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="0 0 1" />
     <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
   </joint>
+  <joint name="motor0" type="prismatic">
+    <parent link="base" />
+    <child link="motor0" />
+    <origin rpy="0 0 0" xyz="-4.4900e-03 -4.9999e-01  3.0000e-05" />
+    <axis xyz="0  0 -1" />
+    <limit effort="0.0" lower="-2.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <joint name="motor5" type="prismatic">
+    <parent link="base" />
+    <child link="motor5" />
+    <origin rpy="0 0 0" xyz="4.4539e-01 -2.4544e-01  3.0000e-05" />
+    <axis xyz="0  0 -1" />
+    <limit effort="0.0" lower="-2.0" upper="0.0" velocity="0.0" />
+  </joint>
   <joint name="motor4" type="prismatic">
     <parent link="base" />
     <child link="motor4" />
-    <origin rpy="0 0 0" xyz="-4.4374e-01  7.7308e-01  3.0000e-05" />
+    <origin rpy="0 0 0" xyz="4.4989e-01 2.7144e-01 3.0000e-05" />
     <axis xyz="0  0 -1" />
-    <limit effort="0.0" lower="-0.79" upper="0.0" velocity="0.0" />
+    <limit effort="0.0" lower="-2.0" upper="0.0" velocity="0.0" />
+  </joint>
+  <joint name="motor3" type="prismatic">
+    <parent link="base" />
+    <child link="motor3" />
+    <origin rpy="0 0 0" xyz="4.5000e-03 5.3378e-01 3.0000e-05" />
+    <axis xyz="0  0 -1" />
+    <limit effort="0.0" lower="-2.0" upper="0.0" velocity="0.0" />
   </joint>
   <joint name="motor2" type="prismatic">
     <parent link="base" />
     <child link="motor2" />
-    <origin rpy="0 0 0" xyz="4.4374e-01 7.7308e-01 3.0000e-05" />
+    <origin rpy="0 0 0" xyz="-4.4538e-01  2.7923e-01  3.0000e-05" />
     <axis xyz="0  0 -1" />
-    <limit effort="0.0" lower="-0.79" upper="0.0" velocity="0.0" />
+    <limit effort="0.0" lower="-2.0" upper="0.0" velocity="0.0" />
   </joint>
-  <joint name="motor0" type="prismatic">
+  <joint name="motor1" type="prismatic">
     <parent link="base" />
-    <child link="motor0" />
-    <origin rpy="0 0 0" xyz="0.00e+00 4.49e-03 3.00e-05" />
+    <child link="motor1" />
+    <origin rpy="0 0 0" xyz="-4.4988e-01 -2.3764e-01  3.0000e-05" />
     <axis xyz="0  0 -1" />
-    <limit effort="0.0" lower="-0.79" upper="0.0" velocity="0.0" />
+    <limit effort="0.0" lower="-2.0" upper="0.0" velocity="0.0" />
   </joint>
   <link name="base">
     <inertial>
-      <mass value="14.805714727447434" />
-      <origin rpy="0 0 0" xyz="0      0.49999 0" />
-      <inertia ixx="10.712442593156654" ixy="-0.0005082017849534042" ixz="-0.0027654760315066838" iyy="6.756418936462116" iyz="-2.7324379967369707" izz="8.021521726703142" />
+      <mass value="14.80571472744744" />
+      <origin rpy="0 0 0" xyz="0   0   0.05" />
+      <inertia ixx="6.761884261169531" ixy="0.000888098241208643" ixz="-0.0027842413122673953" iyy="6.756418956494972" iyz="-0.09025625769730981" izz="4.070963414748864" />
     </inertial>
     <collision name="base_collision">
-      <origin rpy="0 0 0" xyz="0      0.49999 0" />
+      <origin rpy="0 0 0" xyz="0   0   0.05" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/base.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/collisions/base.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <visual name="base_visual">
-      <origin rpy="0 0 0" xyz="0      0.49999 0" />
+      <origin rpy="0 0 0" xyz="0   0   0.05" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/base.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/visuals/base.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
   <link name="box">
     <inertial>
-      <mass value="2.005118120839268" />
-      <origin rpy="0 0 0" xyz="0     0     0.0995" />
-      <inertia ixx="0.5214034254562188" ixy="-3.3351445108444256e-05" ixz="-9.755914506026249e-06" iyy="0.019888172325787386" iyz="-0.08782084674303926" izz="0.5052369551287759" />
+      <mass value="1.3599851753023426" />
+      <origin rpy="0 0 0" xyz="0.0e+00 -1.0e-05  7.4e-02" />
+      <inertia ixx="0.010235146953606238" ixy="-3.1451062116997783e-06" ixz="-1.7212513861258524e-05" iyy="0.010234460750982537" iyz="2.1295014088902833e-05" izz="0.0020638574274181075" />
     </inertial>
     <collision name="box_collision">
-      <origin rpy="0 0 0" xyz="0     0     0.0995" />
+      <origin rpy="0 0 0" xyz="0.0e+00 -1.0e-05  7.4e-02" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/box.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/collisions/box.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <visual name="box_visual">
-      <origin rpy="0 0 0" xyz="0     0     0.0995" />
+      <origin rpy="0 0 0" xyz="0.0e+00 -1.0e-05  7.4e-02" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/box.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="motor0">
-    <inertial>
-      <mass value="0.21500796408977113" />
-      <origin rpy="0 0 0" xyz="-0.00207 -0.00449  0.10578" />
-      <inertia ixx="0.0028041636402100626" ixy="-1.200134854484171e-06" ixz="4.826795297183272e-05" iyy="0.002799086867285954" iyz="1.2817693014068933e-06" izz="0.00011522727976854389" />
-    </inertial>
-    <collision name="motor0_collision">
-      <origin rpy="0 0 0" xyz="-0.00207 -0.00449  0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/motor0.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="motor0_visual">
-      <origin rpy="0 0 0" xyz="-0.00207 -0.00449  0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/motor0.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="motor1">
-    <inertial>
-      <mass value="0.21500795807608153" />
-      <origin rpy="0 0 0" xyz="0.00285 -0.00404  0.10578" />
-      <inertia ixx="0.016962967776922185" ixy="-0.02464039584459112" ixz="-0.010161735012021833" iyy="0.045683680046410303" iyz="-0.005837732298253382" izz="0.05715861803215074" />
-    </inertial>
-    <collision name="motor1_collision">
-      <origin rpy="0 0 0" xyz="0.00285 -0.00404  0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/motor1.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="motor1_visual">
-      <origin rpy="0 0 0" xyz="0.00285 -0.00404  0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/motor1.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="motor2">
-    <inertial>
-      <mass value="0.2150052717734249" />
-      <origin rpy="0 0 0" xyz="0.00492 0.00044 0.10578" />
-      <inertia ixx="0.131446055713521" ixy="-0.07462149576727586" ixz="-0.010209874278854192" iyy="0.04608527837665643" iyz="-0.017599125338136703" izz="0.1720433767202585" />
-    </inertial>
-    <collision name="motor2_collision">
-      <origin rpy="0 0 0" xyz="0.00492 0.00044 0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/motor2.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="motor2_visual">
-      <origin rpy="0 0 0" xyz="0.00492 0.00044 0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/motor2.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="motor3">
-    <inertial>
-      <mass value="0.21500308698389853" />
-      <origin rpy="0 0 0" xyz="0.00207 0.00449 0.10578" />
-      <inertia ixx="0.23257265425306461" ixy="-0.0004631946422395565" ixz="-4.827558181895594e-05" iyy="0.002799028603418459" iyz="-0.023521432744631525" izz="0.2298837744923025" />
-    </inertial>
-    <collision name="motor3_collision">
-      <origin rpy="0 0 0" xyz="0.00207 0.00449 0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/motor3.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="motor3_visual">
-      <origin rpy="0 0 0" xyz="0.00207 0.00449 0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/motor3.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="motor4">
-    <inertial>
-      <mass value="0.21500285301110977" />
-      <origin rpy="0 0 0" xyz="-0.00285  0.00404  0.10578" />
-      <inertia ixx="0.13264688084280757" ixy="0.07462181774304512" ixz="0.01016147577274065" iyy="0.045682564027060966" iyz="-0.017682529021112527" izz="0.17284154648555008" />
-    </inertial>
-    <collision name="motor4_collision">
-      <origin rpy="0 0 0" xyz="-0.00285  0.00404  0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/motor4.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="motor4_visual">
-      <origin rpy="0 0 0" xyz="-0.00285  0.00404  0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/motor4.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </visual>
-  </link>
-  <link name="motor5">
-    <inertial>
-      <mass value="0.21500469873208322" />
-      <origin rpy="0 0 0" xyz="-0.00492 -0.00044  0.10578" />
-      <inertia ixx="0.01736068644516526" ixy="0.02510316047777399" ixz="0.010209842345073612" iyy="0.04608510274660041" iyz="-0.005921246746147437" izz="0.05795784243212251" />
-    </inertial>
-    <collision name="motor5_collision">
-      <origin rpy="0 0 0" xyz="-0.00492 -0.00044  0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/motor5.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    <visual name="motor5_visual">
-      <origin rpy="0 0 0" xyz="-0.00492 -0.00044  0.10578" />
-      <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/motor5.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/visuals/box.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
   <link name="6dof_link4">
     <inertial>
-      <mass value="0.029253556048299448" />
+      <mass value="0.029253556048299476" />
       <origin rpy="0 0 0" xyz="4.264e-02 -6.000e-05  0.000e+00" />
-      <inertia ixx="0.007311732965541863" ixy="-0.0006235645951685342" ixz="-5.2625122728248096e-21" iyy="6.385755477998546e-05" iyz="1.107553156778739e-11" izz="0.00737516898919067" />
+      <inertia ixx="4.2090251723419015e-07" ixy="1.0370831206417925e-07" ixz="-5.798374481226597e-21" iyy="6.386641397225651e-05" iyz="1.1075531602667452e-11" izz="6.386578535831043e-05" />
     </inertial>
     <collision name="6dof_link4_collision">
       <origin rpy="0 0 0" xyz="4.264e-02 -6.000e-05  0.000e+00" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/6dof_link4.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/collisions/6dof_link4.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <visual name="6dof_link4_visual">
       <origin rpy="0 0 0" xyz="4.264e-02 -6.000e-05  0.000e+00" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/6dof_link4.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/visuals/6dof_link4.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
   <link name="6dof_link5">
     <inertial>
-      <mass value="0.029267161202751045" />
+      <mass value="0.029267161202751038" />
       <origin rpy="0 0 0" xyz="6.000e-05 4.262e-02 0.000e+00" />
-      <inertia ixx="0.008627687421986245" ixy="-9.96523296456457e-07" ixz="3.6456781000953645e-12" iyy="4.2081590560900975e-07" iyz="4.061320530247568e-10" izz="0.008627687829627053" />
+      <inertia ixx="6.385311836563872e-05" ixy="-1.0820097121352837e-07" ixz="3.647628896237974e-12" iyy="4.208289556490234e-07" iyz="1.314568252966794e-10" izz="6.385353905648622e-05" />
     </inertial>
     <collision name="6dof_link5_collision">
       <origin rpy="0 0 0" xyz="6.000e-05 4.262e-02 0.000e+00" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/6dof_link5.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/collisions/6dof_link5.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <visual name="6dof_link5_visual">
       <origin rpy="0 0 0" xyz="6.000e-05 4.262e-02 0.000e+00" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/6dof_link5.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/visuals/6dof_link5.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
@@ -277,18 +163,18 @@
     <inertial>
       <mass value="0.03806502884740436" />
       <origin rpy="0 0 0" xyz="0 0 0" />
-      <inertia ixx="0.009517553086522747" ixy="6.758356266086674e-08" ixz="-8.239936510889834e-22" iyy="1.678668252161937e-06" iyz="4.163336342344337e-20" izz="0.009517553087002738" />
+      <inertia ixx="1.6786677721705307e-06" ixy="2.168404344971009e-22" ixz="-8.348356728138384e-22" iyy="1.6786677721705311e-06" iyz="-1.8431436932253577e-22" izz="1.6786677721705307e-06" />
     </inertial>
     <collision name="6dof_link1_collision">
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/6dof_link1.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/collisions/6dof_link1.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <visual name="6dof_link1_visual">
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/6dof_link1.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/visuals/6dof_link1.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
@@ -296,37 +182,151 @@
     <inertial>
       <mass value="0.0029963725331776064" />
       <origin rpy="0 0 0" xyz="0 0 0" />
-      <inertia ixx="0.0007490872715104226" ixy="5.319988897506574e-09" ixz="-9.5403703129416e-24" iyy="2.4270655302318373e-08" iyz="1.1275702593849247e-21" izz="0.000749087271548206" />
+      <inertia ixx="2.42706175187388e-08" ixy="8.851426536171658e-24" ixz="-9.532305500492555e-24" iyy="2.4270617518738303e-08" iyz="-1.3552527156068806e-24" izz="2.4270617518738147e-08" />
     </inertial>
     <collision name="6dof_link2_collision">
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/6dof_link2.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/collisions/6dof_link2.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <visual name="6dof_link2_visual">
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/6dof_link2.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/visuals/6dof_link2.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>
   <link name="6dof_link3">
     <inertial>
-      <mass value="0.015709236754408065" />
+      <mass value="0.015709236754408062" />
       <origin rpy="0 0 0" xyz="0      0      0.01072" />
-      <inertia ixx="0.00392959615798485" ixy="2.6026499485047542e-08" ixz="5.237164793926586e-10" iyy="2.4420631045378395e-06" iyz="-8.427326992847509e-05" izz="0.003927407359035778" />
+      <inertia ixx="2.4494864177993604e-06" ixy="3.9391391199366906e-12" ixz="-7.480906938650857e-11" iyy="2.4420629329931183e-06" iyz="9.08467159514214e-11" izz="2.606872971819379e-07" />
     </inertial>
     <collision name="6dof_link3_collision">
       <origin rpy="0 0 0" xyz="0      0      0.01072" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/collisions/6dof_link3.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/collisions/6dof_link3.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <visual name="6dof_link3_visual">
       <origin rpy="0 0 0" xyz="0      0      0.01072" />
       <geometry>
-        <mesh filename="package://robots/VRpuppet/meshes/visuals/6dof_link3.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://robots/meshes/visuals/6dof_link3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="motor0">
+    <inertial>
+      <mass value="0.30550490373816114" />
+      <origin rpy="0 0 0" xyz="0.02735 -0.00604  0.0993" />
+      <inertia ixx="0.08158240948536945" ixy="0.0035641837811466676" ixz="-0.0006688831377434676" iyy="0.003525413660856625" iyz="0.015319756698910803" izz="0.07869230225448481" />
+    </inertial>
+    <collision name="motor0_collision">
+      <origin rpy="0 0 0" xyz="0.02735 -0.00604  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/collisions/motor0.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="motor0_visual">
+      <origin rpy="0 0 0" xyz="0.02735 -0.00604  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/visuals/motor0.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="motor5">
+    <inertial>
+      <mass value="0.30548874966703765" />
+      <origin rpy="0 0 0" xyz="0.01891 0.02066 0.0993" />
+      <inertia ixx="0.01877031276787272" ixy="0.03186066774903848" ixz="-0.014045198835378653" iyy="0.06923768537046954" iyz="0.00682398774592904" izz="0.08159273055412432" />
+    </inertial>
+    <collision name="motor5_collision">
+      <origin rpy="0 0 0" xyz="0.01891 0.02066 0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/collisions/motor5.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="motor5_visual">
+      <origin rpy="0 0 0" xyz="0.01891 0.02066 0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/visuals/motor5.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="motor3">
+    <inertial>
+      <mass value="0.30550002607682675" />
+      <origin rpy="0 0 0" xyz="-0.02735  0.00604  0.0993" />
+      <inertia ixx="0.09237958008811772" ixy="0.0037987616117338362" ixz="0.0006686218690217871" iyy="0.003525271048401693" iyz="-0.016345148306912454" izz="0.08948938320593802" />
+    </inertial>
+    <collision name="motor3_collision">
+      <origin rpy="0 0 0" xyz="-0.02735  0.00604  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/collisions/motor3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="motor3_visual">
+      <origin rpy="0 0 0" xyz="-0.02735  0.00604  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/visuals/motor3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="motor4">
+    <inertial>
+      <mass value="0.30547824708504573" />
+      <origin rpy="0 0 0" xyz="-0.00093  0.01372  0.0993" />
+      <inertia ixx="0.028229493059966804" ixy="-0.03911778437003105" ixz="-0.013603656492851206" iyy="0.06489952890002364" iyz="-0.008613297227676224" izz="0.08671393074594681" />
+    </inertial>
+    <collision name="motor4_collision">
+      <origin rpy="0 0 0" xyz="-0.00093  0.01372  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/collisions/motor4.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="motor4_visual">
+      <origin rpy="0 0 0" xyz="-0.00093  0.01372  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/visuals/motor4.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="motor2">
+    <inertial>
+      <mass value="0.30550404001277265" />
+      <origin rpy="0 0 0" xyz="-0.01891 -0.02066  0.0993" />
+      <inertia ixx="0.023761824626400196" ixy="0.03665566493632551" ixz="0.01404563747212196" iyy="0.06923921346019207" iyz="-0.00784990552507985" izz="0.08658551781209088" />
+    </inertial>
+    <collision name="motor2_collision">
+      <origin rpy="0 0 0" xyz="-0.01891 -0.02066  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/collisions/motor2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="motor2_visual">
+      <origin rpy="0 0 0" xyz="-0.01891 -0.02066  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/visuals/motor2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="motor1">
+    <inertial>
+      <mass value="0.3055116978012082" />
+      <origin rpy="0 0 0" xyz="0.00843 -0.02671  0.0993" />
+      <inertia ixx="0.024739576108863588" ixy="-0.035661919926525947" ixz="0.013377307108531364" iyy="0.06286412972011794" iyz="0.00798284908090229" izz="0.08118791031845371" />
+    </inertial>
+    <collision name="motor1_collision">
+      <origin rpy="0 0 0" xyz="0.00843 -0.02671  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/collisions/motor1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual name="motor1_visual">
+      <origin rpy="0 0 0" xyz="0.00843 -0.02671  0.0993" />
+      <geometry>
+        <mesh filename="package://robots/meshes/visuals/motor1.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>

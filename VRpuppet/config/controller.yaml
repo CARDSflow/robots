@@ -3,21 +3,39 @@
 #  type: cardsflow/kindyn/CableLengthController
 #  type: cardsflow/kindyn/CableLengthVelocityController
 #  type: cardsflow/kindyn/ForcePositionController
-6dof_axis0:
-  joint: 6dof_axis0
+axis0:
+  joint: axis0
   type: cardsflow/kindyn/CableLengthController
-6dof_axis1:
-  joint: 6dof_axis1
+axis1:
+  joint: axis1
   type: cardsflow/kindyn/CableLengthController
-6dof_axis2:
-  joint: 6dof_axis2
+axis2:
+  joint: axis2
   type: cardsflow/kindyn/CableLengthController
-6dof_axis3:
-  joint: 6dof_axis3
+axis3:
+  joint: axis3
   type: cardsflow/kindyn/CableLengthController
-6dof_axis4:
-  joint: 6dof_axis4
+axis4:
+  joint: axis4
   type: cardsflow/kindyn/CableLengthController
-6dof_axis5:
-  joint: 6dof_axis5
+axis5:
+  joint: axis5
+  type: cardsflow/kindyn/CableLengthController
+motor0:
+  joint: motor0
+  type: cardsflow/kindyn/CableLengthController
+motor1:
+  joint: motor1
+  type: cardsflow/kindyn/CableLengthController
+motor2:
+  joint: motor2
+  type: cardsflow/kindyn/CableLengthController
+motor3:
+  joint: motor3
+  type: cardsflow/kindyn/CableLengthController
+motor4:
+  joint: motor4
+  type: cardsflow/kindyn/CableLengthController
+motor5:
+  joint: motor5
   type: cardsflow/kindyn/CableLengthController
